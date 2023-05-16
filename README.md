@@ -1,4 +1,5 @@
 # Turma 3 - Senac SCS
+site da turma 3 (entrada 2023), atualmente primeiro ano do ensino médio.
 ## Projetos da turma
 
 Este repositório do GitHub serve como um espaço centralizado para armazenar os projetos desenvolvidos por diversos alunos de uma turma. 
