@@ -1,0 +1,32 @@
+<svg width="1440" height="1024" viewBox="0 0 1440 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1_2)">
+<rect width="1440" height="1024" fill="white"/>
+<line y1="63.5" x2="1440" y2="63.5" stroke="#D4D9DA"/>
+<line x1="9" y1="575.5" x2="1449" y2="575.5" stroke="#D4D9DA"/>
+<line x1="18" y1="319.5" x2="1458" y2="319.5" stroke="#D4D9DA"/>
+<line x1="27" y1="831.5" x2="1467" y2="831.5" stroke="#D4D9DA"/>
+<line y1="319.5" x2="1440" y2="319.5" stroke="#D4D9DA"/>
+<line x1="9" y1="831.5" x2="1449" y2="831.5" stroke="#D4D9DA"/>
+<line y1="191.5" x2="1440" y2="191.5" stroke="#D4D9DA"/>
+<line x1="9" y1="703.5" x2="1449" y2="703.5" stroke="#D4D9DA"/>
+<line x1="18" y1="447.5" x2="1458" y2="447.5" stroke="#D4D9DA"/>
+<line x1="27" y1="959.5" x2="1467" y2="959.5" stroke="#D4D9DA"/>
+<line y1="447.5" x2="1440" y2="447.5" stroke="#D4D9DA"/>
+<line x1="9" y1="959.5" x2="1449" y2="959.5" stroke="#D4D9DA"/>
+<line y1="127.5" x2="1440" y2="127.5" stroke="#D4D9DA"/>
+<line x1="9" y1="639.5" x2="1449" y2="639.5" stroke="#D4D9DA"/>
+<line x1="18" y1="383.5" x2="1458" y2="383.5" stroke="#D4D9DA"/>
+<line x1="27" y1="895.5" x2="1467" y2="895.5" stroke="#D4D9DA"/>
+<line y1="383.5" x2="1440" y2="383.5" stroke="#D4D9DA"/>
+<line x1="9" y1="895.5" x2="1449" y2="895.5" stroke="#D4D9DA"/>
+<line y1="255.5" x2="1440" y2="255.5" stroke="#D4D9DA"/>
+<line x1="9" y1="767.5" x2="1449" y2="767.5" stroke="#D4D9DA"/>
+<line x1="18" y1="511.5" x2="1458" y2="511.5" stroke="#D4D9DA"/>
+<line y1="511.5" x2="1440" y2="511.5" stroke="#D4D9DA"/>
+</g>
+<defs>
+<clipPath id="clip0_1_2">
+<rect width="1440" height="1024" fill="white"/>
+</clipPath>
+</defs>
+</svg>
