@@ -1,0 +1,37 @@
+
+body {
+    background-image: linear-gradient(to bottom, #96c9ff, #6568ffab, #b958fa); 
+    position: relative;
+    width: 100vw;
+}
+    h1 {
+    text-align: center;
+    }
+  .linha { 
+    padding-right: 36%;
+    padding-left: 36%;
+  }
+  img {
+    width: 400px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    border-radius: 20px;
+  }  
+.box1 {
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+  margin-right: 80%;
+  width: 450px;
+  margin-left: 5%;
+  color: ghostwhite;
+}
+h2 {
+  text-align: center;
+  margin-top: 20%;
+}
+.frontend { 
+  color: black;
+  margin-right: 50%;
+  margin-left: 40%;
+  width: 10%;
+}
