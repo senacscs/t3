@@ -1,0 +1,70 @@
+body {
+    background-color: rgb(51, 51, 51);
+    background-size: cover;
+    border: black ;
+    text-align: center;
+}
+h1 {
+     color: white; text-shadow: black 0.1em 0.1em 0.2em;
+     text-align: center;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-variant: bold;
+}
+h2 { 
+    color: white; text-shadow: black 0.1em 0.1em 0.2em;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-variant: normal;
+    font-style: italic;
+    font-size: 100%;
+}
+h3 {
+   color: #ffffff;
+    font-variant: bold;
+   font-size: 25px;
+   color: white; text-shadow: black 0.1em 0.1em 0.2em;
+}
+p {
+    color: #ffffff;
+}
+li {
+    list-style-type: none;
+}
+.buttom {
+	background:linear-gradient(to bottom, #000000 5%, #000000 100%);
+	background-color:#000000;
+	border-radius:1px;
+	border:2px solid #214d15;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:13px;
+	font-weight:bold;
+	padding:5px 24px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #ffffff;
+    box-shadow: #ffffff;
+}
+.buttom:active {
+	position:relative;
+	top:1px;
+}
+.buttom:hover, button:focus {
+	background:linear-gradient(to bottom, #000000 5%, #000000 100%);
+	background-color:#ffffff;
+    border-color: #ffffff;
+}
+.shadow:hover,
+.shadow:focus{
+    box-shadow: 0 0.5em 0.5em -0.4em rgb(255, 255, 255);
+    transform: translateY(-0.25em);
+}
+.voltar {
+    color: rgb(255, 0, 0);
+}
+img {
+    opacity: 0.4;
+}
+
+
