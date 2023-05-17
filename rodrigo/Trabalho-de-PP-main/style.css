@@ -1,0 +1,331 @@
+/* ----------------------------------------GERAL */
+
+* {
+    margin: 0;
+    font-family:'Raleway', sans-serif;
+    z-index: 4;
+}
+body {
+    background-image: url(assets/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Raleway:ital@1&family=Sigmar&family=Sigmar+One&family=Source+Code+Pro:ital@1&display=swap');
+
+/* ----------------------------------------HEADER */
+header {
+    position: static;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #22374B;
+    color: white;
+    box-shadow: 1px 1px 2px 2px rgb(0, 0, 0);
+    z-index: 2;
+}
+#title {
+    margin: 15px;
+}
+header h1 {
+    background-image: url(assets/background.jpeg);
+    -webkit-text-stroke: 0.5px #FFF;
+    text-stroke: 1px #FFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+}
+header h2 {
+    grid-row-start: 2;
+    font-size: 17px;
+}
+header li.menu {
+    display: flex;
+    justify-self: end;
+    margin-right: 10vw;
+    margin-top: 5vh;
+}
+header a {
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+header a:hover {   
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.142);
+}
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.mobile {
+    display: none;
+}
+.menuMobile {
+    display: none;
+}
+/* ----------------------------------------ARTICLES */
+.body {
+    text-align: center;
+}
+article {
+    z-index: 2;
+    position: relative;
+    top: auto;
+    left: 18vw;
+    display: flex;
+    max-width: 60vw;
+    padding: 5vh;
+    border-radius: 5px;
+    margin-top: 5vh;
+    flex-grow: 1;
+    justify-content: center;
+}
+article h1 {
+    font-size: 3vw;
+    margin-bottom: 4px;
+}
+article h2 {
+    font-size: 1.6vw;
+    margin-bottom: 5px;
+}
+.left {
+    display: grid;
+    max-width: 40vw;
+    margin-right: 3vw;
+    justify-items: center;
+}
+article div {
+    justify-self: center;
+}
+
+
+.botao {
+    transition: 1s;
+    background-color: rgba(255, 255, 255, 0.121);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.botao:hover {
+    background-color: rgba(134, 134, 134, 0.39);
+}
+.geral {
+    display: grid;
+}
+.botao a {
+    color: black;
+    text-decoration: none;
+}
+/* ----------------------------------------PESQUISA */
+#pesquisa {
+    background-color: #C1C437;
+}
+
+/* ----------------------------------------AJUDA */
+#ajuda {
+    background-color: #379AC4;
+}
+#ajuda img {
+width: 15vw;
+}
+#ajuda a img {
+    width: 7vw;
+}
+#ajuda a {
+    max-width: 20vw;
+}
+/* ----------------------------------------GRAFICO*/
+#grafico img {
+    width: 30vw;
+}
+#grafico {
+    background-color: #7BBB24;
+}
+#grafico p {
+    color: white;
+    font-size: 20px;
+}
+/* ----------------------------------------METODOLOGIA*/
+#metodo {
+    background-color: #D158B7;
+}
+
+/* ----------------------------------------CONCLUSAO*/
+#conclusao {
+    background-color: #C43737;
+}
+#conclusao a img {
+    width: 7vw;
+    background-color: rgba(255, 255, 255, 0.121);
+    border-radius: 10px;
+    transition: 1s;
+}
+#conclusao a img:hover {
+    background-color: rgba(134, 134, 134, 0.39);
+}
+#conclusao .botao {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/* ----------------------------------------FOOTER*/
+
+footer {
+    background-color: #22374B;
+    display: grid;
+    grid-template-columns: auto auto;
+    color: white;
+    padding: 2vh;
+    margin-top: 5vh;
+}
+footer a{
+    color: #379AC4;
+}
+footer img {
+    width: 3vw;
+}
+#conection {
+    display: flex;
+    justify-content: flex-end ;
+    text-align: center;
+}
+#index {
+    margin-left: 1vw;
+}
+
+/* ----------------------------------------TEXTO*/
+#text {
+    text-align: justify;
+    background-color: white;
+}
+#text h1 {
+    text-align: center;
+}
+#text h2 {
+    font-size: large;
+    margin-top: 2vh
+}
+#text h3 {
+    font-size: medium;
+    margin-top: 1vh;
+}
+#text img {
+    max-width: 40vw;
+}
+label {
+   font-style: italic;
+}
+/* ----------------------------------------REFERENCIAS*/
+.ref {
+    background-color: aliceblue;
+}
+.ref h1 {
+    font-size: 4vh;
+}
+.ref a {
+    margin-top: 10vh;
+}
+
+/* ----------------------------------------MOBILE*/
+.menuMobile {
+    display: grid;
+    z-index: 30;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 15vh;
+    animation: text-reveal 1s;
+}
+.menuMobile ul {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    border-radius: 20px;
+}
+.menuMobile li {
+    list-style: none;
+    display: flex;
+}
+#botao {
+    margin-top: 5px;
+    justify-items: end;
+}
+#menur {
+    justify-items: center;
+}
+.hidden {
+    display: none;
+}
+
+@keyframes text-reveal{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@media(max-width: 480px) {
+    .mobile {
+        display: contents;
+    }
+    header li.menu {
+        display: none;
+    }
+    article {
+        position: relative;
+        top: auto;
+        left: 0;
+        max-width: 100%;
+        display: grid;
+    }
+    #rio {
+        display: none;
+    }
+    article h1 {
+        font-size: 10vw;
+    }
+    .left {
+        max-width: 100%;
+    }
+    article h2 {
+        font-size: 5vw;
+    }
+    .botao {
+        padding: 20px;
+        border: 1px solid black;
+    }
+    #ajuda a img {
+        width: 20vw;
+    }
+    #conclusao a img {
+        width: 20vw;
+        border: 1px solid black;
+    }
+    #conclusao .botao {
+        border: none;
+    }
+    #grafico img {
+        width: 100vw;
+    }
+    footer {
+        grid-template-columns: auto;
+    }
+    #conection {
+        margin-top: 10px;
+        justify-content: center;
+    }
+    #conection img {
+        width: 16vw;
+    }
+    #text img {
+        max-width: 80vw;
+    }
+            
+}

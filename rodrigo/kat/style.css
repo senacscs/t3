@@ -1,0 +1,93 @@
+* {
+    margin:0 ;
+    font-family: 'Source Code Pro', monospace;
+}
+body {
+    background-color: wheat;
+    color: black;
+}
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@1&display=swap');
+.hiden {
+    display: none;
+}
+header{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 auto;
+    max-width: 60vw;
+    border-bottom: 1px solid gray;
+    padding: 3vh;
+}
+header a {
+    font-size: 17px;
+}
+
+.contact {
+    text-align: center;
+    margin-top: 1vh;    
+}
+header .contact a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+
+}
+.contact a:hover {
+    color: rgb(242, 59, 89);
+    background-color: rgba(255, 255, 255, 0.03);
+    transition: 0.4s;
+}
+.name {
+    justify-self: start;
+}
+.name h1 {
+    margin:auto;
+    color: rgb(242, 59, 89);
+    overflow: hidden;
+    font-size: 40px;
+    position: relative;
+}
+header .name h1::after {
+    animation: text-reveal 1.5s ease forwards;
+    background-color: rgb(242, 59, 89);
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+@keyframes text-reveal{
+    from {
+        transform: translateX(-101%);
+    }
+    to {
+        transform: translateX(101%);
+    }
+}
+#body {
+    text-align: center;
+}
+h2 {
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+button {
+    border: none;
+    background-color: rgb(242, 59, 89);
+    padding: 20px;
+    border-radius: 20px;
+    font-size: medium;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+    background-color: rgb(200, 48, 73);
+}
+button:active {
+    box-shadow: none;
+}
