@@ -1,0 +1,176 @@
+/* .contact {
+    text-align: center;
+    margin-top: 1vh;    
+}
+header .contact a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+
+}
+.contact a:hover {
+    color: rgb(8, 147, 8);
+    background-color: rgba(255, 255, 255, 0.03);
+    transition: 0.4s;
+} */
+
+.header {
+    background: #1d1e20;
+    display: flex;
+    flex-wrap: wrap; /*quando a tela estiver pequena faz um item ir abaixo do outro */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.content {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    font-family: 'Share Tech', sans-serif;
+    color: white;
+   	align-items: center;
+   	margin: 0;
+    text-shadow: 8px 8px 10px #0000008c;  
+    background-size: 400% 400%;
+    margin-bottom: 100px;
+    background-color: lightblue;
+}
+
+body, ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial;
+}
+
+a {
+	color: white;
+    text-shadow: 8px 8px 10px rgb(0, 0, 0);
+    text-decoration: none;
+}
+a:hover {
+	color: black;
+}
+a, p, .lii {
+    font-size: 30px;
+}
+
+li {
+    list-style-position: inside;
+}
+
+.li {
+    font-size: 60px;
+    color: gray;
+}
+.li1 {
+    font-size: 50px;
+}
+.li2 {
+    /* background-color: pink;
+    border-radius: 90px;
+    width: 40%; */
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
+
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-align: center;
+    color: gray;
+}
+
+.berga {
+    border-color: black;
+    border-width: 10px;
+}
+
+.ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px, solid black;
+}
+.ul1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin-top: 20px;
+}
+.ul2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+hr {
+    height: 10px;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 0px;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;
+}
+.conteudog {
+    text-align: center;
+}
+
+/* .conteudog {
+    display: grid;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+.conteudog > a{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mei, p {
+    text-align: center;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: -10px;
+}
+
