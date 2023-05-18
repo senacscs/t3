@@ -1,0 +1,28 @@
+body {
+  background-image: url("https://trecobox.com.br/wp-content/uploads/2022/09/eu_the-walking-dead_c169_r_0d1392dc-e1664377935320-1280x720.jpeg ");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+a {
+  display: inline-block;
+  background: black;
+  padding: 10px;
+  border-radius: 10px;
+  color:white;
+  text-decoration: none;
+  font-size: xx-large;
+}
+a:hover {
+  background-color: gray;
+}
+pre.u {
+font-size: 80;
+text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+div {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 10px;
+}
