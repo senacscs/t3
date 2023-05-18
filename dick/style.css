@@ -1,0 +1,26 @@
+body{
+    background: linear-gradient(-150deg, darkgreen, rgba(102, 255, 0, 0.432),blue, rgba(102, 65, 0, 0.432));
+	background-size: 400% 400%;
+	animation: gradient 45s ease infinite;
+	height: 100vh;
+	text-align: center;
+}
+
+a{
+	color:brown;
+	font-size:xx-large;
+}
+h1{
+	color:lime;
+
+}
+h2{
+	color:lime;
+	font-family: Verdana;
+}
+
+h3{
+color:gold;
+font-family: Verdana;
+font-size:x-large;
+}
