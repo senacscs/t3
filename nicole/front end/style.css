@@ -1,0 +1,12 @@
+body {
+  background: cornflowerblue
+}
+
+img {
+ width: 180px;
+}
+
+img:hover {
+ width: 10000x;
+  box-shadow: 0 0 2px 1px rgb(126, 146, 181)
+}
