@@ -1,0 +1,158 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: gray;
+}
+
+header {
+    margin: 0%;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: gray;
+    z-index: 999;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    padding: 2px 10px;
+    display: table-row;
+}
+
+header nav ul li p {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding: 2px 10px;
+    display: table-row;
+}
+
+header ul {
+    list-style: none;
+    text-align: right;
+    margin-right: 70px;
+    margin-top: -30px;
+}
+
+.ul1 {
+    list-style: none;
+    text-align: center;
+    margin-right: 70px;
+    margin-top: -30px;
+}
+
+.ul1 a {
+    margin-left: 70px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 23px;
+}
+
+.logo-insta {
+    width: 30px;
+    height: 30px;
+}
+
+section {
+    width: 100%;
+    height: 500px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fundo-sec1 {
+    background-color: darkgray;
+    border: 1px solid gray;
+}
+
+.fundo-secs {
+    text-align: center;
+    background-color: gray;
+}
+
+.conteudo {
+    text-align: center;
+    background-color: gray;
+    border-radius: 90px 90px 0px 0px;
+    width: 40%;
+    height: 200px;
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgsit {
+    margin-top: 30px;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.imgsit:hover {
+    width: 315px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    margin-top: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+article {
+    width: 100%;
+    text-align: center;
+}
+
+
+[data-anima] {
+    opacity: 0;
+    transition: .5s;
+}
+
+[data-anima="centro"] {
+    transform: translate3d(0,50px,0);
+}
+
+[data-anima].animacao {
+    opacity: 1;
+    transform: translate3d(0,0,0);   
+}

@@ -1,0 +1,127 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(38, 38, 38);
+}
+
+header {
+    padding: 15px 0px;
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    background-color: rgb(38, 38, 38);
+    z-index: 10;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 15px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: cursive;
+    font-size: 20px;
+    padding: 10px 10px;
+}
+
+header nav ul li a:hover {
+    color: darkgray;
+}
+
+section {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(38, 38, 38);
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: cursive;
+    color: white;
+    text-transform: uppercase;
+}
+
+p {
+    margin-top: 100px;
+    color: white;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+span {
+    margin-left: 50px;
+}
+
+.nome-integrantes {
+    width: 60%;
+    height: 200px;
+    text-align: center;
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(38, 38, 38);
+}
+
+.problema {
+    width: 70%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(38, 38, 38);
+}
+
+.objetivo {
+    width: 70%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(38, 38, 38);
+}
+
+.metodologia {
+    width: 70%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(38, 38, 38);
+}
+
+.referencias {
+    width: 70%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(38, 38, 38);
+}
+
+.referenciais {
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: white;
+
+}
+
+.referenciais:hover {
+    color: darkgray;
+}
