@@ -1,0 +1,21 @@
+body {
+    background-image:url(./Blue_dazzling_lines_dark_background_4K_HD_1366x768.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    list-style-type: none;
+    color: gray;
+}
+
+a {
+    color: gray;
+}
+
+a:hover {
+    color: white;
+  }
