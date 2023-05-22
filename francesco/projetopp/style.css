@@ -1,0 +1,101 @@
+
+html{
+    background-image: url(https://img.freepik.com/vetores-gratis/cartao-de-design-de-pintura-fluida-em-aquarela-azul-estilo-de-respingo-de-tinta-tinta-alcoolica_41066-1372.jpg?size=626&ext=jpg&ga=GA1.1.1505228159.1683202412&semt=ais);
+    background-size: cover;
+    width: auto;
+}
+* {
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:12px;
+    text-decoration: none;
+    text-align: center;   
+}
+h2 {
+    text-align: left;
+}
+p {
+    text-align: left;
+}
+ul {
+    margin: 0;
+    padding:0;
+}
+ 
+li {
+    list-style: none; 
+    margin: 30px;
+    display: inline;   
+}
+li .a-normal { 
+    display: block;
+    width: fit-content;
+    padding: 5px 10px; 
+    margin: 0 auto;
+    border: 3px solid #3d52dc; 
+    background: #000;
+    box-shadow: #3d52dc;
+    text-decoration: none;
+    color:#ffffff;
+    /* cantos arredondados */
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:50px;
+}
+.a-active {
+    padding: 50px 10px; 
+    margin:0;
+    background: #CCC;
+    border: 0px solid #f00;
+    color: #000; 
+    border-color: #000;
+    text-decoration: none;
+    /* cantos arredondados */
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+li a:hover {
+    background: #CCC;
+    color: #000; 
+    border-color: #000;
+    padding: 5px;
+
+}
+
+.hidden {
+    display: none;
+}
+.show {
+    display: block;
+
+}
+.title {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+}
+h1 {
+    font-size: large;
+}
+img {
+    width: 210px;
+    text-align: center;
+}
+.img1 {
+    width: 400px;
+    border: 4px solid rgb(70, 70, 254);
+}
+.img2 {
+    width: 400px;
+    border: 4px solid rgb(70, 70, 254);
+}
+.img3 {
+    width: 300px;
+    border: 4px solid rgb(70, 70, 254);
+}
+.img4 {
+    width: 400px;
+    border: 4px solid rgb(70, 70, 254);
+}
