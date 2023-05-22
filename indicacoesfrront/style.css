@@ -1,0 +1,25 @@
+body {
+    background-color: #000000;
+    text-align: center; 
+}
+h1 {
+color: aliceblue;
+text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+div {
+	padding: center;
+}
+
+.insta {
+    border-radius: 50%;
+}
+
+a { 
+    text-decoration-line: none;
+    color: aliceblue;
+} 
