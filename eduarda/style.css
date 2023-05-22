@@ -4,6 +4,10 @@ body {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 h1{
-  font-size: 20pt;
+  font-size: 25pt;
   font-style: italic;
+}
+a{
+  font-size: 15pt;
+  font-style:italic;
 }
