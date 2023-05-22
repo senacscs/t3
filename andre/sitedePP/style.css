@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(0, 255, 242);
+
+}
+h1, h2 {
+    color:rgb(0, 0, 0);
+    text-align:center;
+}
+p {
+    font-family: verdana;
+    font-size: 15px;
+    text-align: center;
+}
+a href {
+    color:rgb(0, 0, 0)
+}
