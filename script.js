@@ -14,7 +14,7 @@ const students = [
   { name: "Gabriel B.", url: "/barcellos" },
   { name: "Gabriel L.", url: "/dick" },
   { name: "Guilherme", url: "/guilherme" },
-  { name: "Gustavo O.", url: "/gustavoho" },
+  { name: "Gustavo O.", url: "/gustavoo" },
   { name: "Gustavo F.", url: "/faber" },
   { name: "Gustavo M.", url: "/gustavom" },
   { name: "Henrique", url: "/henrique" },
