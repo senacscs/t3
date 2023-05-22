@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=7.0">
+    <title>The New York Index</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Poppins:wght@100&family=Roboto+Slab:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>
+            The Marcos Esau Index
+        </h1>
+        <hr>
+        <div class="info">
+            <h3>
+                Vol. LXIX
+            </h3>
+            <h3 id="date"></h3>
+        </div>
+        <hr>
+    </header>
+    <div class="grid">
+        <div class="content">
+            <h1> ALUNO DE ENSINO MÉDIO PRODUZ TRABALHOS PARA RECEBER UMA BOA MENÇÃO, VEJA:</h1>
+            <p id="no-articles-msg" class="hidden">Não há projetos neste mês</p>
+            <article class="article" data-month="4" onclick="window.location.href='indicacoesfront/'">
+                <h2 class="title">INDICAÇÕES DE FRONT-END</h2>
+                <img src="assets/sample.jpg" alt="Página de INDICACOES" srcset="">
+                <p> 
+                    Depois de seu professor ter pedido a entrega de um trabalho relacionado à indicações sobre conteúdo front-end, o estudante de 16 anos
+                    desenvolveu uma página em HTML muito mal feita, e entregou para o professor, o qual apresentou para a turma toda. O trabalho foi produzido e entregue ao longo
+                    dos dias de 12 de Abril até 19 de abril. De acordo com testemunhas, a página ficou ruim em diversos sentidos, mas teve seus erros relevados pelo professor, o qual mesmo
+                    assim, devolveu com uma boa menção.
+                </p>
+            </article>
+            
+    
+            <article class="article" data-month="5" onclick="window.location.href='projetopp/'">
+                <h2 class="title">PROJETO DE PESQUISA COMPLETO EM PP</h2>
+                <img src="assets/projetopp.png" alt="Projeto de Pesquisa" srcset="">
+                <p> 
+                    Em grupo, alunos do primeiro ano do ensino médio foram desafiados com a atividade
+                    da criação de um projeto de pesquisa completo, estruturado com todas as etapas padrões
+                    de uma pesquisa. O projeto foi feito por Marcos, Tito e Vitor e foi entregue dia 17/05/2022.
+                </p>
+            </article>
+        </div>
+        
+        <aside class="nav">
+            <h1> Navegar por mês</h1>
+            <ul>
+                <li class="month active" id="show-all">Mostrar Tudo</li>
+                <li class="month" data-month="4">Abril</li>
+                <li class="month" data-month="5">Maio</li>
+            </ul>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

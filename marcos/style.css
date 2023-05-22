@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'OldLondon';
+    src: url('assets/OldLondon.ttf');
+}
+body {
+    background: #e8dcb8 url('assets/bg.jpg') no-repeat fixed;
+    background-size: cover;
+    background-blend-mode: lighten;
+    overflow-x: hidden;
+}
+header h1 {
+    font-family: 'OldLondon', serif;
+    font-size: 4rem;
+    text-align: center;
+}
+hr {
+    border: 1.5px solid black;
+    margin: 0.125rem;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info h3:first-child {
+    margin: 0;
+    padding-left: 0.5rem;
+}
+
+.info #date {
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+.content {
+    padding: 0.75rem;
+    margin-left: 2rem;
+    border-right: 1px solid #9b8d63;
+}
+.content article {
+    margin: 1.5rem 0;
+    padding: 0.25rem;
+    overflow: auto;
+    position: relative;
+    cursor: pointer;
+}
+.content article img {
+    float: left;
+    max-width: 20%;
+    margin-right: 10px;
+    width: 30%;
+    opacity: 50%;
+}
+.content article img:hover {
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+.content h1 {
+    font-family: 'Instrument Serif', serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.title {
+    font-family: 'Instrument Serif', serif;
+}
+.content article p {
+    font-family: 'Instrument Serif', serif;
+    font-size: 1.2rem;
+    clear: right;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.hidden {
+    display: none;
+}
+.nav h1 {
+    font-family: 'Instrument Serif', serif;
+    margin: 1rem;
+}
+.nav ul {
+    list-style: none;
+    font-family: 'Instrument Serif', serif;
+    margin: 1rem;
+}
+.month {
+    padding: 0.75rem;
+    margin: 0.25rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    border: 1px solid black;
+}
+.month:hover {
+    background-color: #9b8d63;
+    transform: translateX(-2rem);
+    transition: 0.5s;
+}
+.active {
+    background-color: #9b8d63;
+    transform: translateX(-2rem);
+    cursor: default;
+}
+  
+
+
+@media (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    header h1 {
+        font-size: 2.5rem;
+        line-height: 2rem;
+    }
+    .info h3 {
+        font-size: 0.6rem;
+    }
+    .content{
+        margin: 0;
+    }
+    .content article {
+        margin-top: 1rem;
+    }
+    .content article p {
+        font-size: 0.8rem;
+    }
+    .content article img {
+        max-width: 60%;
+        width: 60%;
+    }
+    .content article h2 {
+        font-size: 1.4rem;
+    }
+
+    .nav h1 {
+        font-size: 1rem;
+    }
+    .month {
+        width: 100%;
+    }
+}
+
