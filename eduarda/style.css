@@ -6,6 +6,7 @@ body {
 h1{
   font-size: 25pt;
   font-style: italic;
+  text-decoration:overline; color:blue;
 }
 a{
   font-size: 15pt;
