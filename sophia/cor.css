@@ -29,3 +29,8 @@ a:hover {
 	transition: 1s;
 
 }
+
+.texto {
+	font-size: 20px;
+	color: rgb(247, 64, 94);
+}
