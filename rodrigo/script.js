@@ -56,7 +56,7 @@ const Apps = [
         Data: "24/04/2023",
         Img: "indicacoes.jpg",
         Text: "Considerando os conhecimentos já adquiridos em HTML, CSS e JS, utilizar os mesmos e aprofundar para criar uma webpage (página na internet) sobre osconteúdos básicos de Front-End, sendo esta a temática principal para as recomendações de:</p>1 site de conteúdos (deve ter o link pro site 1 canal Youtube de conteúdos (deve ter o link e 1 vídeo embedado)1 influenciador de conteúdos (deve ter o link e um material embedado)1 tutorial (deve ter o link e uma imagem do resultado do tutorial)1 podcast (link embedado de só áudio preferencialmente, mas pode ser vídeo)",
-        Link: "/indicacoes",
+        Link: "./indicacoes",
         Class: "indicacoes",
         Icon: "./assets/indicacoesIcon.png"
     },
@@ -66,7 +66,7 @@ const Apps = [
         Data: "15/05/2023",
         Img: "PP.jpg",
         Text: "A poluição é um assunto muito em alta hoje em dia, pelo fato do alto nível de poluição no nosso planeta. Nós queremos ajudar a resolver. Por meio da conscientização das formas de limpeza e de poluição.",
-        Link: "/PP",
+        Link: "./PP",
         Class: "pp",
         Icon: "./assets/Favicon.svg"
     },
@@ -76,7 +76,7 @@ const Apps = [
         Data: "05/05/2023",
         Img: "kat.jpg",
         Text: "A partir do código exemplo em https://arquivo.dev/t1/oficina.html modificar o arquivo html, com temática livre, inserindo algum novo elemento nesta webpage(exemplo, um vídeo, um link, um javascript), e anexar este novo documento html personalizado aqui nesta tarefa.",
-        Link: "/kat",
+        Link: "./kat",
         Class: "kat",
         Icon: "./assets/katIcon.png"
     },
@@ -89,6 +89,7 @@ const imgH = document.getElementById('img')
 const dataH = document.getElementById('data')
 const subjectH = document.getElementById('subjectW')
 const a = document.getElementById('link')
+const titleW = document.getElementById('titleW')
 
 const appsGrid = document.querySelector('.apps')
 
@@ -167,6 +168,9 @@ Apps.forEach((App) => {
                 p.innerHTML = text;
                 a.href = link;
                 a.target = "_blank";
+                titleW.innerHTML = title
+
+
         });
 
     function isMobile() {
