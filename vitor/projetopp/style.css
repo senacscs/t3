@@ -1,0 +1,100 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-image: url(file:///C:/Users/vitor/OneDrive/%C3%81rea%20de%20Trabalho/senac%20trabalhos/projeto%20pp/background.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+header {
+	background-color: #353d42;
+	color: #ffffff;
+	padding: 20px;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 36px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+}
+
+nav ul li {
+	margin-left: 20px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	padding: 20px;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+section {
+	margin-bottom: 40px;
+}
+
+section h2 {
+	margin-top: 0;
+}
+
+form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+form input, form textarea {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+}
+
+form input[type="submit"] {
+	background-color: #333;
+	color: 	#da1010;
+	cursor: pointer;
+	border-radius: 5px;
+	padding: 10px 20px;
+	border: none;
+}
+
+footer {
+	position: absolute;
+	height: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	width: 100%;
+  }
+.titulo {
+	font-size: 20px;
+	font-family: 'Ubuntu', sans-serif;
+  }html {
+	scroll-behavior: smooth;
+  } h2 {
+	color: #e14141;
+	font-size: xx-large;
+	font-family: 'Oswald', sans-serif;
+  } p {font-size: larger;
+	font-family: 'Playfair Display', serif;
+}
+
+
+
