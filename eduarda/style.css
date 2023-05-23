@@ -1,5 +1,5 @@
 body {
-  background-image: repeating-linear-gradient (rgb(34, 249, 170),rgb(8, 203, 252));
+  background-color: repeating-linear-gradient (rgb(34, 249, 170),rgb(8, 203, 252));
   color:#1e130c;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
