@@ -1,0 +1,47 @@
+body{
+    margin: 0 auto;
+    max-width: 3000px;
+   background-image: url(https://img.freepik.com/fotos-gratis/conceito-de-plano-de-fundo-do-estudio-abstrato-vazio-luz-gradiente-roxo-estudio-quarto-fundo-para-o-produto-plano-de-fundo-liso-do-estudio_1258-54481.jpg);
+   background-size: cover;
+
+}
+
+img{
+width: 1350px;
+
+}
+
+h1{
+text-align: center;
+color: whitesmoke;
+}
+h2{
+text-align: center;
+color: whitesmoke;
+}
+image{
+text-align: center;
+color: whitesmoke;
+}
+{
+text-align: center;
+color: whitesmoke;
+}
+image{
+text-align: center;
+color: whitesmoke;
+}
+
+h1, a, p, a, li, b, h2, ul{
+
+color:aquah rgb(0,0, 0);
+
+text-align: center;
+}
+
+text-align: center;
+
+li {
+list-style-type: none;
+color: white;
+}
