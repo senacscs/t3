@@ -1,5 +1,5 @@
 body {
-  background-color:linear-gradient (rgb(34, 249, 141) rgb(58, 195, 244) rgb(206, 4, 206));
+  background-color:linear-gradient (rgb(34, 249, 141), rgb(58, 195, 244), rgb(206, 4, 206));
   color:#1e130c;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
