@@ -1,15 +1,15 @@
 body {
-  background-image:radial-gradient (rgb(34, 249, 141), rgb(58, 195, 244), rgb(206, 4, 206));
+  background-image:radial-gradient(rgb(115, 251, 183), rgb(95, 212, 255), rgb(255, 19, 255));
   color:#1e130c;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 h1{
   font-size: 25pt;
   font-style: italic;
-  text-decoration:underline; color:rgb(255, 0, 225);
+  text-decoration:underline; color:rgb(0, 0, 0);
   text-align: center;
 }
 a{
-  font-size: 15pt;
+  font-size: 20pt;
   font-style:italic;
 }
