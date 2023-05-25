@@ -80,6 +80,16 @@ const Apps = [
         Class: "kat",
         Icon: "./assets/katIcon.png"
     },
+    {
+        title: "Oficina",
+        Subject: "Técnico",
+        Data: "25/05/2023",
+        Img: "geladeira.jpg",
+        Text: "Super oficina foda pra ensiar grid pros carinha",
+        Link: "./oficina",
+        Class: "oficina",
+        Icon: "./assets/freezer.png"
+    },
 ]
 
 const h1 = document.getElementById('h1W')
