@@ -1,0 +1,70 @@
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  .pos{
+    position: relative;
+    right: 18%;
+  }
+
+  .pos2{
+    position: relative;
+    right: 19%;
+  }
+
+  .pos3{
+    position: relative;
+    right: 2%;
+  }
+
+  }
+  .card-text {
+    text-align: center;
+  }
+
+  .card-body {
+    height: 150px;
+  }
+
+  .baixo {
+    position: absolute;
+    bottom: 5%;
+    left: 7%;
+  }
+
+  .quando {
+    position: absolute;
+    bottom: 6.5%;
+    right: 10%;
+  }
+
+  .botao {
+    text-decoration: none;
+  }
+
+  .logo-linguage {
+    border-radius: 10px;
+  }
+
+
+[data-anima] {
+opacity: 0;
+transition: .5s;
+}
+
+[data-anima="centro"] {
+transform: translate3d(0,50px,0);
+}
+
+[data-anima].animacao {
+opacity: 1;
+transform: translate3d(0,0,0);   
+}
