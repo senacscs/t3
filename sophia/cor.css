@@ -1,36 +1,11 @@
-body {
-	background:#dda0dd
+.fundo {
+    background-color: rgb(13, 13, 158);
+    margin-left: 40%;
+    margin-right: 40%;
 }
-img {
-	border-radius: 20px;
+h1 {
+    margin-bottom: 0px;
 }
-.c img {
-	width: 400px;
-	border-radius: 20px;
-	margin: 15px;
-}
-.c {
-	display: flex;
-	align-self: center;
-	align-items: center;
-	justify-content: center;
-}
-a {
-	text-decoration: none;
-	color: black;
-	padding: 0.2rem;
-	border-radius: 0.8rem;
-	background-color: pink;
-}
-a:hover {
-	padding: 1rem;
-	color:white;
-	background-color: #771177;
-	transition: 1s;
-
-}
-
-.texto {
-	font-size: 20px;
-	color: rgb(247, 64, 94);
+p {
+    margin-top: 0px;
 }
