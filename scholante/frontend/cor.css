@@ -1,0 +1,47 @@
+body {
+	background:#dda0dd
+}
+img {
+	border-radius: 20px;
+}
+.c img {
+	width: 400px;
+	border-radius: 20px;
+	margin: 15px;
+}
+.c {
+	display: flex;
+	align-self: center;
+	align-items: center;
+	justify-content: center;
+}
+a {
+	text-decoration: none;
+	color: black;
+	padding: 0.2rem;
+	border-radius: 0.8rem;
+	background-color: rgb(239, 64, 93);
+}
+a:hover {
+	padding: 1rem;
+	color:white;
+	background-color: #771177;
+	transition: 1s;
+
+}
+video {
+position: fixed;
+right: 0;
+bottom: 0;
+z-index: 1;
+}
+.texto {
+	font-size: 20px;
+	color: rgb(247, 64, 94);
+}
+.body {
+	position: fixed;
+	z-index: 20;
+	text-align: center;
+	left: 15%;
+}
