@@ -86,7 +86,7 @@ const Apps = [
         Data: "25/05/2023",
         Img: "geladeira.jpg",
         Text: "Super oficina foda sobre grid",
-        Link: "./oficina1",
+        Link: "./oficina2",
         Class: "oficina",
         Icon: "./assets/freezer.png"
     },
