@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+h2 {
+    text-size-adjust: small;
+}
+li {
+    list-style-type: none;
+    background:gray;
+    color:black;
+    border-style: outset;
+    border-color: white;
+    height: 20px;
+    width: 120px;
+    font: arial 
+}
