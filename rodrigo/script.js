@@ -81,12 +81,12 @@ const Apps = [
         Icon: "./assets/katIcon.png"
     },
     {
-        title: "Oficina",
+        title: "Grid Tycoon",
         Subject: "Técnico",
         Data: "25/05/2023",
         Img: "geladeira.jpg",
-        Text: "Super oficina foda pra ensiar grid pros carinha",
-        Link: "./oficina2",
+        Text: "Super oficina foda sobre grid",
+        Link: "./oficina1",
         Class: "oficina",
         Icon: "./assets/freezer.png"
     },
