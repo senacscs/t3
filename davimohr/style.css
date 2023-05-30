@@ -8,12 +8,12 @@ html{
 .box1{
  background-color: rgb(47, 47, 47);
  border-radius: 20px;
- margin-right:80%;
+ margin-right: auto;
  width: 450px;
- margin-left: 5%;
+ margin-left: auto;
 
 }
-h1{
+#index{
     font-size: 72px;
     background: -webkit-linear-gradient(#3300ff, #d400ff);
     -webkit-background-clip: text;
@@ -31,7 +31,13 @@ h2 {
 .box2{
     background-color: rgb(47, 47, 47);
     border-radius: 20px;
-    margin-right:80%;
+    margin-right:auto;
     width: 450px;
-    margin-left: 5%;
+    margin-left: auto;
+}
+
+.display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
