@@ -1,3 +1,8 @@
 body {
- background: linear-gradient(to bottom right, #FFC0CB, #FF69B4);
+background-color: #8595e6;
+background-image: linear-gradient(43deg, #7f92ef 0%, #d24ec9 46%, #d0a34f 100%);
 }
+h2 {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+  
