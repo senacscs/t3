@@ -1,0 +1,26 @@
+body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvT2r4Dzq17grXx7jO4fVuqA0eHlantulX2HSYgOYee5K_IEaEKZmmckvEKwZjz6bfJ8c&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+h1 {
+    font-size: 70px;
+    text-align:left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:black;
+    text-align: center;
+}
+.links {
+    color:black;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+p {
+    font-size: 40px;
+    text-align:left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:black;
+    text-align: center;
+}
+
