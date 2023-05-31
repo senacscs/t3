@@ -667,5 +667,10 @@
         --swiffy-slider-snap-align: unset
     }
 }
-
+p{
+    font-size: 50px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
 /*# sourceMappingURL=swiffy-slider.min.css.map */
