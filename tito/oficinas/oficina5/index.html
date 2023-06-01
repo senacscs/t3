@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=tdrtc.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+      html {
+          background: #ff69b4;
+          background-size: cover;
+      }
+
+      nav {
+          text-align: center;
+          margin-top: 50px;
+
+      }
+      nav a{
+          color: black;
+          text-decoration: none;
+          padding: 5px;
+          margin: 5px;
+          font-size: 25pt;
+          position: relative;
+
+      }
+
+      nav a::after{
+          content: "";
+          width: 0%;
+          height: 4px;
+          background-color:black;
+          position: absolute;
+          bottom: 0;
+          left: 5%;
+          right: 11%;
+          transition: 0.5s ease-in-out;
+      }
+
+      nav a:hover::after {
+          width: 90%;
+      }
+    </style>
+    <title>Oficina 5</title>
+  </head>
+  <body>
+    <nav>
+      <a href="#objetivos">Objetivo</a><br />
+      <a href="#solucao">Solução</a><br />
+      <a href="#problema">Problema</a><br />
+      <a href="#metodologia">Metodologia</a><br />
+    </nav>
+  </body>
+</html>
