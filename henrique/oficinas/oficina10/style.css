@@ -5,7 +5,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* scrool suave */
 }
 
 header {
@@ -13,7 +13,7 @@ header {
     position: fixed;
     width: 100%;
     background-color: rgb(38, 38, 38);
-    z-index: 1;
+    z-index: 1;/*camadas*/
 }
 
 header nav ul {
@@ -37,7 +37,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: rgb(90, 74, 230);
+    color: rgb(90, 74, 230); /*  possibilita um elemento ter o seu estilo alterado através da ação do usuário, quando o próprio passa o cursor do mouse sobre o elemento */
 }
 
 section {
