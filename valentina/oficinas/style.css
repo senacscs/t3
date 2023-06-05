@@ -6,7 +6,7 @@
 }
 body {
     /* fundo */
-    background-color: whitesmoke ;
+    background-color: rgb(77, 72, 71) ;
 }
 #title {
     /* alinhar o titulo e aplicar tamanho */
@@ -39,7 +39,7 @@ body {
 }
 .imagens img {
     /* altura maxima */
-    max-height: 20vw;
+    max-height: 15vw;
 }
 .imagens {
     /* colocar grid nas geladeira */
