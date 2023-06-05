@@ -1,0 +1,112 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    /* fazer uma rolagem suave */
+    scroll-behavior: smooth;
+}
+
+header {
+    /* vai ter um espaçamento interno de 15px no bottom e no top */
+    padding: 15px 0px;
+    /* a posição vai ser fixa */
+    position: fixed;
+    /* com 100% de width, vai ocupar 100% da tela */
+    width: 100%;
+    background-color: rgb(38, 38, 38);
+    /* o z-index é como se fosse camadas, então como tem valor 1, o header vai ficar acima dos outros elementos, se fosse -1, ele ficaria abaixo */
+    z-index: 1;
+}
+
+header nav ul {
+    /* fica sem os pontos geradas automaticamente pela lista */
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    /* deixa os itens lado a lado */
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: -15px;
+    font-size: 30px;
+    padding: 2px 10px;
+    /*inline-block serve para deixar os itens lado a lado e serve para mudar a altura e largura*/
+    display: inline-block;
+}
+
+header nav ul li a:hover {
+    color: rgb(90, 74, 230);
+}
+
+section {
+    padding-top: 100px;
+    text-align: center;
+    width: 100%;
+    height: 700px;
+}
+
+section:nth-child(even) {
+    background: white;
+}
+
+section:nth-child(odd){
+    background: rgb(38, 38, 38);
+}
+
+.flex {
+    /* com o display flex podemos manipular todos os elementos filhos desse container */
+    display: flex;
+    /* o flex-direction row diz que os elementos vão estar direcionados em linhas*/
+    flex-direction: row;
+    /* cria espaço entre os elementos */
+    justify-content: space-between;
+    text-align: center;
+}
+
+article {
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 30px;
+}
+
+p {
+    margin-top: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.color-white {
+    color: white;
+}
