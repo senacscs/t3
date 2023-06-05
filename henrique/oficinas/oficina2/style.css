@@ -45,14 +45,16 @@ body {
     /* colocar grid nas geladeira */
     display: grid;
     /* configurar 2 colunas */
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
     text-align: center;
     /* colocar um espaçamento entre as grids */
-    gap: 20px;
+    gap: 10px;
 }
 .imagens div {
     padding: 10px;
     background-color: rgb(196, 196, 196);
-    border-radius: 20px;
+    border-radius: auto;
     font-size: 10px;
 }
+
+
