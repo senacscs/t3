@@ -6,7 +6,7 @@
 }
 body {
     /* fundo */
-    background-color: whitesmoke ;
+    background-color: rgb(202, 40, 40) ;
 }
 #title {
     /* alinhar o titulo e aplicar tamanho */
@@ -25,7 +25,7 @@ body {
     display: grid;
     /* alinhar o conteudo no centro */
     justify-content: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(29, 62, 121);
     /* colocar no meio da pag */
     margin-left: auto;
     margin-right: auto;
@@ -45,14 +45,14 @@ body {
     /* colocar grid nas geladeira */
     display: grid;
     /* configurar 2 colunas */
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     text-align: center;
     /* colocar um espaçamento entre as grids */
     gap: 20px;
 }
 .imagens div {
-    padding: 10px;
+    padding: 12px;
     background-color: rgb(196, 196, 196);
-    border-radius: 20px;
-    font-size: 10px;
+    border-radius: 25px;
+    font-size: 11px;
 }
