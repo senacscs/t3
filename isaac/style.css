@@ -5,7 +5,7 @@ body {
     text-shadow: 8px 8px 10px #0000008c;  
     background: linear-gradient(-60deg,red, black, blue, red);
     background-size: 400% 400%;
-    margin-bottom: 100px;
+    margin-bottom: 10%;
 }
 
 body, ul, li, p {
