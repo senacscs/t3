@@ -20,6 +20,7 @@ const activitiesStorage = [
   {
     name: "Oficinas",
     subject: "Técnico",
+    image: "oficinas.svg",
     date: new Date(2023, 5, 29),
     url: "oficinas",
     instructions: "Oficinas que pretendem desenvolver algum conceito relacionado ao desenvolvimento web.",
