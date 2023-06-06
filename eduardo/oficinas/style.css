@@ -3,27 +3,42 @@
 }
 
 body {
-    background-image:linear-gradient(90deg, #57AD57, #42AD42) ;
+    background-image:linear-gradient(90deg, #033F63, #28666E) ;
 }
 
 .links {
-    background-color: rgba(222, 184, 135, 0.539);
-    width: 40%;
+    background-color: #96976be3;
+    width: 20%;
     margin: auto;
-    height: auto;
     margin-top: 20px;
-    display: flex;
+    border-radius: 8px;
 }
 
 header {
-    background-color: #6880AD;
+    background-color: #FEDC97;
     width: 50%;
+    height: auto;
     margin: auto;
     border-radius: 12px;
 }
 
 h1 {
     text-align: center;
-    color: #ad2368;
+    color: #033F63;
     margin-top: 10px;
+}
+
+li #pad {
+    margin-top: 0;
+}
+
+li {
+    list-style-type: none;
+    padding-top: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    padding-left: 26.5%;
 }
