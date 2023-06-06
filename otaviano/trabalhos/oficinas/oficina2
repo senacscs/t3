@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 <body>
     <div class="container">
-            <h1 id="title">TIPOS DE PICAPAU</h1>
+            <h1 id="title">TIPO DE PICAPAU</h1>
             <h2 id="name">Por </h2>
         <div class="imagens">
             <div class="2portas">
