@@ -3,8 +3,8 @@ body {
     color: white;
    	margin: 0;
     text-shadow: 8px 8px 10px #0000008c;  
-    background: linear-gradient(-60deg,red, black, blue, red);
-    background-size: 400% 400%;
+    background: linear-gradient(60deg,red, rgb(2, 195, 18), blue, red);
+    background-size: 100%;
     margin-bottom: 10%;
 }
 
@@ -21,7 +21,8 @@ body, ul, li, p {
     flex-wrap: wrap; /*quando a tela estiver pequena faz um item ir abaixo do outro */
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 .menu {
@@ -37,7 +38,7 @@ body, ul, li, p {
     padding: 10px;
 }
 a, p {
-    font-size: 30px;
+    font-size: 1.4em;
 }
 
 a {
@@ -47,6 +48,7 @@ a {
 }
 a:hover {
 	color: black;
+    transition: 0.5s;
 }
 
 h1 {
@@ -54,14 +56,14 @@ h1 {
 	color: gray;
 }
 h2 {
-    margin-top: 100px;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    font-size: 50px;
+    margin-top: 0.7em;
+    margin-bottom: 0.4em;
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+    font-size: 2.5em;
 }
 
 img {
-    max-width: 800px;
     display: block;
 }
 
@@ -74,16 +76,41 @@ img {
     padding: 0px;
     align-items: center;
     background-color: rgba(0, 0, 0, 0);
-    border-radius: 20px;
     grid-template-rows: auto auto;
 }
 
 .gridc-item {
-    width: 800px;
+    width: 35em;
     justify-self: center;
     background-color: rgba(255, 0, 43, 0);
     display: grid;
 }
+
+.gridc-item img {
+    grid-column: 1;
+    grid-row: 1/3;
+    align-self: end;
+    width: 100%;
+} 
+.gridc-item a {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    color: white;
+    grid-column: 1;
+    grid-row: 3;
+    align-self: end;
+}
+.gridc-item a:hover {
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+
+
+li {
+    list-style-position: inside;
+}
+
 /* .gridc-item a {
     justify-self: start;
 } */
@@ -91,32 +118,10 @@ img {
 /* .gridc-item:nth-child(1) {
     grid-row: 1 / 3 ;
 } */
-.gridc-item img {
-    grid-column: 1;
-    grid-row: 1/3;
-    align-self: end;
-    width: 100%;
-} 
-.gridc-item p {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 10px;
-    color: white;
-    grid-column: 1;
-    grid-row: 2;
-    align-self: end;
-}
-.gridc-item p:hover {
-    color: black;
-}
-
-li {
-    list-style-position: inside;
-}
-
 
 /* CSS FLEXBOX  */
 
-.flex {
+/* .flex {
     display: flex;
     flex-wrap: wrap;
     max-width: 800px;
@@ -126,11 +131,11 @@ li {
 .flex > div {
     flex: 1 1 200px;
     margin: 10px;
-}
+} */
 
 /* CSS GRID1 */
 
-.grid1 {
+/* .grid1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 800px;
@@ -165,11 +170,11 @@ li {
         grid-row: auto;
         order: -1;
     }
-}
+} */
 
 /* CSS Grid 2 */
 
-.grid2 {
+/* .grid2 {
     display: grid;
     grid-template-columns: 1fr 200px;
     grid-gap: 20px;
@@ -194,11 +199,11 @@ li {
         flex: 1 1 200px;
         margin: 0 10px;
     }
-}
+} */
 
 /* SECTION GRID 3 */
 
-.grid3 {
+/* .grid3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
@@ -228,4 +233,4 @@ li {
     grid-column: 1;
     grid-row: 2;
     align-self: end;
-}
+} */
