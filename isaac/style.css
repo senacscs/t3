@@ -21,12 +21,12 @@ body, ul, li, p {
     flex-wrap: wrap; /*quando a tela estiver pequena faz um item ir abaixo do outro */
     justify-content: space-between;
     align-items: center;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
 }
-
 .menu {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .menu li {
@@ -36,6 +36,10 @@ body, ul, li, p {
 .menu li a {
     display: block;
     padding: 10px;
+    border-style: solid;
+    border-width: 0.1em;
+    border-radius: 23px;
+    border-color: white; 
 }
 a, p {
     font-size: 1.4em;
@@ -46,14 +50,17 @@ a {
 	color: white;
     text-shadow: 8px 8px 10px black;
 }
-a:hover {
+.menu li a:hover {
 	color: black;
+    border-color: white;
+    background-color: white;
     transition: 0.5s;
 }
 
 h1 {
     font-size: 50px;
 	color: gray;
+
 }
 h2 {
     margin-top: 0.7em;
@@ -61,15 +68,19 @@ h2 {
     margin-left: 0.6em;
     margin-right: 0.6em;
     font-size: 2.5em;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 img {
     display: block;
+    border-top-left-radius: 0.3em;
+    border-top-right-radius: 0.3em;
 }
 
 .gridc {
     display: grid;
-    grid-template-columns: auto auto ;
+    grid-template-columns: 1fr 1fr;
     padding: 0px;
     margin: 10px;
     grid-gap: 2vw;
@@ -79,11 +90,32 @@ img {
     grid-template-rows: auto auto;
 }
 
+@media (max-width: 90em) {
+    .gridc {
+      grid-template-columns: 1fr;
+    }
+  }
+
+@media (max-width: 60.1866em) {
+    .menu {
+        margin-bottom: 2em;
+        gap: 0.5em;
+    }
+
+}
+
 .gridc-item {
-    width: 35em;
+    width: 70%;
     justify-self: center;
     background-color: rgba(255, 0, 43, 0);
     display: grid;
+}
+.gridc-item {
+    z-index: 2;
+    border-style: solid;
+    border-width: 0.25em;
+    border-color: black;
+    border-radius: 10px; 
 }
 
 .gridc-item img {
@@ -99,13 +131,12 @@ img {
     grid-column: 1;
     grid-row: 3;
     align-self: end;
+    font-size: 120%;
 }
 .gridc-item a:hover {
     color: rgb(0, 0, 0);
     transition: 0.5s;
 }
-
-
 
 li {
     list-style-position: inside;
