@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1 class="titulo">forms</h1>
+    <form>
+      <label for="nome">vulgo</label>
+      <input placeholder="vulgo" type="text" name="nome" id="name" minlength="5" required/>
+      <label for="email">tua rota</label>
+      <input placeholder="rota" type="email" name="email" id="email" required/>
+      <label for="senha">key 🔑</label>
+      <input placeholder="a tua key 🔑" type="password" name="senha" id="password" minlength="5" maxlength="15" required/>
+      <label for="confirma">confirma 🔑</label>
+      <input placeholder="confirma ai a 🔑" type="password" name="senha" id="confirm-password" minlength="5" maxlength="15" required/>
+      <label for="mensagem">msg</label>
+      <textarea name="mensagem" id="mensagem" placeholder="msg?"></textarea>
+      <button type="submit" data-button>envia</button>
+    </form>
+  </body>
+</html>
