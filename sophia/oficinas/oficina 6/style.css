@@ -1,0 +1,130 @@
+* {
+    margin: 0; /*Define a margem de todos os elementos como zero. A margem é o espaço ao redor de um elemento.*/
+    padding: 0; /*Define o preenchimento interno de todos os elementos como zero. O preenchimento é o espaço entre o conteúdo de um elemento e sua borda.*/
+    box-sizing: border-box; /*Define o modelo de caixa como "border-box" para todos os elementos. 
+    O modelo de caixa determina como o tamanho total de um elemento é calculado e inclui o conteúdo, o preenchimento e a borda. 
+    Com o valor "border-box", o tamanho total do elemento é definido pela largura e altura especificadas, e o conteúdo e o preenchimento são ajustados dentro dessa caixa.*/
+  }
+  
+  body {
+    min-height: 100vh; /*Define a altura mínima do elemento body como 100% da altura da viewport. Isso garante que o conteúdo da página ocupe pelo menos toda a altura visível na tela.*/
+    display: grid; /*Define o modo de exibição do elemento body como uma grade. O sistema de grade permite organizar e posicionar os elementos da página em linhas e colunas.*/
+    place-items: center; /*Centraliza os itens dentro do elemento body tanto verticalmente como horizontalmente na grade.*/
+    padding: 1rem; /*Define um preenchimento interno de 1 unidade de medida rem para o elemento body. O preenchimento cria um espaço entre o conteúdo do body e suas bordas.*/
+    background: #7e0045; /*Define a cor de fundo do elemento body como um tom de cinza escuro*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; /*Define a família de fontes para o conteúdo do elemento body. 
+      Essa lista de fontes indica as preferências de fonte do sistema, como "system-ui", "Segoe UI", "Roboto", entre outras. 
+      Se a primeira fonte não estiver disponível, o navegador tentará usar a próxima fonte da lista.*/
+  }
+  
+  form {
+    width: 100%; /*Define a largura do elemento <form> como 100% do espaço disponível em seu contêiner pai. Isso fará com que o <form> ocupe todo o espaço horizontal disponível.*/
+    max-width: 30rem; /*Define a largura máxima do elemento <form> como 30 unidades de medida rem. Isso limitará a largura máxima do <form> a um valor específico, 
+    garantindo que ele não se torne muito largo em telas maiores.*/
+  }
+  
+  label,
+  input,
+  textarea,
+  button {
+    display: block; /*Define o modo de exibição dos elementos <label>, <input>, <textarea> e <button> como block. 
+    O valor block faz com que esses elementos sejam exibidos em uma linha separada, ocupando toda a largura disponível. 
+    Isso significa que cada um desses elementos será exibido em uma nova linha, um abaixo do outro.*/
+  }
+  
+  input,
+  textarea,
+  button {
+    width: 100%; /*Define a largura dos elementos <input>, <textarea> e <button> como 100% do espaço disponível em seu contêiner pai. 
+    Isso fará com que eles ocupem toda a largura disponível horizontalmente.*/
+    font: inherit; /*Define a propriedade font desses elementos para herdar a fonte do elemento pai. Isso significa que eles usarão a mesma fonte definida no elemento pai.*/
+    padding: 1.25rem; /*Define um preenchimento interno de 1.25 unidades de medida rem para esses elementos. O preenchimento cria um espaço entre o conteúdo dos elementos e suas bordas.*/
+    font-weight: 700; /*Define o peso da fonte dos elementos como 700, que representa uma fonte em negrito. Isso deixará o texto nesses elementos com uma aparência mais enfatizada.*/
+  }
+  
+  input,
+  textarea {
+    margin-bottom: 1rem; /*Define uma margem inferior de 1 unidade de medida rem para os elementos <input> e <textarea>. Isso cria um espaço entre esses elementos e o próximo elemento abaixo deles.*/
+    color: rgb(173, 233, 255); /*Define a cor do texto dos elementos <input> e <textarea> como branco.*/
+    background: #005244; /*Define a cor de fundo dos elementos <input> e <textarea> como um tom de cinza escuro*/
+    border: 0.125rem solid transparent; /*Define uma borda para os elementos <input> e <textarea>. A borda é sólida, com uma largura de 0.125 unidades de medida rem e transparente, tornando-a invisível.*/
+    border-radius: 1.125rem; /*Define o raio de borda dos elementos <input> e <textarea> como 1.125 unidades de medida rem. Isso arredonda os cantos desses elementos.*/
+    transition: border-color 0.3s, box-shadow 0.3s; /*Define uma transição suave de 0.3 segundos para as propriedades border-color e box-shadow dos elementos <input> e <textarea>.
+    Isso cria um efeito de transição suave quando essas propriedades mudam de valor.*/
+  }
+  
+  input:hover,
+  input:focus,
+  textarea:hover,
+  textarea:focus {
+    outline: none; /*Remove a linha de contorno que geralmente aparece quando um elemento está em foco. Isso significa que a borda de contorno não será exibida ao usuário quando esses elementos estiverem em estado de foco.*/
+    border-color: rgb(242, 54, 132) !important; /*Define a cor da borda dos elementos <input> e <textarea> como um tom de azul quando eles estão em estado de "hover" ou "focus". 
+    O !important é utilizado para garantir que essa propriedade seja aplicada, mesmo se houver outras regras de estilo que afetem a cor da borda.*/
+    box-shadow: 0 0 0 0.3125rem #023688; /*Adiciona uma sombra ao redor dos elementos <input> e <textarea> quando estão em estado de "hover" ou "focus". 
+    A sombra é uma área escura que circunda os elementos e cria uma aparência destacada. Essa sombra possui um deslocamento horizontal e vertical de 0, um desfoque de 0 e uma expansão de 0.3125 unidades de medida rem. 
+    A cor da sombra é um tom de azul escuro*/
+  }
+  
+  label {
+    margin-bottom: 0.5rem; /* Define uma margem inferior de 0.5 unidades de medida rem para os elementos <label>. Isso cria um espaço entre esses elementos e o próximo elemento abaixo deles.*/
+    color: #e5ffbb; /*Define a cor do texto dos elementos <label> como um tom de cinza claro*/
+  }
+  
+  textarea {
+    min-height: 12.5rem; /*Define a altura mínima dos elementos <textarea> como 12.5 unidades de medida rem. 
+    Isso garante que o <textarea> tenha uma altura mínima, mesmo quando não há conteúdo inserido. Isso evita que o <textarea> fique muito pequeno e difícil de visualizar.*/
+    resize: vertical; /*Permite que o usuário redimensione verticalmente o <textarea>. O valor vertical permite que o usuário altere a altura do <textarea> arrastando a borda inferior. 
+    Isso dá mais flexibilidade ao usuário para ajustar o tamanho do <textarea> de acordo com suas necessidades.*/
+  }
+  
+  button {
+    border: none; /*Remove a borda do elemento <button>. Isso significa que não haverá uma linha visível ao redor do botão.*/
+    border-radius: 99px; /*Define o raio de borda do elemento <button> como 99 unidades de medida de pixel. Isso torna os cantos do botão extremamente arredondados, criando uma aparência circular.*/
+    color: rgb(114, 178, 132); /*Define a cor do texto do elemento <button> como branco.*/
+    background: #a5d5ff; /*Define a cor de fundo do elemento <button> como um tom de azul*/
+    cursor: pointer; /*Altera o cursor do mouse para o ícone de uma mão apontando ao passar o mouse sobre o elemento <button>. Isso indica visualmente aos usuários que o botão é clicável.*/
+    transition: 0.3s; /* Aplica uma transição suave de 0.3 segundos para todas as mudanças de propriedades no elemento <button>. 
+    Isso cria um efeito de transição suave quando o botão é hoverado ou clicado.*/
+  }
+  
+  button:hover,
+  button:focus {
+    outline: none; /*Remove a linha de contorno que geralmente aparece quando um elemento está em foco. 
+    Isso significa que a borda de contorno não será exibida ao usuário quando esses elementos estiverem em estado de foco.*/
+    background: #1cd3a2; /*Define a cor de fundo dos elementos <button> como um tom mais escuro de azul quando estão em estado de "hover" ou "focus". 
+    Isso altera a cor de fundo do botão para fornecer um feedback visual ao usuário quando o botão está interativo.*/
+  }
+  
+  button:disabled {
+    cursor: not-allowed; /*Define o estilo do cursor do mouse para "not-allowed" (não permitido) quando o botão está desativado. 
+    Isso indica visualmente aos usuários que o botão não está disponível para interação.*/
+    background: #c927ff; /* Define a cor de fundo dos elementos <button> como um tom de cinza escuro quando estão no estado de "disabled". 
+    Isso altera a cor de fundo do botão para diferenciá-lo visualmente dos botões ativados.*/
+  }
+  
+  .success,
+  .error {
+    text-align: center; /*Define o alinhamento do texto dos elementos com as classes .success e .error como centralizado. Isso centraliza o texto dentro desses elementos horizontalmente.*/
+  }
+  
+  .success {
+    color: rgb(92, 111, 255); /*Define a cor do texto dos elementos com a classe .success como verde amarelado (greenyellow).*/
+  }
+  
+  .error {
+    color: rgb(9, 31, 118); /*Define a cor do texto dos elementos com a classe .error como tomate.*/
+  }
+
+  .titulo {
+    text-align: center; /*Define o alinhamento do texto dos elementos com a classe .titulo como centralizado. Isso centraliza o texto dentro desses elementos horizontalmente.*/
+    color: rgb(239, 255, 165); /*Define a cor do texto dos elementos com a classe .titulo como um tom de azul claro.*/
+  }
+  
+  input:invalid{ /*Seleciona os elementos <input> que estão em estado inválido. Isso ocorre quando o usuário inseriu um valor inválido ou obrigatório em um campo de entrada.*/
+    border-color: rgb(255, 0, 144); /*Define a cor da borda desses elementos <input> inválidos como vermelho. Isso altera a cor da borda para indicar visualmente ao usuário que o valor inserido é inválido.*/
+  }
+
+  input:valid{ /*Seleciona os elementos <input> que estão em estado válido. Isso ocorre quando o usuário inseriu um valor válido em um campo de entrada.*/
+    border-color: rgb(69, 255, 69); /*Define a cor da borda desses elementos <input> válidos como verde. Isso altera a cor da borda para indicar visualmente ao usuário que o valor inserido é válido.*/
+  }
