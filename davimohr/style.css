@@ -1,12 +1,13 @@
 html{
-    background: rgb(0, 0, 0);
-    width:100%;
-    height: 100%;
+    background-color: rgb(33, 33, 33);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
 }
    
     
-.box1{
- background-color: rgb(47, 47, 47);
+.box{
+ background-color: #8aff00;
  border-radius: 20px;
  margin-right: auto;
  width: 450px;
@@ -15,29 +16,31 @@ html{
 }
 #index{
     font-size: 72px;
-    background: -webkit-linear-gradient(#3300ff, #d400ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-left: 30%;
+    color: #FE0472;
+    text-align:center;
 }
 img{
  border-radius: 20px;
- margin-left:5%;
+ margin-left: 25px;
  margin-bottom: 5%;
+ object-fit: cover;
 }
 h2 {
-    margin-left: 23%;
-}
-.box2{
-    background-color: rgb(47, 47, 47);
-    border-radius: 20px;
-    margin-right:auto;
-    width: 450px;
-    margin-left: auto;
+    text-align: center;
+    
 }
 
 .display {
+    margin-left: 8em;
+    margin-right: 8em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    gap: 5em;
 }
+.box:hover {
+    background-color: #FE0472;
+    transition: 0.5s;
+}
+
+
