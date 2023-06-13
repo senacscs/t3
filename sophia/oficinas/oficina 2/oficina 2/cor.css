@@ -6,7 +6,7 @@
 }
 body {
     /* fundo */
-    background-color: rgb(255, 140, 226) ;
+    background-color: rgb(77, 72, 71) ;
 }
 #title {
     /* alinhar o titulo e aplicar tamanho */
@@ -25,13 +25,13 @@ body {
     display: grid;
     /* alinhar o conteudo no centro */
     justify-content: center;
-    background-color: rgb(255, 151, 208);
+    background-color: rgb(255, 255, 255);
     /* colocar no meio da pag */
     margin-left: auto;
     margin-right: auto;
     /* arredondar a borda e colocar sombra */
     border-radius: 20px;
-    box-shadow: 3px 2px 4px rgba(15, 3, 150, 0.5);
+    box-shadow: 3px 2px 4px rgb(0,0,0,0.5);
     /* adicionar margem */
     margin-top: 20px;
     margin-bottom: 20px;
@@ -39,7 +39,7 @@ body {
 }
 .imagens img {
     /* altura maxima */
-    max-height: 20vw;
+    max-height: 15vw;
 }
 .imagens {
     /* colocar grid nas geladeira */
@@ -52,7 +52,7 @@ body {
 }
 .imagens div {
     padding: 10px;
-    background-color: rgb(255, 156, 224);
+    background-color: rgb(196, 196, 196);
     border-radius: 20px;
     font-size: 10px;
 }
