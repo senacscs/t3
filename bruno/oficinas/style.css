@@ -1,0 +1,11 @@
+body{
+    background-color: bisque;
+}
+h1{
+    color: blue;
+    text-align: center;
+}
+li{
+    text-align: center;
+    list-style: none;
+}
