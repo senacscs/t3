@@ -1,0 +1,49 @@
+body {
+
+        background-repeat: no-repeat;
+    
+        background-size: 100%;
+    
+        background-image: url(https://programadoresdepre.com.br/wp-content/uploads/2022/05/gradiente-1024x486.jpg)
+    
+    }
+    
+    
+    
+    
+    h1, a, p, h2, ul {
+    
+        color: rgb(249, 249, 249);
+    
+        text-align: center;
+    
+    }
+    
+    
+    
+    
+    .meio {
+    
+        text-align: center;
+    
+    }
+
+    nav {
+        text-align: right;
+    }
+
+    nav {
+        text-align: right;
+        width: 90%;
+        height: 90%;
+    } 
+
+    .direita {
+        text-align: right;
+        padding: 80%;
+        padding-right: 80px;
+    }
+
+    li {
+        list-style-type: none;
+      }
