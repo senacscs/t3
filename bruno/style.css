@@ -1,8 +1,8 @@
 
-body {background-color: rgb(240, 240, 240);
-    position: relative;
-    width: 100vw;
-    margin: 0px;
+body {background-color: rgb(253, 221, 175);
+   margin-top: 0%;
+   margin-left: 0%;
+   margin-right: 0%;
 }
     h1, li {
     text-align: center;
@@ -18,30 +18,32 @@ body {background-color: rgb(240, 240, 240);
       
     }
   img {
-    width: 400px;
-    margin-left: 5%;
+    width: 300px;
+    margin-left: 7%;
     margin-bottom: 5%;
     border-radius: 20px;
+    height: 400px;
   }  
   .display{
-    margin-left: 8em;
-    margin-right: 8em;
+    margin-left: 2em;
+    margin-right: 2em;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    gap: 5em;
+    gap: 0,8em;
   }
 .box1 {
   background-color: rgb(0, 0, 0);
   border-radius: 20px;
   margin-right: 80%;
-  width: 450px;
+  width: 350px;
+  height: 500px;
   margin-left: 5%;
   color: ghostwhite;
 }
 h2 {
   text-align: center;
-  margin-top: 20%;
+  
 }
 .frontend { 
   color: black;
@@ -57,6 +59,8 @@ h2 {
     justify-content: space-between;
     align-items:center;
     padding: 1;
+    width: 100%;
+    margin: 0%;
 }
 .menu{
   display: flex;
@@ -81,12 +85,12 @@ h2 {
     font-size: 0.8rem;
 }
 .meuindex{
-  color: #7d7d7d;
+  color: #000000;
   
 }
 .linha{
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 33em;
+  margin-right: 33em;
 }
 .button {
   text-decoration: none;
@@ -103,5 +107,17 @@ h2 {
 }
 .insta {
   width: 100px;
+  margin-right: 1em;
+}
+.insta{
+  width: 120px;
+  height: 90px;
   margin-right: 30px;
+}
+.podepa {
+ gap: 0,5em;
+  margin-right: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
