@@ -1,0 +1,14 @@
+body {
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-image: url(https://cdn.create.vista.com/api/media/medium/198501950/stock-photo-black-background-purple-pink-smoke?token=)
+}
+
+h1, a, p, h2, ul {
+	color: rgb(249, 249, 249);
+	text-align: center;
+}
+
+.meio {
+	text-align: center;
+}
