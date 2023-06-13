@@ -346,7 +346,7 @@
     width:9px;
     height:50px;
      background:#ffae24;
-    webkit-transform: rotate(121deg);
+    text-transform: rotate(121deg);
          -moz-transform: rotate(121deg);
           -ms-transform: rotate(121deg);
            -o-transform: rotate(121deg);
@@ -360,7 +360,7 @@
     width:45px;
     height:9px;
      background:#ffae24;
-    webkit-transform: rotate(-21deg);
+    text-transform: rotate(-21deg);
          -moz-transform: rotate(-21deg);
           -ms-transform: rotate(-21deg);
            -o-transform: rotate(-21deg);
@@ -395,7 +395,7 @@
     width:9px;
     height:60px;
      background:#ffae24;
-    webkit-transform: rotate(121deg);
+    text-transform: rotate(121deg);
          -moz-transform: rotate(121deg);
           -ms-transform: rotate(121deg);
            -o-transform: rotate(121deg);
@@ -409,7 +409,7 @@
     width:45px;
     height:9px;
      background:#ffae24;
-    webkit-transform: rotate(-99deg);
+    text-transform: rotate(-99deg);
          -moz-transform: rotate(-99deg);
           -ms-transform: rotate(-99deg);
            -o-transform: rotate(-99deg);
