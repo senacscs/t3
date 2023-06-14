@@ -10,8 +10,8 @@
     --swiffy-slider-item-reveal: 0rem;
     --swiffy-slider-item-ratio: 2/1;
     --swiffy-slider-item-count: 1;
-    --swiffy-slider-nav-light: #fff;
-    --swiffy-slider-nav-dark: #333;
+    --swiffy-slider-nav-light: #000000;
+    --swiffy-slider-nav-dark: #616161;
     --swiffy-slider-nav-zoom: 1;
     --swiffy-slider-track-opacity: 0.1;
     --swiffy-slider-track-height: 0;
