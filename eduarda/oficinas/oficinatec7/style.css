@@ -668,3 +668,6 @@
         --swiffy-slider-snap-align: unset
     }
 }
+body{
+    text-align: center;
+}
