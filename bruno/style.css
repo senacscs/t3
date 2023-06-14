@@ -91,6 +91,7 @@ h2 {
 .linha{
   margin-left: 33em;
   margin-right: 33em;
+  background-color: black;
 }
 .button {
   text-decoration: none;
@@ -120,4 +121,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+}
+.text{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
