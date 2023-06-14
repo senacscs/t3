@@ -1,11 +1,44 @@
 body{
-    background-color: bisque;
+    background-color: rgb(255, 251, 246);
 }
 h1{
     color: blue;
     text-align: center;
 }
-li{
-    text-align: center;
-    list-style: none;
+.box {
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-right: 80%;
+    width: 250px;
+    height: 325px;
+    margin-left: 5%;
+    color: ghostwhite;
+}
+img{
+    border-radius: 10px;
+    width: 200px;
+   margin-bottom: 50px;
+   margin-left: 25px;
+    
+}
+h2 {
+text-align: center;
+}
+.display{
+    margin-left: 6em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 2em;
+}
+.ofc10 {
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 250px;
+    height: 325px;
+    margin-left: 39.5%;
+    color: ghostwhite;
 }
