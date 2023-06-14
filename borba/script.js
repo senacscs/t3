@@ -1,5 +1,5 @@
 alert("Bem vindo ao meu site");
-console.log("web dos links	");
+console.log("index");
 const greetingMessage =() => {
    let h = new Date(). getHours();
    console.log(h);

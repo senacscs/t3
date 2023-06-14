@@ -1,26 +1,46 @@
+* { 
+    /* Essa parte faz todos os elementos terem isso como base */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
 body {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvT2r4Dzq17grXx7jO4fVuqA0eHlantulX2HSYgOYee5K_IEaEKZmmckvEKwZjz6bfJ8c&usqp=CAU");
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-color: rgb(179, 176, 176) ;
 }
-h1 {
-    font-size: 70px;
-    text-align:left;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:black;
+#title {
     text-align: center;
-}
-.links {
-    color:black;
-    font-size: 35px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-}
-p {
     font-size: 40px;
-    text-align:left;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:black;
-    text-align: center;
 }
-
+#name {
+    text-align: end;
+    font-size: 20px;
+}
+.container {
+    max-width: 60vw;
+    display: grid;
+    justify-content: center;
+    background-color: rgb(64, 63, 63);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    box-shadow: 3px 2px 4px rgb(0,0,0,0.5);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.imagens img {
+    max-height: 20vw;
+    border-radius: 10px;
+}
+.imagens {
+    display: grid;
+    grid-template-columns: auto ;
+    text-align: center;
+    gap: 60px;
+}
+.imagens div {
+    padding: 10px;
+    background-color: rgb(196, 196, 196);
+    border-radius: 20px;
+    font-size: 10px;
+}
