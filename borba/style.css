@@ -11,9 +11,13 @@ body {
     text-align: center;
     font-size: 40px;
 }
+h2 a {
+    color: black;
+    text-decoration: none;
+}
 #name {
-    text-align: end;
-    font-size: 20px;
+    text-align: center;
+    font-size: 1.75em;
 }
 .container {
     max-width: 60vw;
@@ -34,10 +38,29 @@ body {
 }
 .imagens {
     display: grid;
-    grid-template-columns: auto ;
+    grid-template-columns: auto auto ;
     text-align: center;
-    gap: 60px;
+    gap: 2em;
 }
+@media (max-width: 70em) {
+    .imagens {
+        grid-template-columns: auto;
+        gap: 3em;
+    }
+    .container {
+        max-width: 70vw
+        ;
+    }
+    .imagens div {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    img {
+        width: 100%;
+    }
+}
+
 .imagens div {
     padding: 10px;
     background-color: rgb(196, 196, 196);
