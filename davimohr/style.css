@@ -42,5 +42,7 @@ h2 {
     background-color: #FE0472;
     transition: 0.5s;
 }
-
+#index a {
+    text-decoration: none;
+}
 

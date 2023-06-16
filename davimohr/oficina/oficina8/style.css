@@ -1,16 +1,14 @@
 * {
-	z-index: 2;
+	z-index: 1;
 }
 body {
-	background:white ;
+	background:rgb(0, 0, 0) ;
 	text-align: center;
-	background-image: url(gift.gif);
 }
 .container {
 	align-content: center;
 	z-index: 20;
 	position: fixed;
-	left: 35%;
 }
 video {
 position: fixed;
@@ -21,7 +19,9 @@ width: 100vw;
 height: 100vh;
 }
 h1{
-	color: rgb(255, 255, 0);
+	color: #8aff00;
+	background-color: (rgba(255, 255, 255, 0));
+	text-align: center;
 }
 
 	
