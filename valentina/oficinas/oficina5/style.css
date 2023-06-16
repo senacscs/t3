@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    
+}
+
+html {
+    background-image: url(2454628.png);
+    background-size: cover;
+   
+}
+
+nav {
+    text-align: left;
+    margin-top: 20%;
+    margin-left: 160px;
+}
+nav a{
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    font-size: 25pt;
+    position: relative;
+    
+}
+
+nav a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color:#044969;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    right: 11%;
+    transition: 0.5s ease-in-out;
+}
+
+nav a:hover::after {
+    width: 90%;
+}
