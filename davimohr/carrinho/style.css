@@ -18,11 +18,6 @@ h1:hover,h1:hover{
 header {
     margin: auto;
     width: auto;
-    height: 5rem;
+    height: 4rem;
     background-color: black;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
 }
