@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62,5%;
+    background-color: rgb(255, 106, 0);
+}
+h1,h2{
+    color:rgb(92, 93, 92)
+}
+h1:hover,h1:hover{
+    color:rgb(106, 255, 0)
+}
+
+header {
+    margin: auto;
+    width: auto;
+    height: 5rem;
+    background-color: black;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
