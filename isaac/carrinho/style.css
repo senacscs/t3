@@ -1,0 +1,92 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #1d1e20;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+}
+
+nav, ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0.5em;
+    gap: 0.5em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 2em ;
+}
+
+/* a:hover {
+    color: white;
+    transition: 1s;
+} */
+
+.as:after {
+    content: "";
+    width: 0%;
+    height: 0.1em;
+    background-color:black;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    transition: 0.5s ease-in-out;
+}
+
+.as:hover:after {
+    width: 90%;
+}
+
+section {
+    width: 100%;
+    height: 10rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+article {
+    width: 100%;
+}
+
+
+[data-anima] {
+    opacity: 0;
+    transition: .5s;
+}
+
+[data-anima="esquerda"] {
+    transform: translate3d(-50px,0,0);
+}
+
+[data-anima="direita"] {
+    transform: translate3d(50px,0,0);
+}
+
+[data-anima="centro"] {
+    transform: translate3d(0,50px,0);
+}
+
+[data-anima].animacao {
+    opacity: 1;
+    transform: translate3d(0,0,0);   
+}
