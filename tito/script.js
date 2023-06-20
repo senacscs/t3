@@ -25,6 +25,14 @@ const activitiesStorage = [
     url: "oficinas",
     instructions: "Oficinas que pretendem desenvolver algum conceito relacionado ao desenvolvimento web.",
   },
+  {
+    name: "Carrinho de rolimã",
+    subject: "Física",
+    image: "carrinho.svg",
+    date: new Date(2023, 5, 29),
+    url: "carrinho",
+    instructions: "Site para mostrar o processo de criação do nosso carrinho de rolimã.",
+  },
 ];
 
 const activitiesElement = document.getElementById("activities");
