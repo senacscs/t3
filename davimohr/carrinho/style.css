@@ -1,13 +1,16 @@
-* {
+ * {
     margin: 0;
     border: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
     font-size: 62,5%;
     background-color: rgb(255, 106, 0);
+    scroll-behavior: smooth;
 }
+
 h1,h2{
     color:rgb(92, 93, 92)
 }
@@ -20,4 +23,34 @@ header {
     width: auto;
     height: 4rem;
     background-color: black;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.carrosel  {
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 250px;
+    width: 250px;
+}
+
+.container  {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+img     {
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+}
+
+footer {
+    background-color: rgb(250, 27, 27);
+    height: 11rem;
+    width: 100%;
 }
