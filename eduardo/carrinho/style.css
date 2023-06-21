@@ -1,0 +1,152 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(228, 130, 59);
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* inicio tamanho das fontes */
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+p, li {
+    font-size: 1.6rem;
+}
+
+/* termino tamanho das fontes */
+
+.carrinho   {
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    min-height: 100vh;
+    margin-left: 3em;
+}
+
+h1,h2{
+    color:rgb(92, 93, 92);
+}
+
+h1:hover,h1:hover{
+    color:rgb(106, 255, 0)
+}
+
+/* inicio menu */
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #23232e;
+    height: 8vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 40px;
+}
+
+/* fim menu */
+
+.carrossel  {
+    overflow: hidden;
+    width: 40rem;
+    border-radius: 0.6rem;
+    border: 0.5rem solid; 
+    border-color: rgb(35, 192, 11);
+}
+
+.container  {
+    display: flex;
+    transition: transform 1.0s ease-in-out;
+    transform: translateX(0);    
+}
+
+img     {
+    object-fit: cover;
+    width: 40rem;
+    height: 45rem;
+}
+
+.material {
+    background-image: linear-gradient(to top, rgb(35, 192, 11), rgb(23, 129, 7));
+    width: 30rem;
+    height: auto;
+    border-radius: 1.2rem;
+    margin: auto;
+    box-shadow: 0.5rem 0.5rem 2rem black;
+}
+
+.material h2 {
+    text-align: center;
+}
+
+.material li {
+    margin-left: 3rem;
+}
+
+footer {
+    background-color: #1b1e23;
+    height: auto;
+    width: 100%;
+}
+
+article {
+    margin-left: 20%;
+}
+
+footer h2 {
+    color: #ccc;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 45px;
+}
+
+footer p {
+    color: #ccc;
+}
+
+.endereco {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
