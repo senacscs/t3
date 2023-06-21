@@ -90,7 +90,7 @@ img {
     grid-template-rows: auto auto;
 }
 
-@media (max-width: 90em) {
+@media (max-width: 65em) {
     .gridc {
       grid-template-columns: 1fr;
     }

@@ -26,6 +26,8 @@ header {
     padding-top: 1em;
     padding-bottom: 1em ;
     background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
 }
 
 ul {

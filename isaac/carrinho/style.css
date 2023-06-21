@@ -16,8 +16,16 @@ header {
     padding-right: 0.8em;
 }
 
-nav, ul {
-    display: flex;
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 2.5em;
+    position: relative;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto  ;
     list-style: none;
     justify-content: space-between;
     padding: 0.5em;
@@ -30,27 +38,29 @@ nav, ul {
 a {
     text-decoration: none;
     color: black;
-    font-size: 2em ;
+    font-size: 10em;
 }
 
-/* a:hover {
+a:hover {
     color: white;
-    transition: 1s;
-} */
+    transition: 1s ease-in-out;
+}
 
-.as:after {
+li a::after{
     content: "";
     width: 0%;
     height: 0.1em;
-    background-color:black;
-    position: absolute;
-    left: 0%;
+    bottom: 6%;
     right: 0%;
-    transition: 0.5s ease-in-out;
+    left: 1%;
+    background-color:white;
+    border-radius: 0.1em;
+    position: absolute;
+    transition: 0.6s ease-in-out;
 }
 
-.as:hover:after {
-    width: 90%;
+li a:hover::after {
+    width: 100%;
 }
 
 section {
