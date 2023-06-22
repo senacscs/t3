@@ -17,3 +17,24 @@ if(elementos.length){
         animaScroll();
     })
 }
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    const carousel = document.querySelector(".carousel");
+    const images = carousel.querySelectorAll("img");
+    let currentIndex = 0;
+
+    function showImage(index) {
+        images.forEach(function(img) {
+            img.classList.remove("active");
+        });
+
+        images[index].classList.add("active");
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+    }
+
+    setInterval(nextImage, 3000); // Altera a imagem a cada 3 segundos
+});
