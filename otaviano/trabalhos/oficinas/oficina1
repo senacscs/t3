@@ -20,11 +20,11 @@
         .calculadora{
             position: absolute;
             background-color: black;
-            top: 50%;
-            transform: translate(-50%,-50%);
+            top: 10%;
+            transform: translate(-10%,-10%);
             border-radius: 15px;
             padding: 15px;
-            left: 50%
+            left: 10%
             
         }
         .botão{
