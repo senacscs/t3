@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+nav a {
+    color: black;
+    padding: 5px;
+    margin: 5px;
+    font-size: 25pt;
+    position: relative;
+
+}
+
+nav a::after {
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: rgb(255, 205, 4);
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    right: 11%;
+    transition: 0.5s ease-in-out;
+}
+
+nav a:hover::after {
+    width: 90%;
+
+}
+
+body {
+    background-color: #e5cdae;
+}
+
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: #a88262;
+    width: 200px;
+    height: 586px;
+    position: fixed;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.content h1 {
+    color: #1c1b1b;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqM_75ZhLOqaDP7rNrvxXIwduXFyz1DPkvM7lkMlq6ZPu7XCPsTsnNkayrHlqpv1xjpFw&usqp=CAU);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-color: rgb(176, 87, 135);
+    background-size: 250px;
+}
+
+
+
+.textao {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 100px;
+    padding-top: 0;
+    width: 900px;
+    height: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    font-size: 25px;
+}
