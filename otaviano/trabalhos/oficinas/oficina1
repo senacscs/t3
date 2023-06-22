@@ -20,16 +20,16 @@
         .calculadora{
             position: absolute;
             background-color: black;
-            top: 10%;
-            transform: translate(-10%,-10%);
+            top: 50%;
+            transform: translate(-50%,-50%);
             border-radius: 15px;
             padding: 15px;
-            left: 10%
+            left: 50%
             
         }
         .botão{
-            width: 50px;
-            height: 50px;
+            width: 10px;
+            height: 10px;
             font-size: 25px;
             margin: 3px;
             cursor: pointer;
