@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+}
+body {
+    background-color: darkkhaki;
+}
+header {
+    background-color:rgb(220, 214, 127) ;
+    box-shadow: 1px 1px 2px rgb(0,0,0,0.5);
+    display: flex;
+}
+header img {
+    width: 10vw;
+}
+header h1{
+    margin-top: 5vh;
+}
+header ul {
+    list-style-type: none;
+    display: flex;
+    margin-top: 3vh;
+}
+header li {
+    padding: 20px;
+    cursor: pointer;
+    align-self: center;
+}
+header li:hover {
+    background-color: darkkhaki;
+    border-bottom: 2px solid white;
+}
+.container {
+    background-color:rgb(220, 214, 127) ;
+    max-width: 70vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow:  1px 1px 2px rgb(0,0,0,0.5);
+}
+.container div ul {
+    list-style: decimal;
+}
+.container div {
+    margin-bottom: 5vh;
+}
+.container div img {
+    max-width: 50vw;
+    margin-left: 10vw;
+    margin-top: 5vh;
+}
+footer {
+    display: flex;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+footer img{
+    width: 5vw;
+}
+#git{
+    margin-left: 40vw;
+}
+#rodrik{
+    margin-top: 10vh;
+}
