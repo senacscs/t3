@@ -32,21 +32,6 @@ li, p {
 
 /* termino tamanho das fontes */
 
-.carrinho   {
-    align-items: center;
-    justify-content: center;
-    margin:0;
-    min-height: 100vh;
-    margin-left: 3em;
-}
-
-h1,h2{
-    color:rgb(0, 0, 0);
-}
-
-h1:hover,h1:hover{
-    color:rgb(106, 255, 0)
-}
 
 /* inicio menu */
 
@@ -67,12 +52,23 @@ a:hover {
     color: #fff;
 }
 
+
+
+
+
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #23232e;
     height: 8vh;
+    border-bottom: 4px solid #23c00b;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .nav-list {
@@ -93,6 +89,7 @@ nav {
     border-radius: 0.6rem;
     border: 0.5rem solid; 
     border-color: rgb(35, 192, 11);
+    margin: auto;
 }
 
 .container  {
@@ -109,7 +106,7 @@ img     {
 
 .material {
     background-image: linear-gradient(to top, rgb(35, 192, 11), rgb(23, 129, 7));
-    width: 30rem;
+    width: 40rem;
     height: auto;
     border-radius: 1.2rem;
     margin: auto;
@@ -141,6 +138,7 @@ footer h2 {
     padding-left: 45px;
 }
 
+
 footer p {
     color: #ccc;
 }
@@ -153,60 +151,186 @@ footer p {
 }
 
 .display {
-    margin-left: 2em;
-    margin-right: 30em;
+    display: grid;
+    
+    align-items: center;
+}
+
+.grid {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    align-items: center;
+    gap: 10px;
+}
+
+.isolados {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
-  
+    width: 700px;
+    margin: auto;
+    margin-top: 10px ;
 }
-  .texto{
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 3%;
-    
-  }  
 
-  .box {
-    background-color: rgb(228, 130, 59);
-    border-radius: 20px;
-    margin-right: 50em;
-    width: 840px;
-    height: 500px;
+.box {
+    background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(180, 180, 180));
+    border-radius: 10px;
+    margin-left: 15px;
+    width: 700px;
+    height: auto;
     margin-bottom: 12em;
+    box-shadow: 5px 5px 20px black;
 }
 
-.box2 {
-    background-color:  rgb(228, 130, 59);
-    border-radius: 20px;
-    margin-right: 80%;
-    width: 40rem;
-    margin-left: 5%;
-    margin-top: 1em;
+.box p {
+    padding-right: 10px;
+    margin-bottom: 5px;
+    text-align: justify;
 }
 
-.boxapresentacao{
-    background-color:  rgb(190, 183, 177);
-    border-radius: 20px;
-    width: 35em;
-    height: 22em;
-    margin-left: 23%;
+.pesquisa   {
+    background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(180, 180, 180));
+    border-radius: 10px;
+    width: 900px;
+    height: auto;
+    box-shadow: 5px 5px 20px black;
+    margin: auto;
+    margin-bottom: 40px;
 }
 
-.video1 {
-    margin-top: 5%;
+.pesquisa p {
+    padding: 0 8px 8px 8px;
+    text-align: justify;
 }
 
-.apresentacao{
-    font-size: 2rem;
+.pesquisa h2 {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.pesquisa h3 {
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.apresentacao {
+    border: 5px solid #23c00b;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.qlqr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 830px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.finalizacao {
+    border: 5px solid #23c00b;
+    border-radius: 10px;
+    margin: auto;
+}
+
+h4 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.xvideos {
+    width: 300px;
+    border-radius: 10px;
+    border: 5px solid;
+    border-color: #23c00b;
+    margin: auto;
+}
+
+.imagens    {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.aolado{
+    border: 5px solid;
+    width: 300px;
+    height: 300px;
+    border-color:  #23c00b;
+    border-radius: 10px;
+    margin-left: 5em;
+    margin-top: 7em;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 11vh;
+    margin-bottom: 30px;
+}
+
+.rese {
+    background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(180, 180, 180));
+    width: 900px;
+    height: auto;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 20px black;
+}
+
+.rese h2 {
+    text-align: center;
+}
+
+.rese p {
+    text-align: justify;
+    padding: 5px;
+}
+
+#construcao {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.topo   {
+    margin-left: 1em;
+}
+
+.grupo {
     text-align: center;
     margin-top: 20px;
 }
 
-h4{
-    margin-top: 20px;
+#finalizacao {
+    text-align: center;
+    margin: 20px 0;
 }
-.fonteresenha {
-    font-family: Arial, sans-serif;
-    font-weight: 530;
+
+.insta {
+    width: 150px;
+    height: 150px;
+    list-style-type: none;
+}
+
+.podepa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    margin-left: 8em;
+}
+
+.meio {
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.partefinal {
+    list-style-type: none;
+    color: rgb(194, 194, 194);
+    
 }
