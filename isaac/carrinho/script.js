@@ -38,3 +38,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     setInterval(nextImage, 3000); // Altera a imagem a cada 3 segundos
 });
+
+var swiper = new Swiper(".swiper", {
+    cssMode: true,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    keyboard: true,
+  });
