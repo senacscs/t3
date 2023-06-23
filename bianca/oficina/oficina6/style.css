@@ -11,7 +11,7 @@
     display: grid; /*Define o modo de exibição do elemento body como uma grade. O sistema de grade permite organizar e posicionar os elementos da página em linhas e colunas.*/
     place-items: center; /*Centraliza os itens dentro do elemento body tanto verticalmente como horizontalmente na grade.*/
     padding: 1rem; /*Define um preenchimento interno de 1 unidade de medida rem para o elemento body. O preenchimento cria um espaço entre o conteúdo do body e suas bordas.*/
-    background: #002ffe; /*Define a cor de fundo do elemento body como um tom de cinza escuro*/
+    background: #3300ff; /*Define a cor de fundo do elemento body como um tom de cinza escuro*/
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; /*Define a família de fontes para o conteúdo do elemento body. 
       Essa lista de fontes indica as preferências de fonte do sistema, como "system-ui", "Segoe UI", "Roboto", entre outras. 
@@ -47,7 +47,7 @@
   textarea {
     margin-bottom: 1rem; /*Define uma margem inferior de 1 unidade de medida rem para os elementos <input> e <textarea>. Isso cria um espaço entre esses elementos e o próximo elemento abaixo deles.*/
     color: white; /*Define a cor do texto dos elementos <input> e <textarea> como branco.*/
-    background: #0036f8; /*Define a cor de fundo dos elementos <input> e <textarea> como um tom de cinza escuro*/
+    background: #ffffff; /*Define a cor de fundo dos elementos <input> e <textarea> como um tom de cinza escuro*/
     border: 0.125rem solid transparent; /*Define uma borda para os elementos <input> e <textarea>. A borda é sólida, com uma largura de 0.125 unidades de medida rem e transparente, tornando-a invisível.*/
     border-radius: 1.125rem; /*Define o raio de borda dos elementos <input> e <textarea> como 1.125 unidades de medida rem. Isso arredonda os cantos desses elementos.*/
     transition: border-color 0.3s, box-shadow 0.3s; /*Define uma transição suave de 0.3 segundos para as propriedades border-color e box-shadow dos elementos <input> e <textarea>.
@@ -59,9 +59,9 @@
   textarea:hover,
   textarea:focus {
     outline: none; /*Remove a linha de contorno que geralmente aparece quando um elemento está em foco. Isso significa que a borda de contorno não será exibida ao usuário quando esses elementos estiverem em estado de foco.*/
-    border-color: rgb(255, 255, 255) !important; /*Define a cor da borda dos elementos <input> e <textarea> como um tom de azul quando eles estão em estado de "hover" ou "focus". 
+    border-color: rgb(24, 111, 224) !important; /*Define a cor da borda dos elementos <input> e <textarea> como um tom de azul quando eles estão em estado de "hover" ou "focus". 
     O !important é utilizado para garantir que essa propriedade seja aplicada, mesmo se houver outras regras de estilo que afetem a cor da borda.*/
-    box-shadow: 0 0 0 0.3125rem #ffffff; /*Adiciona uma sombra ao redor dos elementos <input> e <textarea> quando estão em estado de "hover" ou "focus". 
+    box-shadow: 0 0 0 0.3125rem #26344a; /*Adiciona uma sombra ao redor dos elementos <input> e <textarea> quando estão em estado de "hover" ou "focus". 
     A sombra é uma área escura que circunda os elementos e cria uma aparência destacada. Essa sombra possui um deslocamento horizontal e vertical de 0, um desfoque de 0 e uma expansão de 0.3125 unidades de medida rem. 
     A cor da sombra é um tom de azul escuro*/
   }
@@ -99,7 +99,7 @@
   button:disabled {
     cursor: not-allowed; /*Define o estilo do cursor do mouse para "not-allowed" (não permitido) quando o botão está desativado. 
     Isso indica visualmente aos usuários que o botão não está disponível para interação.*/
-    background: #555b69; /* Define a cor de fundo dos elementos <button> como um tom de cinza escuro quando estão no estado de "disabled". 
+    background: #004cff; /* Define a cor de fundo dos elementos <button> como um tom de cinza escuro quando estão no estado de "disabled". 
     Isso altera a cor de fundo do botão para diferenciá-lo visualmente dos botões ativados.*/
   }
   
@@ -122,7 +122,7 @@
   }
   
   input:invalid{ /*Seleciona os elementos <input> que estão em estado inválido. Isso ocorre quando o usuário inseriu um valor inválido ou obrigatório em um campo de entrada.*/
-    border-color: rgb(32, 0, 159); /*Define a cor da borda desses elementos <input> inválidos como vermelho. Isso altera a cor da borda para indicar visualmente ao usuário que o valor inserido é inválido.*/
+    border-color: rgb(21, 0, 183); /*Define a cor da borda desses elementos <input> inválidos como vermelho. Isso altera a cor da borda para indicar visualmente ao usuário que o valor inserido é inválido.*/
   }
 
   input:valid{ /*Seleciona os elementos <input> que estão em estado válido. Isso ocorre quando o usuário inseriu um valor válido em um campo de entrada.*/
