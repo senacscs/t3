@@ -90,6 +90,16 @@ const Apps = [
         Class: "oficina",
         Icon: "./assets/freezer.png"
     },
+     {
+        title: "Survival guide",
+        Subject: "English",
+        Data: "23/06/2023",
+        Img: "survival.jpg",
+        Text: "Made a website for explaining my survival guide for the apocalipse",
+        Link: "./survival",
+        Class: "survival",
+        Icon: "./assets/fallout.webp"
+    },
 ]
 
 const h1 = document.getElementById('h1W')
