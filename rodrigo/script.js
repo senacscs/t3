@@ -98,7 +98,7 @@ const Apps = [
         Text: "Made a website for explaining my survival guide for the apocalipse",
         Link: "./survival",
         Class: "survival",
-        Icon: "./assets/fallout.webp"
+        Icon: "./assets/logo.webp"
     },
 ]
 
