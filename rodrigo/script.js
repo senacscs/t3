@@ -98,7 +98,17 @@ const Apps = [
         Text: "Made a website for explaining my survival guide for the apocalipse",
         Link: "./survival",
         Class: "survival",
-        Icon: "./assets/logo.webp"
+        Icon: "./assets/manual.png"
+    },
+         {
+        title: "Carrinho",
+        Subject: "Física/Técnico",
+        Data: "23/06/2023",
+        Img: "carro.jpg",
+        Text: "Site com o nosso carrinho de rolimã para o trabalho de física",
+        Link: "https://senacscs.github.io/t3/tito/carrinho",
+        Class: "carrinho",
+        Icon: "./assets/carrinho.png"
     },
 ]
 
