@@ -187,7 +187,6 @@ Apps.forEach((App) => {
                 imgH.src = `./assets/${Img}`
                 p.innerHTML = text;
                 a.href = link;
-                a.target = "_blank";
                 titleW.innerHTML = title
 
 
