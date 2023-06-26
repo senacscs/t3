@@ -188,4 +188,6 @@ nav a:hover::after {
     width: 90%;
     
 }
-
+body{
+    text-align: center;
+}
