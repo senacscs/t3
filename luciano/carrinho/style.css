@@ -1,0 +1,272 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    padding: 15px 0px;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(87, 87, 87);
+    z-index: 1;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: -15px;
+    font-size: 30px;
+    padding: 2px 10px;
+    display: inline-block;
+}
+
+header nav ul li a:hover {
+    color: black;
+}
+
+body {
+    background-color: black;
+    background-size: 100% 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    padding: 70px;
+    position: absolute;
+    left: 1px;
+    top: 1%;
+    color: white;
+}
+
+.const {
+    position: absolute;
+    top: 26%;
+    left: 3%;
+    color: white;
+}
+
+h4 {
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    color: white;
+    size: 70%;
+}
+
+nav a::after{
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color:black;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    right: 11%;
+    transition: 1.0s ease-in-out;
+}
+
+nav a:hover::after {
+    width: 90%;
+    
+}
+
+.imagem-fixada {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.explic {
+    position: absolute;
+    top: 88%;
+    left: 3%;
+    color: white;
+}
+
+.explico {
+    position: absolute;
+    top: 77%;
+    left: 3%;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 1em 0;
+    font-family: sans-serif;
+  }
+
+.relat {
+    position: absolute;
+    top: 135%;
+    left: 3%;
+    color: white;
+}
+
+.resen {
+    position: absolute;
+    top: 190%;
+    left: 3%;
+    color: white;
+}
+
+.reseny {
+    position: absolute;
+    top: 200%;
+    left: 3%;
+    color: white;
+}
+
+.h12 {
+    position: absolute;
+    top: 70%;
+    left: 3%;
+    color: black;
+    opacity: 0; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 1em 0;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    padding: 30px;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  
+  .gallery-wrapper {
+    overflow-x: auto;
+  }
+  
+  .arrow-left,
+  .arrow-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 20px;
+    line-height: 250px;
+    width: 40px;
+    color: #fff;
+    transition: all 600ms ease-in-out;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 1;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .arrow-right {
+    right: 0;
+    left: auto;
+    text-align: right;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+  }
+  
+  .gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+  }
+  
+  .item {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    opacity: 0.5;
+  }
+  
+  .current-item {
+    opacity: 1;
+  }
+  
+  .gallery-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .gallery-wrapper {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .gpt {
+    position: absolute;
+    top: 195%;
+    left: 3%;
+    color: white;
+  }
+
+  .space {
+    position: absolute;
+    top: 224%;
+    left: 3%;
+    opacity: 0;
+  }
+
+  .relato {
+    position: absolute;
+    top: 140%;
+    left: 3%;
+    color: white;
+  }
+
+  .h13 {
+    position: absolute;
+    top: 125%;
+    left: 3%;
+    color: black;
+    opacity: 0; 
+  }
+
+  .login-button {
+    position: absolute;
+    top: 5%;
+    left: 96%;
+    width: 40px;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  .calculator-button {
+    position: absolute;
+    top: 5%;
+    left: 94%;
+    width: 40px;
+    height: 50px;
+    cursor: pointer;
+  }
