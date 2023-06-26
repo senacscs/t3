@@ -12,4 +12,9 @@ h1{
 a{
   font-size: 20pt;
   font-style:italic;
+  text-align: center;
+  color:black;
+}
+a:hover{
+  color:rgb(255, 255, 255);
 }
