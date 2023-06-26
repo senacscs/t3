@@ -63,7 +63,6 @@ function createActivityElement(item) {
   instructions.classList.add("activity-instructions");
 
   // Special properties
-  link.target = "_blank";
   link.href = `./${item.url}`;
   link.tabIndex = 1;
   image.src = `./assets/${item.image}`;
