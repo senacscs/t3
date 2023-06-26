@@ -5,7 +5,7 @@ const students = [
   { name: "Bianca", url: "/bianca" },
   { name: "Brian", url: "/brian" },
   { name: "Bruno", url: "/bruno" },
-  { name: "Davi F.", url: "/froemming" },
+  { name: "Davi F.", url: "/davif" },
   { name: "Davi M.", url: "/davimohr" },
   { name: "Davi B.", url: "/borba" },
   { name: "Eduarda", url: "/eduarda" },
