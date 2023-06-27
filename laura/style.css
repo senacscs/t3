@@ -43,7 +43,7 @@ p {
     background-color: rgb(255, 255, 255);
     padding: 10px 30px;
     border-radius: 30px;
-    text-decoration: none;
+    text-decoration: wavy;
     display: inline-block;
     color:rgb(0, 0, 0);
     margin-bottom: 40px;
@@ -58,6 +58,9 @@ p {
 img { 
     height: 300px;
     width: auto;
+     /* configurar 2 colunas */
+     grid-template-columns: auto auto;
+     text-align: center;
 }
 iframe {
     margin-bottom: 30px;
@@ -67,18 +70,7 @@ iframe {
 a {
     text-decoration: none;
 }
-.instagram {
-    color: #f8f663;
-}
-.youtube {
-    color: rgb(250, 100, 100);
-}
-.shh {
-    color:rgb(05, 05, 05);
-}
-.link {
-    color:aquamarine;
-}
+
 /* Links */
 .a {
     display: grid;
@@ -111,4 +103,9 @@ a {
 #contas img {
     height: 50px;
     width: auto;
+}
+
+article {
+    width: 100%;
+    text-align: right;
 }
