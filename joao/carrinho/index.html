@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Mini Shelbinho</title>
+  <style>
+    * {
+      scroll-behavior: smooth;
+      scroll-margin: 4rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!--
+    grid 
+    position
+    menu fixo
+    animação nav css
+    sidebar
+ -->
+  <div>
+    <aside class="fixed border-r-2 border-r-indigo-200 bg-zinc-200 h-screen flex justify-center items-center w-44 px-8">
+      <nav>
+        <ul class="flex flex-col gap-3">
+          <li><a
+              class="font-bold text-xl text-indigo-700 uppercase hover:text-indigo-800 active:text-indigo-900 transition-colors"
+              href="#inicio">Início</a></li>
+          <li><a
+              class="font-bold text-xl text-indigo-700 uppercase hover:text-indigo-800 active:text-indigo-900 transition-colors"
+              href="#galeria">Galeria</a></li>
+          <li><a
+              class="font-bold text-xl text-indigo-700 uppercase hover:text-indigo-800 active:text-indigo-900 transition-colors"
+              href="#materiais">Materiais</a></li>
+          <li><a
+              class="font-bold text-xl text-indigo-700 uppercase hover:text-indigo-800 active:text-indigo-900 transition-colors"
+              href="#projeto">Projeto</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="flex bg-zinc-50 justify-center">
+      <main class="py-24 bg-zinc-50 ml-44 w-[800px] flex flex-col gap-16">
+        <header class="mb-10" id="inicio">
+          <h1 class="font-bold text-6xl text-center text-indigo-700">Mini Shelbinho</h1>
+          <h2 class="text-2xl text-indigo-500 text-center font-medium">O carrinho mais brabo da região</h2>
+        </header>
+        <section>
+          <h3 class="text-2xl font-bold text-center mb-8 uppercase">Início</h3>
+          <p class="text-lg mb-8 text-zinc-700">
+            O carrinho de rolimã é um veículo simples, porém emocionante, que proporciona diversão e adrenalina. Ele é
+            composto por uma estrutura geralmente feita de madeira, equipada com rodas e rolamentos para permitir o
+            deslizamento suave.
+          </p>
+          <p class="text-lg mb-8 text-zinc-700">
+            Este carrinho de rolimã foi construído com cuidado e criatividade, utilizando materiais reciclados, como
+            madeira reaproveitada e rodas de bicicleta usadas. Sua estrutura foi cuidadosamente projetada para garantir
+            estabilidade e segurança durante as corridas.
+          </p>
+          <p class="text-lg mb-8 text-zinc-700">
+            Além da construção, foram aplicadas técnicas de personalização, permitindo que o carrinho se destacasse dos
+            demais. Pinturas vibrantes e adesivos foram utilizados para imprimir personalidade e estilo ao veículo.
+          </p>
+          <p class="text-lg mb-8 text-zinc-700">
+            Durante a pesquisa, descobriu-se que a pilotagem do carrinho de rolimã requer habilidades e técnicas
+            específicas. A equipe responsável pelo projeto dedicou tempo para aprender as melhores maneiras de realizar
+            curvas suaves, manter o equilíbrio e controlar a velocidade.
+          </p>
+          <p class="text-lg text-zinc-700">
+            No contexto escolar, o carrinho de rolimã também pode ser uma ferramenta educativa. Ele estimula o trabalho
+            em
+            equipe, a criatividade, o planejamento e a solução de problemas. Além disso, proporciona uma oportunidade
+            única de vivenciar conceitos físicos, como força, atrito e gravidade, de forma prática e empolgante.
+          </p>
+        </section>
+        <section id="galeria">
+          <h3 class="text-2xl font-bold text-center mb-8 uppercase">Galeria</h3>
+          <div class="grid grid-cols-3 gap-9">
+            <div class="rounded-lg h-44 bg-cover" style="background-image: url(assets/galeria1.png);"></div>
+            <div class="rounded-lg h-44 bg-cover" style="background-image: url(assets/galeria2.png);"></div>
+            <div class="rounded-lg h-44 bg-cover bg-center" style="background-image: url(assets/galeria3.png);"></div>
+            <div class="rounded-lg h-44 bg-cover bg-center" style="background-image: url(assets/galeria4.png);"></div>
+            <div class="rounded-lg h-44 bg-cover" style="background-image: url(assets/galeria5.png);"></div>
+            <div class="rounded-lg h-44 bg-cover bg-center" style="background-image: url(assets/galeria6.png);"></div>
+            <div class="rounded-lg h-44 bg-cover bg-center" style="background-image: url(assets/galeria7.png);"></div>
+          </div>
+        </section>
+        <section id="materiais">
+          <h3 class="text-2xl font-bold text-center mb-8 uppercase">materiais</h3>
+          <div class="grid grid-cols-2 text-lg">
+            <ul class="list-disc ml-10 text-zinc-700">
+              <li>Madeira Recliclada</li>
+              <li>MDF Recliclado</li>
+              <li>2x Rodas de Rolimã</li>
+              <li>2x Rodas de Carrinho de Feira</li>
+              <li>Cordas</li>
+              <li>Eixo de Metal</li>
+              <li>Parafusos</li>
+              <li>Pregos</li>
+            </ul>
+            <ul class="list-disc text-zinc-700">
+              <li>Tinta</li>
+              <li>Ganchos</li>
+              <li>Porcas</li>
+              <li>Braçadeiras</li>
+              <li>Power Bank</li>
+              <li>Fita Led</li>
+              <li>Sistema de Som</li>
+            </ul>
+          </div>
+        </section>
+        <section id="projeto">
+          <h3 class="text-2xl font-bold text-center mb-8 uppercase">projeto</h3>
+          <p class="text-zinc-700 text-lg mb-20">
+            O projeto é constituído de 5 partes principais que foram planejadas sendo elas: A carcaça, a estrutura, a
+            direção, os freios e o restante.
+          </p>
+          <h4 class="text-xl mb-4 font-medium uppercase">Carcaça</h4>
+          <div class="flex justify-center items-center mb-20 gap-3">
+            <p class="text-zinc-700 text-lg">
+              Resolvemos fazer o carrinho fechado para ter um estilo diferente e mais aerodinâmica, apresentado abaixo.
+            </p>
+            <img alt="Exemplificação da carcaça" src="assets/carcaca.png" class="rounded-lg text-center w-[300px]" />
+          </div>
+          <h4 class="text-xl mb-4 font-medium uppercase">Estrutura</h4>
+          <div class="flex justify-center items-center mb-20 gap-3">
+            <p class="text-zinc-700 text-lg">
+              A estrutura será feita de madeira mais forte, já a carcaça ao redor será de MDF ou outras placas.
+            </p>
+            <img alt="Exemplificação da estrutura" src="assets/estrutura.png"
+              class="rounded-lg text-center w-[300px]" />
+          </div>
+          <h4 class="text-xl mb-4 font-medium uppercase">Direção</h4>
+          <div class="flex justify-center items-center mb-20 gap-3">
+            <p class="text-zinc-700 text-lg">
+              Como vamos fazer o carrinho fechado, queremos fazer um volante para as mãos que será conectado a cabos que
+              irão girar as rodas dianteiras.
+            </p>
+            <img alt="Exemplificação da estrutura" src="assets/direcao.png" class="rounded-lg text-center w-[300px]" />
+          </div>
+
+          <h4 class="text-xl mb-4 font-medium uppercase">Freios</h4>
+          <div class="flex justify-center items-center mb-20 gap-3">
+            <p class="text-zinc-700 text-lg">
+              O sistema de freios foi dividido em duas opções, a principal seria utilizar um freio de bicicleta nas
+              rodas
+              traseiras acionado pelo volante (Modelo 2), mas não temos certeza sobre o tamanho das rodas e se vai
+              encaixar o freio. Caso não encaixar planejamos uma reconstrução de um freio normal de um carrinho, só com
+              o
+              diferencial de ser acionado por um pedal (Modelo 1). </p>
+            <img alt="Exemplificação da estrutura" src="assets/freios.png" class="rounded-lg text-center w-[300px]" />
+          </div>
+
+
+          <h4 class="text-xl mb-4 font-medium uppercase">Forma final</h4>
+          <div class="flex justify-center mb-20 items-center gap-3">
+            <p class="text-zinc-700 text-lg">
+              Aqui temos a representação com todos os componentes apresentados mais o banco e um boneco de amostra:</p>
+            <img alt="Exemplificação da estrutura" src="assets/final.png" class="rounded-lg text-center w-[300px]" />
+          </div>
+
+          <h4 class="text-xl mb-4 font-medium uppercase">Explicação</h4>
+          <p class="text-zinc-700 text-lg">
+            Existem diversos fatores que podem (e vão) afetar a velocidade e estabilidade do carrinho. A velocidade do
+            carrinho é muito influenciada por alguns fatores: a inercia, que mantém o carrinho na mesma velocidade,
+            mesmo após sair de uma superfície curva, a resistência do ar, que junto com a aerodinâmica afeta a
+            velocidade do carrinho, e o peso que o carrinho leva, que quanto mais tiver, mais rápido ficará o carrinho
+            em superfícies inclinadas, porém mais lento em superfícies planas.
+
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>
