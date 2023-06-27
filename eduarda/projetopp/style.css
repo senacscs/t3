@@ -15,7 +15,6 @@ body {
   h1, h2, h3{
     padding-top: 5px;
     font-size: 20pt;
-    text-align: center;
   }
   h1:hover, h2:hover, h3:hover{
     text-shadow: 2px 2px 10px rgb(133, 248, 51);
