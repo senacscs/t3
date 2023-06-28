@@ -24,6 +24,7 @@ header h1 {
 hr {
     border: 1.5px solid black;
     margin: 0.125rem;
+    width: 150vw;
 }
 .info {
     display: flex;
@@ -71,14 +72,18 @@ hr {
 
 .content h1 {
     font-family: 'Instrument Serif', serif;
-    font-weight: bold;
+    font-weight: 900;
     font-size: 2rem;
 }
 .title {
     font-family: 'Instrument Serif', serif;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 .content article p {
-    font-family: 'Instrument Serif', serif;
+    font-family: serif;
     font-size: 1.2rem;
     clear: right;
 }
@@ -110,11 +115,15 @@ a {
     background-color: #9b8d63;
     transform: translateX(-2rem);
     transition: 0.5s;
+    color: #e8dcb8;
+    font-weight: 800;
 }
 .active {
     background-color: #9b8d63;
     transform: translateX(-2rem);
     cursor: default;
+    color: #e8dcb8;
+    font-weight: 800;
 }
 .return {
     position: fixed;
@@ -135,9 +144,12 @@ a {
     * {
         margin: 0;
         padding: 0;
+
     }
     body {
         overflow-x: hidden;
+        zoom: normal;
+        margin: 0;
     }
     header h1 {
         font-size: 2.5rem;
@@ -147,25 +159,31 @@ a {
         font-size: 0.6rem;
     }
     .content h1 {
-        font-size: 1.5rem;
+        font-size: 1.125rem;
     }
     .content{
         margin: 0;
     }
     .content article {
         margin-top: 1rem;
+        margin-left: 0;
     }
     .content article p {
         font-size: 0.8rem;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+    .content article img {
+        min-width: 60%;
+        max-width: 80%;
+        float: none;
+        margin-bottom: 3px;
     }
     /* .content article img {
         max-width: 60%;
         width: 60%;
     } */
-    .content article h2 {
-        font-size: 1.4rem;
-    }
-
     .nav h1 {
         font-size: 1rem;
     }
