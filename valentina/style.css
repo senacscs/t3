@@ -1,9 +1,10 @@
 body {
 	background:#7755cf;
-	
+	color: white;
 	text-align: center;
 	font-family: Serif;
-
+	background-image: url(oie.gif);
+	background-size: 100%;
 	
 }
 
