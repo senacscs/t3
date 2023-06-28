@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oficina Grid</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <div class="container">
+            <h1 id="title">IMAGENS DOS CARRINHOS</h1>
+        <div class="imagens">
+            <div class="2portas">
+                <h1>carrinho</h1>
+                <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/464/731/products/carrinhorolima21-f0b7837b34535f430816138373362748-640-0.jpg">
+            </div>
+            <div class="1portas">
+                <h1>carrinho</h1>
+                <img src="https://images-americanas.b2w.io/produtos/5122059887/imagens/carrinho-de-rolima-vintage-madeira-brinquedo/5122059887_1_large.jpg">
+            </div>
+            <div class="3portas">
+                <h1>carrinho</h1>
+                <img src="https://www.artesanatoereciclagem.com.br/wp-content/uploads/2019/07/carrinho-rolima.jpg">
+            </div>
+            <div class="freezer">
+                <h1>corrida</h1>
+                <img src="https://passeioskids.com/wp-content/uploads/2019/02/IMG_3443-769x621-769x621.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    * { 
+    /* Essa parte faz todos os elementos terem isso como base */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    /* fundo */
+    background-color: rgb(77, 72, 71) ;
+}
+#title {
+    /* alinhar o titulo e aplicar tamanho */
+    text-align: center;
+    font-size: 40px;
+}
+#name {
+    /* msm coisa com o subtitulo */
+    text-align: end;
+    font-size: 20px;
+}
+.container {
+    /* tamanho maximo da div */
+    max-width: 60vw;
+    /* colocar o grid */
+    display: grid;
+    /* alinhar o conteudo no centro */
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    /* colocar no meio da pag */
+    margin-left: auto;
+    margin-right: auto;
+    /* arredondar a borda e colocar sombra */
+    border-radius: 20px;
+    box-shadow: 3px 2px 4px rgb(0,0,0,0.5);
+    /* adicionar margem */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.imagens img {
+    /* altura maxima */
+    max-height: 15vw;
+}
+.imagens {
+    /* colocar grid nas geladeira */
+    display: grid;
+    /* configurar 2 colunas */
+    grid-template-columns: auto auto;
+    text-align: center;
+    /* colocar um espaçamento entre as grids */
+    gap: 20px;
+}
+.imagens div {
+    padding: 10px;
+    background-color: rgb(196, 196, 196);
+    border-radius: 20px;
+    font-size: 10px;
+}
+</style>
+    <body class="interno">
+    <a href="index.html" class="voltar"> Voltar</a> <br> 
+    </body>
+    </html>
