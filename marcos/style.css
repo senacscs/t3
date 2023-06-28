@@ -48,6 +48,7 @@ hr {
     margin-left: 2rem;
 }
 .content article {
+    width: fit-content;
     margin: 1.5rem 0;
     padding: 0.25rem;
     overflow: auto;
@@ -58,10 +59,10 @@ hr {
 }
 .content article img {
     float: left;
-    max-width: 20%;
+    height: 20vh;
     margin-right: 10px;
-    width: 30%;
-    opacity: 50%;
+    width: 15vw;
+    opacity: 60%;
 }
 .content article img:hover {
     opacity: 100%;
@@ -157,10 +158,10 @@ a {
     .content article p {
         font-size: 0.8rem;
     }
-    .content article img {
+    /* .content article img {
         max-width: 60%;
         width: 60%;
-    }
+    } */
     .content article h2 {
         font-size: 1.4rem;
     }

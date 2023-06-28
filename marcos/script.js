@@ -19,8 +19,6 @@ var text = `Senac Santa Cruz do Sul, ${weekDayWritten}, ${day} de ${monthWritten
 
 dateDisplay.innerHTML = text
 
-
-
 const articles = [
   {
     path: './indicacoesfront',
@@ -41,39 +39,35 @@ const articles = [
     title: 'Oficinas do Técnico',
     text: 'Em vários grupos, os alunos do primeiro ano do ensino médio apresentaram oficinas, durante a aula do técnico. A tarefa teve o objetivo de ampliar o conhecimento técnico dos alunos através de workshops realizados pelos próprios, que durante um tempo determinado se auxiliaram e criaram projetos que estavam relacionados a alguma ferramenta ou conceito de programação, ligada à HTML, CSS e JS.',
     img: './assets/sample.jpg',
-    month: '5',
+    month: '6',
   },
 ];
 
+articles.forEach((article) => {
+  const pathElement = document.querySelector('.content')
+  const art = document.createElement('article')
+  const h2 = document.createElement('h2')
+  const img = document.createElement('img')
+  const p = document.createElement('p')
+  console.log(article)
+  art.classList.add('article')
+  art.setAttribute("data-month", article.month)
+  art.setAttribute('onclick', `window.location.href=${article.path}`)
 
-// articles.forEach((article) => {
-//   const pathElement = document.querySelector('.content')
-//   const art = document.createElement('article')
-//   const h2 = document.createElement('h2')
-//   const img = document.createElement('img')
-//   const p = document.createElement('p')
-//   console.log(article)
-//   art.classList.add('article')
-//   art.setAttribute("data-month", article.month)
-//   art.setAttribute('onclick', `window.location.href=${article.path}`)
+  const h2text = document.createTextNode(article.title)
+  const ptext = document.createTextNode(article.text)
+  h2.classList.add('title')
+  h2.appendChild(h2text)
+  p.appendChild(ptext)
 
-//   const h2text = document.createTextNode(article.title)
-//   const ptext = document.createTextNode(article.text)
-//   h2.classList.add('title')
-//   h2.appendChild(h2text)
-//   p.appendChild(ptext)
+  img.setAttribute('src', article.img)
 
-//   img.setAttribute('src', article.img)
+  art.appendChild(h2)
+  art.appendChild(img)
+  art.appendChild(p)
 
-//   art.appendChild(h2)
-//   art.appendChild(p)
-//   art.appendChild(img)
-
-//   pathElement.appendChild(art)
-// })
-
-
-
+  pathElement.appendChild(art)
+})
 
 const monthElements = document.querySelectorAll(".month");
 const articleElements = document.querySelectorAll(".article");
@@ -104,4 +98,6 @@ showAllButton.addEventListener("click", () => {
         articleElement.style.display = "block";
     });
   });
+  
+
   
