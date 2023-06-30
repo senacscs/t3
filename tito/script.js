@@ -29,10 +29,18 @@ const activitiesStorage = [
     name: "Carrinho de rolimã",
     subject: "Física",
     image: "carrinho.svg",
-    date: new Date(2023, 5, 29),
+    date: new Date(2023, 6, 24),
     url: "carrinho",
     instructions: "Site para mostrar o processo de criação do nosso carrinho de rolimã.",
   },
+  {
+    name: 'Fibonacci',
+    subject: 'Matemática',
+    image: 'fibonacci.svg',
+    date: new Date(2023, 6, 30),
+    url: "fibonacci",
+    instructions: "Demonstração do retângulo dourado usando apenas HTML e CSS.",
+  }
 ];
 
 const activitiesElement = document.getElementById("activities");
