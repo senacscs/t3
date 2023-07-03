@@ -1,0 +1,11 @@
+body {
+    font-family: 'Franklin Gothic Medium';
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+section:nth-child(1) {
+    grid-column: 1/3;
+}
