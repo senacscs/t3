@@ -184,3 +184,26 @@ body {
   .icon-app:hover {
     background-color: #333;
   }
+
+  .so-agora{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(75, 75, 75, 0.5);
+    margin: 10px 10px 27px 10px;
+    border-radius: 12px;
+    color: #f8f8f8;
+    opacity: 0;
+  }
+
+  .so-agora2{
+    width: auto;
+    white-space: nowrap;
+    font-size: 0.8em;
+    color: #fff;
+    text-shadow: -1px 0 #333, 0 1px #333, 1px 0 #333, 0 -1px #333;
+    margin-bottom: 0px; 
+    opacity: 0;
+  }
