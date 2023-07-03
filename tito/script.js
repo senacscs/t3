@@ -13,7 +13,7 @@ const activitiesStorage = [
     subject: "Projeto Profissional",
     image: "projeto.svg",
     date: new Date(2023, 5, 15),
-    url: "pesquisa",
+    url: "projetopp",
     instructions:
       "Criar um website para mostrar as diferentes seções da pesquisa.",
   },
