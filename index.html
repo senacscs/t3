@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Índice do Primeiro Ano</title>
-    <link rel="shortcut icon" href="assets/icon.webp" type="image/x-icon">
-    <script defer src="script.js"></script>
-  </head>
 
-  <body>
-    <main>
-      <img
-        loading="lazy"
-        id="miranha"
-        src="assets/miranha.jpg"
-        alt="Homem aranha olhando com um binóculos"
-      />
-      <header>
-        <h1>Índice do Primeiro Ano</h1>
-        <input
-          id="search"
-          type="text"
-          placeholder="Pesquisar"
-          autocomplete="off"
-        />
-      </header>
-      <ol id="students-list"></ol>
-    </main>
-    <div id="eminem" class="hidden">
-      <img loading="lazy" src="assets/eminem.jpg" alt="Foto do eminem" id="eminem">
-    </div>
-    <audio id="audio">
-      <source src="./assets/Eminem.mp3">
-    </audio>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Índice do Primeiro Ano</title>
+  <link rel="shortcut icon" href="assets/icon.webp" type="image/x-icon">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <main>
+    <img loading="lazy" id="miranha" src="assets/miranha.jpg" alt="Homem aranha olhando com um binóculos" />
+    <header>
+      <h1>Índice do Primeiro Ano</h1>
+      <div class="filter-container">
+        <input id="search" type="text" placeholder="Pesquisar" autocomplete="off" />
+        <button id="filter-button" aria-label="Selecionar projeto">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M3.9 54.9C10.5 40.9 24.5 32 40 32H472c15.5 0 29.5 8.9 36.1 22.9s4.6 30.5-5.2 42.5L320 320.9V448c0 12.1-6.8 23.2-17.7 28.6s-23.8 4.3-33.5-3l-64-48c-8.1-6-12.8-15.5-12.8-25.6V320.9L9 97.3C-.7 85.4-2.8 68.8 3.9 54.9z">
+            </path>
+          </svg>
+        </button>
+        <div id="filters" class="hidden">
+        </div>
+      </div>
+    </header>
+    <ol id="students-list"></ol>
+  </main>
+  <div id="eminem" class="hidden">
+    <img loading="lazy" src="assets/eminem.jpg" alt="Foto do eminem" id="eminem">
+  </div>
+  <audio id="audio">
+    <source src="./assets/Eminem.mp3">
+  </audio>
+</body>
+
 </html>

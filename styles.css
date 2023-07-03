@@ -53,7 +53,7 @@ h1 {
   margin-bottom: 2rem;
 }
 
-input {
+#search {
   background-color: #454a64;
   outline: none;
   border: none;
@@ -62,10 +62,51 @@ input {
   border-radius: 6px;
   color: #b5bad6;
   width: 20rem;
+  margin-right: 1rem;
 }
 
-input::placeholder {
+#search::placeholder {
   color: #888fb8;
+}
+
+.filter-container {
+  position: relative;
+}
+
+#filter-button {
+  background-color: #454a64;
+  border: none;
+  color: #888fb8;
+  font-size: large;
+  padding: 1rem;
+  aspect-ratio: 1/1;
+  transition: all .2s ease;
+}
+
+#filter-button:hover {
+  background-color: #46495a;
+  cursor: pointer;
+}
+
+#filter-button:active {
+  background-color: #3d4050;
+}
+
+#filters {
+  padding: 2rem 1rem;
+  color: #b5bad6;
+  position: absolute;
+  top: 4rem;
+  right: -4rem;
+  background-color: #454a64;
+  flex-direction: column;
+  z-index: 100000000;
+  border-radius: 0 6px 6px;
+  text-align: left;
+}
+
+#filters label input {
+  margin-right: 1rem;
 }
 
 #students-list {
@@ -102,7 +143,7 @@ input::placeholder {
 }
 
 .show {
-  display: block;
+  display: flex;
 }
 
 .hidden {
@@ -130,4 +171,9 @@ input::placeholder {
   #students-list {
     grid-template-columns: repeat(5, 1fr);
   }
+
+  #filters {
+    top: 0;
+    right: -12rem;
+   }
 }

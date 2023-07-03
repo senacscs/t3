@@ -38,6 +38,15 @@ const students = [
   { name: "Vittor", url: "/vittor" },
 ];
 
+const projects = [
+  { name: 'Index', url: '/' },
+  { name: 'Indicações', url: '/indicacoes' },
+  { name: 'Projeto de pesquisa', url: '/projetopp' },
+  { name: 'Oficinas', url: '/oficinas' },
+  { name: 'Carrinho de rolimã', url: '/carrinho' },
+  { name: 'Fibonacci', url: '/fibonacci' }
+]
+
 // Gets a random colors theme
 function getRandomColor() {
   const colors = [
@@ -71,6 +80,9 @@ function getRandomColor() {
 
 const accentColor = getRandomColor();
 const audio = document.getElementById("audio")
+const filters = document.getElementById('filters')
+const searchField = document.getElementById("search");
+let currentProject = projects[0]
 
 function createElementFromStudent(student) {
   // Create the elements to show the student
@@ -80,7 +92,7 @@ function createElementFromStudent(student) {
   // Anchor params
   anchor.target = "_blank";
   anchor.className = "student-link";
-  anchor.href = `.${student.url}`;
+  anchor.href = `.${student.url}${currentProject.url}`;
   anchor.innerText = student.name;
   anchor.style.color = accentColor.text;
   anchor.style.borderColor = accentColor.border;
@@ -125,10 +137,30 @@ function updateStudentsList(students) {
   });
 }
 
-function handleSearch() {
-  // Gets the input for the search
-  const searchField = document.getElementById("search");
+function createElementFromProject(project) {
+  const label = document.createElement('label')
+  const input = document.createElement('input')
+  const span = document.createElement('span')
 
+  input.type = 'radio'
+  input.name = 'filter-param'
+  input.defaultChecked = projects.find((project_) => project_ === project) === projects[0]
+  span.innerText = project.name
+  label.appendChild(input)
+  label.appendChild(span)
+  input.addEventListener('change', (e) => {
+    currentProject = project
+    updateStudentsList(
+      students.filter((student) =>
+        student.name.toLowerCase().includes(searchField.value.toLowerCase())
+      )
+    );
+  })
+
+  return label
+}
+
+function handleSearch() {
   // Handles when the input changes its content due to the user writing
   searchField.addEventListener("input", (e) => {
     // If the input has nothing in it, just show all the students
@@ -185,7 +217,21 @@ function handleEminem() {
   document.getElementById("miranha").addEventListener("click", showEminem);
 }
 
+function handleFilter() {
+  projects.forEach((project) => {
+    filters.appendChild(
+      createElementFromProject(project)
+    )
+  })
+
+  document.getElementById('filter-button').addEventListener('click', () => {
+    const hidden = filters.classList.contains('hidden')
+    filters.classList = (hidden ? 'show' : 'hidden')
+  });
+}
+
 updateStudentsList(students);
 animateSpiderMan();
 handleSearch();
 handleEminem();
+handleFilter();
