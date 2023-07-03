@@ -1,17 +1,23 @@
+body {
+	font-family: 'Franklin Gothic Medium';
+	background-color: salmon;
+}
 section {
 	display: grid;
 	grid-template-columns: auto auto;
 }
 
-.fibonacci-wrapper {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	margin: auto;
-	background-color: lightsalmon;
+a {
+	font-size: 3em;
+	list-style: none;
+	text-decoration: none;
+	color: black;
+	text-align: right;
+}
+
+.fibonacci-wrappe {
 	overflow: hidden;
+	z-index: 9;
   }
   
 	.fibonacci-squares {
