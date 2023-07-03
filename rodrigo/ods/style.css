@@ -1,0 +1,71 @@
+/* ----------------------Padrão */
+* {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    background-color: gray;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;800&display=swap');
+/* -----------------------Header */
+header {
+    background-color: aquamarine;
+    box-shadow: 1px 2px 1px rgb(0,0,0,0.5);
+    padding: 1px;
+    align-content: center;
+    z-index: 20;
+    position: sticky;
+    top: 0;
+}
+header img {
+    width: 7vw;
+    border-radius: 20px;
+}
+header nav {
+    flex: 1;
+}
+header h1 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    margin-left: 2vw;
+}
+.hc {
+    display:flex;
+    margin: 2vh;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 5vw;
+}
+nav ul li {
+    margin: 10px;
+    text-align: center;
+
+}
+/* ------------------------------------------------------section 1 */
+    .videoG iframe {
+        margin-top: 2vh;
+        margin-left: 20vw;
+        margin-right: auto;
+        box-shadow: 5px 5px 5px rgb(0,0,0,0.5);
+    }
+    .videoG h2 {
+        margin-left: 25vw;
+        margin-top: 5vh;
+    }
+.content {
+    max-width: 60vw;
+    margin-left: 20vw;
+}
+article {
+    text-align: center;
+    margin-top: 5vh;
+    background-color:rgb(244, 244, 57);
+}
