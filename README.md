@@ -16,6 +16,7 @@ Projetos obrigatórios já realizados:
 - Projeto de pesquisa
 - Oficina
 - Carrinho de Rolimã
+- Retângulo dourado
 
 ## Stack utilizada
 Os projetos são focados no front-end, então contém apenas HTML, CSS e Javascript na sua composição.
