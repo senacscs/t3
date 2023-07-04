@@ -4,17 +4,16 @@
     font-family: 'Nunito', sans-serif;
 }
 body{
-    background-color: gray;
+    background-color: white;
 }
-a {
-    text-decoration: none;
-    color: black;
+html{
+    scroll-behavior: smooth;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;800&display=swap');
 /* -----------------------Header */
 header {
-    background-color: aquamarine;
+    background-color: rgb(168, 253, 225);
     box-shadow: 1px 2px 1px rgb(0,0,0,0.5);
     padding: 1px;
     align-content: center;
@@ -47,7 +46,20 @@ nav ul {
 nav ul li {
     margin: 10px;
     text-align: center;
+    padding: 10px;
+    margin-bottom: 12px;
+    cursor: pointer;
 
+}
+nav li:hover {
+    border-bottom: 2px solid black;
+    transition: 0.2s ease-in ;
+    background-color: rgb(106, 199, 199);
+    margin-bottom: 10px;
+}
+li a {
+    text-decoration: none;
+    color: black;
 }
 /* ------------------------------------------------------section 1 */
     .videoG iframe {
@@ -60,12 +72,63 @@ nav ul li {
         margin-left: 25vw;
         margin-top: 5vh;
     }
+/* ------------------------------------------------------article  */
 .content {
     max-width: 60vw;
     margin-left: 20vw;
+    padding: 1px;
+}
+.content h1 {
+    margin-top: 5vh;
 }
 article {
     text-align: center;
     margin-top: 5vh;
     background-color:rgb(244, 244, 57);
+    box-shadow: 0px 3px 4px rgb(0,0,0,0.5);
+}
+/* --------------------------------------------------------------section 2 */
+#left h1{
+    margin-bottom: 2vh;
+}
+#left {
+    border-right: 1px solid rgb(62, 62, 62);
+}
+.referDiv a {
+    margin-bottom: 10vh;
+}
+.innerRefer {
+    display: flex;
+}
+.innerRefer div {
+    flex: 1;
+    margin-right: 10px;
+}
+.innerRefer h1 {
+    margin: none;
+}
+.refer {
+    background-color: #7BBB24;
+    padding: 20px;
+    box-shadow: 0px 3px 4px rgb(0,0,0,0.5);
+}
+.refer a {
+    color: rgb(10, 61, 144);
+}
+
+/* --------------------------------------------------------------footer */
+footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgb(168, 253, 225);
+    padding: 20px;
+    margin-top: 10vh;
+    margin-left: 0;
+}
+#git img {
+    width: 3vw;
+}
+#git {
+    justify-self: end;
+    text-align: center;
 }
