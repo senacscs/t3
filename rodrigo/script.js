@@ -110,6 +110,16 @@ const Apps = [
         Class: "carrinho",
         Icon: "./assets/carrinho.png"
     },
+        {
+        title: "ODS 6",
+        Subject: "PP",
+        Data: "04/07/2023",
+        Img: "ods6.jpg",
+        Text: "Site de PP para explicar a ODS 6 (Água e saneamento)",
+        Link: "./ods",
+        Class: "ods",
+        Icon: "./ods/assets/ODS6.jpg"
+    },
 ]
 
 const h1 = document.getElementById('h1W')
