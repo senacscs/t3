@@ -1,11 +1,163 @@
-body {
-    font-family: 'Franklin Gothic Medium';
+/* TUDO */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
 }
-main {
+
+html {
+    cursor: default;
+    scroll-behavior: smooth;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+/* ----- */
+
+
+
+/* MENU FIXO */
+
+header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
+    grid-template-columns: 50% auto;
+    background-color: #1b1e23;
+    padding: 10px 10px 10px 10px;
+    border-bottom: 4px solid #ffd700;
+    gap: 8px;
 }
-section:nth-child(1) {
-    grid-column: 1/3;
+
+nav {
+    grid-column-start: 1;
+    grid-column-end:3;
 }
+nav li {
+    list-style: none;
+    cursor: pointer;
+    display: inline;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+header a {
+    align-self: center;
+    justify-self: right;
+}
+
+nav a, header a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+nav a {
+    text-align: center;
+    padding: 2px;
+    color: #ccc;
+    transition: 0.8s;
+    border-radius: 10px;
+}
+nav a:hover {
+    color: #ffd700;
+}
+
+h1 {
+    padding: 0 0 0 10px;
+    font-size: 32px;
+    color: #ccc;
+    align-self: center;
+    justify-self: left;
+}
+.linha {
+    display: flex;
+    justify-self: start;
+    align-self: center;
+}
+header figure {
+    align-self: center;
+}
+
+header img {
+    width: 60px;
+    border-radius: 8px;
+}
+
+
+
+/* ----- */
+
+
+
+/* SECTIONS GERAL */
+
+section {
+    height: 20em;
+}
+
+section:nth-child(odd) {
+    background-color: #EFEFF0;
+}
+
+section:nth-child(even) {
+    background-color: white;
+}
+
+p {
+    text-align: justify;
+    padding: 10px 0;
+}
+
+/* ----- */
+
+/* SECTION 1 */
+
+#secao1 {
+    display: grid;
+    grid-template-rows: 10% 90%;
+    align-items: center;
+    height: 18em;
+}
+
+.geral {
+    justify-self: center;
+    align-self: flex-start;
+    margin: 20px;
+    border: 2px solid #ffd700;
+    border-radius: 6px;
+}
+
+h2 {
+    padding-top: 20px;
+    text-align: center;
+    align-self: center;
+}
+
+/* ---- */
+
+/* SECTION 2 */
+
+#secao2 {
+    padding: 0 25px 0 25px;
+    height: auto;
+}
+
+.ods7 {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+}
+
+/* ----- */
+
+
+/* paleta de cores
+    #1b1e23;
+    #ffd700; amarelo
+    #B486AB; roxo
+    #EFEFF0; cinza bem claro
+*/
+
+
+
+/* section 1
