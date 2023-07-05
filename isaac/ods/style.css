@@ -1,77 +1,110 @@
+/* TUDO */
+
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid black; */
+    font-size: 1.1em;
 }
 
 html {
-    font-size: 80.5%;
-    background-color: aliceblue;
+    cursor: default;
+    scroll-behavior: smooth;
 }
 
-body {
-    font-family: 'Franklin Gothic Medium';
-}
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    padding-top: 7vh ;
-}
+/* ----- */
+
+
+
+/* MENU FIXO */
+
 header {
     display: grid;
-    grid-template-columns: 30% auto;
-    z-index: 1;
-    position: fixed;
-    width: 100%;
-    height: 7vh;
-    background-color: black;
+    grid-template-columns: 50% auto;
+    background-color: #1b1e23;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #0075F2;
+    gap: 8px;
 }
-.menu {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+
+nav {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end:3;
+}
+nav li {
+    list-style: none;
+    cursor: pointer;
+    display: inline;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+header a {
+    padding: 0 10px 0 0;
+    align-self: center;
+    justify-self: right;
+}
+
+nav a, header a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+nav a {
+    text-align: center;
+    padding: 2px;
+    color: #ccc;
+    transition: 0.8s;
+    border-radius: 10px;
+}
+nav a:hover {
+    color: #0075F2;
 }
 
 h1 {
-    color: gray;
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 0.7vw;
+    padding: 0 0 0 10px;
+    font-size: 32px;
+    color: #ccc;
+    align-self: center;
+    justify-self: left;
 }
-a {
-    text-decoration: none;
-    color: gray;
-    font-size: 2rem;
-}
-a:hover {
-    transition: 2s;
-    color: whitesmoke;
-}
-ul, li, nav {
-    list-style: none;
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: center; 
-}
-nav {
-    margin-right: 0.7vw;
-}
+
+
+/* ----- */
+
+
+
+/* SECTION */
+
 section {
-    /* height: 10em; */
-    padding: 1rem 0 1rem 0;
-    text-align: center;
+    height: 30em;
 }
-section:nth-child(1) {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    text-align: center;
+section:nth-child(odd) {
+    background-color: #EFEFF0;
 }
-section:nth-child(2) {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    text-align: center;
+section:nth-child(even) {
+    background-color: white;
 }
+
+.geral {
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* ----- */
+
+
+/* paleta de cores
+    #1b1e23;
+    #0075F2; azul
+    #B486AB; roxo
+    #EFEFF0; cinza bem claro
+*/
