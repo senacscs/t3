@@ -23,12 +23,13 @@ nav {
     display: grid;
     grid-template-columns: 20% 80%;
     padding: 5px;
-    align-items: center;
     text-transform: capitalize;
-    margin: 0 2vw;
     position: fixed;
-    width: 90%;
-    border: 1px solid red;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    left: 0;
+    background-color: #F4EBD0;
 }
 nav ul{
     position: relative;
@@ -44,21 +45,22 @@ nav ul li a{
     text-decoration: none;
     display: inline;
     color: #122620;
-    font-size: 0.5rem;
+    font-size: 1rem;
     padding: 5px;
+}
+#general {
+    margin-top: 45px;
 }
 .active {
     border-bottom: 1px solid #122620;
 }
-
 section {
-    margin: 20px 0px;
+    margin: 10px 5px;
 }
 .heading-container {
     display: grid;
     grid-template-columns: 75% 25%;
     align-items: center;
-    margin: 0 5px;
 }
 .heading-container img {
     min-width: 55px;
@@ -85,13 +87,8 @@ h2 {
     align-items: center;
 }
 .video {
-    position: relative;
-    display: block;
-    width: 90%; /* width of iframe wrapper */
-    height: 0;
-    margin: auto;
-    padding: 0% 0% 56.25%; /* 16:9 ratio */
-    overflow: hidden;
+    padding: 5px;
+    text-align: center;
   }
 .yt iframe {
     position: absolute;
@@ -99,10 +96,54 @@ h2 {
     width: 100%;
     height: 100%;
     border: 0;
+    aspect-ratio: 16/9;
   }
 .video-text {
-    font-size: 0.5rem;
-    padding: 5px;
-    align-self: normal
+    font-size: 0.75rem;
+    align-self: center; 
+    justify-content: left;
+}
+.objectives {
+    margin-top: 8px;
+}
+.objectives h2 {
+    color: #B68D40;
+    margin: 5px;
+}
+ol li {
+    font-size: 0.65rem;
+    margin-left: 8px;
+}
+p {
+    font-size: 0.65rem;
+}
+h2 {
+    font-size: 1rem;
+}
+h1 {
+    font-size: 1.75rem;
+}
+.videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
+@media (max-width: 768px) {
+    
+    iframe {
+        width: 170px;
+    }
+    .logo {
+        display: none;
+    }
+    nav {
+        display: block;
+    }
+    nav ul {
+        text-align: center;
+    }
+    nav ul li a {
+        font-size: 0.55rem;
+    }
+    
+}
