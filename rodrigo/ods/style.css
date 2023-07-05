@@ -84,7 +84,7 @@ li a {
 article {
     text-align: center;
     margin-top: 5vh;
-    background-color:rgb(244, 244, 57);
+    background-color:rgb(168, 253, 225)
     box-shadow: 0px 3px 4px rgb(0,0,0,0.5);
 }
 /* --------------------------------------------------------------section 2 */
@@ -108,7 +108,7 @@ article {
     margin: none;
 }
 .refer {
-    background-color: #7BBB24;
+    background-color: rgb(168, 253, 225);
     padding: 20px;
     box-shadow: 0px 3px 4px rgb(0,0,0,0.5);
 }
