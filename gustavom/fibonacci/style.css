@@ -5,7 +5,7 @@
     top: 0;
     bottom: 0;
     margin: auto;
-    background-color: #0f956faf;
+    background-color: #12ae82af;
     overflow: hidden; 
   }
   
@@ -22,7 +22,7 @@
   .fibonacci-squares .square {
     box-sizing: border-box;
     position: absolute;
-    border: 3px solid rgb(34, 0, 255);
+    border: 3px solid rgb(0, 123, 255);
     background-color: transparent;
   }
   .fibonacci-squares .square.square-1 {
@@ -31,6 +31,7 @@
     bottom: 0;
     -webkit-animation-name: none;
             animation-name: none;
+    border-radius: 15px;
   }
   .fibonacci-squares .square.square-2 {
     width: 78px;
@@ -38,8 +39,9 @@
     transform-origin: right bottom;
     top: -78px;
     right: 0;
-    -webkit-animation: square-rotate 8s infinite;
-            animation: square-rotate 8s infinite;
+    -webkit-animation: square-rotate 4s infinite;
+            animation: square-rotate 4s infinite;
+    border-radius: 20px;
   }
   .fibonacci-squares .square.square-3 {
     width: 48px;
@@ -47,8 +49,9 @@
     transform-origin: top right;
     top: 0;
     left: -48px;
-    -webkit-animation: square-rotate 8s infinite;
-            animation: square-rotate 8s infinite;
+    -webkit-animation: square-rotate 4s infinite;
+            animation: square-rotate 4s infinite;
+    border-radius: 25px;
   }
   .fibonacci-squares .square.square-4 {
     width: 30px;
@@ -56,8 +59,9 @@
     transform-origin: top left;
     bottom: -30px;
     left: 0;
-    -webkit-animation: square-rotate 8s infinite;
-            animation: square-rotate 8s infinite;
+    -webkit-animation: square-rotate 4s infinite;
+            animation: square-rotate 4s infinite;
+    border-radius: 30px;
   }
   .fibonacci-squares .square.square-5 {
     width: 18px;
@@ -65,8 +69,9 @@
     transform-origin: bottom left;
     bottom: 0;
     right: -18px;
-    -webkit-animation: square-rotate 8s infinite;
-            animation: square-rotate 8s infinite;
+    -webkit-animation: square-rotate 4s infinite;
+            animation: square-rotate 4s infinite;
+    border-radius: 35px;
   }
   .fibonacci-squares .square.square-6 {
     width: 12px;
@@ -74,8 +79,9 @@
     transform-origin: bottom right;
     top: -12px;
     right: 0;
-    -webkit-animation: square-rotate 8s infinite;
-            animation: square-rotate 8s infinite;
+    -webkit-animation: square-rotate 4s infinite;
+            animation: square-rotate 4s infinite;
+    border-radius: 40px;
   }
   .fibonacci-squares .square.square-7 {
     width: 6px;
@@ -83,8 +89,9 @@
     transform-origin: top right;
     top: 0;
     left: -6px;
-    -webkit-animation: square-rotate 8s infinite;
-            animation: square-rotate 8s infinite;
+    -webkit-animation: square-rotate 4s infinite;
+            animation: square-rotate 4s infinite;
+    border-radius: 45px;
   }
   .fibonacci-squares .square.square-8 {
     width: 6px;
@@ -92,8 +99,9 @@
     transform-origin: top left;
     bottom: -6px;
     left: 0;
-    -webkit-animation: square-rotate 8s infinite;
-            animation: square-rotate 8s infinite;
+    -webkit-animation: square-rotate 4s infinite;
+            animation: square-rotate 4s infinite;
+    border-radius: 50px;
   }
   @-webkit-keyframes square-rotate {
     0% {
