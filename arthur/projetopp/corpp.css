@@ -1,0 +1,21 @@
+body {
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-image: url(https://i.pinimg.com/736x/d6/39/2e/d6392eb6376d3b147fea9933996ddb4a.jpg);
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+h1, a, p, h2, ul {
+	/* color: rgb(249, 249, 249); */
+	color: rgb(255, 250, 250);
+	text-align: center;
+}
+
+.meio {
+	text-align: center;
+}
+
+p {
+	text-align: justify;
+}

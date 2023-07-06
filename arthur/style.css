@@ -1,0 +1,18 @@
+body {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    background-image: url(https://img.freepik.com/vetores-gratis/fundo-hexagonal-gradiente_23-2148954968.jpg);
+    background-size: cover;
+color: white;
+	text-align: center;
+}
+
+li{
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}

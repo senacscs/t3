@@ -1,0 +1,111 @@
+.fibonacci-wrapper{
+	position: absolute;
+	left: 0;right: 0;top: 0;bottom: 0;
+	margin: auto;
+	background-color: #9c00b5;
+	overflow: hidden;
+}
+
+.fibonacci-squares{
+	$square-size: 6px;
+	$square-border-color: yellow;
+	$square-color: transparent;
+	$square-rotate-speed: 8s;
+	
+	position: absolute;
+	left: 0;right: 0;top: 0;bottom: 0;
+	margin: auto;
+	width: $square-size*21;
+	height: $square-size*34;
+	
+	.square{
+		box-sizing: border-box;
+		position: absolute;
+		border: 1px solid $square-border-color;
+		background-color: $square-color;
+		
+		&.square-1{
+			width: $square-size*21;
+			height: $square-size*21;
+			bottom: 0;
+			animation-name: none;
+		}
+		
+		&.square-2{
+			width: $square-size*13;
+			height: $square-size*13;
+			transform-origin: right bottom;
+			top: -$square-size*13;
+			right: 0;
+			animation: square-rotate $square-rotate-speed infinite;
+		}
+		
+		&.square-3{
+			width: $square-size*8;
+			height: $square-size*8;
+			transform-origin: top right;
+			top: 0;
+			left: -$square-size*8;
+			animation: square-rotate $square-rotate-speed infinite;
+		}
+		
+		&.square-4{
+			width: $square-size*5;
+			height: $square-size*5;
+			transform-origin: top left;
+			bottom: -$square-size*5;
+			left: 0;
+			animation: square-rotate $square-rotate-speed infinite;
+		}
+		
+		&.square-5{
+			width: $square-size*3;
+			height: $square-size*3;
+			transform-origin: bottom left;
+			bottom: 0;
+			right: -$square-size*3;
+			animation: square-rotate $square-rotate-speed infinite;
+		}
+		
+		&.square-6{
+			width: $square-size*2;
+			height: $square-size*2;
+			transform-origin: bottom right;
+			top: -$square-size*2;
+			right: 0;
+			animation: square-rotate $square-rotate-speed infinite;
+		}
+		
+		&.square-7{
+			width: $square-size;
+			height: $square-size;
+			transform-origin: top right;
+			top: 0;
+			left: -$square-size;
+			animation: square-rotate $square-rotate-speed infinite;
+		}
+		
+		&.square-8{
+			width: $square-size;
+			height: $square-size;
+			transform-origin: top left;
+			bottom: -$square-size;
+			left: 0;
+			animation: square-rotate $square-rotate-speed infinite;
+		}
+				
+	}
+	
+	@keyframes square-rotate{
+		0%{
+			transform: rotate(0);
+		}
+		50%{
+			transform: rotate(180deg);
+		}
+		100%{
+			transform: rotate(0);
+		}
+	}
+	
+}
