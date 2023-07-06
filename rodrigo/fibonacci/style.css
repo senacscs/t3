@@ -106,7 +106,7 @@ body {
       transform: rotate(0);
     }
     50% {
-      transform: rotate(180deg);
+      transform: rotate(720deg);
     }
     100% {
       transform: rotate(0);
@@ -117,7 +117,7 @@ body {
       transform: rotate(0);
     }
     50% {
-      transform: rotate(180deg);
+      transform: rotate(720deg);
     }
     100% {
       transform: rotate(0);
