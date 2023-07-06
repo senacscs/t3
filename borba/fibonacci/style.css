@@ -24,6 +24,8 @@
     position: absolute;
     border: 1px solid white;
     background-color: transparent;
+    border-radius: 15px 30px 25px 40px; 
+
   }
   .fibonacci-squares .square.square-1 {
     width: 126px;
