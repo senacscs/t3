@@ -1,0 +1,78 @@
+body {
+    font-family: 'Shadows Into Light', cursive;
+    background: url(./fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.card {
+    width: 24%;
+    height: 250px;
+    background: #00000000;
+    position: relative;
+    display: inline-flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 15px;
+    text-align: center;
+  }
+
+  .card h2 {
+    z-index: 1;
+    color: white;
+    font-size: 30px;
+  }
+  
+  .card::before {
+    content: '';
+    position: relative;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(14, 24, 155), rgb(16, 147, 180));
+    height: 130%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+  }
+  
+  
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .card::after {
+    content: '';
+    position: absolute;
+    background: #295a99;
+    inset: 5px;
+    border-radius: 15px;
+  }
+
+  .link {
+    color: rgb(238, 231, 231);
+    position: relative;
+    left: -25px;
+  }
+
+  @media (max-width: 768px) {
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+}
