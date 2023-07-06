@@ -5,7 +5,7 @@
     top: 0;
     bottom: 0;
     margin: auto;
-    background-color: #00b5ac;
+    background-color: #cc83f9;
     overflow: hidden;
   }
   
@@ -22,7 +22,7 @@
   .fibonacci-squares .square {
     box-sizing: border-box;
     position: absolute;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(9, 9, 100);
     background-color: transparent;
   }
   .fibonacci-squares .square.square-1 {
