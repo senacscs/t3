@@ -42,6 +42,13 @@ const articles = [
     month: '6',
   },
   {
+    path: "../tito/carrinho/",
+    title: "Carrinho de Rolimã",
+    text: "Carrinho de Rolimã feito em grupo para o dia 24/06. Foi feito como uma atividade didática de idealização, produção e desenvolvimento do carrinho. Os integrantes do grupo eram: Rodrigo, Tito, Vitor, Marcos, Gabriel L e João.",
+    img: "./assets/sample.jpg",
+    month: "6",
+  },
+  {
     path: './fibonacci',
     text: "Em uma aula de tecnologia do Ensino Médio, um aluno teve de personalizar uma animação que representa a famosa Sequência de Fibonacci. Com seus conhecimentos técnicos, o estudante adicionou um toque especial à tarefa. Durante a aula de informática + matemática, os professores apresentaram aos alunos o conceito da Sequência de Fibonacci, um conjunto numérico no qual cada termo é a soma dos dois anteriores. Encorajando-os a explorar sua criatividade, o professor propôs que eles utilizassem ferramentas de animação para visualizar essa sequência matemática em ação.",
     title: 'Sequência de Fibonacci',
