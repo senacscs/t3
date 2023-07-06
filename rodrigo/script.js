@@ -120,6 +120,16 @@ const Apps = [
         Class: "ods",
         Icon: "./ods/assets/ODS6.jpg"
     },
+        {
+        title: "Fibonacci",
+        Subject: "Matrmatica/técnico",
+        Data: "06/07/2023",
+        Img: "fibonacci.jpg",
+        Text: "modificando uns quadrado ai",
+        Link: "./fibonacci",
+        Class: "quadrado",
+        Icon: "./fibonacci/FUNDO.jpg"
+    },
 ]
 
 const h1 = document.getElementById('h1W')
