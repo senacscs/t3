@@ -63,10 +63,11 @@ articles.forEach((article) => {
   const h2 = document.createElement('h2')
   const img = document.createElement('img')
   const p = document.createElement('p')
+  
   console.log(article)
   art.classList.add('article')
   art.setAttribute("data-month", article.month)
-  art.setAttribute('onclick', `window.location.href=${article.path}`)
+  art.setAttribute('onclick', `window.location.href='${article.path}'`)
 
   const h2text = document.createTextNode(article.title)
   const ptext = document.createTextNode(article.text)
