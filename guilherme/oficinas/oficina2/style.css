@@ -6,7 +6,7 @@
 }
 body {
     /* fundo */
-    background-color: rgb(128, 111, 111) ;
+    background-color: pink ;
 }
 #title {
     /* alinhar o titulo e aplicar tamanho */
@@ -25,7 +25,7 @@ body {
     display: grid;
     /* alinhar o conteudo no centro */
     justify-content: center;
-    background-color: rgb(248, 193, 193);
+    background-color: rgb(255, 255, 255);
     /* colocar no meio da pag */
     margin-left: auto;
     margin-right: auto;
@@ -35,7 +35,6 @@ body {
     /* adicionar margem */
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 10px;
 }
 .imagens img {
     /* altura maxima */
@@ -45,14 +44,23 @@ body {
     /* colocar grid nas geladeira */
     display: grid;
     /* configurar 2 colunas */
-    grid-template-columns: auto;
+    grid-template-columns: 1fr 1fr;
     text-align: center;
     /* colocar um espaçamento entre as grids */
-    gap: 60px;
+    gap: 20px;
+
 }
 .imagens div {
     padding: 10px;
     background-color: rgb(196, 196, 196);
     border-radius: 20px;
     font-size: 10px;
+}
+.portassss {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.titulos {
+    margin-left: 20%;
+    margin-right: 20%;
 }
