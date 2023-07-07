@@ -137,6 +137,14 @@ function updateStudentsList(students) {
   });
 }
 
+function openFilter() {
+  filters.className = 'show'
+}
+
+function closeFilter() {
+  filters.className = 'hidden'
+}
+
 function createElementFromProject(project) {
   const label = document.createElement('label')
   const input = document.createElement('input')
@@ -155,6 +163,8 @@ function createElementFromProject(project) {
         student.name.toLowerCase().includes(searchField.value.toLowerCase())
       )
     );
+
+    setTimeout(closeFilter, 500)
   })
 
   return label
@@ -226,7 +236,12 @@ function handleFilter() {
 
   document.getElementById('filter-button').addEventListener('click', () => {
     const hidden = filters.classList.contains('hidden')
-    filters.classList = (hidden ? 'show' : 'hidden')
+
+    if (hidden) {
+      openFilter()
+    } else {
+      closeFilter()
+    }
   });
 }
 
