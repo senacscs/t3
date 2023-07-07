@@ -40,7 +40,7 @@ const students = [
 
 const projects = [
   { name: 'Index', url: '/' },
-  { name: 'Indicações', url: '/indicacoes' },
+  { name: 'Indicações Front-End', url: '/indicacoesfront' },
   { name: 'Projeto de pesquisa', url: '/projetopp' },
   { name: 'Oficinas', url: '/oficinas' },
   { name: 'Carrinho de rolimã', url: '/carrinho' },
