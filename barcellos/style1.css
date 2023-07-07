@@ -18,3 +18,14 @@ li {
 a:hover {
     color: blue;
 }
+h1, p {
+    text-shadow:
+
+    -1px -1px 0 rgb(0, 242, 255),
+
+    1px -1px 0 rgb(0, 242, 255),
+
+    -1px 1px 0 rgb(0, 242, 255),
+
+    1px 1px 0 rgb(0, 242, 255);
+}
