@@ -22,7 +22,6 @@
   .fibonacci-squares .square {
     box-sizing: border-box;
     position: absolute;
-    background-image: url(../assets/gato.png);
   }
   .fibonacci-squares .square.square-1 {
     width: 534px;
@@ -37,8 +36,8 @@
     transform-origin: right bottom;
     top: -330px;
     right: 0;
-    -webkit-animation: square-rotate 8s infinite;
-            animation: square-rotate 8s infinite;
+    -webkit-animation: square-rotate 16s infinite;
+            animation: square-rotate 16s infinite;
   }
   .fibonacci-squares .square.square-3 {
     width: 204px;
@@ -100,8 +99,8 @@
     transform-origin: bottom left;
     top: 0;
     right: -12px;
-    -webkit-animation: square-rotate 8s infinite;
-            animation: square-rotate 8s infinite;
+    -webkit-animation: square-rotate s infinite;
+            animation: square-rotate 6s infinite;
   }
   .fibonacci-squares .square.square-10 {
     width: 6px;
@@ -109,8 +108,8 @@
     transform-origin: bottom right;
     top: -6px;
     left: 0;
-    -webkit-animation: square-rotate 8s infinite;
-            animation: square-rotate 8s infinite;
+    -webkit-animation: square-rotate 2s infinite;
+            animation: square-rotate 4s infinite;
   }
   .fibonacci-squares .square.square-11 {
     width: 6px;
@@ -118,8 +117,8 @@
     transform-origin: top right;
     top: 0;
     left: -6px;
-    -webkit-animation: square-rotate 8s infinite;
-            animation: square-rotate 8s infinite;
+    -webkit-animation: square-rotate 2s infinite;
+            animation: square-rotate 4s infinite;
   }
 
   @-webkit-keyframes square-rotate {
@@ -127,7 +126,7 @@
       transform: rotate(0);
     }
     50% {
-      transform: rotate(180deg);
+      transform: rotate(270deg);
     }
     100% {
       transform: rotate(0);
