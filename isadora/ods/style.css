@@ -52,7 +52,7 @@ section {
 }
 
 section:nth-child(even) {
-    background: white;
+    background: rgb(32,178,170);
 }
 
 section:nth-child(odd){
@@ -63,7 +63,6 @@ section:nth-child(odd){
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    text-align: center;
 }
 
 article {
@@ -78,30 +77,6 @@ footer {
     height: 200px;
 }
 
-h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-}
-
-h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    font-size: 10px;
-}
-
-h3 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
-    font-size: 30px;
-}
-
-p {
-    margin-top: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px
-
-}
 
 #center{
     text-align: center;
@@ -114,6 +89,20 @@ p {
 
 #color-white {
     color: white;
+    font-size: 5cqmin;
+    text-align: justify;
+    text-align: center;
+   
+}
+
+#tamanho{
+    font-size: 5cqmin;
+    text-align: justify;
+    text-align: center;
+}
+
+#video{
+    grid-area: main;
 }
 
 #title {
@@ -145,7 +134,7 @@ p {
     display: grid;
     /* alinhar o conteudo no centro */
     justify-content: center;
-    background-color: rgb(118, 185, 211);
+    background-color: rgb(196, 196, 196);
     /* colocar no meio da pag */
     margin-left: auto;
     margin-right: auto;
@@ -171,6 +160,6 @@ p {
 nav {
     text-align: center;
     margin-top: 20px;
-    color:white;
+    color:rgb(164, 215, 239);
     font-size: 10%;
 }
