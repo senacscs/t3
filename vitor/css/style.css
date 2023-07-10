@@ -1,4 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Recursive:wght@300&display=swap');
+@font-face {
+  font-family: "Azonix";
+  src: url('../fonts/Azonix.otf');
+}
 
 body {
 
@@ -365,7 +370,7 @@ margin-right: 12px;
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 22em;}
+  to{width: 23em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
@@ -384,6 +389,11 @@ margin-right: 12px;
   color: white;
   font-family: 'Anonymous Pro', monospace;
 }
+.titulos {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Recursive', sans-serif;
+}
+
 
 
 
