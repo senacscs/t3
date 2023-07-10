@@ -61,6 +61,26 @@ li a {
     text-decoration: none;
     color: black;
 }
+svg {
+    border-radius: 10px;
+    width: 20vw;
+    margin-left: 40vw;
+}
+.menuMobile {
+    z-index: 90;
+    background-color: rgb(106, 199, 199);
+    position: fixed;
+    width: 100vw;
+}
+.menuMobile ul {
+    list-style: none;
+}
+.menuMobile ul li {
+    padding: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    margin-right: 20px;
+}
 /* ------------------------------------------------------section 1 */
     .videoG iframe {
         margin-top: 2vh;
@@ -82,10 +102,15 @@ li a {
     margin-top: 5vh;
 }
 article {
-    text-align: center;
+    text-align: justify;
     margin-top: 5vh;
     background-color:rgb(168, 253, 225);
     box-shadow: 0px 3px 4px rgb(0,0,0,0.5);
+}
+p.meta {
+    margin-top: 10px;
+    border-top: 1px solid gray;
+    padding: 10px;
 }
 /* --------------------------------------------------------------section 2 */
 #left h1{
@@ -95,7 +120,7 @@ article {
     border-right: 1px solid rgb(62, 62, 62);
 }
 .referDiv a {
-    margin-bottom: 10vh;
+    margin-bottom: 10v
 }
 .innerRefer {
     display: flex;
@@ -132,3 +157,30 @@ footer {
     justify-self: end;
     text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+    header nav {
+        display: none
+    }
+    iframe {
+        width: 80vw;
+        height: 20vh;
+    }
+    .content {
+        max-width: 80vw;
+        margin-left: 10vw;
+    }
+    .videoG iframe {
+        margin-left: 10vw;
+    }
+    .videoG h2 {
+        max-width: 80vw;
+        margin-left: 10vw;
+    }
+    header h1 {
+        display: none;
+    }
+    header img {
+        width: 30vw;
+    }
+  }
