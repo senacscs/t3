@@ -3,12 +3,16 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 1.1em;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 html {
     cursor: default;
-    scroll-behavior: smooth;
+
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    scroll-padding-top: 130px;
+   
 }
 
 /* ----- */
@@ -18,13 +22,16 @@ html {
 /* MENU FIXO */
 
 header {
+    position: fixed;
+    width: 100%;
     display: grid;
+    height: 11rem;
     grid-template-columns: 50% auto;
     background-color: #1b1e23;
-    padding-top: 8px;
-    padding-bottom: 5px;
-    border-bottom: 4px solid #0075F2;
-    gap: 8px;
+    padding: 10px 10px 10px 10px;
+    border-bottom: 4px solid #ffd700;
+    gap: 0.8rem;
+    z-index: 1;
 }
 
 nav {
@@ -42,7 +49,6 @@ nav ul {
     justify-content: space-evenly;
 }
 header a {
-    padding: 0 10px 0 0;
     align-self: center;
     justify-self: right;
 }
@@ -54,57 +60,153 @@ nav a, header a {
 
 nav a {
     text-align: center;
-    padding: 2px;
+    padding: 0.2rem;
     color: #ccc;
     transition: 0.8s;
     border-radius: 10px;
 }
 nav a:hover {
-    color: #0075F2;
+    color: #ffd700;
 }
 
 h1 {
-    padding: 0 0 0 10px;
-    font-size: 32px;
+    padding: 0 0 0 0.1rem;
+    font-size: clamp(0.1em, 1em + 3vw, 2.5em);
     color: #ccc;
     align-self: center;
     justify-self: left;
 }
+.linha {
+    display: flex;
+    justify-self: start;
+    align-self: center;
+}
+header figure {
+    align-self: center;
+}
+
+header img {
+    width: 6rem;
+    border-radius: 8px;
+}
+
 
 
 /* ----- */
 
 
 
-/* SECTION */
+/* SECTIONS GERAL */
 
 section {
-    height: 30em;
+    /* height: 83vh; */
+    padding: 0.9rem 2.5rem 0.9rem 2.5rem;
 }
+
 section:nth-child(odd) {
     background-color: #EFEFF0;
 }
+
 section:nth-child(even) {
     background-color: white;
 }
 
-.geral {
-    margin: auto;
-    display: block;
-    margin-top: 20px;
-}
-
-h2 {
-    text-align: center;
-    padding-top: 10px;
+p {
+    text-align: justify;
+    padding: 1rem 0;
 }
 
 /* ----- */
 
+/* SECTION 1 */
+
+#secao1 {
+    display: grid;
+    grid-template-rows: 10% 90%;
+    align-items: center;
+    height: auto;
+    padding-top: 13rem;
+}
+
+.geral {
+    justify-self: center;
+    align-self: flex-start;
+    margin: 2rem;
+    border: 0.2rem solid #ffd700;
+    border-radius: 6px;
+}
+
+h2 {
+    text-align: center;
+    align-self: center;
+    font-size: clamp(0.1rem, 2.6rem, 10rem);
+}
+
+/* ---- */
+
+/* SECTION 2 */
+
+#secao2 {
+    padding: 2rem;
+    height: auto;
+}
+
+.ods7 {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3rem;
+}
+
+/* ----- */
+
+/* SECTION 3 */
+
+#secao3 {
+    height: auto;
+    padding: 2rem;
+}
+
+.nosso {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    padding-top: 2rem;
+}
+
+/* ----- */
+
+/* SECTION 4 */
+
+#secao4 {
+    height: auto;
+    padding: 2rem;
+}
+
+/* ----- */
+
+/* SECTION 5 */
+
+#secao5 {
+    height: 83vh;
+}
+
+/* ----- */
+
+/* FOOTER */
+
+footer {
+    background-color: #1b1e23;
+    height: 10vw;
+}
+
+/* ----- */
 
 /* paleta de cores
     #1b1e23;
-    #0075F2; azul
+    #ffd700; amarelo
     #B486AB; roxo
     #EFEFF0; cinza bem claro
 */
+
