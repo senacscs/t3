@@ -11,6 +11,12 @@ html{
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;800&display=swap');
+@keyframes dropdown {
+    0%   {display: none;}
+    25%   {display: block;}
+    50%  {max-height: 250px;}
+    100% {max-height: 500px;}
+}
 /* -----------------------Header */
 header {
     background-color: rgb(168, 253, 225);
@@ -31,7 +37,7 @@ header nav {
 header h1 {
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
-    margin-left: 2vw;
+    margin-left: vw;
 }
 .hc {
     display:flex;
@@ -64,13 +70,17 @@ li a {
 svg {
     border-radius: 10px;
     width: 20vw;
-    margin-left: 40vw;
+    margin-left: 60vw;
+    position: fixed;
+    display: none;
 }
 .menuMobile {
     z-index: 90;
     background-color: rgb(106, 199, 199);
     position: fixed;
     width: 100vw;
+    display: none; 
+    animation: forwards 1s dropdown;
 }
 .menuMobile ul {
     list-style: none;
@@ -182,5 +192,11 @@ footer {
     }
     header img {
         width: 30vw;
+    }
+    .menuMobile {
+        display: contents;
+    }
+    svg {
+        display: block;
     }
   }
