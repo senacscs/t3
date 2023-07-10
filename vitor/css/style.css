@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
 body {
 
   background-color: #000000;
@@ -83,11 +85,11 @@ font-size: large;
   transition: 500ms ;
 
 }.bordar3 {
-  border: 3px solid rgb(217, 102, 31);
+  border: 3px solid rgb(31, 244, 2);
   cursor: pointer;
 } 
 .bordar3:hover {
-  border: 3px solid rgb(251, 119, 11);
+  border: 3px solid rgb(32, 168, 50);
   transform: scale(1.08);
   transition: 500ms ;}
   .bordar4 {
@@ -106,6 +108,14 @@ font-size: large;
       border: 3px solid rgb(251, 11, 227);
       transform: scale(1.08);
       transition: 500ms ;}
+      .bordar6 {
+        border: 3px solid #d1184f;
+        cursor: pointer;
+      } 
+      .bordar6:hover {
+        border: 3px solid #ce194f;
+        transform: scale(1.08);
+        transition: 500ms ;}
   
 
 body {
@@ -349,6 +359,33 @@ margin-right: 12px;
 } .linker2 {
 margin-right: 12px;
 }
+.anim-typewriter{
+  animation: typewriter 3s steps(44) 1s 1 normal both,
+             blinkTextCursor 600ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 22em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}.line-1{
+  position: relative;
+  top: 50%;  
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);    
+  color: white;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+
 
 
 

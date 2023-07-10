@@ -9,15 +9,33 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/slider.css">
-  <link rel="stylesheet" href="css/flickity.css">
-
+  <link rel="stylesheet" href="css/button.css">
+  
   <body>
     <div class="index">
       <h1>Index de Vitor.</h1>
-      <!-- <h2>Crazy? I was crazy once. they locked in a room, a rubber room, a rubber room with rats
-        the rats made me crazy
-      </h2> -->
+
+    </div>
+    <div>
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <style>
+          .container {
+            position: relative;
+            display: inline-block;
+          }
+      
+          .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+          }
+        </style>
+      </head>
     </div>
     <div class="area">
       <ul class="circles">
@@ -27,6 +45,8 @@
         <li></li>
         <li></li>
         <li></li>
+        <h2 class="line-1 anim-typewriter">(6 Trabalhos feitos, <span id="dias"></span> dias de Senac).
+        </h2>
         <li></li>
         <li></li>
         <li></li>
@@ -34,14 +54,30 @@
       </ul>
     </div>
     <meta charset="utf-8">
-    <div class="conteudo">
+    <div id="anchor" class="conteudo">
       <div class="links">
         <a href="https://github.com/yyKitor"><img src="imagem1.jpg"></a>
         <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img src="imagem2.jpg"></a>
       </div>
       <hr class="barrarepartir">
+      <div class="button-container">
+        <!--   <button style="--clr:#EA00FF"><span>Button</span><i></i></button> -->
+        <!-- <button style="--clr:#FFF01F"><span>Button</span><i></i></button> -->
+        <!-- <button style="--clr:#7FFF00"><span>Button</span><i></i></button> -->
+        <!-- <button style="--clr:#FF5E00"><span>Button</span><i></i></button> -->
+        <button data-month="abril" style="--clr:#993399"><span>Abril</span><i></i></button>
+        <!-- <button style="--clr:#FF3131"><span>Button</span><i></i></button> -->
+        <!-- <button style="--clr:#1F51FF"><span>Button</span><i></i></button> -->
+        <button data-month="maio" style="--clr:#07fc03"><span>Maio</span><i></i></button>
+        <!-- <button style="--clr:#BC13FE"><span>Button</span><i></i></button> -->
+        <button data-month="junho" style="--clr:#fff700"><span>Junho</span><i></i></button>
+        <!-- <button style="--clr:#E7EE4F"><span>Button</span><i></i></button> -->
+        <button data-month="julho" style="--clr:#FF00FF"><span>Julho</span><i></i></button>
+        <button data-month="agosto" style="--clr:#FF1493"><span>Agosto</span><i></i></button>
+        <!-- <button style="--clr:#CCFF00"><span>Button</span><i></i></button> -->
+      </div>
       <div class="grid">
-        <div class="grid2">
+        <div class="grid2" data-month="abril">
           <div>
             <a href="./indicacoes" class="linker">
               <img src="indicações.gif" width="255px" class="bordar">
@@ -56,7 +92,7 @@
             <p class="content">tutorial sobre Front-End.</p>
           </div>
         </div>
-        <div class="grid2">
+        <div class="grid2" data-month="maio">
           <div>
             <a href="./projetopp" class="linker">
               <img src="Projetopp.png" width="255px" class="bordar2">
@@ -70,7 +106,7 @@
             </p>
           </div>
         </div>
-        <div class="grid2">
+        <div class="grid2" data-month="maio">
           <div>
             <a href="https://senacscs.github.io/t3/tito/carrinho/" class="linker">
               <img src="shel.png" width="255px" class="bordar3">
@@ -78,13 +114,13 @@
             <p class="subtitulo">Carrinho de Rolima</p>
           </div>
           <div>
-            <p style="color: rgb(255, 47, 0);" class="date">9 de Maio de 2023</p>
+            <p style="color: rgb(0, 255, 76);" class="date">9 de Maio de 2023</p>
             <p class="content">Contém um trabalho que mostra o processo de criação de um carrinho de rolima chamado
               Mini Shelbinho.
             </p>
           </div>
         </div>
-        <div class="grid2">
+        <div class="grid2" data-month="junho">
           <div>
             <a href="https://senacscs.github.io/t3/tito/oficinas/" class="linker">
               <img src="ofici.png" width="255px" class="bordar4">
@@ -98,22 +134,33 @@
             </p>
           </div>
         </div>
-        <div class="grid2">
+        <div class="grid2" data-month="julho">
           <div>
             <a href="./fibo" class="linker">
               <img src="fibo.png" width="255px" class="bordar5">
             </a>
-            <p class="subtitulo">Fibonnaci</p>
+            <p class="subtitulo">Fibonacci</p>
           </div>
           <div>
             <p style="color: rgb(255, 0, 170);" class="date">30 de Julho de 2023</p>
-            <p class="content">Contém um Fibonacci extremamente perigosoconhecido como El "Fibonacci"
+            <p class="content">Contém um Fibonacci extremamente perigoso conhecido como El "Fibonacci"
               Ele pode ter as formas de um Fibonacci comum, mas definitivamente não é um.
             </p>
           </div>
         </div>
-      </div>
-    </div>
+        <div class="grid2" data-month="agosto">
+          <div>
+            <a href="./ods_menu" class="linker">
+              <img src="ods8.png" width="255px" class="bordar6">
+            </a>
+            <p class="subtitulo">ODS 8</p>
+          </div>
+          <div>
+            <p style="color: #a31b43;" class="date">5 de Agosto de 2023</p>
+            <p class="content">Contém um trabalho de técnico sobre a ODS 8. vídeo geral explicando o que é ODS, Vídeos  da ODS 8 e textos autorais do conteúdo são encontrados no site.
+            </p>
+          </div>
+        </div>
       <!-- <div class="gallery js-flickity"
           data-flickity-options='{ "wrapAround": true }'>
           <div class="gallery-cell"></div>
@@ -124,5 +171,5 @@
         </div> -->
     </div>
     </div>
-    <!-- <script src="/js/flickity.pkgd.min.js"></script> -->
+    <script src="script.js"></script>
   </body>
