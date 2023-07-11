@@ -71,7 +71,6 @@ nav a:hover {
 
 h1 {
     padding: 0 0 0 0.1rem;
-    font-size: clamp(0.1em, 1em + 3vw, 2.5em);
     color: #ccc;
     align-self: center;
     justify-self: left;
@@ -111,11 +110,6 @@ section:nth-child(even) {
     background-color: white;
 }
 
-p {
-    text-align: justify;
-    padding: 1rem 0;
-}
-
 /* ----- */
 
 /* SECTION 1 */
@@ -149,12 +143,36 @@ h2 {
 #secao2 {
     padding: 2rem;
     height: auto;
+    
 }
-
-.ods7 {
+.secao2 {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 3rem;
+    gap: 10rem;
+    padding-bottom: 0.5rem;
+    align-items: center;
+}
+.secao22 {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.5rem;
+    width: 1400px;
+    margin: auto;
+}
+.secao22 h3 {
+    text-align: center;
+}
+
+.secao22 li {
+    text-align: justify;
+    list-style: none;
+}
+.secao22 ul {
+    display: grid;
+    gap: 2rem;
 }
 
 /* ----- */
@@ -181,7 +199,13 @@ h2 {
 
 #secao4 {
     height: auto;
-    padding: 2rem;
+}
+li {
+    list-style-position: inside;
+    text-align: justify;
+}
+h3:nth-child(first) {
+    padding-top: 0;
 }
 
 /* ----- */
@@ -199,6 +223,36 @@ h2 {
 footer {
     background-color: #1b1e23;
     height: 10vw;
+}
+
+/* ----- */
+
+/* tamanho das fontes */
+
+p {
+    font-size: 2rem;
+    text-align: justify;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+    padding: 1rem 0;
+}
+
+a {
+    font-size: 2.6rem;
+}
+
+li {
+    font-size: 2rem;
 }
 
 /* ----- */
