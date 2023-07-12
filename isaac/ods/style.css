@@ -23,10 +23,10 @@ html {
 
 header {
     position: fixed;
-    width: 100%;
+    width: 99%;
     display: grid;
     height: 11rem;
-    grid-template-columns: 50% auto;
+    grid-template-columns: auto auto;
     background-color: #1b1e23;
     padding: 10px 10px 10px 10px;
     border-bottom: 4px solid #ffd700;
@@ -79,6 +79,8 @@ h1 {
     display: flex;
     justify-self: start;
     align-self: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 header figure {
     align-self: center;
@@ -108,6 +110,15 @@ section:nth-child(odd) {
 
 section:nth-child(even) {
     background-color: white;
+}
+
+.borda {
+    border: 0.2rem solid #ffd700;
+}
+
+li {
+    text-align: justify;
+    list-style-position: inside;
 }
 
 /* ----- */
@@ -196,16 +207,40 @@ h2 {
 /* ----- */
 
 /* SECTION 4 */
-
+/* #secao4 * {
+    border: 1px dashed #ffd700;
+    border-radius: 100%;
+} */
 #secao4 {
     height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    justify-items: center;
 }
-li {
+#secao4 div {
+    width: 80%;
+    text-align: center;
+}
+#secao4 p {
+    text-align: center;
+}
+#secao4 ol {
+    display: grid;
+    gap: 1rem;
+}
+#secao4 li {
     list-style-position: inside;
-    text-align: justify;
+    text-align: center;
 }
-h3:nth-child(first) {
-    padding-top: 0;
+#secao4 h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#secao4 h3 {
+    text-align: center;
 }
 
 /* ----- */

@@ -22,14 +22,14 @@ body {
     background: lightskyblue;
 }
 header {
-    background: rgb(1, 1, 30);
-    display: flex;
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(90deg,black, gray, black);
     flex-wrap: wrap; /*quando a tela estiver pequena faz um item ir abaixo do outro */
     justify-content: space-between;
     align-items: center;
     padding: 0.2em 1em 0.2em 1em;
 }
-
 .content {
     width: 100%;
     display: grid;
@@ -42,6 +42,7 @@ ul {
     list-style: none;
     font-size: 1.2rem;
     font-family: Arial;
+    flex-wrap: wrap;
 }       
 
 a {
@@ -64,16 +65,11 @@ a, p {
     color: gray;
 }
 
-.nomes {
-    font-size: 2em;
+.nomes li{
+    font-size: 1em;
+    text-align: center;
 }
-.li2 {
-    /* background-color: pink;
-    border-radius: 90px;
-    width: 40%; */
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .menu {
     display: flex;
     align-items: center;
@@ -85,6 +81,11 @@ a, p {
 main {
     margin-left: 1em;
     margin-right: 1em;
+    padding-top: 4em;
+}
+
+h1 {
+    text-align: center;
 }
 
 h2 {
@@ -95,13 +96,7 @@ h2 {
     color: gray;
 }
 
-.berga {
-    border-color: black;
-    border: 0.6em solid black;
-    border-radius: 1em;
-    margin-top: 1em;
-    background: linear-gradient(90deg, blue, red);
-}
+
 
 .ul {
     display: grid;
