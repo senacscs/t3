@@ -63,6 +63,7 @@ section:nth-child(odd){
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 article {
@@ -89,11 +90,13 @@ footer {
 
 #color-white {
     color: white;
-    font-size: 5cqmin;
+    font-size: 4cqmin;
     text-align: justify;
     text-align: center;
+ 
    
 }
+
 
 #tamanho{
     font-size: 5cqmin;
@@ -109,6 +112,7 @@ footer {
     /* alinhar o titulo e aplicar tamanho */
     text-align: center;
     font-size: 25px;
+    
 }
 #name {
     /* msm coisa com o subtitulo */
@@ -147,16 +151,6 @@ footer {
     padding: 10px;
 }
 
-.imagens img {
-    /* altura maxima */
-    max-height: 20vw;
-}
-.imagens {
-    /* configurar 2 colunas */
-    grid-template-columns: auto auto;
-    text-align: center;
-    /* colocar um espaçamento entre as grids */
-}
 nav {
     text-align: center;
     margin-top: 20px;
