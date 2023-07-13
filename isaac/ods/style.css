@@ -130,7 +130,7 @@ li {
     grid-template-rows: 10% 90%;
     align-items: center;
     height: auto;
-    padding-top: 13rem;
+    padding-top: 15rem;
 }
 
 .geral {
@@ -248,7 +248,24 @@ h2 {
 /* SECTION 5 */
 
 #secao5 {
-    height: 83vh;
+    height: auto;
+}
+
+#secao5 ul {
+    list-style: none;
+}
+
+#secao5 a {
+    text-decoration: none;
+    color: black;
+}
+
+#secao5 a:hover {
+    text-decoration: underline #ffd700;
+}
+
+#secao5 li {
+    text-align: center;
 }
 
 /* ----- */
@@ -256,9 +273,58 @@ h2 {
 /* FOOTER */
 
 footer {
+    padding: 0 7rem 0 7rem;
     background-color: #1b1e23;
-    height: 10vw;
+    height: 20vw;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-items: center;
+    column-gap: 10rem;
 }
+
+footer h2 {
+    font-size: 6rem;
+    text-align: center;
+    grid-column: 1/4;
+    padding: 0;
+    color: #fff1a3;
+}
+
+footer h3 {
+    color: #fff5ca;
+    text-align: center;
+    padding: 0 0 1rem 0;
+}
+
+footer p {
+    text-align: justify;
+    color: #ccc;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffd700;
+    cursor: pointer;
+}
+
+footer #links {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10rem;
+    padding-top: 4rem;
+    align-self: start;
+    
+}
+
+footer .nomes {
+    align-self: start;
+}
+
+footer img {
+    width: 10rem;
+}
+
 
 /* ----- */
 
@@ -283,7 +349,7 @@ h3 {
 }
 
 a {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
 }
 
 li {
