@@ -1,0 +1,11 @@
+@media screen and (min-width: 720px) {
+    body {
+    background-color: aqua;
+    }
+    }
+    
+    @media screen and (max-width: 720px) {
+    body {
+    background-color: rgb(255, 0, 0);
+    }
+    }
