@@ -1,197 +1,175 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-@font-face {
-    font-family: 'OldLondon';
-    src: url('assets/OldLondon.ttf');
-}
+
+/* Colors:
+Light: #F4EBD0
+Darker: #122620
+Gold: #D6AD60
+Tan: #B68D40
+*/
 body {
-    background: #e8dcb8 url('assets/bg2.jpg') no-repeat;
-    background-size: cover;
-    background-blend-mode: lighten;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    background-color: #F4EBD0;
+    color: #122620;
     overflow-x: hidden;
 }
-header {
+.logo {
+    width: 40px;
+}
+nav {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 5px;
+    text-transform: capitalize;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    left: 0;
+    background-color: #F4EBD0;
+}
+nav ul{
+    position: relative;
+    text-align: end;
+}
+nav ul li{
+    text-align: center;
+    display: inline;
+    padding: 0 .5rem;
+}
+nav ul li a{
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    color: #122620;
+    font-size: 1rem;
+    padding: 5px;
+}
+#general {
+    margin-top: 45px;
+}
+.active {
+    border-bottom: 1px solid #122620;
+}
+section {
+    padding-top: 2rem;
+    margin: 10px 5px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #D6AD60;
+}
+.heading-container {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    align-items: center;
+}
+.heading-container img {
+    min-width: 55px;
+    max-width: 50%;
+    justify-self: center;
+    mix-blend-mode: darken;
+}
+.heading {
+    color: #D6AD60;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.heading span {
+    color: #B68D40;
+}
+h2 {
+    font-size: .625rem;
+}
+
+.video-content {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+}
+.video {
+    padding: 5px;
+    text-align: center;
+  }
+.yt iframe {
+    position: absolute;
+    top: 0; bottom: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    aspect-ratio: 16/9;
+  }
+.video-text {
+    font-size: 0.75rem;
+    align-self: center; 
+    justify-content: left;
+}
+.objectives {
+    margin-top: 8px;
+}
+.objectives h2 {
+    color: #B68D40;
+    margin: 5px;
+}
+ol li {
+    padding-bottom: 4px;
+    font-size: 1rem;
+    margin-left: 20px;
+    list-style-type: disc;
+}
+p {
+    font-size: 1rem;
+}
+h2 {
+    font-size: 1.2rem;
+}
+h1 {
+    font-size: 1.75rem;
+    margin: 15px 0;
+}
+.videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#ref {
     display: flex;
     flex-direction: column;
 }
-header h1 {
-    font-family: 'OldLondon', serif;
-    font-size: 4rem;
-    text-align: center;
+.reftext {
+    width: 70vw;
+    margin: 14px 0;
 }
-hr {
-    border: 1.5px solid black;
-    margin: 0.125rem;
-    width: 150vw;
-}
-.info {
-    display: flex;
-    justify-content: space-between;
-}
-
-.info h3:first-child {
-    margin: 0;
-    padding-left: 0.5rem;
-}
-
-.info #date {
-    margin: 0 auto;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 75% 25%;
-}
-.content {
-    padding: 0.75rem;
-    margin-left: 2rem;
-}
-.content article {
-    width: fit-content;
-    margin: 1.5rem 0;
-    padding: 0.25rem;
-    overflow: auto;
-    position: relative;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 1rem;
-}
-.content article img {
-    float: left;
-    height: 20vh;
-    margin-right: 10px;
-    width: 15vw;
-    opacity: 60%;
-}
-.content article img:hover {
-    opacity: 100%;
-    transition: 0.5s;
-}
-
-.content h1 {
-    font-family: 'Instrument Serif', serif;
-    font-weight: 900;
-    font-size: 2rem;
-}
-.title {
-    font-family: 'Instrument Serif', serif;
-    font-weight: bolder;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-.content article p {
-    font-family: serif;
-    font-size: 1.2rem;
-    clear: right;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-.hidden {
-    display: none;
-}
-.nav h1 {
-    font-family: 'Instrument Serif', serif;
-    margin: 1rem;
-}
-.nav ul {
-    list-style: none;
-    font-family: 'Instrument Serif', serif;
-    margin: 1rem;
-}
-.month {
-    padding: 0.75rem;
-    margin: 0.25rem;
-    cursor: pointer;
-    border-radius: 1rem;
-    border: 1px solid black;
-}
-.month:hover {
-    background-color: #9b8d63;
-    transform: translateX(-2rem);
-    transition: 0.5s;
-    color: #e8dcb8;
-    font-weight: 800;
-}
-.active {
-    background-color: #9b8d63;
-    transform: translateX(-2rem);
-    cursor: default;
-    color: #e8dcb8;
-    font-weight: 800;
-}
-.return {
-    position: fixed;
-    margin-top: 10px;
-    margin-left: 10px;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.return img {
-    width: 18px;
-}
-  
-
 
 @media (max-width: 768px) {
-    * {
-        margin: 0;
-        padding: 0;
-
+    
+    iframe {
+        width: 170px;
     }
-    body {
-        overflow-x: hidden;
-        zoom: normal;
-        margin: 0;
+    section {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        height: fit-content;
     }
-    header h1 {
-        font-size: 2.5rem;
-        line-height: 2.5rem;
+    .video-content {
+        display: flex;
+        flex-direction: column;
     }
-    .info h3 {
-        font-size: 0.6rem;
+    .logo {
+        display: none;
     }
-    .content h1 {
-        font-size: 1.125rem;
+    nav {
+        display: block;
     }
-    .content{
-        margin: 0;
+    nav ul {
+        text-align: center;
     }
-    .content article {
-        margin-top: 1rem;
-        margin-left: 0;
+    nav ul li a {
+        font-size: 0.55rem;
     }
-    .content article p {
-        font-size: 0.8rem;
-    }
-    .title {
-        font-size: 1.5rem;
-    }
-    .content article img {
-        min-width: 60%;
-        max-width: 80%;
-        float: none;
-        margin-bottom: 3px;
-    }
-    /* .content article img {
-        max-width: 60%;
-        width: 60%;
-    } */
-    .nav h1 {
-        font-size: 1rem;
-    }
-    .nav {
-        position: relative;
-    }
-    .month {
-        width: 100%;
-    }
+    
 }
-
