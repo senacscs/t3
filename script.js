@@ -44,7 +44,8 @@ const projects = [
   { name: 'Projeto de pesquisa', url: '/projetopp' },
   { name: 'Oficinas', url: '/oficinas' },
   { name: 'Carrinho de rolimã', url: '/carrinho' },
-  { name: 'Fibonacci', url: '/fibonacci' }
+  { name: 'Fibonacci', url: '/fibonacci' },
+  { name: 'Ods', url: '/ods' }
 ]
 
 // Gets a random colors theme
