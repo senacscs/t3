@@ -52,6 +52,10 @@ section {
     height: 700px;
 }
 
+#section3{
+    height: 600px;
+}
+
 section:nth-child(even) {
     background: rgb(32,178,170);
 }
@@ -65,6 +69,7 @@ section:nth-child(odd){
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 
 article {
@@ -90,9 +95,8 @@ footer {
 }
 
 #color-white {
-    color: white;
-    font-size: 4cqmin;
-    text-align: justify;
+    color: #ffffff;
+    font-size: 20px;
     text-align: center;
  
    
@@ -112,7 +116,7 @@ footer {
 #title {
     /* alinhar o titulo e aplicar tamanho */
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     
 }
 #name {
@@ -168,4 +172,19 @@ footer{
     height: 20px;
  
 }
+
+.grid{
+    max-width: 20vw;
+    display: grid;
+    justify-content: center;
+    background-color: rgb(196, 196, 196);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    box-shadow: 8px 10px 4px rgb(0,0,0,0.5);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
 
