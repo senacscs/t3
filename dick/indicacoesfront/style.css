@@ -16,3 +16,7 @@ img {
 
  height:400px
 }
+
+@media screen and (max-width: 720px)
+{	
+}

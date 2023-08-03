@@ -33,3 +33,7 @@ color:gold;
 font-family: Verdana;
 font-size:x-large;
 }
+
+@media screen and (max-width: 720px)
+{	
+}
