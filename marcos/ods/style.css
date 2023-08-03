@@ -55,7 +55,12 @@ nav ul li a{
     border-bottom: 1px solid #122620;
 }
 section {
+    padding-top: 2rem;
     margin: 10px 5px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #D6AD60;
 }
 .heading-container {
     display: grid;
@@ -83,7 +88,7 @@ h2 {
 .video-content {
     margin-top: 10px;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 30% 70%;
     align-items: center;
 }
 .video {
@@ -111,27 +116,48 @@ h2 {
     margin: 5px;
 }
 ol li {
-    font-size: 0.65rem;
-    margin-left: 8px;
+    padding-bottom: 4px;
+    font-size: 1rem;
+    margin-left: 20px;
+    list-style-type: disc;
 }
 p {
-    font-size: 0.65rem;
+    font-size: 1rem;
 }
 h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 h1 {
     font-size: 1.75rem;
+    margin: 15px 0;
 }
 .videos {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+#ref {
+    display: flex;
+    flex-direction: column;
+}
+.reftext {
+    width: 70vw;
+    margin: 14px 0;
 }
 
 @media (max-width: 768px) {
     
     iframe {
         width: 170px;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        height: fit-content;
+    }
+    .video-content {
+        display: flex;
+        flex-direction: column;
     }
     .logo {
         display: none;
