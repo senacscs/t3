@@ -1,0 +1,14 @@
+body{
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+h1{
+    color:green;
+}
+p{
+    font-size: 25px;
+}
