@@ -7,7 +7,7 @@
 	}}
 
 body{
-    background: linear-gradient(-150deg, red, rgb(0, 0, 255),blue,red );
+    background: linear-gradient(-150deg, darkblue, darkgreen,darkgreen,darkblue );
 	background-size: 100% 100%;
 	animation: infinite 5s fundo; 
 	height: 100vh;
