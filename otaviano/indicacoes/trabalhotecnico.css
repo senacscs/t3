@@ -1,0 +1,13 @@
+body {
+    margin-left: 80px;
+    background-image: url(fundo-abstrato-da-parede-de-tijolo-escuro-design-criativo-para-seu-fundo.png-623);
+}
+   
+ h1, h2, a, p, ul, title {
+        color:white;
+        text-aling; center;
+}
+
+.meio {
+        text-aling: center;
+ }
