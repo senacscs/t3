@@ -1,0 +1,124 @@
+body {
+    font-family: 'Playfair Display', serif;
+    background-image: url(./img/fundo.png);
+    background-size: cover;
+    color: white;
+    font-size: large;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.ods {
+    position: relative;
+    max-width: 280px;
+    margin-top: 15px;
+}
+
+.container {
+  text-align: center;
+}
+
+.texto {
+  font-size: larger;
+  background-image: linear-gradient(to right, rgb(218, 150, 24), rgba(0, 0, 0, 0.479));
+  height: 520px;
+  border-radius: 6px;
+  border: 5px solid rgb(177, 132, 49);
+  padding: 15px;
+  margin: 10px;
+}
+
+.t {
+  text-align: end;
+}
+
+li {
+  font-size: larger;
+  margin: 15px;
+}
+
+.analise {
+  background-image: linear-gradient(to right, rgb(218, 150, 24), rgba(0, 0, 0, 0.479));
+  height: 200px;
+  font-size: larger;
+  border-radius: 6px;
+  border: 5px solid rgb(177, 132, 49);
+  padding: 15px;
+}
+
+.menu {
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.video-container {
+  display: flex;
+}
+
+.video-container iframe {
+  margin-right: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .ods {
+    max-width: 100%;
+  }
+
+  .texto {
+    height: auto;
+  }
+
+  .video-container {
+    flex-direction: column;
+  }
+
+  .video-container iframe {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .texto {
+    height: auto;
+    width: 410px;
+  }
+
+  * {
+    font-family: 'Playfair Display', serif;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+  .ods {
+    position: relative;
+    left: 20px;
+    max-width: 300px;
+  }
+
+  iframe {
+    width: 400px;
+  }
+
+  .menu {
+    position: relative;
+    left: 7px;
+  }
+
+  .analise {
+    height: auto;
+    width: 420px;
+  }
+
+  .video-container iframe {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
