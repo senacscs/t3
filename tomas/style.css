@@ -1,0 +1,25 @@
+body{
+    background-image: url(./assets/prateleira.jpg);
+    background-size: cover;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+img:hover{
+    transform: translateY(-17px);
+}
+@media screen and (min-width: 1281px) {
+    body {
+        margin-top: 70px;
+        margin-left: 200px;
+        transform: scale(1.25);
+    }
+    img {
+        height: 50%;
+        width: 90px;
+    }
+}
