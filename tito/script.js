@@ -4,7 +4,7 @@ const activitiesStorage = [
     subject: "Técnico",
     image: "indicacoes.svg",
     date: new Date(2023, 3, 24),
-    url: "indicacoes",
+    url: "tito/indicacoes",
     instructions:
       "Criar um website sobre conteúdos relacionados a front-end, contendo: site de conteúdos, canal do Youtube, influenciador, tutorial e podcast.",
   },
@@ -13,7 +13,7 @@ const activitiesStorage = [
     subject: "Projeto Profissional",
     image: "projeto.svg",
     date: new Date(2023, 5, 15),
-    url: "projetopp",
+    url: "tito/projetopp",
     instructions:
       "Criar um website para mostrar as diferentes seções da pesquisa.",
   },
@@ -22,7 +22,7 @@ const activitiesStorage = [
     subject: "Técnico",
     image: "oficinas.svg",
     date: new Date(2023, 5, 29),
-    url: "oficinas",
+    url: "tito/oficinas",
     instructions: "Oficinas que pretendem desenvolver algum conceito relacionado ao desenvolvimento web.",
   },
   {
@@ -30,7 +30,7 @@ const activitiesStorage = [
     subject: "Física",
     image: "carrinho.svg",
     date: new Date(2023, 6, 24),
-    url: "carrinho",
+    url: "tito/carrinho",
     instructions: "Site para mostrar o processo de criação do nosso carrinho de rolimã.",
   },
   {
@@ -38,8 +38,16 @@ const activitiesStorage = [
     subject: 'Matemática',
     image: 'fibonacci.svg',
     date: new Date(2023, 6, 30),
-    url: "fibonacci",
+    url: "tito/fibonacci",
     instructions: "Demonstração do retângulo dourado usando apenas HTML e CSS.",
+  },
+  {
+    name: 'ODS',
+    subject: 'Projeto Profissional',
+    image: 'ods.svg',
+    date: new Date(2023, 8, 30),
+    url: '/marcos/ods',
+    instructions: "Site contando um pouco mais sobre a ODS 2 - Fome Zero e Agricultura Sustentável",
   }
 ];
 
@@ -71,7 +79,7 @@ function createActivityElement(item) {
   instructions.classList.add("activity-instructions");
 
   // Special properties
-  link.href = `./${item.url}`;
+  link.href = item.url;
   link.tabIndex = 1;
   image.src = `./assets/${item.image}`;
   name.innerText = item.name;
