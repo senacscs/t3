@@ -3,16 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manutenção</title>
+    <title>The Marcos Esau Index</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <h1>Página em manutenção, sem previsão de resolução.</h1>
-    <ul>
-        <li><a href="./fibonacci/">fibonacci</a></li>
-        <li><a href="./indicacoesfront/">indicacoesfront</a></li>
-        <li><a href="./ods/">ODS</a></li>
-        <li><a href="./projetopp/">projetopp</a></li>
-        <li><a href="./oficinas/">Oficinas (simplesmente)</a></li>
-    </ul>
+    <header  id="header" class="active">
+        <span class="formatter"></span>
+        <span class="formatter"></span>
+        <div id="title">
+            <h1 class="header-title">
+                The Marcos Esau Index
+            </h1>
+        </div>
+        <div id="dropdown" class="month-wrapper header-box hidden">
+            <label for="mes" class="header-text">Navegar por Mês</label>
+            <select name="mes" id="month-selector">
+                <option value="all">Todos</option>
+                <option value="4">Abril</option>
+                <option value="5">Maio</option>
+                <option value="6">Junho</option>
+                <option value="7">Julho</option>
+                <option value="8">Agosto</option>
+            </select> 
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="show()">
+            <i class="fa fa-bars fa-lg"></i>
+        </a>
+        
+    </header>
+    <div class="divider"></div>
+    <div class="info-wrapper">
+        <span class="info-aside">
+            <p>Vol LXIX</p>
+        </span>
+        <span id="date" class="date-span">
+
+        </span>
+        <span class="info-aside">
+            <p></p>
+        </span>
+    </div>
+    <div class="divider"></div>
+    <div id="container">
+
+    </div>
 </body>
+    <script src="script.js"></script>
 </html>
