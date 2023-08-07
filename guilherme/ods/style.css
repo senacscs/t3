@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(237, 237, 237);
+}
+
+header {
+    background-color: rgb(53, 70, 58);
+    position: fixed;
+    width: 100%;
+    margin-top: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-bar {
+    min-height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5em;
+}
+
+.logo {
+    color: white;
+    font-size: 2rem;
+    transition: 1s;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.nav-item {
+    padding: 0.3em;
+    border-radius: 0.6em;
+    transition: 1s;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.nav-link:hover {
+    color: rgb(55, 102, 81);
+    transition: 1s;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 1.4em;
+    height: 0.2em;
+    border: 0.1em;
+    border-radius: 0.3em;
+    margin: 5px auto;
+    background-color: rgb(208, 208, 208);
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width:900px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 4.8em;
+        gap: 0;
+        border-radius: 0 0 1em 1em;
+        background-color: rgb(53, 70, 58);
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: all 0.3s;
+    }
+
+    .nav-item {
+        margin: 0.8em 0;   
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
+
+section {
+    height: 50em;
+    padding-top: 7em;
+}
+
+section:nth-child(even) {
+    background: white;
+}
+
+section:nth-child(odd){
+    background: #284632;
+}
+
+.home {
+    padding-top: 20em;    
+}
+
+.div-home {
+    height: 70%;
+    text-align: center;
+}
+
+.div-home h1 {
+    font-size: 3em;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.div-home p {
+    padding-top: 1em;
+    font-size: 1.5em;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.odss {
+    height: 80%;
+    text-align: center;
+}
+
+.odss h2 {
+    font-size: 2em;
+    padding-bottom: 2em;
+}
+
+.ods13 {
+    height: 90%;
+}
+
+#ods13 h2 {
+    font-size: 2em;
+}
+
+#ods13 {
+    text-align: center;
+}
+
+.vide {
+    border-radius: 1em;
+}
+
+.vid {
+    margin: 4em;
+    border-radius: 1em;
+}
+
+.analisegp {
+    padding-top: 14em;
+}
+
+.analisegp p {
+    font-size: 2em;
+    color: white;
+}
+
+.aneilise {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.acoes {
+    padding-top: 14em;
+}
+
+.acoes p {
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.acoeses {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spank {
+    margin-left: 1em;
+    font-size: 1em;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.metaspp h2 {
+    font-size: 3em;
+    color: white;
+    padding-bottom: 1.5em;
+    text-align: center;
+}
+
+.metaspp p {
+    font-size: 1.5em;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-metas {
+    width: 70%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+span {
+    color: white;
+    padding-left: 3em;
+    font-size: 1.3em;
+    font-family: cursive;
+}
+
+.ref a {
+    font-size: 1.5em;
+    color: white;
+}
+
+.ref {
+    text-align: center;
+    font-size: 2em;
+}
