@@ -1,0 +1,145 @@
+@media screen and (min-width: 1281px) {
+
+    body {
+
+        background-image:url(./de37acc23a1971294a020fffca413867.gif);
+
+        background-repeat: repeat-y;
+
+
+        text-align: center;
+
+
+    }
+    .meio {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+
+    body {
+
+        background-image:url(./images.jpg);
+        background-size: cover;
+        justify-content: center;
+        text-align: center;
+
+    }
+    .meio {
+        text-align: left;
+    }
+    p{
+        margin-left: 35%;
+        width: 70%;
+    }
+    .links{
+        margin-top: 60%;
+        margin-left: 50%;
+    }
+    .curto{
+        margin-top: 90%;
+        margin-left: 80%;
+        margin-bottom: 50%;
+    }
+    .nav{
+        margin-bottom: 120%;
+    }
+}
+
+
+
+
+html {
+
+    background-image: url(./bob_esponja.gif);
+
+
+
+   
+
+}
+
+
+
+
+nav {
+
+    text-align: center;
+
+    margin-top: 50px;
+
+
+
+
+}
+
+nav a{
+
+    color: rgb(255, 255, 255);
+
+    text-decoration: none;
+
+    padding: 5px;
+
+    margin: 5px;
+
+    font-size: 25pt;
+
+    position: relative;
+
+   
+
+}
+
+
+
+
+nav a::after{
+
+    content: "";
+
+    width: 0%;
+
+    height: 4px;
+
+    background-color:rgb(255, 0, 0);
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 5%;
+
+    right: 11%;
+
+    transition: 0.5s ease-in-out;
+
+}
+
+
+
+
+nav a:hover::after {
+
+    width: 90%;
+
+   
+
+}
+
+.Curto {;
+    text-align:center;
+    width: 60%;
+    position: absolute;
+    left: 20%;
+}
+.texto1{
+    width: 60%;
+    position: absolute;
+    left: 20%;
+}
+
+
+
