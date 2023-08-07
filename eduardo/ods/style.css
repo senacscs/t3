@@ -287,6 +287,7 @@ h2 {
     text-align: center;
 }
 
+
 /* ----- */
 
 /* FOOTER */
@@ -302,8 +303,17 @@ footer {
     column-gap: 10rem;
 }
 
+footer #links {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10rem;
+    padding-top: 4rem;
+    align-self: start;
+    
+}
+
 footer h2 {
-    font-size: 6rem;
+    font-size: 3.5rem;
     text-align: center;
     grid-column: 1/4;
     padding: 0;
@@ -327,22 +337,10 @@ footer a {
     cursor: pointer;
 }
 
-footer #links {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 10rem;
-    padding-top: 4rem;
-    align-self: start;
-    
-}
-
-footer .nomes {
-    align-self: start;
-}
-
 footer img {
     width: 10rem;
 }
+
 
 
 /* ----- */
@@ -387,6 +385,96 @@ li {
 
 @media screen and (max-width: 720px) {
 
+    html {
+        scroll-padding-top: 180px;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 100vw;
+        width: 100vw;
+        height: auto;
+        padding: 10px 0 0 0 ;
+        position: fixed;
+    }
+
+    #secao1 {
+        padding-top: 240px;
+    }
+    
+    #secao4 {
+        padding: 0;
+        grid-template-columns: 1fr;
+        padding: 1rem 0;
+    }
+    #secao4 h2 {
+        grid-column: 1;
+    }
+
+    #secao4 p {
+        text-align: justify;
+    }
+
+    #secao4 li {
+        text-align: justify;
+    }
+
+    .index {
+        padding: 0;
+        display: none;
+    }
+
+    header ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    header li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+    }
+
+    header li a {
+        display: flex;
+        font-size: 1em;
+        margin: auto auto;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .linha {
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        grid-column: 1/3;
+        margin: auto auto;
+        padding: 10px;
+    }
+    .linha h1 {
+        font-size: 8em;
+        text-align: center;
+        padding: 0 10px 0 0;
+    }
+
+    footer {
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #links {
+        flex-wrap: wrap;
+    }
+
     .geral {
         width: 300px;
         height: 169px;
@@ -426,12 +514,23 @@ li {
         align-items: center;
         justify-content: center;
         padding-top: 1rem;
-        width: auto;
+        width: 80vw;
         margin: auto;
     }
 
     .dados {
         grid-row: 1;
+        max-width: 100vw;
+    }
+
+    .dados ul {
+        align-items: center;
+    }
+    
+    #secao5 li {
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0;
     }
 
     .renda {
@@ -439,4 +538,29 @@ li {
         align-self: center;
     }
 
+    footer {
+        width: 100vw;
+        padding: 0;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    footer .nomes {
+        padding: 0 10px;
+    }
+
+    main img {
+        max-width: 90vw;
+    }
+
+    .nosso {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .nosso-vid {
+        align-self: center;
+        justify-self: center;
+    }
 }
