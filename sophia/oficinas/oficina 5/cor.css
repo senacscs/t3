@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    
+}
+
+html {
+    background-image: url(https://img.freepik.com/vetores-gratis/vetor-de-modelo-de-quadro-de-curva-cinza_53876-168160.jpg?w=740&t=st=1684940510~exp=1684941110~hmac=8cd82ef3cc3b7e3e5b9414604418f2add80d037112b7d6ed22279da69558606d);
+    background-size: cover;
+   
+}
+
+nav {
+    text-align: center;
+    margin-top: 50px;
+
+}
+nav a{
+    color: rgb(19, 0, 105);
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    font-size: 25pt;
+    position: relative;
+    
+}
+
+nav a::after{
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color:black;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    right: 11%;
+    transition: 0.5s ease-in-out;
+}
+
+nav a:hover::after {
+    width: 90%;
+    
+}
