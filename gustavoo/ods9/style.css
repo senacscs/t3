@@ -88,10 +88,33 @@ ul {
 @media screen and (max-width: 480px) {
   .texto {
     height: auto;
+    width: 410px;
+  }
+
+  * {
+    font-family: 'Playfair Display', serif;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+  .ods {
+    position: relative;
+    left: 20px;
+    max-width: 300px;
+  }
+
+  iframe {
+    width: 400px;
+  }
+
+  .menu {
+    position: relative;
+    left: 7px;
   }
 
   .analise {
     height: auto;
+    width: 420px;
   }
 
   .video-container iframe {
