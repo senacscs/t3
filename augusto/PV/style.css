@@ -29,6 +29,7 @@ h1 {
 }
 
 nav {
+    z-index: -1;
     text-align: justify;
     background-color: rgb(41, 124, 57);
     padding: 2px;
