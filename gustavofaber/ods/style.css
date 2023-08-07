@@ -1,14 +1,47 @@
+@media screen and (min-width: 720px) {
+
+    body {
+
+        background-image:url(./bob_esponja.gif);
+
+        background-repeat: repeat-y;
+
+
+        text-align: center;
+
+
+    }
+    .meio {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+
+    body {
+
+        background-image:url(./images.jpg);
+
+        text-align: center;
+
+    }
+    .meio {
+        text-align: left;
+    }
+
+}
+
+@media screen and (min-width: 720px) {
+
 body {
     text-align: center;
-    background-image: url('https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2504-FUND_DES_GRAF/pag/img/elefante.gif');
 
-    background-repeat: repeat;
+    background-size: cover;
 	text-align: center;
 }
-
-.meio {
-	text-align: center;
 }
+
 
 h3{
 
@@ -95,7 +128,7 @@ h3{
 
 html {
 
-    background-image: url(https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2504-FUND_DES_GRAF/pag/img/elefante.gif);
+    background-image: url(./bob_esponja.gif);
 
 
 
