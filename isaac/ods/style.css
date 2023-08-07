@@ -1,0 +1,562 @@
+/* TUDO */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+html {
+    cursor: default;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    scroll-padding-top: 130px;
+}
+ 
+body::-webkit-scrollbar {
+    width: 0.1px;
+}
+
+/* ----- */
+
+
+
+/* MENU FIXO */
+
+header {
+    position: fixed;
+    width: 100vw;
+    display: grid;
+    height: 11rem;
+    grid-template-columns: auto auto;
+    background-color: #1b1e23;
+    padding: 10px 10px 10px 10px;
+    border-bottom: 4px solid #ffd700;
+    gap: 0.8rem;
+    z-index: 1;
+}
+
+nav {
+    grid-column-start: 1;
+    grid-column-end:3;
+}
+nav li {
+    list-style: none;
+    cursor: pointer;
+    display: inline;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+header a {
+    align-self: center;
+    justify-self: right;
+}
+
+nav a, header a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+nav a {
+    text-align: center;
+    padding: 0.2rem;
+    color: #ccc;
+    transition: 0.8s;
+    border-radius: 10px;
+}
+nav a:hover {
+    color: #ffd700;
+}
+
+h1 {
+    padding: 0 0 0 0.1rem;
+    color: #ccc;
+    align-self: center;
+    justify-self: left;
+}
+.linha {
+    display: flex;
+    justify-self: start;
+    align-self: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+header figure {
+    align-self: center;
+}
+
+header img {
+    width: 6rem;
+    border-radius: 8px;
+}
+
+.index {
+    padding-right: 2rem;
+}
+
+/* ----- */
+
+
+
+/* SECTIONS GERAL */
+
+section {
+    /* height: 83vh; */
+    padding: 0.9rem 2.5rem 0.9rem 2.5rem;
+}
+
+section:nth-child(odd) {
+    background-color: #EFEFF0;
+}
+
+section:nth-child(even) {
+    background-color: white;
+}
+
+.borda {
+    border: 0.2rem solid #ffd700;
+}
+
+li {
+    text-align: justify;
+    list-style-position: inside;
+}
+
+/* ----- */
+
+/* SECTION 1 */
+
+#secao1 {
+    display: grid;
+    grid-template-rows: 10% 90%;
+    align-items: center;
+    height: auto;
+    padding-top: 15rem;
+}
+
+.geral {
+    justify-self: center;
+    align-self: flex-start;
+    margin: 2rem;
+    border: 0.2rem solid #ffd700;
+    border-radius: 6px;
+}
+
+h2 {
+    text-align: center;
+    align-self: center;
+    font-size: clamp(0.1rem, 2.6rem, 10rem);
+}
+
+
+
+/* ---- */
+
+/* SECTION 2 */
+
+#secao2 {
+    padding: 2rem;
+    height: auto;
+    
+}
+.secao2 {
+    display: grid;
+    grid-template-columns: 1fr 600px;
+    column-gap: 5rem;
+    padding-bottom: 0.5rem;
+    align-items: center;
+}
+.secao22 {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    width: auto;
+    margin: auto;
+}
+.secao22 h3 {
+    text-align: center;
+}
+
+.secao22 li {
+    text-align: justify;
+    list-style: none;
+}
+.secao22 ul {
+    display: grid;
+    gap: 2rem;
+}
+
+.rural {
+    align-self: center;
+    justify-self: center;
+    grid-row: span 2;
+}
+
+.indicadores {
+    grid-row-start: 2;
+}
+
+/* ----- */
+
+/* SECTION 3 */
+
+#secao3 {
+    height: auto;
+    padding: 2rem;
+}
+
+.nosso {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    padding-top: 2rem;
+}
+
+
+
+/* ----- */
+
+/* SECTION 4 */
+/* #secao4 * {
+    border: 1px dashed #ffd700;
+    border-radius: 100%;
+} */
+#secao4 {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    justify-items: center;
+}
+#secao4 div {
+    width: 80%;
+    text-align: center;
+}
+#secao4 p {
+    text-align: center;
+}
+#secao4 ol {
+    display: grid;
+    gap: 1rem;
+}
+#secao4 li {
+    list-style-position: inside;
+    text-align: center;
+}
+#secao4 h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#secao4 h3 {
+    text-align: center;
+}
+
+/* ----- */
+
+/* SECTION 5 */
+
+#secao5 {
+    height: auto;
+    padding: 2rem;
+}
+
+#secao5 ul {
+    list-style: none;
+}
+
+#secao5 a {
+    text-decoration: none;
+    color: black;
+}
+
+#secao5 a:hover {
+    text-decoration: underline #ffd700;
+}
+
+#secao5 li {
+    text-align: center;
+}
+
+
+/* ----- */
+
+/* FOOTER */
+
+footer {
+    padding: 0 7rem 2rem 7rem;
+    background-color: #1b1e23;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-items: center;
+    column-gap: 10rem;
+}
+
+footer #links {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10rem;
+    padding-top: 4rem;
+    align-self: start;
+    
+}
+
+footer h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    grid-column: 1/4;
+    padding: 0;
+    color: #fff1a3;
+}
+
+footer h3 {
+    color: #fff5ca;
+    text-align: center;
+    padding: 0 0 1rem 0;
+}
+
+footer p {
+    text-align: justify;
+    color: #ccc;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffd700;
+    cursor: pointer;
+}
+
+footer img {
+    width: 10rem;
+}
+
+
+
+/* ----- */
+
+/* tamanho das fontes */
+
+p {
+    font-size: 2rem;
+    text-align: justify;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+    padding: 1rem 0;
+}
+
+a {
+    font-size: 2.4rem;
+}
+
+li {
+    font-size: 2rem;
+}
+
+/* ----- */
+
+
+/* paleta de cores
+    #1b1e23;
+    #ffd700; amarelo
+    #B486AB; roxo
+    #EFEFF0; cinza bem claro
+*/
+
+@media screen and (max-width: 720px) {
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 100vw;
+        width: 100vw;
+        height: auto;
+        padding: 10px 0 0 0 ;
+        position: fixed;
+    }
+
+    #secao1 {
+        padding-top: 240px;
+    }
+    
+    #secao4 {
+        padding: 0;
+        grid-template-columns: 1fr;
+        padding: 1rem 0;
+    }
+    #secao4 h2 {
+        grid-column: 1;
+    }
+
+    #secao4 p {
+        text-align: justify;
+    }
+
+    #secao4 li {
+        text-align: justify;
+    }
+
+    .index {
+        padding: 0;
+        display: none;
+    }
+
+    header ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    header li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+    }
+
+    header li a {
+        display: flex;
+        font-size: 1em;
+        margin: auto auto;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .linha {
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        grid-column: 1/3;
+        margin: auto auto;
+        padding: 10px;
+    }
+    .linha h1 {
+        font-size: 8em;
+        text-align: center;
+        padding: 0 10px 0 0;
+    }
+
+    footer {
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #links {
+        flex-wrap: wrap;
+    }
+
+    .geral {
+        width: 300px;
+        height: 169px;
+    }
+
+    .nosso-vid {
+        width: 300px;
+        height: 169px;
+    }
+
+    .secao2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+        padding-bottom: 0.5rem;
+        align-items: center;
+    }
+
+    .descricao {
+        grid-column: 1 / -1;
+    }
+
+    .indicadores {
+        grid-column: 1 / -1;
+    }
+
+    .rural {
+        grid-column: 1 / -1;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .secao22 {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 5rem;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1rem;
+        width: 80vw;
+        margin: auto;
+    }
+
+    .dados {
+        grid-row: 1;
+        max-width: 100vw;
+    }
+
+    .dados ul {
+        align-items: center;
+    }
+    
+    #secao5 li {
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0;
+    }
+
+    .renda {
+        justify-self: center;
+        align-self: center;
+    }
+
+    footer {
+        width: 100vw;
+        padding: 0;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    footer .nomes {
+        padding: 0 10px;
+    }
+
+    main img {
+        max-width: 90vw;
+    }
+
+    .nosso {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .nosso-vid {
+        align-self: center;
+        justify-self: center;
+    }
+}
