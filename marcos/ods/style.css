@@ -138,6 +138,7 @@ h1 {
 #ref {
     display: flex;
     flex-direction: column;
+    gap: 10px
 }
 .reftext {
     width: 70vw;
