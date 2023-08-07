@@ -130,6 +130,16 @@ const Apps = [
         Class: "quadrado",
         Icon: "./fibonacci/FUNDO.jpg"
     },
+    {
+    title: "Pocket Mirror",
+    Subject: "Nenhum",
+    Data: "07/08/23",
+    Img: "wallpaper.jpg",
+    Text: "Site fora da escola para uma banda merda ae",
+    Link: "https://pocketmirror.github.io",
+    Class: "pm",
+    Icon: "./assets/LogoB.png"
+},
 ]
 
 const h1 = document.getElementById('h1W')
