@@ -117,3 +117,13 @@
       transform: rotate(0);
     }
   }
+  @media (max-width: 768px) {
+    *{
+        color: aqua !important; 
+    }
+}
+@media (max-width: 480px) {
+    * {
+    color: red !important;
+}
+}
