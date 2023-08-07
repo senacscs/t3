@@ -79,7 +79,7 @@ function createActivityElement(item) {
   instructions.classList.add("activity-instructions");
 
   // Special properties
-  link.href = item.url;
+  link.href = `/t3/${item.url}`;
   link.tabIndex = 1;
   image.src = `./assets/${item.image}`;
   name.innerText = item.name;
