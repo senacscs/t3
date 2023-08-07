@@ -1,5 +1,5 @@
 body {
-    background-color: aqua;
+    background-color: rgb(0, 0, 0);
 
 }
 h1, h2 {
@@ -13,7 +13,7 @@ p {
 }
 .button {
     border-radius: 4px;
-    background-color: #f4511e;
+    background-color: #302a28;
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -27,7 +27,7 @@ p {
 .button span {
     cursor: pointer;
     display: inline-block;
-    position: relative;
+    position: relative; 
     transition: 0.5s;
 }
 .button span:after {
