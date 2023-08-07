@@ -114,11 +114,11 @@ font-size: large;
       transform: scale(1.08);
       transition: 500ms ;}
       .bordar6 {
-        border: 3px solid #d1184f;
+        border: 3px solid #1868d1;
         cursor: pointer;
       } 
       .bordar6:hover {
-        border: 3px solid #ce194f;
+        border: 3px solid #1934ce;
         transform: scale(1.08);
         transition: 500ms ;}
   
