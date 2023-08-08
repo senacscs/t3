@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <title>Projeto De Vida</title>
 </head>
 <body>
+    <section>
+    <header>
+       <h1 class="hensel">Bruno Hensel</h1>
+        
+
+            <nav>
+                <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+                <menu id="itens">
+                    <ul>
+                        <li><a href="#">opção 1</a></li>
+                        <li><a href="#">opção 2</a></li>
+                        <li><a href="#">opção 3</a></li>
+                        <li><a href="#">opção 4</a></li>
+                    </ul>
+                </menu>
+            </nav>
+    </header>
+</section>
+
+   
+<section class="2parte">
+<br>
+<br>
+<br>
+<br>
+<br>
+
     <ul>
         <li>Caracteristicas marcantes</li>
         <li>principais intereses</li>
@@ -18,5 +47,16 @@
         <li>causas que gostaria de se envolver</li>
         <li>sobre oq gosta de conversar</li>
     </ul>
+</section>
+
+    <script>
+        function clickMenu(){
+            if(itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
