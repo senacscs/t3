@@ -83,7 +83,7 @@ const newsArticles =[
       date: "Julho de 2023"
     },
     {
-      path: './ods',
+      path: '../tito/ods/',
       text: "Nos componentes de Técnico e Projeto Profissional foi realizado uma atividade relacionado aos Objetivos de Desenvolvimento Sustentável, da ONU. A atividade foi composta de uma criação de um website para expor o conteúdo e um texto autoral sobre o assunto. Além disso foram pesquisados e anexados vídeos relacionados ao assunto.",
       title: "Objetivo de Desenvolvimento Sustentável",
       img: "./assets/sample.jpg",
@@ -92,8 +92,11 @@ const newsArticles =[
     }
   ];
 
-function getRandomSize() {
-    const sizes = ["small", "medium", "large"];
+function getRandomSize(priority) {
+    if (priority > 450){
+        return "large"
+    } 
+    const sizes = ["small", "medium"];
     return sizes[Math.floor(Math.random() * sizes.length)];
 }
 
@@ -107,9 +110,10 @@ function getRandomHighlight() {
 }
 
 function createNewspaperArticle(article) {
+    const articlePriority = article.text.length
     const articleElement = document.createElement("div");
     articleElement.classList.add("article");
-    articleElement.classList.add(getRandomSize());
+    articleElement.classList.add(getRandomSize(articlePriority));
     articleElement.classList.add(getRandomPosition());
 
     const titleElement = document.createElement("div");

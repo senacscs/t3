@@ -74,7 +74,7 @@ header {
 
 .header-title {
     font-family: 'OldLondon', serif;
-    font-size: 3.5em;
+    font-size: 4em;
 }
 
 .icon {
@@ -82,6 +82,13 @@ header {
 }
 .formatter {
     visibility: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -93,7 +100,6 @@ header {
 }
 .article {
     /* background-color: ivory; */
-    flex: 1;
     padding: 15px;
     border: 1px solid #ccc;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -101,6 +107,15 @@ header {
     min-width: 250px;
     width: 100%;
     cursor: pointer;
+}
+.small {
+    flex: 1;
+}
+.medium {
+    flex: 2;
+}
+.large {
+    flex: 3;
 }
 .article:hover {
     transition: 1s;
