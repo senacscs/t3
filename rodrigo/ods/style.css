@@ -150,7 +150,26 @@ p.meta {
 .refer a {
     color: rgb(10, 61, 144);
 }
-
+/* --------------------------------------------------------------section 5 */
+.park {
+    max-width: 60vw;
+    margin-left: 20vw;
+}
+.park h1 {
+    margin: 3vh 0vw;
+}
+.park h2 {
+    font-size: 120%;
+}
+.park p {
+    margin-top: 2vh;
+}
+p.question {
+    font-weight: bold;
+}
+.park li {
+    list-style: decimal;
+}
 /* --------------------------------------------------------------footer */
 footer {
     display: grid;
