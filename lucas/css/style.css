@@ -8,25 +8,9 @@ h3{
 text-align: center;
 }
 body {
-
-     -webkit-animation: colorchange 15s infinite;
-    
-     animation: colorchange 15s infinite;
-    
-    }
-    
-    @-webkit-keyframes colorchange {
-    
-    0% {background: #ff000086;}
-    
-    25% {background: #0011ff86;}
-
-     50% {background: #00ffcc86;}
-    
-     75% {background: #f700ff86;}
-    
-    100% {background: #2bff0086;}
-    
+     background: rgb(16,44,79);
+background: linear-gradient(90deg, rgba(16,44,79,1) 0%, rgba(94,84,255,1) 95%);
+     text-align: center;
     }
 
 
