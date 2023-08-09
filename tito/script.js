@@ -4,7 +4,7 @@ const activitiesStorage = [
     subject: "Técnico",
     image: "indicacoes.svg",
     date: new Date(2023, 3, 24),
-    url: "tito/indicacoes",
+    url: "tito/indicacoesfront",
     instructions:
       "Criar um website sobre conteúdos relacionados a front-end, contendo: site de conteúdos, canal do Youtube, influenciador, tutorial e podcast.",
   },
