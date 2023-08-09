@@ -114,11 +114,11 @@ font-size: large;
       transform: scale(1.08);
       transition: 500ms ;}
       .bordar6 {
-        border: 3px solid #1868d1;
+        border: 3px solid #187ed1;
         cursor: pointer;
       } 
       .bordar6:hover {
-        border: 3px solid #1934ce;
+        border: 3px solid #266983;
         transform: scale(1.08);
         transition: 500ms ;}
   
@@ -257,7 +257,7 @@ body {
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(135, 170, 235, 0.2);
   animation: animate 25s linear infinite;
   bottom: -150px;
 
