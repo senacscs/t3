@@ -24,7 +24,6 @@ const students = [
   { name: "Lucas", url: "/lucas" },
   { name: "Luciano", url: "/luciano" },
   { name: "Marcos", url: "/marcos" },
-  { name: "Mateus", url: "/mateus" },
   { name: "Nicolas", url: "/nicolas" },
   { name: "Nicole", url: "/nicole" },
   { name: "Otaviano", url: "/otaviano" },
