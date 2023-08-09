@@ -1,5 +1,5 @@
 
-    @media screen and (min-width: 720px) {      
+    @media screen and (min-width: 896px) {      
         * {
             margin: 0px;
             padding: 0px;
@@ -83,13 +83,13 @@
     }
 
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 896px) {
 
     * {
         margin: 0px;
         padding: 0px;
-        
-        font-family: Arial, Helvetica, sans-serif
+        font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+        font: 500;
     }
     
     html {
@@ -167,25 +167,56 @@
         color: black;
     }
 
+    .displayods {
+        gap: 0.5em;
+        margin-left: 5%;
+        margin-right: 40em;
+         display: flex;
+         margin-top: 0.5em;
+    }
+
+    .box1 {
+        width: 225px;
+        height: 9em;
+    }
+
+
     .insta {
         width: 50px;
         margin-top: 5px;
-        margin-left: 8em;
+        margin-left: 3em;
     }
 
     .imgeu {
-        width: 150px;
+        width: 125px;
        border: 5px solid black;
+       height: 125px;
        border-radius: 30px;
     }
 
     .introducao {
         display: flex;
-        gap: 0.5em;
-        text-align: justify;
+        text-align: justify; 
+        width: 90%
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .title2 {
+        font-size: 1.5em;
+        margin-top: -1.5em;
     }
 
     p {
-        font-size:12px ;
+        font-size:14px ;
+        text-align: justify;
+    }
+
+    .p1 {
+        font-size: 14px;
+        margin-left: 1em;
+        text-align: justify;
     }
 }
