@@ -34,7 +34,7 @@
         color: white;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         margin-top: -912px;
-        font-size: 30px;
+        font-size: 20px;
         padding: 10px;
         display: inline-block;
     }
@@ -106,7 +106,8 @@
         text-align: justify;
         text-align: center;
     }
-    
+
+
     #video{
         grid-area: main;
     }
@@ -184,7 +185,8 @@
         margin-bottom: 20px;
         padding: 20px;
     }
-    
+
+
     
     ul {
         margin-left: 40px; 
@@ -194,10 +196,7 @@
     li {
         margin-bottom: 25px; 
     }
-    
-    #color{
-        color: black;
-    }
+
     
     
     
@@ -245,7 +244,7 @@ header nav ul li a {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: -40px;
-    font-size: 15px;
+    font-size: 10px;
     padding: 10px;
     display: inline-block;
 }
@@ -406,9 +405,6 @@ li {
     margin-bottom: 15px; 
 }
 
-#article{
-    color: black;
-}
 
 }
 
