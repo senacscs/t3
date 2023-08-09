@@ -1,0 +1,191 @@
+
+    @media screen and (min-width: 720px) {      
+        * {
+            margin: 0px;
+            padding: 0px;
+            
+            font-family: Arial, Helvetica, sans-serif
+        }
+        
+        html, body {
+            height: 100%;
+        }
+        
+        header {
+            background-color: rgb(0, 0, 0);
+            z-index: 1; 
+            justify-content: space-between;
+        }
+    
+        .header2 {
+            display: flex;
+            margin: 0px;
+            margin:0px;
+        }
+        
+        header  > h1{
+            padding: 10px;
+            color: white;
+        }
+        
+        menu {
+            display: none;
+        }
+        
+        menu > ul {
+            list-style-type: none;
+        }
+        
+        menu > ul > li > a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            background-color: rgb(37, 37, 37);
+            color:white;
+            text-align: center;
+            border-top: 2px solid gray;
+        }
+        
+        menu > ul > li > a:hover {
+        background-color: rgb(56, 56, 56);
+        color: white;
+        }
+    
+        main {
+            width: 90vw;
+            margin-top: auto;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    
+        span#burguer {
+            background-color: black;
+            margin-top: 3px;
+            text-align: center;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+        span#burguer:hover{
+            background-color: white; 
+            color: black;
+        }
+    
+        .insta {
+            width: 50px;
+            margin-top: 10px;
+            margin-left: 8em;
+        }
+
+
+    }
+
+
+@media screen and (max-width: 720px) {
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        
+        font-family: Arial, Helvetica, sans-serif
+    }
+    
+    html {
+        height: 100%;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-image: url(assets/fundocelular.png);
+        background-attachment: fixed;
+    }
+
+    
+    header {
+        background-color: rgb(0, 0, 0);
+        z-index: 1; 
+        justify-content: space-between;
+    }
+
+    .header2 {
+        display: flex;
+        margin: 0px;
+        margin-bottom: 1em;
+
+    }
+    
+    header  > h1{
+        padding: 10px;
+        color: white;
+        font-size: 1.5em;
+    }
+    
+    menu {
+        display: none;
+    }
+    
+    menu > ul {
+        list-style-type: none;
+    }
+    
+    menu > ul > li > a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        background-color: rgb(37, 37, 37);
+        color:white;
+        text-align: center;
+        border-top: 2px solid gray;
+    }
+    
+    menu > ul > li > a:hover {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    }
+
+    main {
+        width: 90vw;
+        margin-top: auto;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    span#burguer {
+        background-color: black;
+        margin-top: 3px;
+        text-align: center;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    span#burguer:hover{
+        background-color: white; 
+        color: black;
+    }
+
+    .insta {
+        width: 50px;
+        margin-top: 5px;
+        margin-left: 8em;
+    }
+
+    .imgeu {
+        width: 150px;
+       border: 5px solid black;
+       border-radius: 30px;
+    }
+
+    .introducao {
+        display: flex;
+        gap: 0.5em;
+        text-align: justify;
+    }
+
+    p {
+        font-size:12px ;
+    }
+}
