@@ -1,0 +1,28 @@
+* {
+    text-align: center;
+    color: rgb(242, 237, 237);
+}
+
+body {
+    background-color:#87B2E8;
+}
+
+nav{
+    margin-top: 180px;
+    color: white;
+}
+
+li {
+    list-style: none;
+    color: rgb(10, 9, 9);
+    background-color: rgb(33, 44, 44);
+}
+
+main{
+    position: relative;
+    padding-top: 400px;
+}
+
+header{
+   font-size: xx-large;
+}
