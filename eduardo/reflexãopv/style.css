@@ -40,7 +40,7 @@ nav {
 }
 
 .nav-list li + li {
-    padding-left: 3rem;
+    margin-left: 3rem;
 }
 
 .nav-list a {
@@ -64,6 +64,18 @@ nav h1 {
     color: #E539ED;
 }
 
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background-color: white;
+    margin: 0.8rem;
+}
+
 /* sections */
 
 .sections:nth-child(odd) {
@@ -82,7 +94,7 @@ nav h1 {
 
 .section1 {
     display: grid;
-    grid-template-columns: 1430px;
+    grid-template-columns: 143rem;
     justify-content: center;
 }
 
@@ -101,7 +113,7 @@ nav h1 {
 
 .section2 {
     display: grid;
-    grid-template-columns: 700px 700px;
+    grid-template-columns: 70rem 70rem;
     justify-content: center;
     gap: 3rem;
 }
@@ -117,7 +129,7 @@ nav h1 {
 
 .section3 {
     display: grid;
-    grid-template-columns: 700px 700px;
+    grid-template-columns: 70rem 70rem;
     justify-content: center;
     gap: 3rem;
 }
@@ -136,7 +148,7 @@ nav h1 {
 
 .section4 {
     display: grid;
-    grid-template-columns: 700px 700px;
+    grid-template-columns: 70rem 70rem;
     justify-content: center;
     gap: 3rem;
 }
@@ -151,7 +163,7 @@ nav h1 {
 
 .section5 {
     display: grid;
-    grid-template-columns: 700px 700px;
+    grid-template-columns: 70rem 70rem;
     justify-content: center;
     gap: 3rem;
 }
@@ -173,6 +185,12 @@ nav h1 {
     width: 100vw;
 }
 
+.footer p {
+    color: white;
+    padding: 3rem;
+    text-align: center;
+}
+
 /* font size */
 
 h1 {
@@ -191,17 +209,136 @@ p, li, a {
     font-size: 1.6rem;
 }
 
+/* responsivo */
 
+@media screen and (max-width: 1024px) {
 
+    /* hamburguer */
 
+    body {
+        overflow-x: hidden;
+    }
 
+    .mobile-menu {
+        display: initial;
+        
+    }
 
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 33vw;
+        height: 92vh;
+        background-image: linear-gradient(-35deg, #743aca, #9249ff);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: 0.3s;
+    }
 
+    .nav-list li + li {
+        margin-left: 0;
+        
+    }
 
+    .nav-list.active {
+        transform: translateX(0);
+    }
 
+    .section1 {
+        display: grid;
+        grid-template-columns: 90rem;
+        justify-content: center;
+    }
 
+    .section2 {
+        display: grid;
+        grid-template-columns: 45rem 45rem;
+        justify-content: center;
+    }
+    .section3 {
+        display: grid;
+        grid-template-columns: 45rem 45rem;
+        justify-content: center;
+    }
+    .section4 {
+        display: grid;
+        grid-template-columns: 45rem 45rem;
+        justify-content: center;
+    }
+    .section5 {
+        display: grid;
+        grid-template-columns: 45rem 45rem;
+        justify-content: center;
+    }
+}
 
+@media screen and (max-width: 480px) {
+    /* hamburguer */
 
+    body {
+        overflow-x: hidden;
+    }
+
+    .mobile-menu {
+        display: initial;
+        
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 60vw;
+        height: 92vh;
+        background-image: linear-gradient(-35deg, #743aca, #9249ff);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: 0.3s;
+    }
+
+    .nav-list li + li {
+        margin-left: 0;
+        
+    }
+
+    .nav-list.active {
+        transform: translateX(0);
+    }
+
+    .section1 {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    .section2 {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .section3 {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .section4 {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .section5 {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+}
+
+    
 
 /* PALETA 
     #E539ED; rosa
