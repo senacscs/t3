@@ -119,6 +119,11 @@
         .title {
             font-size: 2.5em;
         }
+
+        .title1 {
+            font-size: 2.0em;
+            margin-top: -1.5em;
+        }
     
         .title2 {
             font-size: 2.0em;
@@ -131,9 +136,7 @@
         }
     
         .p1 {
-            font-size: 24px;
-            margin-left: 1em;
-            text-align: justify;
+            opacity: 0;
         }
     
         .final{
@@ -144,6 +147,11 @@
             font-size: 1.5em;
             color: white;
             
+        }
+
+        .opacity {
+            font-size: 24px;
+            text-align: justify;
         }
     }
 
@@ -239,6 +247,7 @@
         margin-right: 40em;
          display: flex;
          margin-top: 0.5em;
+
     }
 
     .box1 {
@@ -270,6 +279,11 @@
         font-size: 1.5em;
     }
 
+    .title1 {
+        font-size: 1.5em;
+         margin-top: 0.5em;
+    }
+
     .title2 {
         font-size: 1.5em;
         margin-top: 0.5em;
@@ -294,5 +308,9 @@
         font-size: 1em;
         color: white;
 
+    }
+
+    .opacity {
+        opacity: 0;
     }
 }
