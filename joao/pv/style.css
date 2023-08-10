@@ -86,7 +86,7 @@ a {
     text-align: center;
 }
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:720px) {
 * {
     padding: 0;
     margin: 0;
