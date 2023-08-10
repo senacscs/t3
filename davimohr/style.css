@@ -2,17 +2,18 @@ html{
     background-color: rgb(33, 33, 33);
     background-size: 100%;
     background-repeat: no-repeat;
-
+    font-family:sans-serif;
 }
+
    
     
 .box{
  background-color: #8aff00;
  border-radius: 20px;
  margin-right: auto;
- width: 450px;
  margin-left: auto;
-
+ width: 450px;
+ transition: 0.5s;
 }
 #index{
     font-size: 72px;
@@ -21,7 +22,8 @@ html{
 }
 img{
  border-radius: 20px;
- margin-left: 25px;
+ margin-left: 5%;
+ margin-right: auto;
  margin-bottom: 5%;
  object-fit: cover;
 }
@@ -29,7 +31,10 @@ h2 {
     text-align: center;
     
 }
-
+.box img {
+    display: block;
+    margin: auto auto 22.5px auto;
+}
 .display {
     margin-left: 8em;
     margin-right: 8em;
@@ -41,6 +46,8 @@ h2 {
 .box:hover {
     background-color: #FE0472;
     transition: 0.5s;
+    width: 85%;
+    align-items: center;
 }
 #index a {
     text-decoration: none;
