@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+  *{
+    margin: 0;
+    color: green;
+    border: 2px solid green;
+  }
+  body{
+    background: black;
+    font-family: 'Anonymous Pro', monospace;
+    width: 70%; 
+  }
+    article p { 
+    box-shadow: .6em 0 0 #ffffff;
+    margin: 2rem 1rem;
+    width: 23ch;
+    overflow: hidden;
+    color: #FFF;
+    white-space: nowrap;
+    -webkit-animation: caret .5s step-end infinite alternate,
+               type 5s steps(23, end);
+            animation: caret .5s step-end infinite alternate,
+               type 5s steps(23, end)
+  }
+  
+  
+  
+  @-webkit-keyframes type {
+    0% {
+      width: 0;
+    }
+  
+  }
+  
+  
+  
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+  
+  }
+  @-webkit-keyframes caret { 
+    50% { 
+      box-shadow: .6em 0 0 transparent;
+    }
+  }
+  @keyframes caret { 
+    50% { 
+      box-shadow: .6em 0 0 transparent;
+    }
+  }
+  .error {
+    color: red;
+  }
+  p {
+    margin-bottom: 5vh;
+  }
