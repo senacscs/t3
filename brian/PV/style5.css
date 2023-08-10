@@ -2,7 +2,7 @@ body {
     background-color: black;
     padding-bottom: 65px;
     }
-    .box {
+    .box-1 {
       width: 90%;
       background-color: rgb(25, 25, 25);
       margin-left: auto;
@@ -12,6 +12,89 @@ body {
       border-right: 5px solid rgba(255, 208, 0, 0.75);
       box-shadow: 0 0 30px 0 rgba(83, 14, 14, 0.8);
     }
+
+    .box-2 {
+      width: 90%;
+      background-color: rgb(25, 25, 25);
+      margin-left: auto;
+      margin-right: auto;
+      padding: 10px;
+      border-left: 5px solid rgba(255, 208, 0, 0.75);
+      border-right: 5px solid rgba(255, 208, 0, 0.75);
+      box-shadow: 0 0 30px 0 rgba(83, 14, 14, 0.8);
+    }
+
+    .box-3 {
+        width: 90%;
+        background-color: rgb(25, 25, 25);
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        border-left: 5px solid rgba(255, 208, 0, 0.75);
+        border-right: 5px solid rgba(255, 208, 0, 0.75);
+        box-shadow: 0 0 30px 0 rgba(83, 14, 14, 0.8);
+      }
+      .box-4 {
+        width: 90%;
+        background-color: rgb(25, 25, 25);
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        border-left: 5px solid rgba(255, 208, 0, 0.75);
+        border-right: 5px solid rgba(255, 208, 0, 0.75);
+        box-shadow: 0 0 30px 0 rgba(83, 14, 14, 0.8);
+      }
+      .box-5 {
+        width: 90%;
+        background-color: rgb(25, 25, 25);
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        border-left: 5px solid rgba(255, 208, 0, 0.75);
+        border-right: 5px solid rgba(255, 208, 0, 0.75);
+        box-shadow: 0 0 30px 0 rgba(83, 14, 14, 0.8);
+      }
+      .box-6 {
+        width: 90%;
+        background-color: rgb(25, 25, 25);
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        border-left: 5px solid rgba(255, 208, 0, 0.75);
+        border-right: 5px solid rgba(255, 208, 0, 0.75);
+        box-shadow: 0 0 30px 0 rgba(83, 14, 14, 0.8);
+      }
+      .box-7 {
+        width: 90%;
+        background-color: rgb(25, 25, 25);
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        border-left: 5px solid rgba(255, 208, 0, 0.75);
+        border-right: 5px solid rgba(255, 208, 0, 0.75);
+        box-shadow: 0 0 30px 0 rgba(83, 14, 14, 0.8);
+      }
+      .box-8 {
+        width: 90%;
+        background-color: rgb(25, 25, 25);
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        border-left: 5px solid rgba(255, 208, 0, 0.75);
+        border-right: 5px solid rgba(255, 208, 0, 0.75);
+        box-shadow: 0 0 30px 0 rgba(83, 14, 14, 0.8);
+      }
+      .box-9 {
+        width: 90%;
+        background-color: rgb(25, 25, 25);
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        border-left: 5px solid rgba(255, 208, 0, 0.75);
+        border-right: 5px solid rgba(255, 208, 0, 0.75);
+        box-shadow: 0 0 30px 0 rgba(83, 14, 14, 0.8);
+      }
+
     h1 {
         text-align: center;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -26,7 +109,7 @@ body {
     
     h2 {
         text-align: left;
-        color: rgba(255, 255, 255, 0.75);
+        color: yellow;
         padding-left: 15px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 30px;
@@ -39,7 +122,7 @@ body {
     
     h3 {
         text-align: center;
-        color: rgba(212, 13, 79, 0.836);
+        color: rgba(231, 21, 91, 0.945);
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 20px;
         padding-left: 60px;
@@ -50,9 +133,9 @@ body {
     
     p {
         text-align: left;
-        color: rgb(212, 13, 79);
+        color: white;
         padding-left: 15px;
-        font-family: 'Jost', sans-serif;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 20px;
         text-shadow:
         -1px -1px 0 black, 
