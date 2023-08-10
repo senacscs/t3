@@ -1,0 +1,172 @@
+body {
+    text-align: center;
+    background-image: url(https://img.freepik.com/vetores-gratis/padrao-de-grade-de-losango-dourado-sem-costura-em-fundo-preto_53876-97589.jpg?w=1060&t=st=1687184256~exp=1687184856~hmac=af65679f219d4249af1de611f5a9cc6aeda12a6cdcc97ed70d1622a5417f798d);
+color: white;
+	text-align: center;
+}
+
+.meio {
+	text-align: center;
+}
+
+h3{
+
+    .calculadora
+
+        position: absolute;
+
+        background-color: black;
+
+        top: 50%;
+
+        transform: translate(-50%,-50%);
+
+        border-radius: 15px;
+
+        padding: 15px;
+
+        left: 50%
+
+       
+
+    }
+
+    .botão{
+
+        width: 50px;
+
+        height: 50px;
+
+        font-size: 25px;
+
+        margin: 3px;
+
+        cursor: pointer;
+
+        background-color: rgb(31,31,31);
+
+        border: none;
+
+        color: white
+
+    }
+
+    .botão:hover{
+
+        background-color: black;
+
+    }
+
+    #resultado{
+
+        background-color: white;
+
+        width: 207px;
+
+        height: 30px;
+
+        margin: 5px;
+
+        font-size: 25px;
+
+        color: black;
+
+        text-align: right;
+
+        padding: 5px;
+}
+*{
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+ 
+
+   
+
+}
+
+
+
+
+html {
+
+    background-image: url(https://img.freepik.com/vetores-gratis/vetor-de-modelo-de-quadro-de-curva-cinza_53876-168160.jpg?w=740&t=st=1684940510~exp=1684941110~hmac=8cd82ef3cc3b7e3e5b9414604418f2add80d037112b7d6ed22279da69558606d);
+
+    background-size: cover;
+
+   
+
+}
+
+
+
+
+nav {
+
+    text-align: center;
+
+    margin-top: 50px;
+
+
+
+
+}
+
+nav a{
+
+    color: rgb(255, 255, 255);
+
+    text-decoration: none;
+
+    padding: 5px;
+
+    margin: 5px;
+
+    font-size: 25pt;
+
+    position: relative;
+
+   
+
+}
+
+
+
+
+nav a::after{
+
+    content: "";
+
+    width: 0%;
+
+    height: 4px;
+
+    background-color:rgb(255, 0, 0);
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 5%;
+
+    right: 11%;
+
+    transition: 0.5s ease-in-out;
+
+}
+
+
+
+
+nav a:hover::after {
+
+    width: 90%;
+
+   
+
+}
+
