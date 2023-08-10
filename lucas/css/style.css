@@ -8,8 +8,8 @@ h3{
 text-align: center;
 }
 body {
-     background: rgb(16,44,79);
-background: linear-gradient(90deg, rgba(16,44,79,1) 0%, rgba(94,84,255,1) 95%);
+     background: rgb(16,79,76);
+background: linear-gradient(90deg, rgba(16,79,76,1) -10%, rgba(75,83,211,1) 0%, rgba(191,84,255,1) 75%);
      text-align: center;
     }
 
