@@ -3,13 +3,20 @@
         * {
             margin: 0px;
             padding: 0px;
-            
-            font-family: Arial, Helvetica, sans-serif
+            font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+            font: 500;
         }
         
-        html, body {
+        html {
             height: 100%;
+            scroll-behavior: smooth;
         }
+    
+        body {
+           background-color: chocolate;
+            background-attachment: fixed;
+        }
+    
         
         header {
             background-color: rgb(0, 0, 0);
@@ -20,12 +27,14 @@
         .header2 {
             display: flex;
             margin: 0px;
-            margin:0px;
+            margin-bottom: 1em;
+    
         }
         
         header  > h1{
             padding: 10px;
             color: white;
+            font-size: 3.0em;
         }
         
         menu {
@@ -61,11 +70,12 @@
     
         span#burguer {
             background-color: black;
-            margin-top: 3px;
+            margin-top: 10px;
             text-align: center;
             color: white;
             padding: 10px;
             cursor: pointer;
+            width: 50px;
         }
         
         span#burguer:hover{
@@ -73,14 +83,70 @@
             color: black;
         }
     
+        .displayods {
+            gap: 0.5em;
+            margin-left: 5%;
+            margin-right: 40em;
+             display: flex;
+             margin-top: 0.5em;
+        }
+    
+        .box1 {
+            width: 500px;
+            height: 9em;
+        }
+    
+    
         .insta {
             width: 50px;
-            margin-top: 10px;
-            margin-left: 8em;
+            margin-top: 5px;
+            margin-left: 3em;
         }
-
-
+    
+        .imgeu {
+            width: 300px;
+           border: 5px solid black;
+           height: 300px;
+           border-radius: 30px;
+        }
+    
+        .introducao {
+            display: flex;
+            text-align: justify; 
+            width: 90%
+        }
+    
+        .title {
+            font-size: 2.5em;
+        }
+    
+        .title2 {
+            font-size: 2.0em;
+            margin-top: 0.5em;
+        }
+    
+        p {
+            font-size:24px ;
+            text-align: justify;
+        }
+    
+        .p1 {
+            font-size: 24px;
+            margin-left: 1em;
+            text-align: justify;
+        }
+    
+        .final{
+            background-color: black;
+        }
+    
+        h3 {
+            font-size: 1.5em;
+            color: white;
+            
+        }
     }
+
 
 
 @media screen and (max-width: 896px) {
@@ -206,7 +272,7 @@
 
     .title2 {
         font-size: 1.5em;
-        margin-top: -1.5em;
+        margin-top: 0.5em;
     }
 
     p {
@@ -218,5 +284,15 @@
         font-size: 14px;
         margin-left: 1em;
         text-align: justify;
+    }
+
+    .final{
+        background-color: black;
+    }
+
+    h3 {
+        font-size: 1em;
+        color: white;
+
     }
 }
