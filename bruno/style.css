@@ -44,6 +44,12 @@ body {background-color: rgb(253, 221, 175);
   margin-left: 5%;
   color: ghostwhite;
 }
+
+.box1:hover {
+  background-color: white;
+  color: black;
+}
+
 h2 {
   text-align: center;
   
@@ -128,3 +134,4 @@ h2 {
 .text{
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
+
