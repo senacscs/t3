@@ -1,0 +1,12 @@
+
+
+h1, p, li, h2 {
+    text-align: center;
+}
+
+body{
+    background-image: url(./assets/gifs-de-galaxia-9.gif)
+    height 100%;
+    background-size:cover;
+
+}
