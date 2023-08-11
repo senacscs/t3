@@ -26,3 +26,17 @@ main{
 header{
    font-size: xx-large;
 }
+@media screen and (max-width: 720px){
+  li {
+    width: auto;
+  }   
+    h1{
+        font-size: 40px;
+    }
+    body{
+        background-color: rgb(3, 86, 58);
+    }
+
+} 
+
+    
