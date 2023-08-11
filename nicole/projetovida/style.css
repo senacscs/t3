@@ -1,0 +1,131 @@
+/* estilos padrão para telas grandes */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
+}
+
+body {
+    background-color: #c18fb4;
+}
+
+header {
+    background-color: #30242d;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header * {
+    color: white;   
+}
+
+header a {
+    text-decoration: none;
+}
+  
+nav {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+li {
+    font-family: DejaVu Sans Mono, monospace;
+    font-size: 23px;
+}
+
+nav li {
+    list-style: none;
+    cursor: pointer;
+    display: inline;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1 {
+    padding-top: 40px;
+    text-align: center;
+    font-size: 35px;
+    font-family: garamond;
+    color: #30242d;
+    text-shadow: 1px 1px white;
+}
+
+h2 {
+    text-align: center;
+    color: aliceblue;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-family: garamond;
+    text-shadow: 1px 1px rgb(79, 78, 78);
+}
+
+p {
+    color: rgb(31, 29, 29);
+    text-align: center;
+    font-family: monospace;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+footer {
+    background-color:#30242d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  
+footer p{
+    color: aliceblue;
+    font-family: monospace;
+}
+
+p:last-of-type {
+    padding-bottom: 50px; 
+}
+
+/* estilos para telas menores que 768px */
+@media (max-width: 767px) {
+  header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  li {
+    font-size: 18px;
+  }
+  
+  nav ul {
+    flex-direction: column;
+  }
+  
+  nav li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    font-size: 30px;
+    padding-top: 20px;
+  }
+  
+  h2 {
+    font-size: 25px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  footer {
+    height: 60px;
+    font-size: 18px;
+  }
+}
