@@ -20,7 +20,7 @@ h2 a {
     font-size: 1.75em;
 }
 .container {
-    max-width: 60vw;
+    max-width: 50vw;
     display: grid;
     justify-content: center;
     background-color: rgb(64, 63, 63);
@@ -33,7 +33,7 @@ h2 a {
     padding: 10px;
 }
 .imagens img {
-    max-height: 20vw;
+    max-height: 10vw;
     border-radius: 10px;
 }
 .imagens {
