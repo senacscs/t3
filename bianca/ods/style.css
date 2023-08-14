@@ -18,7 +18,7 @@ html{
 }
 /* -----------------------Header */
 header {
-    background-color: rgb(243, 135, 173);
+    background-color: rgb(252, 38, 49);
     box-shadow: 1px 2px 1px rgb(0,0,0,0.5);
     padding: 1px;
     align-content: center;
@@ -59,7 +59,7 @@ nav ul li {
 nav li:hover {
     border-bottom: 2px solid black;
     transition: 0.2s ease-in ;
-    background-color: rgb(243, 135, 173);
+    background-color: rgb(252, 38, 49);
     margin-bottom: 10px;
 }
 li a {
@@ -75,7 +75,7 @@ svg {
 }
 .menuMobile {
     z-index: 90;
-    background-color: rgb(243, 135, 173);
+    background-color: rgb(252, 38, 49);
     position: fixed;
     width: 100vw;
     display: none; 
@@ -113,7 +113,7 @@ svg {
 article {
     text-align: justify;
     margin-top: 5vh;
-    background-color:rgb(243, 135, 173);
+    background-color:rgb(252, 38, 49);
     box-shadow: 0px 3px 4px rgb(0,0,0,0.5);
 }
 p.meta {
@@ -142,7 +142,7 @@ p.meta {
     margin: none;
 }
 .refer {
-    background-color: rgb(243, 135, 173);
+    background-color:rgb(252, 38, 49);
     padding: 20px;
     box-shadow: 0px 3px 4px rgb(0,0,0,0.5);
 }
@@ -154,7 +154,7 @@ p.meta {
 footer {
     display: grid;
     grid-template-columns: auto auto;
-    background-color: rgb(243, 135, 173);
+    background-color:rgb(252, 38, 49);
     padding: 20px;
     margin-top: 10vh;
     margin-left: 0;
