@@ -23,3 +23,11 @@ img:hover{
         width: 90px;
     }
 }
+
+@media screen and (max-width: 1025px) {
+    body{
+        margin-top: -35px;
+        margin-left: -120px;
+        transform: scale(0.77);
+    }
+}
