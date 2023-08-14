@@ -10,12 +10,12 @@ const months = [
 const weekDays = [
     'Domingo', 'Segunda-Feira', 'Terça-Feira', 'Quarta-Feira', 'Quinta-Feira', 'Sexta-Feira', 'Sábado'
 ]
-let monthWritten = months[month]
-let weekDayWritten = weekDays[weekDay]
+const monthWritten = months[month]
+const weekDayWritten = weekDays[weekDay]
 
 const dateDisplay = document.getElementById('date')
 
-var text = `Senac Santa Cruz do Sul, ${weekDayWritten}, ${day} de ${monthWritten}, ${year}`;
+let text = `Senac Santa Cruz do Sul, ${weekDayWritten}, ${day} de ${monthWritten}, ${year}`;
 dateDisplay.innerHTML = text
 
 
@@ -83,7 +83,7 @@ const newsArticles =[
       date: "Julho de 2023"
     },
     {
-      path: '../tito/ods/',
+      path: './ods/',
       text: "Nos componentes de Técnico e Projeto Profissional foi realizado uma atividade relacionado aos Objetivos de Desenvolvimento Sustentável, da ONU. A atividade foi composta de uma criação de um website para expor o conteúdo e um texto autoral sobre o assunto. Além disso foram pesquisados e anexados vídeos relacionados ao assunto.",
       title: "Objetivo de Desenvolvimento Sustentável",
       img: "./assets/sample.jpg",

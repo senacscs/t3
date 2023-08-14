@@ -8,12 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@800&family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,800&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
 </head>
 <body>
-<header>
+    <header>
     <nav id="menu">
-            <img alt="ONU Logo" class="logo" src="./assets/onu.png">
+        <img alt="ONU Logo" class="logo" src="./assets/onu.png">
         <ul>    
             <li><a href="#general" class="active" >Visão Geral</a></li>
             <li><a href="#analise">Análise</a></li>
@@ -98,6 +97,29 @@
             <iframe width="450" height="235" src="https://www.youtube.com/embed/7JCJbQ28DAI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </section>
+    <section id="educacao">
+        <h1 class="heading">Espaços Públicos Abertos</h1>
+        <div class="expandable-container">
+            <button class="expand" onclick="handleExpand('1')">Qual é a importância dos espaços públicos abertos na promoção da atividade física e na saúde da comunidade? <img class="icon" src="../assets/seta.png"></button>
+            <p class="expandable hidden" id="1">Os espaços públicos abertos são muito importantes para incentivar as pessoas a se exercitarem e ficarem saudáveis. Parques, praças e pistas de caminhada são lugares legais onde as pessoas podem fazer atividades físicas, como caminhar, correr e andar de bicicleta. Esses lugares estarem inseridos dentro do cotidiano da população, mesmo que não interferindo diretamente, podem acabar incentivando a prática de atividades físicas. Realizar exercícios em ambientes abertos, como as praças a parques, com natureza exuberante, são extremamente benéficos para saúde mental do indivíduo.</p>
+        </div>
+        <div class="expandable-container">
+            <button class="expand" onclick="handleExpand('2')">Quais são os fatores de design que tornam um espaço público atrativo para a prática de atividade   física? <img class="icon" src="../assets/seta.png"></button>
+            <p class="expandable hidden" id="2">
+                Um espaço público atrativo para atividades físicas precisa ser fácil de alcançar, seguro e convidativo. Ter instalações esportivas variadas, como quadras e pistas de corrida, variedade é importante para agradar a todos. Áreas verdes bem cuidadas e lugares para descansar também são essenciais, a interação social é incentivada por bancos e espaços de convivência. Sinalizações claras e acessibilidade para pessoas com deficiências garantem inclusão. Eventos esportivos e aulas em grupo trazem animação. A manutenção regular mantém o espaço agradável e um design bonito e funcional garante a atração de pessoas de diferentes idades promovendo a saúde e a conexão na comunidade. 
+            </p>
+        </div>
+        <div class="expandable-container">
+            <button class="expand" onclick="handleExpand('3')">Como as comunidades podem promover a utilização de espaços públicos abertos para a  atividade  física? <img class="icon" src="../assets/seta.png"></button>
+            <p class="expandable hidden" id="3">
+                Para fazer as pessoas usarem mais os espaços públicos para se exercitarem, as escolas podem ensinar sobre os benefícios do exercício, os governos locais podem organizar aulas e eventos esportivos e as organizações da comunidade podem usar a tecnologia, como aplicativos de exercício. Outra medida que é possível tomar é a manutenção dos aparelhos de musculação ao ar livre. Muitas vezes, eles são adicionados ao ambiente e nunca recebem manutenção. Isso afasta possíveis pessoas que utilizariam o ambiente. Um bom incentivo ao esporte físico seria campanhas mostrando o resultado de uma rotina de treinos bem desenvolvida.   </p>
+        </div>
+        <div class="expandable-container">
+            <button class="expand" onclick="handleExpand('4')">Considerando a interrelação entre os ODS 3 e 11, como  a promoção  da  atividade  física  nos  espaços  públicos  abertos  pode  contribuir  para  a construção  de  cidades  que  atendam  a  esses  objetivos  de  forma  integrada? <img class="icon" src="../assets/seta.png"></button>
+            <p class="expandable hidden" id="4">
+                Promover a atividade física em espaços públicos contribui para a construção de cidades sustentáveis ao unir os Objetivos de Desenvolvimento Sustentável. Isso não apenas melhora a saúde individual, mas também fortalece a comunidade e a qualidade dos espaços públicos. Incentivar hábitos ativos no dia a dia não somente beneficia as pessoas, mas também cria ambientes urbanos mais saudáveis, aumenta a mobilidade sustentável, constrói laços sociais e enriquece a qualidade dos espaços. No entanto há desafios em equilibrar esses objetivos, como a falta de áreas seguras para exercícios e a promoção de acessibilidade para todos. Ainda assim, a oportunidade de criar cidades onde saúde e bem-estar se conectam com comunidades e espaços públicos melhores é um caminho para o sucesso dos ODS 3 e 11. </p>
+        </div>
+    </section>
     <section id="ref">
         <h1 class="heading">Referências</h1>
         <p class="reftext">
@@ -106,7 +128,8 @@
         <p class="reftext">
             ODS 2 da ONU: o que significa o segundo objetivo do Pacto Global?. [S. l.], 13 jul. 2016. Disponível em: <a href="https://conectabrasil.org/#/blogs/details/ods-2-fome-significado">https://conectabrasil.org/#/blogs/details/ods-2-fome-significado.</a> Acesso em: 31 jul. 2023.
         </p>
-        <h2>Por Marcos Esau, Tito Oliveira e João Rangel</h2>
+        <h3>Por Marcos Esau, Tito Oliveira e João Rangel</h3>
     </section>
 </body>
+    <script src="script.js"></script>   
 </html>

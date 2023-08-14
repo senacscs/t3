@@ -57,7 +57,7 @@ nav ul li a{
 section {
     padding-top: 2rem;
     margin: 10px 5px;
-    height: 70vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     border-top: 1px solid #D6AD60;
@@ -87,8 +87,10 @@ h2 {
 
 .video-content {
     margin-top: 10px;
-    display: grid;
-    grid-template-columns: 30% 70%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 20px;
     align-items: center;
 }
 .video {
@@ -143,6 +145,36 @@ h1 {
 .reftext {
     width: 70vw;
     margin: 14px 0;
+}
+.hidden {
+    display: none;
+}
+.expandable-container {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.expand {
+    background: none;
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    font-size: 1rem;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.icon {
+    width: 15px;
+
+}
+
+.expandable {
+    padding: 5px;
 }
 
 @media (max-width: 768px) {
