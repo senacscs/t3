@@ -1,0 +1,94 @@
+
+body {
+
+    margin: 0 auto;
+
+    max-width: 3000px;
+
+    background-color: black;
+}
+
+ 
+
+img{
+
+width: 1350px;
+
+ 
+
+}
+
+ 
+
+h1{
+
+text-align: center;
+
+color: whitesmoke;
+
+}
+
+h2{
+
+text-align: center;
+
+color: whitesmoke;
+
+}
+
+image{
+
+text-align: center;
+
+color: whitesmoke;
+
+}
+
+{
+
+text-align: center;
+
+color: whitesmoke;
+
+}
+
+image{
+
+text-align: center;
+
+color: whitesmoke;
+
+}
+
+ 
+
+h1, a, p, a, li, b, h2, ul{
+
+ 
+
+color:aquah rgb(0,0, 0);
+
+ 
+
+text-align: center;
+
+}
+
+ 
+
+li {
+
+list-style-type: none;
+
+color: white;
+
+}
+
+a {
+    list-style-type: none;
+    color: gray
+}
+
+p {
+    color: white;
+}
