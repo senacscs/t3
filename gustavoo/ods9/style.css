@@ -1,17 +1,34 @@
 body {
     font-family: 'Playfair Display', serif;
-    background-image: url(./img/fundo.png);
-    background-size: cover;
+    background-color: rgb(85, 85, 85);
     color: white;
     font-size: large;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
+
 .ods {
     position: relative;
+    right: -1px;
     max-width: 280px;
     margin-top: 15px;
+}
+
+.texto, .analise, .ref {
+  background-color: rgba(255, 102, 0, 0.906);
+  border: 5px solid rgb(56, 56, 56);
+}
+
+.ref {
+  width: 98%;
+  font-size: large;
+  height: 300px auto;
+  border-radius: 6px;
+}
+
+.cen {
+  text-align: center;
 }
 
 .container {
@@ -20,10 +37,8 @@ body {
 
 .texto {
   font-size: larger;
-  background-image: linear-gradient(to right, rgb(218, 150, 24), rgba(0, 0, 0, 0.479));
   height: 520px;
   border-radius: 6px;
-  border: 5px solid rgb(177, 132, 49);
   padding: 15px;
   margin: 10px;
 }
@@ -38,11 +53,9 @@ li {
 }
 
 .analise {
-  background-image: linear-gradient(to right, rgb(218, 150, 24), rgba(0, 0, 0, 0.479));
   height: 200px;
   font-size: larger;
   border-radius: 6px;
-  border: 5px solid rgb(177, 132, 49);
   padding: 15px;
 }
 
@@ -120,5 +133,15 @@ ul {
   .video-container iframe {
     margin-right: 0;
     margin-bottom: 20px;
+  }
+
+  .ref {
+    height: auto;
+    text-align: center;
+    margin: auto;
+  }
+
+  .ar {
+    margin: auto;
   }
 }
