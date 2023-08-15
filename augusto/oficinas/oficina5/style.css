@@ -18,7 +18,7 @@ nav {
 
 }
 nav a{
-    color: black;
+    color: rgb(37, 39, 110);
     text-decoration: none;
     padding: 5px;
     margin: 5px;
@@ -31,7 +31,7 @@ nav a::after{
     content: "";
     width: 0%;
     height: 4px;
-    background-color:black;
+    background-color:rgb(15, 85, 143);
     position: absolute;
     bottom: 0;
     left: 5%;

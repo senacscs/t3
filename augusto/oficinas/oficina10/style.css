@@ -12,7 +12,7 @@ header {
     padding: 15px 0px;
     position: fixed;
     width: 100%;
-    background-color: rgb(38, 38, 38);
+    background-color: rgb(24, 25, 94);
     z-index: 1;
 }
 
@@ -37,7 +37,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: rgb(90, 74, 230);
+    color: rgb(39, 31, 109);
 }
 
 section {
@@ -48,7 +48,7 @@ section {
 }
 
 section:nth-child(even) {
-    background: white;
+    background: rgb(23, 64, 102);
 }
 
 section:nth-child(odd){
