@@ -113,4 +113,9 @@ body {
   .galery > div:hover {
     display: flex 5;
   }
-   
+
+  img{
+  background-image: url(./img/Anotação\ 2023-06-20\ 085440.png)
+  background-image url(./img/Anotação\ 2023-06-20\ 090215.png)
+  background-image url(./img/banco.png)
+  }
