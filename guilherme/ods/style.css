@@ -257,3 +257,62 @@ span {
     text-align: center;
     font-size: 2em;
 }
+
+@media (max-width:900px) {
+
+    header {
+        max-width: 100vw;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .vide {
+        max-width: 70%;
+        height: 70%;
+    }
+
+    .analisegp {
+        height: 70em;
+    }
+
+    .aneilise {
+        max-width: 90%;
+        height: 80%;
+    }
+
+    #ods13 {
+        height: 60em;
+    }
+
+    .vid {
+        max-width: 70%;
+        height: 30%;
+    }
+
+    .metaspp {
+        height: 60em;
+    }
+
+    .text-metas {
+        height: 80%;
+    }
+
+    .acoes {
+        height: 100em;
+    }
+
+    .ref {
+        height: 20em;
+    }
+
+    .refee {
+        width: 90%;
+    }
+
+    .fefe {
+        font-size: 1em;
+    }
+
+}
