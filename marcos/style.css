@@ -13,7 +13,7 @@ font-family: 'Quattrocento', serif;
     src: url('assets/OldLondon.ttf');
 }
 body {
-    background: rgb(213, 213, 213) url('assets/background.jfif') no-repeat;
+    background: rgb(213, 213, 213) url('assets/bg.jpg') no-repeat;
     background-size: cover;
     background-blend-mode: darken;
     overflow-x: hidden;
