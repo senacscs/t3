@@ -1,8 +1,28 @@
-body {
-   
-    background-image:url("https://t3.ftcdn.net/jpg/05/73/41/12/240_F_573411242_sXEE2DBFy6YElqSqUKPV0yuEV40gCzax.jpg")
+* {
+    text-decoration: none;
 }
-h1 {
+body {
+   background-color: #0f4571;
     text-align: center;
 }
+h1, h2{
+    color: black
+}
+
+.img-container img{
+   -webkit-transition: -webkit-transform 1.5s ease;
+   transition: transform 1.10s ease;
+   margin-right: auto;
+   margin-left: auto;
+   width: 20em;
+   height: 20em;
+   border: 5px solid #05d3f8;
+}
+
+.img-container:hover img{
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+}
+
+
 
