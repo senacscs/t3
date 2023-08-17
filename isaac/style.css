@@ -1,11 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body {
-    font-family: 'Franklin Gothic Medium'; 
+    font-family: 'Poppins', sans-serif; 
     color: white;
    	margin: 0;
-    text-shadow: 8px 8px 10px #0000008c;  
-    background: linear-gradient(60deg,red, rgb(2, 195, 18), blue, red);
-    background-size: 100%;
-    margin-bottom: 10%;
+    text-shadow: 1px  #0000008c;  
+    /* background: radial-gradient(closest-side, gray, black); */
+    background: no-repeat, linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    height: 100vh;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+ 
+    50% {
+        background-position: 100% 50%;
+    }
+ 
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 body, ul, li, p {
@@ -16,13 +36,18 @@ body, ul, li, p {
 }
 
 header {
-    background: #1d1e20;
+    width: 98.6vw;
     display: flex;
     flex-wrap: wrap; /*quando a tela estiver pequena faz um item ir abaixo do outro */
     justify-content: space-between;
     align-items: center;
     padding-left: 0.8em;
     padding-right: 0.8em;
+    position: fixed;
+    background: #00000000;
+}
+main {
+    padding-top: 3.5em;
 }
 .menu {
     display: flex;
@@ -47,7 +72,8 @@ a, p {
 a {
     text-decoration: none;
 	color: white;
-    text-shadow: 8px 8px 10px black;
+    text-shadow: 4px 4px 5px black;
+    transition: 0.5s;
 }
 .menu li a:hover {
 	color: black;
@@ -56,9 +82,13 @@ a {
     transition: 0.5s;
 }
 
+.menu li a {
+    transition: 0.5s;
+}
+
 h1 {
     font-size: 2.2em;
-	color: gray;
+	color: rgb(30, 30, 30);
     margin-top: 0.9vw;
     margin-bottom: 0.9vw;
 }
@@ -68,9 +98,9 @@ h2 {
     margin-left: 0.6em;
     margin-right: 0.6em;
     font-size: 2.5em;
-    border: 0.25vw solid black;
+    border: 0.25vw solid rgb(90, 90, 90);
     border-radius: 1.3vw;
-    background-color: #0000005c;
+    background-color: #0000001c;
     max-width: fit-content;
     padding: 0.1em 0.2em 0.1em 0.2em;
 }
@@ -79,6 +109,7 @@ img {
     display: block;
     border-top-left-radius: 0.3em;
     border-top-right-radius: 0.3em;
+
 }
 
 .gridc {
@@ -126,6 +157,9 @@ img {
 }
 
 @media (max-width: 45em) {
+    main {
+        padding-top: 0;
+    }
     a, p {
         font-size: 5vw;
     } 
@@ -135,6 +169,7 @@ img {
     header {
         display: grid;
         justify-content: center;
+        position: static;
     }
     h1 {
         text-align: center;
@@ -147,10 +182,14 @@ img {
         gap: 0.5em;
         margin-bottom: 1em;
     } 
+    .gridc {
+        grid-template-columns: 1fr;
+    }
 }
 
 .gridc-item {
     width: 70%;
+    height: auto;
     justify-self: center;
     background-color: rgba(255, 0, 43, 0);
     display: grid;
@@ -179,7 +218,7 @@ img {
 }
 
 .gridc-item a:hover {
-    color: rgb(0, 0, 0);
+    color: gray;
     transition: 0.5s;
 }
 
