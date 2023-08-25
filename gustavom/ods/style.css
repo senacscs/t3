@@ -1,0 +1,171 @@
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: rgb(85, 85, 85);
+    color: white;
+    font-size: large;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+.ods {
+    position: relative;
+    right: -1px;
+    max-width: 280px;
+    margin-top: 15px;
+}
+
+.texto, .analise, .ref {
+  background-color: rgba(255, 102, 0, 0.906);
+  border: 5px solid rgb(56, 56, 56);
+}
+
+.ref {
+  width: 98%;
+  font-size: large;
+  height: 300px auto;
+  border-radius: 6px;
+}
+
+.cen {
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.texto {
+  font-size: larger;
+  height: 520px;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 10px;
+}
+
+.t {
+  text-align: end;
+}
+
+li {
+  font-size: larger;
+  margin: 15px;
+}
+
+.analise {
+  height: 200px;
+  font-size: larger;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.menu {
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.v {
+  position: relative;
+  left: 1000px;
+}
+
+.video-container {
+  display: flex;
+}
+
+.video-container iframe {
+  margin-right: 200px;
+}
+
+button {
+  position: relative;
+  left: 1000px auto;
+  background-color: rgb(61, 61, 61);
+  width: auto;
+  height: auto;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .ods {
+    max-width: 100%;
+  }
+
+  .texto {
+    height: auto;
+  }
+
+  .video-container {
+    flex-direction: column;
+  }
+
+  .video-container iframe {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .texto {
+    height: auto;
+    width: 410px;
+  }
+
+  * {
+    font-family: 'Playfair Display', serif;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+  button {
+    left: 350px;
+    margin-top: 15px;
+  }
+
+  .v {
+    position: relative;
+    left: 320px;
+  }
+
+  .ods {
+    position: relative;
+    left: 20px;
+    max-width: 300px;
+  }
+
+  iframe {
+    width: 400px;
+  }
+
+  .menu {
+    position: relative;
+    left: 7px;
+  }
+
+  .analise {
+    height: auto;
+    width: 420px;
+  }
+
+  .video-container iframe {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .ref {
+    height: auto;
+    text-align: center;
+    margin: auto;
+  }
+
+  .ar {
+    margin: auto;
+  }
+}
