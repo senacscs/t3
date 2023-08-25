@@ -5,7 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body {
-    background-color: rgb(179, 176, 176) ;
+    background-color: rgb(155, 153, 153) ;
 }
 #title {
     text-align: center;
@@ -67,3 +67,4 @@ h2 a {
     border-radius: 20px;
     font-size: 10px;
 }
+
