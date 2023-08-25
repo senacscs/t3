@@ -102,7 +102,7 @@ header img {
 
 /* BOTAO LINGUA */
 
-#USA {
+#BRA {
     position: fixed;
     z-index: 99;
     right: 5px;
@@ -114,23 +114,23 @@ header img {
     transition: 0.5s ease-out;
 }
 
-#USA:hover {
+#BRA:hover {
     right: 12px;
     bottom: 6px;
 }
 
-#USA:hover, #USA-img:hover {
+#BRA:hover, #BRA-img:hover {
     cursor: pointer;
 }
-#USA-img:hover {
+#BRA-img:hover {
     transform: scale(1.2);
     transition: 0.5s;
     right: 10px;
     bottom: 6px;
 }
 
-#USA-img {
-    width: 4vw;
+#BRA-img {
+    width: 3.4vw;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -602,7 +602,7 @@ li {
         justify-self: center;
     }
 
-    #USA-img {
+    #BRA-img {
         width: 12vw;
     }
 }
