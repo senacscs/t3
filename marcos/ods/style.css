@@ -177,6 +177,24 @@ h1 {
     padding: 5px;
 }
 
+.lang-selector {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+.lang-flag {
+    width: 35px;
+    height: 20px;
+    opacity: 20%;
+}
+.lang-flag:hover {
+    opacity: 90%;
+    transition: 0.8s;
+}
+.lang-active {
+    opacity: 100%;
+}
+
 @media (max-width: 768px) {
     
     iframe {

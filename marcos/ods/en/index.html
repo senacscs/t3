@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODS 2: Fome e Agricultura Sustentável</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@800&family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <nav id="menu">
+        <img alt="ONU Logo" class="logo" src="../assets/onu.png">
+        <ul>    
+            <li><a href="#general" class="active" >General</a></li>
+            <li><a href="#analise">Analysis</a></li>
+            <li><a href="#objetivos">Objectives</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#ref">References</a></li>
+        </ul>
+    </nav>
+</header> 
+    <section id="general">
+        <div class="lang-selector">
+            <a href="../"><img class="lang-flag" alt="portuguese" src="../assets/br.webp"></a>
+            <a href="#"><img class="lang-flag lang-active" alt="english" src="../assets/en.png"></a>
+        </div>
+        <div class="heading-container">
+            <div>
+                <h1 class="heading"><span>SDG 2:</span> Zero Hunger</h1>
+                <h2>End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</h2>
+            </div>
+            <img alt="ODS2 Logo" src="../assets/ods2.jpg">      
+        </div>
+        <div class="video-content">
+            <div class="video">
+                <iframe width="300" height="160" src="https://www.youtube.com/embed/Fev2MHAa-qo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-text">
+                <p>
+                    The SDGs are part of the 2030 Agenda, signed in 2015 by 193 world leaders. It consists of an ambitious action plan that seeks to eradicate extreme poverty, combat inequality and injustice and contain climate change, among other actions. Discover everything in detail in the video!
+                </p> 
+            </div>
+        </div>
+    </section>
+    <section id="analise">
+        <div class="heading-container">
+            <div>
+                <h1 class="heading">Analysis</h1>
+                <h2>An autoral analysis about the subject</h2>
+            </div>
+        </div>
+        <div>
+            <p>
+                SDG 2 plays a crucial role in finding solutions to one of humanity's most pressing challenges: eradicating hunger and promoting sustainable agricultural systems. This goal aims to ensure universal access to adequate food, improve agricultural productivity, promote sustainable agriculture and support rural livelihoods. SDG 2 recognizes that hunger and malnutrition have a negative impact on a country's economic and social development, in addition to representing a violation of human rights. Achieving this goal requires coordinated action among governments, international organizations, the private sector, civil society to strengthen food systems, ensure access to nutritious food and promote sustainable agricultural practices.<br>
+                Brazil is a country that could be greatly affected by this SDG. According to the 2022 IBGE census, the states in the northern region of the country have the highest average number of people per household (3.3). 25.7% of the entire population in the region experiences hunger. These data show the urgency of implementing effective actions and public policies aimed at SDG 2 in Brazil, aiming to combat hunger and promote sustainable agriculture, especially in the northern regions of the country.
+
+            </p>
+        </div>
+    </section>
+    <section id="objetivos">
+        <div>
+            <div>
+                <h1 class="heading">SDG Goals</h1>
+            </div>
+            <div class="objectives">
+                <h2>Objective 2.2: End hunger, achieve food security and improve nutrition</h2>
+                <ol>
+                    <li>
+                        Encourage and support the creation of spaces for cultivation in urban areas, such as community gardens,
+                        so that residents can produce fresh and healthy food locally. So they would have
+                        access to more nutritious food.
+                    </li>
+                    <li>
+                        Ensure that children and adolescents from public schools have access to quality food through partnerships with local producers.
+                    </li>
+                    <li>
+                        Promoting healthy eating with lectures on the subject and workshops in schools and other urban centers.
+                    </li>
+                </ol>
+                <h2>Objective 2.4: Ensure sustainable and resilient production systems.</h2>
+                <ol>
+                    <li>
+                        Support family farming with technical information in the area, such as courses, distribution of educational material and facilitation in acquiring other content in the area.
+                    </li>
+                    <li>
+                        Promote soil conservation techniques to prevent erosion and increase soil fertility.
+                    </li>
+                    <li>
+                        To grow the direct sale of products, strengthening communication and local marketing. This would help to decrease foreign trade and maximize producers' income.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section id="videos">
+        <h1 class="heading">Videos</h1>
+        <div class="videos">
+            <iframe width="450" height="235" src="https://www.youtube.com/embed/rvET4ADE8JQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="450" height="235" src="https://www.youtube.com/embed/7JCJbQ28DAI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section id="educacao">
+        <h1 class="heading">Open Public Spaces</h1>
+        <div class="expandable-container">
+            <button class="expand" onclick="handleExpand('1')">How important are public open spaces in promoting physical activity and community health? <img class="icon" src="../../assets/seta.png"></button>
+            <p class="expandable hidden" id="1">Open public spaces are very important to encourage people to exercise and stay healthy. Parks, squares and walking trails are nice places where people can do physical activities, such as walking, running and cycling. These places are part of the daily life of the population, even if they do not interfere directly, they can end up encouraging the practice of physical activities. Performing exercises in open environments, such as squares and parks, with exuberant nature, are extremely beneficial for the individual's mental health.</p>
+        </div>
+        <div class="expandable-container">
+            <button class="expand" onclick="handleExpand('2')">What are the design factors that make a public space attractive for physical activity? <img class="icon" src="../../assets/seta.png"></button>
+            <p class="expandable hidden" id="2">
+                An attractive public space for physical activity needs to be easy to reach, safe and inviting. Having varied sports facilities, such as courts and running tracks, variety is important to please everyone. Well-kept green areas and places to rest are also essential, social interaction is encouraged by benches and living spaces. Clear signage and accessibility for people with disabilities ensure inclusion. Sporting events and group classes bring excitement. Regular maintenance keeps the space enjoyable and a beautiful, functional design ensures it appeals to people of all ages promoting health and connection in the community.
+            </p>
+        </div>
+        <div class="expandable-container">
+            <button class="expand" onclick="handleExpand('3')">How can communities promote the use of open public spaces for physical activity? <img class="icon" src="../../assets/seta.png"></button>
+            <p class="expandable hidden" id="3">
+                To get people to use public spaces more to exercise, schools can teach about the benefits of exercise, local governments can organize classes and sporting events, and community organizations can use technology such as exercise apps. Another measure that can be taken is the maintenance of outdoor weight machines. They are often added to the environment and never maintained. This keeps away possible people who would use the environment. A good incentive for physical sports would be campaigns showing the result of a well-developed training routine. </p>    </div>
+        <div class="expandable-container">
+            <button class="expand" onclick="handleExpand('4')">Considering the interrelation between SDGs 3 and 11, how can the promotion of physical activity in public open spaces contribute to the construction of cities that meet these objectives in an integrated way? <img class="icon" src="../assets/seta.png"></button>
+            <p class="expandable hidden" id="4">
+                Promoting physical activity in public spaces contributes to building sustainable cities by linking the Sustainable Development Goals. This not only improves individual health, but also strengthens the community and the quality of public spaces. Encouraging active habits in everyday life not only benefits people, but also creates healthier urban environments, increases sustainable mobility, builds social ties and enriches the quality of spaces. However, there are challenges in balancing these goals, such as the lack of safe exercise areas and the promotion of accessibility for all. Still, the opportunity to create cities where health and well-being connect with better communities and public spaces is a pathway to the success of SDGs 3 and 11.</p>
+        </div>
+    </section>
+    <section id="ref">
+        <h1 class="heading">References</h1>
+        <p class="reftext">
+            FOME Zero e Agricultura Sustentável. In: Objetivo de Desenvolvimento Sustentável. [S. l.], 13 jul. 2016. Available at: <a href="https://brasil.un.org/pt-br/sdgs/2">https://brasil.un.org/pt-br/sdgs/2</a>. Accesed in: 31 jul. 2023.
+        </p>
+        <p class="reftext">
+            ODS 2 da ONU: o que significa o segundo objetivo do Pacto Global?. [S. l.], 13 jul. 2016. Available at: <a href="https://conectabrasil.org/#/blogs/details/ods-2-fome-significado">https://conectabrasil.org/#/blogs/details/ods-2-fome-significado.</a> Acessed in: 31 jul. 2023.
+        </p>
+        <h3>By Marcos Esau, Tito Oliveira e João Rangel</h3>
+    </section>
+</body>
+    <script src="../script.js"></script>   
+</html>
