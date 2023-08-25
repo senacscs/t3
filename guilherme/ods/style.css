@@ -254,6 +254,7 @@ span {
 }
 
 .ref {
+    height: 20em;
     text-align: center;
     font-size: 2em;
 }
