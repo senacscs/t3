@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(assets/paper-1074136_1280.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: 'Lobster', cursive;
+}
+
+img {
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 45px;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal; 
+    color: black;
+    font-size: 20px;
+}
+
+.historia {
+    width: 1500px;
+    display: grid;
+    grid-template-columns: 400px 700px;
+    margin: 0 auto;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+.historia p {
+    grid-column: 2;
+    grid-row: 1/ 3;
+    /* align-self: center; */
+    text-align: justify;
+}
+
+.historia img {
+    justify-self: center;
+    grid-column: 1;
+    align-self: center;
+}
+
+
+
+.simbologia {
+    display: grid;
+    width: 1500px;
+    display: grid;
+    grid-template-columns: 700px 400px;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 20px;
+}
+
+.simbologia p {
+    text-align: justify;
+}
+
+.simbologia img {
+    justify-self: center;
+    align-self: center;
+}
+
+.morte {
+    display: grid;
+    width: 1500px;
+    display: grid;
+    grid-template-columns: 400px 700px;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 20px;
+}
+
+.morte p {
+    grid-column: 2;
+    text-align: justify;
+}
+
+.morte img {
+    grid-row: 1;
+    justify-self: center;
+}
+
+hr {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
