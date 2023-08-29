@@ -9,9 +9,12 @@
 body {
     background-image: url(assets/paper-1074136_1280.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-
+    background-attachment: fixed;
     font-family: 'Lobster', cursive;
+}
+
+body::-webkit-scrollbar {
+    width: 0.1px;
 }
 
 img {
@@ -59,8 +62,6 @@ p{
     grid-column: 1;
     align-self: center;
 }
-
-
 
 .simbologia {
     display: grid;
@@ -114,7 +115,7 @@ hr {
     border: none;
     margin: 20px auto;
     display: block;
-    background-color: #b98b61;
+    background-color: #977250;
 }
 
 a {
@@ -128,4 +129,19 @@ a {
 
 a:hover {
     color: red;
+}
+
+.footer {
+    background-color: #826d1ae5;
+    height: auto;
+}
+
+.footer p {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.footer h2 {
+    padding-top: 10px;
 }
