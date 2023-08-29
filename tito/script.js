@@ -47,8 +47,16 @@ const activitiesStorage = [
     image: 'ods.svg',
     date: new Date(2023, 8, 30),
     url: '/marcos/ods',
-    instructions: "Site contando um pouco mais sobre a ODS 2 - Fome Zero e Agricultura Sustentável",
-  }
+    instructions: "Site contando um pouco mais sobre a ODS 2 - Fome Zero e Agricultura Sustentável.",
+  },
+  {
+    name: 'Anúbis',
+    subject: 'História',
+    image: 'anubis.svg',
+    date: new Date(2023, 8, 29),
+    url: '/tito/anubis',
+    instructions: "Informações e um quiz sobre o deus do Antigo Egito Anúbis.",
+  },
 ];
 
 const activitiesElement = document.getElementById("activities");
