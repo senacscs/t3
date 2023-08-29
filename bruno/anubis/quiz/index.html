@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pangolin&family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Anúbis</title>
+
+
+
+    <style>
+      * {
+        font-family: "Pangolin", cursive;
+      }
+      button[type="submit"] {
+        margin-top: 3em;
+        width: 3em;
+        height: 2em;
+        font-size: 1.1rem;
+        background-color: transparent;
+        border: 2px solid rgb(0, 0, 0);
+        min-width: 300px;
+      }
+
+      input[type="submit"]:hover {
+        margin-top: 3em;
+        width: 3em;
+        height: 2em;
+        font-size: 1.1rem;
+        background-color: transparent;
+        border: 2px solid rgb(0, 0, 0);
+        min-width: 300px;
+
+      }
+    </style>
+
+    
+  </head>
+
+  <body
+    style="background-image: url('assets/background.jpg')"
+    class="bg-amber-200 py-20 px-10 md:px-32 bg-no-repeat bg-cover"
+  >
+  <form class="mt-20">
+    <h1
+      class="text-amber-950 text-2xl mb-4"
+      style="font-family: 'Rock Salt', cursive"
+      font-size="3em"
+    >
+      Quiz sobre o Anúbis
+    </h1>
+    <div>
+      <p class="text-amber-800 text-xl mt-12 mb-4">
+        1. Qual é a origem geográfica da Anúbis na mitologia egípcia?
+      </p>
+      <div class="flex flex-col">
+        <label><input type="radio" name="1" /> Abidos, Alto Egito </label>
+        <label> <input type="radio" name="1" /> Atenas, Grécia </label>
+        <label> <input type="radio" name="1" /> Madrid, Espanha </label>
+      </div>
+    </div>
+    <div>
+      <p class="text-amber-800 text-xl mt-12 mb-4">
+        2. Como a aparência de Anúbis é frequentemente retratada na
+        iconografia egípcia?
+      </p>
+      <div class="flex flex-col">
+        <label><input type="radio" name="2" /> Cabeça de vaca </label>
+        <label>
+          <input type="radio" name="2" /> Cabeça de cão selvagem
+        </label>
+        <label> <input type="radio" name="2" /> Cabeça de gato </label>
+      </div>
+    </div>
+    <div>
+      <p class="text-amber-800 text-xl mt-12 mb-4">
+        3. Qual era o papel de Anúbis no processo de mumificação e nos rituais
+        funerários do Antigo Egito?
+      </p>
+      <div class="flex flex-col">
+        <label><input type="radio" name="3" /> Ajuda na reencarnação </label>
+        <label>
+          <input type="radio" name="3" /> Cuidava do corpo ainda quando vivo
+        </label>
+        <label>
+          <input type="radio" name="3" /> Preservação dos corpos dos falecidos
+          e à orientação das almas no pós-vida
+        </label>
+      </div>
+    </div>
+    <div>
+      <p class="text-amber-800 text-xl mt-12 mb-4">
+        4. Anúbis era associado com:
+      </p>
+      <div class="flex flex-col">
+        <label
+          ><input type="checkbox" name="4" /> Anúbis era frequentemente
+          retratado com a cabeça de um chacal, simbolizando sua associação com
+          a morte e o além.
+        </label>
+        <label>
+          <input type="checkbox" name="4" /> Na mitologia egípcia, Anúbis era
+          considerado o deus do sol e da criação.
+        </label>
+        <label>
+          <input type="checkbox" name="4" />Anúbis desempenhava um papel
+          importante na cerimônia de pesagem do coração, onde ele determinava
+          o destino dos mortos após a morte.
+        </label>
+        <label>
+          <input type="checkbox" name="4" /> Sua principal função era a de
+          proteger os campos e as colheitas, garantindo a fertilidade da terra
+        </label>
+        <label>
+          <input type="checkbox" name="4" /> Na mitologia, Anúbis era filho de
+          Osíris e Ísis, fazendo dele um dos deuses mais importantes da
+          família divina egípcia.
+        </label>
+        <label>
+          <input type="checkbox" name="4" /> Acreditava-se que Anúbis guiava
+          as almas dos falecidos pelo processo de julgamento após a morte.
+        </label>
+        <label>
+          <input type="checkbox" name="4" /> Ele também era associado à
+          mumificação e ao embalsamamento dos corpos, devido ao seu papel na
+          preservação dos corpos para a vida após a morte.
+        </label>
+        <label>
+          <input type="checkbox" name="4" /> Anúbis tinha a responsabilidade
+          de conduzir o barco solar através do ciclo diário do nascer e do pôr
+          do sol.
+        </label>
+      </div>
+    </div>
+    <div>
+      <p class="text-amber-800 text-xl mt-12 mb-4">
+        5. Anúbis era deus do quê?
+      </p>
+      <label
+        ><span class="block">Sua resposta</span
+        ><input class="w-96" type="text" name="5" />
+      </label>
+    </div>
+    <button
+    input type="submit" value="Enviar"
+    >
+    Enviar
+</button>
+  </form>
+</body>
+</html>
