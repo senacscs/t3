@@ -54,7 +54,7 @@ const activitiesStorage = [
     subject: 'História',
     image: 'anubis.svg',
     date: new Date(2023, 8, 29),
-    url: '/tito/anubis',
+    url: '/bruno/anubis',
     instructions: "Informações e um quiz sobre o deus do Antigo Egito Anúbis.",
   },
 ];
