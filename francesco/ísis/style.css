@@ -1,0 +1,17 @@
+body {
+    background-color: red;
+}
+h1 {
+ text-align: center;
+}
+a {
+margin-left: auto;
+}
+
+.container{
+    display: grid;
+    grid-auto-flow: row;
+}
+.item {
+    display: flex;
+}
