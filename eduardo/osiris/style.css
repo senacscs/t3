@@ -8,8 +8,9 @@
 
 body {
     background-image: url(assets/paper-1074136_1280.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
+
     font-family: 'Lobster', cursive;
 }
 
@@ -34,6 +35,7 @@ p{
     font-style: normal; 
     color: black;
     font-size: 20px;
+    font-weight: 700;
 }
 
 .historia {
@@ -103,4 +105,27 @@ hr {
     width: 60%;
     display: block;
     margin: 0 auto;
+}
+
+.quiz {
+    width: 210px;
+    height: 60px;
+    border-radius: 12px;
+    border: none;
+    margin: 20px auto;
+    display: block;
+    background-color: #b98b61;
+}
+
+a {
+    text-decoration: none;
+    font-size: 24px;
+    padding: 20px 80px;
+    margin: auto;
+    color: black;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: red;
 }
