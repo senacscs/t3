@@ -91,6 +91,21 @@ svg {
     border-bottom: 1px solid black;
     margin-right: 20px;
 }
+.language img {
+    border-radius: 10px;
+    width: 4vw;
+}
+.languageM {
+    display: flex;
+    align-items: center;
+}
+.languageM img {
+    width: 10vw;
+    margin-left: none;
+}
+.languageM p {
+    margin-left: 2vw;
+}
 /* ------------------------------------------------------section 1 */
     .videoG iframe {
         margin-top: 2vh;
