@@ -41,3 +41,10 @@ img {
     margin-top: 80px;
     width: 1000px;
 }
+
+#submit-btn {
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  background-color: #1b1e23;
+}
