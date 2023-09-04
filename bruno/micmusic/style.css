@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Anton";
+}
+
+body {
+    background-image: url(./menu/fundomenu.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+h1  {
+    text-align: center;
+    font-size: 8.0em;
+    margin-left: -6em;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 5em;
+    font-size: 2.5em;
+}
+
+.logo {
+    width: 250px;
+    margin-bottom: px ;
+}
+
+.display{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 15em;
+    margin-top: -1em;
+}
+
+
+
