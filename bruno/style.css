@@ -47,13 +47,14 @@ body {background-color: rgb(253, 221, 175);
    gap: 0,8em;
  }
 .box1 {
+ display: block;
  background-color: rgb(0, 0, 0);
  margin-top: 1em;
  border-radius: 20px;
- margin-right: 80%;
+ margin-right: auto;
  width: 350px;
  height: 500px;
- margin-left: 5%;
+ margin-left: auto;
  color: ghostwhite;
 }
 
