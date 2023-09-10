@@ -1,0 +1,77 @@
+body {
+    background-color: rgb(197, 147, 255);
+    background-image: url('wallpaperofcins.jpg');
+    background-size: cover;
+}
+
+@font-face {
+    font-family: 'VarelaRound';
+    src: url('VarelaRound-Regular.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+h2 {
+font-family: 'VarelaRound';
+font-size: 27px;
+color: #a28bc0;
+margin-top: 12%;
+margin-bottom: 2%;
+padding-left: 60px;
+display: inline-block;
+white-space: nowrap;
+overflow: hidden;
+animation: typing 3s steps(500);
+border-right: 4px solid #7f4ac5;
+}
+    
+@keyframes typing {
+0% {
+    width: 0;
+}
+100% {
+    width: 22%;
+}
+}
+    
+    ul li a {
+    text-decoration: none;
+    color: #7334c7;
+    font-family: 'VarelaRound';
+    margin-top: -15px;
+    font-size: 24px;
+    display: inline-block;
+    }
+    
+    ul li a:hover {
+    color: #7334c7;
+    }
+    
+    ul a {
+    color: #7334c7;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    font-size: 25pt;
+    position: relative;
+    }
+    
+     a::after {
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color:#9963e0;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    right: 11%;
+    transition: 0.3s ease-in-out;
+    }
+    
+     a:hover::after {
+    width: 90%;
+    }
+    
+    li {
+    list-style-type: none;
+    }
