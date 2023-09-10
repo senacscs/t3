@@ -1,0 +1,400 @@
+
+::selection {
+  background-color: #f8f7a9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+font-family: 'VarelaRound';
+src: url('VarelaRound-Regular.ttf') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+.scroll-bar {
+  background-color: transparent;
+  overflow-y: scroll;
+}
+
+.scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: black;
+  background-image: url('./assets/wallpaper.jpg');
+}
+
+header nav ul {
+padding-top: 20px;
+list-style: none;
+text-align: left;
+}
+
+header nav ul li {
+display: inline;
+}
+
+header nav ul li a {
+text-decoration: none;
+text-transform: uppercase;
+color: #e60039;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin-top: -15px;
+font-size: 30px;
+padding: 6px 20px;
+display: inline-block;
+}
+
+header nav ul li a:hover {
+color: #e60039;
+}
+
+nav a {
+color: #e60039;
+text-decoration: none;
+padding: 5px;
+margin: 5px;
+font-size: 25pt;
+position: relative;
+}
+
+nav a::after {
+content: "";
+width: 0%;
+height: 4px;
+background-color:#e6003aa6;
+position: absolute;
+bottom: 0;
+left: 5%;
+right: 11%;
+transition: 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+width: 90%;
+}
+
+li {
+list-style-type: none;
+}
+
+.opac {
+opacity: 0;
+}
+
+.wallpaper-2 {
+background: black;
+background-size: cover;
+margin-left: -8px;
+margin-right: -8px;
+margin-bottom: -8px;
+padding-bottom: 50px;
+box-shadow: 0 0 20px 0 #000000;
+float: right;
+}
+
+.col-1 {
+  display: flex;
+  width: 95%;
+}
+
+.row-1 {
+  width: 90%;
+}
+
+.title {
+font-family: 'VarelaRound';
+font-size: 37px;
+color: #cf2d35;
+padding-top: 90px;
+padding-left: 80px;
+}
+
+.subtitle {
+font-family: 'VarelaRound';
+font-size: 18px;
+color: #ca8d90;
+padding-left: 95px;
+display: inline-block;
+white-space: nowrap;
+overflow: hidden;
+animation: typing 3s steps(500);
+border-right: 4px solid #000000;
+}
+
+@keyframes typing {
+0% {
+  width: 0;
+}
+100% {
+  width: 50%;
+}
+}
+
+.title-container {
+  padding-top: 20px;
+  padding-left: 75px;
+  font-family: 'Consolas';
+  font-size: 24px;
+  color: rgb(206, 38, 60);
+}
+
+.beginning {
+  background-color: #cc2440f5;
+  height: 4px;
+  width: 98%;
+  border-color: #000000;
+  box-shadow: 0 0 5px 0 #cc2440f5 ;
+}
+
+.middle {
+  background-color: #cc2440f5;
+  height: 2px;
+  width: 85%;
+  border-color: #000000;
+  box-shadow: 0 0 5px 0 #cc2440f5 ;
+}
+
+.middle-2 {
+  background-color: #cc2440f5;
+  height: 2px;
+  border-color: #000000;
+  box-shadow: 0 0 5px 0 #cc2440f5 ;
+}
+
+.middle-3 {
+  background-color: #cc2440f5;
+  height: 2px;
+  border-color: #000000;
+  box-shadow: 0 0 5px 0 #cc2440f5 ;
+  width: 70%;
+}
+
+.description {
+  font-family: 'Consolas' ;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  padding-left: 105px;
+  width: 35%;
+  float: left;
+}
+
+.description-2 {
+  font-family: 'Consolas' ;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  padding-left: 105px;
+  width: 80%;
+  display: flex;
+}
+
+.description-2 h2 {
+ padding-right: 20%;
+}
+
+ .brian {
+  width: 100%;
+  margin-top: 20%;
+  float: right;
+  border-radius: 20px;
+ }
+
+.links {
+  width: 41%;
+  float: right;
+  float: inline-start;
+}
+
+h3 {
+  font-family: 'Consolas';
+  color: rgb(247, 216, 115);
+  font-size: 23px;
+}
+
+li a {
+color: #b92229;
+text-decoration: none;
+padding-left: 15px;
+font-family: 'Consolas';
+font-size: 19px;
+position: relative;
+transition: all 0.5s ease;
+}
+
+.links a:hover {
+  font-size: 22px;
+  color: #bb4248;
+}
+
+.me {
+  padding-top: 20px;
+  padding-left: 75px;
+  font-family: 'Consolas';
+  font-size: 35px;
+  color: rgb(206, 38, 60);
+}
+
+.site-me {
+  color: #b92229;
+  text-decoration: none;
+  font-family: 'Consolas';
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s ease;
+  margin-left: 30px;
+}
+
+.site-me:hover {
+  font-size: 30px;
+  color: #bb4248;
+}
+
+.align {
+  float: none;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.music-part {
+  font-family: 'Consolas' ;
+  font-size: 27px;
+  color: rgb(247, 216, 115);
+  text-align: left;
+  padding-top: 2%;
+}
+
+.playlists {
+  width: 90%;
+  margin: auto;
+  float: right;
+  display: flex;
+  text-align: justify;
+}
+
+.phonk-names {
+  display: flex;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.phonk-names h2 {
+  font-family: 'Consolas';
+  font-size: 25px;
+  color: #6907da;
+}
+
+.phonk-1 {
+  margin-right: 10%;
+  margin-left: 3%;
+}
+
+.phonk-2 {
+  margin-right: 5%;
+}
+
+.phonk-3 {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.album  {
+  transition: all 0.5s ease;
+  width: 40%;
+  height: 89%;
+  margin-bottom: 5px;
+  border-radius: 15px;
+}
+
+.album-2, .album-3 {
+  transition: all 0.5s ease;
+  width: 30%;
+  height: 89%;
+  margin-bottom: 5px;
+  border-radius: 15px;
+}
+
+.link-album {
+  width: 40%;
+  height: 40%;
+  margin: 25px;
+  transition: all 0.5s ease;
+}
+
+.album:hover {
+  transition: all 0.5s ease;
+  width: 45%;
+  height: 89%;
+  margin-bottom: 2.5px;
+  margin-top: 2.5px;
+}
+.album-2:hover, .album-3:hover {
+  transition: all 0.5s ease;
+  width: 35%;
+  height: 89%;
+  margin-bottom: 2.5px;
+  margin-top: 2.5px;
+}
+  .link-album:hover {
+  transition: all 0.5s ease;
+  margin-top: 2.5px;
+  margin-bottom: 2.5px;
+}
+
+.rock-metal-names, .depress-and-calm {
+  display: flex;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 10%;
+}
+
+.rock-metal-names h2 {
+  font-family: 'Consolas';
+  font-size: 37px;
+  color: #e7c75e;
+}
+
+.inxs {
+    margin-left: 26%;
+    margin-right: 10%;
+}
+
+.rock {
+  margin-left: 11%;
+}
+
+.playlists-2, .playlists-3 {
+  width: 75%;
+  margin: auto;
+  float: right;
+  display: flex;
+  text-align: justify;
+}
+
+.depress-and-calm h2 {
+  font-family: 'Consolas';
+  font-size: 27px;
+  color: #1c6adf;
+}
+
+.peace-and-depress {
+  margin-left: 21%;
+  margin-right: 15%;
+}
+
+.real {
+  margin-left: 8%;
+}
+
+.h2-footer {
+  font-family: 'VarelaRound';
+}
