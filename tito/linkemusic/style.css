@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: linear-gradient(0deg, #fff, #d61a780e);
+  min-height: 100vh;
+}
+
+.site-header {
+  padding: 3rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-placeholder {
+  height: 4rem;
+  width: 4rem;
+  background-color: #d61a78;
+  border-radius: 10px;
+}
+
+.header-nav {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+}
+
+.header-nav-link {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header-nav-link:visited {
+  color: unset;
+}
+
+.account-button {
+  outline: none;
+  border: none;
+  background: none;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 1.25rem;
+  transition: all 0.1s;
+}
+
+.account-button:hover {
+  background-color: #f9e2ed;
+  cursor: pointer;
+}
+
+.account-info {
+  color: #414141;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.account-name {
+  font-weight: 500;
+  font-size: 1.1125rem;
+}
+
+.account-email {
+  font-weight: 300;
+  font-size: 0.825rem;
+}
+
+.account-button .material-symbols-outlined {
+  font-size: 2rem;
+}
+
+.music-category-container {
+  padding: 3rem 10rem;
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.music-category-enumerator {
+  font-size: 18rem;
+  font-weight: 900;
+  position: absolute;
+  left: 80px;
+  top: 125px;
+  color: #00000015;
+  z-index: -1;
+}
+
+.music-category-title {
+  font-size: 4rem;
+  margin-right: 2rem;
+  width: 275px;
+}
+
+.music-category-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  overflow-x: auto;
+  padding: 2rem;
+}
+
+.music-category-list::-webkit-scrollbar {
+  display: none;
+}
+
+.music-category {
+  border-radius: 6px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: scale 0.1s ease-in;
+}
+
+.music-category:hover {
+  scale: 1.1;
+}
+
+.music-category-gradient {
+  height: 16rem;
+  width: 10rem;
+  display: flex;
+  border-radius: 6px;
+  padding: 1.3rem;
+  justify-content: end;
+  flex-direction: column;
+  background: linear-gradient(0deg, #000000, #00000000);
+}
+
+.music-category-name {
+  color: white;
+}
+
+.section-divisor {
+  border: 1px solid #d61a785f;
+  margin: 5rem 16rem;
+}
+
+.musicians-title-container {
+  display: flex;
+  justify-content: center;
+}
+
+.musician-title {
+  font-size: 3rem;
+}
+
+.musician-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem 10rem;
+}
+
+.musician {
+  border: 1px solid #00000061;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.musician:hover {
+  background-color: #f4f2f2;
+  cursor: pointer;
+}
+
+.musician-image {
+  width: 100%;
+  height: 10rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #b6b6b6;
+}
+
+.musician-info {
+  display: flex;
+  padding: 1.75rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.musician-name {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #1a000d;
+  display: block;
+}
+
+.musician-genres {
+  color: #414141;
+}
+
+.musician-price {
+  font-size: 1.5rem;
+}
