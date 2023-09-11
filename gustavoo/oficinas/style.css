@@ -7,5 +7,11 @@ body {
 
 a {
     text-decoration: none;
-    color: rgb(21, 9, 114);
+    color: rgb(27, 26, 31);
  }
+
+button {
+     background-color: rgb(91, 81, 166);
+     font-size: x-large;
+     
+}
