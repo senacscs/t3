@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+    background-image: url(6108052aa0ea7cbe05ffee419f126989.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color:  rgb(22, 20, 20);
+    font-family: 'Merienda', cursive;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@800&display=swap');
+
