@@ -145,3 +145,43 @@ a:hover {
 .footer h2 {
     padding-top: 10px;
 }
+
+
+@media (max-width: 1400px) {
+    img {
+        width: 300px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .historia {
+        width: 1200px;
+        display: grid;
+        grid-template-columns: 400px 700px;
+        margin: 0 auto;
+        column-gap: 20px;
+        justify-content: center;
+    }
+
+    .simbologia {
+        display: grid;
+        width: 1200px;
+        display: grid;
+        grid-template-columns: 700px 400px;
+        margin: 0 auto;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .morte {
+        display: grid;
+        width: 1200px;
+        display: grid;
+        grid-template-columns: 400px 700px;
+        margin: 0 auto;
+        justify-content: center;
+        gap: 20px;
+    }
+}
