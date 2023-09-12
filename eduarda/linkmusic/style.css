@@ -31,18 +31,19 @@ section {
   height: 700px; */
 }
 h1{
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 font-size: 40px;
 /* display: center; */
 padding: 15px;
 background-color: rgb(255, 255, 255);
 text-align: center;
 padding-left: 20px;
+font-style: bold;
 }
 
 .img{
  margin: auto;
- width: 700px;
+ width: 400px;
 }
 
 section:nth-child(even) {
