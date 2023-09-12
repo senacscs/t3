@@ -48,3 +48,10 @@ img {
   color: white;
   background-color: #1b1e23;
 }
+
+p {
+    width: 500px; 
+    background-color: white; 
+    padding: 5px; 
+    text-align: justify;
+}
