@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../assets/paper-1074136_1280.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .question {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    margin-top: 5px;
+  }
+
+  #submit-btn {
+    margin-top: 10px;
+  }
+
+  #result {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+main {
+    margin-left: 50px;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 140px;
+    margin-top: 80px;
+    width: 1000px;
+}
+
+#submit-btn {
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  background-color: #1b1e23;
+}
