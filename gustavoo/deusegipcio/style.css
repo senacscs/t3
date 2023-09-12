@@ -8,7 +8,7 @@ body {
 .container {
     overflow: auto;
     text-align: center;
-    font-size: x-large;
+    font-size:large;
     position: relative;
     top: 10px;
     color: antiquewhite;
