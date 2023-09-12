@@ -1,0 +1,52 @@
+body {
+    background: rgb(73,73,73);
+    background: linear-gradient(90deg, rgba(73,73,73,0.949253028848258) 75%, rgba(255,159,0,0.8988328607810312) 100%); 
+}
+
+* {
+    color: white;
+    font-size: 25px;
+    font-family: 'Chakra Petch', sans-serif;
+    margin: 15px auto;  
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap');
+
+.deus {
+    text-align: center;
+    position: relative;
+    top: 50px;
+    font-size: 100px;
+}
+
+img {
+    width: 150px;
+    padding: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.text {
+    margin: 20px;
+    font-size: 20px;
+}
+
+button {
+    position: relative;
+    left: 550px;
+    background: linear-gradient(90deg, rgba(73,73,73,0.949253028848258) 75%, rgba(255,159,0,0.8988328607810312) 100%); 
+}
+
+.inicio {
+    background: linear-gradient(90deg, gray 75%, rgba(255,159,0,0.8988328607810312) 100%); 
+    width: auto;
+    height: 250px;
+}
+
+.imagens {
+    text-align: center;
+}
