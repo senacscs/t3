@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    cursor: url('cursor-removed.png'), auto
+  }
+
+#view {
+    background-image: url('./bg-2.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 100vw;
+    height: 100vh;
+}
+
+.enemy {
+    width: 75px;
+    position: fixed;
+}
+
+.counter-div {
+    background-color: white;
+    width: 20vw;
+    position: fixed;
+}
