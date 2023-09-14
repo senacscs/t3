@@ -13,45 +13,91 @@ html {
   scroll-behavior: smooth;
 }
 
+body{
+  background: url('https://th.bing.com/th/id/R.c9154f2cc281fe9b132e444af8b3f461?rik=O%2b3PVvCx82NQ6g&pid=ImgRaw&r=0') center center no-repeat fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1{
+  padding: auto;
+  background-color: #ffffff;
+}
+
 /* colodcar o header fixo e na frente do resto da pagina */
 header { 
-  padding: 4px 5px;
+  padding: 3px 4px;
   position: fixed;
   /* width: 100%; */
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   z-index: 1;
   display: grid;
   grid-template-columns: 100px auto 100px; 
 }
 
-section {
-  padding-top: 100px;
-  text-align: center;
-  /* width: 100%;
-  height: 700px; */
+.secao {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 30px;
+  vertical-align: center;
 }
+
+.typebeat, .estudio, .vivo {
+  background-color: rgb(135, 135, 135);
+  width: 200px;
+  height: 200px;
+  justify-self: center;
+  align-self: center;
+  border-radius: 5px 6px 0 0;
+  align-items : center;
+}
+
+.texttype, .textestudio, .textvivo {
+  background-color: rgb(255, 255, 255);
+  width: 200px;
+  height: 100px;
+  justify-self: center;
+  align-self: center;
+  border-radius: 0 0 5px 6px;
+  align-items: center;
+}
+
 h1{
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 font-size: 40px;
 /* display: center; */
 padding: 15px;
-background-color: rgb(255, 255, 255);
+/* background-color: rgb(255, 255, 255); */
 text-align: center;
 padding-left: 20px;
 font-style: bold;
 }
 
-.img{
+h2{
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+}
+
+p{
+  font-size: 15px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+h3{
+ font-size: 20px; 
+ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ text-align: center;
+}
+
+img{
+ background-attachment: fixed;
  margin: auto;
- width: 400px;
-}
-
-section:nth-child(even) {
-  background: white;
-}
-
-section:nth-child(odd){
-  background: rgb(255, 255, 255);
+ width: 100vw;
+ height: 500px;
 }
 
 .flex {
@@ -149,7 +195,7 @@ footer {
   top: 0;
   left: 0;
   content: "";
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   width: 4px;
   height: 100%;
 }
