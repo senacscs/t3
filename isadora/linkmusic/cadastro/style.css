@@ -7,7 +7,7 @@
 body {
   height: 100%;
   margin: 0;
-  background: #243b55;
+  background: #141e30;
 }
 
 .logo {
@@ -59,8 +59,8 @@ a {
 }
 
 h1 {
-  font-size: 48px;
-  color: #066a75;
+  font-size: 1.5em;
+  color: white;
   padding: 10px 0;
   font-family: Arial, sans-serif;
   font-weight: bold;
@@ -119,6 +119,7 @@ input:not([type="checkbox"]) {
   border-radius: 3px;
   box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
   transition: all 0.2s linear;
+  background: transparent;
 }
 
 button {
@@ -167,11 +168,17 @@ button {
 }
 
 #cadastro {
-  top: 0px;
-  width: 20%;
-  padding: 18px 6% 60px 6%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
   margin: 0 0 35px 0;
-  background: rgb(247, 247, 247);
   border: 1px solid rgba(147, 184, 189, 0.8);
   border-radius: 5px;
   align-items: center;
