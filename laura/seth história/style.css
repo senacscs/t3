@@ -1,0 +1,196 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Sedgwick Ave Display', cursive; */
+    /* font-family: 'Zilla Slab', serif; */
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url(./assets/fundo-antigo1.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.fixed-menu {
+    width: 100%;
+    background-color: rgb(216, 182, 70);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+section, article {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    margin: auto 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5vw;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.37);
+}
+
+nav a:hover {
+    color: rgb(180, 152, 58);
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+}
+
+section img {
+    display: block;
+    margin: auto;
+    width: 30vw;
+    height: auto;
+    border: 0.3vw solid rgb(216, 182, 70);
+    border-radius: 1vw;
+}
+
+section article {
+    display: flex;
+    align-items: center;
+}
+
+article p {
+    text-align: justify;
+    font-size: 1.19vw;
+    margin: 0 1vw; 
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5vw;
+    margin: 0;
+    padding: 1em 0;
+}
+
+main {
+    margin-top: 0;
+    padding: 0;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+
+/* ----- */
+
+#oi {
+    display: contents;
+}
+
+#quem {
+    text-align: start;
+    font-size: 3vw;
+    padding-bottom: 1vw;
+    padding-top: 2.5vw;
+}
+#sobre {
+    text-align: end;
+    font-size: 3vw;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+}
+
+.quiz {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 2vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 0.3vw solid rgb(216, 182, 70);
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 2px;
+}
+
+input[type="text"] {
+    width: 20%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#quiz a {
+    color: rgb(180, 152, 58);
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 5vw;
+    border: 0.3vw solid black;
+    border-radius: 2vw;
+    padding: 0.3vw;
+    transition: 0.5s    ;
+}
+
+#quiz a:hover {
+    color: black;
+}
+
+#quiz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5vh;
+} 
+footer {
+    background-color: rgb(77, 77, 77);
+    height: auto;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    font-size: 2vw;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+footer a:hover {
+    color: rgb(180, 152, 58);
+}
+
+footer h3 {
+    text-align: center;
+    font-size: 2.5vw;
+    padding-top: 10px;
+    margin-bottom: 1vw;
+}
+
+footer article {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20vw;
+}
