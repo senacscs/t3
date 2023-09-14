@@ -25,7 +25,10 @@ h1 {
     text-align: center;
 }
 button{
-    background: none;
+    background: rgba(128, 128, 128, 0.162);
+    width: fit-content;
+    padding: 1rem;
+    width: 16rem;
     border:none;
     outline:none;
 }
