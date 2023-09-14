@@ -222,11 +222,6 @@ function closeEminem() {
   audio.pause();
 }
 
-function handleEminem() {
-  document.getElementById("eminem").addEventListener("click", closeEminem);
-  document.getElementById("miranha").addEventListener("click", showEminem);
-}
-
 function handleFilter() {
   projects.forEach((project) => {
     filters.appendChild(
@@ -248,5 +243,4 @@ function handleFilter() {
 updateStudentsList(students);
 animateSpiderMan();
 handleSearch();
-handleEminem();
 handleFilter();
