@@ -4,7 +4,6 @@ const students = [
   { name: "Augusto", url: "/augusto" },
   { name: "Bianca", url: "/bianca" },
   { name: "Brian", url: "/brian" },
-  { name: "Bruno", url: "/bruno" },
   { name: "Davi F.", url: "/davif" },
   { name: "Davi M.", url: "/davimohr" },
   { name: "Davi B.", url: "/borba" },
@@ -44,7 +43,9 @@ const projects = [
   { name: 'Oficinas', url: '/oficinas' },
   { name: 'Carrinho de rolimã', url: '/carrinho' },
   { name: 'Fibonacci', url: '/fibonacci' },
-  { name: 'Ods', url: '/ods' }
+  { name: 'Ods', url: '/ods' },
+  { name: 'Deuses Egípcios', url: '/deusegipcio' },
+  { name: 'LinkeMusic', url: '/linkemusic' }
 ]
 
 // Gets a random colors theme

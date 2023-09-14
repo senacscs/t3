@@ -6,7 +6,7 @@ Este repositório do GitHub serve como um espaço centralizado para armazenar os
 
 O projeto é organizado em diferentes pastas com o nome do aluno (ou outra identificação do aluno), onde cada um possui sua index, que lista todos os seus projetos individuais.
 
-Na raiz do projeto há a [index da turma](https://arquivo.dev/t3), que lista todos os alunos.
+Na raiz do projeto há a [index da turma](https://senacscs.github.io/t3), que lista todos os alunos.
 
 ## Projetos realizados
 Projetos obrigatórios já realizados:
@@ -18,9 +18,8 @@ Projetos obrigatórios já realizados:
 - Carrinho de Rolimã
 - Retângulo dourado
 - ODS
-
-## Stack utilizada
-Os projetos são focados no front-end, então contém apenas HTML, CSS e Javascript na sua composição.
+- Deuses egípcios
+- LinkeMusic
 
 ## Acessando
-- Acesse [a index da turma](https://arquivo.dev/t3) para visualizar os projetos
+- Acesse [a index da turma](https://senacscs.github.io/t3) para visualizar os projetos
