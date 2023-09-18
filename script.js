@@ -240,7 +240,9 @@ function handleFilter() {
     }
   });
 }
-
+function rauber() {
+  window.location.href = "./rauber.html"
+}
 updateStudentsList(students);
 animateSpiderMan();
 handleSearch();
