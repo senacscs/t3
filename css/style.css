@@ -1,0 +1,37 @@
+body{
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+h2 {
+    text-align: center; 
+    color: white
+}
+h3{
+    text-align: center;
+}
+p{
+    text-align: center;
+    color: white;
+}
+body{
+    background: rgb(16,79,76);
+background: linear-gradient(90deg, rgba(16,79,76,1) -10%, rgba(52,81,158,1) 22%, rgba(75,83,211,1) 56%, rgba(255,122,84,1) 100%);
+}
+.botao{
+    border: solid 1px blue;
+    border-radius: 20px;
+    color: blue;
+    background-color: white;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    width: 10vw;
+}
+.botao:hover{
+    background-color: blue;
+    color: white;
+    transform: scale(1.2)
+}
