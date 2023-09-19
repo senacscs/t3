@@ -49,7 +49,7 @@ img {
   background-color: #1b1e23;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   img {
     position: absolute;
     top: 0;
