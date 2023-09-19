@@ -80,7 +80,7 @@ li {
     transition: all 0.3s ease-in-out;
 }
 
-@media (max-width:900px) {
+@media (max-width:1050px) {
     .hamburger {
         display: block;
     }
@@ -103,11 +103,13 @@ li {
         top: 4.8em;
         gap: 0;
         border-radius: 0 0 1em 1em;
-        background-color: rgb(53, 70, 58);
+        background-color: rgb(40, 44, 53);
         text-align: center;
         flex-direction: column;
-        width: 100%;
-        transition: all 0.3s;
+        padding-top: 2em;
+        width: 21%;
+        height: 100%;
+        transition: all 0.5s;
     }
 
     .nav-item {
@@ -152,18 +154,13 @@ h2 {
 .item {
     width: 80%;
     justify-self: center;
-    background-color: black;
+    background: rgb(73, 73, 88);
     border: 0.2em solid black;
     border-radius: 1em; 
     display: grid;
-    padding: 2em;
-    z-index: 1;
-}
-
-.item {
-    background: rgb(73, 73, 88);
     padding: 0.5em;
     border-top: 0.2em solid black;
+    z-index: 1;
 }
 
 .item img {
@@ -189,4 +186,27 @@ h2 {
 
 footer {
     height: 15em;
+}
+
+@media (max-width:1500px) {
+
+    .works {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+
+}
+
+
+@media (max-width:1050px) {
+
+    .works {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .item {
+        width: 50%;
+    }
+
 }
