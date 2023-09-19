@@ -19,7 +19,7 @@ h2#score {
     color: rgba(0, 0, 0, 0);
     cursor:default;
 }
-main {
+main#quiz {
     display: flex;
     justify-content: center;
 }
@@ -84,7 +84,9 @@ img {
     width: 20vw;
     margin-top: 10vh;
     border-radius: 10px;
-}
-section {
     text-align: center;
+}
+
+#top {
+    margin-top: 20px;
 }
