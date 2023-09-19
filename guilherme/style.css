@@ -107,7 +107,7 @@ li {
         text-align: center;
         flex-direction: column;
         padding-top: 2em;
-        width: 21%;
+        width: 40%;
         height: 100%;
         transition: all 0.5s;
     }
@@ -119,6 +119,20 @@ li {
     .nav-menu.active {
         left: 0;
     }
+
+    .works {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .item {
+        width: 70%;
+    }
+
+    .item img {
+        height: 12.5em;
+    }
+
 }
 
 section {
@@ -190,6 +204,7 @@ footer {
     height: 15em;
 }
 
+
 @media (max-width:1500px) {
 
     .works {
@@ -208,7 +223,12 @@ footer {
     }
 
     .item {
-        width: 50%;
+        width: 70%;
     }
+
+    .item img {
+        height: 12.5em;
+    }
+
 
 }
