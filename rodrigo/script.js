@@ -140,6 +140,16 @@ const Apps = [
     Class: "pm",
     Icon: "./assets/LogoB.png"
 },
+{
+    title: "Amun",
+    Subject: "História",
+    Data: "19/09/23",
+    Img: "hist.jpg",
+    Text: "Amun :)",
+    Link: "./hist",
+    Class: "hist",
+    Icon: "./hist/assets/amun1.jpg"
+},
 ]
 
 const h1 = document.getElementById('h1W')
