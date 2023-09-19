@@ -57,6 +57,14 @@ const activitiesStorage = [
     url: '/bruno/anubis',
     instructions: "Informações e um quiz sobre o deus do Antigo Egito Anúbis.",
   },
+  {
+    name: 'LinkeMusic',
+    subject: 'Projeto Profissional',
+    image: 'linkemusic.svg',
+    date: new Date(2023, 9, 19),
+    url: '/tito/linkemusic/',
+    instructions: "Protótipo para plataforma LinkeMusic.",
+  },
 ];
 
 const activitiesElement = document.getElementById("activities");
