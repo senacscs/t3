@@ -148,7 +148,7 @@ const Apps = [
     Text: "Amun :)",
     Link: "./hist",
     Class: "hist",
-    Icon: "./hist/assets/amun1.jpg"
+    Icon: "./assets/paia.png"
 },
 ]
 
