@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Quizz</h1>
+    <h2 id="score">Você acertou: <span id="span"></span>/1</h2>
+    <main>
+        <form id="form">
+            <section>
+                <h2>Qual era a característica distintiva de Amun que o tornava especial no panteão egípcio?</h2>
+                <input type="radio" value="11" id="q11" name="q1" required><label id="l11" for="q11"> Sua habilidade de controlar o tempo</label><br>
+                <input type="radio" value="12" id="q12" name="q1" required><label id="l12" for="q12">Sua invisibilidade</label><br>
+                <input type="radio" value="13" id="q13" name="q1" required><label id="l13" for="q13"> Sua relação com o deus sol Aton</label><br>
+                <input type="radio" value="14" id="q14" name="q1" required><label id="l14" for="q14">Sua conexão com a deusa Hathor</label><br>
+            </section>
+            
+            <section>
+                <h2>O templo de Amun em que cidade egípcia era um dos maiores complexos religiosos já construídos?</h2>
+                <input type="radio" value="21" id="q21" name="q2" required><label id="l21" for="q21"> Mênfis</label><br>
+                <input type="radio" value="22" id="q22" name="q2" required><label id="l22" for="q22">Alexandria</label><br>
+                <input type="radio" value="23" id="q23" name="q2" required><label id="l23" for="q23"> Tebas</label><br>
+                <input type="radio" value="24" id="q24" name="q2" required><label id="l24" for="q24">Gizé</label><br>
+            </section>
+            
+            <section>
+                <h2>Qual era o papel dos sacerdotes de Amun na sociedade egípcia?</h2>
+                <input type="radio" value="31" id="q31" name="q3" required><label id="l31" for="q31"> Guerreiros e comandantes militares</label><br>
+                <input type="radio" value="32" id="q32" name="q3" required><label id="l32" for="q32"> Curandeiros e médicos</label><br>
+                <input type="radio" value="33" id="q33" name="q3" required><label id="l33" for="q33"> Administradores de terras e políticos</label><br>
+                <input type="radio" value="34" id="q34" name="q3" required><label id="l34" for="q34"> Construtores de pirâmides</label><br>
+            </section>
+            
+            <section>
+                <h2>Que divindade fazia parte da Tríade de Tebas junto com Amun?</h2>
+                <input type="radio" value="41" id="q41" name="q4" required><label id="l41" for="q41"> Ísis</label><br>
+                <input type="radio" value="42" id="q42" name="q4" required><label id="l42" for="q42"> Osíris</label><br>
+                <input type="radio" value="43" id="q43" name="q4" required><label id="l43" for="q43"> Mut</label><br>
+                <input type="radio" value="44" id="q44" name="q4" required><label id="l44" for="q44"> Anúbis</label><br>
+            </section>
+            
+            <input id="button" type="submit" onclick="testForm()" value="Responder">
+            <a href="./quiz.html">Reset</a>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
