@@ -76,3 +76,80 @@ h1 {
         font-size: 20px;
     }
 }
+
+@media screen and (max-width: 480px) {
+  body {
+    font-family: 'Shadows Into Light', cursive;
+    background: url(./fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.card {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    height: auto;
+    background: #00000000;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.card h2 {
+    z-index: 1;
+    color: white;
+    font-size: 24px;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background-image: linear-gradient(180deg, rgb(14, 24, 155), rgb(16, 147, 180));
+    height: 100%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+    z-index: -1;
+}
+
+@keyframes rotBGimg {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    background: #295a99;
+    inset: 5px;
+    border-radius: 15px;
+}
+
+.link {
+    color: rgb(238, 231, 231);
+    position: relative;
+    left: 0;
+    margin-top: 10px;
+}
+
+
+  
+}
