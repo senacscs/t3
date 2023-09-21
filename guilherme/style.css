@@ -121,19 +121,6 @@ li {
         left: 0;
     }
 
-    .works {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .item {
-        width: 70%;
-    }
-
-    .item img {
-        height: 12.5em;
-    }
-
 }
 
 section {
@@ -218,6 +205,14 @@ footer {
 
 @media (max-width:1050px) {
 
+    .home {
+        height: 30em;
+    }
+
+    section {
+        padding-top: 10em;
+    }
+
     .works {
         display: grid;
         grid-template-columns: 1fr;
@@ -231,5 +226,8 @@ footer {
         height: 12.5em;
     }
 
+    footer {
+        height: 5em;
+    }
 
 }
