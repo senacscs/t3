@@ -1,12 +1,16 @@
-body {
-    background-color: red;
+html {
+   background-color: #ffdb58;
+    background-size: 160%;
+    
+}
+h1, h2, h3, h4, p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
 }
 h1 {
  text-align: center;
 }
-a {
-margin-left: auto;
-}
+
 
 .container{
     display: grid;
@@ -14,4 +18,13 @@ margin-left: auto;
 }
 .item {
     display: flex;
+}
+p{ 
+    padding: 2% 2%;
+}
+button {
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
