@@ -1,0 +1,85 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 6vh 10vh;
+    background: no-repeat radial-gradient(farthest-corner at 100vw 0vw,#efe3e2 25%,#77e4de 85%);
+    background-attachment: fixed;
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 5em;
+    text-transform: uppercase;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+form {
+    display: grid;
+    justify-content: normal;
+    align-items: center;
+    width: 20em;
+    background-color: white;
+    padding: 1.5em;
+    z-index: 1;
+}
+
+p {
+    font-size: 1.5em;
+    margin: 2.1em 0 0 0 ;
+}
+
+input[type="text"] {
+    width: auto;
+    height: 2em;
+    padding: 5px;
+    border: none;
+    background-color: #92c0da;
+}
+
+input[type="password"] {
+    width: auto;
+    height: 2em;
+    padding: 5px;
+    border: none;
+    background-color: #92c0da;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    display: block;
+    border: none;
+    font-size: 1.2em;
+    padding: 15px 10px;
+    background-color: #92c0da;
+    margin: 0 17%;
+    border-radius: 50px;
+}
+
+a {
+    color: rgb(1, 1, 95);
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1.3em;
+    text-align: center;
+    margin: 2em 0;
+}
+
+img {
+    position: absolute;
+    z-index: 0;
+    height: 40em;
+    top: 6em;
+    left: 0vw;
+    transform: rotate(-25deg);
+}
