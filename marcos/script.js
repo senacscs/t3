@@ -89,7 +89,15 @@ const newsArticles =[
       img: "./assets/sample.jpg",
       month: "8",
       date: "07 de Agosto de 2023"
-    }
+    },
+    {
+        path: './deusegipcio/',
+        text: "A mitologia egípcia é uma antiga narrativa repleta de deuses e histórias, e Hórus se destaca como uma figura importante, representada como um homem com cabeça de falcão, simbolizando a realeza e a proteção. Ele era filho de Ísis e Osíris, e sua luta contra seu tio Seth, o assassino de seu pai, simboliza a luta do bem contra o mal. Hórus personificava a justiça e a retidão, sendo venerado como protetor do Egito e dos faraós, desempenhando um papel vital na unificação do país e na cultura egípcia antiga.",
+        title: "Deus Egípcio - Hórus",
+        img: "./assets/sample.jpg",
+        month: "9",
+        date: "21 de Setembro de 2023"
+      },
   ];
 
 function getRandomSize(priority) {
