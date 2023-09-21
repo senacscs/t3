@@ -38,6 +38,7 @@ li {
     font-size: 2rem;
     transition: 1s;
     text-decoration: none;
+    cursor: progress;
 }
 
 .nav-menu {
