@@ -97,7 +97,7 @@ const newsArticles =[
         img: "./assets/sample.jpg",
         month: "9",
         date: "21 de Setembro de 2023"
-      },
+    },
   ];
 
 function getRandomSize(priority) {
