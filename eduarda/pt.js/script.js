@@ -2,7 +2,7 @@
 //perdidos para os oleguinhas não copiarem
 
 //Olá Gente!
-function olaMundo() {
+function olaGente() {
     document.getElementById("mostrar").innerHTML = "Olá Gente!";
     console.log(`Olá Gente!`);
     alert(`Olá Gente!`);
