@@ -1,12 +1,17 @@
 body{
-background-image: url(../img/megasite.jpg);
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: 100% 100%;
-
-
-
-
-
-
+text-align: center;
+background: rgb(16,79,76);
+background: linear-gradient(90deg, rgba(16,79,76,1) -10%, rgba(52,81,158,1) 22%, rgba(75,83,211,1) 56%, rgba(255,122,84,1) 100%);
+}
+h1{
+    color: white;
+}
+h2{
+    color: white;
+}
+h3{
+    color: white;
+}
+p{
+    color: white;
 }
