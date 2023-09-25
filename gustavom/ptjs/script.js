@@ -494,11 +494,11 @@ function eleicao() {
   alert(
     "Total de votos: " +
       total_votos +
-      "\n\nCandidato A: " +
+      "\n\nBlue pen: " +
       candidato_a +
       " voto(s). " + //lala
       porcentagem_candidato_a +
-      " % do total\nCandidato B: " +
+      " % do total\nAbner do Vasco: " +
       candidato_b +
       " voto(s). " +
       porcentagem_candidato_b +
