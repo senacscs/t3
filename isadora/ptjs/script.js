@@ -61,14 +61,15 @@ function prioridades() {
     "Operação: (1 + 2) / (3 * 4) = " + resultado + "<br>";
 }
 
-//Divisão inteira
-function div() {
-  var valor = document.getElementById("valor").value;
-  var metade_inteira = valor / 2;
-  var resto = valor % 3;
+// Calcular o quadrado de um número
+function calcularQuadrado() {
+  var valor = parseFloat(document.getElementById("valor").value);
+  var quadrado = valor * valor;
+
   document.getElementById("mostrar").innerHTML =
-    "metade inteira: " + metade_inteira + "<br>" + "resto: " + resto;
+      "O quadrado de " + valor + " é " + quadrado;
 }
+
 
 //Potência e raiz
 function pot() {
@@ -107,31 +108,31 @@ function troca() {
     bTroca;
 }
 
-//Maioridade penal
-function maioridade() {
-  const maioridade = 18;
-  var idade = document.getElementById("idade").value;
+// //Maioridade penal
+// function maioridade() {
+//   const maioridade = 18;
+//   var idade = document.getElementById("idade").value;
 
-  if (idade < maioridade) {
-    var tempo = maioridade - idade;
-    document.getElementById("mostrar").innerHTML =
-      "Faltam " + tempo + " ano(s) para você atingir a maioridade";
-  } else {
-    document.getElementById("mostrar").innerHTML =
-      "Você já atingiu a maioridade";
-  }
-}
+//   if (idade < maioridade) {
+//     var tempo = maioridade - idade;
+//     document.getElementById("mostrar").innerHTML =
+//       "Faltam " + tempo + " ano(s) para você atingir a maioridade";
+//   } else {
+//     document.getElementById("mostrar").innerHTML =
+//       "Você já atingiu a maioridade";
+//   }
+// }
 
-//Altura média
-function altura() {
+// Soma das alturas
+function calcularSomaAlturas() {
   var altura1 = parseFloat(document.getElementById("primeiraAltura").value);
   var altura2 = parseFloat(document.getElementById("segundaAltura").value);
   var altura3 = parseFloat(document.getElementById("terceiraAltura").value);
-  //kajhs
-  media_altura = (altura1 + altura2 + altura3) / 3;
+
+  var somaAlturas = altura1 + altura2 + altura3;
 
   document.getElementById("mostrar").innerHTML =
-    "Média das alturas é: " + Math.round(media_altura) + " metros";
+      "A soma das alturas é: " + somaAlturas.toFixed(2) + " metros";
 }
 
 //Loja de ferramentas
@@ -172,14 +173,22 @@ function loja() {
     total;
 }
 
-//Quantos dias
-function dias() {
+// Quantos dias faltam
+function diasFaltam() {
   var anoAtual = document.getElementById("ano").value;
-  var qtd_anos_bi = anoAtual / 4;
-  var dias = (anoAtual - 1) * 365 + qtd_anos_bi;
+  var hoje = new Date();
+  var fimDoAno = new Date(anoAtual, 11, 31); // 11 representa dezembro (0-11)
+
+  // Calcula a diferença entre as datas em milissegundos
+  var diferenca = fimDoAno - hoje;
+
+  // Converte a diferença em dias
+  var diasFaltam = Math.ceil(diferenca / (1000 * 60 * 60 * 24));
+
   document.getElementById("mostrar").innerHTML =
-    "Já se passaram " + dias + " dias desde 01/01/0001";
+      "Faltam " + diasFaltam + " dias para o fim do ano de " + anoAtual;
 }
+
 
 //Vogal
 function vogal() {
@@ -204,34 +213,24 @@ function vogal() {
   }
 }
 
-//Média
-function media() {
-  var m1 = parseFloat(document.getElementById("primeiraMedia").value);
-  var m2 = parseFloat(document.getElementById("segundaMedia").value);
-  var m3 = parseFloat(document.getElementById("terceiraMedia").value);
+// Verificar aprovação ou reprovação
+function verificarAprovacao() {
+  var nota1 = parseFloat(document.getElementById("primeiraNota").value);
+  var nota2 = parseFloat(document.getElementById("segundaNota").value);
+  var nota3 = parseFloat(document.getElementById("terceiraNota").value);
 
-  var media = (m1 + m2 + m3) / 3;
+  var media = (nota1 + nota2 + nota3) / 3;
+  var limiteAprovacao = 6.0; // Defina o limite de aprovação desejado aqui
 
-  if (m1 < media) {
-    document.getElementById("mostrar").innerHTML =
-      "A média final é: " +
-      Math.round(media) +
-      "<br>" +
-      "A média 1 é menor que a média final";
-  } else if (m2 < media) {
-    document.getElementById("mostrar").innerHTML =
-      "A média final é: " +
-      Math.round(media) +
-      "<br>" +
-      "A média 2 é menor que a média final";
-  } else if (m3 < media) {
-    document.getElementById("mostrar").innerHTML =
-      "A média final é: " +
-      Math.round(media) + //akls
-      "<br>" +
-      "A média 3 é menor que a média final";
+  if (media >= limiteAprovacao) {
+      document.getElementById("mostrar").innerHTML =
+          "Média final: " + media.toFixed(2) + "<br>Aluno Aprovado!";
+  } else {
+      document.getElementById("mostrar").innerHTML =
+          "Média final: " + media.toFixed(2) + "<br>Aluno Reprovado.";
   }
 }
+
 
 //Idade
 function idade() {
