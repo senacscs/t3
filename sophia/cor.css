@@ -1,11 +1,15 @@
 body {
 	background:#8bc0d8
+
+}
+.centro{
+	margin-left: 25%;
 }
 img {
 	border-radius: 10px;
 }
 .c img {
-	width: 300px;
+	height: 300px;
 	border-radius: 20px;
 	margin: 15px;
 }
@@ -15,22 +19,17 @@ img {
 	align-items: center;
 	justify-content: center;
 	grid-template-columns: auto auto auto auto;
-	gap: 1em;
+	gap: 0,5em;
 }
 a {
 	text-decoration: none;
 	color: black;
 	padding: 0.2rem;
 	border-radius: 0.8rem;
-	background-color: rgb(5, 92, 185);
+	
 }
-a:hover {
-	padding: 1rem;
-	color:white;
-	background-color: #117277;
-	transition: 1s;
 
-}
+
 video {
 position: fixed;
 right: 0;
@@ -50,3 +49,19 @@ z-index: 1;
 figcaption > p {
 	font-size: xx-large;
 }
+.coelhofoda{
+	margin-left: 72%;
+	margin-top: -8%;
+}
+.nascer{
+	margin-top:-17%;
+}
+h1{
+	font-family: 'Times New Roman', Times, serif;
+	font-size:200%;
+}
+.logo{
+	height: 150px;
+}
+
+
