@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>Portugol para JavaScript</h1>
+    </header>
+
+    <details close>
+        <summary>Receba uma saudação</summary>
+        <code>document.getElementById("mostrar").innerHTML = "Olá Mundo!";<br>
+        console.log(`Olá Mundo!`);<br>
+        alert(`Olá Mundo!`);
+        </code>
+        <button onclick="olaMundo()">Executar</button>
+
+    </details>        
+    <details close>
+        <summary>Número Digitado</summary>
+        <label>Digite um número aleatório: </label><input type="number" id="numero" placeholder="Só Números"><br>
+        <button onclick="numeroDigitado()">Executar</button>
+    </details>         
+    <details close>
+        <summary>Cor Favorita</summary>
+        <label>Digite sua cor favorita: </label><input type="text" id="nome" placeholder="Só Letras"><br>
+        <button onclick="nomeDigitado()">Executar</button>
+    </details> 
+    <details close>
+        <summary>Operação simples</summary>
+        <button onclick="calculadora()">Executar</button>
+    </details> 
+    <details close>
+        <summary>Prioridades</summary>
+        <button onclick="prioridades()">Executar</button>
+    </details> 
+    <details close>
+        <summary>Divisões Inteiras</summary>
+        <button onclick="divisoes()">Executar</button>
+    </details> 
+    <details close>
+        <summary>Potencia e Raiz</summary>
+        <button onclick="potenciaRaiz()">Executar</button>
+    </details> 
+    <details close>
+        <summary>Troca de Variaveis</summary>
+        <button onclick="troca()">Executar</button>
+    </details>
+    <details close>
+        <summary>Maioridade</summary>
+        <button onclick="maioridade()">Executar</button>
+    </details>
+    <details close>
+        <summary>Peso Médio</summary>
+        <button onclick="altura()">Executar</button>
+    </details>
+    <details close>
+        <summary>Lojinha</summary>
+        <button onclick="loja()">Executar</button>
+    </details>
+    <div id="mostrar"></div>
+
+     <script src="script.js"></script>
+     <footer>
+     </footer>
+</body>
+</html>
