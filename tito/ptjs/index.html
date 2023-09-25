@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algoritmos de Javascript</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body class="flex min-h-screen bg-gray-900 px-20 py-28 flex-col">
+    <h1 class="text-gray-100 text-2xl font-medium mb-10">
+      Algoritmos em Javascript
+    </h1>
+    <div class="grid grid-cols-3 gap-20">
+      <ul class="space-y-16 col-span-2">
+        <li class="flex flex-col">
+          <h1 class="text-gray-200 text-lg mb-3">1. Número digitado</h1>
+          <div class="bg-gray-800 mb-3 p-3 rounded-lg">
+            <code class="text-gray-400">
+              function firstExample() {
+              <br />&emsp;&emsp;document.getElementById("viewer").innerHTML = "O
+              número digitado foi " + numero.value; <br />}
+            </code>
+          </div>
+          <div>
+            <input
+              placeholder="Número para multiplicar"
+              type="number"
+              id="first-input"
+              class="px-3 py-2 bg-gray-300 rounded-lg placeholder:text-gray-600"
+            />
+            <button
+              onclick="firstExample()"
+              class="bg-gray-300 hover:bg-gray-400 transition-colors rounded-lg w-fit px-3 py-2"
+            >
+              EXECUTAR
+            </button>
+          </div>
+        </li>
+
+        <li class="flex flex-col">
+          <h1 class="text-gray-200 text-lg mb-3">2. Nome</h1>
+          <div class="bg-gray-800 mb-3 p-3 rounded-lg">
+            <code class="text-gray-400">
+              function firstExample() {
+              <br />&emsp; const number =
+              document.getElementById("first-input").value; <br />
+              &emsp;&emsp;const final = parseInt(number) * 2;
+              <br />
+              <br />
+              &emsp;&emsp;document.getElementById("viewer").innerHTML = `Número
+              duplicado = ${final}`;<br />
+              }
+            </code>
+          </div>
+          <div>
+            <input
+              placeholder="Seu nome"
+              type="text"
+              id="second-input"
+              class="px-3 py-2 bg-gray-300 rounded-lg placeholder:text-gray-600"
+            />
+            <button
+              onclick="secondExample()"
+              class="bg-gray-300 hover:bg-gray-400 transition-colors rounded-lg w-fit px-3 py-2"
+            >
+              EXECUTAR
+            </button>
+          </div>
+        </li>
+
+        <li class="flex flex-col">
+          <h1 class="text-gray-200 text-lg mb-3">3. Calculadora</h1>
+          <div class="bg-gray-800 mb-3 p-3 rounded-lg">
+            <code class="text-gray-400">
+              function thirdExample() {
+              <br />
+              &emsp; const calc = document.getElementById("third-input").value;
+
+              <br />
+              &emsp;&emsp;document.getElementById("viewer").innerHTML =
+              `Resultado: ${eval(calc)}`; <br />
+              }
+            </code>
+          </div>
+          <div>
+            <input
+              placeholder="Cálculo"
+              type="text"
+              id="third-input"
+              class="px-3 py-2 bg-gray-300 rounded-lg placeholder:text-gray-600"
+            />
+            <button
+              onclick="thirdExample()"
+              class="bg-gray-300 hover:bg-gray-400 transition-colors rounded-lg w-fit px-3 py-2"
+            >
+              EXECUTAR
+            </button>
+          </div>
+        </li>
+
+        <li class="flex flex-col">
+          <h1 class="text-gray-200 text-lg mb-3">4. Potência e raiz</h1>
+          <div class="bg-gray-800 mb-3 p-3 rounded-lg">
+            <code class="text-gray-400">
+              function fourthExample() {
+              <br />&emsp; const number =
+              document.getElementById("fourth-input").value;
+
+              <br />&emsp; &emsp; const power = Math.pow(number, 3.0);
+              <br />&emsp; &emsp; const sqrt = Math.sqrt(number);
+
+              <br />&emsp; &emsp; document.getElementById( "viewer" ).innerHTML
+              = `Potência: ${power}<br />Raiz: ${sqrt}`; <br />}
+            </code>
+          </div>
+          <div>
+            <input
+              placeholder="Número"
+              type="number"
+              id="fourth-input"
+              class="px-3 py-2 bg-gray-300 rounded-lg placeholder:text-gray-600"
+            />
+            <button
+              onclick="fourthExample()"
+              class="bg-gray-300 hover:bg-gray-400 transition-colors rounded-lg w-fit px-3 py-2"
+            >
+              EXECUTAR
+            </button>
+          </div>
+        </li>
+
+        <li class="flex flex-col">
+          <h1 class="text-gray-200 text-lg mb-3">5. Maioridade penal</h1>
+          <div class="bg-gray-800 mb-3 p-3 rounded-lg">
+            <code class="text-gray-400">
+              function fifthExample() {
+              <br />
+              &emsp; const adulthood = 18; <br />
+              &emsp; const age = document.getElementById("fifth-input").value;
+              <br />
+              <br />&emsp;&emsp;if (age < adulthood) { <br />
+              &emsp;&emsp;&emsp; const time = maioridade - idade;
+              <br />&emsp;&emsp;&emsp;&emsp;document.getElementById( "viewer"
+              ).innerHTML = `Faltam ${time} ano(s) para você atingir a
+              maioridade`; <br />&emsp;&emsp;} else {
+              <br />&emsp;&emsp;&emsp;&emsp;
+              document.getElementById("viewer").innerHTML = "Você já atingiu a
+              maioridade"; <br />&emsp;&emsp;} <br />}
+            </code>
+          </div>
+          <div>
+            <input
+              placeholder="Idade"
+              type="number"
+              id="fifth-input"
+              class="px-3 py-2 bg-gray-300 rounded-lg placeholder:text-gray-600"
+            />
+            <button
+              onclick="fifthExample()"
+              class="bg-gray-300 hover:bg-gray-400 transition-colors rounded-lg w-fit px-3 py-2"
+            >
+              EXECUTAR
+            </button>
+          </div>
+        </li>
+
+        <li class="flex flex-col">
+          <h1 class="text-gray-200 text-lg mb-3">6. Quantos dias</h1>
+          <div class="bg-gray-800 mb-3 p-3 rounded-lg">
+            <code class="text-gray-400">
+              function sixthExample() {
+              <br />
+              &emsp; const year = document.getElementById("ano").value; <br />
+              &emsp;&emsp;const leapYearsQuantity = anoAtual / 4; <br />
+              &emsp;&emsp;const days = (year - 1) * 365 + leapYearsQuantity;
+              <br /><br />
+              &emsp;&emsp;document.getElementById("viewer").innerHTML = "Já se
+              passaram " + days + " dias desde 01/01/0001";
+              <br />}
+            </code>
+          </div>
+          <div>
+            <input
+              placeholder="Ano"
+              type="number"
+              id="sixth-input"
+              class="px-3 py-2 bg-gray-300 rounded-lg placeholder:text-gray-600"
+            />
+            <button
+              onclick="sixthExample()"
+              class="bg-gray-300 hover:bg-gray-400 transition-colors rounded-lg w-fit px-3 py-2"
+            >
+              EXECUTAR
+            </button>
+          </div>
+        </li>
+
+        <li class="flex flex-col">
+          <h1 class="text-gray-200 text-lg mb-3">7. Múltiplo de 5</h1>
+          <div class="bg-gray-800 mb-3 p-3 rounded-lg">
+            <code class="text-gray-400">
+              function seventhExample() {
+              <br />
+              &emsp; const number =
+              document.getElementById("seventh-input").value;
+              <br />
+              <br />
+              &emsp; &emsp; if (number % 5 == 0) { <br />
+              &emsp; &emsp; &emsp;document.getElementById("viewer").innerHTML =
+              <br />
+              &emsp; &emsp; &emsp;"O número " + number + " é múltiplo de 5";
+              <br />
+              &emsp; &emsp;} else { <br />
+              &emsp; &emsp; &emsp; document.getElementById("viewer").innerHTML =
+              "O número " + number + " não é múltiplo de 5"; <br />
+              &emsp; &emsp;} <br />}
+            </code>
+          </div>
+          <div>
+            <input
+              placeholder="Número"
+              type="number"
+              id="seventh-input"
+              class="px-3 py-2 bg-gray-300 rounded-lg placeholder:text-gray-600"
+            />
+            <button
+              onclick="seventhExample()"
+              class="bg-gray-300 hover:bg-gray-400 transition-colors rounded-lg w-fit px-3 py-2"
+            >
+              EXECUTAR
+            </button>
+          </div>
+        </li>
+
+        <li class="flex flex-col">
+          <h1 class="text-gray-200 text-lg mb-3">8. Número inteiro</h1>
+          <div class="bg-gray-800 mb-3 p-3 rounded-lg">
+            <code class="text-gray-400">
+              function eighthExample() {
+              <br />
+              &emsp; const number =
+              document.getElementById("eighth-input").value;
+              <br />
+              <br />
+              &emsp; if (number == 0) { <br />
+              &emsp;&emsp; document.getElementById("viewer").innerHTML = "O
+              número é igual a zero"; <br />
+              &emsp; } else if (number < 0) { <br />
+              &emsp; &emsp; document.getElementById("viewer").innerHTML = "O
+              número é negativo"; <br />
+              &emsp; } else { <br />
+              &emsp; &emsp; document.getElementById("viewer").innerHTML = "O
+              número é positivo"; <br />&emsp;&emsp;} <br />&emsp;}
+            </code>
+          </div>
+          <div>
+            <input
+              placeholder="Número"
+              type="number"
+              id="eighth-input"
+              class="px-3 py-2 bg-gray-300 rounded-lg placeholder:text-gray-600"
+            />
+            <button
+              onclick="eighthExample()"
+              class="bg-gray-300 hover:bg-gray-400 transition-colors rounded-lg w-fit px-3 py-2"
+            >
+              EXECUTAR
+            </button>
+          </div>
+        </li>
+      </ul>
+      <div class="fixed top-32 right-28 w-96">
+        <div class="bg-gray-700 text-center block py-1 px-2 rounded-t-lg">
+          <span class="text-gray-300">Resultado</span>
+        </div>
+        <div class="bg-gray-800 p-3 h-fit min-h-[200px] rounded-b-lg">
+          <code id="viewer" class="text-gray-400"></code>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

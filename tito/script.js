@@ -65,6 +65,14 @@ const activitiesStorage = [
     url: '/tito/linkemusic/',
     instructions: "Protótipo para plataforma LinkeMusic.",
   },
+  {
+    name: 'Algoritmos em Javascript',
+    subject: 'Técnico',
+    image: 'ptjs.svg',
+    date: new Date(2023, 9, 25),
+    url: '/tito/ptjs/',
+    instructions: "Algoritmos de Portugol adaptados para Javascript."
+  },
 ];
 
 const activitiesElement = document.getElementById("activities");
