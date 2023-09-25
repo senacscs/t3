@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://senacscs.github.io/t2/bernardo/segundo/ptjs/ -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta nome="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Portugol para JavaScript_files/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Portugol para JavaScript_files/css2" rel="stylesheet">
+    <title>Portugol para JavaScript (Modificado por Vitor K.)</title>
+    <script src="Portugol para JavaScript_files/script.js"></script>
+  </head>
+
+  <body>
+    <style>
+      body {
+        background-image: url(wallpaper.jpg);
+      }
+    </style>
+    <h1>
+      Portugol para JavaScript Exemplos do
+      <a href="https://portugol-webstudio.dgadelha.xyz/ide" target="_blank">Portugol WebStudio</a>
+      convertidos para JavaScript
+    </h1>
+
+    <details close="" open="">
+      <summary>Olá Mundo</summary>
+      <code>document.getElementById("mostrar").innerHTML = "Olá Mundo!";<br>
+        console.log(`Olá Mundo!`);<br>
+        alert(`Olá Mundo!`);
+      </code>
+      <button class="button piscar" onclick="olaMundo()">Faça a Mágica</button>
+    </details>
+
+    <details close="" open="">
+      <summary>Número Digitado</summary>
+      <label>Digite um número: </label><input type="number" id="numero" placeholder="Só números"><br>
+      <button class="button piscar" onclick="numeroDigitado()">Faça a Mágica</button>
+    </details>  
+
+    <details close="" open="">
+      <summary>Seu nome</summary>
+      <label>Digite seu nome: </label><input type="text" id="nome" placeholder="Só letras"><br>
+      <button class="button piscar" onclick="nomeDigitado()">Faça a Mágica</button>
+    </details>
+
+    <details close="" open="">
+      <summary>Operações MUITO simples</summary>
+      <label>Digite o primeiro número: </label>
+      <input type="number" id="primeiroNum" placeholder="Só números"><br>
+
+      <label>Selecione a operação: </label>
+      <select id="select" name="opcao">
+        <option value="opcao1">+</option>
+        <option value="opcao2" selected="">-</option>
+        <option value="opcao3">/</option>
+        <option value="opcao4">*</option></select><br>
+
+      <label>Digite o segundo número: </label>
+      <input type="number" id="segundoNum" placeholder="Só números"><br>
+
+      <button class="button piscar" onclick="calcular()">Faça a Mágica</button>
+    </details>
+
+    <details close="">
+      <summary>Prioridades Imóveis</summary>
+      <button class="button piscar" onclick="prioridades()">Faça a Mágica</button>
+    </details>
+
+    <details close="">
+      <summary>Divisão inteira traiçoeira</summary>
+      <label>Digite um valor: </label>
+      <input type="number" id="valor" placeholder="Só números"><br>
+      <button class="button piscar" onclick="div()">Faça a Mágica</button>
+    </details>
+
+    <details close="">
+      <summary>Potência e raiz</summary>
+      <label>Digite um valor: </label>
+      <input type="number" id="num" placeholder="Só números"><br>
+      <button class="button piscar" onclick="pot()">Faça a Mágica</button>
+    </details>
+
+    <details close="">
+      <summary>A LENDÁRIA Troca de variáveis</summary>
+      <label>Digite a primeira variável: </label>
+      <input type="text" id="primeiraVar"><br>
+
+      <label>Digite a segunda variável: </label>
+      <input type="text" id="segundaVar"><br>
+      <button class="button piscar" onclick="troca()">Faça a Mágica</button>
+    </details>
+
+    <details close="">
+      <summary>Maioridade penal (CUIDADO COM SUAS AÇÕES, USE ESSA FERRAMENTA)</summary>
+      <label>Digite sua idade: </label>
+      <input type="num" id="idade" placeholder="Só números"><br>
+      <button class="button piscar" onclick="maioridade()">Faça a Mágica</button>
+    </details>
+
+    <details close="">
+      <summary>Altura média de três SERES HUMANOS</summary>
+      <label>Digite a altula da primeira pessoa SER HUMANO: </label>
+      <input type="num" id="primeiraAltura" placeholder="Só números"><br>
+
+      <label>Digite a altula da segunda pessoa SER HUMANO: </label>
+      <input type="num" id="segundaAltura" placeholder="Só números"><br>
+
+      <label>Digite a altula da terceira pessoa SER HUMANO: </label>
+      <input type="num" id="terceiraAltura" placeholder="Só números"><br>
+      <button class="button piscar" onclick="altura()">Faça a Mágica</button>
+    </details>
+
+    <details close="">
+      <summary>Loja de ferramentas (GASTE APENAS O QUE POSSA GASTAR)</summary>
+      <label>Digite seu sobrenome: </label>
+      <input type="text" id="nomeDigitado" placeholder="Só letras"><br>
+
+      <label>Digite a quantidade de parafusos estragados que deseja comprar: </label>
+      <input type="number" id="parafusos" placeholder="Só números"><br>
+
+      <label>Digite a quantidade de arruelas enferrujadas que deseja comprar: </label>
+      <input type="number" id="arruelas" placeholder="Só números"><br>
+
+      <label>Digite a quantidade de porcas tortas que deseja comprar: </label>
+      <input type="number" id="porcas" placeholder="Só números"><br>
+      <button class="button piscar" onclick="loja()">Faça a Mágica</button>
+    </details>
+
+    <details close="">
+      <summary>Quantos dias</summary>
+      <label>Informe o ano atual (NÃO ERRE O ANO, OU ALGUÉM VIRA LHE BUSCAR): </label>
+      <input type="num" id="ano" placeholder="Só números"><br>
+      <button class="button piscar" onclick="dias()">Faça a Mágica</button>
+    </details>
+
+    
+    <div id="mostrar"></div>
+    <script src="./Portugol para JavaScript_files/script.js.download"></script>
+    <script>
+      // Desabilitar o menu de contexto (botão direito do mouse)
+
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+
+        //  mostrarMensagem();
+      });
+
+      //function mostrarMensagem() {
+
+      //  alert("Você não tem permissão para acessar o menu de contexto.");
+
+      //}
+
+      document.addEventListener("keydown", function (e) {
+        if (e.ctrlKey && e.key === "u") {
+          e.preventDefault();
+
+          showOverlay();
+        }
+      });
+
+      function showOverlay() {
+        const overlay = document.createElement("div");
+
+        overlay.className = "overlay";
+
+        const message = document.createElement("div");
+        overlay.appendChild(message);
+
+        document.body.appendChild(overlay);
+      }
+
+      // Esta função desativa a tecla F12 pressionada.
+
+      function disableF12(e) {
+        if (
+          e.keyCode === 123 ||
+          (e.ctrlKey && e.shiftKey && e.keyCode === 73)
+        ) {
+          e.preventDefault(); // Impede o comportamento padrão (abrir ferramentas de desenvolvedor)
+        }
+      }
+
+      // Adicionar um ouvinte de evento para capturar pressionamentos de tecla.
+
+      document.addEventListener("keydown", disableF12);
+    </script>
+  
+
+</body></html>
