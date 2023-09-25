@@ -16,8 +16,10 @@ function olaMundo() {
   
   //Nome digitado
   function nomeDigitado() {
-    document.getElementById("mostrar").innerHTML = "Olá " + nome.value;
-  }
+    const nomeInput = document.getElementById("nome");
+    const nomeInvertido = nomeInput.value.split('').reverse().join('');
+    document.getElementById("mostrar").innerHTML = "Olá " + nomeInvertido;
+}
   
   //Operação simples
   function calcular() {
