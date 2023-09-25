@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta nome="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portugol para JavaScript</title>
+  </head>
+
+  <body>
+    <h1>
+      Exmplos Refeitos do Portugol Para JavaScript
+    </h1>
+<section>
+    <div>
+      <summary>Número Digitado</summary>
+      <label>Digite um número: </label
+      ><input type="number" id="numero" placeholder="Só números" /><br />
+      <button onclick="numeroDigitado()">Executar</button>
+    </div>
+
+    <div>
+      <summary>Seu nome</summary>
+      <label>Digite seu nome: </label
+      ><input type="text" id="nome" placeholder="Só letras" /><br />
+      <button onclick="nomeDigitado()">Executar</button>
+    </div>
+
+    <div>
+      <summary>Altura média</summary>
+      <label>Digite a altura da primeira pessoa: </label>
+      <input type="num" id="primeiraAltura" placeholder="Só números" /><br />
+
+      <label>Digite a altura da segunda pessoa: </label>
+      <input type="num" id="segundaAltura" placeholder="Só números" /><br />
+
+      <label>Digite a altura da terceira pessoa: </label>
+      <input type="num" id="terceiraAltura" placeholder="Só números" /><br />
+
+      <label>Digite a altura da quarta pessoa: </label>
+      <input type="num" id="quartaAltura" placeholder="Só números" /><br />
+      <button onclick="altura()">Executar</button>
+    </div>
+
+    <div>
+      <summary>Idade</summary>
+      <label>Informe sua idade: </label>
+      <input type="num" id="idadeUser" placeholder="Só números" /><br />
+      <button onclick="idade()">Executar</button>
+    </div>
+
+    <div>
+      <summary>Múltiplo de dez</summary>
+      <label>Digite um número: </label>
+      <input type="num" id="number" placeholder="Só números" /><br />
+      <button onclick="multiplo()">Executar</button>
+    </div>
+    
+    <div>
+      <summary>Contagem regressiva</summary>
+      <button onclick="contagem()">Executar</button>
+    </div>
+
+    <div>
+      <summary>Tabuada</summary>
+      <label>Digite um número: </label>
+      <input type="num" id="numTab" placeholder="Só números" /><br />
+      <button onclick="tabuada()">Executar</button>
+    </div>
+
+
+    <div>
+      <summary>Média de dez números</summary>
+      <button onclick="mediaDez()">Executar</button>
+    </div>
+
+    <div>
+      <summary>Soma de um a X</summary>
+      <button onclick="somaX()">Executar</button>
+    </div>
+
+</section>
+
+    <div id="mostrar"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
