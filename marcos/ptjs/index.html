@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="overflow-x-hidden p-0 bg-zinc-300">
+    <header class="w-screen justify-center text-center">
+        <h1 class="font-bold text-3xl">Portugol para Javascript</h1>
+    </header>
+    <main class="flex flex-row m-10 gap-4 mr-0">
+        <section class="flex-1 border border-zinc-400 p-4 rounded-xl">
+            <div class="">
+                <h2>1. Calcular tempo de Vida:</h2>
+                
+                <label class="flex flex-row gap-4 items-center">
+                    <h2 class="text-zinc-600">Insira sua Data de Nascimento:</h2>
+                    <input class="rounded-md p-1 w-36" type="date" placeholder="Idade" id="birth-date">
+                    <button class="bg-zinc-200 p-1 rounded hover:bg-zinc-300" onclick="calcularTempo()">Executar</button>
+                </label>
+                
+            </div>
+            <div class="bg-zinc-700 h-1 mt-6 mb-6"></div>
+            <div class="">
+                <h2>2. Contador de Vogais:</h2>
+                
+                <label class="flex flex-row gap-4 items-center mt-2">
+                    <h2 class="text-zinc-600">Digite um Texto:</h2>
+                    <input class="rounded-md p-1 w-36" type="text" placeholder="Texto" id="vogais">
+                    <button class="bg-zinc-200 p-1 rounded hover:bg-zinc-300" onclick="contarVogais()">Executar</button>
+                </label>
+            </div>
+            <div class="bg-zinc-700 h-1 mt-6 mb-6"></div>
+
+            <div class="">
+                <h2>3. Fatorial:</h2>
+                
+                <label class="flex flex-row gap-4 items-center mt-2">
+                    <h2 class="text-zinc-600">Digite um Número:</h2>
+                    <input class="rounded-md p-1 w-36" type="number" placeholder="Número" id="fatorial">
+                    <button class="bg-zinc-200 p-1 rounded hover:bg-zinc-300" onclick="fatorial()">Executar</button>
+                </label>
+            </div>
+            <div class="bg-zinc-700 h-1 mt-6 mb-6"></div>
+            <div class="">
+                <h2>4. Potência:</h2>
+                
+                
+                <label class="flex flex-row gap-4 items-center mt-2">
+                    <h2 class="text-zinc-600">Digite a Base:</h2>
+                    <input class="rounded-md p-1 w-36" type="number" placeholder="Número" id="p-base">
+                </label>
+                <label class="flex flex-row gap-4 items-center mt-2">
+                    <h2 class="text-zinc-600">Digite o Expoente:</h2>
+                    <input class="rounded-md p-1 w-36" type="number" placeholder="Número" id="expoente">
+                    <button class="bg-zinc-200 p-1 rounded hover:bg-zinc-300" onclick="potencia()">Executar</button>
+                </label>
+            
+            </div>
+            <div class="bg-zinc-700 h-1 mt-6 mb-6"></div>
+            <div class="">
+                <h2>5. Radiciação:</h2>
+            
+                <label class="flex flex-row gap-4 items-center mt-2">
+                    <h2 class="text-zinc-600">Digite o Expoente:</h2>
+                    <input class="rounded-md p-1 w-36" type="number" placeholder="Número" id="sqrt">
+                    <button class="bg-zinc-200 p-1 rounded hover:bg-zinc-300" onclick="raiz()">Executar</button>
+                </label>
+            </div>
+            <div class="bg-zinc-700 h-1 mt-6 mb-6"></div>
+            <div class="">
+                <h2>5. Radiciação:</h2>
+            
+                <label class="flex flex-row gap-4 items-center mt-2">
+                    <h2 class="text-zinc-600">Digite o Expoente:</h2>
+                    <input class="rounded-md p-1 w-36" type="number" placeholder="Número" id="sqrt">
+                    <button class="bg-zinc-200 p-1 rounded hover:bg-zinc-300" onclick="raiz()">Executar</button>
+                </label>
+            </div>
+        </section>
+        <section class="flex-1 rounded-xl rounded-r-none bg-zinc-800 p-3">
+            <h1 class="text-xl text-white font-mono mb-4">Output</h1>
+            <div class="text-white font-mono" id="output"></div>
+        </section>
+    </main>
+</body>
+    <script src="script.js"></script>
+</html>
