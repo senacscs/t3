@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    border: none;
+  }
+
+  @font-face {
+    font-family: 'VarelaRound';
+    src: url('VarelaRound-Regular.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+  .scroll-bar {
+    background-color: transparent;
+    overflow-y: scroll;
+  }
+  
+  .scroll-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+      background-image: url(assets/portugolwpp.png);
+      background-size: 99%;
+      /*text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;*/
+  }
+
+
+  .wallpaper {
+    margin-top: 250px;
+    background-color: #000000;
+    margin-left: -1px;
+
+  }
+  
+  h1, h2 {
+      color: rgb(255, 255, 255);
+      font-family: 'Consolas';
+  }
+
+  h1 {
+    margin-top: 300px;
+    margin-left: 30px;
+    margin-bottom: 70px;
+    font-size: 37px;
+  }
+
+  h2 {
+    margin-left: 20px;
+  }
+
+  p {
+    color: rgba(224, 18, 18, 0.863);
+    font-family: 'Consolas';
+    display: inline;
+    margin-left: 14px;
+  }
+  
+  label, div {
+      color: #ffffff;
+      font-size: large;
+      padding: 10px;
+      margin: 5px;
+  }
+  
+  input{
+    padding: 10px;
+    margin: 5px;
+    color: #000000;
+    font-weight: bold;
+  }
+  
+  button{
+      background-color: rgb(0, 0, 0);
+      color: white;
+      padding: 5px;
+      text-align: center;
+      font-family: 'VarelaRound';
+      font-size: 20px;
+      margin: 15px auto;
+      display: block;
+    
+  }
+  
+  details {
+      padding: 10px;
+    }
+  
+    summary {
+      font-weight: bold;
+      padding: 22px;
+      cursor: pointer;
+      font-family: 'VarelaRound';
+    }
+  
+    code {
+      font-family: 'VarelaRound';
+      background-color: #000000;
+      color: greenyellow;
+      padding: 10px;
+      border-radius: 5px;
+      display: block;
+    }
+    
+  #mostrar {
+      background-color: rgb(102, 102, 102);
+      color: rgb(255, 238, 0);
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      font-family: 'VarelaRound';
+      
+  }
+
+  .link {
+    font-family: 'Consolas';
+    margin: 15px;
+    color: rgb(255, 187, 0);
+    font-size: 27px;
+  }
+
+  a {
+    font-family: 'Consolas';
+    color: rgb(194, 23, 17);
+    font-size: 17px;
+  }
+
+  .opac {
+    opacity: 0;
+    }
+
+    .feito {
+    color: rgb(194, 23, 17);
+    }
