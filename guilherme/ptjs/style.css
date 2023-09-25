@@ -1,0 +1,8 @@
+body {
+    background: linear-gradient(90deg, rgb(90, 240, 90), lightskyblue);
+}
+
+.box {
+    padding: 1em;
+    border-radius: 2em;
+}
