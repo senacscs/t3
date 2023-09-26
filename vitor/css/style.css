@@ -6,8 +6,8 @@
 }
 
 body {
-
-  background-color: #000000;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,8,38,1) 27%, rgba(0,0,0,1) 100%);
 }.barrarepartir {
 margin-top: 20px;
 margin-bottom: 25px;
