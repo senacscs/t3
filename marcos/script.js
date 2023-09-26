@@ -98,6 +98,14 @@ const newsArticles =[
         month: "9",
         date: "21 de Setembro de 2023"
     },
+    {
+        path: './ptjs/',
+        text: "Projetos em JavaScript, como um contador de vogais, calculadora de potenciação, raiz quadrada e calculadora de data de nascimento. Uma maneira prática de aprender programação e aplicá-la em situações cotidianas.",
+        title: "Portugol para JS",
+        img: "./assets/sample.jpg",
+        month: "9",
+        date: "25 de Setembro de 2023"
+    },
   ];
 
 function getRandomSize(priority) {
