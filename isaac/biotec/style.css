@@ -1,0 +1,94 @@
+html, body
+{
+padding:0;
+margin:0;
+background:#111;
+font-family:"Arial", sans-serif;
+font-size:10px;
+width:100vw;
+height:100vh;
+overflow:auto;
+display:block;
+}
+
+.scene
+{
+position:absolute;
+left:50%;
+top:50%;
+transform:translate(-50%,-50%);
+display:block;
+}
+
+.box{
+display:flex;
+align-items:center;
+position:relative;
+transform:rotate(-26deg);
+height:140px;
+}
+
+.box span{
+position:relative;
+width:6px;
+height:0px;
+background:#F2F1BD;
+display:inline-block;
+margin:0 7px;
+animation:py ease 0.6s calc(var(--i) * 0.09s) alternate infinite; /*0.3s,0.4s,0.6s,0.9s*/
+}
+
+@keyframes py
+{
+to{
+height:140px;
+}
+}
+
+.box span::before, .box span::after{
+content:"";
+position:absolute;
+left:50%;
+width:16px;
+height:16px;
+display:block;
+border-radius:50%;
+}
+
+.box span::before{
+top:0;
+background:#439AD9; /*blue*/
+transform:translate(-50%,-50%);
+}
+
+.box span:nth-child(2n)::before{
+background:#26f826; /*green*/
+}
+
+.box span::after{
+bottom:0;
+background:#E96451; /*red*/
+transform:translate(-50%,50%);
+}
+
+.box span:nth-child(2n)::after{
+background:#ffba36; /*yellow*/
+}
+
+a {
+    color: darkgray;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: gray;
+}
+
+h1 {
+    color: lightgray;
+    position: absolute;
+    bottom: 0.1vw;
+    left: 1vw;
+    font-size: 3vw;
+}
