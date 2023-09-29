@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-color: rgb(237, 237, 237);
+    background-color: white;
 }
 
 header {
@@ -102,10 +102,22 @@ nav img {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    .logo {
+        font-size: 5vw;
+    }
+
+    .nav-bar {
+        min-height: 10vw;
+    }
+
+    nav img {
+        width: 8vw;
+    }
+
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 4.8em;
+        top: 8vw;
         gap: 0;
         border-radius: 0 0 1em 1em;
         background-color: rgb(40, 44, 53);
@@ -118,7 +130,7 @@ nav img {
     }
 
     .nav-item {
-        margin: 0.8em 0;   
+        margin: 2em 0;   
     }
 
     .nav-menu.active {
@@ -138,7 +150,7 @@ section {
 
 .home {
     height: 30vw;
-    background-color: rgb(210, 211, 212);
+    background: linear-gradient(0deg, white, rgb(210, 211, 212) 30%);
     text-align: center;
 }
 
@@ -215,6 +227,14 @@ footer {
         height: 30em;
     }
 
+    h1 {
+        font-size: 10vw;
+    }
+
+    p {
+        font-size: 4vw;
+    }
+
     section {
         padding-top: 10em;
     }
@@ -226,6 +246,10 @@ footer {
 
     .item {
         width: 70%;
+    }
+
+    .decoration {
+        font-size: 5vw;
     }
 
     .item img {
