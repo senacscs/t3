@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index do Tomás</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+    </script>
+</head>
+<body>
+    <div class="background-2">
+        <input type="checkbox" id="check">
+        <label for="check">
+        <div class="menu">
+            <span class="menumusic"></span>
+        </div>
+    </label>
+    <div class="barra">
+        <div class="itens">
+            <a href="#"><div class="inline"><img src="assets/25694.png" style="padding-left: 20px; padding-right: 20px;"><p class="item" style="margin-left: -130px;">Ínicio</p></div></a>
+                <a href="#trabalhos"><div class="inline"><img src="assets/5003863.png" style="padding-left: 20px; padding-right: 20px;"><p class="item" style="margin-left: -111px;">Trabalhos</p></div></a>
+                    <a href="#"><div class="inline"><p class="item"></p></div></a>
+                    <a href="#"><div class="inline"><p class="item"></p></div></a>
+        </div>
+    </div>
+    <h1 style="margin-bottom: 43%;" id="home">Bem-vindo a minha Index</h1>
+    <div class="blacker">
+        <h2 id="trabalhos">Trabalhos feitos</h2>
+  <button class="btn" onclick="filterSelection('abr')"  style="border: 2px solid  rgb(1, 203, 1); border-radius: 5px; color: rgb(1, 203, 1);"> Abril</button>
+  <button class="btn" onclick="filterSelection('mai')"  style="border: 2px solid  rgb(0, 43, 107); border-radius: 5px; color: rgb(0, 43, 107);"> Maio</button>
+  <button class="btn" onclick="filterSelection('jun')"  style="border: 2px solid  rgb(0, 166, 255); border-radius: 5px; color:rgb(0, 166, 255);"> Junho</button>
+  <button class="btn" onclick="filterSelection('jul')"  style="border: 2px solid  red; border-radius: 5px; color: red;"> Julho</button>
+  <button class="btn" onclick="filterSelection('ago')"  style="border: 2px solid  rgb(247, 0, 255); border-radius: 5px; color: rgb(247, 0, 255);"> Agosto</button>
+  <button class="btn" onclick="filterSelection('set')"  style="border: 2px solid  rgb(255, 255, 0); border-radius: 5px; color: rgb(255, 255, 0);"> Setembro</button>
+</div>
+<div class="container"><br><br><br>
+  <div class="filterDiv abr"><div class="fron"><p>Front-end</p><p style="margin-left: 270px;">18 de Abril de 2023</p><a href="indicacoesfront/index.html"><p style="margin-left: 270px;" class="button">Abrir</p></div></div></a>
+  <div class="filterDiv mai"><div class="fron"><p>Projeto PP</p><p style="margin-left: 270px;">9 de Maio de 2023</p><a href="projetopp/index.html"><p style="margin-left: 270px;" class="button">Abrir</p></div></div></a>
+  <div class="filterDiv mai"><div class="fron"><p>Carrinho de rolimã</p><p style="margin-left: 208px;">17 de junho de 2023</p><a href="carrinho/index.html"><p style="margin-left: 268px;" class="button">Abrir</p></div></div></a>
+  <div class="filterDiv jun"><div class="fron"><p>Oficinas</p><p style="margin-left: 280px;">29 de junho de 2023</p><a href="oficinas/index.html"><p style="margin-left: 270px;" class="button">Abrir</p></div></div></a>
+  <div class="filterDiv jul"><div class="fron"><p>Fibonacci</p><p style="margin-left: 270px;">30 de Julho de 2023</p><a href="fibonacci/index.html"><p style="margin-left: 270px;" class="button">Abrir</p></div></div></a>
+  <div class="filterDiv jul"><div class="fron"><p>ODS</p><p style="margin-left: 304px;">30 de Julho de 2023</p><a href="ods/index.html"><p style="margin-left: 270px;" class="button">Abrir</p></div></div></a>
+  <div class="filterDiv ago"><div class="fron"><p>Deuses Egípcios</p><p style="margin-left: 220px;">30 de Agosto de 2023</p><a href="deusegipcios/index.html"><p style="margin-left: 250px;" class="button">Abrir</p></div></div></a>
+  <div class="filterDiv set"><div class="fron"><p>LinkeMusic</p><p style="margin-left: 228px;">18 de Setembro de 2023</p><a href="linkemusic/index.html"><p style="margin-left: 270px;" class="button">Abrir</p></div></div></a>
+  <div class="filterDiv set"><div class="fron"><p>PTJS</p><p style="margin-left: 270px;">25 de Setembro de 2023</p><a href="ptjs/index.html"><p style="margin-left: 270px;" class="button">Abrir</p></div></div></a>
+</div>
+    </div>
+</body>
+</html>
