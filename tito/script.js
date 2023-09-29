@@ -59,7 +59,7 @@ const activitiesStorage = [
   },
   {
     name: 'LinkeMusic',
-    subject: 'Projeto Profissional',
+    subject: 'Técnico',
     image: 'linkemusic.svg',
     date: new Date(2023, 9, 19),
     url: '/tito/linkemusic/',
