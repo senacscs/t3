@@ -1,0 +1,106 @@
+body {
+    background-image: url(./img/textura-da-parede-preta-do-fundo-grande_29332-1357.avif)
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap');
+
+.container {
+    overflow: auto;
+    text-align: center;
+    font-size: large;
+    position: relative;
+    top: 10px;
+    color: antiquewhite;
+    font-family: 'Bitter', serif;
+}
+
+.foto {
+    float: left;
+    margin-right: 00px;
+    position: relative;
+    margin-top: 10px;
+    width: 250px;
+
+}
+
+.titulo {
+    color: rgb(185, 145, 14);
+    font-family: 'Cinzel', serif;
+    text-align:end;
+    background-size: cover auto;
+    margin-top: 150px;
+    background-image: url(./img/ia-generativa-o-olho-dourado-de-horus-com-efeito-dourado-sobre-fundo-preto-representacao-do-olho-solar-ou-do-olho-de-ra-simbolo-do-antigo-deus-egipcio-do-sol_620624-6752.avif);
+    font-size: xx-large;
+}
+
+.texto {
+    text-align: center;
+    color: rgb(185, 145, 14);
+    font-size: x-large;
+    font-family: 'Cinzel', serif;
+}
+
+.titulo-text {
+   font-family: 'Cinzel', serif;
+}
+
+.imagemfutura {
+    background-image: url(./img/pngtree-ancient-egypt-vector-art-illustration-image_1488342.jpg);
+}
+
+.futuro {
+    margin-right: 100px;
+    position: relative;
+    margin-top: 100px;
+    width: 300px;
+    margin-left: 200px;
+    top: -40px;
+}
+
+.futura {
+    position: relative;
+    margin-top: 100px;
+    width: 300px;
+    margin-left: 200px;
+    top: -40px;
+}
+
+.olho {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    width: 300px;
+    margin-top: 10px;
+}
+
+.quizz {
+    color: aliceblue;
+}
+
+button {
+  background: rgb(197, 162, 45) ;
+  width: 200px;
+  margin-top: 40px;
+  margin-left: 550px;
+  padding: 20px;
+  font-size:x-large;
+  top: 30px;
+}
+
+a {
+   text-decoration: none;
+   color: rgb(227, 242, 255);
+}
+
+p {
+  color: rgb(185, 145, 14);
+  text-align: center;
+  font-size: x-large;
+}
+
+ h2 {
+   text-align: center;
+   font-size: 60px;
+   color: rgb(185, 145, 14);
+}
