@@ -26,7 +26,7 @@ li {
 }
 
 .nav-bar {
-    min-height: 5em;
+    min-height: 4vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,10 +35,10 @@ li {
 
 .logo {
     color: white;
-    font-size: 2rem;
+    font-size: 1.3vw;
     transition: 1s;
     text-decoration: none;
-    cursor: progress;
+    cursor: default;
 }
 
 .nav-menu {
@@ -48,10 +48,10 @@ li {
 }
 
 .nav-item {
-    padding: 0.3em;
-    border-radius: 0.6em;
+    padding: 0.1vw;
+    border-radius: 0.4vw;
     transition: 1s;
-    font-size: 1.5rem;
+    font-size: 1vw;
 }
 
 .nav-link {
@@ -79,6 +79,10 @@ li {
     margin: 5px auto;
     background-color: rgb(208, 208, 208);
     transition: all 0.3s ease-in-out;
+}
+
+nav img {
+    width: 1.5vw;
 }
 
 @media (max-width:1050px) {
@@ -123,26 +127,28 @@ li {
 
 }
 
+p {
+    font-size: 1.3vw;
+    color: black;
+}
+
 section {
-    padding-top: 15em;
+    padding-top: 11vw;
 }
 
 .home {
-    height: 50em;
+    height: 30vw;
     background-color: rgb(210, 211, 212);
     text-align: center;
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 3vw;
     color: black;
     text-transform: uppercase;
+    cursor: default;
 }
 
-h2 {
-    font-size: 1.5em;
-    color: black;
-}
 
 .works {
     margin: 0.7em;
@@ -167,7 +173,7 @@ h2 {
 
 .item img {
     width: 100%;
-    height: 20em;
+    height: 15vw;
     border-radius: 1em;
     border: 1px solid black;
 }
@@ -175,7 +181,7 @@ h2 {
 .decoration {
     text-decoration: none;
     color: black;
-    font-size: 2em;
+    font-size: 1.5vw;
 }
 
 .text-item {
