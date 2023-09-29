@@ -1,0 +1,250 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    padding: 15px 0px;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(21, 21, 21);
+    z-index: 1;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: -15px;
+    font-size: 30px;
+    padding: 6px 20px;
+    display: inline-block;
+}
+
+header nav ul li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    position: absolute;
+    top: 35%;
+    left: 23.5%;
+    font-size: 60px;
+    color: white;
+}
+
+h4{
+    position: absolute;
+    top: 50%;
+    left: 40.5%;
+    font-size: 20px;
+    padding-top: 5%;
+    color: white;
+}
+
+h2 {
+    padding: 20px;
+}
+
+p {
+    padding: 20px;
+}
+
+h4 {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section{
+    padding-left: 20px;
+    width: 70%;
+    max-width: 800px;
+}
+
+section details{
+    font-size: 18px;
+}
+
+section details summary{
+    cursor: pointer;
+    width: 80%;
+    color: black;
+    padding: 2%;
+    border-top: 2px solid black;
+}
+
+section details p{
+    background-color: #ffffff;
+    padding: 2%;
+    transition: all .5s;
+    width: 84%;
+}
+
+.about {
+    font-size: 35px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.space{
+    opacity: 0;
+}
+
+.opac{
+    opacity: 0;
+}
+
+.grafic{
+    width: 80%;
+    height: 55%;
+}
+
+.legend{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    position: absolute;
+    top: 242%;
+    left: 30%;
+
+}
+
+.do-login{
+    padding: 70px;
+    font-size: 30px;
+}
+
+.names{
+    margin-right: 445px;
+    font-size: 20px;
+    margin-bottom: 0;
+    padding: 20px;
+    align-items: left;
+}
+
+.names2{
+    width: 40%;
+    height: 2.375rem;
+    font-size: 15px;
+    padding-left: 10px;
+    border: 2px solid darkgreen;
+    border-radius: 5px;
+    margin-top: 0;
+}
+
+.age{
+    font-size: 20px;
+    margin-right: 440px;
+}
+
+.age2{
+    width: 40%;
+    height: 2.375rem;
+    font-size: 15px;
+    padding-left: 10px;
+    border: 2px solid darkgreen;
+    border-radius: 5px;
+    margin-bottom: 35px;
+}
+
+.logon{
+    background-image: url(./assets/light-green-color-solid-background-1920x1080.png);
+}
+
+.sugestion{
+    font-size: 20px;
+    margin-right: 410px;
+}
+
+.suges2{
+    width: 40%;
+    height: 120px;
+    font-size: 15px;
+    padding-left: 10px;
+    border: 2px solid darkgreen;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.email{
+    font-size: 20px;
+    margin-right: 445px;  
+}
+
+.email2{
+    width: 40%;
+    height: 2.375rem;
+    font-size: 15px;
+    padding-left: 10px;
+    border: 2px solid darkgreen;
+    border-radius: 5px;
+    margin-bottom: 35px;
+}
+
+.submit{
+    margin-right: 400px;
+    margin-bottom: 50px;
+    width: 90px;
+    height: 30px;
+    background-color: darkgray;
+    border: 3px solid gray;
+}
+
+.submit:hover{
+    background-color: rgb(94, 94, 94);
+    border: 3px solid rgb(46, 46, 46);
+}
+
+nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    font-size: 25pt;
+    position: relative;
+    
+}
+
+nav a::after{
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color:rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    right: 11%;
+    transition: 0.5s ease-in-out;
+}
+
+nav a:hover::after {
+    width: 90%;
+    
+}
+
+li{
+    list-style-type: none;
+}

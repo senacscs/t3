@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hórus</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sedgwick+Ave+Display&display=swap"
+        rel="stylesheet">
+    <style>
+        .big {
+            font-weight: bold;
+            color: green;
+        }
+
+        .wrong {
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form id="quizForm" action="quiz_res.html">
+            <h1 class="title">QUIZ</h1>
+
+            <div class="question">
+                <h2>1. Quem ajudou a Hórus para que tenha seu olho curado após a batalha contra Seth?</h2>
+                <label>
+                    <input type="radio" name="questao1" value="Hator"> Hator
+                </label><br>
+                <label>
+                    <input type="radio" name="questao1" value="Thoth"> Thoth
+                </label><br>
+                <label>
+                    <input type="radio" name="questao1" value="Néftis"> Néftis
+                </label><br>
+                <label>
+                    <input type="radio" name="questao1" value="Ptah"> Ptah
+                </label><br>
+            </div>
+            <div class="question">
+                <h2>2. Quem são os pais de Hórus?</h2>
+                <label>
+                    <input type="radio" name="questao2" value="Osíris e Seth"> Osíris e Seth
+                </label><br>
+                <label>
+                    <input type="radio" name="questao2" value="Seth e Ísis"> Seth e Ísis
+                </label><br>
+                <label>
+                    <input type="radio" name="questao2" value="Ísis e Thoth"> Ísis e Thoth
+                </label><br>
+                <label>
+                    <input type="radio" name="questao2" value="Osíris e Ísis"> Osíris e Ísis
+                </label><br>
+            </div>
+            <div class="question">
+                <h2>3. Por que Seth matou seu irmão Osíris?</h2>
+                <label>
+                    <input type="radio" name="questao3" value="Por desprezo"> Por desprezo
+                </label><br>
+                <label>
+                    <input type="radio" name="questao3" value="Por amor"> Por amor
+                </label><br>
+                <label>
+                    <input type="radio" name="questao3" value="Por inveja"> Por inveja
+                </label><br>
+                <label>
+                    <input type="radio" name="questao3" value="Por sua irmã"> Por sua irmã
+                </label><br>
+            </div>
+
+            <div class="question">
+                <h2>4. Quem é o irmão de Hórus?</h2>
+                <label>
+                    <input class="text-input" type="text" name="irmao_de_horus" placeholder="Digite a resposta">
+                </label>
+            </div>
+
+            <h2>5. Quem Hórus Matou?</h2>
+            <div class="question multiple">
+                <div>
+                    <label>
+                        <input type="checkbox" name="quem_horus_matou[]" value="Seth"> Seth
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="quem_horus_matou[]" value="Osíris"> Osíris
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="quem_horus_matou[]" value="Ptah"> Ptah
+                    </label><br>
+                </div>
+                <div>
+                    <label>
+                        <input type="checkbox" name="quem_horus_matou[]" value="Ísis"> Ísis
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="quem_horus_matou[]" value="Néftis"> Néftis
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="quem_horus_matou[]" value="Thoth"> Thoth
+                    </label>
+                </div>
+            </div>
+            <input type="submit" value="Enviar" onclick="validarRespostas()">
+
+        </form>
+    </div>
+
+    <script>
+
+    </script>
+
+</body>
+
+
+</html>
