@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Quiz sobre o Batman</h1><br>
+    <form id="quizForm">
+        <h2>Pergunta 1: De qual equipe Batman é</h2>
+        <input type="radio" name="pergunta1" value="errado1"> Liga da Justiça.<br>
+        <input type="radio" name="pergunta1" value="errado2"> Vingadores.<br>
+        <input type="radio" name="pergunta1" value="certo"> X-MEX.<br><br>
+        
+        <h2>Pergunta 2: Quem o interpretou em Cavaleiro das Trevas?</h2>
+        <input type="radio" name="pergunta2" value="errado3"> Christian Bale<br>
+        <input type="radio" name="pergunta2" value="certo"> Joaquin Phoenix<br>
+        <input type="radio" name="pergunta2" value="errado4"> Henry Cavil<br><br>
+
+        <h2>Pergunta 3: Onde Batman fazia justiça?</h2>
+        <input type="radio" name="pergunta3" value="errado5"> Nova York<br>
+        <input type="radio" name="pergunta3" value="errado6"> Santa Cruz do Sul<br>
+        <input type="radio" name="pergunta3" value="certo"> Gotham City<br><br>
+        
+        <h2>Pergunta 4: Marque as alternativas corretas:</h2>
+        <input type="checkbox" name="pergunta4" value="errado7"> Batman tem poderes de voar e super força.<br>
+        <input type="checkbox" name="pergunta4" value="certo"> É o super herói do preparo.<br>
+        <input type="checkbox" name="pergunta4" value="errado8"> Veste verde com vermelho.<br>
+        <input type="checkbox" name="pergunta4" value="certo"> Seu maior vilão é o Coringa.<br><br>
+        
+        <p>O que você achou do Quiz?</p>
+        <textarea placeholder="Digite aqui..." rows="5" cols="40"></textarea><br>
+        <input style="background: rgb(18, 20, 149);" type="submit" value="Enviar Respostas">
+        <button style="background: #0f17ad;"><a href="gabarito.html">Ver o gabarito</a></button>
+        <img src="./img quiz/simbolo.jpg">
+    </form>
+    <div id="resultado"></div>
+</body>
+</html>
