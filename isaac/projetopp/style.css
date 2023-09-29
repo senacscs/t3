@@ -1,0 +1,185 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    padding: 15px 0px;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(38, 38, 38);
+    z-index: 10;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: left;
+    margin-top: -5px;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 100px;
+    border-radius: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: monospace;
+    font-size: 30px;
+    padding: 5px 10px;
+}
+
+header nav ul li a:hover {
+    color: pink;
+}
+
+header ul {
+    list-style: none;
+    text-align: right;
+    margin-top: -54px;
+}
+
+header ul li {
+    display: inline;
+    padding: 70px;
+    border-radius: 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+header ul li a:hover {
+    color: pink;
+}
+
+
+section {
+    text-align: center;
+    background-color: white;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+article {
+    text-align: center;
+}
+
+.article-text {
+    width: 140%;
+}
+
+.article-box {
+    width: 60%;
+}
+
+footer {
+    height: 100px;
+}
+
+.img-alag {
+    margin-top: 120px;
+    width: 80%;
+    height: 295px;
+    border-radius: 20px
+}
+
+.titulo {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.texto {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+span {
+    margin-left: 20px;
+}
+
+h1 {
+    margin-bottom: 200px;
+    font-family: 'Chivo Mono', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+
+h2 {
+    margin-top: 60px;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+h3 {
+    margin-top: 50px;
+    font-family: monospace;
+    font-size: 20px;
+    color: rgb(38, 38, 38);
+}
+
+p {
+    margin-top: 20px;
+    font-family: cursive;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.left {
+    margin-left: 50px;
+}
+
+#home {
+    width: 100%;
+    height: 500px;
+}
+
+.sitedepp {
+    width: 35%;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topo {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    transition: 1s;
+}
+
+.topo:hover {
+    text-align: center;
+    right: 0%;
+    bottom: 5px;
+    font-size: 20;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    transition: 1s;
+}
