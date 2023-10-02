@@ -1,27 +1,29 @@
 body {
     font-family: 'Shadows Into Light', cursive;
-    background-color: rgb(18, 72, 80);
+    background-color: rgb(24, 25, 27);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
-h1 {
+h1, h2{
     text-align: center;
-    color: rgb(33, 30, 30);
+    color: rgb(236, 225, 225);
 }
 
 .card {
-    width: 100%;
-    height: 100px;
-    background: #00000000;
+    width: 75%;
+    height: 100%;
+    background: #d3cbcb00;
     position: relative;
+    left: 12vw;
     display: inline-flex;
     place-content: center;
     place-items: center;
+    align-items: center;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 55px;
     text-align: center;
   }
 
@@ -44,13 +46,13 @@ h1 {
   .card::after {
     content: '';
     position: absolute;
-    background: #6ca695;
+    background: #4a91b7;
     inset: 5px;
     border-radius: 15px;
   }
 
   .link {
-    color: rgb(34, 29, 29);
+    color: rgb(204, 196, 196);
     position: relative;
     left: -25px;
   }
@@ -64,4 +66,13 @@ h1 {
     .card h2 {
         font-size: 20px;
     }
+}
+
+.foto {
+    float: left;
+    margin-right: 00px;
+    position: relative;
+    margin-top: 5px;
+    width: 100px;
+    left: -25px;
 }
