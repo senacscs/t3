@@ -1,50 +1,69 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  
-    
-}
-
-html {
-    background-image: url(https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-virtual-background-_Tcjok-d9b4.jpg);
-    background-size: cover;
-   
-}
-
-nav {
+    font-size: 1.1em;
+  }
+  :root{
+    --azul:#8bc6c6;
+    --rosa: #c68bc6;
+    --verde: #c6c68b;
+  }
+  body{
+    background-color: var(--azul);
     text-align: center;
-    margin-top: 50px;
+  }
+  header{
+    display: grid;
+    grid-template-columns: 50% auto;
+    background-color: var(--rosa);
+     padding-top: 8px;
+    padding-bottom: 5px;
+    border-bottom: 4px solid var(--verde);
+    gap: 8px;
+    justify-content: center;
+  }
 
+details {
+    margin: 20px;
+    font-family: sans-serif;
 }
-nav a{
-    color: rgb(65, 63, 63);
-    text-decoration: none;
-    padding: 5px;
-    margin: 5px;
-    font-size: 20pt;
-    position: relative;
-    
-}
-
-nav a::after{
-    content: "";
-    width: 0%;
-    height: 4px;
-    background-color:rgb(234, 154, 200);
-    position: absolute;
-    bottom: 0;
-    left: 5%;
-    right: 11%;
-    transition: 0.5s ease-in-out;
+label {
+    margin: 20px;
+    color: white;
 }
 
-nav a:hover::after {
-    width: 90%;
-    
+button {
+    margin: 20px;
+}
+header{
+    background-color: var(--rosa);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+}
+header * {
+    color: white;   
+}
+
+summary {
+    margin: 20px;
+    color: white;
 }
 h1 {
-    background-color: rgb(233, 211, 244);
-    color: rgb(64, 63, 62);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+div {
+    color: white;
+}
+h1{
+    font-family: sans-serif;
+}
+footer {
+    height: 80px;
+    font-size: 18px;
+    background-color: var(--rosa);
+    display: flex;
+    justify-content: center;
+  }
+  
