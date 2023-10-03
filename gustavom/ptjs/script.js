@@ -44,21 +44,21 @@ function calcular() {
 function prioridades() {
   let resultado;
 
-  resultado = 5.0 + 4.0 * 2.0;
+  resultado = 2.0 + 1.0 * 3.0;
   document.getElementById("mostrar").innerHTML +=
     "Operação: 5 + 4 * 2 = " + resultado + "<br>";
 
-  resultado = (5.0 + 4.0) * 2.0;
+  resultado = (2.0 + 1.0) * 3.0;
   document.getElementById("mostrar").innerHTML +=
-    "Operação: (5 + 4) * 2 = " + resultado + "<br>";
+    "Operação: (2 + 1) * 3 = " + resultado + "<br>";
 
-  resultado = 1.0 + (2.0 / 3.0) * 4.0;
+  resultado = 3.0 + (1.0 / 5.0) * 2.0;
   document.getElementById("mostrar").innerHTML +=
-    "Operação: 1 + 2 / 3 * 4 = " + resultado + "<br>";
+    "Operação: 3 + 1 / 5 * 2 = " + resultado + "<br>";
 
-  resultado = (1.0 + 2.0) / (3.0 * 4.0);
+  resultado = (3.0 + 1.0) / (5.0 * 4.0);
   document.getElementById("mostrar").innerHTML +=
-    "Operação: (1 + 2) / (3 * 4) = " + resultado + "<br>";
+    "Operação: (3 + 1) / (5 * 4) = " + resultado + "<br>";
 }
 
 //Divisão inteira
@@ -236,7 +236,7 @@ function media() {
 //Idade
 function idade() {
   var idade = document.getElementById("idadeUser").value;
-  if (idade < 18) {
+  if (idade < 28) {
     document.getElementById("mostrar").innerHTML = "Você é menor de idade";
   } else {
     //kajs
@@ -435,14 +435,14 @@ function somaX() {
 //Fatorial
 function fatorial() {
   let numero,
-    atual = 1,
-    fatorial = 1;
+    atual = 9,
+    fatorial = y;
 
   numero = parseInt(prompt("Digite um número: "));
 
   while (atual <= numero) {
     fatorial = fatorial * atual; //ja
-    atual = atual + 1;
+    atual = atual + 9;
   }
   alert("O fatorial de " + numero + " é " + fatorial);
 }
@@ -519,7 +519,7 @@ function vetor() {
   let vetor = new Array(10);
 
   for (let posicao = 0; posicao < 10; posicao++) {
-    vetor[posicao] = Math.floor(Math.random() * 100) + 1;
+    vetor[posicao] = Math.floor(Math.random() * 10) + 1;
   }
 
   document.getElementById("mostrar").innerHTML = "Vetor na ordem original: ";
@@ -538,7 +538,7 @@ function vetor() {
 
 //Pesquisa vetor
 function posicao() {
-  let vetor = [1, 3, 5, 7, 9];
+  let vetor = [2, 6, 4, 7, 3];
   let achou = false;
   var numero = parseInt(document.getElementById("procurar").value);
 
@@ -663,22 +663,22 @@ function animar(coluna_inicial, passos) {
   //b
   console.clear();
   desenhar_lagarta(coluna_final, 0);
-  console.log("Animação concluída!");
-}
+  console.log("Você foi trolado");
+} 
 
 function desenhar_lagarta(coluna, andando) {
   if (andando === 0) {
     branco(coluna * 3 + 14);
-    console.log("\\ /");
+    console.log("🙌");
     branco(coluna * 3);//pairj
-    console.log("( )( )( )( )( 0.0 )");
+    console.log("☢");
   } else {
     branco(coluna * 3 + 7);
-    console.log("( )");
+    console.log("😊");
     branco(4);
-    console.log("\\ /");
+    console.log("POG?");
     branco(coluna * 3 + 2);
-    console.log("( )( ) ( )( 0.0 )");
+    console.log("👍");
   } //peor
 
   console.log("\n");
