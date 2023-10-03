@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PTJS</title>
+</head>
+<body>
+
+    <h1>Portugol para JavaScript</h1>
+    
+    <section class="grid">
+      
+            <div class="grid-items">
+                <summary>Número Digitado</summary>
+                <label>Digite um número: </label
+                ><input type="number" id="numero" placeholder="Só números" /><br />
+                <button onclick="numeroDigitado()">Executar</button>
+            </div>
+      
+          
+            <div class="grid-items">
+                <summary>Seu nome</summary>
+                <label>Digite seu nome: </label
+                ><input type="text" id="nome" placeholder="Só letras" /><br />
+                <button onclick="nomeDigitado()">Executar</button>
+            </div>
+      
+          
+            <div class="grid-items">
+                <summary>Operações simples</summary>
+                <label>Digite o primeiro número: </label>
+                <input type="number" id="primeiroNum" placeholder="Só números" /><br />
+                <label>Selecione a operação: </label>
+                <select id="select" name="opcao">
+                  <option value="opcao1">+</option>
+                  <option value="opcao2" selected>-</option>
+                  <option value="opcao3">/</option>
+                  <option value="opcao4">*</option></select
+                ><br />
+                <label>Digite o segundo número: </label>
+                <input type="number" id="segundoNum" placeholder="Só números" /><br />
+                <button onclick="calcular()">Executar</button>
+            </div>
+      
+          
+            <div class="grid-items">
+                <summary>Prioridades</summary>
+                <button onclick="prioridades()">Executar</button>
+            </div>
+           
+                <div class="grid-items">
+                    <summary>Divisão inteira</summary>
+                    <label>Digite um valor: </label>
+                    <input type="number" id="valor" placeholder="Só números" /><br />
+                    <button onclick="div()">Executar</button>
+                </div>
+          
+            <div class="grid-items">
+                <summary>Potência e raiz</summary>
+                <label>Digite um valor: </label>
+                <input type="number" id="num" placeholder="Só números" /><br />
+                <button onclick="pot()">Executar</button>
+            </div>
+
+                <div class="grid-items">
+                    <summary>Troca de variáveis</summary>
+                    <label>Digite a primeira variável: </label>
+                    <input type="text" id="primeiraVar" /><br />
+                    <label>Digite a segunda variável: </label>
+                    <input type="text" id="segundaVar" /><br />
+                    <button onclick="troca()">Executar</button>
+                </div>
+
+                <div class="grid-items">
+                    <summary>Maioridade penal</summary>
+                    <label>Digite sua idade: </label>
+                    <input type="num" id="idade" placeholder="Só números" /><br />
+                    <button onclick="maioridade()">Executar</button>
+                </div>
+
+                <div class="grid-items">
+                    <summary>Altura média</summary>
+                    <label>Digite a altura da primeira pessoa: </label>
+                    <input type="num" id="primeiraAltura" placeholder="Só números" /><br />
+                    <label>Digite a altura da segunda pessoa: </label>
+                    <input type="num" id="segundaAltura" placeholder="Só números" /><br />
+                    <label>Digite a altura da terceira pessoa: </label>
+                    <input type="num" id="terceiraAltura" placeholder="Só números" /><br />
+                    <button onclick="altura()">Executar</button>
+                </div>
+
+            <div id="mostrar"></div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
