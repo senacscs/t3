@@ -1,22 +1,22 @@
-//Olá Mundo!
+//Olá Mundo! m
 function olaMundo() {
     document.getElementById("mostrar").innerHTML = "Bem vindo!";
     console.log(`Bem vindo!`);
     alert(`Bem vindo!`);
   }
   
-  //Numero digitado
+  //Numero digitado m
   function numeroDigitado() {
     document.getElementById("mostrar").innerHTML =
       "O número digitado foi " + numero.value *5;
   }
   
-  //Nome digitado
+  //Nome digitado m
   function nomeDigitado() {
     document.getElementById("mostrar").innerHTML = "Seja bem vindo " + nome.value;
   }
   
-  //Operação simples
+  //Operação simples m
   function calcular() {
     var primNum = document.getElementById("primeiroNum").value;
     var segmNum = document.getElementById("segundoNum").value;
@@ -233,10 +233,10 @@ function olaMundo() {
     }
   }
   
-  //Idade
+  //Idade m
   function idade() {
     var idade = document.getElementById("idadeUser").value;
-    if (idade < 18) {
+    if (idade < 15) {
       document.getElementById("mostrar").innerHTML = "Você é menor de idade";
     } else {
       
@@ -244,15 +244,15 @@ function olaMundo() {
     }
   }
   
-  //Múltiplo de cinco
+  //Múltiplo de cinco m 
   function multiplo() {
     var numero = document.getElementById("number").value;
-    if (numero % 5 == 0) {
+    if (numero % 10 == 0) {
       document.getElementById("mostrar").innerHTML =
-        "O número " + numero + " é múltiplo de 5";
+        "O número " + numero + " é múltiplo de 10";
     } else {
       document.getElementById("mostrar").innerHTML =
-        "O número " + numero + " não é múltiplo de 5";
+        "O número " + numero + " não é múltiplo de 10";
     }
   }
   
@@ -333,7 +333,7 @@ function olaMundo() {
     }
   }
   
-  //Escolha-caso
+  //Escolha-caso m
   function escolha() {
     let opcoes;
     opcoes = prompt(
@@ -354,7 +354,7 @@ function olaMundo() {
     }
   }
   
-  //Contagem regressiva
+  //Contagem regressiva m
   function contagem() {
     let contador = 100;
   
@@ -388,33 +388,33 @@ function olaMundo() {
     }
   }
   
-  //Consistência
+  //Consistência m
   function consistencia() {
     let idade;
   
     do {
-      idade = prompt("Informe sua idade (valores aceitos de 5 a 150): ");
+      idade = prompt("Informe sua idade (valores aceitos de 10 a 150): ");
       idade = parseFloat(idade);
-    } while (isNaN(idade) || idade < 5 || idade > 150);
+    } while (isNaN(idade) || idade < 10 || idade > 150);
   
     alert("\nCorreto!\n");
   }
   
-  //Média dez números
-  function mediaDez() {
+  //Média dez números m
+  function mediaVin() {
     let contador = 1;
     let numero,
       media,
       soma = 0.0;
   
-    while (contador <= 10) {
+    while (contador <= 20) {
       numero = parseFloat(prompt("Digite o " + contador + "º número: "));
   
       soma = soma + numero;
       contador = contador + 1;
     }
     
-    media = soma / 10;
+    media = soma / 20;
     alert("A média dos números é: " + media);
   }
   
@@ -432,22 +432,22 @@ function olaMundo() {
     alert("A soma de 1 até " + numero + " é: " + soma);
   }
   
-  //Fatorial
+  //Fatorial m
   function fatorial() {
     let numero,
-      atual = 1,
-      fatorial = 1;
+      atual = 4,
+      fatorial = 4;
   
     numero = parseInt(prompt("Digite um número: "));
   
     while (atual <= numero) {
       fatorial = fatorial * atual; 
-      atual = atual + 1;
+      atual = atual + 4;
     }
     alert("O fatorial de " + numero + " é " + fatorial);
   }
   
-  //Eleição
+  //Eleição m
   function eleicao() {
     let candidato_bolsonaro = 0,
       candidato_lula = 0;
@@ -514,35 +514,35 @@ function olaMundo() {
     );
   }
   
-  //Preenche e exibe vetor
+  //Preenche e exibe vetor m
   function vetor() {
-    let vetor = new Array(10);
+    let vetor = new Array(20);
   
-    for (let posicao = 0; posicao < 10; posicao++) {
-      vetor[posicao] = Math.floor(Math.random() * 100) + 1;
+    for (let posicao = 0; posicao < 20; posicao++) {
+      vetor[posicao] = Math.floor(Math.random() * 200) + 2;
     }
   
     document.getElementById("mostrar").innerHTML = "Vetor na ordem original: ";
   
-    for (let posicao = 0; posicao < 10; posicao++) {
+    for (let posicao = 0; posicao < 20; posicao++) {
       document.getElementById("mostrar").innerHTML += vetor[posicao] + " ";
     }
     
     document.getElementById("mostrar").innerHTML +=
       "<br>Vetor na ordem inversa: ";
   
-    for (let posicao = 9; posicao >= 0; posicao--) {
+    for (let posicao = 20; posicao >= 0; posicao--) {
       document.getElementById("mostrar").innerHTML += vetor[posicao] + " ";
     }
   }
   
-  //Pesquisa vetor
+  //Pesquisa vetor m
   function posicao() {
-    let vetor = [1, 3, 5, 7, 9];
+    let vetor = [1, 3, 5, 7, 9, 11];
     let achou = false;
     var numero = parseInt(document.getElementById("procurar").value);
   
-    for (let posicao = 0; posicao < 5; posicao++) {
+    for (let posicao = 0; posicao < 6; posicao++) {
       if (vetor[posicao] == numero) {
         document.getElementById("mostrar").innerHTML =
           "Encontrou na posição: " + posicao;
@@ -555,7 +555,7 @@ function olaMundo() {
     }
   } 
   
-  //Tabela de dados
+  //Tabela de dados m
   function tabela() {
     let nome = ["Andre", "Thiago", "Bruno", "Carlos", "Cassio"];
     let altura = [1.71, 2.08, 1.75, 1.90, 1.71];
@@ -602,7 +602,7 @@ function olaMundo() {
     alert(output);
   }
   
-  //Exibe matriz
+  //Exibe matriz m
   function exibe() {
     const TAMANHO = 5;
     let matriz = Array(TAMANHO)
@@ -621,17 +621,17 @@ function olaMundo() {
     alert(output);
   }
   
-  //Procedimento e função
+  //Procedimento e função m
   function procedimento() {
     mensagem("Bem Vindo");
-    alert("O resultado do primeiro cálculo é: " + calcula(3.0, 4.0));
-    alert("O resultado do segundo cálculo é: " + calcula(7.0, 2.0));
+    alert("O resultado do primeiro cálculo é: " + calcula(5.0, 8.0));
+    alert("O resultado do segundo cálculo é: " + calcula(5.0, 9.0));
     mensagem("Tchau");
   }
   
   function mensagem(texto) {
     var linha = "";
-    for (var i = 0; i < 50; i++) {
+    for (var i = 0; i < 10; i++) {
       linha += "-";
     }
     alert(linha + "\n" + texto + "\n" + linha);
@@ -701,9 +701,9 @@ function olaMundo() {
     }
   }
   
-  //Parâmetro por referencia
+  //Parâmetro por referencia m
   function parametro() {
-    let vet = { valor: 0 };
+    let vet = { valor: 10 };
     preenche(vet);
   
     alert("Variável antes:\n" + vet.valor);
@@ -712,18 +712,18 @@ function olaMundo() {
   }
   
   function preenche(v) {
-    v.valor = Math.floor(Math.random() * 100) + 1;
+    v.valor = Math.floor(Math.random() * 200) + 2;
   }
   
   function exibe(v) {
     alert(v + " ");
   
-    v = 5;
+    v = 15;
   }
   
-  //Vetores por parâmetro
+  //Vetores por parâmetro m
   function vetores() {
-    let vet = new Array(10);
+    let vet = new Array(20);
     preenche(vet);
   
     mostrarResultado("Vetor antes da ordenação:", vet);
@@ -734,23 +734,23 @@ function olaMundo() {
   }
   
   function preenche(v) {
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 20; i++) {
     
-      v[i] = Math.floor(Math.random() * 100) + 1;
+      v[i] = Math.floor(Math.random() * 200) + 2;
     }
   }
   
   function exibe(v) {
     let result = "";
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 20; i++) {
       result += v[i] + " ";
     }
     return result;
   }
 
   function ordena(v) {
-    for (let i = 0; i < 10; i++) {
-      for (let j = 0; j < 9; j++) {
+    for (let i = 0; i < 20; i++) {
+      for (let j = 0; j < 19; j++) {
         if (v[j] > v[j + 1]) {
           troca(v, j, j + 1);
         }
@@ -770,24 +770,24 @@ function olaMundo() {
     divResultado.innerHTML += `<p>${exibe(vetor)}</p>`;
   }
   
-  //Fibonacci resursivo
+  //Fibonacci resursivo m
   function calcularFibonacci() {
     const numero = parseInt(document.getElementById("sequencia").value);
     let resultado = "";
   
-    for (let i = 1; i <= numero; i++) {
+    for (let i = 2; i <= numero; i++) {
       resultado += fibonacci(i) + " ";
     }
   
     document.getElementById("mostrar").innerHTML = resultado;
   }
   
-  //Fibonacci resursivo
+  //Fibonacci resursivo m
   function calcularFibonacci() {
     const numero = parseInt(document.getElementById("sequencia").value);
     let resultado = "";
   
-    for (let i = 1; i <= numero; i++) {
+    for (let i = 2; i <= numero; i++) {
       resultado += fibonacci(i) + " ";
     }
   
@@ -799,11 +799,11 @@ function olaMundo() {
     if (posicao <= 0) {
       return 0;
     } else if (posicao === 1) {
-      return 1;
+      return 2;
     }
   
     let a = 0;
-    let b = 1;
+    let b = 2;
     let temp;
   
     for (let i = 2; i < posicao; i++) {
