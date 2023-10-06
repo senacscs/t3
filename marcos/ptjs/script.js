@@ -87,7 +87,33 @@ function raiz() {
     let result = Math.sqrt(number)
 
     clearOutput();
-    output.innerHTML = `${result}`
+    output.innerHTML = `<p>${result}</p>`
+}
+
+
+function calcSimple() {
+    const firstNum = parseFloat(document.getElementById('calc1').value)
+    const secNum = parseFloat(document.getElementById('calc2').value)
+    const op = document.getElementById('calc-op').value
+
+    let result
+
+    clearOutput();
+
+    if (op==='minus') {
+        result = (firstNum - secNum)
+        console.log(result)
+    } 
+    if (op==='more') {
+      result = (firstNum + secNum)
+    } 
+    if (op==='division') {
+      result = (firstNum / secNum)
+    } 
+    if (op==='multi') {
+      result = (firstNum * secNum)
+    }
+    output.innerHTML = `<p>${result}</p>`
 }
 
 

@@ -11,11 +11,11 @@
         <h1 class="font-bold text-3xl">Portugol para Javascript</h1>
     </header>
     <main class="flex flex-row m-10 gap-4 mr-0">
-        <section class="flex-1 border border-zinc-400 p-4 rounded-xl">
+        <section class="flex-1 border border-zinc-400 p-4 rounded-xl h-lg h-screen overflow-x-scroll">
             <div class="">
                 <h2>1. Calcular tempo de Vida:</h2>
                 
-                <label class="flex flex-row gap-4 items-center">
+                <label class="flex flex-row gap-4 items-center ">
                     <h2 class="text-zinc-600">Insira sua Data de Nascimento:</h2>
                     <input class="rounded-md p-1 w-36" type="date" placeholder="Idade" id="birth-date">
                     <button class="bg-zinc-200 p-1 rounded hover:bg-zinc-300" onclick="calcularTempo()">Executar</button>
@@ -71,14 +71,49 @@
             </div>
             <div class="bg-zinc-700 h-1 mt-6 mb-6"></div>
             <div class="">
-                <h2>5. Radiciação:</h2>
+                <h2>6. Cálculos Básicos:</h2>
             
-                <label class="flex flex-row gap-4 items-center mt-2">
-                    <h2 class="text-zinc-600">Digite o Expoente:</h2>
-                    <input class="rounded-md p-1 w-36" type="number" placeholder="Número" id="sqrt">
-                    <button class="bg-zinc-200 p-1 rounded hover:bg-zinc-300" onclick="raiz()">Executar</button>
+                <label class= "flex gap-3 items-center mt-2">
+                    <div>
+                    <h2 class="text-zinc-600">Digite o Primeiro Número:</h2>
+                    <input class="rounded-md p-1 w-36" type="number" placeholder="Número" id="calc1">
+                    <h2 class="text-zinc-600">Digite o Segundo Número:</h2>
+                    <input class="rounded-md p-1 w-36" type="number" placeholder="Número" id="calc2">
+                    <h2 class="text-zinc-600">Operador:</h2>
+                    <select name="operador" id="calc-op">
+                        <option value="minus">-</option>
+                        <option value="more">+</option>
+                        <option value="division">/</option>
+                        <option value="multi">x</option>
+                    </select>
+                </div>
+                    <button class="bg-zinc-200 p-1 rounded hover:bg-zinc-300" onclick="calcSimple()">Executar</button>
                 </label>
             </div>
+
+            <div class="bg-zinc-700 h-1 mt-6 mb-6"></div>
+
+            <div class="">
+                <h2>6. Cálculos Básicos:</h2>
+            
+                <label class= "flex gap-3 items-center mt-2">
+                    <div>
+                    <h2 class="text-zinc-600">Digite o Primeiro Número:</h2>
+                    <input class="rounded-md p-1 w-36" type="number" placeholder="Número" id="calc1">
+                    <h2 class="text-zinc-600">Digite o Segundo Número:</h2>
+                    <input class="rounded-md p-1 w-36" type="number" placeholder="Número" id="calc2">
+                    <h2 class="text-zinc-600">Operador:</h2>
+                    <select name="operador" id="calc-op">
+                        <option value="minus">-</option>
+                        <option value="more">+</option>
+                        <option value="division">/</option>
+                        <option value="multi">x</option>
+                    </select>
+                </div>
+                    <button class="bg-zinc-200 p-1 rounded hover:bg-zinc-300" onclick="calcSimple()">Executar</button>
+                </label>
+            </div>
+
         </section>
         <section class="flex-1 rounded-xl rounded-r-none bg-zinc-800 p-3">
             <h1 class="text-xl text-white font-mono mb-4">Output</h1>
