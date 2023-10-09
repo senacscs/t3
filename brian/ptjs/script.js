@@ -16,7 +16,7 @@ function olaMundo() {
   
   //Nome digitado
   function nomeDigitado() {
-    document.getElementById("mostrar").innerHTML = "Olá " + nome.value;
+    document.getElementById("mostrar").innerHTML = "Bom dia/tarde/noite " + nome.value;
   }
   
   //Operação simples
@@ -118,7 +118,7 @@ function olaMundo() {
         "Faltam " + tempo + " ano(s) para você atingir a maioridade";
     } else {
       document.getElementById("mostrar").innerHTML =
-        "Você já atingiu a maioridade";
+        "Você já atingiu a maioridade, já pode beber e sair dando drift por aí! As chances de receber uma multa ou ser preso(a) é alta, mas quem se importa ¯\_(ツ)_/¯ (humor, beba e dirija com moderação POR FAVOR)";
     }
   }
   
@@ -134,43 +134,43 @@ function olaMundo() {
       "Média das alturas é: " + Math.round(media_altura) + " metros";
   }
   
-  //Loja de acessórios
-  function loja() {
-    const preco_correntes = 10.5;
-    const preco_anéis = 2.0;
-    const preco_pulseiras = 2.5;
-  
-    var nome = document.getElementById("nomeDigitado").value;
-    var correntes = parseFloat(document.getElementById("correntes").value);
-    var anéis = parseFloat(document.getElementById("anéis").value);
-    var pulseiras = parseFloat(document.getElementById("pulseiras").value);
-  
-    var total_correntes = preco_correntes * correntes;
-    var total_anéis = preco_anéis * anéis;
-    var total_pulseiras = preco_pulseiras * pulseiras;
-  
-    var total = total_correntes + total_anéis + total_pulseiras;
-  
-    document.getElementById("mostrar").innerHTML =
-      "Cliente: " +
-      nome +
-      "<br>" +
-      "===============================" +
-      "<br>" +
-      "Correntes: " +
-      parafusos +
-      "<br>" +
-      "Anéis: " +
-      arruelas +
-      "<br>" +
-      "Pulseiras: " +
-      porcas +
-      "<br>" +
-      "===============================" +
-      "<br>" +
-      "Total a pagar: R$" +
-      total;
-  }
+  //Loja de ferramentas
+function loja() {
+  const preco_parafuso = 10.5;
+  const preco_arruelas = 5.9;
+  const preco_porca = 7.5;
+
+  var nome = document.getElementById("nomeDigitado").value;
+  var parafusos = parseFloat(document.getElementById("parafusos").value);
+  var arruelas = parseFloat(document.getElementById("arruelas").value);
+  var porcas = parseFloat(document.getElementById("porcas").value);
+
+  var total_parafusos = preco_parafuso * parafusos;
+  var total_arruelas = preco_arruelas * arruelas;
+  var total_porcas = preco_porca * porcas;
+
+  var total = total_parafusos + total_arruelas + total_porcas;
+
+  document.getElementById("mostrar").innerHTML =
+    "Cliente: " +
+    nome +
+    "<br>" +
+    "===============================" +
+    "<br>" +
+    "Correntes: " +
+    parafusos +
+    "<br>" +
+    "Anéis: " +
+    arruelas +
+    "<br>" +
+    "Pulseiras: " +
+    porcas +
+    "<br>" +
+    "===============================" +
+    "<br>" +
+    "Total a pagar: R$" +
+    total;
+}
   
   //Quantos dias
   function dias() {
@@ -356,17 +356,17 @@ function olaMundo() {
   
   //Contagem regressiva
   function contagem() {
-    let contador = 10;
+    let contador = 11;
   
     function loop() {
-      document.getElementById("mostrar").innerHTML = ("Detonação em: ", contador);
+      document.getElementById("mostrar").innerHTML = ("Vou te dizer uma coisa... ", contador);
   
       contador = contador - 1;
   
       if (contador > 0) {
         setTimeout(loop, 1000);
       } else {
-        document.getElementById("mostrar").innerHTML = "Booom!\n";
+        document.getElementById("mostrar").innerHTML = "Você é único(a)! Não se esqueça de se valorizar!\n";
       }
     }
   
@@ -461,7 +461,7 @@ function olaMundo() {
     do {
       voto = parseFloat(
         prompt(
-          "Escolha seu candidato ou tecle zero para encerrar\n\n  1 -> Candidato A\n  2 -> Candidato B\n  3 -> Branco\n\nQualquer número diferente de 0, 1, 2 e 3 anulará o seu voto\nDigite seu voto: "
+          "Escolha seu candidato ou tecle zero para encerrar\n\n  1 -> Bolacha\n  2 -> Biscoito(ou Bixxcoito)\n  3 -> Branco\n\nQualquer número diferente de 0, 1, 2 e 3 anulará o seu voto\nDigite seu voto: "
         )
       );
       switch (voto) {
