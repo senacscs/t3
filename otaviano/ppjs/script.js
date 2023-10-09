@@ -111,7 +111,7 @@ function olaMundo() {
   
   //Maioridade penal
   function maioridade() {
-    const maioridade = 18;
+    const maioridade = 22;
     var idade = document.getElementById("idade").value;
   
     if (idade < maioridade) {
@@ -339,17 +339,17 @@ function olaMundo() {
   function escolha() {
     let opcoes;
     opcoes = prompt(
-      "1) Elogio \n2) Ofensa \n3) Sair \n\nEscolha uma opção (1, 2 ou 3)"
+      "1) Meu tamanho \n2) Meu peso  \n3) Minha comida favorita \n\nEscolha uma opção (1, 2 ou 3)"
     );
     switch (opcoes) {
       case "1":
-        alert("Voce é lindo(a)!");
+        alert("1,73!");
         break;
       case "2":
-        alert("Voce é um monstro!");
+        alert("69kg!");
         break;
       case "3":
-        alert("Tchau!");
+        alert("Comida Japonesa!");
         break;
       default:
         alert("Opção Inválida !");
@@ -358,12 +358,12 @@ function olaMundo() {
   
   //Contagem regressiva
   function contagem() {
-    let contador = 10;
+    let contador = 1;
   
     function loop() {
       document.getElementById("mostrar").innerHTML = ("Detonação em: ", contador);
   
-      contador = contador - 1;
+      contador = contador - 10;
   
       if (contador > 0) {
         setTimeout(loop, 1000);
@@ -451,8 +451,8 @@ function olaMundo() {
   
   //Eleição
   function eleicao() {
-    let candidato_a = 0,
-      candidato_b = 0;
+    let candidato_Bolsonaro= 0,
+      candidato_Lula = 0;
     let brancos = 0,
       nulos = 0,
       total_votos = 0;
@@ -471,10 +471,10 @@ function olaMundo() {
           alert("Votação encerrada!\n");
           break;
         case 1:
-          candidato_a = candidato_a + 1;
+          candidato_Bolsonaro = candidato_Bolsonaro + 5;
           break;
         case 2:
-          candidato_b = candidato_b + 1;
+          candidato_Lula = candidato_Lula - 10;
           break;
         case 3:
           brancos = brancos + 1;
