@@ -20,6 +20,8 @@ Projetos obrigatórios já realizados:
 - ODS
 - Deuses egípcios
 - LinkeMusic
+- Algoritmos em Javascript
+- Jogo em Javascript
 
 ## Acessando
 - Acesse [a index da turma](https://senacscs.github.io/t3) para visualizar os projetos

@@ -45,7 +45,9 @@ const projects = [
   { name: 'Fibonacci', url: '/fibonacci' },
   { name: 'Ods', url: '/ods' },
   { name: 'Deuses Egípcios', url: '/deusegipcio' },
-  { name: 'LinkeMusic', url: '/linkemusic' }
+  { name: 'LinkeMusic', url: '/linkemusic' },
+  { name: 'Algoritmos em Javascript', url: '/ptjs' },
+  { name: 'Jogo em Javascript', url: '/jogojs' },
 ]
 
 // Gets a random colors theme

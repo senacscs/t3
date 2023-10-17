@@ -73,6 +73,14 @@ const activitiesStorage = [
     url: '/tito/ptjs/',
     instructions: "Algoritmos de Portugol adaptados para Javascript."
   },
+  {
+    name: 'Jogo da velha',
+    subject: 'Técnico',
+    image: 'jogojs.svg',
+    date: new Date(2023, 10, 17),
+    url: '/tito/jogojs/',
+    instructions: "Implementação de jogo da velha feito em Javascript."
+  },
 ];
 
 const activitiesElement = document.getElementById("activities");
