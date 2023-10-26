@@ -1,0 +1,27 @@
+body {
+
+    background-repeat: no-repeat;
+    
+ background-size: 100%;
+    
+ background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHDwJyZ1yi6ElxWmt84G053Q8fA-Od2cCCKw&usqp=CAU)
+    
+    }
+    
+ 
+    
+    h1, a, p, h2, ul {
+    
+    color: rgb(249, 249, 249);
+    
+     text-align: center;
+    
+    
+    
+    }
+    
+    .meio {
+    
+     text-align: center;
+    
+    }

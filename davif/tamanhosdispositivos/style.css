@@ -1,0 +1,18 @@
+@media screen and (min-width: 720px) {
+    body {
+        background-image:url(/tamanhosdispositivos/assets/download.jpg);
+        background-size: cover;
+
+        text-align: center;
+    
+    
+    }
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        background-image:"https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Ff9%2F6f%2F07%2Ff96f074a20e89be6726217bdda2968e1.jpg&tbnid=jbbeUQUmiwXcxM&vet=12ahUKEwjVkufHj7mAAxXYNbkGHYY8AnsQMygWegUIARDNAQ..i&imgrefurl=https%3A%2F%2Fbr.pinterest.com%2Fpin%2F943433821918727967%2F&docid=Da_Kqlmu4-F8SM&w=1080&h=1920&q=imagem%20de%20plano%20de%20fundo%20para%20site%20celular%20masculino&ved=2ahUKEwjVkufHj7mAAxXYNbkGHYY8AnsQMygWegUIARDNAQ";
+        text-align: center;
+   
+    }
+}

@@ -1,0 +1,17 @@
+body{
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    
+    text-align: center;
+}
+
+
+h2 {
+text-align: center;
+}
+
+.section-title {
+margin-top: 70px;
+}

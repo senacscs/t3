@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta nome="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portugol para JavaScript do Davi</title>
+  </head>
+
+  <body>
+    <h1>
+      Portugol para JavaScript Exemplos do
+      <a href="https://portugol-webstudio.dgadelha.xyz/ide" target="_blank"
+        >Portugol WebStudio</a
+      >
+      convertidos para JavaScript
+    </h1>
+
+    <details close>
+      <summary>Mensagem do Bem vindo!</summary>
+      <code> document.getElementById("mostrar").innerHTML = "Bem vindo!";<br />
+        console.log(`Bem vindo!`);<br />
+        alert(`Alerta de nova presença!`);</code>
+      <button onclick="olaMundo()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Número Digitado</summary>
+      <label>Número de sua escolha: </label
+      ><input type="number" id="numero" placeholder="Só números" /><br />
+      <button onclick="numeroDigitado()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Seu nome</summary>
+      <label>Descreva seu nome sonhador: </label>
+      <input type="text" id="nome" placeholder="Só letras" /><br />
+      <button onclick="nomeDigitado()">Executar</button>
+    </details>
+
+    <details close>
+        <summary>Seu nome completo!</summary>
+        <label>Escreva seu nome completo </label
+        ><input type="text" id="nome" placeholder="Só letras" /><br />
+        <button onclick="inverterNome()">Executar</button>
+      </details>
+
+    <details close>
+      <summary>Operações simples</summary>
+      <label>Digite o primeiro número: </label>
+      <input type="number" id="primeiroNum" placeholder="Só números" /><br />
+
+      <label>Selecione a operação: </label>
+      <select id="select" name="opcao">
+        <option value="opcao1">+</option>
+        <option value="opcao2" selected>-</option>
+        <option value="opcao3">/</option>
+        <option value="opcao4">*</option></select
+      ><br />
+
+      <label>Digite o segundo número: </label>
+      <input type="number" id="segundoNum" placeholder="Só números" /><br />
+
+      <button onclick="calcular()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Prioridades</summary>
+      <button onclick="prioridades()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Divisão inteira</summary>
+      <label>Digite um valor: </label>
+      <input type="number" id="valor" placeholder="Só números" /><br />
+      <button onclick="div()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Potência e raiz</summary>
+      <label>Digite um valor: </label>
+      <input type="number" id="num" placeholder="Só números" /><br />
+      <button onclick="pot()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Troca de variáveis</summary>
+      <label>Digite a primeira variável: </label>
+      <input type="text" id="primeiraVar" /><br />
+
+      <label>Digite a segunda variável: </label>
+      <input type="text" id="segundaVar" /><br />
+      <button onclick="troca()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Maioridade penal</summary>
+      <label>Digite sua idade: </label>
+      <input type="num" id="idade" placeholder="Só números" /><br />
+      <button onclick="maioridade()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Altura média</summary>
+      <label>Digite a altura da primeira pessoa: </label>
+      <input type="num" id="primeiraAltura" placeholder="Só números" /><br />
+
+      <label>Digite a altura da segunda pessoa: </label>
+      <input type="num" id="segundaAltura" placeholder="Só números" /><br />
+
+      <label>Digite a altura da terceira pessoa: </label>
+      <input type="num" id="terceiraAltura" placeholder="Só números" /><br />
+      <button onclick="altura()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Loja de ferramentas</summary>
+      <label>Digite seu nome: </label>
+      <input type="text" id="nomeDigitado" placeholder="Só letras" /><br />
+
+      <label>Digite a quantidade de parafusos que deseja comprar: </label>
+      <input type="number" id="parafusos" placeholder="Só números" /><br />
+
+      <label>Digite a quantidade de arruelas que deseja comprar: </label>
+      <input type="number" id="arruelas" placeholder="Só números" /><br />
+
+      <label>Digite a quantidade de porcas que deseja comprar: </label>
+      <input type="number" id="porcas" placeholder="Só números" /><br />
+      <button onclick="loja()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Quantos dias</summary>
+      <label>Informe o ano atual: </label>
+      <input type="num" id="ano" placeholder="Só números" /><br />
+      <button onclick="dias()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Vogal</summary>
+      <label>Digite uma letra: </label>
+      <input type="text" id="letra" /><br />
+      <button onclick="vogal()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Médias</summary>
+      <label>Digite a primeira média: </label>
+      <input type="num" id="primeiraMedia" placeholder="Só números" /><br />
+
+      <label>Digite a segunda média: </label>
+      <input type="num" id="segundaMedia" placeholder="Só números" /><br />
+
+      <label>Digite a terceira média: </label>
+      <input type="num" id="terceiraMedia" placeholder="Só números" /><br />
+
+      <button onclick="media()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Idade</summary>
+      <label>Informe sua idade: </label>
+      <input type="num" id="idadeUser" placeholder="Só números" /><br />
+      <button onclick="idade()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Múltiplo de cindo</summary>
+      <label>Digite um número: </label>
+      <input type="num" id="number" placeholder="Só números" /><br />
+      <button onclick="multiplo()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Número iguais</summary>
+      <label>Informe um número de 0 a 6: </label>
+      <input type="num" id="numIgual" placeholder="Só números" /><br />
+      <button onclick="num()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Média final</summary>
+      <label>Digite seu nome:</label>
+      <input type="text" id="nm" /><br />
+      <label>Digite sua primeira nota:</label>
+      <input type="num" id="primeiraNota" placeholder="Só números" /><br />
+      <label>Digite sua segunda nota:</label>
+      <input type="num" id="segundaNota" placeholder="Só números" /><br />
+      <label>Digite sua terceira nota:</label>
+      <input type="num" id="terceiraNota" placeholder="Só números" /><br />
+      <button onclick="mediaFinal()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Número inteiro</summary>
+      <label>Digite um número inteiro: </label>
+      <input type="num" id="numInteiro" placeholder="Só números" /><br />
+      <button onclick="inteiro()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Tipo de triângulo</summary>
+      <label>Informe o primeiro lado do triângulo:</label>
+      <input type="num" id="primeiroTr" placeholder="Só números" /><br />
+      <label>Informe o segundo lado do triângulo:</label>
+      <input type="num" id="segundoTr" placeholder="Só números" /><br />
+      <label>Informe o terceiro lado do triângulo:</label>
+      <input type="num" id="terceiroTr" placeholder="Só números" /><br />
+      <button onclick="triangulo()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Escolha-caso</summary>
+      <button onclick="escolha()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Contagem regressiva</summary>
+      <button onclick="contagem()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Tabuada</summary>
+      <label>Digite um número: </label>
+      <input type="num" id="numTab" placeholder="Só números" /><br />
+      <button onclick="tabuada()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Consistência</summary>
+      <button onclick="consistencia()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Média de dez números</summary>
+      <button onclick="mediaDez()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Soma de um a X</summary>
+      <button onclick="somaX()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Fatorial</summary>
+      <button onclick="fatorial()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Eleição</summary>
+      <button onclick="eleicao()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Preenche e exibe o vetor</summary>
+      <button onclick="vetor()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Pesquisar vetor</summary>
+      <label>Qual número deseja procurar? </label>
+      <input type="num" id="procurar" placeholder="Só números" /><br />
+      <button onclick="posicao()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Tabela de dados</summary>
+      <button onclick="tabela()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Diagonal principal</summary>
+      <button onclick="diagonal()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Exibe matriz</summary>
+      <button onclick="exibe()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Procedimento e função</summary>
+      <button onclick="procedimento()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Animação (console)</summary>
+      <button onclick="animacao()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Parâmetro por referência</summary>
+      <button onclick="parametro()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Vetores por parâmetros</summary>
+      <button onclick="vetores()">Executar</button>
+    </details>
+
+    <details close>
+      <summary>Fibonacci recursivo</summary>
+      <label
+        >Quantos elementos da sequência de Fibonacci deseja calcular?
+      </label>
+      <input type="num" id="sequencia" placeholder="Só números" /><br />
+      <button onclick="calcularFibonacci()">Executar</button>
+    </details>
+
+    <details close>
+        <summary>O site que não se da para confiar!</summary>
+       <a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal"> <button onclick="diagonal()">Executar</button></a>
+      </details>
+
+    <div id="mostrar"></div>
+    <script src="script.js"></script>
+    <script>
+      // Desabilitar o menu de contexto (botão direito do mouse)
+
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+
+        //  mostrarMensagem();
+      });
+
+      //function mostrarMensagem() {
+
+      //  alert("Você não tem permissão para acessar o menu de contexto.");
+
+      //}
+
+      document.addEventListener("keydown", function (e) {
+        if (e.ctrlKey && e.key === "u") {
+          e.preventDefault();
+
+          showOverlay();
+        }
+      });
+
+      function showOverlay() {
+        const overlay = document.createElement("div");
+
+        overlay.className = "overlay";
+
+        const message = document.createElement("div");
+        overlay.appendChild(message);
+
+        document.body.appendChild(overlay);
+      }
+
+      // Esta função desativa a tecla F12 pressionada.
+
+      function disableF12(e) {
+        if (
+          e.keyCode === 123 ||
+          (e.ctrlKey && e.shiftKey && e.keyCode === 73)
+        ) {
+          e.preventDefault(); // Impede o comportamento padrão (abrir ferramentas de desenvolvedor)
+        }
+      }
+
+      // Adicionar um ouvinte de evento para capturar pressionamentos de tecla.
+
+      document.addEventListener("keydown", disableF12);
+    </script>
+  </body>
+</html>
