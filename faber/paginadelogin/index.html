@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkeMusic</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos CSS para o fundo roxo */
+        body {
+            background-color: #8a2be2; /* Cor de fundo roxa */
+            color: white; /* Cor do texto */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* 100% da altura da viewport */
+            margin: 0; /* Remove margens padrão */
+        }
+
+        /* Estilos CSS para centralizar o título no cabeçalho */
+        h1 {
+            text-align: center;
+        }
+        
+        #cadastro form,
+        #login form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: black; /* Fundo preto para os formulários */
+            padding: 20px; /* Espaçamento interno para os formulários */
+            border-radius: 10px; /* Borda arredondada para os formulários */
+        }
+
+        #cadastro h1, /* Alterado para h1 */
+        #login h2 {
+            text-align: center;
+        }
+
+        #cadastro form label,
+        #login form label {
+            text-align: center;
+            color: white; /* Cor do texto das labels */
+            margin-bottom: 10px; /* Espaçamento inferior para as labels */
+        }
+
+        #cadastro form input,
+        #login form input {
+            padding: 10px; /* Espaçamento interno para os campos de entrada */
+            margin-bottom: 15px; /* Espaçamento inferior para os campos de entrada */
+            border: none; /* Remover a borda padrão dos campos de entrada */
+            border-radius: 5px; /* Borda arredondada para os campos de entrada */
+        }
+
+        #cadastro button,
+        #login button {
+            background-color: #8a2be2; /* Cor de fundo roxa para o botão */
+            color: white; /* Cor do texto do botão */
+            padding: 10px 20px; /* Espaçamento interno para o botão */
+            border: none; /* Remover a borda do botão */
+            border-radius: 5px; /* Borda arredondada para o botão */
+            cursor: pointer; /* Cursor do mouse em formato de mão */
+            transition: background-color 0.3s ease; /* Efeito de transição para a cor de fundo do botão */
+        }
+
+        #cadastro button:hover,
+        #login button:hover {
+            background-color: #6d1f9b; /* Cor de fundo roxa escura no hover */
+        }
+
+        /* Adicione uma imagem de fundo acima do botão */
+        #cadastro button::before {
+            content: ""; /* Conteúdo vazio */
+            background-image: url('sua-imagem.jpg'); /* URL da imagem que você deseja adicionar */
+            background-size: cover; /* A imagem deve cobrir todo o botão */
+            position: absolute; /* Posição absoluta em relação ao botão */
+            width: 100%; /* 100% da largura do botão */
+            height: 100%; /* 100% da altura do botão */
+            top: 0; /* Alinhar no topo do botão */
+            left: 0; /* Alinhar à esquerda do botão */
+            opacity: 0.5; /* Opacidade da imagem de fundo (ajuste conforme necessário) */
+            z-index: -1; /* Colocar a imagem de fundo atrás do botão */
+            border-radius: 5px; /* Borda arredondada para a imagem de fundo */
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem-vindo ao Meu Site</h1>
+
+    <section id="cadastro">
+        <h1>Cadastrar-se</h1> <!-- Alterado para h1 -->
+        <form action="cadastro.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="telefone">Celular:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+            
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required>
+            
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+            
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+
+    <section id="login">
+        <h2>Login</h2>
+        <form action="login.php" method="POST">
+            <label for="email_login">E-mail:</label>
+            <input type="email" id="email_login" name="email_login" required>
+            
+            <label for="senha_login">Senha:</label>
+            <input type="password" id="senha_login" name="senha_login" required>
+            
+            <button type="submit">Entrar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p> Site feito por: Gustavo Faber e Nicolas  </p>
+    </footer>
+</body>
+</html>

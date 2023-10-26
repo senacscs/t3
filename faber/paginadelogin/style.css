@@ -1,0 +1,67 @@
+body {
+    background-color: #8a2be2; /* Código de cor roxa */
+    color: white; /* Cor do texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 100% da altura da viewport */
+    margin: 0; /* Remove margens padrão */
+    transition: background-color 0.5s
+}
+
+body:hover {
+    background-color: #540780;
+}
+
+
+/* Estilos CSS para centralizar o título no cabeçalho */
+header {
+    text-align: center;
+}
+
+#cadastro form,
+#login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black; /* Fundo preto para os formulários */
+    padding: 20px; /* Espaçamento interno para os formulários */
+    border-radius: 10px; /* Borda arredondada para os formulários */
+}
+
+#cadastro h1, /* Alterado para h1 */
+#login h2 {
+    text-align: center;
+}
+
+#cadastro form label,
+#login form label {
+    text-align: center;
+    color: white; /* Cor do texto das labels */
+    margin-bottom: 10px; /* Espaçamento inferior para as labels */
+}
+
+#cadastro form input,
+#login form input {
+    padding: 10px; /* Espaçamento interno para os campos de entrada */
+    margin-bottom: 15px; /* Espaçamento inferior para os campos de entrada */
+    border: none; /* Remover a borda padrão dos campos de entrada */
+    border-radius: 5px; /* Borda arredondada para os campos de entrada */
+}
+
+#cadastro button,
+#login button {
+    background-color: #8a2be2; /* Cor de fundo roxa para o botão */
+    color: white; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno para o botão */
+    border: none; /* Remover a borda do botão */
+    border-radius: 5px; /* Borda arredondada para o botão */
+    cursor: pointer; /* Cursor do mouse em formato de mão */
+    transition: background-color 0.3s ease; /* Efeito de transição para a cor de fundo do botão */
+}
+
+#cadastro button:hover,
+#login button:hover {
+    background-color: #540780; /* Cor de fundo roxa escura no hover */
+}
