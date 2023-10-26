@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d0daff;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Bungee', sans-serif;
+    font-size: 64px;
+    color: #FF5733;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    margin: 20px 0;
+    color: #172248;
+    padding: 10px 20px;
+    letter-spacing: 4px;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 500px;
+    height: 500px; 
+    background-color: #80b4f3;
+    box-shadow: 2px 2px 4px #0a0f226e;
+}
+
+td {
+    width: 100px; 
+    height: 100px;
+    text-align: center;
+    font-size: 48px; 
+    border: 2px solid #172248;
+    cursor: pointer;
+    transition: .3s;
+}
+
+td:hover {
+    background-color: #3c6ba6;
+}
+
+button {
+    font-size: 24px;
+    margin-top: 20px;
+    padding: 15px 30px; 
+    background-color: #172248;
+    border: none;
+    color: #cff3ff;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+
+button:hover {
+    background-color: #4329b9;
+}
