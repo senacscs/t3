@@ -1,94 +1,31 @@
-
 body {
-
-    margin: 0 auto;
-
-    max-width: 3000px;
-
+    margin: 0;
+    padding: 0;
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Para centralizar verticalmente */
 }
 
- 
+/* Restante do seu CSS */
 
-img{
-
-width: 1350px;
-
- 
-
+h1, h2, a, p, li, b, ul {
+    text-align: center;
+    color: rgb(255, 255, 255); /* Corrigi a cor */
 }
-
- 
-
-h1{
-
-text-align: center;
-
-color: whitesmoke;
-
-}
-
-h2{
-
-text-align: center;
-
-color: whitesmoke;
-
-}
-
-image{
-
-text-align: center;
-
-color: whitesmoke;
-
-}
-
-{
-
-text-align: center;
-
-color: whitesmoke;
-
-}
-
-image{
-
-text-align: center;
-
-color: whitesmoke;
-
-}
-
- 
-
-h1, a, p, a, li, b, h2, ul{
-
- 
-
-color:aquah rgb(0,0, 0);
-
- 
-
-text-align: center;
-
-}
-
- 
 
 li {
-
-list-style-type: none;
-
-color: white;
-
+    list-style-type: none;
+    color: rgb(65, 255, 12);
 }
 
 a {
-    list-style-type: none;
-    color: gray
+    color: rgb(2, 238, 255);
 }
 
 p {
     color: white;
 }
+
+/* Restante do seu CSS */
