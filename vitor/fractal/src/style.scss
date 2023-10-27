@@ -1,0 +1,29 @@
+@import "bourbon";
+
+@include keyframes(rotate) {
+  0% { @include transform(rotate(17deg)) }
+  5%, 10% { @include transform(rotate(45deg)) }
+  20%, 25% { @include transform(rotate(60deg)) }
+  35%, 40% { @include transform(rotate(90deg)) }
+  50%, 55% { @include transform(rotate(120deg)) }
+  65%, 70% { @include transform(rotate(135deg)) }
+  80%, 85% { @include transform(rotate(145deg)) }
+  95%, 100% { @include transform(rotate(174deg)) }
+}
+body {
+  background: #09f;
+}
+i {
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transform: rotate(174deg); /* 90, 120, 155, 174 skew(60deg) */
+  @include animation(rotate 30s ease-in-out infinite alternate);
+  animation-delay: -25.5s;
+  border-top: 1px solid rgba(0,0,0,.35);
+  background: rgba(0,0,0,.035);
+  box-shadow: rgba(0,0,0,.2) -0 -20px 10px inset, rgba(0,0,0,.2) 0 0 5px;
+  border-radius: 100%;
+}
