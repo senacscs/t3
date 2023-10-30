@@ -3,10 +3,34 @@ document.addEventListener('DOMContentLoaded', function () {
     var gun = document.getElementById('gun');
     var gameSpawn = document.getElementById('area');
     var laser = document.getElementById('laser');
-    const maxLives = 3; // Número máximo de vidas da Terra
+    const maxLives = 3;
     let currentLives = maxLives;
+    var gameAudio = document.getElementById('gameaudio');
+    var isMuted = false;
     var gameover = false
     var angle;
+    var gameOverHud = document.getElementById('gameover');
+    var counter = document.getElementById('counter');
+    var overCount = document.getElementById('over-count')
+    var count = 0
+    counter.innerHTML = count
+    overCount.innerHTML = count
+
+    gameAudio.volume=0.1
+
+    document.addEventListener('keypress', (event) => {
+        let key = event.key;
+        if (key === 'm') {
+            if (isMuted) {
+                isMuted = false
+                gameAudio.volume = 0.1
+            }
+            else {
+                isMuted = true
+                gameAudio.volume = 0
+            }
+        }
+      }, false);
 
     // Posicionar a arma no centro da tela inicialmente
     var centerX = window.innerWidth / 2;
@@ -20,10 +44,10 @@ document.addEventListener('DOMContentLoaded', function () {
         var mouseX = e.clientX - earth.getBoundingClientRect().left;
         var mouseY = e.clientY - earth.getBoundingClientRect().top;
 
-        // Atualizar a variável angle
+        // tangente é complicado mesmo, obrigado chatgpt
         angle = Math.atan2(mouseY - earth.clientHeight / 2, mouseX - earth.clientWidth / 2);
 
-        var rotationAngle = angle * (180 / Math.PI) + 92;
+        var rotationAngle = angle * (180 / Math.PI) + 92; //Cálculo com ângulos e radianos blabla... Sim, eu coloquei o 92. Não, eu não sei por que funciona
         gun.style.transform = 'translate(-50%, -50%) rotate(' + rotationAngle + 'deg)';
 
         var laserAngle = angle * (180 / Math.PI) + 92;
@@ -33,11 +57,10 @@ document.addEventListener('DOMContentLoaded', function () {
     var isShooting = false
     console.log(isShooting)
 
-    window.addEventListener('click', function () {
+    window.addEventListener('click', function () { //Evitar mútliplos tiros
         if (isShooting) {
             return;
         }
-    
         isShooting = true;
 
         shoot();
@@ -52,13 +75,16 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     
 
-    function shoot() {
+    function shoot() { //Atirar
         laser.classList.add('shooting')
         laser.classList.remove('hidden')
 
+        let beamAudio = new Audio('./assets/beam.m4a')
+        beamAudio.play();
+
         let frame = 1;
         const animationInterval = setInterval(() => {
-            const imagePath = `./assets/arma-bola/${frame}.png`; // Substitua pela estrutura real de suas imagens
+            const imagePath = `./assets/arma-bola/${frame}.png`;
             gun.src = imagePath;
 
             frame++;
@@ -73,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const asteroids = document.querySelectorAll('.asteroid');
 
-        asteroids.forEach((asteroid) => {
+        asteroids.forEach((asteroid) => { // Verificar colisão com asteroid
             const asteroidRect = asteroid.getBoundingClientRect();
 
             if (
@@ -87,20 +113,25 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    function destroyAsteroid(asteroid) {
-        // Adicionar aqui a lógica para a animação de destruição (trocando imagens como um sprite)
-        // Por exemplo, algo como:
+    function destroyAsteroid(asteroid, willCount=true) { // ...
         let frame = 1;
 
+        if (willCount) {
+            count++
+            counter.innerHTML = count
+            overCount.innerHTML = count
+        }
+        
+
         const animationInterval = setInterval(() => {
-            const imagePath = `./assets/esteroid_explosion/e${frame}.png`; // Substitua pela estrutura real de suas imagens
+            const imagePath = `./assets/asteroid_explosion/e${frame}.png`;
             asteroid.src = imagePath;
 
             frame++;
 
             if (frame > 6) {
                 clearInterval(animationInterval);
-                asteroid.remove(); // Remover o asteroide do DOM após a animação
+                asteroid.remove();
             }
         }, 50);
     }
@@ -118,9 +149,9 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
         const asteroid = document.createElement('img');
         asteroid.classList.add('asteroid');
-        const randomAsteroid = Math.floor(Math.random() * 2) + 1;
+        const randomAsteroid = Math.floor(Math.random() * 2) + 1; //Aleatorio imagem asteroid
         asteroid.src = `./assets/esteroide${randomAsteroid}.png`;
-        asteroid.style.width = `${Math.floor(Math.random() * 150) + 120}px`;
+        asteroid.style.width = `${Math.floor(Math.random() * 120) + 120}px`; //Aleatorio tamanho asteroid
         asteroid.style.height = asteroid.style.width;
 
         const spawnX = Math.random() < 0.5 ? -50 : window.innerWidth + 50; // spawn à esquerda ou à direita
@@ -139,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const centerX = window.innerWidth / 2;
         const centerY = window.innerHeight / 2;
 
-        const asteroidSpeed = Math.random() * 2 + 1;
+        const asteroidSpeed = Math.random() * 5 + 2;
 
         function updateAsteroid() {
             const asteroidRect = asteroid.getBoundingClientRect();
@@ -182,7 +213,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function handleCollision(asteroid) {
-        destroyAsteroid(asteroid);
+        destroyAsteroid(asteroid, false);
 
         currentLives--;
         console.log(currentLives)
@@ -190,7 +221,6 @@ document.addEventListener('DOMContentLoaded', function () {
         earth.src = `./assets/terra${currentLives}.png`;
 
         if (currentLives <= 0) {
-            // Se não houver mais vidas, inicie a animação de fim do jogo
             handleGameOverAnimation();
         }
     }
@@ -205,6 +235,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         gun.remove()
 
+        gameAudio.volume=0
         let endgameAudio = new Audio('./assets/death.wav')
         endgameAudio.play();
 
@@ -212,16 +243,19 @@ document.addEventListener('DOMContentLoaded', function () {
         let frame = 1
 
         const animationInterval = setInterval(() => {
-            const imagePath = `./assets/earth_explosion/t${frame}.png`; // Substitua pela estrutura real de suas imagens
+            const imagePath = `./assets/earth_explosion/t${frame}.png`;
             earth.src = imagePath;
 
             frame++;
 
             if (frame > 7) {
                 clearInterval(animationInterval);
-                earth.classList.remove('rotating')
-                // window.location()
+                earth.classList.remove('rotating');
+                gameOverHud.classList.remove('hidden');
+                gameOverHud.classList.add('end')
             }
         }, 50);
     }
 });
+
+
