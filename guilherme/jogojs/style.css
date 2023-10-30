@@ -4,22 +4,31 @@
     box-sizing: border-box;
 }
 
-/* body {
-    background-image: url("./assets/fundo.png");
+body {
+    background-image: url("./assets/wallpape.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
-} */
+}
 
-.home {
-    width: 100%;
-    text-align: center;
+body {
+    font-family: Arial, sans-serif;
+}
+
+#restart-button {
+    margin-left: 4vw;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-family: cursive;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
 
 .game-board {
-    width: 90%;
-    height: 600px;
-    border: 5px groove rgb(121, 19, 19);
-    margin: 100px auto;
+    width: 100%;
+    height: 37vw;
+    margin: 4vw auto;
     position: relative;
     overflow: hidden;
 }
@@ -27,15 +36,15 @@
 .pipe {
     position: absolute;
     bottom: 0%;
-    width: 120px;
+    width: 8vw;
     animation: pipe-animation 1.5s infinite linear;
 }
 
 .mario {
-    width: 220px;
+    width: 15vw;
     position: absolute;
     bottom: 0px;
-    margin-left: 50px;
+    margin-left: 2vw;
 }
 
 .jump {
@@ -44,7 +53,7 @@
 
 @keyframes pipe-animation {
     from{
-        right: -80px;
+        right: -100px;
     }
 
     to{
@@ -63,7 +72,7 @@
     }
 
     50%{
-        bottom: 180px;
+        bottom: 200px;
     }
 
     60%{
