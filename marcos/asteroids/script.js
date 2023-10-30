@@ -215,6 +215,9 @@ document.addEventListener('DOMContentLoaded', function () {
     function handleCollision(asteroid) {
         destroyAsteroid(asteroid, false);
 
+        let damageAudio = new Audio('./assets/damage.mp3')
+        damageAudio.play();
+
         currentLives--;
         console.log(currentLives)
         // Atualizar a imagem da Terra com base na quantidade de vidas
