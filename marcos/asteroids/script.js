@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
         laser.classList.add('shooting')
         laser.classList.remove('hidden')
 
-        let beamAudio = new Audio('./assets/beam.m4a')
+        let beamAudio = new Audio('./assets/beam.mp3')
         beamAudio.play();
 
         let frame = 1;
