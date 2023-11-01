@@ -52,8 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
     arrayDeCartas.sort(() => 0.5 - Math.random())
     const tabuleiro = document.querySelector('.tabuleiro')
     const resultado = document.querySelector('#pontuacao')
-    const placeholder = 'https://cloud-5ystxzer7.vercel.app/7placeholder.png'
-    const branco = 'https://cloud-5ystxzer7.vercel.app/6blank.png'
+    const placeholder = 'https://i.pinimg.com/564x/52/a4/dc/52a4dcd6150483b2fbf874a909d81261.jpg'
+    const branco = 'https://i.pinimg.com/564x/7b/5a/06/7b5a06317aecf1c137d3f675d6d55118.jpg'
   
     var cartasClicadas = []
     var cartasClicadasId = []
