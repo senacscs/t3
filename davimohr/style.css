@@ -3,6 +3,7 @@ html{
     background-size: 100%;
     background-repeat: no-repeat;
     font-family:sans-serif;
+    filter: grayscale(100%)
 }
 
    
