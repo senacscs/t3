@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&family=K2D&family=Poppins:wght@500&family=Raleway:wght@300;400&family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'inter',sans-serif;
+}
+body {
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(233,233,233,1) 100%);
+}
+header{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    width: 80vw;
+    margin-bottom: 30px;
+    box-shadow: 0PX 3PX 3px rgba(0, 0, 0, 0.164);
+    border-radius: 5px;
+}
+header img {
+    height: 5vh;
+}
+body {
+    display: grid;
+    justify-content: center;
+}
+#title h1 {
+    font-family: 'poppins';
+    font-size: 50px;
+    margin: 10vh;
+}
+#title {
+    display: flex;
+}
+#title img {
+    width: 20vw;
+}
+#time {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    width: 80vw;
+    column-gap: 20vw;
+    row-gap: 2vh;
+    border-radius: 20px;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.26);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+#time h2 {
+    grid-column-start:1 ;
+    grid-column-end: 3;
+    border: none;
+    padding-top: 0;
+}
+h2 {
+    font-size: 40px;
+}
+h3 {
+    font-size: 25px;
+}
+p {
+    font-size: 20px;
+}
+section {
+    width: 80vw;
+}
+#problem p{
+    margin-top: 20px;
+    max-width: 50vw;
+}
+#problem {
+    margin-top: 40px;
+}
+#objective{
+    margin-top: 40px;
+}
+#objective p{
+    margin-top: 20px;
+    max-width: 50vw;
+}
+ h3,h4 {
+    margin-top: 20px;
+}
+#metod {
+    max-width: 70vw;
+}
+#resultados {
+    max-width: 70vw;
+}
+h2 {
+    border-top: 1px solid black;
+    padding-top: 30px;
+    margin: 10px;
+}
+#refer {
+    max-width: 70vw;
+}
