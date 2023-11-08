@@ -150,6 +150,16 @@ const Apps = [
     Class: "hist",
     Icon: "./assets/paia.png"
 },
+    {
+    title: "PromoFinder",
+    Subject: "PP/Técnico",
+    Data: "08/11/23",
+    Img: "projeto.jpg",
+    Text: "Site do projeto de PP da nossa startup",
+    Link: "./Projeto",
+    Class: "pj",
+    Icon: "./Projeto/assets/icon.svg"
+},
 ]
 
 const h1 = document.getElementById('h1W')
