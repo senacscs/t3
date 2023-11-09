@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Open+Sans:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(244, 244, 244);
+}
+
+body::-webkit-scrollbar {
+    width: 0.01px;
+}
+
+header {
+    background-color: #001305;
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    margin-left: 20px;
+    font-size: 3vh;
+}
+
+h2 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 5vh;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav li {
+    margin: 0 20px;
+    list-style: none;
+    transition: 0.5s ease-in-out;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 2.1vh;
+    color: white;
+    transition: 0.5s;
+}
+
+.nav a:hover {
+    color: #3EB83C;
+}
+
+.nav li:hover {
+    transform: scale(115%);
+}
+
+.logo {
+    width: 4vw;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+/* SECTION GERAL */
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* PROBLEMA */
+
+#problema {
+    height: 100vh;
+}
+
+.texto {
+    width: 60vw;
+    height:80vh;
+}
+
+.grid-problema {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+
+}
+
+#problema h2 {
+    grid-column: 1 / -1;
+}
+
+#problema p {
+    font-size: 32px;
+    margin-top: 250px;
+}
+
+#problema img {
+    width: 400px;
+    margin-top: 70px;
+}
+
+/* OBJETIVOS */
+
+#objetivos {
+    height: 100vh;
+    color: white;
+    background-color: #001305;
+}
+
+#objetivos h3 {
+    font-size: 32px;
+    font-family: 'Cinzel Decorative', serif;
+    margin-top: 100px;
+}
+
+#objetivos p {
+    font-size: 24px;
+    color: #c8c8c8;
+    margin-top: 20px;
+}
+
+#objetivos ul {
+    margin-top: 20px;
+}
+
+#objetivos li {
+    font-size: 24px;
+    color: #c8c8c8;
+    list-style-position: inside;
+}
+
+/* METODOLOGIA */
+
+#metodologia {
+    height: 100vh;
+}
+
+/* RESULTADOS */
+
+#resultados {
+    height: 100vh;
+    background-color: #001305;
+    color: white;
+}
+
+/* SOLUCAO */
+
+#solucao {
+    height: 100vh;
+}
+
+/* CONCLUSOES */
+
+#conclusoes {
+    height: 100vh;
+    background-color: #001305;
+    color: white;
+}
+
+/* REFERENCIAS */
+
