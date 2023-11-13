@@ -34,7 +34,8 @@
                 border-bottom: 2px solid #CDA000;
                 margin-bottom: 0px;
             }
-            @media screen and (max-width: 450px) {
+            @media screen and (max-width: 450px) 
+            {
                 header img {
                     height: 6vh;
                 }
