@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(2, 204, 157);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+h2 {
+    text-size-adjust: small;
+}
+li {
+    list-style-type: none;
+    background:rgb(255, 253, 253);
+    color:rgb(0, 0, 0);
+    border-style: outset;
+    border-color: rgb(0, 0, 0);
+    height: 20px;
+    width: 120px;
+    font: arial 
+}
+
