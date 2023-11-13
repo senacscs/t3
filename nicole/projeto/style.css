@@ -1,0 +1,162 @@
+body {
+  background-color: #e8f9fb;
+}
+
+/* Navigation style */
+.nav ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  font-size: 16px;
+  text-align: center;
+  background: #a8dbd8;
+  border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.7;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 0 0.5em;
+  -webkit-transition: background 0.5s ease;
+  -moz-transition: background 0.5s ease;
+  -ms-transition: background 0.5s ease;
+  -o-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+.nav a {
+  display: block;
+  padding: 0.8em 0.6em;
+  color: #575758;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: #566c6f;
+  color: white;
+  -webkit-transition: background 0.2s ease-in-out;
+  -moz-transition: background 0.2s ease-in-out;
+  -ms-transition: background 0.2s ease-in-out;
+  -o-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
+}
+
+.nav a:active {
+  background: black;
+  color: rgb(250, 248, 248);
+  -webkit-transition: background 0.2s ease-in-out;
+  -moz-transition: background 0.2s ease-in-out;
+  -ms-transition: background 0.2s ease-in-out;
+  -o-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  border-top: 0;
+}
+
+/* Styling the toggle menu link and hiding it */
+.nav .navtoogle {
+  display: none;
+  width: 100%;
+  padding: 0.5em 0.5em 0.8em;
+  text-align: left;
+  font-size: 1.2em;
+  background: none;
+  border: none;
+  height: 45px;
+}
+
+.nav .navtoogle:before {
+  content: "\2630";
+  padding-right: 0.5em;
+  font-size: 1.2em;
+}
+
+/* The breakpoint here will depend on your content, menu length, font size, and so on :) */
+@media (max-width: 680px) {
+  .nav li {
+    margin: 0;
+    display: block;
+    text-align: center;
+  }
+
+  .nav a {
+    padding: 0.8em 1.2em 0.8em;
+  }
+
+  .js .nav {
+    display: none; /* Unhiding the styled menu link */
+  }
+
+  .js .nav .navtoogle {
+    margin: 0;
+    display: block;
+  }
+
+  .js .nav ul {
+    max-height: 0em;
+    overflow: hidden;
+  }
+
+  .js .nav .active + ul {
+    max-height: 30em;
+    overflow: hidden;
+    -webkit-transition: max-height 0.4s;
+    -moz-transition: max-height 0.4s;
+    -o-transition: max-height 0.4s;
+    -ms-transition: max-height 0.4s;
+    transition: max-height 0.4s;
+  }
+
+  /* If JavaScript is disabled, the menu stays open */
+  .no-js .nav ul {
+    max-height: 30em;
+    overflow: hidden;
+  }
+}
+h1{
+  font-size: 28px;
+  padding-top: 25px;
+  text-align: center;
+  font-family: sans-serif;
+  text-shadow: 2px 2px 4px #55898e;
+}
+h2{
+  font-size: 23px;
+  margin-top: 40px;
+  margin-bottom: 20px ;
+  text-align: center;
+  font-family: sans-serif;
+  color: #374d50;
+}
+
+p{
+  font-family: sans-serif;
+  text-align: center;
+}
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.card {
+  flex: 0 0 300px;
+  height: 200px;
+  margin-right: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 20px;
+  scroll-snap-align: start;
+}
+
