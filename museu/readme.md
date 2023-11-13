@@ -1,3 +1,6 @@
+# Código do header
+## Copie e coloque para ter um padrão
+---
 ```html
     <header>
         <img src="assets/logo.png" alt="Museu online da consciência negra">
