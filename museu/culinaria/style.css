@@ -15,7 +15,7 @@ section {
     min-height: 70vh;
     display: flex;
     flex-direction: column;
-    border-top: 3px solid #f4f4f0;
+    border: 5px solid #f4f4f0;
     }
     
 h1 {
