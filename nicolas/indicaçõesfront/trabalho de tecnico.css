@@ -1,0 +1,28 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .item {
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+  }
+
+body {
+    text-align: center;
+}
+ul {
+    list-style: none;
+  }
+  body {
+    background-image: url(https://1.bp.blogspot.com/-PNKpx9bF7uY/UUDu8JYIYHI/AAAAAAAADEA/Cirxo4MK4rE/s1600/Textura+Preta.jpg);
+  }
+  body {
+    color: #ffffff;
+  }
+
+  
+  
