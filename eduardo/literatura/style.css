@@ -7,8 +7,14 @@
     /* border: 1px dashed black; */
 }
 
+body {
+    /* background-color: burlywood; */
+    background-color: #F2E5C0;
+}
+
 h1, h2 {
     font-family: 'Lilita One', sans-serif;
+    color: rgb(25, 16, 5);
 }
 
 h1 {
@@ -22,7 +28,7 @@ p {
 img {
     width: 20vw;
     height: 25vw;
-    box-shadow: 0 0 0.25vw black;
+    box-shadow: 0 0 0.25vw rgb(25, 16, 5);
 }
 
 h2 {
@@ -72,8 +78,8 @@ section:first-child p {
     justify-items: center;
     gap: 1vw;
     padding: 2vw;
-    background-color: #efefef;
-    box-shadow: 0vw 0vw 0.4vw gray;
+    background-color: rgb(236, 199, 150);
+    box-shadow: 0vw 0vw 0.4vw rgb(25, 16, 5);
     height: 100vh;
 }
 
