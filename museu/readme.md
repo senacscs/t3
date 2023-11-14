@@ -1,5 +1,5 @@
 # Código do header
-## Copie e coloque para ter um padrão
+## Copie e coloque para ter um padrão em todo o site
 ---
 ```html
     <header>
