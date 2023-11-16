@@ -32,6 +32,7 @@ body {
   line-height: 50px;
   text-align: center;
   margin-bottom: 60px;
+  align-items: center;
 }
 .person-carousel .container .inner--carousel {
   display: flex;
@@ -143,6 +144,8 @@ body {
 @media (min-width: 320px) and (max-width: 767px) {
   .person-carousel {
     padding: 60px 0;
+    text-align: center;
+
   }
   .person-carousel .container .title h2 {
     color: #390E6E;
@@ -165,6 +168,7 @@ body {
     overflow: hidden;
     height: 380px;
     position: relative;
+    text-align: center;
   }
   .person-carousel .container .inner--carousel .item--carousel {
     width: 100%;
@@ -262,4 +266,14 @@ body {
     background: #390E6E;
     transition: 0.4s;
   }
+
+.selfmade{
+  text-align: center;
+}
+  
+ 
+
+
+
+
 }
