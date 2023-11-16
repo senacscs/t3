@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function handleCollision(asteroid) {
-        destroyAsteroid(asteroid, false);
+        destroyAsteroid(asteroid, false); //Destruir asteroid sem contabilizar ponto.
 
         let damageAudio = new Audio('./assets/damage.mp3')
         damageAudio.play();
