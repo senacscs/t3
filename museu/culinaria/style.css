@@ -1,0 +1,44 @@
+body {
+   background: url(./fundo-de-textura-de-madeira-parede-de-madeira-velha-real-madeira-desgastada_120872-10410.avif);
+   background-size: contain;
+   background-attachment: fixed;
+   color: #f4f4f0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap');
+
+section {
+    padding-top: 2rem;
+    margin: 10px 5px;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #f4f4f0;
+    }
+    
+h1 {
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    font-size: xx-large;
+    color: black;
+}
+h2{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+}
+ h3 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    }
+
+.foto {
+    float: left;
+    position: relative;
+    margin-top: 35px;
+    width: 300px;
+    border-radius: 10px;
+}
+
