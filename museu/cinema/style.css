@@ -17,13 +17,10 @@ body {
   margin: 0;
   padding: 0;
   text-rendering: optimizeLegibility;
-  overflow-x: hidden;
+  overflow: hidden;
   font-family: "Lato";
 }
 
-.person-carousel {
-  padding: 90px 0;
-}
 .person-carousel .container .title h2 {
   color: #390E6E;
   background: -webkit-linear-gradient(left, #7323DC, #7B00B9);
@@ -43,7 +40,6 @@ body {
   flex-wrap: wrap;
   width: 100%;
   overflow: hidden;
-  height: 460px;
   position: relative;
 }
 .person-carousel .container .inner--carousel .item--carousel {
