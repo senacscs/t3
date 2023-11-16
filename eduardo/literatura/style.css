@@ -12,6 +12,10 @@ body {
   background-color: #f2e5c0;
 }
 
+body::-webkit-scrollbar {
+  width: 0.1px;
+}
+
 h1,
 h2 {
   font-family: "Lilita One", sans-serif;
@@ -198,9 +202,10 @@ button.learn-more .button-text {
   font-weight: 700;
   line-height: 1.6;
   text-align: center;
-  /* text-transform: uppercase; */
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 1.2em;
+  border-radius: 5px;
+  box-shadow: 0.6px 0.6px 4px #22190f;
 }
 
 button:hover .circle {
@@ -222,6 +227,29 @@ dialog button {
   padding: 8px 16px;
   border-radius: 5px;
   margin: 0 auto;
+}
+
+footer {
+  width: 100vw;
+  height: auto;
+  background-color: #191005;
+  margin-top: 2vw;
+  padding: 20px;
+}
+
+footer p {
+  color: white;
+  font-size: 1.8vh;
+}
+
+.integrantes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.site, .pesquisa, .senac {
+  align-self: center;
+  justify-self: center;
 }
 
 @media (max-width: 640px) {
@@ -252,7 +280,7 @@ dialog button {
     justify-items: center;
     justify-content: center;
     text-align: center;
-    gap: 2vw;
+    gap: 5vw;
     padding-top: 2vw;
     padding-left: 2vw;
     padding-right: 2vw;
@@ -295,7 +323,7 @@ dialog button {
     margin: 0 0 0 1.85rem;
     color: #282936;
     font-weight: 700;
-    font-size: 3vh;
+    font-size: 3vw;
     line-height: 1.6;
     text-align: center;
     text-transform: uppercase;
@@ -303,7 +331,9 @@ dialog button {
     margin-left: auto;
     margin-right: auto;
     font-family: "IBM Plex Sans", sans-serif;
-    /* background-color: #bca68c; */
+    background-color: #bca68c;
+    width: 25vw;
+    height: 3.2vh;
   }
   
   button.learn-more .circle {
@@ -364,6 +394,20 @@ dialog button {
     padding: 8px 16px;
     border-radius: 5px;
     margin: 0 auto;
+  }
+
+  footer {
+    margin-top: 4vh;
+  }
+
+  .integrantes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .site, .senac, .pesquisa {
+    align-self: self-start;
+    margin: 15px 0;
   }
 
 }

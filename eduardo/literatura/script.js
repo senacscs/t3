@@ -3,9 +3,9 @@ function machado(){
     const popup = document.getElementById("machado")
     const closeButton = document.getElementById("close-machado")
 
-    button.onclick = function() {
+
         popup.showModal()
-    }
+    
 
     closeButton.onclick = function() {
         popup.close()
@@ -18,9 +18,8 @@ function jesus_funcionapfv() {
     const popup = document.getElementById("jesus")
     const closeButton = document.getElementById("close-jesus")
 
-    button.onclick = function() {
+
         popup.showModal()
-    }
 
     closeButton.onclick = function() {
         popup.close()
@@ -33,9 +32,9 @@ function conceicao() {
     const popup = document.getElementById("conceicao")
     const closeButton = document.getElementById("close-conceicao")
 
-    button.onclick = function() {
+
         popup.showModal()
-    }
+    
 
     closeButton.onclick = function() {
         popup.close()
@@ -47,9 +46,9 @@ function martin() {
     const popup = document.getElementById("martin")
     const closeButton = document.getElementById("close-martin")
 
-    button.onclick = function() {
+
         popup.showModal()
-    }
+    
 
     closeButton.onclick = function() {
         popup.close()
@@ -61,23 +60,23 @@ function saci() {
     const popup = document.getElementById("saci")
     const closeButton = document.getElementById("close-saci")
 
-    button.onclick = function() {
+
         popup.showModal()
-    }
+    
 
     closeButton.onclick = function() {
         popup.close()
     }
 }
 
-function jesus() {
+function negrinho() {
     const button = document.getElementById("negrinho-button")
     const popup = document.getElementById("negrinho")
     const closeButton = document.getElementById("close-negrinho")
 
-    button.onclick = function() {
+
         popup.showModal()
-    }
+    
 
     closeButton.onclick = function() {
         popup.close()
