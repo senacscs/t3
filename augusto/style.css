@@ -5,7 +5,8 @@
 }
 
 .link {
-    z-index: auto !important;
+    z-index: 1 !important;
+    position: relative;
 }
 
 body, html{
