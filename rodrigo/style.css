@@ -116,7 +116,11 @@ table {
   #paper {
     width: 25vw;
   }
-
+  video {
+    display: none;
+    width: 60vw;
+    z-index: 999;
+  }
   @media screen and (max-width: 450px){
 
     #postit {

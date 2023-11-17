@@ -195,6 +195,15 @@ const inputElement = document.querySelector("input")
 inputElement.addEventListener("input", (e) => {
     let inputed = e.target.value.toLowerCase()
 
+    if(inputed == 'in the end'){
+        const video = document.querySelector('video')
+
+        table.style.display = 'none'
+        infos.style.display = 'none'
+        video.style.display = 'block'
+        video.play()
+    }
+
     lines.forEach((tr) => {
         let text = tr.dataset.title.toLowerCase(); 
 
