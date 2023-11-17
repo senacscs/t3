@@ -205,7 +205,7 @@ button.learn-more .button-text {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 1.2em;
   border-radius: 5px;
-  box-shadow: 0.6px 0.6px 4px #22190f;
+
 }
 
 button:hover .circle {
@@ -400,13 +400,16 @@ footer p {
     margin-top: 4vh;
   }
 
+  footer p {
+    text-align: center;
+  }
+
   .integrantes {
     display: flex;
     flex-direction: column;
   }
 
   .site, .senac, .pesquisa {
-    align-self: self-start;
     margin: 15px 0;
   }
 
