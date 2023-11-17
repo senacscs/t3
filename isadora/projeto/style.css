@@ -154,3 +154,16 @@ h3 {
 span {
   margin-left: 20px;
 }
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.site{
+  margin-top: 120px;
+    height: 280px;
+    border-radius: 20px;
+    padding: 50px;
+}
