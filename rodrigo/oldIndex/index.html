@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows R</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/Icon.png" type="image/x-icon">
+</head>
+<body id="pag" class="innit">
+<!-- ------------------------------------------------------LOGIN -->
+    <div id="on" class="on">
+        <div id="contenti">
+            <img src="assets/windows-xp-logo.png">
+            <div id="light"></div>
+        </div>
+            <div id="fundo"></div>
+            <audio id="sound" autoplay>
+                <source src="assets/On sound.mp3">
+            </audio>
+    </div>
+    <!-- ------------------------------------------------------BODY -->
+    <div id="body" class="hidden">
+    <!-- ------------------------------------------------------APLICATIVOS -->
+        <div class="apps" id="appsDiv">
+        </div>
+    <!-- ------------------------------------------------------JANELAS -->
+        <div id="janela" class="hidden">
+            <div class="controls">
+                <h1 id="titleW"></h1>
+            <button id="sofrimento">X</button>
+            </div>
+            <div class="insideWindows">
+                <img id="img" src="">
+                <h1 id="h1W"></h1>
+                <h2 id="h2"><span id="subjectW"></span><br><span id="data"></span></h2>
+                <p id="p"></p>
+                <a id="link" href="">Acessar</a>
+            </div>
+        </div>
+        <div id="nicolauDiv" class="hidden">
+            <img src="assets/nicolau.png">
+            <audio id="nicolau">
+                <source src="assets/Nicolau_antonio.mp3">
+            </audio>
+        </div>
+        <!-- ------------------------------------------------------TASKBAR -->
+        <div id="taskbar">
+            <div id="menuAll" class="hidden">
+                <div id="menu" class="program">
+                    <div class="user">
+                        <img src="assets/Bah.jpg" onclick="nicolau()">
+                        <h1>Rodrik</h1>
+                    </div>
+                    <div class="content">
+                    <div id="left">
+                        <div id="github">
+                            <img src="assets/github.png">
+                            <a href="https://github.com/rodrik227">github</a>
+                        </div>
+                        <div id="instagram">
+                            <img src="assets/instagram.png">
+                            <a href="https://www.instagram.com/pennodini/?hl=pt-br">instagram</a>
+                        </div>
+                        <div id="whatsapp">
+                            <img src="assets/whatsapp.png">
+                            <a href="https://wa.me/5551999599285">whatsapp</a>
+                        </div>
+                    </div>
+                    <div id="right">
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="task">
+                <div id="windows" onclick="menu()">
+                    <img src="assets/logo.webp">
+                    <h2>Index do Rodrigo</h2>
+                </div>
+                <div id="time"></div>
+            </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
