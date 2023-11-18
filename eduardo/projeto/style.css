@@ -92,7 +92,6 @@ section {
 .grid-problema {
     display: grid;
     grid-template-columns: 1fr 400px;
-
 }
 
 #problema h2 {
@@ -100,7 +99,7 @@ section {
 }
 
 #problema p {
-    font-size: 32px;
+    font-size: 2.8vh;
     margin-top: 250px;
 }
 
@@ -118,13 +117,13 @@ section {
 }
 
 #objetivos h3 {
-    font-size: 32px;
+    font-size: 3vh;
     font-family: 'Cinzel Decorative', serif;
     margin-top: 100px;
 }
 
 #objetivos p {
-    font-size: 24px;
+    font-size: 2vh;
     color: #c8c8c8;
     margin-top: 20px;
 }
@@ -134,7 +133,7 @@ section {
 }
 
 #objetivos li {
-    font-size: 24px;
+    font-size: 2vh;
     color: #c8c8c8;
     list-style-position: inside;
 }
@@ -142,7 +141,79 @@ section {
 /* METODOLOGIA */
 
 #metodologia {
-    height: 100vh;
+    height: 105vh;
+}
+
+#metodologia h2 {
+    padding-bottom: 50px;
+}
+
+#metodologia p {
+    font-size: 2vh;
+    margin-top: 20px;
+}
+
+.texto-metodologia {
+    height: auto;
+    width: 60vw;
+}
+
+#metodologia a {
+    color: #3EB83C;
+    transition: .5s;
+}
+#metodologia a:hover {
+    color: #228620;
+}
+
+.form-button {
+    padding: 8px 16px;
+    font-size: 2vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3EB83C;
+    box-shadow: 1px 1px 4px #001305;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    transform: scale(105%);
+    box-shadow: 2px 2px 5px #001305;
+}
+
+dialog::backdrop {
+    background-color: #141414a1;
+}
+
+dialog[open] {
+    display: grid;
+    margin: auto;
+    padding: 20px;
+    font-size: 2vh;
+    background-color: #f1f1f1;
+    border-radius: 12px;
+    width: 50vw;
+    border: none;
+}
+
+dialog li {
+    list-style-position: inside;
+    margin-bottom: 5px;
+}
+
+dialog button {
+    padding: 10px 20px;
+    width: 5vw;
+    font-size: 2vh;
+    margin: 15px auto 0 auto;
+    background-color: #3EB83C;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #001305;
+    cursor: pointer;
 }
 
 /* RESULTADOS */
@@ -153,10 +224,44 @@ section {
     color: white;
 }
 
+#resultados p {
+    font-size: 2vh;
+}
+
+.grid-result {
+    display: grid;
+    grid-template-columns: 1fr 550px;
+    gap: 40px;
+    margin-top: 180px;
+}
+
+#resultados img {
+    align-self: center;
+    justify-self: center;
+}
+
 /* SOLUCAO */
 
 #solucao {
     height: 100vh;
+}
+
+#solucao p {
+    font-size: 2vh;
+    align-self: center;
+    justify-self: center;
+}
+
+#solucao img {
+    max-width: 100%;
+    align-self: center;
+    justify-self: center;
+}
+
+.grid-solucao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vh;
 }
 
 /* CONCLUSOES */
@@ -167,5 +272,47 @@ section {
     color: white;
 }
 
+#conclusoes p {
+    font-size: 2vh;
+    align-self: center;
+    justify-self: center;
+}
+
+#conclusoes img {
+    max-width: 100%;
+}
+
+.grid-conclusao {
+    display: grid; 
+    grid-template-columns: 600px 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
 /* REFERENCIAS */
 
+#referencias {
+    height: 100vh;
+}
+
+#referencias p {
+    margin-top: 20px;
+    font-size: 1.7vh;
+}
+
+.grid-ref {
+    display: grid;
+    grid-template-columns: 800px 800px;
+    margin-top: 140px;
+}
+
+.ref-left {
+    border-right: 1px solid #001305;
+    padding-right: 20px;
+}
+
+.ref-right {
+    border-left: 1px solid #001305;
+    padding-left: 20px;
+}
