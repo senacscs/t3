@@ -1,0 +1,93 @@
+header {
+    background-color: gray;
+    height: 15vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 25vw;
+  height: 18vw;
+  perspective: 1000px;
+  display: inline-flex;
+  padding: 1vw;
+  
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 1vw;
+}
+
+.flip-card-front {
+  background-color: rgb(56, 56, 56);
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.flip-card-back {
+  background-color: #383e42;
+  color: white;
+  max-height: auto;
+  transform: rotateY(180deg);
+}
+
+header p{
+  font-size: 200%;
+  color: rgb(244, 244, 244);
+}
+
+p {
+  font-size: 1.4vw;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23dadada' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23b4b4b4' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%238f8f8f' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23696969' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23444444' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+
+p, h1 {
+  font-family: 'Kanit', sans-serif;
+}
+
+@media only screen and (max-width: 384px) {
+  * {
+    font-size: 0.9rem;
+  }
+}

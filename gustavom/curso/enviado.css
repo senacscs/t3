@@ -1,0 +1,19 @@
+p {
+    color: green;
+    font-size: 400%;
+}
+
+main {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+body { 
+    background-color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
