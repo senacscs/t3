@@ -232,7 +232,7 @@ dialog button {
     display: grid;
     grid-template-columns: 1fr 550px;
     gap: 40px;
-    margin-top: 180px;
+    margin-top: 100px;
 }
 
 #resultados img {
@@ -287,13 +287,17 @@ dialog button {
     grid-template-columns: 600px 1fr;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 80px;
 }
 
 /* REFERENCIAS */
 
 #referencias {
     height: 100vh;
+}
+
+.texto-ref {
+    width: 73vw;
 }
 
 #referencias p {
@@ -303,8 +307,8 @@ dialog button {
 
 .grid-ref {
     display: grid;
-    grid-template-columns: 800px 800px;
-    margin-top: 140px;
+    grid-template-columns: 700px 700px;
+    margin-top: 100px;
 }
 
 .ref-left {
