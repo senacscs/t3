@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    color: #191919;
+    color: #efefef;
 }
 
 html {
@@ -36,7 +36,7 @@ nav li a {
     text-decoration: none;
     opacity: 0.4;
     transition: 0.5s;
-    font-size: 1vw  ;
+    font-size: 1vw;
 }
 
 nav li {
@@ -52,41 +52,138 @@ nav li a:hover {
 }
 
 section:first-child {
+    font-family: 'Itim', cursive;
     display: grid;
+    grid-template-columns: auto auto;
     justify-content: center;
     align-content: center;
     height: 100vh;
     text-align: center;
+    margin-right: 10vw;
+    cursor: default;
+}
+
+section:first-child div {
+    display: flex;
+    align-items: center;
+}
+
+section:first-child img {
+    width: 25vw;
+    grid-row: 1/3;
 }
 
 section:first-child h1 {
     font-size: 10vw;
+    align-self: end;
+    color: #d72323;
 }
 
 section:first-child p {
     font-size: 3vw;
+    align-self: start;
+    color: #d72323;
 }
 
-#introducao {
+#introducao, #justificativa{
+    background-color: rgb(84, 84, 84);
+    background: linear-gradient(0deg, #191919 , rgb(84, 84, 84) 50%, #191919 90%);
     display: grid;
-    gap: 1vw;
-    background-color: bisque;
-    padding: 1vw;
-    border-radius: 1vw;
-    margin-left: 2vw;
-    margin-right: 2vw;
+    gap: 0vw;
+    padding: 1vw 4vw;
+    height: 97vh;
 }
 
-#introducao h2 {
-    font-size: 1.5vw;
-    color: #191919;
+#introducao h2, #justificativa h2 {
+    font-size: 3.5vw;
+    color: white;
 }
 
-#introducao p {
+#justificativa {
+    height: 70vh;
+    background: linear-gradient(0deg, #191919 , rgb(84, 84, 84) , #191919 );
+}
+
+#justificativa h2 {
+    text-align: right;
+}
+
+#introducao, #justificativa p {
     text-align: justify;
-    color: #191919;
+    color: #efefef;
+    font-size: 1.5vw;
 }
 
-#introducao details {
-    cursor: pointer;
+#tema-e-area-do-conhecimento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1vw 4vw;
+    gap: 8vw;
+    height: auto;
+}
+
+#tema-e-area-do-conhecimento div {
+    background-color: #545454;
+    /* background-color: grey; */
+    border-radius: 2vw;
+    padding: 2vw;
+}
+
+#tema-e-area-do-conhecimento h2 {
+    font-size: 3.5vw;
+}
+
+#tema-e-area-do-conhecimento h3 {
+    font-size: 2vw;
+}
+
+#tema-e-area-do-conhecimento p {
+    font-size: 1vw;
+}
+
+#tema-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 5vw;
+    row-gap: 1vw;
+    text-align: center;
+}
+
+#tema-area h2 {
+    grid-column: 1/3;
+}
+
+#tema-area div {
+    display: grid;
+    background-color: grey;
+    /* background-color: #545454; */
+    border-radius: 1vw;
+    padding: 0.5vw;
+}
+
+#problema {
+    display: grid;
+    align-items: normal;
+    text-align: center;
+    align-content: stretch;
+    gap: 2vw;
+}
+
+#problema h2 {
+    align-self: center;
+}
+
+#problema div {
+    display: grid;
+    align-items: center;
+    padding: 0 1vw;
+    /* background: linear-gradient(90deg, #545454 10%, grey, #545454); */
+    background-color: grey;
+    /* background-color: #545454; */
+    border-radius: 1vw;
+}
+
+#problema div p {
+    font-size: 1.3vw;
 }
