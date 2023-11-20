@@ -120,6 +120,46 @@ nav button:hover {
     border-radius: 50%;
 }
 
+@media (max-width: 640px) {}
+ 
+@media (max-width: 768px) {
+    body {
+        padding: 6rem 2rem;
+    }
+ 
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+ 
+    .meta {
+        text-align: start;
+    }
+ 
+    .search-title {
+        font-size: 1.5rem;
+        text-align: start;
+    }
+ 
+    .authors {
+        margin-bottom: 1rem;
+    }
+ 
+    nav ul {
+        flex-direction: row;
+    }
+ 
+    #content {
+        width: auto;
+    }
+ 
+    .navbutton {
+        display: block;
+    }
+}
+ 
+@media (max-width: 1024px) {}
+
 img{
     width: 500px;
 }
