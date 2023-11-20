@@ -70,6 +70,10 @@ header{
 #content10{
     padding: 5rem;
 }
+#content11{
+    padding: 10rem;
+    background-color: rgba(0, 0, 255, 0.486);;
+}
 li, p{
     padding:1rem;
     margin: 0rem 22rem;
@@ -83,7 +87,7 @@ li, p{
         background-color: rgba(0, 0, 255, 0.486);;
         padding: 5rem;
     };
-    #content2{
+#content2{
         
     }
     li, p{
