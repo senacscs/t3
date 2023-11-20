@@ -20,8 +20,8 @@ header{
     .nav {
         display:flex;
         gap: 1rem;
-        margin: 0px;
-        background-color: white;
+        margin: 1px;
+        background-color: rgb(255, 255, 255);
         list-style: none;
         position: fixed;
         width: 100vw;
@@ -76,4 +76,18 @@ li, p{
     line-height: 2rem;
     font-size:large;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 450px) {
+    #content1{
+        background-color: rgba(0, 0, 255, 0.486);;
+        padding: 5rem;
+    };
+    #content2{
+        
+    }
+    li, p{
+        padding: 0rem;
+        margin: 0rem 0rem; 
+    }
 }
