@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     color: #efefef;
+    cursor: default;
 }
 
 html {
@@ -41,6 +42,7 @@ nav li a {
 
 nav li {
     transition: 0.5s;
+    display: grid;
 }
 
 nav li:hover {
@@ -49,10 +51,76 @@ nav li:hover {
 
 nav li a:hover {
     opacity: 1;
+    cursor: pointer;
+}
+
+.red {
+    color: #d72323;
+}
+
+.purple {
+    color: #5e17eb;
+}
+
+dialog[open] {
+    display: grid;
+    gap: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 30vw;
+    padding: 0.5vw;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 2.2vh;
+    text-align: justify;
+    border: 0;
+    border-radius: 0.4vw;
+    background-color: whitesmoke;
+    color: #545454;
+}
+
+dialog[open] {
+    color: #545454;
+}
+
+dialog::backdrop {
+    background-color: rgba(188, 166, 140, 0.7);
+}
+
+#close-introducao {
+    display: block;
+    margin: 0 auto;
+    color: #191919;
+    background-color: #545454;
+    border-radius: 0.3vw;
+    cursor: pointer;
+    padding: 0.2vw;
+    border: 0;
+    font-size: 1.2vw;
+}
+
+input[type="button"] {
+    font-family: 'Roboto Mono', monospace;
+    border: 0;
+    font-size: 1.5vw;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0.2vw;
+    color: #efefef;
+    transition: 0.5s;
+}
+
+input[type="button"]:hover {
+    color: transparent;
+    animation: effect 5s linear infinite;
+    background: linear-gradient(90deg, #d72323, #5e17eb, #004aad, #efefef, #d72323);
+    background-size: 400%;
 }
 
 section:first-child {
     font-family: 'Itim', cursive;
+    /* font-family: ; */
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
@@ -69,46 +137,104 @@ section:first-child div {
 }
 
 section:first-child img {
-    width: 25vw;
+    width: 20vw;
     grid-row: 1/3;
 }
 
 section:first-child h1 {
     font-size: 10vw;
     align-self: end;
-    color: #d72323;
+    color: black;
 }
 
 section:first-child p {
     font-size: 3vw;
     align-self: start;
-    color: #d72323;
+    color: black;
 }
 
-#introducao, #justificativa{
+#introducao {
+    align-content: space-evenly;
+    height: 55vh;
+}
+
+#introducao div {
+    display: grid;
+    grid-template-columns: 60vw auto;
+    gap: 5vh;
+    align-items: center;
+    justify-items: center;
+}
+
+#introducao img {
+    width: 20vw;
+}
+
+#introducao,
+#justificativa {
     background-color: rgb(84, 84, 84);
-    background: linear-gradient(0deg, #191919 , rgb(84, 84, 84) 50%, #191919 90%);
+    background: linear-gradient(0deg, #191919, rgb(84, 84, 84) 50%, #191919 90%);
     display: grid;
     gap: 0vw;
     padding: 1vw 4vw;
-    height: 97vh;
 }
 
-#introducao h2, #justificativa h2 {
+#introducao h2,
+#justificativa h2,
+#objetivos h2,
+#metodologia h2 {
     font-size: 3.5vw;
-    color: white;
+    color: #efefef;
+}
+
+#animacao {
+    animation: effect 20s linear infinite;
+    background: linear-gradient(90deg, #d72323, #5e17eb, #004aad, #efefef, #d72323);
+    background-size: 400%;
+}
+
+@keyframes effect {
+
+    0% {
+        background-position: 0%;
+        -webkit-background-clip: text;
+    }
+
+    100% {
+        background-position: 400%;
+        -webkit-background-clip: text;
+    }
+
+    /*       
+    0% {
+        background: linear-gradient(90deg, #efefef, #d72323 0vw)
+            -webkit-background-clip: text;
+    }
+
+    50% {
+        background: linear-gradient(90deg, #efefef, #d72323 20vw)
+            -webkit-background-clip: text;
+    }
+
+    100% {
+        background: linear-gradient(90deg, #efefef, #d72323 50vw)
+            -webkit-background-clip: text;
+    } */
+
 }
 
 #justificativa {
-    height: 70vh;
-    background: linear-gradient(0deg, #191919 , rgb(84, 84, 84) , #191919 );
+    height: 60vh;
+    align-content: space-evenly;
+    background: linear-gradient(0deg, #191919, rgb(84, 84, 84), #191919);
 }
 
 #justificativa h2 {
     text-align: right;
 }
 
-#introducao, #justificativa p {
+#introducao,
+#justificativa p {
     text-align: justify;
     color: #efefef;
     font-size: 1.5vw;
@@ -156,7 +282,7 @@ section:first-child p {
 
 #tema-area div {
     display: grid;
-    background-color: grey;
+    background-color: rgb(128, 128, 128);
     /* background-color: #545454; */
     border-radius: 1vw;
     padding: 0.5vw;
@@ -179,7 +305,7 @@ section:first-child p {
     align-items: center;
     padding: 0 1vw;
     /* background: linear-gradient(90deg, #545454 10%, grey, #545454); */
-    background-color: grey;
+    background-color: rgb(128, 128, 128);
     /* background-color: #545454; */
     border-radius: 1vw;
 }
@@ -187,3 +313,70 @@ section:first-child p {
 #problema div p {
     font-size: 1.3vw;
 }
+
+#objetivos {
+    display: grid;
+    height: auto;
+    padding: 1vw 4vw;
+    gap: 2vw;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+#objs {
+    display: grid;
+    gap: 2vw;
+    background-color: #545454;
+    padding: 1vw;
+    border-radius: 1vw;
+}
+
+#objetivos h2 {
+    align-self: center;
+}
+
+#objetivos h3 {
+    text-align: center;
+    font-size: 2vw;
+}
+
+#objetivos p,
+#objetivos li {
+    font-size: 1.2vw;
+}
+
+#geral {
+    display: grid;
+    background-color: gray;
+    padding: 0.7vw;
+    border-radius: 1vw;
+    gap: 0.8vw;
+    text-align: start;
+    width: 50vw;
+}
+
+#especificos {
+    display: grid;
+    background-color: rgb(128, 128, 128);
+    padding: 0.7vw;
+    border-radius: 1vw;
+    gap: 0.8vw;
+    text-align: start;
+    width: 50vw;
+}
+
+#especificos li {
+    list-style: none;
+}
+
+#metodologia {
+    display: grid;
+    height: 100vh;
+    padding: 1vw 4vw;
+    background: linear-gradient(0deg, #191919 30%, rgb(84, 84, 84), #191919 80%);
+}
+
+/* #metodologia  {
+    ::
+} */
