@@ -367,6 +367,10 @@ nav .menu.open .menu-link:nth-child(8) {
     background-color: #870734;
     animation-duration: 1.2s;
 }
+nav .menu.open .menu-link:nth-child(9) {
+  background-color: #5c0725;
+  animation-duration: 1.2s;
+}
 nav .menu.open .menu-link .text-item {
   color: white;
   text-transform: uppercase;
@@ -624,107 +628,35 @@ nav .menu.close .menu-link .text-item {
   width: 80%;
 }
 
-.problema {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #000000;
-  z-index: -1;
-  /* opacity: 0.4; */
-  transition: all 0.4s ease;
-  width: 80%;
-}
-
-.objetivos {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #f3b3b3;
-  z-index: -1;
-  /* opacity: 0.4; */
-  transition: all 0.4s ease;
-  width: 80%;
-}
-
-.metodologia {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #f3b3b3;
-  z-index: -1;
-  /* opacity: 0.4; */
-  transition: all 0.4s ease;
-  width: 80%;
-}
-
-.solucao {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #f3b3b3;
-  z-index: -1;
-  /* opacity: 0.4; */
-  transition: all 0.4s ease;
-  width: 80%;
-}
-
 img{
   border-radius: 15px;
+  max-width: 50%;
 }
 
-.resultados {
+.conteudo {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #f3b3b3;
+  color: #280808;
   z-index: -1;
   /* opacity: 0.4; */
   transition: all 0.4s ease;
   width: 80%;
 }
 
-.conclusao {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #f3b3b3;
-  z-index: -1;
-  /* opacity: 0.4; */
-  transition: all 0.4s ease;
-  width: 80%;
-}
-
-.referencias {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #f3b3b3;
-  z-index: -1;
-  /* opacity: 0.4; */
-  transition: all 0.4s ease;
-  width: 80%;
+iframe{
+  max-width: 80%;
 }
 
 article h1 {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 500;
   color: #c51250;
   font-family: 'Playfair Display';
 }
+
 article p {
   color: #030202;
   font-size: 20px;
