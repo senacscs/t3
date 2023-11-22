@@ -176,7 +176,7 @@ ul {
   color: #3b4141;
 }
 .objetivos{
-  background-image: url("marmore.jpg");
+  background-image: url("img/marmore.jpg");
       background-size: cover;
 }
 
@@ -196,7 +196,7 @@ ul {
   box-shadow: 10px 10px 8px #888888;
 }
 .final{
-  background-image: url("marmore.jpg");
+  background-image: url("img/marmore.jpg");
       background-size: cover;
   color: #3b4141;
 }
