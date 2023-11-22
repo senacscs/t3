@@ -168,7 +168,6 @@ footer {
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: small;
 }
 
 @media only screen and (max-width: 480px) {
@@ -178,7 +177,7 @@ footer {
     }
 
     section {
-        width: 130%;
+        width: 145%;
     }
 
     iframe {
@@ -190,6 +189,9 @@ footer {
     }
     .ref{
         width: 400px;
+    }
+    footer{
+        width: 600px;
     }
     
     
