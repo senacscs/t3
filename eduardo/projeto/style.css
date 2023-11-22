@@ -24,10 +24,18 @@ header {
 
 .logo {
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo p {
+    margin-left: 20px;
+    font-size: 1.5vw;
 }
 
 .logo img {
-    width: 8vh;
+    width: 6vh;
 }
 
 header li {
@@ -102,10 +110,10 @@ header li {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 4.8em;
+        top: 10vh;
         gap: 0;
         border-radius: 0 0 1em 1em;
-        background-color: rgb(53, 70, 58);
+        background-color: #001305;
         text-align: center;
         flex-direction: column;
         width: 100%;
@@ -132,14 +140,30 @@ h2 {
     font-size: 5vh;
 }
 
-
-
 /* SECTION GERAL */
 
 section {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* INTRODUCAO */
+
+#introducao {
+    height: 100vh;
+    color: white;
+    background-color: #001305;
+}
+
+#introducao h2 {
+    margin-bottom: 130px;
+}
+
+#introducao p {
+    font-size: 2vh;
+    margin-top: 20px;
+    color: #c8c8c8;
 }
 
 /* PROBLEMA */
@@ -290,6 +314,7 @@ dialog button {
 
 #resultados p {
     font-size: 2vh;
+    color: #c8c8c8;
 }
 
 .grid-result {
@@ -341,6 +366,7 @@ dialog button {
     font-size: 2vh;
     align-self: center;
     justify-self: center;
+    color: #c8c8c8;
 }
 
 #conclusoes img {
@@ -408,7 +434,7 @@ footer {
     width: 100vw;
     background-color: #001305;
     padding: 30px;
-    color: white;
+    color: #c8c8c8;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -430,6 +456,24 @@ footer {
     .texto {
         width: 80vw;
         height: auto;
+    }
+
+    header {
+        border-bottom: 2px solid #3EB83C;
+        padding: 20px 5px;
+    }
+
+    .logo p {
+        font-size: 5vw;
+    }
+
+    #introducao {
+        height: auto;
+        padding: 5vh;
+    }
+
+    #introducao h2 {
+        margin-bottom: 50px;
     }
 
     .grid-problema {
@@ -470,6 +514,30 @@ footer {
     #metodologia h2 {
         padding-bottom: 50px;
         font-size: 10vw;
+    }
+    
+    dialog[open] {
+        display: grid;
+        margin: auto;
+        padding: 20px;
+        font-size: 2vh;
+        background-color: #f1f1f1;
+        border-radius: 12px;
+        width: 80vw;
+        border: none;
+    }
+    
+    
+    dialog button {
+        padding: 10px 20px;
+        width: auto;
+        font-size: 2vh;
+        margin: 15px auto 0 auto;
+        background-color: #3EB83C;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 1px 1px 4px #001305;
+        cursor: pointer;
     }
 
     /*  RESULTADOS */
@@ -557,6 +625,7 @@ footer {
 
     .video {
         width: 300px;
+        height: 168px;
         margin-top: 50px;
     }
 
