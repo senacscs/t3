@@ -1,4 +1,4 @@
-const links = document.querySelectorAll(".page-header ul a");
+const links = document.querySelectorAll(".page-header ul nav");
 
 for (const link of links) {
   link.addEventListener("click", clickHandler);
@@ -15,3 +15,13 @@ function clickHandler(e) {
   });
 }
 
+var menuButton = document.getElementById("menu-button");
+var menu = document.getElementById("menu");
+
+menuButton.addEventListener("click", function() {
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+});
