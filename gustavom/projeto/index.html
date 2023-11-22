@@ -1,103 +1,187 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto</title>
+    <title>projeto</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@800&family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <p><b><i>Projeto PP, Desenvolvido por Gustavo M. e Gustavo H.O.</i></b></p>
-    </header>
-    <main>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <h1>Problema</h1>
-              </div>
-              <div class="flip-card-back">
-                <p>Como prevenir de pessoas comprarem produtos vencidos em mercados de médio e pequeno porte?</p> 
-              </div>
+    <nav id="menu">
+        <ul>    
+            <li><a href="#general" class="active" >Visão Geral</a></li>
+            <li><a href="#problema">Problema</a></li>
+            <li><a href="#analise">Objetivos</a></li>
+            <li><a href="#objetivos">Metodologia</a></li>
+            <li><a href="#sol">Solução</a></li>
+            <li><a href="#res">Resultados</a></li>
+            <li><a href="#cun">Conclusões</a></li>
+            <li><a href="#ref">Referências</a></li>
+            <li><button class="modo-noturno" onclick="modoNoturno()">Modo Noturno</button></li>
+        </ul>
+    </nav>
+</header> 
+    <section id="general">
+        <div class="heading-container">
+            <div>
+                <h1 class="heading"><h1 class="titulo"> Prazero</h1>
+               <div class="facilitar"> <p class="tema"> Com o tema do projeto de como podemos prevenir pessoas de não comprarem produtos vencidos <br>em mercados de médio e pequeno porte. O projeto norteia a área do comércio e mercearia.<br><br><br><br><br> </p></div>
+            <div class="integrantes">
+                <p class="gustavo">Integrantes: Gustavo Mueller e Gustavo Oliveira</p>
             </div>
-          </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <h1>Objetivo Geral</h1>
-              </div>
-              <div class="flip-card-back">
-                <p>Evitar as pessoas de não comprarem produtos vencidos nos mercados de pequeno e médio porte.</p> 
-              </div>
+
+        </div>
+    </section>
+    <section id="problema">
+        <div class="heading-container">
+            <h1 class="heading"><br>Problema<br></h1>
+        <p>Como prevenir de pessoas comprarem produtos vencidos<br> em mercados de médio e pequeno porte? </p>
+        </div>
+        
+    </section>
+    <section id="analise">
+        <div class="heading-container">
+            <div>
+                <h1 class="heading">Objetivos</h1>
+                <h2>objetivo geral</h2><br>
             </div>
-          </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <h1>Objetivos Específicos</h1>
-              </div>
-              <div class="flip-card-back">
-                <p>- Prevenir doenças de saúde causadas por intoxicação alimentar. <br>
-                  - Prevenir perdas no mercado, tanto em produtos, dinheiro e também em avaliação. <br>
-                  - Melhor controle de produtos no estoque. <br>
-                  - Evitar denúncias aos órgãos públicos de defesa do consumidor (Procons).</p> 
-              </div>
+        </div>
+        <div>
+            <p>
+Evitar as pessoas de não comprarem produtos vencidos nos mercados de pequeno e médio porte. <br><br>
+            </p>
+            <h2>objetivo específicos</h2><br>
+            <p>-Prevenir doenças de saúde causadas por intoxicação alimentar. <br>
+
+                -Prevenir perdas no mercado, tanto em produtos, dinheiro e também em avaliação. <br>
+                
+                -Melhor controle de produtos no estoque. <br>
+                
+                -Evitar denúncias aos órgãos públicos de defesa do consumidor (Procons).<br>
+             </p>
+        </div>
+    </section>
+    <section id="objetivos">
+        <div>
+            <div>
+                <h1 class="heading">Métodologia</h1>
             </div>
-          </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <h1>Metodologia</h1>
-              </div>
-              <div class="flip-card-back">
-                <p>Pesquisas feitas em mercados de Santa Cruz do Sul - RS, Rio Pardinho - RS, e Sinimbu - RS.</p>
-                <span id="icon" class="material-symbols-outlined"><a style="color: white; text-decoration: none;" href="">open_in_new</a></span>
-              </div>
+            <div class="objectives">
+                <h2>Pesquisas feitas em mercados de Santa Cruz do Sul - RS, Rio Pardinho - RS, e Sinimbu - RS. </h2><br>
+                <ol>
+                         <h2>Um dos intrevistados é o mercado Superense abaixo perguntas e respostas.</h2><br>
+                    <li>
+                        <h2>- Qual sistema é usado para controle de produtos?  </h2>
+                        <p>O controle de validade é feito por um funcionário.</p>
+                    </li>
+                    <li>
+                        <h2>- Como é feito o controle da validade dos produtos? </h2>
+                        <p>Manual. </p>
+                    </li>
+                    <li>
+                        <h2>- O mercado tem o controle total sobre o vencimento de todos os produtos  
+                            dentro do estoque? </h2>
+                        <p>Não temos controle total de vencimento.</p>
+                    </li>
+                    <li>
+                        <h2>- Já tiveram perda de produtos que ficaram vencidos nas prateleiras? Essa  
+                             perda afetou o lucro do mercado? Acontece com muita frequência?</h2>
+                        <p>Já tivemos perda de produtos vencidos. Não afetou o lucro, pois só trabalhamos com
+                             fornecedores que garantam a troca. Não acontece com muita frequência.</p>
+                    </li>
+                    <li>
+                        <h2>- Já foram prejudicados pela fiscalização por conta de produtos vencidos nas  
+                              prateleiras? Ou denúncias?  </h2>
+                        <p>Não fomos prejudicados pela fiscalização, nem por denúncia. </p>
+                    </li>
+                    <li>
+                        <h2>- Se o projeto for aplicado, ele seria relevante? O que não pode faltar no projeto? Algo essencial. </h2>
+                        <p>Projeto seria relevante</p>
+                    </li>
+                    <i id="icon" class="gg-arrow-align-v"></i>
             </div>
-          </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <h1>Solução</h1>
-              </div>
-              <div class="flip-card-back">
-                <p>Será pego um sistema base que é o da Compumax, criaremos uma nova função dentro dele que funcionara com uma tabela, tendo a descrição do alimento, quantidade e validade. O aviso do item que está prestes a vencer aparecerá na pagina inicial do sistema. Para isso tudo acontecer quando for dado entrada em um item no estoque, foi preciso ser acresentado um novo campo que é o da validade, sendo preciso ser prenchido manualmente para que a tabela indenda a validade dos produtos.</p>
-              </div>
-            </div>
-          </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <h1>Resultados</h1>
-              </div>
-              <div class="flip-card-back">
-                <p>Os resultados seriam de facilitar a verificação da validade dos produtos, evitar que produtos fiquem vencidos nas prateleiras, pois isso gera muitas consequências, como denúncias de clientes, até mesmo o fechamento do mercado. Além disso causa doenças alimentares.
-                  Reduzir as perdas de alimentos, ajudando pessoas que passam fome.</p>
-              </div>
-            </div>
-          </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <h1>Conclusão</h1>
-              </div>
-              <div class="flip-card-back">
-                <p>Com todas as pesquisas realizadas na área que o projeto aborda e respondidas concluímos que é de extrema importância.</p>
-              </div>
-            </div>
-          </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <h1>Referências</h1>
-              </div>
-              <div class="flip-card-back">
-                <p>Referências utilizadas no nosso Projeto<br><br><span id="icon2" class="material-symbols-outlined"><a style="color: white; text-decoration: none;" href="">open_in_new</a></span><span id="icon3" class="material-symbols-outlined"><a style="color: white; text-decoration: none;" href="">open_in_new</a></span></p>
-              </div>
-            </div>
-          </div>
-    </main>
-    <script src="script.js"></script>
+        </div>
+    </section>
+    <section id="sol">
+        <h1 class="heading">Solução</h1>
+        <div class="solução">
+            <p>Será pego um sistema base que é o da Compumax, criaremos uma nova função dentro dele que funcionara com uma tabela, tendo a descrição do alimento, quantidade e validade. O aviso do item que está prestes a vencer aparecerá na pagina inicial do sistema.
+                Para isso tudo acontecer quando for dado entrada em um item no estoque, foi preciso ser acresentado um novo campo que é o da validade, sendo preciso ser prenchido manualmente para que a tabela indenda a validade dos produtos. 
+            </p>
+        </div>
+    </section>
+    <section id="res">
+        <h1 class="heading">Resultados</h1>
+        <p> Os resultados seriam de facilitar a verificação da validade dos produtos, evitar que produtos fiquem vencidos nas prateleiras, pois isso gera muitas consequências, como denúncias de clientes, até mesmo fechamento do mercado. Além disso causa doenças alimentares.  
+             Reduzir as perdas de alimentos, ajudando pessoas que passam fome. 
+        </p>
+    </section>
+    <section id="cun">
+       <h1 class="heading">Conclusões</h1>
+       <p>Com todas as pesquisas realizadas na área que o projeto aborda e respondidas concluímos que é de extrema importância, facilita e resolver um grande problema da atualidade.</p>
+    </section>
+    <section id="ref">
+        <h1 class="heading">Referências</h1>
+        <p class="reftext">
+            CISS. Produto vencido no mercado, e agora? Saiba como você deve agir!. In: [S. l.], 30 dez. 2021. Disponível em:<a href="https://blog.ciss.com.br/produto-vencido-no-mercado/.">https://blog.ciss.com.br/produto-vencido-no-mercado/.</a> em: 16 ago. 2023.
+        </p>
+        <p class="reftext">
+            O GLOBO. Produtos vencidos nas prateleiras de mercados é relato frequente. In:  [S. l.], 29 nov. 2016. Disponível em:<a href="://oglobo.globo.com/economia/defesa-do-consumidor/produtos-vencidos-nas-prateleiras-de-mercados-relato-frequente-20558706.">://oglobo.globo.com/economia/defesa-do-consumidor/produtos-vencidos-nas-prateleiras-de-mercados-relato-frequente-20558706.</a> Acesso em: 16 ago. 2023.  .
+        </p>
+        <p class="reftext">
+            JUSBRASIL. Direito do consumidor: produto vencido nas prateleiras. In: SILVA, Lais Helena da. [S. l.], 2018. Disponível em:<a href="https://www.jusbrasil.com.br/artigos/direito-do-consumidor-produto-vencido-nas-prateleiras/592921525.">https://www.jusbrasil.com.br/artigos/direito-do-consumidor-produto-vencido-nas-prateleiras/592921525.</a> Acesso em: 4 set. 2023.
+       </p>
+       <p class="reftext">
+        VIVABEM. Comer alimentos com prazo de validade vencido faz mal à saúde?. In: INÁCIO, Lívia. [S. l.], 6 jan. 2022. Disponível em:<a href="https://www.uol.com.br/vivabem/noticias/redacao/2022/01/06/comer-alimentos-com-prazo-de-validade-vencido-faz-mal-a-saude.htm.">https://www.uol.com.br/vivabem/noticias/redacao/2022/01/06/comer-alimentos-com-prazo-de-validade-vencido-faz-mal-a-saude.htm.</a>Acesso em: 4 set. 2023. 
+       </p>
+       <p class="reftext">
+        RODOJACTO. Conheça os 7 sistemas de controle de estoque mais usados no Brasil. [S. l.], 17 abr. 2023. Disponível em: <a href="https://transporte.rodojacto.com.br/sistemas-de-controle-de-estoque-mais-usados-no-brasil/.">https://transporte.rodojacto.com.br/sistemas-de-controle-de-estoque-mais-usados-no-brasil/.</a> Acesso em: 11 set. 2023.
+       </p>
+       <p class="reftext">
+        GERENCIAMENTO de Estoque: O que é, Importância e como fazer. [S. l.]. Disponível em:<a href="https://cuboup.com/conteudo/gerenciamento-de-estoque/.">https://cuboup.com/conteudo/gerenciamento-de-estoque/.</a>Acesso em: 25 set. 2023. 
+       </p>
+       <p class="reftext">
+        GESTÃO de Estoque: qual sua importância e como fazê-la bem. [S. l.], 29 out. 2020. Disponível em:<a href=" https://www.am3solucoes.com.br/blog/gestao-de-estoque/."> https://www.am3solucoes.com.br/blog/gestao-de-estoque/.</a>Acesso em: 2 out. 2023. 
+       </p>
+       <p class="reftext">
+        SEBRAE. Importância da gestão de estoque na sua empresa. [S. l.], 12 jan. 2022. Disponível em:<a href="https://www.sebrae-sc.com.br/blog/importancia-da-gestao-de-estoque-na-sua-empresa.">https://www.sebrae-sc.com.br/blog/importancia-da-gestao-de-estoque-na-sua-empresa.</a>Acesso em: 2 out. 2023. 
+       </p>
+       <p class="reftext">
+        MATIAS, Sanon. O que é controle de lote e validade e porque ele é importante para as suas vendas?. [S. l.], 13 jan. 2023. Disponível em: <a href="https://webmaissistemas.com.br/blog/controle-de-lote-e-validade-o-que-e-porque-importa-para-vendas/. ">https://webmaissistemas.com.br/blog/controle-de-lote-e-validade-o-que-e-porque-importa-para-vendas/. </a>Acesso em: 9 out. 2023. 
+       </p>
+       <p class="reftext">
+        DESCARTE de resíduos: o que os supermercados fazem com os produtos vencidos. [S. l.], 12 ago. 2022. Disponível em: <a href="https://dinamicambiental.com.br/blog/reciclagem/descarte-de-residuos-o-que-os-supermercados-fazem-com-os-produtos-vencidos/. ">https://dinamicambiental.com.br/blog/reciclagem/descarte-de-residuos-o-que-os-supermercados-fazem-com-os-produtos-vencidos/.</a>Acesso em: 9 out. 2020
+       </p>
+       <p class="reftext">
+        BRASIL tem mais de 21 milhões de pessoas que não têm o que comer todos os dias e 70,3 milhões em insegurança alimentar, diz ONU. [S. l.], 12 jul. 2023. Disponível em:<a href="https://g1.globo.com/economia/noticia/2023/07/12/brasil-tem-101-milhoes-de-brasileiros-passando-fome-e-703-milhoes-em-inseguranca-alimentar-aponta-onu.ghtml.">https://g1.globo.com/economia/noticia/2023/07/12/brasil-tem-101-milhoes-de-brasileiros-passando-fome-e-703-milhoes-em-inseguranca-alimentar-aponta-onu.ghtml.</a>Acesso em: 11 out. 2023. 
+       </p>
+       <p class="reftext">
+        FOME no Brasil piorou nos últimos três anos, mostra relatório da FAO. [S. l.], 12 jul. 2023. Disponível em: <a href="https://www.gov.br/secom/pt-br/assuntos/noticias/2023/07/fome-no-brasil-piorou-nos-ultimos-tres-anos-mostra-relatorio-da-fao. ">https://www.gov.br/secom/pt-br/assuntos/noticias/2023/07/fome-no-brasil-piorou-nos-ultimos-tres-anos-mostra-relatorio-da-fao. </a>Acesso em: 11 out. 2023.
+       </p>
+       <p class="reftext">
+        CORREIO BRAZILIENSE. Brasil tem 21,1 milhões de pessoas passando fome, diz relatório da FAO. [S. l.], 12 jul. 2023. Disponível em:<a href="https://www.correiobraziliense.com.br/brasil/2023/07/5108585-brasil-tem-211-milhoes-de-pessoas-passando-fome-diz-relatorio-da-fao.html. ">https://www.correiobraziliense.com.br/brasil/2023/07/5108585-brasil-tem-211-milhoes-de-pessoas-passando-fome-diz-relatorio-da-fao.html. </a>Acesso em: 11 out. 2023. 
+       </p>
+    </section>
+    <section>
+        <h1 class="heading">Video sobre o conteudo do projeto.</h1>
+    <iframe width="560" height="315"  src="https://www.youtube.com/embed/CU2o8rtQovI?si=u88TXrl7_SdM1s13" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+    
+    <footer>
+         <p>
+            Site feito por Gustavo Oliveira<br>
+             Aluno do primeiro ano<br>
+            No Senac Santa Cruz do sul
+         </p>
+         <p>
+            Projeto ja participou de feiras<br>
+            projeto foi feito pro Gustavo O. Gustavo M.
+         </p>
+    </footer>
 </body>
+    <script src="script.js"></script>   
 </html>
