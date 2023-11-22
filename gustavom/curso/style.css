@@ -79,8 +79,12 @@ label {
     padding: 1vh 1vh 1vh 1vh;
 }
 
+input:invalid, textarea:invalid {
+    border: 0.2em solid gray;
+}
+
 input:valid, textarea:valid {
-    border-color: rgb(67, 153, 50);
+    border: 0.2em solid rgb(67, 153, 50);
 }
 
 input:hover, textarea:hover{
