@@ -1,0 +1,28 @@
+@media (min-width: 720px) {
+    body {
+        
+        background-color: rgb(0, 0, 0), 0.836
+    
+    
+
+    }
+
+    p { 
+        font-size: 20px;
+    }    
+    
+    h1 {
+        color:rgba(27, 14, 210, 0.959)
+    }   
+}
+
+@media (max-width: 720px) {
+    body {
+        
+        background-color: rgb(0, 0, 0);
+    }
+    
+    p {
+        font-size: 15px; 
+    }
+}
