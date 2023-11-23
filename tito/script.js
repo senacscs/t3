@@ -81,6 +81,14 @@ const activitiesStorage = [
     url: '/tito/jogojs/',
     instructions: "Implementação de jogo da velha feito em Javascript."
   },
+  {
+    name: 'Projeto de pesquisa',
+    subject: 'Projeto Profissional',
+    image: 'projeto.svg',
+    date: new Date(2023, 11, 23),
+    url: '/tito/projeto/',
+    instructions: "Adaptação do projeto de pesquisa Análise de Satisfação de Clientes."
+  },
 ];
 
 const activitiesElement = document.getElementById("activities");

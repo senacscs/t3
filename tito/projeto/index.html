@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./script.js"></script>
+    <title>Análise de satisfação do cliente</title>
+    <style>
+      * {
+        scroll-behavior: smooth;
+        scroll-margin: 6rem;
+      }
+    </style>
+  </head>
+  <body id="0" class="bg-zinc-50">
+    <header
+      class="fixed w-screen bg-zinc-50 top-0 left-0 justify-center gap-10 items-center"
+    >
+      <nav
+        class="py-2 flex flex-col justify-between px-3 lg:px-40 items-center"
+      >
+        <div class="lg:hidden flex justify-end w-full px-2">
+          <button
+            id="mobile-menu"
+            class="block group rounded-full p-1.5 transition-colors hover:bg-neutral-200"
+            aria-label="Menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="group-hover:text-zinc-800 text-zinc-600"
+            >
+              <line x1="4" x2="20" y1="12" y2="12" />
+              <line x1="4" x2="20" y1="6" y2="6" />
+              <line x1="4" x2="20" y1="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+        <ul
+          class="lg:visible lg:flex-row lg:flex flex-col lg:gap-10 gap-1 w-full"
+          id="navigation"
+        >
+          <li>
+            <a
+              class="text-zinc-500 hover:text-lime-600 transition-colors text-sm block w-full py-1 active:bg-lime-300"
+              href="#1"
+              >Início</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-zinc-500 hover:text-lime-600 transition-colors text-sm block w-full py-1 active:bg-lime-300"
+              href="#2"
+              >Introdução</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-zinc-500 hover:text-lime-600 transition-colors text-sm block w-full py-1 active:bg-lime-300"
+              href="#3"
+              >Tema e área</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-zinc-500 hover:text-lime-600 transition-colors text-sm block w-full py-1 active:bg-lime-300"
+              href="#4"
+              >Problema</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-zinc-500 hover:text-lime-600 transition-colors text-sm block w-full py-1 active:bg-lime-300"
+              href="#5"
+              >Justificativa</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-zinc-500 hover:text-lime-600 transition-colors text-sm block w-full py-1 active:bg-lime-300"
+              href="#6"
+              >Objetivos</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-zinc-500 hover:text-lime-600 transition-colors text-sm block w-full py-1 active:bg-lime-300"
+              href="#7"
+              >Referencial teórico</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-zinc-500 hover:text-lime-600 transition-colors text-sm block w-full py-1 active:bg-lime-300"
+              href="#8"
+              >Metodologia</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-zinc-500 hover:text-lime-600 transition-colors text-sm block w-full py-1 active:bg-lime-300"
+              href="#9"
+              >Resultados e discussões</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-zinc-500 hover:text-lime-600 transition-colors text-sm block w-full py-1 active:bg-lime-300"
+              href="#10"
+              >Referências</a
+            >
+          </li>
+          <a
+            aria-label="Voltar ao topo"
+            href="#0"
+            id="top-button"
+            class="group rounded-full hidden lg:block p-1.5 transition-colors hover:bg-neutral-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="group-hover:text-zinc-800 text-zinc-600"
+            >
+              <path d="m5 12 7-7 7 7" />
+              <path d="M12 19V5" />
+            </svg>
+          </a>
+        </ul>
+      </nav>
+      <div class="w-screen h-1 bg-zinc-100">
+        <div
+          id="progress-bar"
+          class="transition-all block w-0 bg-lime-400 h-1"
+        ></div>
+      </div>
+    </header>
+    <div class="space-y-32 py-20">
+      <section id="1" class="px-3 lg:px-40 py-24 space-y-3">
+        <div class="mb-20">
+          <h1 class="lg:text-7xl text-5xl font-medium text-zinc-800 max-w-3xl">
+            Análise de satisfação do cliente
+          </h1>
+          <h2 class="lg:text-3xl block text-2xl text-lime-600">
+            Integrando ao fluxo do atendimento
+          </h2>
+        </div>
+        <div class="flex flex-col text-zinc-500 lg:text-lg">
+          <span>Marcos Vinícius Sudo Esau e Tito Lucca Oliveira</span>
+          <span>Orientadora Nêmora Francine Backes</span>
+        </div>
+      </section>
+      <section class="px-3 lg:px-40" id="2">
+        <h2 class="text-2xl lg:text-3xl mb-6 text-zinc-800">Introdução</h2>
+        <p
+          class="indent-12 mb-4 text-zinc-500 lg:text-lg max-w-3xl text-justify"
+        >
+          É notável o desafio enfrentado por empresas de menor porte,
+          especialmente as pequenas e médias, no que diz respeito à compreensão
+          e avaliação da satisfação de seus clientes. A falta de recursos
+          tecnológicos e financeiros torna complexa a tarefa de entender as
+          demandas e preferências dos consumidores, afetando diretamente a
+          capacidade de manter clientes fiéis. Este projeto propõe-se a abordar
+          essa questão crucial ao empregar tecnologias contemporâneas, como
+          chatbots e análise de dados, visando aprimorar a compreensão das
+          necessidades dos clientes e, consequentemente, a fidelização.
+        </p>
+        <p
+          class="indent-12 mb-4 text-zinc-500 lg:text-lg max-w-3xl text-justify"
+        >
+          A limitação tecnológica e orçamentária enfrentada por empresas de
+          menor porte configura-se como um obstáculo significativo na obtenção
+          de insights sobre as preferências dos consumidores. Tal cenário
+          impacta negativamente na retenção de clientes, uma vez que a
+          compreensão dos anseios do público é essencial para a manutenção de
+          uma base estável de consumidores fiéis. A proposta deste projeto
+          consiste em mitigar essa lacuna por meio da adoção de tecnologias
+          modernas, cujo propósito é facilitar a compreensão e interpretação dos
+          dados do cliente, permitindo uma melhor adaptação das empresas às
+          necessidades do seu público-alvo.
+        </p>
+        <p
+          class="indent-12 mb-4 text-zinc-500 lg:text-lg max-w-3xl text-justify"
+        >
+          É evidente que empresas de menor porte enfrentam desafios para
+          monitorar e compreender as expectativas dos seus clientes. Essa
+          realidade motiva a proposta deste projeto, que busca utilizar
+          ferramentas inovadoras, incluindo chatbots e análise de dados, para
+          aprimorar a capacidade dessas empresas em interpretar as preferências
+          dos consumidores. Ao proporcionar uma visão mais clara do feedback do
+          cliente, pretende-se facilitar a retenção e fidelização, promovendo
+          uma relação mais sólida entre as empresas e seus clientes.
+        </p>
+      </section>
+      <section class="px-3 lg:px-40" id="3">
+        <h2 class="text-2xl mb-6 lg:text-3xl text-zinc-800">Tema e área</h2>
+        <div>
+          <span
+            class="mb-2 block text-zinc-500 lg:text-lg max-w-3xl text-justify"
+            ><span class="font-medium text-zinc-700">Tema:</span> Atendimento ao
+            cliente e sistemas da informação
+          </span>
+          <span class="mb-4 text-zinc-500 lg:text-lg max-w-3xl text-justify"
+            ><span class="font-medium text-zinc-700">Área:</span> Ciência da
+            computação</span
+          >
+        </div>
+      </section>
+      <section class="px-3 lg:px-40" id="4">
+        <h2 class="text-2xl lg:text-3xl mb-6 text-zinc-800">Problema</h2>
+        <p
+          class="indent-12 mb-4 text-zinc-500 lg:text-lg max-w-3xl text-justify"
+        >
+          Como oferecer uma solução mais eficiente para pequenos e médios
+          negócios sobre o controle, registro e visualização das informações
+          relacionadas a satisfação do cliente?
+        </p>
+      </section>
+      <section class="px-3 lg:px-40" id="5">
+        <h2 class="text-2xl lg:text-3xl mb-6 text-zinc-800">Justificativa</h2>
+        <p
+          class="indent-12 mb-4 text-zinc-500 lg:text-lg max-w-3xl text-justify"
+        >
+          Esta pesquisa é motivada pela necessidade premente de abordar um
+          desafio crítico enfrentado por pequenas empresas: a gestão eficiente
+          das informações relacionadas à satisfação do cliente. A justificativa
+          para este projeto é fundamentada em considerações específicas,
+          incluindo a falta de recursos e infraestrutura tecnológica, o impacto
+          direto na retenção de clientes e a necessidade crucial de manter uma
+          base sólida de clientes fiéis.
+        </p>
+        <p
+          class="indent-12 mb-4 text-zinc-500 lg:text-lg max-w-3xl text-justify"
+        >
+          A gestão eficaz da satisfação do cliente é um componente vital para o
+          sucesso das pequenas empresas, especialmente considerando o argumento
+          apresentado por Rana Saifullah Hassan e colaboradores sobre a intensa
+          competição por clientes. A retenção de clientes é economicamente mais
+          vantajosa do que a aquisição de novos, conforme sugerido pela
+          aplicação do Princípio de Pareto, que estabelece que 20% dos clientes
+          de uma empresa geram 80% de seus lucros.
+        </p>
+        <p
+          class="indent-12 mb-4 text-zinc-500 lg:text-lg max-w-3xl text-justify"
+        >
+          Pequenas empresas, devido à escassez de recursos e conhecimento
+          tecnológico, frequentemente negligenciam a gestão da satisfação do
+          cliente, o que representa um desafio significativo para a manutenção
+          de uma base sólida de clientes fiéis. A capacidade de monitorar e
+          compreender as necessidades em constante evolução dos clientes é
+          crucial para a retenção e fidelização, aspectos essenciais para
+          negócios dependentes de clientes recorrentes.
+        </p>
+        <p
+          class="indent-12 mb-4 text-zinc-500 lg:text-lg max-w-3xl text-justify"
+        >
+          Neste contexto, as tecnologias emergentes, como a integração de
+          chatbots e análise avançada de sentimentos, oferecem oportunidades
+          promissoras para soluções mais eficientes. A automação e análise de
+          dados simplificam o processo, fornecendo insights valiosos que podem
+          ser aplicados para melhorar a satisfação do cliente e, por
+          conseguinte, manter uma base sólida de clientes fiéis.
+        </p>
+        <p
+          class="indent-12 mb-4 text-zinc-500 lg:text-lg max-w-3xl text-justify"
+        >
+          Em síntese, este projeto busca preencher a lacuna existente na gestão
+          da satisfação do cliente em pequenas empresas, oferecendo uma
+          abordagem inovadora e viável. A integração de tecnologias avançadas e
+          estratégias inovadoras visa capacitar essas empresas a atenderem às
+          demandas de seus clientes de maneira mais eficaz, promovendo não
+          apenas a retenção, mas também o crescimento sustentável, considerando
+          a importância econômica de manter uma base de clientes fiéis.
+        </p>
+      </section>
+      <section class="px-3 lg:px-40" id="6">
+        <h2 class="text-2xl lg:text-3xl mb-6 text-zinc-800">Objetivos</h2>
+        <span
+          class="mb-10 block lg:text-lg max-w-3xl text-zinc-500 text-justify"
+          ><span class="font-medium text-zinc-700">Objetivo geral:</span>
+          Desenvolver uma plataforma para gerenciar pesquisas em relação a
+          satisfação do cliente com foco em pequenas e médias empresas.
+        </span>
+        <span
+          class="mb-5 text-zinc-700 font-medium lg:text-lg max-w-3xl text-justify"
+          >Objetivos específicos:</span
+        >
+        <ol class="list-decimal max-w-3xl pl-10">
+          <li class="text-lg text-zinc-500 text-justify">
+            Pesquisar sobre o mercado atual de pesquisa de satisfação e
+            atendimento ao cliente.
+          </li>
+          <li class="text-lg text-zinc-500 text-justify">
+            Identificar as perguntas e palavras-chaves de mais relevância para
+            uma pesquisa de satisfação dos clientes.
+          </li>
+          <li class="text-lg text-zinc-500 text-justify">
+            Analisar os dados adquiridos através da pesquisa.
+          </li>
+          <li class="text-lg text-zinc-500 text-justify">
+            Desenvolver uma plataforma que utilize o método mais simples para
+            análise de satisfação do cliente.
+          </li>
+          <li class="text-lg text-zinc-500 text-justify">
+            Testar a viabilidade da ferramenta com um grupo pequeno de
+            empreendedores e interessados.
+          </li>
+          <li class="text-lg text-zinc-500 text-justify">
+            Adaptar o sistema conforme as necessidades descobertas no período de
+            testes.
+          </li>
+          <li class="text-lg text-zinc-500 text-justify">
+            Divulgar a plataforma para o público-alvo.
+          </li>
+        </ol>
+      </section>
+      <section class="px-3 lg:px-40" id="7">
+        <h2 class="text-2xl lg:text-3xl mb-6 text-zinc-800">
+          Referencial teórico
+        </h2>
+        <p
+          class="indent-12 mb-4 text-zinc-500 lg:text-lg max-w-3xl text-justify"
+        >
+          Para compreender de maneira abrangente o tema da pesquisa, foram
+          realizadas diversas investigações sobre diferentes aspectos que o
+          englobam. Um dos focos principais foi a importância da análise e
+          satisfação do cliente no contexto empresarial contemporâneo.
+        </p>
+        <p
+          class="indent-12 mb-4 text-zinc-500 lg:text-lg max-w-3xl text-justify"
+        >
+          Destaco um artigo intitulado "Qual a importância da pesquisa de
+          satisfação? 6 dicas para criar uma", elaborado pela empresa Zendesk,
+          que oferece uma abordagem abrangente sobre a relação entre satisfação
+          do cliente e objetivos estratégicos das organizações. A pesquisa
+          destacou pontos cruciais, como retenção e fidelização, qualidade
+          percebida, vínculo digital, impacto nos resultados financeiros e
+          adaptação contínua (Zendesk, 2023).
+        </p>
+        <p
+          class="indent-12 mb-4 text-zinc-500 lg:text-lg max-w-3xl text-justify"
+        >
+          No que tange à retenção e fidelização, a análise de satisfação do
+          cliente emerge como fator determinante. Clientes satisfeitos tendem a
+          permanecer fiéis à marca, resultando em benefícios financeiros a longo
+          prazo para as empresas.
+        </p>
+        <p
+          class="indent-12 mb-4 text-zinc-500 lg:text-lg max-w-3xl text-justify"
+        >
+          Outro aspecto explorado é a qualidade percebida, que demonstra
+          influenciar diretamente nos níveis de satisfação do cliente. A
+          percepção da qualidade dos produtos ou serviços destaca-se como um
+          ponto-chave, enfatizando a importância de estratégias que aprimorem
+          essa percepção.
+        </p>
+        <p
+          class="indent-12 mb-4 text-zinc-500 lg:text-lg max-w-3xl text-justify"
+        >
+          Considerando as transformações digitais, o artigo ressalta a
+          relevância de incorporar ferramentas digitais na análise de satisfação
+          do cliente. O uso de plataformas online, redes sociais e métodos
+          inovadores de coleta de dados são apontados como essenciais para uma
+          compreensão abrangente do feedback do cliente na era digital.
+        </p>
+        <p
+          class="indent-12 mb-4 text-zinc-500 lg:text-lg max-w-3xl text-justify"
+        >
+          Uma conclusão importante é a correlação positiva entre satisfação do
+          cliente e resultados financeiros. Empresas que investem na análise e
+          melhoria contínua da satisfação do cliente tendem a experimentar maior
+          lucratividade e crescimento sustentável.
+        </p>
+        <p
+          class="indent-12 mb-4 text-zinc-500 lg:text-lg max-w-3xl text-justify"
+        >
+          Além disso, destaca-se a necessidade de uma abordagem dinâmica na
+          análise de satisfação do cliente. A capacidade de adaptação contínua,
+          fundamentada em dados em tempo real, é identificada como um fator
+          crítico para o sucesso a longo prazo.
+        </p>
+        <p
+          class="indent-12 mb-4 text-zinc-500 lg:text-lg max-w-3xl text-justify"
+        >
+          Esse referencial teórico, baseado no artigo mencionado, proporciona
+          uma base sólida para compreender a importância estratégica da análise
+          de satisfação do cliente. Ele serve como um guia valioso para
+          organizações que buscam não apenas atender, mas superar as
+          expectativas de seus clientes na era digital, promovendo relações
+          sustentáveis e mutuamente benéficas.
+        </p>
+      </section>
+
+      <section class="px-3 lg:px-40" id="8">
+        <h2 class="text-2xl lg:text-3xl mb-6 text-zinc-800">Metodologia</h2>
+        <p
+          class="indent-12 mb-4 text-zinc-500 lg:text-lg max-w-3xl text-justify"
+        >
+          A metodologia delineada neste projeto acadêmico visa oferecer suporte
+          ao desenvolvimento de uma solução eficiente para pequenas e médias
+          empresas, focada no controle, registro e visualização das informações
+          relacionadas à satisfação do cliente. O propósito central é fornecer
+          insights e diretrizes para a concepção de uma ferramenta digital
+          inovadora, com ênfase no método de pesquisa e análise mais eficiente
+          para esse contexto específico.
+        </p>
+      </section>
+
+      <section class="px-3 lg:px-40" id="10">
+        <h2 class="text-2xl lg:text-3xl mb-6 text-zinc-800">
+          Considerações finais
+        </h2>
+        <p
+          class="indent-12 mb-4 text-zinc-500 lg:text-lg max-w-3xl text-justify"
+        >
+          Ao concluir este projeto de pesquisa dedicado ao desenvolvimento de
+          uma solução eficiente para o controle, registro e visualização das
+          informações relacionadas à satisfação do cliente, é possível destacar
+          diversas considerações que orientaram e moldaram nossas diretrizes.
+          Esta seção busca sintetizar os principais insights obtidos ao longo do
+          processo, refletindo sobre a relevância do trabalho desenvolvido e
+          delineando possíveis caminhos futuros.
+        </p>
+        <h3 class="mb-2 font-medium text-zinc-700 block text-lg mt-14">
+          Foco nas Pequenas e Médias Empresas:
+        </h3>
+        <p
+          class="indent-12 mb-4 text-zinc-500 lg:text-lg max-w-3xl text-justify"
+        >
+          Durante a pesquisa de mercado, identificamos uma lacuna significativa
+          nos estudos e ferramentas existentes, que majoritariamente se
+          concentram em grandes empresas. A constatação de que pequenos
+          empreendedores carecem de soluções adaptadas às suas realidades
+          específicas foi um ponto-chave. Isso reforça a importância de
+          direcionar esforços para o desenvolvimento de ferramentas acessíveis e
+          eficazes, alinhadas às necessidades desses segmentos.
+        </p>
+        <h3 class="mb-2 font-medium text-zinc-700 block text-lg mt-14">
+          Protótipo da Plataforma:
+        </h3>
+        <p
+          class="indent-12 mb-4 text-zinc-500 lg:text-lg max-w-3xl text-justify"
+        >
+          A idealização do protótipo da plataforma representou um marco
+          significativo no projeto. Visando atender às demandas específicas dos
+          pequenos empreendedores, concebemos uma interface intuitiva e
+          funcional, tornando a gestão da satisfação do cliente mais acessível
+          para esse público. Adicionalmente, consideramos que a inclusão de
+          imagens e elementos visuais é crucial para facilitar a compreensão e
+          utilização da plataforma.
+        </p>
+        <div
+          class="flex flex-col gap-2 items-center justify-center max-w-3xl py-20"
+        >
+          <img
+            alt="protótipo da plataforma"
+            src="./assets/app-overview.webp"
+            class="lg:max-w-2xl max-w-full"
+          />
+          <span class="text-xs text-zinc-500 text-center"
+            >Protótipo da página inicial da plataforma, apresentando um gráfico
+            do histórico de avaliações da empresa.
+          </span>
+        </div>
+        <h3 class="mb-2 font-medium text-zinc-700 block text-lg mt-14">
+          Compromisso com a Inovação e Sustentabilidade:
+        </h3>
+        <p
+          class="indent-12 mb-4 text-zinc-500 lg:text-lg max-w-3xl text-justify"
+        >
+          Ao finalizar este trabalho, reiteramos o compromisso com a busca por
+          soluções inovadoras e acessíveis, visando contribuir efetivamente para
+          a gestão da satisfação do cliente em PMEs. A integração de tecnologias
+          avançadas, aliada a uma abordagem centrada no usuário, representa um
+          passo significativo em direção ao fortalecimento desses
+          empreendimentos e à promoção do crescimento sustentável.
+        </p>
+      </section>
+
+      <section class="px-3 lg:px-40" id="11">
+        <h2 class="text-2xl lg:text-3xl mb-6 text-zinc-800">Referências</h2>
+      </section>
+    </div>
+  </body>
+</html>
