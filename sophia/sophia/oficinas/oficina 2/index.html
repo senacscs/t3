@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oficina Grid</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <style> 
+    body{ 
+    /* Essa parte faz todos os elementos terem isso como base */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    /* fundo */
+    background-color: rgb(77, 72, 71) ;
+}
+#title {
+    /* alinhar o titulo e aplicar tamanho */
+    text-align: center;
+    font-size: 40px;
+}
+#name {
+    /* msm coisa com o subtitulo */
+    text-align: end;
+    font-size: 20px;
+}
+.container {
+    /* tamanho maximo da div */
+    max-width: 60vw;
+    /* colocar o grid */
+    display: grid;
+    /* alinhar o conteudo no centro */
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    /* colocar no meio da pag */
+    margin-left: auto;
+    margin-right: auto;
+    /* arredondar a borda e colocar sombra */
+    border-radius: 20px;
+    box-shadow: 3px 2px 4px rgb(0,0,0,0.5);
+    /* adicionar margem */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.imagens img {
+    /* altura maxima */
+    max-height: 15vw;
+}
+.imagens {
+    /* colocar grid nas geladeira */
+    display: grid;
+    /* configurar 2 colunas */
+    grid-template-columns: auto auto;
+    text-align: center;
+    /* colocar um espaçamento entre as grids */
+    gap: 20px;
+}
+.imagens div {
+    padding: 10px;
+    background-color: rgb(196, 196, 196);
+    border-radius: 20px;
+    font-size: 10px;
+}
+    </style>
+    <div class="container">
+            <h1 id="title">tuêzada bioo</h1>
+        <div class="imagens">
+            <div class="2portas">
+                <h1>tuê é um rapper nascido no dia 11 de outubro de 1993</h1>
+                <img src="https://i.pinimg.com/236x/5b/55/c5/5b55c59c9a1b8cd15abfe004db024d0a.jpg">
+            </div>
+            <div class="1portas">
+                <h1>tuê faz parte da 30</h1>
+                <img src="https://i.pinimg.com/564x/df/d0/4a/dfd04a66d9539c6c9e7c5a5d1310f736.jpg">
+            </div>
+            <div class="3portas">
+                <h1>tuê nasceu em Fortaleza, Ceará</h1>
+                <img src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.2991656:1600801265/matue.jpg?f=4x3&h=314&q=0.8&w=420&$p$f$h$q$w=deaa445">
+            </div>
+            <div class="freezer">
+                <h1>tuê tem 29 anos</h1>
+                <img src="https://64.media.tumblr.com/a7c9aaeba5ab51a373ae755defd9d1af/b9fd67147abe9645-be/s400x600/489221311bb2f2085d71a7a0850f4df739e92393.png">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
