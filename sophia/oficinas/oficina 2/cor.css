@@ -1,0 +1,58 @@
+body{ 
+    /* Essa parte faz todos os elementos terem isso como base */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    /* fundo */
+    background-color: rgb(77, 72, 71) ;
+}
+#title {
+    /* alinhar o titulo e aplicar tamanho */
+    text-align: center;
+    font-size: 40px;
+}
+#name {
+    /* msm coisa com o subtitulo */
+    text-align: end;
+    font-size: 20px;
+}
+.container {
+    /* tamanho maximo da div */
+    max-width: 60vw;
+    /* colocar o grid */
+    display: grid;
+    /* alinhar o conteudo no centro */
+    justify-content: center;
+    background-color: rgb(16, 116, 167);
+    /* colocar no meio da pag */
+    margin-left: auto;
+    margin-right: auto;
+    /* arredondar a borda e colocar sombra */
+    border-radius: 20px;
+    box-shadow: 3px 2px 4px rgb(0,0,0,0.5);
+    /* adicionar margem */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.imagens img {
+    /* altura maxima */
+    max-height: 15vw;
+}
+.imagens {
+    /* colocar grid nas geladeira */
+    display: grid;
+    /* configurar 2 colunas */
+    grid-template-columns: auto auto;
+    text-align: center;
+    /* colocar um espaçamento entre as grids */
+    gap: 20px;
+}
+.imagens div {
+    padding: 10px;
+    background-color: rgb(19, 92, 117);
+    border-radius: 20px;
+    font-size: 10px;
+}
