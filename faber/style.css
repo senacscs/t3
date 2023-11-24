@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0); /* Vermelho puro em RGB */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Para centralizar verticalmente */
+}
+
+/* Restante do seu CSS */
+
+h1, h2, a, p, li, b, ul {
+    text-align: center;
+    color: rgb(255, 255, 255); /* Corrigi a cor */
+}
+
+li {
+    list-style-type: none;
+    color: rgb(65, 255, 12);
+}
+
+a {
+    color: rgb(2, 238, 255);
+}
+
+p {
+    color: white;
+}
+
+/* Restante do seu CSS */
