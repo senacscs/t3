@@ -56,7 +56,7 @@
     padding: 0 16px;
   }
 
-  @media screen and (min-width: 350px){
+  @media screen and (max-width: 460px){
     main{
       width: 830px;
       position: absolute;
