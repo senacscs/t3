@@ -1,0 +1,307 @@
+div {
+  border: white 0px solid;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .scroll-bar {
+    background-color: transparent;
+    overflow-y: scroll;
+  }
+  
+  .scroll-bar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body {
+    background-color: black;
+  }
+
+  @font-face {
+    font-family: 'Prompt';
+    src: url('Prompt-Regular.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+    @font-face {
+      font-family: 'Arvo';
+      src: url('Arvo-Regular.ttf') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      }
+      @font-face {
+        font-family: 'Arvo Italic';
+        src: url('Arvo-Italic.ttf') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
+
+  .start h1 {
+    font-size: 35px;
+    color: rgb(247, 247, 79);
+    margin-top: 200px;
+    margin-left: 40px;
+    font-family: 'Arvo';
+  }
+
+  .start p {
+    font-size: 21px;
+    color: rgb(254, 254, 43);
+    margin-top: 20px;
+    margin-left: 50px;
+    font-family: 'Arvo Italic';
+  }
+  
+  .nav {
+  background-color: rgb(30, 30, 30);
+  margin-top: -72px;
+  height: 80px;
+  margin-left: -8px;
+  margin-right: -8px;
+  }
+
+  header nav ul {
+  list-style: none;
+  text-align: left;
+  }
+  
+  header nav ul li {
+  display: inline;
+  }
+  
+  header nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #9f03cf;
+  font-family: 'Prompt';
+  margin-top: 15px;
+  font-size: 25px;
+  padding: 6px 20px;
+  display: inline-block;
+  }
+  
+  header nav ul li a:hover {
+  color: #9f03cf;
+  }
+  
+  nav a {
+  color: #9f03cf;
+  text-decoration: none;
+  padding: 5px;
+  margin: 5px;
+  font-size: 25pt;
+  position: relative;
+  }
+  
+  nav a::after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  background-color:#730196;
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  right: 11%;
+  transition: 0.3s ease-in-out;
+  }
+  
+  nav a:hover::after {
+  width: 90%;
+  }
+  
+  li {
+  list-style-type: none;
+  }
+  
+  .opac {
+  opacity: 0;
+  font-size: 1px;
+  }
+
+  .problema {
+    margin-top: 100px;
+    padding-bottom: 50px;
+  }
+  .problema hr {
+    width: 90%;
+    height: 2.5px;
+    border-color: #810f6e;
+    margin: auto;
+    background-color: #a01388;
+  }
+
+  .problema h1 {
+    color: rgb(230, 51, 105);
+    font-size: 32px;
+    font-family: 'Prompt';
+    padding-top: 40px;
+    padding-left: 120px;
+    margin-top: 50px;
+  }
+  .problema p {
+    color: rgb(254, 254, 43);
+    font-size: 23px;
+    font-family: 'Arvo';
+    padding-top: 20px;
+    padding-left: 140px;
+    margin-bottom: 150px;
+  }
+
+  .objetivos {
+    background-color: rgb(10, 10, 10);
+    width: 90%;
+    border-radius: 10px;
+    margin-top: 200px;
+    padding-bottom: 50px;
+    margin: auto;
+  }
+
+  .objetivos h1 {
+    color: rgb(230, 51, 105);
+    font-size: 32px;
+    font-family: 'Prompt';
+    padding-left: 80px;
+  }
+
+  .objetivos h2 {
+    color: #a01388;
+    font-size: 24px;
+    font-family: 'Arvo Italic';
+    padding-top: 30px;
+    padding-left: 90px;
+  }
+
+  .objetivos p {
+    color: rgb(254, 254, 43);
+    font-size: 23px;
+    font-family: 'Arvo';
+    padding-top: 20px;
+    padding-left: 120px;
+    max-width: 65%;
+  }
+
+  .metodologia {
+    padding-bottom: 50px;
+  }
+
+  .metodologia h1 {
+    color: rgb(230, 51, 105);
+    font-size: 32px;
+    font-family: 'Prompt';
+    padding-left: 120px;
+  }
+  .metodologia p {
+    color: rgb(254, 254, 43);
+    font-size: 23px;
+    font-family: 'Arvo';
+    padding-left: 140px;
+    margin-bottom: 150px;
+    padding-right: 145px;
+    max-width: 80%;
+  }
+
+.solucao {
+    background-color: rgb(10, 10, 10);
+    width: 90%;
+    border-radius: 10px;
+    margin-top: 200px;
+    padding-bottom: 50px;
+    margin: auto;
+  }
+
+  .solucao h1 {
+    color: rgb(230, 51, 105);
+    font-size: 32px;
+    font-family: 'Prompt';
+    padding-top: 40px;
+    padding-left: 80px;
+  }
+
+  .solucao p {
+    color: rgb(254, 254, 43);
+    font-size: 23px;
+    font-family: 'Arvo';
+    padding-top: 20px;
+    padding-left: 120px;
+    max-width: 90%;
+  }
+
+  .solucao h1 {
+    color: rgb(230, 51, 105);
+    font-size: 32px;
+    font-family: 'Prompt';
+    padding-top: 40px;
+    padding-left: 80px;
+  }
+
+  .resultados {
+    padding-bottom: 50px;
+  }
+
+  .resultados h1 {
+    color: rgb(230, 51, 105);
+    font-size: 32px;
+    font-family: 'Prompt';
+    padding-top: 50px;
+    padding-left: 120px;
+    margin-top: 50px;
+  }
+  .resultados p {
+    color: rgb(254, 254, 43);
+    font-size: 23px;
+    font-family: 'Arvo';
+    padding-top: 20px;
+    padding-left: 140px;
+    margin-bottom: 70px;
+    padding-right: 145px;
+  }
+
+  .link-resultados {
+    color: #a01388;
+    font-size: 23px;
+    font-family: 'Arvo';
+  }
+
+  #animated-link {
+    font-size: 20px;
+    text-decoration: none;
+    color: #e90d3c;
+    transition: color 0.5s ease-in-out; /* Adiciona uma transição suave de cor */
+  }
+
+  .referências {
+    margin-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .referências h1 {
+    color: rgb(230, 51, 105);
+    font-size: 32px;
+    font-family: 'Prompt';
+    padding-top: 50px;
+    padding-left: 50px;
+    margin-top: 50px;
+  }
+
+  .resultados-a {
+    font-size: 23px;
+    font-family: 'Arvo Italic';
+    color: rgb(211, 44, 141);
+  }
+  
+  a {
+    font-size: 20px;
+    font-family: 'Arvo Italic';
+    color: rgb(211, 194, 44);
+  }
+
+  .imgs {
+    display: flex;
+  }
+  .imgs img {
+    width: 22%;
+    margin: auto;
+    border-radius: 20px;
+  }

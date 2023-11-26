@@ -1,0 +1,85 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .scroll-bar {
+    background-color: transparent;
+    overflow-y: scroll;
+  }
+  
+  .scroll-bar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body {
+    background-color: black;
+  }
+
+  @font-face {
+    font-family: 'Prompt';
+    src: url('Prompt-Regular.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+    @font-face {
+      font-family: 'Arvo';
+      src: url('Arvo-Regular.ttf') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      }
+      @font-face {
+        font-family: 'Arvo Italic';
+        src: url('Arvo-Italic.ttf') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
+
+    h1 {
+        color: rgb(230, 51, 105);
+        font-size: 35px;
+        font-family: 'Prompt';
+        padding-top: 100px;
+        padding-left: 120px;
+        margin-top: 90px;
+        padding-bottom: 100px;
+    }
+
+    h2 {
+        color: #a01388;
+        font-size: 24px;
+        font-family: 'Arvo Italic';
+        padding-top: 30px;
+        padding-left: 90px;
+        max-width: 90%;
+    }
+
+    p {
+        color: rgb(254, 254, 43);
+        font-size: 23px;
+        font-family: 'Arvo';
+        padding-top: 20px;
+        padding-left: 120px;
+        padding-bottom: 70px;
+        max-width: 70%;
+    }
+
+    img {
+        width: 38%;
+        float: inline-start;
+        margin-left: 200px;
+        margin-right: 50px;
+        border-radius: 20px;
+    }
+
+    h3 {
+        color: rgb(224, 44, 149);
+        font-size: 23px;
+        font-family: 'Arvo';
+        padding-left: 50px;
+    }
+
+    a {
+        font-size: 23px;
+        font-family: 'Arvo Italic';
+        color: rgb(150, 29, 99);
+    }
