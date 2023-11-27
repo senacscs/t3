@@ -113,7 +113,14 @@
     #contas img {
         height: 50px;
         width: auto;
-}
+    }
+    #cur {
+        text-align: center;
+    }
+    #cur a{
+        text-decoration: none;
+        color: #f9aa49;
+    }
 
 @media only screen and (max-width:720px) {
     * {
