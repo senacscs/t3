@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Vollkorn:wght@400;700&display=swap');
+
+/*  font-family: 'Lato', sans-serif;
+    font-family: 'Vollkorn', serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e6e6e6;
+}
+
+.sidebar {
+    z-index: 1;
+    width: 25vw;
+    height: 100vh;
+    background-color: #003249;
+    padding: 20px;
+}
+
+/* PERFIL */
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(203, 219, 220);
+    padding: 0 20px;
+}
+
+.perfil img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.perfil h1 {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 10px;
+    font-size: 1.4vw;
+}
+
+.perfil p {
+    font-size: 1vw;
+    font-family: 'Lato', sans-serif;
+}
+
+hr {
+    border: 1px solid #ccdbdc4a;
+    width: 21vw;
+    margin: 25px auto;
+}
+
+/* CONTATO */
+
+.contato {
+    padding: 0 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contato h2 {
+    font-size: 1.4vw;
+    font-family: 'Lato', sans-serif;
+    color: #149ac6;
+}
+
+.cada-contato:first-of-type {
+    margin-top: 20px;
+}
+
+.cada-contato {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.cada-contato a {
+    margin-left: 15px;
+    font-family: 'Lato', sans-serif;
+    color: #ccdbdc;
+    font-size: 1vw;
+    transition: .3s;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.cada-contato a:hover {
+    color: #007ea7;
+    transform: scale(105%);
+}
+
+/* FORMACAO */
+
+.formacao {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    color: #ccdbdc;
+}
+
+.formacao h2 {
+    font-size: 1.4vw;
+    font-family: 'Lato', sans-serif;
+    color: #149ac6;
+}
+
+.formacao p:first-of-type {
+    margin-top: 20px;
+}
+
+.formacao p {
+    font-size: 1vw;
+    margin-top: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+/* IDIOMAS */
+
+.idiomas {
+    padding: 0 20px;
+}
+
+.idiomas h2 {
+    color: #149ac6;
+    font-size: 1.4vw;
+    font-family: 'Lato', sans-serif;
+}
+
+.idiomas p {
+    font-size: 1vw;
+    font-family: 'Lato', sans-serif;
+    color: #ccdbdc;
+    margin-top: 20px;
+}
+
+/* CORES
+
+#003249 | #007ea7 | #80ced7 | #9ad1d4 | #ccdbdc
+
+*/
