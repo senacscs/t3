@@ -115,3 +115,12 @@ a {
 a:hover {
     color: rgb(186, 88, 186);
 }
+
+.carta {
+text-align:center;
+justify-content: center;
+align-items: center;
+font-size:23px;
+font-family: 'Courier New', Courier, monospace";
+
+}
