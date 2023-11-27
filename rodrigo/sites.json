@@ -83,5 +83,11 @@
     "text": "Site do projeto de PP da nossa startup",
     "link": "./Projeto"
   }
-
+  {
+    "title": "Currículo",
+    "subject": "PP/Técnico",
+    "date": "27/11/23",
+    "text": "O site que contém o meu curriculo feito durante 30 minutos.",
+    "link": "./currisculo"
+  },
 ]
