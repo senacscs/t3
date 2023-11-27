@@ -1,0 +1,136 @@
+
+
+body {
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'VarelaRound';
+    src: url('VarelaRound-Regular.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    .header {
+        display: flex;
+    }
+
+h1 {
+    margin-top: 150px;
+    font-size: 32px;
+    color: rgb(219, 23, 49);
+    font-family: 'VarelaRound';
+    padding-left: 60px;
+    max-width: 70%;
+    margin-bottom: 20px;
+}
+
+h5 {
+    font-size: 27px;
+    color: rgb(236, 69, 91);
+    font-family: 'VarelaRound';
+    margin-bottom: 200px;
+    padding-left: 60px;
+    max-width: 65%;
+}
+
+hr {
+  background-color: #e40026f5;
+  height: 4px;
+  width: 95%;
+  margin-bottom: 80px;
+  border-color: #000000;
+}
+
+.curriculo {
+background: rgb(10, 10, 10);
+background-size: cover;
+margin-left: -8px;
+margin-right: -8px;
+margin-bottom: -8px;
+padding-bottom: 50px;
+padding-top: 40px;
+box-shadow: 0 0 20px 0 #000000;
+}
+
+.curriculo h2 {
+    font-family: 'Consolas';
+    color: rgb(215, 45, 45);
+    padding-left: 30px;
+    font-size: 29px;
+}
+
+.curriculo h3 {
+    font-family: 'Consolas';
+    color: rgb(240, 240, 100);
+    padding-left: 50px;
+    font-size: 25px;
+    max-width: 85%;
+    text-align: justify;
+}
+
+h4 {
+    font-family: 'Consolas';
+    color: rgb(240, 240, 100);
+    padding-left: 50px;
+    font-size: 25px;
+    max-width: 85%;
+    text-align: justify;
+    margin-top: 70px;
+}
+
+p {
+    font-family: 'Consolas';
+    color: rgb(240, 240, 100);
+    padding-left: 50px;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+.Index {
+    font-family: 'Consolas';
+    color: rgb(240, 240, 100);
+    padding-left: 25px;
+    font-size: 20px;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+.curriculo ul  {
+    font-family: 'Consolas';
+    color: rgb(240, 240, 100);
+    padding-left: 50px;
+    font-size: 23px;
+}
+
+.ferramentas {
+    display: flex;
+    margin-left: 25%;
+}
+.gpt {
+    width: 120px;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-top: 25px;
+    margin-left: 30px;
+}
+.fcc {
+    width: 250px;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.me {
+    width: 200px;
+    border-radius: 100px;
+    max-height: 200px;
+    margin-left: 550px;
+}
+
+.icons {
+    margin-top: -50px;
+    width: 60px;
+    border-radius: 110px;
+    margin-left: 70px;
+}
+
