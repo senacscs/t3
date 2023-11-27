@@ -89,6 +89,14 @@ const activitiesStorage = [
     url: '/tito/projeto/',
     instructions: "Adaptação do projeto de pesquisa Análise de Satisfação de Clientes."
   },
+  {
+    name: 'Currículo',
+    subject: 'Projeto Profissional',
+    image: 'curriculo.svg',
+    date: new Date(2023, 11, 27),
+    url: '/tito/curriculo/',
+    instructions: "Currículo feito com tecnologias front-end."
+  },
 ];
 
 const activitiesElement = document.getElementById("activities");
