@@ -143,6 +143,7 @@ p {
 img {
     /* altura maxima */
     max-height: 20vw;
+    border-radius: 30px;
 }
 
 nav {
