@@ -196,7 +196,15 @@ inputElement.addEventListener("input", (e) => {
     let inputed = e.target.value.toLowerCase()
 
     if(inputed == 'in the end'){
-        const video = document.querySelector('video')
+        const video = document.getElementById('link')
+
+        table.style.display = 'none'
+        infos.style.display = 'none'
+        video.style.display = 'block'
+        video.play()
+    }
+        if(inputed == 'josh'){
+        const josh = document.getElementById('josh')
 
         table.style.display = 'none'
         infos.style.display = 'none'
