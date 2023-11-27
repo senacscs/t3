@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+header {
+    background-color: #0077b5;
+    color: white;
+    padding: 20px;
+    background-image: url(assets/wwwwwwwwwwwwww.jpg);
+}
+
+section {
+    max-width: 315px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #000000;
+}
+
+h2 {
+    border-bottom: 2px solid #000000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.imgp {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.text {
+    display: flex;
+}
+
+.info {
+    display: flex;
+}
+
+.index {
+    width: 315px;
+    height: 170px;
+    border: 5px solid black;
+    animation: borderAnimation 2s infinite;
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: black;
+    }
+    50% {
+        border-color: rgb(154, 154, 154);
+    }
+    100% {
+        border-color: rgb(0, 0, 0);
+    }
+}
+
+.updown {
+    animation: textAnimation 2s infinite;
+}
+
+@keyframes textAnimation {
+    0%, 50%, 100% {
+        transform: translateY(0);
+    }
+    25%, 75% {
+        transform: translateY(-10px);
+    }
+}
+
+.access {
+    display: flex;
+}
+
+.github, .linkedin {
+    width: 50px;
+    height: 50px;
+}
+
+.linkedin {
+    margin-left: 10px;
+}
