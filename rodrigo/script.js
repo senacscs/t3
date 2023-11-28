@@ -207,9 +207,9 @@ inputElement.addEventListener("input", (e) => {
         const josh = document.getElementById('josh')
 
         table.style.display = 'none'
-        infos.style.display = 'none'
-        video.style.display = 'block'
-        video.play()
+        infos.style.display = 'none
+        josh.style.display = 'block'
+        josh.play()
     }
 
     lines.forEach((tr) => {
