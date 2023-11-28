@@ -21,6 +21,10 @@ h1{
      margin-bottom: -30px;
    }
 
+h2{
+  font-size: 40px;
+  padding-left: 20px;
+}
   
 .container-fluid{
   width: 100%;
@@ -30,16 +34,19 @@ h1{
   margin-left: auto;
 }
 
-   .resume-section {
-    display: flex;
-    align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 4rem;
-    padding-bottom: 5rem;
-    max-width: 75rem;
-  }
-
+section.resume-section {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  max-width: 75rem;
+}
+section.resume-section .resume-section-content {
+  width: 100%;
+}
+  
    .font {
     font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     text-transform: uppercase;
@@ -64,6 +71,7 @@ h1{
     font-size: 0.4em;
     display: block;
   }
+
   .menu {
     background: #DA70D6;
     height: 100vh;
