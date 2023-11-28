@@ -1,0 +1,33 @@
+/* * {
+    margin: 0 auto;
+    padding: 0 auto;
+} */
+
+html,body {
+    margin:0;
+    padding:0;
+    height:95%;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+}
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom:0;
+    /* left:0; */
+    width:97%;
+
+    position:absolute;
+
+}
