@@ -204,12 +204,14 @@ inputElement.addEventListener("input", (e) => {
         video.play()
     }
         if(inputed == 'josh'){
-        const josh = document.getElementById('josh')
+        const joshElement = document.getElementById('josh');
 
-        table.style.display = 'none'
-        infos.style.display = 'none
-        josh.style.display = 'block'
-        josh.play()
+        table.style.display = 'none';
+        infos.style.display = 'none';
+        joshElement.style.display = 'block';
+        
+        // Play the video
+        joshElement.play();
     }
 
     lines.forEach((tr) => {
