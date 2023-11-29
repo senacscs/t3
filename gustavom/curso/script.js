@@ -6,7 +6,7 @@ function validarFormulario() {
     var question4 = document.getElementById('question4').value;
     var question5 = document.getElementById('question5').value;
 
-    var nomesValidos = ['Ariane', 'Bernardo', 'Brayan', 'Caio', 'Caroline dos Santos', 'Caroline Nepomoceno', 'Chaiane', 'Douglas', 'Eloisa', 'Glória', 'Joana Kersting', 'Joana Lauschner', 'João', 'Laura', 'Leonardo', 'Luiza', 'Manuella', 'Mariana', 'Mirella', 'Raíssa', 'Roberto', 'Tamires', 'Théo', 'Thiago Araujo', 'Thiago Costa', 'Victhor', 'Vitória', 'Yasmim'];
+    var nomesValidos = ['Ariane', 'Brayan', 'Caio', 'Caroline dos Santos', 'Caroline Nepomoceno', 'Chaiane', 'Douglas', 'Eloisa', 'Glória', 'Joana Kersting', 'Joana Lauschner', 'João', 'Leonardo', 'Luiza', 'Manuella', 'Mariana', 'Mirella', 'Raíssa', 'Roberto', 'Tamires', 'Théo', 'Thiago Araujo', 'Thiago Costa', 'Victhor', 'Vitória', 'Yasmim'];
 
     if(nomesValidos.includes(name)) {
     }
