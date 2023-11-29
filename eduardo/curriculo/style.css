@@ -11,6 +11,7 @@
 
 body {
     background-color: #e6e6e6;
+    display: flex;
 }
 
 .sidebar {
@@ -137,6 +138,16 @@ hr {
     font-family: 'Lato', sans-serif;
     color: #ccdbdc;
     margin-top: 20px;
+}
+
+/* MAIN */
+
+main {
+    width: 75vw;
+    height: 100vh;
+    background-color: #e6e6e6;
+    padding: 40px;
+
 }
 
 /* CORES
