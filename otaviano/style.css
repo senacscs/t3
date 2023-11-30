@@ -48,3 +48,10 @@ body {
        transform: scaleX(1);
        transform-origin: left;
    }
+   h1 {
+    overflow: hidden; 
+    white-space: nowrap; 
+    margin: 0;
+    font-size: 24px;
+    border-right: 1px solid #000; 
+ }
