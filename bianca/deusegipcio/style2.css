@@ -1,0 +1,91 @@
+body {
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'CinzelDecorative';
+    src: url('CinzelDecorative-Black.ttf') format('woff2'),
+         url('CinzelDecorative-Bold.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  h1 {
+    text-align: center;
+    padding: 40px;
+    font-family: 'CinzelDecorative';
+    font-size: 70px;
+    color: goldenrod;
+    -webkit-text-stroke: 1.2px black;
+    animation: colorChange2 1.5s infinite alternate;
+  }
+
+  @keyframes colorChange2 {
+    0% {
+        color: rgb(253, 225, 130);
+    }
+    100% {
+        color: rgb(223, 184, 85);
+    }
+  }
+
+  .box-forms {
+    width: 65%;
+    height: min-content;
+    background-color: rgba(255, 194, 103, 0.795);
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 35px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 50px 0 rgb(68, 68, 68);
+    border-radius: 50px;
+  }
+
+  h2 {
+    font-size: 25px;
+    font-family: 'CinzelDecorative';
+    color: black;
+    padding-top: 25px;
+  }
+
+  p {
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    
+  }
+
+  label {
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+  }
+
+  input {
+    width: 40px;
+  }
+
+  .h2-last {
+    font-size: 40px;
+    padding-bottom: 30px;
+  }
+  .p-last {
+    font-size: 30px;
+    padding-bottom: 40px;
+  }
+
+  .input-last {
+    width: 60%;
+    height: 50px;
+    font-size: 15px;
+    padding-left: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    margin-bottom: 25px;
+  }
+
+
+
+
