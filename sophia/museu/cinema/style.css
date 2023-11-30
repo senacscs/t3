@@ -1,0 +1,284 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+  font-family: "Lato";
+}
+
+.person-carousel .container .title h2 {
+  color: #390E6E;
+  background: -webkit-linear-gradient(left, #7323DC, #7B00B9);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Montserrat";
+  font-size: 0px;
+  font-weight: 800;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 60px;
+  align-items: center;
+}
+.person-carousel .container .inner--carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.person-carousel .container .inner--carousel .item--carousel {
+  width: 28.3%;
+  margin: 2.5% 2.5% 100px 2.5%;
+  background: #fff;
+  box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.18);
+  min-height: 320px;
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  transform: scale(1);
+  transition: 0.25s;
+  cursor: pointer;
+}
+.person-carousel .container .inner--carousel .item--carousel.active {
+  box-shadow: 1px 1px 18px rgba(0, 0, 0, 0.22);
+  transform: scale(1.12);
+  transition: 0.4s;
+}
+.person-carousel .container .inner--carousel .item--carousel.hideme {
+  transform: translateX(-100%);
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.5s all, 0.9s opacity;
+}
+.person-carousel .container .inner--carousel .item--carousel.showme {
+  transform: translateX(0%);
+  overflow: visible;
+  opacity: 1;
+  transition: 0s all;
+}
+.person-carousel .container .inner--carousel .item--carousel.redux {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  transition: 0s;
+}
+.person-carousel .container .inner--carousel .item--carousel .inner-item--carousel .image {
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  margin: auto auto 25px auto;
+  background: url("https://placeimg.com/350/350/animals") no-repeat center/cover;
+}
+.person-carousel .container .inner--carousel .item--carousel .inner-item--carousel .name {
+  width: 100%;
+  color: #390E6E;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 22px;
+  text-align: center;
+}
+.person-carousel .container .inner--carousel .item--carousel .inner-item--carousel .job {
+  width: 100%;
+  color: #B3B3B3;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.person-carousel .container .inner--carousel .item--carousel .inner-item--carousel .info {
+  color: #7D7D7D;
+  font-family: "Lato";
+  font-size: 14px;
+  line-height: 23px;
+  text-align: center;
+}
+.person-carousel .container .indicators--carousel {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.person-carousel .container .indicators--carousel.only-mobile {
+  display: none;
+}
+.person-carousel .container .indicators--carousel .inner-indicators--carousel span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0 4px;
+  border-radius: 100%;
+  background: #ddd;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.person-carousel .container .indicators--carousel .inner-indicators--carousel span.active {
+  background: #390E6E;
+  transition: 0.4s;
+}
+
+a{
+  color: #B3B3B3;
+}
+ 
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .person-carousel {
+    padding: 60px 0;
+    text-align: center;
+
+  }
+  .person-carousel .container .title h2 {
+    color: #390E6E;
+    background: -webkit-linear-gradient(left, #7323DC, #7B00B9);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Montserrat";
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .person-carousel .container .inner--carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+    height: 380px;
+    position: relative;
+    text-align: center;
+  }
+  .person-carousel .container .inner--carousel .item--carousel {
+    width: 100%;
+    margin: 2.5% 2.5% 100px 2.5%;
+    background: #fff;
+    box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.18);
+    min-height: 320px;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    transform: scale(1);
+    transition: 0.25s;
+    cursor: pointer;
+  }
+  .person-carousel .container .inner--carousel .item--carousel.active {
+    transform: scale(1);
+  }
+  .person-carousel .container .inner--carousel .item--carousel.hideme {
+    transform: translateX(-100%);
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.5s all, 0.9s opacity;
+  }
+  .person-carousel .container .inner--carousel .item--carousel.showme {
+    transform: translateX(0%);
+    overflow: visible;
+    opacity: 1;
+    transition: 0s all;
+  }
+  .person-carousel .container .inner--carousel .item--carousel.redux {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    transition: 0s;
+  }
+  .person-carousel .container .inner--carousel .item--carousel .inner-item--carousel .image {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    margin: auto auto 25px auto;
+    background: url("https://placeimg.com/350/350/animals") no-repeat center/cover;
+  }
+  .person-carousel .container .inner--carousel .item--carousel .inner-item--carousel .name {
+    width: 100%;
+    color: #390E6E;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    text-align: center;
+  }
+  .person-carousel .container .inner--carousel .item--carousel .inner-item--carousel .job {
+    width: 100%;
+    color: #B3B3B3;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+  .person-carousel .container .inner--carousel .item--carousel .inner-item--carousel .info {
+    color: #7D7D7D;
+    font-family: "Lato";
+    font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+  }
+  .person-carousel .container .indicators--carousel {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .person-carousel .container .indicators--carousel.only-mobile {
+    display: flex;
+    justify-content: center;
+  }
+  .person-carousel .container .indicators--carousel .inner-indicators--carousel span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 4px;
+    border-radius: 100%;
+    background: #ddd;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+  .person-carousel .container .indicators--carousel .inner-indicators--carousel span.active {
+    background: #390E6E;
+    transition: 0.4s;
+  }
+
+.selfmade{
+  text-align: center;
+}
+  
+ 
+
+
+
+
+}
