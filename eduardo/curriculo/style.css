@@ -146,8 +146,25 @@ main {
     width: 75vw;
     height: 100vh;
     background-color: #e6e6e6;
-    padding: 40px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+main h2 {
+    font-family: 'Vollkorn', serif;
+    font-size: 1.8vw;
+    margin-bottom: 5px;
+}
+
+main p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1vw;
+}
+
+.experiencias, .competencias, .cursos {
+    margin-top: 60px;
 }
 
 /* CORES
