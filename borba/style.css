@@ -4,6 +4,11 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+html {
+    scroll-behavior: smooth ;
+}
+
 body {
     background-color: rgb(155, 153, 153) ;
 }
@@ -20,25 +25,33 @@ h2 a {
     font-size: 1.75em;
 }
 .container {
-    max-width: 50vw;
     display: grid;
     justify-content: center;
-    background-color: rgb(64, 63, 63);
     margin-left: auto;
     margin-right: auto;
-    border-radius: 20px;
     box-shadow: 3px 2px 4px rgb(0,0,0,0.5);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px;
+ 
 }
-.imagens img {
+
+.itens {
+    width: 80%;
+    justify-self: center;
+    background: rgb(73, 73, 88);
+    border: 0.2em solid black;
+    border-radius: 1em; 
+    display: grid;
+    padding: 0.5em;
+    border-top: 0.2em solid black;
+    z-index: 1;
+}
+
+.trabalho img {
     max-height: 7vw;
     border-radius: 7px;
 }
-.imagens {
+.trabalho {
     display: grid;
-    grid-template-columns: auto auto ;
+    grid-template-columns: auto auto auto ;
     text-align: center;
     gap: 2em;
 }
