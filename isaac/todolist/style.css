@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding:  100px 50px;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    gap: 50px;
+}
+
+#posts {
+    width: 400px;
+}
+
+i {
+    cursor: pointer;
+}
+
+#posts div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.options {
+    display: flex;
+    gap: 2vw;
+}
+
+#msg {
+    color: red;
+}
+
+header {
+    background-color: beige;
+    position: fixed;
+    width: 100vw;
+    padding-left: 10px;
+}

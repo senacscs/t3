@@ -137,7 +137,7 @@ h1 {
     width: 20vw;
     border-top-right-radius: 1vw;
     border-top-left-radius: 1vw;
-    border: 3px solid black;
+    border: 0.3vw    solid black;
 }
 
 #trabalho {
@@ -153,7 +153,7 @@ h1 {
     justify-content: space-between;
     border-bottom-left-radius: 1vw;
     border-bottom-right-radius: 1vw;
-    border: 2px solid black;
+    border: 0.2vw solid black;
     align-items: center;
 }
 
@@ -162,6 +162,10 @@ h1 {
     text-decoration: none;
     font-size: 1.5vw;
     transition: 0.5s;
+}
+
+#acessar p {
+    font-size: 0.9vw;
 }
 
 /* #acessar a:hover {
