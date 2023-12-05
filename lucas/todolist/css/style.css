@@ -31,3 +31,6 @@ i {
 #msg {
     color: red;
 }
+h1, label, h3, p, i {
+    color: white;
+}
