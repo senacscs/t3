@@ -1,22 +1,36 @@
-*{
+/* Estilos gerais */
+* {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
-.post{
+
+body {
+    background-color: burlywood;
+}
+
+.post {
     display: flex;
     align-items: center;
     justify-content: start;
 }
+
+.post:hover {
+    background-color: rgb(243, 211, 169);
+}
+
 .post p {
     margin-right: 30px;
 }
-.fa-solid{
+
+.fa-solid {
     padding: 7px;
 }
-#text{
+
+#text {
     width: 14vw;
 }
-#top{
+
+#top {
     z-index: 20;
     position: absolute;
     width: 100vw;
@@ -25,7 +39,57 @@
     justify-content: center;
     align-items: center;
 }
+
 #center {
     background-color: aquamarine;
     padding: 2rem;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
+    gap: 20px;
+}
+
+#right,
+#left {
+    border: 5px solid rgb(141, 117, 85);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#right {
+    height: 60vh;
+}
+
+#posts {
+    overflow-y: scroll;
+    height: 55vh;
+}
+
+/* Estilizar a scrollbar para navegadores Webkit (Chrome, Safari) */
+#posts::-webkit-scrollbar {
+    width: 12px;
+}
+
+#posts::-webkit-scrollbar-thumb {
+    background-color: rgb(141, 117, 85);
+}
+
+/* Estilizar a scrollbar para navegadores Firefox */
+#posts {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(141, 117, 85) burlywood;
+}
+
+/* Estilizar a scrollbar para navegadores Internet Explorer e Edge */
+#posts {
+    -ms-overflow-style: none; /* Esconde a scrollbar padrão do IE e Edge */
+    scrollbar-width: thin;
+    scrollbar-color: rgb(141, 117, 85) burlywood;
+}
+
+#posts:hover::-webkit-scrollbar-thumb {
+    background-color: rgb(141, 117, 85);
 }
