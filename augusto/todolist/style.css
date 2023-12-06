@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: burlywood;
+    background-color: rgb(216, 157, 81);
 }
 
 .post {
@@ -15,7 +15,7 @@ body {
 }
 
 .post:hover {
-    background-color: rgb(243, 211, 169);
+    background-color: rgb(175, 152, 121);
 }
 
 .post p {
@@ -35,13 +35,13 @@ body {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.412);
+    background-color: rgba(45, 43, 43, 0.412);
     justify-content: center;
     align-items: center;
 }
 
 #center {
-    background-color: aquamarine;
+    background-color: rgb(87, 141, 233);
     padding: 2rem;
 }
 
@@ -80,14 +80,14 @@ body {
 /* Estilizar a scrollbar para navegadores Firefox */
 #posts {
     scrollbar-width: thin;
-    scrollbar-color: rgb(141, 117, 85) burlywood;
+    scrollbar-color: rgb(113, 80, 36) rgb(226, 159, 72);
 }
 
 /* Estilizar a scrollbar para navegadores Internet Explorer e Edge */
 #posts {
     -ms-overflow-style: none; /* Esconde a scrollbar padrão do IE e Edge */
     scrollbar-width: thin;
-    scrollbar-color: rgb(141, 117, 85) burlywood;
+    scrollbar-color: rgb(123, 86, 37) brgb(234, 168, 82)
 }
 
 #posts:hover::-webkit-scrollbar-thumb {
