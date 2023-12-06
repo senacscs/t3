@@ -1,22 +1,21 @@
 body {
-    background-color: aliceblue;
     font-family: sans-serif;
-    margin: o 50px;
-}
-
-.container {
+    margin: 0 50px;
+    background-color:blanchedalmond;
+  }
+  
+  .container {
     display: flex;
     gap: 50px;
-}
-
-#posts {
+  }
+  
+  #posts {
     width: 400px;
   }
   
   i {
     cursor: pointer;
   }
- 
   #posts div {
     display: flex;
     align-items: center;
