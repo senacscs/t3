@@ -89,5 +89,12 @@
     "date": "27/11/23",
     "text": "O site que contém o meu curriculo feito durante 30 minutos.",
     "link": "./curriculo"
+  },
+  {
+    "title": "To do List",
+    "subject": "Técnico",
+    "date": "06/12/23",
+    "text": "Uma lista de todo yoyoyoyoyoyoyoyoyoyo, feito em js em 20 minutos",
+    "link": "./todolist"
   }
 ]
