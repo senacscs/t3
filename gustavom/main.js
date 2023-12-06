@@ -29,5 +29,5 @@ const createSnow = (num) => {
 }
 
 window.addEventListener("load", () => {
-  createSnow(30)
+  createSnow(14)
 });
