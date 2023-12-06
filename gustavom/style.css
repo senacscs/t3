@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(./assets/fundo.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+* {
+  font-family: 'Shadows Into Light', cursive;
+  box-sizing: border-box;
+}
+
+p {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+.card {
+    width: 80%;
+    height: 250px;
+    background: #295a99;
+    border-radius: 20px;
+    gap: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 3%;
+  }
+
+  .card a {
+    font-size: 30px;
+    color: white;
+  }
+
+@media only screen and (max-width: 480px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer img {
+    width: 13vw !important;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.block {
+  position: relative;
+  background: linear-gradient(0deg, #295a99, #272727);
+}
+
+.block:before, .block:after {
+  content: '';
+  position: absolute;
+  background: linear-gradient(45deg, blue, rgb(74, 112, 74), aqua, white, black);
+  border-radius: 20px;
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: borda 20s linear infinite;
+}
+
+@keyframes borda {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.block:after {
+  filter: blur(15px);
+}
+
+.snow-container {  
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transition: opacity 500ms;
+  width: 100%;
+}
+
+.snow {
+  animation: fall ease-in infinite, sway ease-in-out infinite;
+  color: skyblue;
+  position: absolute;
+}
+
+@keyframes fall {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: 100vh;
+    opacity: 1;
+  }
+}
+
+@keyframes sway {
+  0% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: 50px;
+  }
+  50% {
+    margin-left: -50px;
+  }
+  75% {
+    margin-left: 50px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+footer {
+  background-color: #28374b;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer img {
+  width: 3vw !important;
+  border-radius: 10px;
+}
+
+footer div{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+}
