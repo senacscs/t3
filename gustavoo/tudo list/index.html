@@ -4,16 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script href="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <title>TUDO LIST</title>
 </head>
 <body>
     <h1>Social Media App</h1>
   <div class="container">
-    <div class="left"></div>
-    <div class="right"></div>
-  </div>
   <div class="left">
     <form id="form">
       <label for="post"> Write your post here</label>
@@ -26,24 +22,24 @@
   </div>
   <div class="right">
     <h3>Your posts here</h3>
-    <div id="posts"></div>
-  </div>
   <div id="posts">
     <div>
       <p>Hello world post 1</p>
       <span class="options">
-        <i class="fas fa-edit"></i>
-        <i class="fas fa-trash-alt"></i>
+        <i onClick="editPost(this)" class="fas fa-edit"></i>
+        <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
       </span>
     </div>
      <div>
       <p>Hello world post 2</p>
       <span class="options">
-        <i class="fas fa-edit"></i>
-        <i class="fas fa-trash-alt"></i>
+        <i onClick="editPost(this)" class="fas fa-edit"></i>
+        <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
       </span>
     </div>
   </div>
-    
+  </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
