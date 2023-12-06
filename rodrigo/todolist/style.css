@@ -1,0 +1,31 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.post{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.post p {
+    margin-right: 30px;
+}
+.fa-solid{
+    padding: 7px;
+}
+#text{
+    width: 14vw;
+}
+#top{
+    z-index: 20;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.412);
+    justify-content: center;
+    align-items: center;
+}
+#center {
+    background-color: aquamarine;
+    padding: 2rem;
+}
