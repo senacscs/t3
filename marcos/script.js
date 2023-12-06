@@ -106,6 +106,14 @@ const newsArticles =[
         month: "9",
         date: "25 de Setembro de 2023"
     },
+    {
+        path: './projeto/',
+        text: "Projeto Profissional .",
+        title: "Portugol para JS",
+        img: "./assets/thumbnails/ptjs.png",
+        month: "9",
+        date: "25 de Setembro de 2023"
+    },
   ];
 
 function getRandomSize(priority) {
