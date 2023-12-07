@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
 </head>
 <body>
-    <h1>Social Media App</h1>
+    <h1>Lista de tarefas</h1>
   <div class="container">
     <div class="left">
             <form id="form">
-              <label for="post"> Write your post here</label>
+              <label for="post">Seus posts aqui</label>
               <br><br>
               <textarea name="post" id="input" cols="30" rows="10"></textarea>
               <br> <br>
@@ -20,18 +20,19 @@
               <button type="submit">Post</button>
             </form>
     </div>
+    <section class="resultados">
     <div class="right">
-        <h3>Your posts here</h3>
+        <h3>Posts</h3>
             <div id="posts">
                 <div>
-                  <p>Hello world post 1</p>
+                  <p>Post 1</p>
                   <span class="options">
                     <i onclick="editPost(this)" class="fas fa-edit"></i>
                     <i onclick="deletePost(this)" class="fas fa-trash-alt"></i>
                   </span>
                 </div>
                 <div>
-                  <p>Hello world post 2</p>
+                  <p>Post 2</p>
                   <span class="options">
                     <i onclick="editPost(this)" class="fas fa-edit"></i>
                     <i onclick="deletePost(this)" class="fas fa-trash-alt"></i>
@@ -39,6 +40,7 @@
                 </div>
               </div>              
         </div>
+      </section>
       </div>
       <script src="main.js"></script>
 </body>
