@@ -1,0 +1,41 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Adicionei uma fonte personalizada */
+    margin: 0 20px; /* Reduzi a margem para um layout mais compacto */
+    background-color: rgb(56, 59, 46);
+    color: #faf0f0; /* Defini a cor do texto para branco */
+  }
+  
+  .container {
+    display: flex;
+    gap: 20px; /* Reduzi o espaço entre os elementos do contêiner */
+  }
+  
+  #posts {
+    width: 400px;
+    background-color: #2c2f3e; /* Adicionei uma cor de fundo diferente para a área de posts */
+    padding: 20px; /* Adicionei um preenchimento interno para melhorar a aparência */
+    border-radius: 8px; /* Adicionei bordas arredondadas */
+  }
+  
+  i {
+    cursor: pointer;
+    color: #ffb366; /* Defini uma cor personalizada para os ícones */
+  }
+  
+  #posts div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .options {
+    display: flex;
+    gap: 15px; /* Reduzi o espaço entre as opções */
+  }
+  
+  #msg {
+    color: #ff5252; /* Defini uma cor mais vibrante para mensagens de erro */
+    font-size: 16px; /* Ajustei o tamanho da fonte para maior legibilidade */
+    margin-top: 10px; /* Adicionei um espaço superior para separar mensagens */
+  }
+  
