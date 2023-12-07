@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     margin: 0 50px;
-    background-color: #e5e5e5;
+    background-color: #ffffff;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -9,7 +9,18 @@ body {
     height: 100vh;
   }
   
+  h1{
+    font-family: 'Roboto Mono';
+  }
   
+  h3{
+    font-family: 'Roboto Mono';
+  }
+
+h5{
+  font-family: 'Roboto Mono';
+}
+
   .container {
     display: flex;
     gap: 50px;
@@ -35,14 +46,14 @@ body {
   }
   
   #msg {
-    color: red;
+    color: rgb(166, 35, 35);
   }
 
   .app {
-    background-color: #fff;
+    background-color: #ffffff;
     width: 300px;
     height: 500px;
-    border: 5px solid #abcea1;
+    border: 5px solid #4e7a42;
     border-radius: 8px;
     padding: 15px;
   }
@@ -57,7 +68,7 @@ body {
     cursor: pointer;
   }
   .fa-plus {
-    background-color: #abcea1;
+    background-color: #8c9589;
     padding: 3px;
     border-radius: 3px;
   }
@@ -69,7 +80,7 @@ body {
   }
   
   #tasks div {
-    border: 3px solid #abcea1;
+    border: 3px solid #58b03f;
     background-color: #e2eede;
     border-radius: 6px;
     padding: 5px;
