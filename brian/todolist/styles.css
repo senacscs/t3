@@ -1,32 +1,53 @@
 body {
-  font-family: sans-serif;
-  margin: 0 50px;
-}
+    font-family: sans-serif;
+    margin: 0 50px;
+    background-color: black;
+  }
+  
+  .container {
+    display: flex;
+    gap: 50px;
+  }
+  
+  #posts {
+    width: 400px;
+    color: white;
+    font-family: 'Consolas';
+  }
+  
+  i {
+    cursor: pointer;
+  }
 
-.container {
-  display: flex;
-  gap: 50px;
-}
+  #posts div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-#posts {
-  width: 400px;
-}
+  textarea {
+    background-color: rgb(43, 42, 42);
+    color: white;
+  }
+  
+  .options {
+    display: flex;
+    gap: 25px;
+  }
+  
+  #msg {
+    color: rgb(202, 18, 18);
+    font-family: 'Consolas';
+  }
 
-i {
-  cursor: pointer;
-}
+  button {
+    font-family: 'Consolas';
+    color: white;
+    background-color: rgb(43, 42, 42);
+    margin-top: 10px;
+  }
 
-#posts div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.options {
-  display: flex;
-  gap: 25px;
-}
-
-#msg {
-  color: rgb(218, 88, 88);
-}
+  h1, h3, label {
+    color: white;
+    font-family: 'Consolas';
+  }
