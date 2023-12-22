@@ -35,6 +35,7 @@ body {
 
 .perfil img {
     width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
@@ -144,7 +145,7 @@ hr {
 
 main {
     width: 75vw;
-    height: 100vh;
+    height: auto;
     background-color: #e6e6e6;
     padding: 60px;
     display: flex;
@@ -161,10 +162,99 @@ main h2 {
 main p {
     font-family: 'Lato', sans-serif;
     font-size: 1.1vw;
+    line-height: 28px;
 }
 
-.experiencias, .competencias, .cursos {
+.objetivos, .competencias, .cursos {
     margin-top: 60px;
+}
+
+.competencias li {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1vw;
+    list-style-position: inside;
+}
+
+.competencias li + li {
+    margin-top: 4px;
+}
+
+.cursos p + p {
+    margin-top: 5px;
+}
+
+/* ============================================================================== */
+/* ============================================================================== */
+
+@media (max-width: 500px) {
+
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        z-index: 1;
+        width: 100vw;
+        height: 100vh;
+        background-color: #003249;
+        padding: 20px;
+    }
+
+    .perfil h1 {
+        font-family: 'Lato', sans-serif;
+        margin-bottom: 10px;
+        font-size: 2.5vh;
+    }
+    
+    .perfil p {
+        font-size: 2vh;
+        font-family: 'Lato', sans-serif;
+    }
+
+    hr {
+        border: 1px solid #ccdbdc4a;
+        width: 84vw;
+        margin: 25px auto;
+    }
+
+    .contato {
+        align-items: center;
+    }
+
+    .contato h2, .formacao h2, .idiomas h2 {
+        font-size: 2vh;
+        text-align: center;
+    }
+
+    .cada-contato a, .formacao p, .idiomas p {
+        font-size: 1.8vh;
+        text-align: center;
+    }
+
+    main {
+        width: 100vw;
+        padding: 30px;
+
+    }
+
+    main h2 {
+        font-family: 'Vollkorn', serif;
+        font-size: 2.5vh;
+        margin-bottom: 5px;
+    }
+
+    main p {
+        font-family: 'Lato', sans-serif;
+        font-size: 1.8vh;
+        line-height: 28px;
+    }
+
+    .competencias li {
+        font-family: 'Lato', sans-serif;
+        font-size: 1.8vh;
+        list-style-position: inside;
+    }
+
 }
 
 /* CORES
