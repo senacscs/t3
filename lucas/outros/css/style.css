@@ -1,0 +1,16 @@
+.coluna{
+    float: left;
+    width: 33.33%;
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+}
+h1{
+    text-align: center;
+    color: white;
+}
+body{
+    background-color: black;
+}
