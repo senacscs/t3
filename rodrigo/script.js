@@ -1,5 +1,7 @@
 let sites = []
 let lines
+let mobile = false
+let selected = 0;
 
 fetch('./sites.json')
     .then((response) => response.json())
@@ -11,28 +13,44 @@ fetch('./sites.json')
         console.error('Erro ao buscar dados:', error);
     });
 
-async function fetchData(sites) {
-    try {
-        createLinks(sites);
-        select();
-        lines = document.querySelectorAll('tr')
-
-if (mobile) {
-    lines.forEach((line) => {
-        line.addEventListener('click', () => {
-            console.log('click');
-            const clickedLine = line.id;
-            selected = line.id
-            dataOpen();
-        });
-    });
-}
-
-        console.log('fetch');
-    } catch (error) {
-        console.error('Erro ao processar dados:', error);
+    async function fetchData() {
+        try {
+            const response = await fetch('./sites.json');
+            const json = await response.json();
+            sites = json;
+            createLinks(sites);
+            select();
+            lines = document.querySelectorAll('tr');
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                console.log('Modo Touch');
+                mobile = true
+                lines.forEach((line) => {
+                    line.addEventListener('click', () => {
+                        console.log('click');
+                        selected = line.id;
+                        dataOpen();
+                    });
+                })
+            }else{
+                console.log('Modo Desktop')
+                lines.forEach((line) => {
+                    line.addEventListener('dblclick', () => {
+                        console.log('dblclick');
+                        selected = line.id;
+                        dataOpen();
+                    });
+                    line.addEventListener('click', () => {
+                        console.log('click')
+                        selected = line.id;
+                        select()
+                    })
+                });
+            }
+            console.log('fetch');
+        } catch (error) {
+            console.error('Erro ao processar dados:', error);
+        }
     }
-}
 
 const infos = document.getElementById('data')
 const table = document.querySelector('table')
@@ -95,7 +113,6 @@ document.addEventListener('keydown', function (event) {
     }
 });
 
-let selected = 0;
 let number = 0;
 let lastSelected;
 
@@ -181,12 +198,21 @@ function dataOpen() {
     const subject = document.getElementById('subject')
     const date = document.getElementById('date')
     const text = document.getElementById('text')
+    const y = document.getElementById('y')
     const site = sites[selected]
 
+    y.href = site.link
     title.innerHTML = site.title
     subject.innerHTML = site.subject
     date.innerHTML = site.date
     text.innerHTML = site.text
+}
+function touchN() {
+    table.style.display = ''
+    infos.style.display = 'none'
+
+    screen = 0
+    select()
 }
 
 const inputElement = document.querySelector("input")
@@ -224,31 +250,8 @@ inputElement.addEventListener("input", (e) => {
         }
     });
 });
-let mobile = false
 
-  window.onload = function() {
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        console.log('Dispositivo Movel');
-        mobile = true
-        
-    }
-}
-if(mobile = false){
-    document.addEventListener("wheel", function(event) {
-        event.preventDefault();
-      }, { passive: false });
-}
-function mobileLink(number) {
-    if(mobile) {
-        if(number == 1) {
-            window.location.href = sites[selected].link
-        }else {
-            table.style.display = ''
-            infos.style.display = 'none'
 
-            screen = 0
-            select()
-        }
-    }
-}
+
+
 fetchData()

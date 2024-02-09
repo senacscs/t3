@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index do Rodrigo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/postit.png" type="image/x-icon">
 </head>
 <body>
     <div id="screen">
@@ -20,12 +21,12 @@
             <h2 id="subject"></h2>
             <h3 id="date"></h3>
             <p id="text"></p>
-            <p id="instruc">- Deseja acessar o site?<span onclick="mobileLink(1)">Y  </span>/  <span onclick="mobileLink(2)">N</span></p>
+            <p id="instruc">- Deseja acessar o site?<a id="y">Y  </a>/  <span onclick="touchN()">N</span></p>
         </div>
         <video id="link" src="assets/necessidade.mp4">
         </video>
-        <video id="josh" src="assets/josh.mp4">
-        </video>
+            <video id="josh" src="assets/josh.mp4">
+            </video>
     </div>
     <div id="postit">
     <img  src="assets/postit.png">

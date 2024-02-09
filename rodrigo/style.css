@@ -28,7 +28,13 @@ body {
     background-size: cover;
     border: 10px solid rgb(75, 75, 75);
 }
-
+a{
+  color: var(--green);
+  cursor: pointer;
+}
+span{
+  cursor: pointer;
+}
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
