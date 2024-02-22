@@ -1,4 +1,3 @@
-console.log("isso ta funcionando");
 let form = document.getElementById("form");
 let textInput = document.getElementById("textInput");
 let dateInput = document.getElementById("dateInput");
@@ -27,10 +26,9 @@ let formValidation = () => {
       add.setAttribute("data-bs-dismiss", "");
     })();
   }
-  }
+};
 
-
-let data = [];
+let data = [{}];
 
 let acceptData = () => {
   data.push({
@@ -42,26 +40,7 @@ let acceptData = () => {
   localStorage.setItem("data", JSON.stringify(data));
 
   console.log(data);
-  createPost();
   createTasks();
-};
-
-let createPost = () => {
-  posts.innerHTML += `
-  <div>
-    <p>${data.text}</p>
-    <span class="options">
-      <i onClick="editPost(this)" class="fas fa-edit"></i>
-      <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
-    </span>
-  </div>
-  `;
-  input.value = "";
-};
-
-let deletePost = (e) => {
-  input.value = e.parentElement.previousElementSibling.innerHTML;
-  e.parentElement.parentElement.remove();
 };
 
 let createTasks = () => {
@@ -84,20 +63,12 @@ let createTasks = () => {
   resetForm();
 };
 
-let resetForm = () => {
-  textInput.value = "";
-  dateInput.value = "";
-  textarea.value = "";
-};
-
 let deleteTask = (e) => {
   e.parentElement.parentElement.remove();
-
   data.splice(e.parentElement.parentElement.id, 1);
-
   localStorage.setItem("data", JSON.stringify(data));
-
   console.log(data);
+  
 };
 
 let editTask = (e) => {
@@ -110,8 +81,14 @@ let editTask = (e) => {
   deleteTask(e);
 };
 
+let resetForm = () => {
+  textInput.value = "";
+  dateInput.value = "";
+  textarea.value = "";
+};
+
 (() => {
-  data = JSON.parse(localStorage.getItem("data")) || [];
+  data = JSON.parse(localStorage.getItem("data")) || []
   console.log(data);
   createTasks();
 })();
