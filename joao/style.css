@@ -26,14 +26,13 @@
         margin-bottom: 20px;
         color:#f9aa49;
         font-size: 32px;
+        text-align: center;
     }
     p {
         font-family: 'Raleway', sans-serif;
-        font-size: 18px;
+        font-size: 15px;
         color: whitesmoke;
-        margin-top: 80px;
-        margin-bottom: 80px;
-        margin-left: 120px;
+        margin-bottom: 40px;
         text-align: center;
     }
     .button {
@@ -45,7 +44,7 @@
         text-decoration: none;
         display: inline-block;
         color:whitesmoke;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         border-radius: 1rem;
         border: 1px solid whitesmoke;
     }
@@ -90,6 +89,7 @@
     .a div {
         margin-left: 40px;
         margin-right: 40px;
+        text-align: center;
         /* border: 1px solid red; */
     }
     #title {
@@ -97,12 +97,16 @@
         -ms-grid-column-span: 2;
         grid-column-end: 3;
     }
-    .base {
-        text-align: center;
+    #semititle {
+        grid-column-start: 1;
+        -ms-grid-column-span: 2;
+        grid-column-end: 3;
     }
-    .text {
-        text-align: left;
-        margin-left: 30px;
+    #semititle h1{
+        font-family: 'Righteous', cursive;
+        color: red;
+        text-align: center;
+        font-size: 40px;
     }
     #contas {
         grid-column-start: 1;
