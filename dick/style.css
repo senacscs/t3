@@ -28,7 +28,7 @@
 }
 
 body {
-    background: linear-gradient(150deg, darkgreen, darkgreen, darkblue,darkblue);
+    background: linear-gradient(150deg, darkgreen, darkgreen, darkblue, darkblue);
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
     color: lime;
@@ -39,7 +39,7 @@ body {
 
 a {
     text-decoration: none;
-    color: peru;
+    color: lime;
     font-size: xx-large;
 
 }
@@ -61,6 +61,10 @@ h3 {
     font-family: Verdana;
     font-size: x-large;
     animation: infinite 5s fundo;
+}
+
+.segundo {
+    text-shadow:5px 5px 5px yellow;
 }
 
 @media screen and (max-width: 720px) {}
