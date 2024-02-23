@@ -1,18 +1,25 @@
 
 [
   {
+    "title": "Indicações Back-Ennd",
+    "subject": "Técnico",
+    "date": "23/02/24",
+    "text": "Super site super foda, que o luis não teve idéia nova e reciclou do ano passado",
+    "link": "indicacoesback"
+  },
+  {
     "title": "Currículo",
     "subject": "PP/Técnico",
     "date": "27/11/23",
     "text": "O site que contém o meu curriculo feito durante 30 minutos.",
-    "link": "./curriculo"
+    "link": "curriculo"
   },
   {
     "title": "PromoFinder",
     "subject": "PP/Técnico",
     "date": "08/11/23",
     "text": "Site do projeto de PP da nossa startup",
-    "link": "./Projeto"
+    "link": "Projeto"
   },
   {
     "title": "LinkeMusic",
@@ -26,7 +33,7 @@
     "subject": "História",
     "date": "19/09/23",
     "text": "Site com explicação sobre o deus egipcio amun.",
-    "link": "./hist"
+    "link": "hist"
   },
   {
     "title": "Pocket Mirror",
@@ -40,14 +47,14 @@
     "subject": "Matematica/técnico",
     "date": "06/07/23",
     "text": "modificando uns quadrado ai",
-    "link": "./fibonacci"
+    "link": "fibonacci"
   },
   {
     "title": "ODS 6",
     "subject": "PP",
     "date": "04/07/23",
     "text": "Site de PP para explicar a ODS 6 (Água e saneamento)",
-    "link": "./ods"
+    "link": "ods"
   },
   {
     "title": "Carrinho",
@@ -61,34 +68,34 @@
     "subject": "English",
     "date": "23/06/23",
     "text": "Made a website for explaining my survival guide for the apocalipse",
-    "link": "./survival"
+    "link": "survival"
   },
   {
     "title": "Grid Tycoon",
     "subject": "Técnico",
     "date": "25/05/23",
     "text": "Super oficina foda sobre grid",
-    "link": "./oficina2"
+    "link": "oficina2"
   },
   {
     "title": "Kat Generator",
     "subject": "Técnico",
     "date": "05/05/23",
     "text": "A partir do código exemplo em https://arquivo.dev/t1/oficina.html modificar o arquivo html, com temática livre, inserindo algum novo elemento nesta webpage(exemplo, um vídeo, um link, um javascript), e anexar este novo documento html personalizado aqui nesta tarefa.",
-    "link": "./kat"
+    "link": "kat"
   },
   {
     "title": "Trabalho de PP (1)",
     "subject": "Projeto Profissional",
     "date": "15/05/23",
     "text": "A poluição é um assunto muito em alta hoje em dia, pelo fato do alto nível de poluição no nosso planeta. Nós queremos ajudar a resolver. Por meio da conscientização das formas de limpeza e de poluição.",
-    "link": "./PP"
+    "link": "PP"
   },
   {
     "title": "Indicações",
     "subject": "Técnico",
     "date": "24/04/23",
     "text": "Considerando os conhecimentos já adquiridos em HTML, CSS e JS, utilizar os mesmos e aprofundar para criar uma webpage (página na internet) sobre os conteúdos básicos de Front-End, sendo esta a temática principal para as recomendações de:</p>1 site de conteúdos (deve ter o link pro site 1 canal Youtube de conteúdos (deve ter o link e 1 vídeo embedado)1 influenciador de conteúdos (deve ter o link e um material embedado)1 tutorial (deve ter o link e uma imagem do resultado do tutorial)1 podcast (link embedado de só áudio preferencialmente, mas pode ser vídeo)",
-    "link": "./indicacoes"
+    "link": "indicacoes"
   }
 ]
