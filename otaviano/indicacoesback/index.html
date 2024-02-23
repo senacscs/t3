@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <title>Site Indicação</title>
+</head>
+<body>
+  <div class="container">
+    <a class="prev" href="#" onclick="addSlides(-1)">
+      <span>&#10094;</span>
+      <span class="prev-text">Voltar</span>
+    </a>
+    <div>
+      <div class="slides fade">
+        <img src="img/back-end-developer.png" />
+        <h2 class="title">O que é Back-End</h2>
+        <p class="content">
+            O backend é a parte não visível de um site ou aplicativo, cuidando do processamento de dados e interações com o banco de dados. É fundamental para a funcionalidade do sistema, garantindo a segurança e eficiência, enquanto o frontend lida com a interface do usuário.</p>
+      </div>
+      <div class="slides fade">
+        <iframe width="360" height="315" src="https://www.youtube.com/embed/LNhslFddZ-k?si=xCjZU3lagrgXjXmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h2 class="title">Vídeo Explicativo!</h2>
+      </div>
+      <div class="slides fade">
+        <iframe style="border-radius:10px" src="https://open.spotify.com/embed/show/3uqyj3GlhBHp1IJN8KJ1xU?utm_source=generator&theme=0" width="360" height="315" frameBorder="10" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <h2 class="title">Podcast Café de Bug</h2>
+        <p class="content">O Café de Bug é um podcast sobre tecnologia e ciência criado em 2017 por Jéssica Nathany. Mais tarde ele foi reformulado e ganhou a ajuda de Weslley Fratini. Ambos criam conteúdos sobre linguagens e frameworks.<br/><br/>
+        </p>
+      </div>
+      <div class="slides fade">
+        <img src="img/fotodiegoschellfernandes.jpg" class="diego" />
+        <h2 class="title">Diego Schell Fernandes</h2>
+        <p class="content">Co-founder e CTO da Rocketseat, entusiasta do desenvolvimento web e mobile, já treinou mais de 200 mil pessoas. <br/><br/>
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <button class="button" onclick="addSlides(1)">Próximo</button>
+      <div class="dot-box">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
