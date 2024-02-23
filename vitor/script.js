@@ -39,7 +39,45 @@ function scrollAutomatico() {
 setTimeout(scrollAutomatico, tempoDelay);
 
 const elemnts = document.querySelectorAll('.grid2');
-const buttons = document.querySelectorAll('button');
+const buttons = document.querySelectorAll('.month');
+const yearButtons = document.querySelectorAll('.year');
+const monthContainers = document.querySelectorAll('.months');
+
+var currentYear = new Date().getFullYear();
+
+function matchYear(year) {
+  let active = document.getElementById(year);
+  active.classList.remove('hidden')
+
+  elemnts.forEach((elemnt) => {
+    if (elemnt.dataset.year == year) {
+      console.log(year)
+      elemnt.classList.remove('hidden')
+    } else (elemnt.classList.add('hidden'))
+  })
+
+}
+
+yearButtons.forEach((yearBtn) => {
+  yearBtn.addEventListener("click", ()=> {
+    yearButtons.forEach((btn) => {
+      btn.classList.remove('active')
+    })
+    yearBtn.classList.add('active')
+    monthContainers.forEach((container) => {
+      container.classList.add('hidden')
+    })
+
+    const selectedYear = yearBtn.dataset.year;
+    const yearDisplay = document.getElementById(selectedYear)
+    yearDisplay.classList.remove('hidden')
+    currentYear = selectedYear
+    console.log(currentYear)
+    matchYear(selectedYear)
+    
+
+  })
+})
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -49,15 +87,34 @@ buttons.forEach((button) => {
     button.classList.add('active')
 
     const selectedMonth = button.dataset.month;
+    const selectedYear = button.dataset.year;
 
     elemnts.forEach((elemnt) => {
       const elemntMonth = elemnt.dataset.month
-      if (selectedMonth == elemntMonth) {
-        elemnt.style.display = "block"
+      if (selectedMonth === elemntMonth && selectedYear === elemnt.dataset.year) {
+        elemnt.classList.remove('hidden')
       } else {
-        elemnt.style.display = "none"
+        elemnt.classList.add('hidden')
       }
     })
+
+
   })
 })
+
+
+
+function setup() {
+  elemnts.forEach((elemnt) => {
+    matchYear(currentYear)
+    console.log(elemnt.dataset.year, currentYear  )
+    if (elemnt.dataset.year==currentYear) {
+      return
+    }
+    else {elemnt.classList.add('hidden')}
+})
+
+};
+
+setup()
 

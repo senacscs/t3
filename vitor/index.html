@@ -44,7 +44,7 @@
         <li></li>
         <li></li>
         
-        <h2 class="line-1 anim-typewriter"> <i class="gg-work-alt"></i> 15 Trabalhos feitos <i class="gg-timelapse"></i> <span id="dias"></span> dias de Senac 
+        <h2 class="line-1 anim-typewriter"> <i class="gg-work-alt"></i> 14 Trabalhos feitos <i class="gg-timelapse"></i> <span id="dias"></span> dias de Senac 
         </h2>
         <li></li>
         <li></li>
@@ -59,29 +59,31 @@
         <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img src="./assets/imagem2.jpg"></a>
       </div>
       <hr class="barrarepartir">
-      <div class="button-container">
-        <!--   <button style="--clr:#EA00FF"><span>Button</span><i></i></button> -->
-        <!-- <button style="--clr:#FFF01F"><span>Button</span><i></i></button> -->
-        <!-- <button style="--clr:#7FFF00"><span>Button</span><i></i></button> -->
-        <!-- <button style="--clr:#FF5E00"><span>Button</span><i></i></button> -->
-        <button data-month="abril" style="--clr:#fff"><span>Abril</span><i></i></button>
-        <!-- <button style="--clr:#FF3131"><span>Button</span><i></i></button> -->
-        <!-- <button style="--clr:#1F51FF"><span>Button</span><i></i></button> -->
-        <button data-month="maio" style="--clr:#fff"><span>Maio</span><i></i></button>
-        <button data-month="junho" style="--clr:#fff"><span>Junho</span><i></i></button>
-        <!-- <button style="--clr:#E7EE4F"><span>Button</span><i></i></button> -->
-        <button data-month="julho" style="--clr:#fff"><span>Julho</span><i></i></button>
-        <button data-month="agosto" style="--clr:#fff"><span>Agosto</span><i></i></button>
-        <button data-month="setembro" style="--clr:#fff"><span>Setembro</span><i></i></button>
-        <button data-month="outubro" style="--clr:#fff"><span>Outubro</span><i></i></button>
-        <button data-month="novembro" style="--clr:#fff"><span>Novembro</span><i></i></button>
-        <button data-month="dezembro" style="--clr:#fff"><span>Dezembro</span><i></i></button>
-        <!-- <button style="--clr:#CCFF00"><span>Button</span><i></i></button> -->
+<div class="button-container">
+  <button data-year="2023" style="--clr:#fcba03" class="year"><span>2023</span><i></i></button>
+  <button data-year="2024" style="--clr:#fff" class="year active"><span>2024</span><i></i></button>
+</div>
+
+      <div class="button-container months hidden" id="2023">
+        <button data-month="abril" data-year="2023" style="--clr:#fcba03" class="month"><span>Abril</span><i></i></button>
+        <button data-month="maio" data-year="2023" style="--clr:#fcba03" class="month"><span>Maio</span><i></i></button>
+        <button data-month="junho" data-year="2023" style="--clr:#fcba03" class="month"><span>Junho</span><i></i></button>
+        <button data-month="julho" data-year="2023" style="--clr:#fcba03" class="month"><span>Julho</span><i></i></button>
+        <button data-month="agosto" data-year="2023" style="--clr:#fcba03" class="month"><span>Agosto</span><i></i></button>
+        <button data-month="setembro" data-year="2023" style="--clr:#fcba03" class="month"><span>Setembro</span><i></i></button>
+        <button data-month="outubro" data-year="2023" style="--clr:#fcba03" class="month"><span>Outubro</span><i></i></button>
+        <button data-month="novembro" data-year="2023" style="--clr:#fcba03" class="month"><span>Novembro</span><i></i></button>
+        <button data-month="dezembro" data-year="2023" style="--clr:#fcba03" class="month"><span>Dezembro</span><i></i></button>
       </div>
+
+      <div class="button-container months" id="2024">
+        <button data-month="fevereiro" data-year="2024" style="--clr:#fff" class="month"><span>Fevereiro</span><i></i></button>
+      </div>
+
       <div class="grid">
-        <div class="grid2" data-month="abril">
+        <div class="grid2" data-month="abril" data-year="2023">
           <div>
-            <a href="./indicacoes" class="linker">
+            <a href="./primeiro/indicacoesfront/index.html" class="linker">
               <img src="./assets/indicações.gif" width="255px" class="bordar">
             </a>
             <p class="subtitulo">Indicações Front-End</p>
@@ -94,9 +96,9 @@
             <p class="content">tutorial sobre Front-End.</p>
           </div>
         </div>
-        <div class="grid2" data-month="maio">
+        <div class="grid2" data-month="maio" data-year="2023">
           <div>
-            <a href="./projetopp" class="linker">
+            <a href="./primeiro/projetopp/index.html" class="linker">
               <img src="./assets/Projetopp.png" width="255px" class="bordar2">
             </a>
             <p class="subtitulo">Trabalho De Projeto Profissional</p>
@@ -108,7 +110,7 @@
             </p>
           </div>
         </div>
-        <div class="grid2" data-month="maio">
+        <div class="grid2" data-month="maio" data-year="2023">
           <div>
             <a href="https://senacscs.github.io/t3/tito/carrinho/" class="linker">
               <img src="./assets/shel.png" width="255px" class="bordar3">
@@ -122,7 +124,7 @@
             </p>
           </div>
         </div>
-        <div class="grid2" data-month="junho">
+        <div class="grid2" data-month="junho" data-year="2023">
           <div>
             <a href="https://senacscs.github.io/t3/tito/oficinas/" class="linker">
               <img src="./assets/ofici.png" width="255px" class="bordar4">
@@ -136,9 +138,9 @@
             </p>
           </div>
         </div>
-        <div class="grid2" data-month="julho">
+        <div class="grid2" data-month="julho" data-year="2023">
           <div>
-            <a href="./fibonacci/index.html" class="linker">
+            <a href="./primeiro/fibonacci/index.html" class="linker">
               <img src="./assets/fibo.png" width="255px" class="bordar5">
             </a>
             <p class="subtitulo">Fibonacci</p>
@@ -150,9 +152,9 @@
             </p>
           </div>
         </div>
-        <div class="grid2" data-month="julho">
+        <div class="grid2" data-month="julho" data-year="2023">
           <div>
-            <a href="./ods" class="linker">
+            <a href="./primeiro/ods/index.html" class="linker">
               <img src="./assets/ods8.png" width="255px" class="bordar5">
             </a>
             <p class="subtitulo">ODS 8</p>
@@ -163,7 +165,7 @@
             </p>
           </div>
         </div>
-        <div class="grid2" data-month="agosto">
+        <div class="grid2" data-month="agosto" data-year="2023">
           <div>
             <a href="https://senacscs.github.io/t3/rodrigo/ods/" class="linker">
               <img src="./assets/ods6.png" width="255px" class="bordar6">
@@ -175,34 +177,8 @@
             <p class="content">Contém um trabalho de técnico sobre a ODS 6. vídeo geral explicando o que é ODS, Vídeos  da ODS 6 e textos autorais do conteúdo são encontrados no site.
             </p>
           </div>
-        </div>
-        <div class="grid2" data-month="agosto">
-          <div>
-            <a href="./ods_menu" class="linker">
-              <img src="./assets/invasao.png" width="255px" class="bordar6">
-            </a>
-            <p class="subtitulo">Características Marcantes</p>
-          </div>
-          <div>
-            <p style="color: #8095bb;" class="date">10 de Agosto de 2023</p>
-            <p class="content">Contém um falando sobre características marcantes,pontos fortes,interesses e mais.
-            </p>
-          </div>
-        </div>        
-        <div class="grid2" data-month="agosto">
-          <div>
-            <a href="./ptah" class="linker">
-              <img src="./assets/ptah.png" width="255px" class="bordar6">
-            </a>
-            <p class="subtitulo">Deus Ptah</p>
-          </div>
-          <div>
-            <p style="color: #8095bb;" class="date">30 de Agosto de 2023</p>
-            <p class="content">Contém um site falando sobre um deus egípicio, e, um quiz do mesmo. (Fui Desafiado a fazer o site em menos de 10 minutos)
-            </p>
-          </div>
-        </div>
-        <div class="grid2" data-month="setembro">
+        </div>       
+        <div class="grid2" data-month="setembro" data-year="2023">
           <div>
             <a href="https://senacscs.github.io/t3/vitor/linkemusic/login/index.html" class="linker">
               <img src="./assets/linkemusic.png" width="255px" class="bordar6">
@@ -215,9 +191,9 @@
              </p>
           </div>
         </div>
-        <div class="grid2" data-month="setembro">
+        <div class="grid2" data-month="setembro" data-year="2023">
           <div>
-            <a href="./ptjs/Portugol para JavaScript.html" class="linker">
+            <a href="./primeiro/ptjs/Portugol para JavaScript.html" class="linker">
               <img src="./assets/ptjs.png" width="255px" class="bordar6">
             </a>
             <p class="subtitulo">PTJS</p>
@@ -228,9 +204,9 @@
              </p>
           </div>
         </div>
-        <div class="grid2" data-month="outubro">
+        <div class="grid2" data-month="outubro" data-year="2023">
           <div>
-            <a href="./jogojs/index.html" class="linker">
+            <a href="./primeiro/jogojs/index.html" class="linker">
               <img src="./assets/jogojs.png" width="255px" class="bordar6">
             </a>
             <p class="subtitulo">JOGOJS</p>
@@ -241,9 +217,9 @@
              </p>
           </div>
         </div>
-        <div class="grid2" data-month="outubro">
+        <div class="grid2" data-month="outubro" data-year="2023">
           <div>
-            <a href="/fractal/dist/index.html" class="linker">
+            <a href="/primeiro/fractal/dist/index.html" class="linker">
               <img src="./assets/fractal.png" width="255px" class="bordar6">
             </a>
             <p class="subtitulo">Fractal</p>
@@ -254,9 +230,9 @@
              </p>
           </div>
         </div>
-        <div class="grid2" data-month="novembro">
+        <div class="grid2" data-month="novembro" data-year="2023">
           <div>
-            <a href="/t3/vitor/projeto/index.html " class="linker">
+            <a href="/primeiro/projeto/index.html " class="linker">
               <img src="./assets/promofinder.png" width="255px" class="bordar6">
             </a>
             <p class="subtitulo">PromoFinder</p>
@@ -267,7 +243,7 @@
              </p>
           </div>
         </div>
-        <div class="grid2" data-month="novembro">
+        <div class="grid2" data-month="novembro" data-year="2023">
           <div>
             <a href="https://senacscs.github.io/t3/museu/" class="linker">
               <img src="./assets/museuindex.png" width="255px" class="bordar6">
@@ -280,9 +256,9 @@
              </p>
           </div>
         </div>
-        <div class="grid2" data-month="novembro">
+        <div class="grid2" data-month="novembro" data-year="2023">
           <div>
-            <a href="/t3/vitor/curriculo/index.html" class="linker">
+            <a href="/primeiro//curriculo/index.html" class="linker">
               <img src="./assets/curriculo.png" width="255px" class="bordar6">
             </a>
             <p class="subtitulo">Meu Currículo</p>
@@ -293,9 +269,9 @@
              </p>
           </div>
         </div>
-        <div class="grid2" data-month="dezembro">
+        <div class="grid2" data-month="dezembro" data-year="2023">
           <div>
-            <a href="/t3/vitor/curriculo/index.html" class="linker">
+            <a href="/primeiro/todolist/index.html" class="linker">
               <img src="./assets/todolist.png" width="255px" class="bordar6">
             </a>
             <p class="subtitulo">Minha Lista</p>
@@ -306,16 +282,21 @@
              </p>
           </div>
         </div>
+        <div class="grid2" data-month="fevereiro" data-year="2024">
+          <div>
+            <a href="/segundo/indicacoesback/index.html" class="linker">
+              <img src="./assets/backend.png" width="255px" class="bordar6">
+            </a>
+            <p class="subtitulo">Back-End</p>
+          </div>
+          <div>
+            <p style="color: #ffffff;" class="date">22 de Fevereiro de 2024</p>
+            <p class="content">Contém Indicações sobre Back-End.
+             </p>
+          </div>
+        </div>
+
       </div>
-      
-      <!-- <div class="gallery js-flickity"
-          data-flickity-options='{ "wrapAround": true }'>
-          <div class="gallery-cell"></div>
-          <div class="gallery-cell"></div>
-          <div class="gallery-cell"></div>
-          <div class="gallery-cell"></div>
-          <div class="gallery-cell"></div>
-        </div> -->
     </div>
     </div>
     <script src="script.js"></script>
