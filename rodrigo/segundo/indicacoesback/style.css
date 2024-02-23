@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&family=Monomaniac+One&display=swap');
+*{
+    margin: 0;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: rgb(14, 14, 41);
+}
+h1{
+    font-family: "Monomaniac One", sans-serif;
+    color: rgb(150, 150, 223);
+    font-size: 50px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 14px;
+}
+section{
+    display: flex;
+    margin: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgb(53, 53, 114);
+}
+.text{
+    width: 60%;
+}
+iframe{
+    height: 300px;
+    width: 550px;
+    box-shadow: 10px 10px 1px rgb(53, 53, 114);
+    border-radius: 20px;
+}
+h2{
+    margin-bottom: 10px;
+}
+img{
+    max-height: 300px;
+    box-shadow: 10px 10px 1px rgb(53, 53, 114);
+    border-radius: 20px;
+    margin-left: 100px;
+}
+.pod{
+    box-shadow: 10px 10px 1px rgb(53, 53, 114);
+    border-radius: 20px;
+}
+footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgb(53, 53, 114);
+    padding: 20px;
+    margin-top: 10vh;
+    margin-left: 0;
+}
+#git img {
+    width: 3vw;
+}
+#git {
+    justify-self: end;
+    text-align: center;
+}

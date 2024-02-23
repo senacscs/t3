@@ -10,7 +10,7 @@
 <body>
     <div id="screen">
         <table >
-            <tr id="params" data-title="paramentro33">
+            <tr id="params" data-title="paramentro33" data-date="00">
                 <th>Nome</th>
                 <th id="dataT">Data</th>
                 <th>Aula</th>
@@ -32,7 +32,14 @@
     <img  src="assets/postit.png">
     <img id="paper"   src="assets/instructions.png">
     </div>
-    <input id="search" type="search" placeholder="Pesquisar">
+    <div id="filter">
+        <input id="search" type="search" placeholder="Pesquisar">
+        <select id="anoSelect">
+            <option value="all">Todos</option>
+            <option value="23">2023</option>
+            <option value="24">2024</option>
+          </select>
+    </div>
     <div id="keys">
     <img class="tec" id="y" src="assets/teclas/y.png"  data-key="y">
     <img class="tec" id="n" src="assets/teclas/n.png"  data-key="n">

@@ -3,19 +3,17 @@ let lines
 let mobile = false
 let selected = 0;
 
-fetch('./sites.json')
-    .then((response) => response.json())
-    .then((json) => {
-        sites = json;
-        fetchData(sites);
-    })
-    .catch((error) => {
-        console.error('Erro ao buscar dados:', error);
-    });
-
     async function fetchData() {
         try {
             const response = await fetch('./sites.json');
+            fetch('./sites.json')
+            .then((response) => response.json())
+            .then((json) => {
+                sites = json;
+            })
+            .catch((error) => {
+                console.error('Erro ao buscar dados:', error);
+            });
             const json = await response.json();
             sites = json;
             createLinks(sites);
@@ -52,6 +50,7 @@ fetch('./sites.json')
         }
     }
 
+
 const infos = document.getElementById('data')
 const table = document.querySelector('table')
 const y = document.getElementById('y');
@@ -68,10 +67,16 @@ document.addEventListener('keydown', function (event) {
     key = event.key;
     if (key == 'y') {
         y.setAttribute('src', 'assets/teclas/yP.png');
-
         if(screen == 1){
+            const dataString = sites[selected].date;
+            const splitData = dataString.split("/");
+            const year = splitData[2].slice(-2);
 
-            window.location.href = sites[selected].link
+            if(year == 23) {
+                window.location.href = "./primeiro/" + sites[selected].link
+            }else if(year == 24){
+                y.href = "./segundo/" + sites[selected].link
+            }
         }
     } else if (key == 'n') {
         n.setAttribute('src', 'assets/teclas/nP.png');
@@ -174,10 +179,15 @@ function createLinks(sites) {
         const data = document.createElement('th')
         const course = document.createElement('th')
 
+        const dataString = site.date;
+        const splitData = dataString.split("/");
+        const year = splitData[2].slice(-2);
+
         name.innerHTML = site.title
         data.innerHTML = site.date
         tr.id = number
         tr.dataset.title = site.title
+        tr.dataset.date = year
         course.innerHTML = site.subject
 
         tr.appendChild(name)
@@ -200,8 +210,17 @@ function dataOpen() {
     const text = document.getElementById('text')
     const y = document.getElementById('y')
     const site = sites[selected]
+    const dataString = site.date;
+    const splitData = dataString.split("/");
+    const year = splitData[2].slice(-2);
+    console.log(year)
+    
+    if(year == 23) {
+        y.href = "./primeiro/" + site.link
+    }else if(year == 24){
+        y.href = "./segundo/" + site.link
+    }
 
-    y.href = site.link
     title.innerHTML = site.title
     subject.innerHTML = site.subject
     date.innerHTML = site.date
@@ -219,39 +238,51 @@ const inputElement = document.querySelector("input")
 
 
 inputElement.addEventListener("input", (e) => {
-    let inputed = e.target.value.toLowerCase()
+    let inputed = e.target.value.toLowerCase();
 
-    if(inputed == 'in the end'){
-        const video = document.getElementById('link')
-
-        table.style.display = 'none'
-        infos.style.display = 'none'
-        video.style.display = 'block'
-        video.play()
-    }
-        if(inputed == 'josh'){
+    if (inputed == 'in the end') {
+        const video = document.getElementById('link');
+        table.style.display = 'none';
+        infos.style.display = 'none';
+        video.style.display = 'block';
+        video.play();
+        return; 
+    } else if (inputed == 'josh') {
         const joshElement = document.getElementById('josh');
-
         table.style.display = 'none';
         infos.style.display = 'none';
         joshElement.style.display = 'block';
-        
-        // Play the video
         joshElement.play();
+        return; 
     }
 
     lines.forEach((tr) => {
         let text = tr.dataset.title.toLowerCase(); 
 
-        if (text.includes(inputed)||text.includes('paramentro33')) {
-            tr.style.display = "table-row";
-        } else {
-            tr.style.display = "none";
+        tr.style.display = "table-row";
+
+        if (!text.includes(inputed)) {
+            tr.style.display = "none"; 
         }
     });
 });
 
+const anoSelect = document.getElementById('anoSelect');
 
+anoSelect.addEventListener("change", (e) => {
+    let inputed = e.target.value;
 
+    lines.forEach((tr) => {
+        let date = tr.dataset.date; 
+
+        if (date.includes(inputed) || date.includes('00')) {
+            tr.style.display = "table-row";     
+        }else if (inputed == "all"){
+            tr.style.display = "table-row"
+        } else {
+            tr.style.display = "none"; 
+        }
+    });
+});
 
 fetchData()
