@@ -1,0 +1,61 @@
+
+.gg-timelapse {
+    box-sizing: border-box;
+    transform: scale(var(--ggs,1));
+    position: relative;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border: 2px solid;
+    border-radius: 22px;
+   }
+   
+   .gg-timelapse::after,
+   .gg-timelapse::before {
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 5px;
+    height: 4px;
+    border: 7px solid;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-radius: 22px;
+    top: 2px;
+    right: 2px
+   }
+   
+   .gg-timelapse::before {
+    transform: rotate(45deg)
+   }
+   
+   .gg-timelapse::after {
+    border-top-color: transparent;
+    transform: rotate(85deg)
+   } 
+   .gg-work-alt,
+   .gg-work-alt::after {
+    display: inline-block;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 2px
+   }
+   
+   .gg-work-alt {
+    position: relative;
+    transform: scale(var(--ggs,1));
+    width: 14px;
+    height: 10px;
+    border-radius: 1px
+   }
+   
+   .gg-work-alt::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 1px;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    left: 4px;
+    top: -3px
+   } 

@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 80%;
+    text-align: center;
+  }
+  
+  header {
+    margin-bottom: 50px;
+  }
+  
+  header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  } ul {   
+    list-style: none;} 
+    li {
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Recursive', sans-serif;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Montserrat:wght@200&family=Poppins:wght@500&family=Recursive:wght@300&display=swap');
+
+  
