@@ -48,6 +48,7 @@ h2 a {
 .trabalho img {
     max-height: 7vw;
     border-radius: 7px;
+    
 }
 .trabalho {
     display: grid;

@@ -1,0 +1,63 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 10em;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+.explicacao {
+    justify-content:center ;
+    font-size: 1.5em;
+}
+
+.video {
+    text-align: center;
+    border-radius: 2em;
+}
+
+.rodape {
+    text-align: center;
+    margin-top: -25px;
+  }
+  
