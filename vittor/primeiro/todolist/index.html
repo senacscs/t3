@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Todolist</title>
+</head>
+
+<body>
+    <h1>Social Media App</h1>
+    <div class="container">
+        <div class="left">
+            <form action="POST" id="form">
+                <label for="post">Write your post</label>
+                <br> <br>
+                <textarea name="post" id="input" cols="30" rows="10"></textarea>
+                <br> <br>
+                <div id="msg"></div>
+                <button type="submit">Post</button>
+            </form>
+        </div>
+        <div class="right">
+            <h3>Your posts here</h3>
+            <div id="posts">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

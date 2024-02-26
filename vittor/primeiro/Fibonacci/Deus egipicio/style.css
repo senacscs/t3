@@ -1,0 +1,109 @@
+.h1a{
+    position: absolute;
+    left: 40%;
+}
+
+.p1{
+    width: 50%;
+    position: absolute;
+    margin-top: 50px;
+    left: 40%;
+    }
+
+.total1{
+    display: inline-block;
+}
+
+.img1{
+    justify-content: left;
+    transform: scale(1.0);
+    position: absolute;
+}
+
+body{
+    background-color: bisque;
+}
+
+.h2a{
+    position: absolute;
+    left: 40%;
+    margin-top: 350px;
+}
+
+.cb1{
+    left: 40%;
+    position: absolute;
+    margin-top: 420px;
+}
+
+.h2b{
+    position: absolute;
+    left: 40%;
+    margin-top: 450px;
+}
+
+.cb2{
+    left: 40%;
+    position: absolute;
+    margin-top: 520px;
+}
+
+.h2c{
+    position: absolute;
+    left: 40%;
+    margin-top: 670px;
+}
+
+.cb3{
+    position: absolute;
+    left: 40%;
+    margin-top: 730px;
+    padding-bottom: 30px;
+}
+
+.h3a{
+    position: absolute;
+    left: 100px;
+    margin-top: 520px;
+}
+
+
+.img2{
+    position: absolute;
+    transform: scale(0.35);
+    left: -250px;
+    margin-top: 370px;
+    padding-bottom: 50px;
+}
+
+.h2d{
+    position: absolute;
+    left: 40%;
+    margin-top: 550px;
+}
+
+.cb4{
+    position: absolute;
+    left: 450px;
+    margin-top: 630px;
+}
+
+.img3{
+    position: absolute;
+    left: 320px;
+    margin-top: 350px;
+    transform: scale(0.05);
+}
+
+
+.cb5{
+    position: absolute;
+    left: 500px;
+    margin-top: 750px;
+}
+
+.cb6{
+    position: absolute;
+    left: 500px;
+    margin-top: 750px;
+}
