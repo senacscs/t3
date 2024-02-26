@@ -1,0 +1,424 @@
+@media screen and (min-width: 720px) {
+
+    /* Adicionar padrão à pagina */
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    /* deixar o scroll mais bonito */
+    html {
+        scroll-behavior: smooth;
+    }
+    /* colodcar o header fixo e na frente do resto da pagina */
+    header { 
+        padding: 0% 0px;
+        width: 100%;
+        height: 30%;
+        background-color: rgb(106, 11, 118);
+        z-index: auto;
+    }
+    /* tirar o estilo padrão da lista e alinhar no meio */
+    header nav ul {
+        list-style: none;
+        text-align: center;
+    }
+    /* Colocar os itens da ,ista um ao lado do outro */
+    header nav ul li {
+        display: inline;
+    }
+    /* coloca as frases em caps e estiliza os anchors da pagina */
+    header nav ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: -912px;
+        font-size: 20px;
+        padding: 10px;
+        display: inline-block;
+    }
+    /* coloca uma cor na font quando passar o mouse */
+    header nav ul li a:hover {
+        color: rgb(181, 124, 186);
+    }
+
+    .titulo{
+    padding-top: 70px;
+     font-size: 20px;
+    }
+
+    .video{
+display: grid;
+justify-content: left;
+margin: 0 auto;
+
+
+    }
+    
+    section {
+        padding-top: 7px;
+        text-align: center;
+        width: 100%;
+        height: 1000px;
+    }
+    
+    #section3{
+        height: 600px;
+    }
+    
+    section:nth-child(even) {
+        background: rgb(181, 124, 186);
+    }
+    
+    section:nth-child(odd){
+        background: white
+    }
+    
+    .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    
+    article {
+        width: 100%;
+        text-align: center;
+    
+    }
+    
+    
+    footer {
+        width: 100%;
+        height: 200px;
+    }
+    
+    
+    #center{
+        text-align: center;
+    }
+    
+    
+    #texto{
+        text-align: right;
+    }
+    
+    #color-white {
+        color: white;
+        font-size:20px;
+        text-align:center;
+     
+       
+    }
+    
+
+    #tamanho{
+        font-size: 5cqmin;
+        text-align: justify;
+        text-align: center;
+    }
+
+
+    #video{
+        grid-area: main;
+    }
+    
+    #title {
+        /* alinhar o titulo e aplicar tamanho */
+        text-align: center;
+        font-size: 30px;
+        
+    }
+    #name {
+        /* msm coisa com o subtitulo */
+        text-align: end;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .nome {
+        /* msm coisa com o subtitulo */
+        text-align: end;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    
+    .container {
+        /* tamanho maximo da div */
+        max-width: 55vw;
+        /* colocar o grid */
+        display: grid;
+        /* alinhar o conteudo no centro */
+        justify-content: center;
+        background-color: rgb(196, 196, 196);
+        /* colocar no meio da pag */
+        margin-left: auto;
+        margin-right: auto;
+        /* arredondar a borda e colocar sombra */
+        border-radius: 20px;
+        /* adicionar margem */
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+        
+    }
+    
+    nav {
+        text-align: center;
+        margin-top: 20px;
+        color:rgb(181, 124, 186);
+        font-size: 10%;
+    }
+    
+    footer{
+        background-color: black;
+        padding: 50px;
+        color: rgb(181, 124, 186);
+        text-align: center;
+        width: 100%;
+        height: 20px;
+     
+    }
+    
+    .grid{
+        max-width: 20vw;
+        display: grid;
+        justify-content: center;
+        background-color: rgb(196, 196, 196);
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+        box-shadow: 8px 10px 4px white;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+
+    
+    ul {
+        margin-left: 40px; 
+    }
+    
+    
+    li {
+        margin-bottom: 25px; 
+    }
+
+    
+    
+    
+    }
+    
+
+
+
+    @media screen and (max-width: 720px) {
+    .vermelho{
+    background-color: red;
+}
+
+/* Adicionar padrão à pagina */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* deixar o scroll mais bonito */
+html {
+    scroll-behavior: smooth;
+}
+/* colodcar o header fixo e na frente do resto da pagina */
+header { 
+    padding: 0% 0px;
+    width: 200%;
+    height: 5%;
+    background-color: white;
+    z-index: auto;
+}
+/* tirar o estilo padrão da lista e alinhar no meio */
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+/* Colocar os itens da ,ista um ao lado do outro */
+header nav ul li {
+    display: inline;
+}
+/* coloca as frases em caps e estiliza os anchors da pagina */
+header nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: -40px;
+    font-size: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+/* coloca uma cor na font quando passar o mouse */
+header nav ul li a:hover {
+    color: rgb(181, 124, 186);
+}
+
+section {
+    padding-top: 7px;
+    text-align: center;
+    width: 200%;
+    height: 700px;
+}
+
+#section3{
+    height: 600px;
+}
+
+section:nth-child(even) {
+    background: rgb(181, 124, 186);
+}
+
+section:nth-child(odd){
+    background: withe
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+article {
+    width: 100%;
+    text-align: center;
+
+}
+
+
+footer {
+    width: 100%;
+    height: 200px;
+}
+
+
+#center{
+    text-align: center;
+}
+
+
+#texto{
+    text-align: right;
+}
+
+#color-white {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+ 
+   
+}
+
+
+#tamanho{
+    font-size: 5cqmin;
+    text-align: justify;
+    text-align: center;
+}
+
+#video{
+    grid-area: main;
+}
+
+#title {
+    /* alinhar o titulo e aplicar tamanho */
+    text-align: center;
+    font-size: 30px;
+    
+}
+#name {
+    /* msm coisa com o subtitulo */
+    text-align: end;
+    font-size: 15px;
+    text-align: center;
+}
+
+.nome {
+    /* msm coisa com o subtitulo */
+    text-align: end;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.container {
+    /* tamanho maximo da div */
+    max-width: 300vw;
+    /* colocar o grid */
+    display: grid;
+    /* alinhar o conteudo no centro */
+    justify-content: center;
+    background-color: rgb(196, 196, 196);
+    /* colocar no meio da pag */
+    margin-left: auto;
+    margin-right: auto;
+    /* arredondar a borda e colocar sombra */
+    border-radius: 20px;
+    box-shadow: 8px 10px 4px rgb(0,0,0,0.5);
+    /* adicionar margem */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+    color:rgb(181, 124, 186);
+    font-size: 10%;
+}
+
+footer{
+    background-color: black;
+    padding: 50px;
+    color: rgb(181, 124, 186);
+    text-align: center;
+    width: 200%;
+    height: 20px;
+ 
+}
+
+.grid{
+    max-width: 60vw;
+    display: grid;
+    justify-content: center;
+    background-color: rgb(196, 196, 196);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    box-shadow: 8px 10px 4px rgb(0,0,0,0.5);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+
+ul {
+    margin-left: 20px; 
+}
+
+
+li {
+    margin-bottom: 15px; 
+}
+
+
+}
+
+

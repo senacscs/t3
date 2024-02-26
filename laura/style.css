@@ -1,10 +1,10 @@
 html{
     margin-left: 25%;
     margin-right: 25%;
-    background-color:#d6e3e3;
+    background-color:#c99196;
   }
   h1{
-    color:#8b538a;
+    color:#451414;
     font-family:monospace;
     font-size: 45px;
   }
@@ -13,10 +13,10 @@ html{
   }
   h2{
     font-family: monospace;
-    color:#8b538a;
+    color:#451414;
   }
   button {
-    background-color: #8b538a;
+    background-color: #451414;
     color:rgb(255, 255, 255);
     border: 0;
     padding: 15px 32px;
