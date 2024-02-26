@@ -1,3 +1,7 @@
+@media screen and (min-width: 720px) {
+  body {
+  background-color: rgb(255, 255, 255);
+  }
 
 body {
 	font-family: 'Sintony', sans-serif;
@@ -307,8 +311,19 @@ img {
   max-height: 20vw;
   border-radius: 30px;
 }
-
+@media screen and (max-width: 720px) {
+  body {
+  background-color: rgb(47, 93, 82);
+  }
+  }
 p{
   color: black;
   font-size: 20px;
 }
+}
+
+@media screen and (max-width: 720px) {
+  body {
+  background-color: rgb(136, 239, 215);
+  }
+  }
