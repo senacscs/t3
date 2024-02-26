@@ -1,113 +1,98 @@
-
-
-
-body{
-    background-image: url(./assets/gifs-de-anime-aesthetic-49.gif)
-    height 100%;
-    background-size:cover;
-
-
-
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-header {
-    padding: 15px 0px;
-    position: fixed;
-    width: 100%;
-    background-color: rgb(38, 38, 38);
-    z-index: 1;
-}
-
-header nav ul {
-    list-style: none;
+/* Estilos para telas maiores que 768px */
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(./assets/images.jfif);
+    font-family: Arial, sans-serif;
+    color: aquamarine;
+    margin: 0;
+    padding: 0;
     text-align: center;
-}
+  }
 
-header nav ul li {
-    display: inline;
-}
+  h1, h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f5f5f5; /* Cor do texto */
+  }
 
-header nav ul li a {
+  header, nav, main, footer {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 80%;
+  }
+
+  nav a {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
     text-decoration: none;
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: -15px;
-    font-size: 30px;
-    padding: 2px 10px;
-    display: inline-block;
-}
+    border-radius: 5px;
+    margin: 0 10px;
+    display: inline-flex;
+  }
 
-header nav ul li a:hover {
-    color: rgb(90, 74, 230);
-}
+  h1 {
+    font-size: 2em;
+  }
 
-section {
-    padding-top: 100px;
-    text-align: center;
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+
+  video {
     width: 100%;
-    height: 700px;
+  }
 }
 
-section:nth-child(even) {
-    background: white;
-}
-
-section:nth-child(odd){
-    background: rgb(38, 38, 38);
-}
-
-.flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+/* Estilos para telas menores que 768px */
+@media screen and (max-width: 767px) {
+  body {
+    background-image: url(./assets/images.jfif);
+    font-family: Arial, sans-serif;
+    color: aquamarine;
+    margin: 0;
+    padding: 0;
     text-align: center;
-}
+  }
 
-article {
-    width: 100%;
+  h1, h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f5f5f5; /* Cor do texto */
+  }
+
+  header, nav, main, footer {
     text-align: center;
-}
+    margin: 20px auto;
+    max-width: 90%;
+  }
 
-footer {
+  nav a {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  video {
     width: 100%;
-    height: 200px;
-}
-
-h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
-    font-size: 50px;
-}
-
-h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    font-size: 30px;
-}
-
-h3 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
-    font-size: 30px;
-}
-
-p {
-    margin-top: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-}
-
-.color-white {
-    color: white;
-}
-.sobre {
-
+  }
 }
