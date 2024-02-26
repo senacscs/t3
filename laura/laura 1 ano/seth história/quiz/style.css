@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Sedgwick Ave Display', cursive; */
+    /* font-family: 'Zilla Slab', serif; */
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url(../assets/fundo-antigo1.jpg);
+    background-size: 110%;
+    background-attachment: fixed;
+    font-size: 110%;
+    margin-bottom: 1vw;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0 0.1em 0;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    font-size: 1.6vw;
+}
+
+header a:hover {
+    color:  rgb(216, 182, 70);
+}
+
+img {
+    display: block;
+    width: 20vw;
+    height: auto;
+    border: 0.3vw solid rgb(216, 182, 70);
+    border-radius: 1vw;
+}   
+
+figure {
+    position: absolute;
+    top: 5vw;
+    right: 5vw;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1.2vw;
+    padding-top: 10px;
+}
+
+h1 {
+    text-align: start;
+    font-size: 3.5vw;
+    margin: 0;
+}
+
+main {
+    margin-top: 0;
+    padding: 0;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 2.3vw;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 2px;
+}
+
+input[type="text"] {
+    width: 20%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(180, 152, 58);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: rgb(151, 128, 50);
+}
+
+form {
+    display: grid;
+    gap: 1vh;
+}

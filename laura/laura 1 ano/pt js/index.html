@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <br>
+    <br>
+    
+    <center>
+        <h1>Exemplos de JavaScript</h1>
+        <br><br>
+    </center>
+    <center>
+        <h2>Entrada e Saída</h2>
+        <div class="style_div">
+            <details close>
+                <summary>Olá mundo</summary>
+                <button onclick="olaMundo()">Executar</button>
+            </details>
+        </div>
+        <br>
+        <div class="style_div">
+            <details close>
+                <summary>Número digitado</summary>
+                <label> Digite um número: </label><input type="text" id="numero" placeholder="Só números">
+                <button onclick="numeroDigitado()">Executar</button>
+            </details>
+        </div>
+        <br>
+        <div class="style_div">
+            <details close>
+                <summary>Nome digitado</summary>
+                <label> Digite seu nome: </label><input type="text" id="nome" placeholder="Só letras">
+                <button onclick="nomeDigitado()">Executar</button>
+            </details>
+        </div>
+        <br>
+        <h2>Operações Aritméticas</h2>
+        <div class="style_div">
+            <details close>
+                <summary>Operações simples</summary>
+                <label>Digite o primeiro número: </label>
+                <input type="number" id="primeiroNum" placeholder="Só números" /><br />
+                <br>
+                <label>Selecione a operação: </label>
+                <select id="select" name="opcao">
+                    <option value="opcao1">+</option>
+                    <option value="opcao2" selected>-</option>
+                    <option value="opcao3">/</option>
+                    <option value="opcao4">*</option>
+                </select><br />
+                <br>
+                <label>Digite o segundo número: </label>
+                <input type="number" id="segundoNum" placeholder="Só números" /><br />
+                <br>
+                <button onclick="calcular()">Executar</button>
+            </details>
+        </div>
+        <br>
+        <div class="style_div">
+            <details close>
+                <summary>Divisão inteira</summary>
+                <label>Digite um valor: </label>
+                <input type="number" id="valor" placeholder="Só números" /><br />
+                <br>
+                <button onclick="div()">Executar</button>
+            </details>
+        </div>
+        <br>
+
+        <div class="style_div">
+            <details close>
+                <summary>Potência e raiz</summary>
+                <label>Digite um valor: </label>
+                <input type="number" id="num" placeholder="Só números" /><br />
+                <br>
+                <button onclick="pot()">Executar</button>
+            </details>
+        </div>
+        <br>
+<h2>Algoritmos Sequenciais</h2>
+        <div class="style_div">
+            <details close>
+                <summary>Maioridade penal</summary>
+                <label>Digite sua idade: </label>
+                <input type="num" id="idade" placeholder="Só números" /><br />
+                <br>
+                <button onclick="maioridade()">Executar</button>
+            </details>
+        </div>
+        <br>
+
+        <div class="style_div">
+            <details close>
+                <summary>Altura média</summary>
+                <label>Digite a altura da primeira pessoa: </label>
+                <input type="num" id="primeiraAltura" placeholder="Só números (cm)" /><br />
+
+                <label>Digite a altura da segunda pessoa: </label>
+                <input type="num" id="segundaAltura" placeholder="Só números (cm)" /><br />
+
+                <label>Digite a altura da terceira pessoa: </label>
+                <input type="num" id="terceiraAltura" placeholder="Só números (cm)" /><br />
+                <br>
+                <button onclick="altura()">Executar</button>
+            </details>
+        </div>
+        <br>
+
+        <div id="mostrar" class="mostrar"></div>
+        <br>
+    </center>
+    <script src="script.js"></script>
+</body>
+
+</html>

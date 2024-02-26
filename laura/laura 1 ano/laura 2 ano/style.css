@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+:raiz {
+  --cor-vermelho: #ec1840;
+  --cor-roxa: #7a18ec;
+  --cor-branco: #fff;
+  --cor-preto-1: #111;
+  --cor-preto-2: #222;
+  --cor-preto-3: #444;
+  --velocidade normal: 0,5s;
+  --velocidade rápida: 0,8s;
+}
+
+* {
+  margem: 0;
+  preenchimento: 0;
+  dimensionamento de caixa: caixa de borda;
+  família de fontes: "Poppins", sem serifa;
+}
+
+corpo {
+  exibição: flexível;
+  justificar-conteúdo: centro;
+  alinhar itens: centro;
+  direção flexível: coluna;
+  altura mínima: 100vh;
+  plano de fundo: var(--color-black-1);
+}
+
+a {
+  posição: relativa;
+  largura: 180px;
+  altura: 60px;
+  margem: 20px;
+  altura da linha: 60px;
+  espaçamento entre letras: 2px;
+  decoração de texto: nenhuma;
+  transformação de texto: maiúscula;
+  alinhamento de texto: centro;
+  cor: var(--cor-branco);
+  transição: var(--velocidade-normal);
+  borda: 1px var sólido (--color-red);
+}
+a: passar o mouse {
+  borda: 1px sólido transparente;
+  plano de fundo: var(--color-red) url(https://i.postimg.cc/wBXGXbWN/pixel.png);
+  atraso de transição: 0,8s;
+  tamanho do fundo: 180px;
+  -webkit-animation: anima var(--speed-fast) passos(8) para frente;
+          animação: anima var(--speed-fast) passos(8) para frente;
+}
+a:último-do-tipo {
+  borda: 1px var sólido (--color-roxo);
+}
+a:último-do-tipo:hover {
+  plano de fundo: var(--color-purple) url(https://i.postimg.cc/FzBWFtKM/pixel2.png);
+}
+
+@-webkit-keyframes animados {
+  0% {
+    posição de fundo-y: 0;
+  }
+  100% {
+    posição de fundo-y: -480px;
+  }
+}
+
+@keyframes animados {
+  0% {
+    posição de fundo-y: 0;
+  }
+  100% {
+    posição de fundo-y: -480px;
+  }
+}
