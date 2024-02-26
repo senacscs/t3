@@ -25,6 +25,7 @@ nav a{
     font-size: 20pt;
     position: relative;
     
+    
 }
 
 nav a::after{
@@ -47,4 +48,10 @@ h1 {
     background-color: rgb(233, 211, 244);
     color: rgb(64, 63, 62);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(64, 63, 62);
+    text-align: center;
+    padding-top:40px;
 }
