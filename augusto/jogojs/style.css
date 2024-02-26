@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html {
+    cursor: none;
+    pointer-events: none;
+}
+
+.end {
+    display: flex;
+}
+#counter {
+    font-family: 'Rubik Mono One', monospace;
+    color: white;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    opacity: 0.5;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameover {
+    cursor: pointer;
+    pointer-events: all;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 8000;
+    opacity: 0.6;
+    font-family: 'Rubik Mono One', monospace;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#gameover a {
+            margin-top: 35px;
+            text-decoration: none;
+            padding: 8px;
+            color: white;
+            font-size: 1.75rem;
+            border: 1px dashed transparent;
+            border-radius: 8px;
+        }
+
+#gameover a:hover {
+    border: 1px dashed rgb(168, 166, 166);
+}
+
+body {
+    background-image: url(./assets/bg.png);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+#earth {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    width: 150px;
+    z-index: 1;
+}
+
+@keyframes rotating {
+    from{
+        -webkit-transform: translate(-50%, -20%) rotate(0deg);
+    }
+    to{
+        -webkit-transform: translate(-50%, -20%) rotate(360deg);
+    }
+}
+
+@keyframes shooting {
+    0% {
+        width: 1px;
+        /* height: 5px; */
+    }
+    15% {
+        width: 3px;
+        /* height: 25px; */
+    }
+    25% {
+        width: 4px;
+        /* height: 35px; */
+    }
+    35% {
+        width: 5px;
+        /* height: 45px; */
+    }
+    45% {
+        width: 5px; 
+    }
+    55% {
+        width: 6px;
+    }
+    100% {
+        width: 7px;
+    }
+}
+
+
+
+
+.rotating {
+    animation: rotating 35s linear infinite;
+    
+}
+
+.shooting {
+    animation: shooting 0.1s linear;
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+#laser {
+    width: 3px;
+    height: 100vh;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center calc(100% + 50px);
+    z-index: 0;
+    background-color: blue;
+    /* display: none; */
+}
+
+#gun {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 152px;
+    height: 246px;
+    transform-origin: 76px 170px;
+    z-index: 0;
+    /* position: fixed;
+    background-image: url('./assets/gun.png');
+    z-index: 100; */
+    /* background-position: -105px; FRAME 1*/
+    /* background-position: -617px; FRAME 2*/
+    /* background-position: -1128px; FRAME 3*/
+    /* background-position: -1641px; FRAME 4 */
+    /* background-color: transparent; */
+    /* mix-blend-mode: multiply; */
+    /* left: 50%;
+    top: 50%;
+    width: 335px;
+    height: 470px; */
+}
+
+/* 
+#gun {
+    position: fixed;
+    object-position: 105px;
+    left: 50%;
+    top: 50%;
+    border: 1px solid red;
+    width: 335px;
+    height: 470px;
+} */
+
+
+#bullet {
+    /* position: fixed; */
+    display: none;
+    width: 100px;
+}
+
+@keyframes rotating-asteroid {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.asteroid {
+    position: absolute;
+    /* background-color: #999999; */
+    /* border-radius: 50%; */
+    /* border: 1px solid red; */
+    clip: 10%;
+    z-index: 1;
+    /* animation: rotating-asteroid 20s linear infinite; */
+}
