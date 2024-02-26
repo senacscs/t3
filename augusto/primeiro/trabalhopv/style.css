@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    font-family: roboto, sans-serif;
+}
+
+body {
+    background-color: rgba(58, 109, 85, 0.767);
+}
+
+header {
+    background-image: linear-gradient( to top , #3f5d44, #315a38);
+    text-align: center; 
+    padding: 50px;
+}
+
+h1 {
+    color: white;
+    padding: 25px;
+    font-size: 3em;
+}
+
+#sub {
+    color: white;
+    margin: 25px 25px;
+}
+
+nav {
+    z-index: -1;
+    text-align: justify;
+    background-color: rgb(41, 124, 57);
+    padding: 2px;
+}
+
+a.menu {
+    color: white;
+    margin: 0px 20px;
+    text-decoration: none;
+}
+
+a.menu:hover {
+    color: rgb(224, 222, 222);
+    text-decoration: underline;
+}
+
+main {
+    margin: 0px 200px;
+    padding: 20px;
+    background-color: white;
+}
+
+article {
+    padding: 20px;
+}
+
+h2 {
+    padding: 20px;
+    font-size: 2em;
+}
+
+h3 {
+    background-image: linear-gradient( to right ,rgba(43, 99, 43, 0.562), rgba(255, 255, 255, 0.411));
+}
+
+article>p {
+    margin: 20px;
+}
+
+article.tabela {
+    background-color: rgba(42, 152, 42, 0.692);
+    border-radius: 15px;
+    padding: 0px;
+}
+
+article.tabela>h4 {
+    padding: 10px;
+    background-color: rgb(33, 96, 64);
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+}
+
+article.tabela>ul.ul1 {
+    margin: 15px;
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+article.tabela>ul.ul2 {
+    margin: 15px;
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+}
+
+article.tabela>p {
+    margin: 10px;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: rgb(1, 88, 88);
+    padding: 5px;
+}
+@media (max-width: 768px) {
+    *{
+        color: aqua !important; 
+    }
+}
+@media (max-width: 480px) {
+    * {
+    color: red !important;
+}
+}
