@@ -16,12 +16,16 @@ let selected = 0;
             });
             const json = await response.json();
             sites = json;
+            if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                mobile = true
+            }
             createLinks(sites);
             select();
+            const span = document.getElementById('number')
+            span.innerHTML = number
             lines = document.querySelectorAll('tr');
-            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            if (mobile === true) {
                 console.log('Modo Touch');
-                mobile = true
                 lines.forEach((line) => {
                     line.addEventListener('click', () => {
                         console.log('click');
@@ -65,17 +69,21 @@ let screen = 0
 
 document.addEventListener('keydown', function (event) {
     key = event.key;
+    console.log('a')
     if (key == 'y') {
+        console.log('b')
         y.setAttribute('src', 'assets/teclas/yP.png');
         if(screen == 1){
             const dataString = sites[selected].date;
             const splitData = dataString.split("/");
             const year = splitData[2].slice(-2);
 
-            if(year == 23) {
+            if(sites[selected].link.startsWith("http")) {
+                window.location.href = sites[selected].link
+            }else if(year == 23) {
                 window.location.href = "./primeiro/" + sites[selected].link
             }else if(year == 24){
-                y.href = "./segundo/" + sites[selected].link
+                window.location.href = "./segundo/" + sites[selected].link
             }
         }
     } else if (key == 'n') {
@@ -210,12 +218,14 @@ function dataOpen() {
     const text = document.getElementById('text')
     const y = document.getElementById('y')
     const site = sites[selected]
+
     const dataString = site.date;
     const splitData = dataString.split("/");
     const year = splitData[2].slice(-2);
-    console.log(year)
     
-    if(year == 23) {
+    if(site.link.startsWith("http")) {
+        y.href = site.link
+    }else if(year == 23) {
         y.href = "./primeiro/" + site.link
     }else if(year == 24){
         y.href = "./segundo/" + site.link

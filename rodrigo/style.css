@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&family=Inter:wght@100;400;700&family=K2D&family=Poppins:wght@500&family=Raleway:wght@300;400&family=Righteous&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
 * {
     margin: 0;
-    font-family: 'Source Code Pro', sans-serif;
+    font-family: 'Silkscreen', sans-serif;
 }
 :root{
     --green: rgb(57, 135, 4);
@@ -106,7 +107,7 @@ table {
     text-decoration: underline;
   }
   #search {
-    font-family: 'source code pro', sans-serif;
+    font-family: 'Silkscreen', sans-serif;
     grid-column-start: 1;
     max-width: 20vw;
     margin-left: 60px;
@@ -131,10 +132,18 @@ table {
     background-color: var(--darkGreen);
     border: 4px solid rgb(75, 75, 75);
     color: var(--green);
-    font-family: 'source code pro', sans-serif;
+    font-family: 'Silkscreen', sans-serif;
     width: 12w;
     margin-left: 30px;
     font-size: larger;
+  }
+  #filter{
+    display: flex;
+    align-items: center;
+  }
+  p{
+    margin-left: 20px;
+    font-size: large;
   }
   @media screen and (max-width: 450px){
 
@@ -158,5 +167,15 @@ table {
     }
     #data {
       margin-left: 11px;
+    }
+    #filter{
+      display: block;
+    }
+    body{
+      display: block;
+    }
+    #anoSelect{
+      margin-left: 0;
+      margin-top: 10px;
     }
   }
