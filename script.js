@@ -1,78 +1,78 @@
 const students = [
-  { name: "Andre", url: "/andre" },
-  { name: "Arthur", url: "/arthur" },
-  { name: "Augusto", url: "/augusto" },
-  { name: "Bianca", url: "/bianca" },
-  { name: "Brian", url: "/brian" },
-  { name: "Davi F.", url: "/davif" },
-  { name: "Davi M.", url: "/davimohr" },
-  { name: "Davi B.", url: "/borba" },
-  { name: "Eduarda", url: "/eduarda" },
-  { name: "Eduardo", url: "/eduardo" },
-  { name: "Francesco", url: "/francesco" },
-  { name: "Gabriel B.", url: "/barcellos" },
-  { name: "Gabriel L.", url: "/dick" },
-  { name: "Guilherme", url: "/guilherme" },
-  { name: "Gustavo O.", url: "/gustavoo" },
-  { name: "Gustavo F.", url: "/faber" },
-  { name: "Gustavo M.", url: "/gustavom" },
-  { name: "Isaac", url: "/isaac" },
-  { name: "Isadora", url: "/isadora" },
-  { name: "João", url: "/joao" },
-  { name: "Laura", url: "/laura" },
-  { name: "Lucas", url: "/lucas" },
-  { name: "Luciano", url: "/luciano" },
-  { name: "Marcos", url: "/marcos" },
-  { name: "Nicolas", url: "/nicolas" },
-  { name: "Nicole", url: "/nicole" },
-  { name: "Otaviano", url: "/otaviano" },
-  { name: "Pedro", url: "/pedro" },
-  { name: "Rodrigo", url: "/rodrigo" },
-  { name: "Sophia", url: "/sophia" },
-  { name: "Tito", url: "/tito" },
-  { name: "Tomás", url: "/tomas" },
-  { name: "Valentina", url: "/valentina" },
-  { name: "Vitor", url: "/vitor" },
-  { name: "Vittor", url: "/vittor" },
+  { name: "Andre", url: "andre" },
+  { name: "Arthur", url: "arthur" },
+  { name: "Augusto", url: "augusto" },
+  { name: "Bianca", url: "bianca" },
+  { name: "Brian", url: "brian" },
+  { name: "Davi F.", url: "davif" },
+  { name: "Davi M.", url: "davimohr" },
+  { name: "Davi B.", url: "borba" },
+  { name: "Eduarda", url: "eduarda" },
+  { name: "Eduardo", url: "eduardo" },
+  { name: "Francesco", url: "francesco" },
+  { name: "Gabriel B.", url: "barcellos" },
+  { name: "Gabriel L.", url: "dick" },
+  { name: "Guilherme", url: "guilherme" },
+  { name: "Gustavo O.", url: "gustavoo" },
+  { name: "Gustavo F.", url: "faber" },
+  { name: "Gustavo M.", url: "gustavom" },
+  { name: "Isaac", url: "isaac" },
+  { name: "Isadora", url: "isadora" },
+  { name: "João", url: "joao" },
+  { name: "Laura", url: "laura" },
+  { name: "Lucas", url: "lucas" },
+  { name: "Luciano", url: "luciano" },
+  { name: "Marcos", url: "marcos" },
+  { name: "Nicolas", url: "nicolas" },
+  { name: "Nicole", url: "nicole" },
+  { name: "Otaviano", url: "otaviano" },
+  { name: "Pedro", url: "pedro" },
+  { name: "Rodrigo", url: "rodrigo" },
+  { name: "Sophia", url: "sophia" },
+  { name: "Tito", url: "tito" },
+  { name: "Tomás", url: "tomas" },
+  { name: "Valentina", url: "valentina" },
+  { name: "Vitor", url: "vitor" },
+  { name: "Vittor", url: "vittor" },
 ];
 
-const projects = [
-  { name: 'Index', url: '/' },
-  { name: 'Indicações Front-End', url: '/indicacoesfront' },
-  { name: 'Projeto de pesquisa', url: '/projetopp' },
-  { name: 'Oficinas', url: '/oficinas' },
-  { name: 'Carrinho de rolimã', url: '/carrinho' },
-  { name: 'Fibonacci', url: '/fibonacci' },
-  { name: 'Ods', url: '/ods' },
-  { name: 'Deuses Egípcios', url: '/deusegipcio' },
-  { name: 'LinkeMusic', url: '/linkemusic' },
-  { name: 'Algoritmos em Javascript', url: '/ptjs' },
-  { name: 'Jogo em Javascript', url: '/jogojs' },
-]
+grades = {
+  primeiro: {
+    name: 'Primeiro',
+    url: 'primeiro',
+    projects: [
+      { name: 'Index', url: '' },
+      { name: 'Indicações Front-End', url: 'indicacoesfront' },
+      { name: 'Projeto de pesquisa', url: 'projetopp' },
+      { name: 'Oficinas', url: 'oficinas' },
+      { name: 'Carrinho de rolimã', url: 'carrinho' },
+      { name: 'Fibonacci', url: 'fibonacci' },
+      { name: 'Ods', url: 'ods' },
+      { name: 'Deuses Egípcios', url: 'deusegipcio' },
+      { name: 'LinkeMusic', url: 'linkemusic' },
+      { name: 'Algoritmos em Javascript', url: 'ptjs' },
+      { name: 'Jogo em Javascript', url: 'jogojs' },
+    ]
+  },
+  segundo: {
+    name: 'Segundo',
+    url: 'segundo',
+    projects: [
+      { name: 'Index', url: '' },
+      { name: 'Indicações Back-End', url: 'indicacoesback' }
+    ]
+  }
+}
 
 // Gets a random colors theme
 function getRandomColor() {
   const colors = [
-    {
-      text: "#0c819a",
-      background: "#d4f8ff",
-    },
-    {
-      text: "#0a8329",
-      background: "#bcffcd",
-    },
-    {
-      text: "#824707",
-      background: "#ffdcb7",
-    },
-    {
-      text: "#8e0855",
-      background: "#ffc4e6",
-    },
-    {
-      text: "#910707",
-      background: "#ffc6c6",
-    },
+    'purple',
+    'amber',
+    'pink',
+    'red',
+    'blue',
+    'green',
   ];
 
   // Generate a random index number between 0 and the length of the array
@@ -85,7 +85,18 @@ const accentColor = getRandomColor();
 const audio = document.getElementById("audio")
 const filters = document.getElementById('filters')
 const searchField = document.getElementById("search");
-let currentProject = projects[0]
+
+// parses all the projects in an unique array and add the grade to the url
+const projectsWithGrade = Object.values(grades).map((grade, index) => {
+  return grade.projects.map(project => ({
+    ...project,
+    grade: Object.keys(grades)[index]
+  }))
+}).flat(1)
+
+const colorScheme = getRandomColor()
+const defaultGrade = 'segundo'
+let currentProject = projectsWithGrade.filter(project => project.grade === 'segundo')[0]
 
 function createElementFromStudent(student) {
   // Create the elements to show the student
@@ -94,12 +105,9 @@ function createElementFromStudent(student) {
 
   // Anchor params
   anchor.target = "_blank";
-  anchor.className = "student-link";
-  anchor.href = `.${student.url}${currentProject.url}`;
+  anchor.className = `bg-${colorScheme}-500 py-3 px-4 block shadow-2xl shadow-${colorScheme}-500/20`;
+  anchor.href = `./${student.url}/${currentProject.grade}/${currentProject.url}`;
   anchor.innerText = student.name;
-  anchor.style.color = accentColor.text;
-  anchor.style.borderColor = accentColor.border;
-  anchor.style.backgroundColor = accentColor.background;
 
   // Animate the color when hovering the button
   let anchorAnimation = false;
@@ -141,11 +149,11 @@ function updateStudentsList(students) {
 }
 
 function openFilter() {
-  filters.className = 'show'
+  filters.classList.remove('hidden')
 }
 
 function closeFilter() {
-  filters.className = 'hidden'
+  filters.classList.add('hidden')
 }
 
 function createElementFromProject(project) {
@@ -155,7 +163,7 @@ function createElementFromProject(project) {
 
   input.type = 'radio'
   input.name = 'filter-param'
-  input.defaultChecked = projects.find((project_) => project_ === project) === projects[0]
+  input.defaultChecked = currentProject === project
   span.innerText = project.name
   label.appendChild(input)
   label.appendChild(span)
@@ -226,10 +234,15 @@ function closeEminem() {
 }
 
 function handleFilter() {
-  projects.forEach((project) => {
-    filters.appendChild(
-      createElementFromProject(project)
-    )
+  Object.values(grades).forEach((grade, index) => {
+    const gradeName = document.createElement('span')
+    gradeName.innerHTML = grade.name
+    filters.appendChild(gradeName)
+    gradeName.className = `font-medium text-${colorScheme}-200 my-2`
+
+    projectsWithGrade.filter(project => project.grade === Object.keys(grades)[index]).forEach(project => {
+      filters.appendChild(createElementFromProject(project))
+    });
   })
 
   document.getElementById('filter-button').addEventListener('click', () => {
@@ -242,10 +255,32 @@ function handleFilter() {
     }
   });
 }
-function rauber() {
-  window.location.href = "./rauber.html"
+
+function autoSelectSearch() {
+  searchField.focus()
+  searchField.select()
 }
+
+function rauber() {
+  window.location.href = "./rauber"
+}
+
+function defineColorTheme() {
+  // tito do futuro, isso aqui não faz sentido algum, não pense
+  filters.className = filters.className.replace(/\bTHEME\b/g
+  , colorScheme)
+  
+  document.querySelectorAll('*').forEach(element => {
+    if (element.className) {
+      element.className = element.className.replace(/\bTHEME\b/g
+        , colorScheme)
+    }
+  })
+}
+
 updateStudentsList(students);
-animateSpiderMan();
+// animateSpiderMan();
 handleSearch();
 handleFilter();
+autoSelectSearch()
+defineColorTheme()

@@ -3,7 +3,7 @@
 }
 body {
     display: flex;
-    background-image: url(assets/padrao.png);
+    background-image: url(../assets/padrao.png);
     background-size: 100% 270%;
 }
 button {

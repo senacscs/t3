@@ -5,34 +5,35 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-  <title>Índice do Segundo Ano</title>
+  <title>Segundo Ano | Senac SCS</title>
   <link rel="shortcut icon" href="assets/icon.webp" type="image/x-icon">
   <script defer src="script.js"></script>
+  <link rel="stylesheet" href="./style.css" type="text/css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gradient-to-r min-h-screen from-THEME-900 to-gray-900 py-20 md:px-32 px-6">
   <main>
-    <a aria-label="Shhhhhhhh" href="./jogo">
+    <!-- <a aria-label="Shhhhhhhh" href="./jogo">
       <img loading="lazy" id="miranha" src="assets/miranha.jpg" alt="Homem aranha olhando com um binóculos" />
-    </a>
-    <header>
-      <h1>Índice do <span onClick="rauber()">S</span>egundo <span onClick="showEminem()">A</span>no</h1>
-      <div class="filter-container">
-        <input id="search" type="text" placeholder="Pesquisar" autocomplete="off" />
-        <button id="filter-button" aria-label="Selecionar projeto">
-          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"
+    </a> -->
+    <header class="flex md:gap-16 gap-8 md:items-center flex-col md:flex-row mb-16">
+      <h1 class="md:text-8xl text-5xl font-bold text-gray-50"><span onClick="rauber()">S</span>egundo <span onClick="showEminem()">A</span>no</h1>
+      <div class="flex mt-3">
+        <input class="py-2 sm:w-auto w-96 border-r-2 border-THEME-700 px-4 rounded-l-md bg-THEME-800 text-THEME-200 placeholder:text-THEME-400 outline-none" id="search" type="text" placeholder="Pesquisar" autocomplete="off" />
+        <button class="md:px-10 px-3 bg-THEME-800 group rounded-r-md hover:bg-THEME-700 transition-colors" id="filter-button" aria-label="selecionar projeto">
+          <svg class="text-gray-300 group-hover:text-gray-200 transition-colors" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"
             xmlns="http://www.w3.org/2000/svg">
             <path
               d="M3.9 54.9C10.5 40.9 24.5 32 40 32H472c15.5 0 29.5 8.9 36.1 22.9s4.6 30.5-5.2 42.5L320 320.9V448c0 12.1-6.8 23.2-17.7 28.6s-23.8 4.3-33.5-3l-64-48c-8.1-6-12.8-15.5-12.8-25.6V320.9L9 97.3C-.7 85.4-2.8 68.8 3.9 54.9z">
             </path>
           </svg>
         </button>
-        <div id="filters" class="hidden">
+        <div id="filters" class="z-50 flex flex-col bg-THEME-600 text-THEME-200 px-5 py-8 absolute rounded-md text-left hidden">
         </div>
       </div>
     </header>
-    <ol id="students-list"></ol>
+    <ol class="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-1" id="students-list"></ol>
   </main>
   <div id="eminem" class="hidden">
     <img loading="lazy" src="assets/eminem.png" alt="Foto do eminem" id="eminem">
