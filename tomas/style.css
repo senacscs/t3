@@ -215,3 +215,62 @@ h2{
   a{
     cursor: pointer;
   }
+
+  .new24{
+    font-weight: bold;
+    background-color: black;
+    padding: 10px;
+    border: 5px solid black;
+    width: 40%;
+    left: 30%;
+    top: 0%;
+    position: fixed;
+    color: white;
+    animation: borderAnimation 5s infinite;
+  }
+
+  @keyframes borderAnimation {
+    0% {
+      border-color: red;
+    }
+    20% {
+      border-color: orange;
+    }
+    40% {
+      border-color: yellow;
+    }
+    60% {
+      border-color: green;
+    }
+    80% {
+      border-color: blue;
+    }
+    100% {
+      border-color: red;
+    }
+  }
+
+  .link {
+    animation: colorAnimation 5s infinite;
+  }
+
+  @keyframes colorAnimation {
+    0% {
+      color: red;
+    }
+    20% {
+      color: orange;
+    }
+    40% {
+      color: yellow;
+    }
+    60% {
+      color: green;
+    }
+    80% {
+      color: blue;
+    }
+    100% {
+      color: red;
+    }
+  }
