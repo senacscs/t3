@@ -1,0 +1,89 @@
+body {
+
+    background-repeat: no-repeat;
+
+    background-size: 100%;
+
+    background-image: url(https://img.freepik.com/vetores-premium/premium-de-fundo-gradiente-preto-simples_552255-583.jpg)
+
+}
+
+
+
+
+h1, a, p, h2, ul, h3 {
+
+    color: rgb(249, 249, 249);
+
+    text-align: center;
+
+}
+
+
+
+
+.meio {
+
+    text-align: center;
+
+}
+
+nav {
+    text-align: right;
+}
+
+nav {
+    text-align: right;
+    width: 90%;
+    height: 90%;
+} 
+
+.direita {
+    text-align: right;
+    padding: 80%;
+    padding-right: 80px;
+}
+
+li {
+    list-style-type: none;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #050801;
+    font-family: 'Raleway', sans-serif;
+}
+
+button{
+  padding: 10px 20px;
+  background-color: #050801;
+  color: #03e9f4;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+button:hover{
+    background: #03e9f4;
+    color: #000000;
+    box-shadow: 0 0 2px #03e9f4,
+                0 0 7px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 0px #03e9f4;
+}
+
+
