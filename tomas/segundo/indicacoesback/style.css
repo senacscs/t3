@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'Josefin';
+    src: url('JosefinSans-VariableFont_wght.ttf') format('woff');
+    }
+
+body{
+    font-family: 'Josefin';
+}
+
+.ind{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.first{
+    margin-left: -8px;
+    margin-top: -47px;
+    color: white;
+    width: 101.3%;
+    background: linear-gradient(to left,rgb(77, 77, 77), rgb(51, 51, 51));
+}
+
+.first h1,p{
+    padding: 50px 20px;
+}
+
+.first img{
+    width: 530px;
+    height: 300px;
+}
+
+.first h1{
+    padding-left: 50px;
+    margin-top: -70px;
+}
+
+.firstflex{
+    display: flex;
+    padding-left: 120px;
+}
+
+.firstflex p{
+    width: 35%;
+}
+
+.second{
+    padding-top: 20px;
+}
+
+.second h1{
+    margin-left: 35px;
+}
+
+.secondflex{
+    padding-top: 20px;
+    display: flex;
+}
+
+.secondflex iframe{
+    padding-left: 130px;
+}
+
+.secondflex p{
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 40%;
+}
+
+.third{
+    background: linear-gradient(to left,rgb(77, 77, 77), rgb(51, 51, 51));
+    color: white;
+    width: 93.25%;
+    margin-left: -7.9px;
+    padding: 20px 50px;
+}
+
+.thirdflex{
+    display: flex;
+}
+
+.thirdflex p{
+    margin-top: 80px;
+    width: 50%;
+}
+
+.fourth{
+    width: 93.25%;
+    margin-left: -7.9px;
+    padding: 20px 50px;
+}
+
+.fourthflex{
+    display: flex;
+}
+
+.fourthflex p{
+    width: 40%;
+    margin-left: 20px;
+}
+
+.fourthflex img{
+    padding-left: 10%;
+    width: 25%;
+    height: 252%;
+}
+
+svg{
+    position: absolute;
+    top: 300%;
+    left: 37.5%;
+}
+
+svg:hover{
+    transform: scale(120%);
+    transition: 100ms linear; 
+}
+
+@media screen and (min-width: 1000px) {
+    
+}
+
+@media screen and (max-width: 450px) {
+    .firstflex, .secondflex, .thirdflex, .fourthflex{
+        display: unset;
+    }
+
+    p{
+        width: 100%;
+    }
+
+    .textmedia p{
+        margin-top: -65px;
+        font-size: 12px;
+        width: 60%;
+    }
+
+    .ind{
+        font-size: 18px;
+    }
+
+    .first h1{
+        font-size: 25px;
+        margin-left: -30px;
+    }
+
+    .firstflex img{
+        width: 190px;
+        height: 150px;
+    }
+
+    .second{
+        font-size: 12px;
+        margin-left: -35px;
+    }
+    
+    .secondflex iframe{
+        margin-left: -130px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .secondflex p{
+        width: 60%;
+        margin-left: -1px;
+        margin-top: -15px;
+    }
+
+    .third h1{
+        font-size: 25px;
+        margin-left: -30px;
+    }
+
+    .thirdflex p{
+        width: 60%;
+        margin-left: -42px;
+        margin-top: -15px;
+    }
+
+    .thirdflex iframe{
+        margin-left: -19px;
+    }
+
+    .fourth h1{
+        font-size: 25px;
+        margin-left: -30px;
+    }
+
+    .fourthflex img{
+        width: 130px;
+        height: 130px;
+    }
+
+    .fourthflex p{
+        width: 60%;
+        margin-left: 10px;
+        margin-top: -15px;
+        margin-bottom: 130px;
+    }
+
+    svg{
+        position: absolute;
+        top: 385%;
+        left: 10%;
+    }
+}
