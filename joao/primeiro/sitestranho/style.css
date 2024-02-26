@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: rgb(05, 05, 05);
+    margin-left: 80px;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+    color: #EA728C;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 40px;
+}
+h3 {
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+    color:#F7D3A6;
+    font-size: 32px;
+}
+h2 { 
+    font-family: 'Raleway', sans-serif;
+    color:#FC9D9D;
+    font-size:20px;
+}
+p {
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 30px;
+    margin-right: 400px;
+    color: whitesmoke;
+}
+a {
+    text-decoration: none;
+    color: #F7D3A6;
+}
+img { 
+    height: 300px;
+    width: auto;
+    margin-bottom: 30px;
+    object-position: right;
+}
+iframe {
+    margin-bottom: 30px;
+    position: static;
+}
+.instagram {
+    color: #f8f663;
+}
+.youtube {
+    color: rgb(250, 100, 100);
+}
+.github {
+    color: rgb(141, 138, 161);
+}
+.quebra {
+    margin-bottom: 0px;
+}
+.shh {
+    color:rgb(05, 05, 05);
+}

@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: whitesmoke;
+    padding-right: 80px;
+    padding-left: 80px;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+    color: blue;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 40px;
+    margin-bottom: 30px;
+}
+h2 { 
+    font-family: 'Raleway', sans-serif;
+    color: orangered;
+    font-size:32px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+h3 {
+    font-family: 'Raleway', sans-serif;
+    color: orange;
+    font-size: 20px;
+}
+h4 {
+    font-family: 'Raleway', sans-serif;
+    color: lightsalmon;
+    font-size: 20px;
+}
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: black;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+img { 
+    height: 300px;
+    width: auto;
+}
+iframe {
+    margin-bottom: 30px;
+    position: static;
+}
+.a div {
+    margin-left: 20px;
+}
+
+#title{
+    text-align: center;
+}
+.logo {
+    margin-top: 30px;
+    width: 60vw;
+    height: auto;
+    
+}
+body {
+    border: 1px red;
+}
+.navi {
+    width: 15vw;
+    position: fixed;
+    padding: 40px;
+    background-color: orangered;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.texto {
+    margin-left: 15vw;
+    width: 70vw;
+}
+li {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+li a {
+    text-decoration: none;
+}
+
+.navi ul {
+    list-style: none;
+}
+
+li a:visited {
+    color: black;
+}
