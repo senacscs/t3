@@ -1,0 +1,66 @@
+@keyframes fundo {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to right, #33035c, #0d045f, #4f0471);
+    /* background-size: 400% 400%; */
+    /* animation: gradient 5s ease infinite; */
+    color: lime;
+    height: 100vh;
+    text-align: center;
+}
+
+
+a {
+    text-decoration: none;
+    color: peru;
+    font-size: xx-large;
+
+}
+
+h1 {
+    color: lime;
+    animation: infinite 5s fundo;
+
+}
+
+h2 {
+    color: lime;
+    font-family: Verdana;
+    animation: infinite 5s fundo;
+}
+
+h3 {
+    color: lime;
+    font-family: Verdana;
+    font-size: x-large;
+    animation: infinite 5s fundo;
+}
+
+@media screen and (max-width: 720px) {}

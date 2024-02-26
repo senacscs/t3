@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(39, 36, 36);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: #A5DA9D;
+}
+
+h2{
+    color: #DD9FB9;
+
+}
+hr{
+    border: 0.5px solid rgb(232, 232, 28);
+    margin: 40px;
+    right: 100%;
+}
+.publicacao{
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+
+}
+
+a:visited {
+    color: #A5DA9D;
+}
+button{
+    background-color: #A1A2CC;
+}
+@media screen and (max-width: 720px) {
+
+}
