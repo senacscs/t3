@@ -1,0 +1,41 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header { 
+    padding: 0% 0px;
+    width: 100%;
+    height: 30%;
+    background-color: rgb(38, 38, 38);
+    z-index: auto;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: -912px;
+    font-size: 20px;
+    padding: 10px;
+    display: inline-block;
+}
+
+header nav ul li a:hover {
+    color: rgb(122, 189, 244);
+}

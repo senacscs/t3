@@ -1,0 +1,19 @@
+@media screen and (min-width: 720px) {
+    body {
+    background-color: #7B68EE;
+    }
+    p{
+        font-size: 40px;
+        text-align: center;
+    }
+    }
+    
+    @media screen and (max-width: 720px) {
+    body {
+    background-color:#FF00FF;
+    }
+p{
+    font-size: 20px;
+    text-align: center;
+}
+    }

@@ -1,0 +1,160 @@
+/* Adicionar padrão à pagina */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+/* deixar o scroll mais bonito */
+html {
+    scroll-behavior: smooth;
+}
+/* colodcar o header fixo e na frente do resto da pagina */
+header { 
+    padding: 4px 5px;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(38, 38, 38);
+    z-index: 1;
+}
+
+section {
+    padding-top: 100px;
+    text-align: center;
+    width: 100%;
+    height: 700px;
+}
+h1{
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+section:nth-child(even) {
+    background: white;
+}
+
+section:nth-child(odd){
+    background: rgb(38, 38, 38);
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+article {
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+}
+
+
+.color-white {
+    color: white;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+
+.btn {
+    display: block;
+    background-color: rgb(38, 38, 38);
+    color: #fff;
+    width: 55px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: width .3s ease-in-out;
+}
+
+.sidebar {
+    background-color: #2B2E33;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    z-index: 1111;
+    transition: transform .3s ease-in-out;
+    transform: translateX(-250px);
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.sidebar ul a {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    background-color: transparent;
+    color: #BAB5BD;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+.sidebar ul a li i {
+    margin-right: 15px;
+}
+
+
+.sidebar ul a:nth-child(2)::after, .sidebar ul a:nth-child(3)::after {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -9px;
+    color: #fff;
+    font-size: 13px;
+    padding: 0 7px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+
+
+.sidebar ul a:nth-child(2) li i {
+    margin-left: 4px;
+    margin-right: 19px;
+}
+
+.sidebar ul a:hover, .sidebar ul a.active {
+    background-color: #161920;
+    color: #fff;
+}
+
+.sidebar ul a:hover::before, .sidebar ul a.active::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: #247D9E;
+    width: 4px;
+    height: 100%;
+}
+
+#checkbox:checked ~ .sidebar {
+    transform: translateX(0);
+}
+
+#checkbox:checked + .btn {
+    width: 250px;
+    padding: 0 20px;
+}
+
+#checkbox, .btn span { 
+    display: none;
+}
+

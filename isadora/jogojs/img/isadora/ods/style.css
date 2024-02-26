@@ -1,0 +1,397 @@
+@media screen and (min-width: 720px) {
+
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    header { 
+        padding: 0% 0px;
+        width: 100%;
+        height: 30%;
+        background-color: rgb(38, 38, 38);
+        z-index: auto;
+    }
+    
+    header nav ul {
+        list-style: none;
+        text-align: center;
+    }
+    
+    header nav ul li {
+        display: inline;
+    }
+    
+    header nav ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: -912px;
+        font-size: 20px;
+        padding: 10px;
+        display: inline-block;
+    }
+    
+    header nav ul li a:hover {
+        color: rgb(122, 189, 244);
+    }
+    
+    section {
+        padding-top: 7px;
+        text-align: center;
+        width: 100%;
+        height: 700px;
+    }
+    
+    #section3{
+        height: 600px;
+    }
+    
+    section:nth-child(even) {
+        background: rgb(32,178,170);
+    }
+    
+    section:nth-child(odd){
+        background: rgb(38, 38, 38);
+    }
+    
+    .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    
+    article {
+        width: 100%;
+        text-align: center;
+    
+    }
+    
+    
+    footer {
+        width: 100%;
+        height: 200px;
+    }
+    
+    
+    #center{
+        text-align: center;
+    }
+    
+    
+    #texto{
+        text-align: right;
+    }
+    
+    #color-white {
+        color: #ffffff;
+        font-size: 20px;
+        text-align: center;
+     
+       
+    }
+    
+    
+    #tamanho{
+        font-size: 5cqmin;
+        text-align: justify;
+        text-align: center;
+    }
+
+
+    #video{
+        grid-area: main;
+    }
+    
+    #title {
+            text-align: center;
+        font-size: 30px;
+        
+    }
+    #name {
+    
+        text-align: end;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .nome {
+    
+        text-align: end;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    
+    .container {
+    
+        max-width: 60vw;
+        display: grid;
+       justify-content: center;
+        background-color: rgb(196, 196, 196);
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+        box-shadow: 8px 10px 4px rgb(0,0,0,0.5);
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    
+    nav {
+        text-align: center;
+        margin-top: 20px;
+        color:rgb(164, 215, 239);
+        font-size: 10%;
+    }
+    
+    footer{
+        background-color: black;
+        padding: 50px;
+        color: aquamarine;
+        text-align: center;
+        width: 100%;
+        height: 20px;
+     
+    }
+    
+    .grid{
+        max-width: 20vw;
+        display: grid;
+        justify-content: center;
+        background-color: rgb(196, 196, 196);
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+        box-shadow: 8px 10px 4px rgb(0,0,0,0.5);
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+
+    
+    ul {
+        margin-left: 40px; 
+    }
+    
+    
+    li {
+        margin-bottom: 25px; 
+    }
+
+    
+    
+    
+    }
+    
+
+
+
+    @media screen and (max-width: 720px) {
+    .vermelho{
+    background-color: red;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header { 
+    padding: 0% 0px;
+    width: 200%;
+    height: 5%;
+    background-color: rgb(38, 38, 38);
+    z-index: auto;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: -40px;
+    font-size: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+header nav ul li a:hover {
+    color: rgb(122, 189, 244);
+}
+
+section {
+    padding-top: 7px;
+    text-align: center;
+    width: 200%;
+    height: 700px;
+}
+
+#section3{
+    height: 600px;
+}
+
+section:nth-child(even) {
+    background: rgb(32,178,170);
+}
+
+section:nth-child(odd){
+    background: rgb(38, 38, 38);
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+article {
+    width: 100%;
+    text-align: center;
+
+}
+
+
+footer {
+    width: 100%;
+    height: 200px;
+}
+
+
+#center{
+    text-align: center;
+}
+
+
+#texto{
+    text-align: right;
+}
+
+#color-white {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+ 
+   
+}
+
+
+#tamanho{
+    font-size: 5cqmin;
+    text-align: justify;
+    text-align: center;
+}
+
+#video{
+    grid-area: main;
+}
+
+#title {
+   
+    text-align: center;
+    font-size: 30px;
+    
+}
+#name {
+    
+    text-align: end;
+    font-size: 15px;
+    text-align: center;
+}
+
+.nome {
+   
+    text-align: end;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.container {
+   
+    max-width: 300vw;
+    display: grid;
+    justify-content: center;
+    background-color: rgb(196, 196, 196);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    box-shadow: 8px 10px 4px rgb(0,0,0,0.5);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+    color:rgb(164, 215, 239);
+    font-size: 10%;
+}
+
+footer{
+    background-color: black;
+    padding: 50px;
+    color: aquamarine;
+    text-align: center;
+    width: 200%;
+    height: 20px;
+ 
+}
+
+.grid{
+    max-width: 60vw;
+    display: grid;
+    justify-content: center;
+    background-color: rgb(196, 196, 196);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    box-shadow: 8px 10px 4px rgb(0,0,0,0.5);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+
+ul {
+    margin-left: 20px; 
+}
+
+
+li {
+    margin-bottom: 15px; 
+}
+
+
+}
+
+
