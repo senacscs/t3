@@ -1,0 +1,2 @@
+backgound: https://kinsta.com/pt/wp-content/uploads/sites/3/2021/12/back-end-developer.png
+influecer: https://vp2uploads.s3.amazonaws.com/18443/palestrantes/bf83eb496cb91974b3bb87d648c187a96d4c1ba9.png
