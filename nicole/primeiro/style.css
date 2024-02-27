@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    
+}
+
+html {
+    background-image: url(https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-virtual-background-_Tcjok-d9b4.jpg);
+    background-size: cover;
+   
+}
+
+nav {
+    text-align: center;
+    margin-top: 50px;
+
+}
+nav a{
+    color: rgb(65, 63, 63);
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    font-size: 20pt;
+    position: relative;
+    
+    
+}
+
+nav a::after{
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color:rgb(234, 154, 200);
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    right: 11%;
+    transition: 0.5s ease-in-out;
+}
+
+nav a:hover::after {
+    width: 90%;
+    
+}
+h1 {
+    background-color: rgb(233, 211, 244);
+    color: rgb(64, 63, 62);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(64, 63, 62);
+    text-align: center;
+    padding-top:40px;
+}
