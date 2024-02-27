@@ -1,0 +1,130 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    border: solid 2px black;
+    border-radius: 10px;
+    background-color: rgb(61, 61, 61);
+    padding: 15px;
+    position: absolute;
+    top: 35%;
+    left: 10.5%;
+    font-size: 60px;
+    color: white;
+}
+
+h4{
+    border: solid 2px black;
+    border-radius: 10px;
+    background-color: rgb(61, 61, 61);
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 27.5%;
+    font-size: 20px;
+    margin-top: 5%;
+    color: white;
+}
+
+h2 {
+    padding: 20px;
+}
+
+p {
+    padding: 20px;
+}
+
+h4 {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section{
+    padding-left: 20px;
+    width: 70%;
+    max-width: 800px;
+}
+
+section details{
+    font-size: 18px;
+}
+
+section details summary{
+    cursor: pointer;
+    width: 80%;
+    color: black;
+    padding: 2%;
+    border-top: 2px solid black;
+}
+
+section details p{
+    background-color: #ffffff;
+    padding: 2%;
+    transition: all .5s;
+    width: 84%;
+}
+
+.about {
+    font-size: 35px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.space{
+    opacity: 0;
+}
+
+.opac{
+    opacity: 0;
+}
+
+.grafic{
+    width: 80%;
+    height: 55%;
+}
+
+.legend{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    position: absolute;
+    top: 242%;
+    left: 30%;
+
+}
+
+nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    font-size: 25pt;
+    position: relative;
+    
+}
+
+nav a::after{
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color:rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    right: 11%;
+    transition: 0.5s ease-in-out;
+}
+
+nav a:hover::after {
+    width: 90%;
+    
+}
+
+li{
+    list-style-type: none;
+}

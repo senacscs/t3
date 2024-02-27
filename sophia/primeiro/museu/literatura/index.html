@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <title>Literatura | Mês da Conciência Negra</title>
+  </head>
+
+  <body>
+        <!-- código do menu principal entre os sites -->
+        <style>
+          html {
+             margin-top: 50px;
+         }   
+         .menuprincipal {
+             background-color: rgb(61, 61, 61);
+             color: rgb(255, 0, 0);
+             position: fixed;
+             top: 0;
+             left: 0;
+             z-index: 1;
+             width: 100%;
+             text-decoration: none;
+             font-size: 20px;
+             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+             text-align: right;
+             padding: 10px 5px 5px 0px;
+         }
+ 
+         .menuprincipal a {
+             color: rgb(255, 255, 255);
+             text-decoration: none;
+             padding: 0px 10px;
+         }
+ 
+         .menuprincipal a:hover {
+             color: rgb(255, 0, 0);
+         }
+ 
+         .menuprincipal img {
+             float: left;
+             margin-left: 10px;
+         }
+     </style>
+     <div class="menuprincipal">
+         <a href="../index.html">Início</a>
+         <a href="../cinema/">Cinema</a>
+         <a href="../culinaria/">Culinária</a>
+         <a href="../esportes/">Esportes</a>
+         <a href="../literatura/">Literatura</a>
+         <a href="../musica/">Música</a>          
+     </div>
+     <!-- o site como estava -->
+     
+    <main>
+      <section>
+        <div>
+          <h1>Literatura</h1>
+
+          <p>Mês da Consiência Negra</p>
+        </div>
+      </section>
+
+      <section class="modelo">
+        <h2>Autores:</h2>
+
+        <div class="retratos">
+          <img
+            src="./assets/machado-de-assis.png"
+            alt="foto do machado de assis"
+          />
+          <h1>Machado de Assis</h1>
+          <p>
+            Joaquim Maria Machado de Assis nasceu em 21 de junho de 1839, no Rio
+            de Janeiro, filho de Francisco José de Assis e Maria Leopoldina.
+            Criado no bairro do Livramento, Machado estudou na escola pública de
+            São Cristóvão e desenvolveu interesse pelo latim com o padre
+            Silveira Sarmento. Após a morte da mãe, seu pai casou-se novamente
+            em 1854. Aos 15 anos, buscando emprego, Machado conheceu Francisco
+            de Paula Brito, dono de uma livraria, jornal e tipografia. Em 1855,
+            seu poema "Ela" foi publicado na "Marmota Fluminense".
+
+          </p>
+
+          <button id="machado-button" class="learn-more" onclick="machado()">
+            <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Ver mais</span>
+          </button>
+        </div>
+
+        <dialog id="machado">
+
+          <img src="./assets/machado-de-assis.png" alt="retrato machado de assis">
+
+          Em 1856, entrou para a Imprensa Oficial como aprendiz de tipógrafo,
+          sendo incentivado por importantes jornalistas como Francisco Otaviano
+          e Pedro Luís. Em 1864, publicou seu primeiro livro de poesias,
+          "Crisálidas", dedicado aos pais. Em 1867, recebeu o título de
+          "Cavaleiro da Ordem da Rosa". Em 1868, casou-se com Carolina Xavier de
+          Novais. Em 1870, lançou "Contos Fluminenses" e, em 1872, o romance
+          "Ressurreição". Ao longo dos anos, Machado de Assis ocupou cargos
+          burocráticos. Após a morte de Carolina em 1904, Machado faleceu em 29
+          de setembro de 1908. Seu velório atraiu personalidades ilustres, e Rui
+          Barbosa fez um elogioso discurso. O cortejo fúnebre partiu da Academia
+          para o cemitério de São João Batista, onde Machado foi sepultado. Sua
+          importância é reconhecida, sendo sua biografia incluída entre as 20
+          mais relevantes para a história do Brasil.
+
+          <button id="close-machado">Fechar</button>
+        </dialog>
+
+        <div class="retratos">
+          <img
+            src="./assets/carolina-maria-de-jesus.png"
+            alt="foto da carolina maria de jesus"
+          />
+          <h1>Carolina M. de Jesus</h1>
+          <p>
+            Carolina Maria de Jesus (1914-1977), escritora brasileira e uma das
+            primeiras autoras negras notáveis do país, ficou conhecida pelo best
+            seller autobiográfico "Quarto de Despejo: Diário de uma Favelada".
+            Nascida em Sacramento, Minas Gerais, em uma família humilde, teve
+            breve passagem pela escola, mas desenvolveu o gosto pela leitura e
+            escrita. Após mudanças familiares em busca de oportunidades,
+            Carolina, morando na favela, trabalhava como catadora de papel
+            durante a noite, registrando seu cotidiano por escrito.
+          </p>
+
+          <button id="jesus-button" class="learn-more" onclick="jesus_funcionapfv()">
+            <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Ver mais</span>
+          </button>
+        </div>
+
+        <dialog id="jesus">
+
+          <img src="./assets/carolina-maria-de-jesus.png" alt="retrato carolina maria de jesus">
+
+          Em 1941, tentou realizar seu sonho de ser escritora ao apresentar um
+          poema na redação do jornal Folha da Manhã. Em 1958, o repórter Audálio
+          Dantas descobriu o diário de Carolina durante uma reportagem na favela
+          do Canindé. Em 1960, seu livro autobiográfico foi finalmente
+          publicado, impulsionando sua saída da favela. Recebeu homenagens e
+          prêmios, incluindo a "Orden Caballero Del Tornillo" na Argentina. Nos
+          anos seguintes, publicou mais obras, mas apesar do sucesso literário,
+          Carolina não se beneficiou financeiramente. Em 1969, mudou-se para
+          Parelheiros, São Paulo, onde foi praticamente esquecida pelo mercado
+          editorial. Carolina Maria de Jesus faleceu em 13 de fevereiro de 1977.
+
+          <button id="close-jesus">Fechar</button>
+        </dialog>
+
+        <div class="retratos">
+          <img
+            src="./assets/conceicao-evaristo.jpg"
+            alt="foto da conceicao evaristo"
+          />
+          <h1>Conceição Evaristo</h1>
+          <p>
+            Conceição Evaristo nasceu em
+            1946, é escritora brasileira de origem humilde que migrou para o
+            Rio de Janeiro na década de 1970. Graduada em Letras pela UFRJ,
+            tornou-se professora na rede pública de ensino no Rio. Com mestrado
+            em Literatura Brasileira e doutorado em Literatura Comparada,
+            Evaristo é ativa nos movimentos de valorização da cultura negra no
+            Brasil. Ela estreou na literatura em 1990, e essas algumas das principais obras
+            de Conceição Evaristo: Ponciá Vicêncio, Becos da Memória
+            e Olhos d'água.
+          </p>
+
+          <button id="conceicao-button" class="learn-more" onclick="conceicao()">
+            <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Ver mais</span>
+          </button>
+        </div>
+
+        <dialog id="conceicao">
+
+          <img src="./assets/conceicao-evaristo.jpg" alt="retrato conceicao evaristo">
+
+          Sua produção abrange poesia, ficção e ensaio, sendo reconhecida
+          internacionalmente com publicações na Alemanha, Inglaterra e Estados
+          Unidos. Seus textos são estudados em universidades do Brasil e do
+          exterior. Ponciá Vicêncio, seu romance de estreia em 2003, recebeu
+          elogios da crítica e do público, apresentando uma narrativa não-linear
+          com cortes temporais. Em 2006, lançou "Becos da memória", abordando o
+          drama de uma comunidade favelada em processo de remoção. Seu segundo
+          romance também teve sucesso crítico e acadêmico. Em 2011, Evaristo
+          publicou "Insubmissas lágrimas de mulheres", uma coletânea de contos
+          que explora as relações de gênero em um contexto marcado pelo racismo
+          e sexismo. Em 2013, "Becos da memória" foi reeditado, e em 2014,
+          "Olhos D’água" foi finalista do Prêmio Jabuti na categoria "Contos e
+          Crônicas". Em 2016, lançou "Histórias de leves enganos e parecenças".
+          Seus livros foram traduzidos para o francês e publicados em Paris, e
+          em 2017, o Itaú Cultural de São Paulo realizou uma exposição sobre a
+          vida e obra de Evaristo. Em 2018, ela recebeu o Prêmio de Literatura
+          do Governo de Minas Gerais pelo conjunto de sua obra.
+
+          <button id="close-conceicao">Fechar</button>
+        </dialog>
+
+        <div class="retratos">
+          <img
+            src="./assets/martin-luther-king-jr.png"
+            alt="foto do martin luther king junior"
+          />
+          <h1>Martin Luther King Jr.</h1>
+          <p>
+            Martin Luther King Jr., nascido em Atlanta em 15 de janeiro de 1929,
+            nos Estados
+            Unidos. Ele se destacou como líder proeminente no movimento dos
+            direitos civis, dedicando-se à luta pela igualdade de direitos de
+            1955 até sua trágica morte em 4 de abril de 1968, em Memphis. King,
+            notável por sua abordagem baseada na não-violência e desobediência
+            civil, foi inspirado por suas convicções cristãs e pelo ativismo
+            não-violento de Mahatma Gandhi. Sua liderança começou com o boicote
+            aos ônibus de Montgomery em 1955.
+          </p>
+
+          <button id="martin-button" class="learn-more" onclick="martin()">
+            <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Ver mais</span>
+          </button>
+        </div>
+
+        <dialog id="martin">
+
+          <img src="./assets/martin-luther-king-jr.png" alt="retrato martin luther king junior">
+
+          Em 1962, liderou uma luta contra a segregação em Albany e desempenhou
+          um papel crucial nos protestos não-violentos em Birmingham, em 1963,
+          onde proferiu o memorável discurso "Eu Tenho um Sonho" durante a
+          Marcha sobre Washington. Reconhecendo seus esforços, Martin Luther
+          King Jr. recebeu o Prêmio Nobel da Paz em 14 de outubro de 1964, por
+          sua resistência não-violenta contra o racismo. Ele continuou sua luta
+          organizando as Marchas de Selma a Montgomery em 1965 e expandindo seu
+          ativismo para questões de pobreza e oposição à Guerra do Vietnã nos
+          anos seguintes. Infelizmente, sua vida foi interrompida antes que
+          pudesse concretizar seus planos para a Campanha dos Pobres em
+          Washington, D.C. King foi assassinado em 4 de abril de 1968,
+          resultando em manifestações em todo o país. Controvérsias sobre o
+          envolvimento do governo persistiram após a condenação de James Earl
+          Ray como o assassino. Postumamente, Martin Luther King Jr. foi honrado
+          com a Medalha Presidencial da Liberdade e a Medalha de Ouro do
+          Congresso. Seu legado é lembrado através do feriado nacional, o Dia de
+          Martin Luther King, estabelecido em 1986. Inúmeras estradas e um
+          condado foram nomeados em sua homenagem, e o Martin Luther King Jr.
+          Memorial no National Mall em Washington D.C. foi inaugurado em 2011.
+          Os livros de Martin Luther King Jr. desempenharam um papel importante
+          na conscientização e mobilização pública, tornando-se ferramentas
+          fundamentais para o desenvolvimento do movimento pelos direitos civis
+          nos Estados Unidos. Ao compartilhar suas ideias, visão e filosofia por
+          meio de obras como "Stride Toward Freedom: The Montgomery Story" e
+          "Why We Can't Wait", King deu às pessoas uma compreensão mais profunda
+          das lutas e aspirações de vários tipos do movimento. Os escritos de
+          Martin Luther King Jr. desafiaram as normas racistas da sociedade da
+          época e encorajaram as pessoas a questionarem e combater a injustiça.
+          Ao fazê-lo, contribuíram significativamente para a formação da
+          consciência colectiva, incentivando a acção e o diálogo que
+          transcenderam as barreiras raciais e desencadearam mudanças sociais
+          duradouras. Os seus livros continuam a ser recursos valiosos para a
+          compreensão da luta pelos direitos civis e estimulam o pensamento
+          contínuo sobre justiça e igualdade.
+
+          <button id="close-martin">Fechar</button>
+        </dialog>
+      </section>
+
+      <section class="modelo">
+        <h2>Figuras Literárias:</h2>
+
+        <div class="retratos">
+          <img src="./assets/saci-perere.png" alt="foto do Saci Pererê" />
+          <h1>Saci Pererê</h1>
+          <p>
+            
+            O Saci é uma figura folclórica brasileira, retratada como um jovem negro de uma perna só, usando uma carapuça mágica. Essa caracterização tem semelhanças com um mito romano citado por Petrônio no Satíricon. O Saci é conhecido por suas travessuras com animais e pessoas, criando certos desafios. Também, surpreende viajantes noturnos com assovios agudos. Essa figura folclórica brasileira é cativante, incorporando elementos mágicos e lúdicos em suas histórias, sendo parte importante da mitologia do país.
+          </p>
+
+          <button id="saci-button" class="learn-more" onclick="saci()">
+            <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Ver mais</span>
+          </button>
+        </div>
+
+        <dialog id="saci">
+
+          <img src="./assets/saci-perere.png" alt="retrato saci">
+
+          Ele tem o hábito de fazer tranças nos cabelos dos animais após
+          deixá-los exaustos com suas correrias, atrapalha o trabalho das
+          cozinheiras, induzindo-as a queimar alimentos, ou brinca com os
+          condimentos, trocando sal por açúcar e vice-versa. Além disso, é
+          associado a desorientar viajantes nas estradas. Diz a lenda que ele
+          pode ser carregado por redemoinhos, adicionando um toque mágico à sua
+          presença. A primeira incursão literária significativa sobre o Saci
+          ocorreu com Hugo de Carvalho Ramos em 1910, com o conto "O Saci". Esse
+          trabalho inspirou Monteiro Lobato, que, em 1917, conduziu uma pesquisa
+          entre os leitores do jornal O Estado de S. Paulo intitulada "Mitologia
+          Brasílica – Inquérito sobre o Saci-Pererê". As respostas coletadas
+          resultaram na publicação, no ano seguinte, de "O Saci-Pererê:
+          resultado de um inquérito", marcando o início da contribuição
+          literária de Lobato para o universo do Saci. Em 1921, o autor retornou
+          ao personagem em "O Saci", consolidando ainda mais sua presença na
+          literatura infantil.
+
+          <button id="close-saci">Fechar</button>
+        </dialog>
+
+        <div class="retratos">
+          <img
+            src="./assets/negrinho-pastoreio.png"
+            alt="foto do Negrinho do Pastoreio"
+          />
+          <h1>Negrinho do Pastoreio</h1>
+          <p>
+            A história do Negrinho do Pastoreio, uma lenda afro-cristã que
+            ganhou popularidade no final do século XIX, reflete a sensibilidade
+            da época, marcada pela luta contra a escravidão. O primeiro relato
+            conhecido foi feito por Antônio Maria do Amaral Ribeiro em 1857,
+            que, à época, caracterizou a lenda como uma superstição absurda. Ao
+            longo dos anos, diversos escritores, incluindo Alberto Coelho da
+            Cunha, Apolinário Porto Alegre e Alfredo Varela, contribuíram para a
+            difusão da narrativa.
+          </p>
+
+          <button id="negrinho-button" class="learn-more" onclick="negrinho()">
+            <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Ver mais</span>
+          </button>
+        </div>
+
+        <dialog id="negrinho">
+
+          <img src="./assets/negrinho-pastoreio.png" alt="retrato negrinho do pastoreio">
+
+          João Simões Lopes Neto, em 1906, trouxe uma versão esteticamente
+          rebuscada e amplamente popularizada da lenda. Nesta narrativa, o
+          protagonista é um menino negro, escravo de um estancieiro cruel. Sem
+          nome ou padrinhos, ele é conhecido como Negrinho e se considera
+          afilhado da Virgem Maria. Após ser punido severamente por perder uma
+          corrida e, consequentemente, o pastoreio, o Negrinho cai em sono
+          profundo. Ele enfrenta castigos adicionais, como ser jogado sobre um
+          formigueiro, mas é protegido pela intervenção da Virgem Maria. O
+          menino, em pé diante do formigueiro, é visto após três dias, indicando
+          sua passagem para o céu. A lenda celebra sua devoção à recuperação de
+          causas perdidas, com uma comemoração anual em 14 de maio. Clarice
+          Lispector, em "Como Nasceram as Estrelas," reconta a história do
+          Negrinho do Pastoreio, suavizando alguns aspectos para o público
+          infantojuvenil. Essa versão mais branda contrasta com adaptações em
+          quadrinhos focadas no público infantil, como as de Lendas Brasileiras
+          da Turma da Mônica e a Coleção Folclore Mágico, que apresentam o filho
+          do patrão de forma menos vilanesca e transformam as formigas em amigas
+          do Negrinho. Assim como contos de fadas europeus, a lenda gaúcha
+          possui adaptações que abordam a história de maneira lúdica,
+          preservando sua essência e trazendo à tona a força da narrativa na
+          cultura brasileira.
+
+          <button id="close-negrinho">Fechar</button>
+        </dialog>
+      </section>
+    </main>
+
+    <footer>
+
+      <div class="integrantes">
+        <div class="senac">
+          <p>O site e o conteúdo foram feitos por alunos do <br>1° ano do Ensino Médio e Técnico Senac Santa Cruz do Sul</p>
+        </div>
+        <div class="site">
+          <p>Site Feito em Aproximadamente 5 horas. <br>Por: <br> Eduardo Baierle dos Santos e <br>Isaac Pereira Ramos.</p>
+        </div>
+        <div class="pesquisa">
+          <p>Pesquisa Feita Por: <br>Davi Kuhn Mohr, <br>Davi Ricardo de Borba, <br>Francesco Antonio Maieron e <br>Guilherme Carvalho Müller.</p>
+        </div>
+      </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

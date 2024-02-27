@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    background-color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;800&display=swap');
+@keyframes dropdown {
+    0%   {display: none;}
+    25%   {display: block;}
+    50%  {max-height: 250px;}
+    100% {max-height: 500px;}
+}
+/* -----------------------Header */
+header {
+    background-color: rgb(243, 135, 173);
+    box-shadow: 1px 2px 1px rgb(0,0,0,0.5);
+    padding: 1px;
+    align-content: center;
+    z-index: 20;
+    position: sticky;
+    top: 0;
+}
+header img {
+    width: 7vw;
+    border-radius: 20px;
+}
+header nav {
+    flex: 1;
+}
+header h1 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    margin-left: vw;
+}
+.hc {
+    display:flex;
+    margin: 2vh;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 5vw;
+}
+nav ul li {
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 12px;
+    cursor: pointer;
+
+}
+nav li:hover {
+    border-bottom: 2px solid black;
+    transition: 0.2s ease-in ;
+    background-color: rgb(243, 135, 173);
+    margin-bottom: 10px;
+}
+li a {
+    text-decoration: none;
+    color: black;
+}
+svg {
+    border-radius: 10px;
+    width: 20vw;
+    margin-left: 60vw;
+    position: fixed;
+    display: none;
+}
+.menuMobile {
+    z-index: 90;
+    background-color: rgb(243, 135, 173);
+    position: fixed;
+    width: 100vw;
+    display: none; 
+    animation: forwards 1s dropdown;
+}
+.menuMobile ul {
+    list-style: none;
+}
+.menuMobile ul li {
+    padding: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    margin-right: 20px;
+}
+/* ------------------------------------------------------section 1 */
+    .videoG iframe {
+        margin-top: 2vh;
+        margin-left: 20vw;
+        margin-right: auto;
+        box-shadow: 5px 5px 5px rgb(0,0,0,0.5);
+    }
+    .videoG h2 {
+        margin-left: 25vw;
+        margin-top: 5vh;
+    }
+/* ------------------------------------------------------article  */
+.content {
+    max-width: 60vw;
+    margin-left: 20vw;
+    padding: 1px;
+}
+.content h1 {
+    margin-top: 5vh;
+}
+article {
+    text-align: justify;
+    margin-top: 5vh;
+    background-color:rgb(243, 135, 173);
+    box-shadow: 0px 3px 4px rgb(0,0,0,0.5);
+}
+p.meta {
+    margin-top: 10px;
+    border-top: 1px solid gray;
+    padding: 10px;
+}
+/* --------------------------------------------------------------section 2 */
+#left h1{
+    margin-bottom: 2vh;
+}
+#left {
+    border-right: 1px solid rgb(62, 62, 62);
+}
+.referDiv a {
+    margin-bottom: 10v
+}
+.innerRefer {
+    display: flex;
+}
+.innerRefer div {
+    flex: 1;
+    margin-right: 10px;
+}
+.innerRefer h1 {
+    margin: none;
+}
+.refer {
+    background-color: rgb(243, 135, 173);
+    padding: 20px;
+    box-shadow: 0px 3px 4px rgb(0,0,0,0.5);
+}
+.refer a {
+    color: rgb(10, 61, 144);
+}
+
+/* --------------------------------------------------------------footer */
+footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgb(243, 135, 173);
+    padding: 20px;
+    margin-top: 10vh;
+    margin-left: 0;
+}
+#git img {
+    width: 3vw;
+}
+#git {
+    justify-self: end;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    header nav {
+        display: none
+    }
+    iframe {
+        width: 80vw;
+        height: 20vh;
+    }
+    .content {
+        max-width: 80vw;
+        margin-left: 10vw;
+    }
+    .videoG iframe {
+        margin-left: 10vw;
+    }
+    .videoG h2 {
+        max-width: 80vw;
+        margin-left: 10vw;
+    }
+    header h1 {
+        display: none;
+    }
+    header img {
+        width: 30vw;
+    }
+    .menuMobile {
+        display: contents;
+    }
+    svg {
+        display: block;
+    }
+  }

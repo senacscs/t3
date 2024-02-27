@@ -1,0 +1,52 @@
+body {
+	background:#8bc0d8
+}
+img {
+	border-radius: 10px;
+}
+.c img {
+	width: 300px;
+	border-radius: 20px;
+	margin: 15px;
+}
+.c {
+	display: grid;
+	align-self: center;
+	align-items: center;
+	justify-content: center;
+	grid-template-columns: auto auto auto auto;
+	gap: 1em;
+}
+a {
+	text-decoration: none;
+	color: black;
+	padding: 0.2rem;
+	border-radius: 0.8rem;
+	background-color: rgb(5, 92, 185);
+}
+a:hover {
+	padding: 1rem;
+	color:white;
+	background-color: #117277;
+	transition: 1s;
+
+}
+video {
+position: fixed;
+right: 0;
+bottom: 0;
+z-index: 1;
+}
+.texto {
+	font-size: 20px;
+	color: rgb(9, 106, 141);
+}
+.body {
+	position: none;
+	z-index: 20;
+	text-align: left;
+	left: 15%;
+}
+figcaption > p {
+	font-size: xx-large;
+}
