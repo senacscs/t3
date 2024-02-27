@@ -1,0 +1,255 @@
+/* Adicionar padrão à pagina */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+/* deixar o scroll mais bonito */
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background: url('https://th.bing.com/th/id/R.c9154f2cc281fe9b132e444af8b3f461?rik=O%2b3PVvCx82NQ6g&pid=ImgRaw&r=0') center center no-repeat fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1{
+  padding: auto;
+  background-color: #ffffff;
+  vertical-align: top;
+}
+
+h1 img{
+  display: inline;
+  max-width: 5%;
+}
+
+/* colodcar o header fixo e na frente do resto da pagina */
+header { 
+  padding: 3px 4px;
+  position: fixed;
+  /* width: 100%; */
+  /* background-color: rgb(255, 255, 255); */
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 100px auto 100px; 
+}
+
+.secao {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* margin: 30px; */
+  vertical-align: center;
+}
+
+.secao :hover{
+    animation-timing-function: ease-in-out ;
+}
+
+
+
+.typebeat, .estudio, .vivo {
+  background-color: rgb(135, 135, 135);
+  width: 200px;
+  height: 200px;
+  justify-self: center;
+  align-self: center;
+  border-radius: 5px 6px 0 0;
+  align-items : center;
+  
+}
+
+.typebeat img, .estudio img, .vivo img{
+  position: relative;
+  width: 100%;
+}
+
+.texttype, .textestudio, .textvivo {
+  background-color: rgb(255, 255, 255);
+  width: 200px;
+  height: 100px;
+  justify-self: center;
+  align-self: center;
+  border-radius: 0 0 5px 6px;
+  align-items: center;
+}
+
+h1{
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 40px;
+/* display: center; */
+padding: 15px;
+/* background-color: rgb(255, 255, 255); */
+text-align: center;
+padding-left: 20px;
+font-style: bold;
+}
+
+/* h1 img{
+ max-width: 20%;
+} */
+
+h2{
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+}
+
+p{
+  font-size: 15px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+h3{
+ font-size: 20px; 
+ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ text-align: center;
+}
+
+.texttype img{
+  position: relative;
+  text-align: center;
+  display: block;
+  margin: auto;
+}  
+
+img{
+  /* position: relative; */
+  display: block;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+}
+
+.color-white {
+  color: white;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+
+.btn {
+  display: block;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  width: 55px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  cursor: pointer;
+  transition: width .3s ease-in-out;
+}
+
+.sidebar {
+  background-color: #ffffff;
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  z-index: 1111;
+  transition: transform .3s ease-in-out;
+  transform: translateX(-250px);
+}
+
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.sidebar ul a {
+  position: relative;
+  text-decoration: none;
+  display: block;
+  background-color: transparent;
+  color: #BAB5BD;
+  padding: 15px 20px;
+  font-size: 16px;
+}
+
+.sidebar ul a li i {
+  margin-right: 15px;
+}
+
+.sidebar ul a:nth-child(2)::after, .sidebar ul a:nth-child(3)::after {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -9px;
+  color: #fff;
+  font-size: 13px;
+  padding: 0 7px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.sidebar ul a:nth-child(2) li i {
+  margin-left: 4px;
+  margin-right: 19px;
+}
+
+.sidebar ul a:hover, .sidebar ul a.active {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.sidebar ul a:hover::before, .sidebar ul a.active::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  /* background-color: #ffffff; */
+  width: 4px;
+  height: 100%;
+}
+
+#checkbox:checked ~ .sidebar {
+  transform: translateX(0);
+}
+
+#checkbox:checked + .btn {
+  width: 250px;
+  padding: 0 20px;
+}
+
+#checkbox, .btn span { 
+  display: none;
+}
+
+/* article {
+  width: 100%;
+  text-align: center;
+} linha 67 */ 
+
+/* body{
+  position: fixed; 
+} linha 16 */
+
+/* .grid-item {  
+  background-image: url('caminho/para/sua/imagem.png');  
+  background-color: transparent;  
+  background-repeat: no-repeat;  
+  background-size: cover;
+} */

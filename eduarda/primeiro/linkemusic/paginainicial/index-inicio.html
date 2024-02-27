@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LinkeMusic</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #243b55; /* Gradiente preto */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white; /* Cor do texto */
+        }
+
+        #content {
+            display: flex;
+            align-items: center;
+        }
+
+        #logo {
+            width: 300px;
+            height: 300px;
+            margin-left: 20px;
+        }
+
+        #text {
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        #buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #login-button, #cadastro-button {
+            padding: 25px 35px;
+            font-size: 18px;
+            margin: 10px;
+            border: none;
+            background-color: #0d0d0d; /* Cor roxa */
+            color: white;
+            cursor: pointer;
+            border-radius: 15px;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s ease;
+        }
+
+        #login-button:hover, #cadastro-button:hover {
+            background-color: #2a2530; /* Cor roxa mais escura no hover */
+        }
+
+        h1 {
+            font-size: 46px;
+            color: white; /* Cor do título */
+            margin-left: -60px;
+            margin-bottom: 10px;
+        }
+        .imagem {
+
+         display:flex;
+         margin: -25px;
+         margin-left: -120px;
+         align-items: center;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        
+    </header>
+    <div id="content">
+        <div id="text">
+            <div class="imagem">
+                <img src="assets/logolinke.png" alt="logo" class="logo">
+                <h1>LinkeMusic</h1>
+              </div>
+            <div id="buttons">
+                <a href="http://127.0.0.1:5500/linkmusic/login/index.html" target="_blank"> <button id="login-button">Login</button></a>
+                <a href="http://127.0.0.1:5500/linkmusic/cadastro/index.html" target="_blank"> <button id="cadastro-button">Cadastro</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

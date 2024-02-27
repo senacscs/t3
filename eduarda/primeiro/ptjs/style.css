@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(120, 216, 235);
+}
+h1{
+    text-align: center;
+    font-family: "Mooli", sans-serif; 
+}
+details{
+    text-align: center;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
