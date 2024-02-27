@@ -11,11 +11,10 @@ body {
     color: #ffffff;
   }
 .container{
-    max-width: 100%;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 23px auto auto;
+    align-items: center;
 }
 
 header{
@@ -32,17 +31,26 @@ button {
   }
 
 .logo{
-    width: 45%;
+    align-items: self-start;
 }
 
-.menutop{
+/* .menutop{
     width: 60%;
-}
+} */
 #logo{
     width: 230px;
+    justify-self: start;
 }
-.menutop,nav,a{
+#menutop,nav,a{
     color: #ffffff;
     text-decoration: none;
-    padding-right:30px ;
+    /* padding-right:30px ; */
+}
+
+#menutop a + a {
+    padding-left: 30px;
+}
+
+#menutop {
+    justify-self: self-end;
 }
