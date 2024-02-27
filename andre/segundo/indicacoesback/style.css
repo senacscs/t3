@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  header {
+    background-color: #1b1b1b;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 3rem;
+    letter-spacing: .200rem;
+  }
+  
+  h1, h2, span {
+    font-family: "Share Tech", sans-serif;
+  }
+  
+  span {
+    display: inline-block;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+  }
+  
+  .nav-header {
+    display: flex;
+    padding-top: 20px;
+  }
+  
+  .nav-header a {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 1.125rem;
+    transition: .3s;
+  }
+  
+  .nav-header a::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: #7fe10f94;
+    transition: .3s;
+  }
+  
+  .nav-header a:hover::after {
+    width: 100%;
+    
+  }
+  
+  .nav-header a:hover {
+    transform: scale(105%);
+  }
+  
+  .nav-header li + li {
+    margin-left: 30px;
+  }
+  
+  .site-bg {
+    background-color: #1f1f1f;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 120px 20px;
+    gap: 30px;
+  }
+  
+  .texto {
+    align-self: flex-end;
+  }
+  
+  .texto h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 5px;
+    letter-spacing: .10rem;
+  }
+  
+  .texto span {
+    color: #ffffff66;
+    margin-bottom: 30px;
+    font-size: 1.125rem;
+  }
+  
+  .texto p {
+    color: #cecece;
+    font-size: 1.125rem;
+  }
+  
+  .img {
+    position: relative;
+  }
+  
+  .img a {
+    position: absolute;
+    padding: 8px 16px;
+    background-color: #180ab685;
+    border-radius: 5px;
+    color: #ffffff;
+    text-transform: uppercase;
+    bottom: 2px;
+    right: 2px;
+    transition: .3s;
+  }
+  
+  .img a:hover {
+    background-color: #16decdd8;
+  }
+  
+  .video-bg {
+    background-color: #1b1b1b;
+  }
+  
+  .influenciador-bg {
+    background-color: #1f1f1f;
+  }
+  
+  .tutorial-bg {
+    background-color: #1b1b1b;
+  }
+  
+  .podcast-bg {
+    background-color: #1f1f1f;
+  }
+  
+  .podcast div {
+    justify-self: flex-end;
+  }
+  
+  @media (max-width: 1000px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
