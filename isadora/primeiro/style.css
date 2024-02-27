@@ -5,3 +5,20 @@
  body{
   text-align: center;
  }
+
+ .back-to-top {
+  position: fixed;
+  left: 20px; /* Posiciona no canto superior esquerdo */
+  top: 20px; /* Posiciona no canto superior esquerdo */
+  z-index: 9999;
+  text-decoration: none;
+  color: #000; /* Cor do texto */
+  font-family: Arial, sans-serif; /* Fonte do texto */
+  font-size: 14px; /* Tamanho da fonte */
+  display: flex; /* Exibir em linha */
+  align-items: center; /* Alinhar verticalmente */
+  color: white;
+}
+.back-to-top img {
+  margin-right: 5px; /* Espaçamento entre a imagem e o texto */
+}
