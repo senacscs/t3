@@ -106,7 +106,13 @@ function createElementFromStudent(student) {
   // Anchor params
   anchor.target = "_blank";
   anchor.className = `bg-${colorScheme}-500 py-3 px-4 block shadow-2xl shadow-${colorScheme}-500/20`;
-  anchor.href = `./${student.url}/${currentProject.grade === 'primeiro' ? 'primeiro/' : ''}${currentProject.url}`;
+
+  if (currentProject.grade === 'segundo' && currentProject === 'Index') {
+    anchor.href = `./${student.url}/`; // index é no começo
+  } else {
+    anchor.href = `./${student.url}/${currentProject.grade}/${currentProject.url}`;
+  }
+
   anchor.innerText = student.name;
 
   // Animate the color when hovering the button
