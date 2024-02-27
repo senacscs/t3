@@ -2,11 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('digital-backend-banner-technology-concept-particle-background-design_1017-22585.avif');
+    background-image: url('');
     background-size: cover; /* para cobrir todo o espaço do corpo */
     background-position: center; /* para centralizar a imagem */
     background-repeat: no-repeat; /* para não repetir a imagem */
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 
 }
 
