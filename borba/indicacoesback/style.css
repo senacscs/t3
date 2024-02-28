@@ -5,6 +5,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    background-color: rgb(115, 39, 109);
 }
 
 header {
@@ -34,11 +35,12 @@ nav ul li a:hover {
 }
 
 main {
-    padding: 20px;
+    padding: 2px;
+    
 }
 
 section {
-    margin-bottom: 10em;
+    margin-bottom: 1em;
 }
 
 h2 {
@@ -46,10 +48,6 @@ h2 {
     text-align: center;
 }
 
-.explicacao {
-    justify-content:center ;
-    font-size: 1.5em;
-}
 
 .video {
     text-align: center;
@@ -61,3 +59,15 @@ h2 {
     margin-top: -25px;
   }
   
+.pad {
+    padding: 40px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+  }
+
+.sec {
+    text-align: center;
+    justify-content:center ;
+    font-size: 1.5em;
+  }

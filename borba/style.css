@@ -30,25 +30,23 @@ h2 a {
     margin-left: auto;
     margin-right: auto;
     box-shadow: 3px 2px 4px rgb(0,0,0,0.5);
- 
+    flex-wrap: wrap;
 }
 
 .itens {
-    width: 80%;
+    width: 85%;
     justify-self: center;
     background: rgb(73, 73, 88);
     border: 0.2em solid black;
     border-radius: 1em; 
-    display: grid;
     padding: 0.5em;
     border-top: 0.2em solid black;
     z-index: 1;
 }
 
-.trabalho img {
-    max-height: 7vw;
-    border-radius: 7px;
-    
+.img {
+    max-width: 80em;
+    max-height: 7em;    
 }
 .trabalho {
     display: grid;
