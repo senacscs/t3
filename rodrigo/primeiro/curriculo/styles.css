@@ -81,3 +81,30 @@ p{
     margin-top: 5vh;
     margin-bottom: 7vh;
 }
+@media screen and (max-width: 450px){
+    #title{
+        display: block;
+        margin-left: 0;
+    }
+    #title div{
+        margin-left: 0;
+    }
+    #habilidades div{
+        display: block;
+    }
+    #habilidades div ul{
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    #index div{
+        display: block;
+    }
+    #index p{
+        margin-bottom: 50px;
+    }
+    #index a {
+        margin-left: 0;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}

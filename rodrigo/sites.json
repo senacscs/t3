@@ -1,6 +1,13 @@
 
 [
   {
+    "title": "Oficina parte 2",
+    "subject": "Técnico",
+    "date": "28/02/24",
+    "text": "Site com uma super oficina sobre arquivos .json e fetch em JS",
+    "link": "oficina"
+  },
+  {
     "title": "Indicações Back-End",
     "subject": "Técnico",
     "date": "23/02/24",
@@ -61,7 +68,7 @@
     "subject": "Física/Técnico",
     "date": "23/06/23",
     "text": "Site com o nosso carrinho de rolimã para o trabalho de física",
-    "link": "https://senacscs.github.io/t3/tito/carrinho"
+    "link": "https://senacscs.github.io/t3/tito/primeiro/carrinho"
   },
   {
     "title": "Survival guide",
