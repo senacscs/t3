@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Index do Dick</title>
 </head>
+
 <body>
-    <a href="./segundo/indicacoesback/index.html">Indicações Back-End</a>
+    <form id="form">
+        <ul id="progressbar">
+            <li class="active">Recepção</li>
+            <li>Explicação</li>
+            <li>Trabalhos</li>
+        </ul>
+        <fieldset>
+            <h2 class="fs-title">Bem Vindo(a)</h2>
+            <h3 class="fs-subtitle">Essa é aba inicial da minha Index</h3>
+            <div class="explicacao">
+            <input disabled type="text" name="email" placeholder="Tenha uma boa navegação." />
+            <input disabled type="text" name="pass" placeholder="Cuidado." />
+            <input disabled type="text" name="cpass" placeholder="Tem vários segredos por aqui. Boa sorte!" />
+        </div>
+            <input type="button" name="next" class="next action-button" value="Próximo" />
+        </fieldset>
+        <fieldset>
+            <h2 class="fs-title">O que é uma Index?</h2>
+            <h3 class="fs-subtitle">Eu te explico.</h3>
+            <div class="explicacao">
+            <input disabled type="text" name="texto" placeholder="É basicamente o índice dos sites." />
+            <input disabled type="text" name="texto" placeholder="Onde se ranqueia os conteúdos," />
+            <input disabled type="text" name="texto" placeholder="Para um tráfego mais organizado." />
+        </div>
+            <input type="button" name="previous" class="previous action-button" value="Anterior" />
+            <input type="button" name="next" class="next action-button" value="Próximo" />
+        </fieldset>
+        <fieldset>
+            <h2 class="fs-title">Trabalhos</h2>
+            <a href="./indicacoesback/index.html"><input type="button" name="trabalhos" value="Indicações Back-End"/></a>
+            <input type="button" name="trabalhos" value=""/>
+            <input type="button" name="trabalhos" value=""/>
+            <input type="button" name="previous" class="previous action-button" value="Anterior" />
+            <a href="https://youtu.be/jIIjd72flAM?si=gglBWk-MaVkmvZgD" class="submit action-button" target="_top">Submit</a>
+        </fieldset>
+    </form>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
