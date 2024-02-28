@@ -1,4 +1,6 @@
 let sites = []
+let lines
+
 async function fetchData () {
     try{
         const response = await fetch('./assets/sites.json')
@@ -13,6 +15,12 @@ async function fetchData () {
         const json = await response.json()
         sites = json;
         createSites()
+        lines = document.querySelectorAll('.card')
+        lines.forEach((line) => {
+            line.addEventListener('click', () =>{
+                window.location.href = line.dataset.link
+            })
+        })
         console.log(sites)   
     } catch (err) {
         console.log(err)
@@ -36,6 +44,7 @@ function createSites() {
 
         card.classList.add('card');
         flex.classList.add('flex');
+        card.dataset.link = site.link
 
         flex.appendChild(h2);
         flex.appendChild(date);

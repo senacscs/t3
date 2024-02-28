@@ -3,14 +3,12 @@
         "name": "Indicações Back-End",
         "desc": "Trabalho sobre Indicações Back-End.",
         "link": "./indicacoesback",
-        "date": "26/02/2024",
-        "image": "./assets/"
+        "date": "26/02/2024"
     },
     {
         "name": "Oficina Back-End",
         "desc": "Trabalho onde ensinamos a utilizar Back-End para buscar produtos em um catálogo.",
-        "link": "./oficina",
-        "date": "29/02/2024",
-        "image": "./assets/"
+        "link": "https://senacscs.github.io/t3/rodrigo/segundo/oficina/",
+        "date": "29/02/2024"
     }
 ]
