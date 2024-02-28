@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+.home {
+    background-image: url('./assets/backend.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 55vw;
+}
+
+section {
+    padding-top: 4vw;
+    height: 20em;
+    background-color: rgb(150, 150, 150);
+}
+
+.exp {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+p {
+    font-size: 1.3vw;
+}
+
+.you {
+    text-align: center;
+    height: 50em;
+}
+
+.yt {
+    border-radius: 1vw;
+}
+
+.podcast {
+    text-align: center;
+    height: 30em;
+}
+
+.influencer {
+    height: 30em;
+    text-align: center;
+}
+
+.text {
+    height: 5em;
+}
+
+h3 {
+    font-size: 1.5vw;
+}
+
+.linke {
+    width: 15em;
+    border-radius: 5em;
+    padding: 2vw;
+}
+
+.yout {
+    width: 15em;
+    padding: 2vw;
+}

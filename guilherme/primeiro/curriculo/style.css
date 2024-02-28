@@ -1,0 +1,96 @@
+main {
+    justify-content: center;
+    display: flex;
+}
+
+section {
+    margin-top: 10em;
+    margin-bottom: 10em;
+    box-shadow: 0px 0px 5px 5px rgb(189, 189, 189);
+    height: 110vw;
+    width: 80%;
+}
+
+.faixa {
+    height: 10vw;
+    margin-top: 6vw;
+    background-color: rgb(189, 189, 189);
+    text-align: unset;
+    display: flex;
+    gap: 10vw;
+}
+
+h1 {
+    padding-top: 1.5vw;
+    padding-left: 6vw;
+    font-size: 2.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.perfil {
+    margin-top: -4vw;
+    width: 17vw;
+    border-radius: 80em;
+}
+
+.sobre {
+    margin-top: 8vw;
+    margin-left: 2vw;
+}
+
+h2 {
+    font-size: 1.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+span {
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-weight: bold;
+}
+
+.conhe {
+    margin-left: 2vw;
+    margin-top: 5vw;
+}
+
+.exp {
+    margin-left: 2vw;
+    margin-top: 5vw;
+}
+
+.prof {
+    margin-left: 2vw;
+    margin-top: 5vw;
+}
+
+.h {
+    margin-left: 2vw;
+    margin-top: 7vw;
+}
+
+.redes {
+    margin: 3vw;
+    justify-content: center;
+    display: flex;
+}
+
+.imge {
+    width: 5vw;
+    padding: 1vw;
+    margin: 3vw;
+    border-radius: 3px;
+}
+
+.imge:hover {
+    background-color: rgb(146, 154, 166);
+    transition: 1s;
+}

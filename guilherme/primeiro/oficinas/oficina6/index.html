@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1 class="titulo">Banana</h1>
+    <form>
+      <label for="nome">Banana Nome</label>
+      <input placeholder="ricardo" type="text" name="nome" id="name" minlength="5" required/>
+      <label for="email">Banana E-mail</label>
+      <input placeholder="josé" type="email" name="email" id="email" required/>
+      <label for="senha">Banana Senha</label>
+      <input placeholder="carlão" type="password" name="senha" id="password" minlength="5" maxlength="15" required/>
+      <label for="confirma">Banana confirma senha</label>
+      <input placeholder="rogério" type="password" name="senha" id="confirm-password" minlength="5" maxlength="15" required/>
+      <label for="mensagem">Banana Coment</label>
+      <textarea name="mensagem" id="mensagem" placeholder="Escreva Banana aqui"></textarea>
+      <button type="submit" data-button>Banana envio</button>
+    </form>
+  </body>
+</html>
