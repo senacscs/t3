@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-image: url(./assets/images/fundomenu.jpg);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+nav.menu-lateral {
+    width: 75px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 40px 0 40px 1%;
+    border-width: 0 5px 0 0;
+    border-style: solid;
+    border-image: linear-gradient(to bottom,  rgb(0, 255, 0), yellow, red) 1;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu {
+    transition: 1s;
+}
+
+
+ul li.item-menu :hover {
+    background-color:rgb(49, 49, 49);
+    color: white;
+    transition: 1s;
+}
+
+ul li.item-menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 40px;
+    opacity: 1;
+   
+}
+
+ul li.item-menu a .icon > i {
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+
+
+nav h1 {
+    opacity: 0;
+    margin-top: -3em;
+    margin-bottom: 0.5em ;
+    text-align: center;
+}
+
+nav.menu-lateral.expandir h1{
+    opacity: 1;
+    margin-top: -3em;
+    margin-bottom: 0.5em ;
+    text-align: center;
+}
+
+nav button {
+    opacity: 0;
+    margin-left: 9em;
+    width: 50px;
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    font: 20px;
+}
+
+nav.menu-lateral.expandir button {
+    opacity: 1;
+    margin-left: 6em;
+    width: 50px;
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+header {
+    background-color: black;
+}
+
+.music {
+    color: white;
+    text-align: center;
+    font-size: 4em;
+}
+
+.cabeça {
+    width: 450px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.box1 {
+    height: 300px;
+    width: 246px;
+    margin-top: 5em;
+    background-color: rgb(173, 173, 173);
+    border: 3px solid rgb(49, 49, 49);
+    align-items: center;
+    text-align: center;
+}
+
+.display {
+    display: flex;
+    gap: 4em;
+    margin: 2em 0 0 15em;
+}
+
+.beat {
+    border-bottom: 3px solid rgb(49, 49, 49);
+    width: 240px;
+    align-items: center;
+    margin: 0;
+    
+}
+
+h2 {
+    margin-top: 0.5em;
+}
+
+.botao {
+    margin-top: 5px;
+    width: 75px;
+    font: 1000;
+    border: 2px solid black;
+    border-radius: 50px;
+}

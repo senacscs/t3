@@ -1,0 +1,65 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(lightgrey);
+}
+header {
+    background: lightblue;
+    width: auto;
+    padding: 2px 0 0 20px;
+    text-align: center;
+    border: 1px solid;
+}
+
+.cabecalho {
+   width: auto;
+}
+img {
+    margin: 10px 0 0 0;
+    position: relative;
+    right: 8.4em;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+h1 {
+    margin: auto;
+    position: relative;
+    left: 1em;
+    bottom: 4em;
+    font-weight: bold;
+    font-size: 1em;
+}
+.container-conteudo {
+    text-align: center;
+
+    line-height: 1em;
+    width: auto;
+}
+h2 {
+    font-weight: bold;
+    margin: 50px 0 0  0 ;
+}
+li p {
+    line-height: 2em;
+}
+.container-contato {
+    margin: 0 0 0 10px ;
+    text-align: center;
+}
+
+footer {
+    background: lightblue;
+    width: auto;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    padding: 50px 0 100px 0;
+}
+li{
+    list-style-type: none
+}
+img{
+    height: 30%;
+}
