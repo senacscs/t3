@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site do Arthur</title>
+    <style>
+
+
+
+        body {
+            background-image: url('background.jpg'); /* Altere o caminho da imagem conforme necessário */
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgba(255, 255, 255, 0.7); /* Adicione transparência ao fundo do cabeçalho */
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        .videos-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .video {
+            width: 45%; /* Ajuste conforme necessário */
+            margin-bottom: 20px;
+        }
+        @media screen and (max-width: 768px) {
+            .video {
+                width: 90%; /* Ajuste conforme necessário para telas menores */
+            }
+        }
+        .spotify-instagram-container {
+            text-align: center;
+            width: 10px; 
+            margin-right: 10px;
+    
+        }
+        footer {
+            background-color: rgba(255, 255, 255, 0.7); /* Adicione transparência ao fundo do rodapé */
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .spotify-instagram-container {
+    text-align: center;
+    margin-top: 20px; /* Adicione um espaço entre os ícones e os vídeos */
+}
+
+.spotify-instagram-container a {
+    display: inline-block; /* Garante que os elementos se comportem como blocos */
+    margin: 0 10px; /* Adicione margem entre os ícones */
+}
+
+.spotify-instagram-container img {
+    width: 40px; /* Define o tamanho dos ícones */
+    height: 40px; /* Adicione esta linha para garantir que a altura seja ajustada proporcionalmente */
+    vertical-align: middle; /* Alinha os ícones verticalmente */
+}
+
+        .instagram-icon {
+            width: 10px; /* Tamanho do ícone do Instagram */
+            margin-right: 10px; /* Espaçamento à direita */
+            vertical-align: middle; /* Alinhamento vertical */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao meu site</h1>
+        <nav>
+            <ul> 
+               
+            </ul>
+        </nav>
+        <p>⬇️⬇️ site de conteúdo⬇️⬇️</p>
+        <a href="https://canaltech.com.br/">site de conteúdo</a>
+    </header>
+    <main>
+        <section id="youtube">
+            <h2>Loop Infinito</h2>
+            <div class="videos-container">
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Iy3PPHBrMas?si=B-zRjI7iRhLEXeHf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3Wo4L2dPS58?si=EstGKlLukQsj3h7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="spotify-instagram-container">
+                <a href="https://open.spotify.com/episode/3BYAv4Zu9wbeXA93nusXCr?si=FIn-FcINRpG1CUZN9Vs0Aw"><img src="https://static-00.iconduck.com/assets.00/spotify-icon-512x512-l4zex9yc.png" alt="Spotify"></a>
+                <a href="https://www.instagram.com/attekitadev/" target="_blank"><img class="instagram-icon" src="https://img.freepik.com/vetores-premium/icone-do-instagram-de-logotipo-de-distintivo-moderno_578229-124.jpg?size=626&ext=jpg" alt="Instagram"></a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+]
