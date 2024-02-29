@@ -1,45 +1,293 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css"> 
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nova Square">
-    <title>Document</title>
-</head>
-<body>
-    <div class="container">
-        <h1 class="title">Index da Eduarda</h1>
-        <ul>
-          <li class="dropdown">
-            <a href="#" data-toggle="dropdown">Primeiro Ano <i class="icon-arrow"></i></a>
-            <ul class="dropdown-menu">
-              <li><a href="primeiro/indicacoesfront/index.html">Indicações de Front-End</a></li>
-              <li><a href="primeiro/projetopp/index.html">Projeto Profissional</a></li>
-              <li><a href="primeiro/oficinas/oficinatec7/index.html">Oficina Tec7</a></li>
-              <li><a href="primeiro/carrinho/index.html">Carrinho de Rolimã</a></li>
-              <li><a href="primeiro/fibonacci/index.html">Fibonacci Retângulo de Ouro</a></li>
-              <li><a href="primeiro/ods/index.html">ODS 3</a></li>
-              <li><a href="primeiro/projetopv/index.html">Invasão De Privacidade</a></li>
-              <li><a href="primeiro/deusegipcio/index.html">Osíris</a></li>
-              <li><a href="primeiro/linkemusic/paginaprincipal/index.html">LinkeMusic</a></li>
-              <li><a href="primeiro/ptjs/index.html">Portugol JavaScrip</a></li>
-              <li><a href="primeiro/jogojs/index.html">Jogo da velha</a></li>
-              <li><a href="primeiro/../museu/index.html">Museu</a></li>
-              <li><a href="primeiro/projeto/index.html">Projeto de PP</a></li>
-              <li><a href="primeiro/curriculo/index.html">Currículo</a></li>
-              <li><a href="primeiro/todolist/index.html]">To Do List</a></li>
-            </ul>
-            <li class="dropdown">
-              <a href="#" data-toggle="dropdown">Segundo Ano <i class="icon-arrow"></i></a>
-              <ul class="dropdown-menu">
-                <li><a href="segundo/indicacoesback/index.html">Indicações de Back-End</a></li>
-              </ul>
-          </li>
-        
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,700&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="assets/portfolio.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <title>Index</title>
+  </head>
+  <body>
+    <header class="header-bg">
+      <div class="header container">
+        <h1>Portfolio</h1>
+        <nav>
+          <ul class="header-nav">
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="./curriculo/index.html">CURRÍCULO</a></li>
+          </ul>
+        </nav>
       </div>
-</body>
-<script src="script.js"></script>
+    </header>
+    <main>
+      <section>
+        <div class="container home">
+          <h1>
+            Olá, sou o Eduardo, <br />
+            Estudante/Web Developer
+          </h1>
+          <p>
+            Tenho 16 anos, atualmente estou estudando HTML, CSS e JavaScript.
+          </p>
+          <div class="home-img">
+            <img
+              class="imagem"
+              src="./assets/foto-minha.jpeg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills-bg">
+        <div class="skills container">
+          <h2>Minhas Skills</h2>
+          <div class="skills-grid">
+            <div class="cada-skill html">
+              <div class="skills-icon">
+                <i class="fab fa-html5" style="color: #dd4b25"></i>
+              </div>
+              <h3>HTML</h3>
+              <p>
+                HTML é uma linguagem de marcação utilizada na construção de
+                páginas na Web e interpretado por navegadores.
+              </p>
+            </div>
+            <div class="cada-skill css">
+              <div class="skills-icon">
+                <i class="fab fa-css3-alt" style="color: #254bdd"></i>
+              </div>
+              <h3>CSS</h3>
+              <p>
+                Cascading Style Sheets é um mecanismo para adicionar estilos a
+                uma página web, aplicado diretamente nas tags HTML.
+              </p>
+            </div>
+            <div class="cada-skill js">
+              <div class="skills-icon">
+                <i class="fab fa-js-square" style="color: #efd81d"></i>
+              </div>
+              <h3>JavaScript</h3>
+              <p>
+                JavaScript é uma linguagem de programação interpretada
+                estruturada. É uma das três principais tecnologias da World Wide
+                Web.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projetos" class="projetos-bg">
+        <div class="projetos container">
+          <h2>Projetos</h2>
+          <div class="projetos-flex">
+            <a href="./primeiro/indicacoes/index.html">
+              <div class="cada-projeto">
+                <div class="projetos-img">
+                  <img src="assets/indicacao.png" alt="" />
+                </div>
+                <h3>Indicações Front End</h3>
+                <p>Feito em: <span>24 abr 2023</span></p>
+              </div>
+            </a>
+            <a href="./primeiro/projetopp/index.html">
+              <div class="cada-projeto">
+                <div class="projetos-img">
+                  <img src="assets/projetopp.png" alt="" />
+                </div>
+                <h3>Projeto de PP</h3>
+                <p>Feito em: <span>15 maio 2023</span></p>
+              </div>
+            </a>
+            <a href="./primeiro/oficinas/index.html">
+              <div class="cada-projeto">
+                <div class="projetos-img">
+                  <img src="assets/oficinas.png" alt="" />
+                </div>
+                <h3>Oficinas</h3>
+                <p>Feito em: <span>25 maio 2023</span></p>
+              </div>
+            </a>
+            <a href="./primeiro/carrinho/index.html">
+              <div class="cada-projeto">
+                <div class="projetos-img">
+                  <img src="assets/carrinho.png" alt="" />
+                </div>
+                <h3>Carrinho de Rolimã</h3>
+                <p>Feito em: <span>24 jun 2023</span></p>
+              </div>
+            </a>
+            <a href="./primeiro/fibonacci/index.html">
+              <div class="cada-projeto">
+                <div class="projetos-img">
+                  <img src="assets/fibonacci.png" alt="" />
+                </div>
+                <h3>Fibonacci</h3>
+                <p>Feito em: <span>06 jul 2023</span></p>
+              </div>
+            </a>
+            <a href="./primeiro/ods/index.html">
+              <div class="cada-projeto">
+                <div class="projetos-img">
+                  <img src="assets/ods7.png" alt="" />
+                </div>
+                <h3>ODS 7</h3>
+                <p>Feito em: <span>04 ago 2023</span></p>
+              </div>
+            </a>
+            <a href="./primeiro/deusegipcio/index.html">
+              <div class="cada-projeto">
+                <div class="projetos-img">
+                  <img src="assets/deusegipcio.png" alt="" />
+                </div>
+                <h3>Deus Egípcio</h3>
+                <p>Feito em: <span>19 set 2023</span></p>
+              </div>
+            </a>
+            <a href="./primeiro/ptjs/index.html">
+              <div class="cada-projeto">
+                <div class="projetos-img">
+                  <img src="assets/ptjs.png" alt="" />
+                </div>
+                <h3>PTJS</h3>
+                <p>Feito em: <span>24 set 2023</span></p>
+              </div>
+            </a>
+            <a href="./primeiro/linkemusic/index.html">
+              <div class="cada-projeto">
+                <div class="projetos-img">
+                  <img src="assets/linkemusic.png" alt="" />
+                </div>
+                <h3>LinkeMusic</h3>
+                <p>Feito em: <span>2 out 2023</span></p>
+              </div>
+            </a>
+            <a href="./primeiro/jogojs/index.html">
+              <div class="cada-projeto">
+                <div class="projetos-img">
+                  <img src="assets/jogodavelha.png" alt="" />
+                </div>
+                <h3>Jogo da Velha</h3>
+                <p>Feito em: <span>22 out 2023</span></p>
+              </div>
+            </a>
+            <a href="./primeiro/literatura/index.html">
+              <div class="cada-projeto">
+                <div class="projetos-img">
+                  <img src="assets/literatura.png" alt="" />
+                </div>
+                <h3>literatura</h3>
+                <p>Feito em: <span>13 nov 2023</span></p>
+              </div>
+            </a>
+            <a href="./primeiro/projeto/index.html">
+              <div class="cada-projeto">
+                <div class="projetos-img">
+                  <img src="assets/fagro.png" alt="" />
+                </div>
+                <h3>Projeto Profissional</h3>
+                <p>Feito em: <span>25 nov 2023</span></p>
+              </div>
+            </a>
+            <a href="./primeiro/todolist/index.html">
+              <div class="cada-projeto">
+                <div class="projetos-img">
+                  <img src="assets/todolist.png" alt="" />
+                </div>
+                <h3>To do List</h3>
+                <p>Feito em: <span>04 dez 2023</span></p>
+              </div>
+            </a>
+            <a href="./segundo/indicacoesback/index.html">
+              <div class="cada-projeto">
+                <div class="projetos-img">
+                  <img src="assets/indicacoesback.webp" alt="" />
+                </div>
+                <h3>Indicações Back-End</h3>
+                <p>Feito em: <span>26 fev 2024</span></p>
+              </div>
+            </a>
+            <a href="./segundo/oficina3/index.html">
+              <div class="cada-projeto">
+                <div class="projetos-img">
+                  <img src="assets/oficina3.jpg" alt="" />
+                </div>
+                <h3>Oficina Back-End</h3>
+                <p>Feito em: <span>29 fev 2024</span></p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre">
+        <div class="sobre container">
+          <div class="sobre-texto">
+            <h2>Sobre Mim</h2>
+            <p>
+              Comecei a programar em 2023, quando entrei para o primeiro ano na
+              Escola de Ensino Médio e Técnico Senac Santa Cruz, desde então,
+              programar virou uma das minhas atividades favoritas. Até agora,
+              minhas principais habilidades estão concentradas em HTML, CSS e
+              estou estudando JavaScript. Futuramente, pretendo virar full stack
+              e desejo trabalhar para o exterior.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-bg">
+      <div class="footer container">
+        <div class="footer-cima">
+          <nav>
+            <ul class="footer-nav">
+              <li><a href="./curriculo/index.html">CURRÍCULO</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projetos">Projetos</a></li>
+              <li><a href="#sobre">Sobre Mim</a></li>
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <a target="_blank" href="https://www.instagram.com/dudubds26/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/eduardo-baierle"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-baixo">
+          <p>Feito por: Eduardo Baierle dos Santos.</p>
+          <p>Porfolio &copy; Alguns direitos reservados.</p>
+          <div class="icons-baixo">
+            <a target="_blank" href="https://www.instagram.com/dudubds26/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/eduardo-baierle"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
