@@ -3,27 +3,55 @@
 * {
     margin: 0;
     padding: 0;
-    color: #B1D4E0;
     font-family: "Anta", sans-serif;
     font-style: normal;
 }
 
 .container {
-    background: #0C2D48;
+    background: #0c2d48;
     width: 50%;
     height: 100vh;
+    color: #B1D4E0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.trabalhos #json {
+    color: #B1D4E0;
 }
 
 body {
     display: flex;
 }
 
+.redes {
+    justify-content: center;
+    display:flex;
+    padding-top: 60px;
+    gap: 30px;
+    align-items: center;
+}
+
+#freecodecamp {
+    background-color: #B1D4E0;
+    border-radius: 6px;
+    margin-top: -5px;
+}
+
+img {
+    width: 40px;
+}
+
+.redes a {
+    text-decoration: none;
+}
+
 .trabalhos {
     background: #145DA0;
     width: 50%;
+    color: #0c2d48;
     max-height: 100vh;
     overflow-y: scroll;
     text-align: center;
