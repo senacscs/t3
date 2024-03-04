@@ -400,7 +400,7 @@ function printMonthCalendarInDOM() {
 
         week.children[
           j
-        ].innerHTML = `${currentWeek[j].day}<img  id="todayLogo" src='https://png2.cleanpng.com/sh/8bf4e7fd67b71cbb64dd54c37b191c92/L0KzQYm3VMIzN6JofZH0aYP2gLBuTgRifKVxkZ99b3TkiX7wk711cJYyfNNELYTkhMX2j710d59sRdd3Z3zsg7m0hPF6NWQ9RadqZHPlQITrUPU2a2E4RqgDNkC3RoeBUcUzPGU2SqYCN0C4SIm1kP5o/kisspng-tattly-today-is-the-day-tattoo-song-english-day-38-5adcb03d0e5c03.6860466815244124770588.png'  /> ${viewNote}`;
+        ].innerHTML = `${currentWeek[j].day}<img  id="todayLogo" src='./img/alfinete.png'  /> ${viewNote}`;
         // week.children[j].innerHTML = currentWeek[j].day;
         week.children[j].id = "current-day";
         week.children[j].classList.add("currMonth");
