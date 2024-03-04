@@ -1,4 +1,4 @@
-// Declaração da função jogo
+// De5claração da função jogo
 function jogo() {
     // Inicializa uma variável para verificar se o jogador passou para a próxima pergunta
     let passou = false;
@@ -10,6 +10,7 @@ function jogo() {
     switch (escolha.toUpperCase()) {
         case "A":
             alert("Errouuu");
+            passou = false;
             break;
         case "B":
             alert("Acertou");
@@ -17,6 +18,7 @@ function jogo() {
             break;
         case "C":
             alert("Errouuu");
+            passou = false;
             break;
     }
 
@@ -28,6 +30,7 @@ function jogo() {
             case "A":
             case "B":
                 alert("Errouuu");
+                passou = false;
                 break;
             case "C":
                 alert("Certa resposta");
@@ -43,6 +46,7 @@ function jogo() {
         switch (escolha.toUpperCase()) {
             case "A":
                 alert("Errouuu");
+                passou = false;
                 break;
             case "B":
                 alert("Certa Resposta");
@@ -50,6 +54,7 @@ function jogo() {
                 break;
             case "C":
                 alert("Errouuu");
+                passou = false;
                 break;
         }
     }
@@ -66,6 +71,7 @@ function jogo() {
             case "B":
             case "C":
                 alert("Errouuu");
+                passou = false;
                 break;
         }
     }
