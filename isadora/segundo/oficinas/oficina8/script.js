@@ -400,7 +400,7 @@ function printMonthCalendarInDOM() {
 
         week.children[
           j
-        ].innerHTML = `${currentWeek[j].day}<img  id="todayLogo"  src='./img/alfinete.png'  /> ${viewNote}`;
+        ].innerHTML = `${currentWeek[j].day}<img  id="todayLogo" src='./img/alfinete.png'  /> ${viewNote}`;
         // week.children[j].innerHTML = currentWeek[j].day;
         week.children[j].id = "current-day";
         week.children[j].classList.add("currMonth");
