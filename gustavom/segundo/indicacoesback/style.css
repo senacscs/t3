@@ -37,10 +37,11 @@ section h3 {
     padding: 40px;
 }
 
-.explicacao div {
+.explicacao {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
+    padding-bottom: 90px;
 }
 
 .influencer div {
@@ -59,7 +60,7 @@ section h3 {
         grid-template-columns: 1fr;
     }
 
-    .explicacao div {
+    .explicacao {
         grid-template-columns: 1fr;
     }
 }
