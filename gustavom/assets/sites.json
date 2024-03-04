@@ -2,13 +2,13 @@
     {
         "name": "Indicações Back-End",
         "desc": "Trabalho sobre Indicações Back-End.",
-        "link": "./segundo/indicacoesback",
+        "link": "./segundo/indicacoesback/",
         "date": "26/02/2024"
     },
     {
         "name": "Oficina Back-End",
-        "desc": "Trabalho onde ensinamos a utilizar Back-End para buscar produtos em um catálogo.",
-        "link": "https://senacscs.github.io/t3/rodrigo/segundo/oficina/",
+        "desc": "Trabalho onde ensinamos a utilizar fetchData para buscar produtos em um catálogo.",
+        "link": "./segundo/oficina7/",
         "date": "29/02/2024"
     }
 ]

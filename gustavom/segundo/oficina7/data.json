@@ -1,0 +1,149 @@
+[
+  {
+    "nome": "Maçã",
+    "tipo": "Fruta",
+    "origem": "Brasil",
+    "preco": 2.99,
+    "estoque": 100
+  },
+  {
+    "nome": "Arroz",
+    "tipo": "Cereal",
+    "origem": "Nacional",
+    "preco": 4.99,
+    "estoque": 50
+  },
+  {
+    "nome": "Pão de Forma",
+    "tipo": "Pão",
+    "origem": "Industrializado",
+    "preco": 3.49,
+    "estoque": 30
+  },
+  {
+    "nome": "Queijo Mussarela",
+    "tipo": "Queijo",
+    "origem": "Leite de Vaca",
+    "preco": 8.99,
+    "estoque": 20
+  },
+  {
+    "nome": "Frango",
+    "tipo": "Carne",
+    "origem": "Aves",
+    "preco": 6.99,
+    "estoque": 40
+  },
+  {
+    "nome": "Cenoura",
+    "tipo": "Legume",
+    "origem": "Orgânica",
+    "preco": 1.99,
+    "estoque": 60
+  },
+  {
+    "nome": "Leite",
+    "tipo": "Laticínio",
+    "origem": "Bovino",
+    "preco": 3.29,
+    "estoque": 45
+  },
+  {
+    "nome": "Ovos",
+    "tipo": "Proteína",
+    "origem": "Galinha",
+    "preco": 5.49,
+    "estoque": 80
+  },
+  {
+    "nome": "Pasta de Amendoim",
+    "tipo": "Grão",
+    "origem": "Amendoim",
+    "preco": 6.99,
+    "estoque": 25
+  },
+  {
+    "nome": "Iogurte Natural",
+    "tipo": "Laticínio",
+    "origem": "Bovino",
+    "preco": 2.79,
+    "estoque": 35
+  },
+  {
+    "nome": "Espinafre",
+    "tipo": "Vegetal",
+    "origem": "Nacional",
+    "preco": 2.49,
+    "estoque": 70
+  },
+  {
+    "nome": "Salmão",
+    "tipo": "Peixe",
+    "origem": "Mar",
+    "preco": 12.99,
+    "estoque": 15
+  },
+  {
+    "nome": "Feijão",
+    "tipo": "Leguminosa",
+    "origem": "Nacional",
+    "preco": 5.99,
+    "estoque": 55
+  },
+  {
+    "nome": "Banana",
+    "tipo": "Fruta",
+    "origem": "Brasil",
+    "preco": 1.49,
+    "estoque": 90
+  },
+  {
+    "nome": "Mel",
+    "tipo": "Doce",
+    "origem": "Nacional",
+    "preco": 7.99,
+    "estoque": 10
+  },
+  {
+    "nome": "Batata",
+    "tipo": "Tubérculo",
+    "origem": "Nacional",
+    "preco": 2.19,
+    "estoque": 75
+  },
+  {
+    "nome": "Tomate",
+    "tipo": "Fruta",
+    "origem": "Nacional",
+    "preco": 1.99,
+    "estoque": 85
+  },
+  {
+    "nome": "Atum Enlatado",
+    "tipo": "Peixe",
+    "origem": "Oceano",
+    "preco": 3.99,
+    "estoque": 25
+  },
+  {
+    "nome": "Cereal Matinal",
+    "tipo": "Cereal",
+    "origem": "Industrializado",
+    "preco": 5.49,
+    "estoque": 40
+  },
+  {
+    "nome": "Azeite de Oliva",
+    "tipo": "Óleo",
+    "origem": "Nacional",
+    "preco": 9.99,
+    "estoque": 20
+  },
+  {
+    "nome": "Laranja",
+    "tipo": "Fruta",
+    "origem": "Nacional",
+    "preco": 2.29,
+    "estoque": 65
+  }
+]
