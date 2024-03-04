@@ -125,10 +125,18 @@ header {
     margin-right: auto;
     text-align: center;
     padding-top:50px;
+    padding-bottom: 30px;
   }
   ul {
     position: absolute;
     top: 0;
     right: 0;
+  }
+  
+  .outer{
+    padding-bottom:30px;
+  }
+  .button-spacing {
+    margin-top: 30px; /* Adicione a margem desejada entre os botões */
   }
   
