@@ -1,4 +1,6 @@
-
+// Declaração da função jogo
+function jogo() {
+    // Inicializa uma variável para verificar se o jogador passou para a próxima pergunta
     let passou = false;
 
     // Pergunta ao jogador sobre o tipo de animal que é um felino
@@ -72,4 +74,7 @@
     if (passou) {
         alert("Parabéns Você Ganhou 1 milhão de reais!!!");
     }
+}
 
+// Chame a função jogo para iniciar o jogo
+jogo();
