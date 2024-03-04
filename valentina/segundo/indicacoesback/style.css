@@ -1,0 +1,69 @@
+body {
+	background:#ffffff;
+	
+	text-align: center;
+	font-family: Serif;
+    
+    border-style: double;
+	border-width: 20px;
+    border-color:rgb(11, 6, 6);
+
+
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 2fr; /* Duas colunas, a primeira com 1 parte e a segunda com 2 partes */
+	}
+	@media (max-width: 768px) {
+		/* Estilos para telas menores que 768px */
+		.menu {
+			flex-direction: column; /* Altera a direção do menu para vertical */
+		}
+	}
+	.header {
+		font-size: 2em; /* Tamanho de fonte relativo */
+		padding: 2rem; /* Espaçamento relativo */
+	}
+		
+
+
+
+	* {
+		margin: auto;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Open Sans', sans-serif;
+	}
+	
+	#menu-h {
+		background-color: rgb(37, 37, 39);
+	}
+	
+	#menu-h ul {
+		max-width: 800px;
+		list-style: none;
+		padding: 0;
+	}
+	
+	#menu-h ul li {
+		display: inline;
+	}
+	
+	#menu-h ul li a {
+		color: #FFF;
+		padding: 20px;
+		display: inline-block;
+		text-decoration: none;
+		transition: background 0.4s;
+	
+	}
+	
+	#menu-h ul li a:hover {
+		background-color: rgb(9, 76, 132);
+	}
+	
+	#menu-h ul li:last-child a {
+		float: right;
+		background-color: rgb(8, 47, 80);
+	}
+	
+}
