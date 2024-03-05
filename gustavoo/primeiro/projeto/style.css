@@ -1,0 +1,246 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background-color: var(--bg);
+    overflow-x: hidden;
+}
+
+:root {
+    --text: #0f1111;
+    --bg: #c9e2e2;
+    --heading: #cfaa53;
+    --link-color-hover: #ec5840;
+    --a-color: #161918;
+    --top: solid #cfaa53;
+}
+.dark-mode:root {
+    --text: #fff;
+    --bg: black;
+    --heading: #cfaa53;
+    --link-color-hover: #ec5840;
+    --a-color: rgb(28, 26, 26);
+    --top: solid #e9e5db;
+}
+.titulo {
+    color: #cfaa53;
+    text-align: center;
+    font-size: 1.75rem;
+}
+.tema {
+    text-align: center;
+}
+
+.integrantes {
+    position: relative;
+    left: 0px;
+}
+.facilitar {
+    position: relative;
+    left: 0px;
+}
+.gustavo {
+    position: relative;
+    left: 350px;
+    padding: 30px;
+}
+
+.modo-noturno {
+    background-color: var(--bg);
+    border: 1px solid var(--text);
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: var(--text);
+}
+.modo-noturno:hover {
+    background-color: var(--a-color);
+    color: var(--bg);
+}
+
+nav {
+    display: flex;
+    padding: 5px;
+    text-transform: capitalize;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    left: 0;
+    background-color: var(--bg);
+    color: var(--text);
+    align-items: center;
+    justify-content: center;
+    
+}
+
+nav ul{
+    position: relative;
+    text-align: end;
+    background-color: var(--bg);
+}
+
+nav ul li{
+    text-align: center;
+    display: inline;
+    padding: 0 .5rem;
+}
+
+nav ul li a{
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    color: var(--text);
+    font-size: 1rem;
+    padding: 5px;
+    transition: 0.2s;
+    border-radius: 2px;
+}
+
+ol li {
+    padding-bottom: 4px;
+    font-size: 1rem;
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+#general {
+    margin-top: 45px;
+}
+
+section {
+    padding-top: 2rem;
+    margin: 10px 5px;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    border-top: 3px var(--top);
+}
+
+.heading {    
+    color: var(--heading);
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: var(--text);
+    margin: 5px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 1.75rem;
+    margin: 15px 0;
+}
+.objectives {
+    margin-top: 8px;
+}
+
+.ref {
+    display: flex;
+}
+
+.reftext {
+    margin: 14px 0;
+}
+iframe {
+    margin-left: 325px;
+}
+
+footer {
+    background: #0f1111;
+    height: 30vh;
+    color: #c9e2e2;
+    display: flex;
+    flex-direction: row;
+    gap: 30vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.gg-arrow-align-v {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 10px;
+    height: 20px;
+    left: 600px;
+    background:
+    linear-gradient(
+    to left,
+    currentColor 15px,transparent 0)
+    no-repeat 4px 2px/2px 6px,
+    linear-gradient(
+    to left,
+    currentColor 15px,transparent 0)
+    no-repeat 4px 12px/2px 6px,
+    linear-gradient(
+    to left,
+    currentColor 15px,transparent 0)
+    no-repeat center/10px 2px
+    }
+   
+    .gg-arrow-align-v::after,
+    .gg-arrow-align-v::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    transform: rotate(-45deg);
+    left: 2px;
+    }
+   
+    .gg-arrow-align-v::after {
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    bottom: 1px
+    }
+   
+    .gg-arrow-align-v::before {
+    border-top: 2px solid;
+    border-right: 2px solid;
+    top: 1px
+    } 
+
+@media only screen and (max-width: 480px) {
+    
+    .gustavo{
+        left: auto;
+    }
+
+    section {
+        width: 145%;
+    }
+
+    iframe {
+        margin-left: 0;
+    }
+
+    nav ul li a {
+        font-size: 0.55rem;
+    }
+    .ref{
+        width: 400px;
+    }
+    footer {
+        width: 600px;
+    }
+    
+    
+} 
+   

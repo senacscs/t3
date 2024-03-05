@@ -1,0 +1,19 @@
+* {
+    color: white;
+}
+h1,h2{
+    text-align: center;
+    color:black;
+}
+body{
+    text-align: center;
+    color:white;
+}
+body{
+    background-color: rgb(26, 78, 150);
+}
+
+li {
+    list-style: none;
+    color: white;
+}
