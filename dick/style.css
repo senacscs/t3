@@ -28,7 +28,7 @@
 }
 
 body {
-    background: linear-gradient(to right, #33035c, #0d045f, #4f0471);
+    background: linear-gradient(to right, #33035c, #0d045f, #33035c);
     height: 100vh;
     text-align: center;
 }
@@ -54,7 +54,8 @@ body {
 #form fieldset:not(:first-of-type) {
 	display: none;
 }
-#form input, #form textarea {
+#form input, .navegacao, #form textarea {
+	background-color: #ccc;
 	padding: 15px;
 	border: 1px solid #ccc;
 	border-radius: 3px;
@@ -64,9 +65,14 @@ body {
 	font-family: montserrat;
 	color: #2C3E50;
 	font-size: 13px;
+	text-align: left;
+}
+
+#form input::placeholder{
+	color: #2C3E50;
 }
 #form .action-button {
-	width: 100px;
+	width: 70px;
 	background: #27ae5fb0;
 	font-weight: bold;
 	color: white;
@@ -146,5 +152,22 @@ body {
 	color: #3f3939
 }
 
+.ballin{
+	text-decoration: none;
+	cursor: text;
+	color: #18416b;
+}
+
+.ballin:visited {
+	color: #18416b;
+}
+
+.freebird, .shrek {
+	color: white;
+}
+
+.freebird:visited, .shrek:visited {
+	color: white;
+}
 
 @media screen and (max-width: 720px) {}

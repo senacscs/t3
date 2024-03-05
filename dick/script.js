@@ -59,3 +59,27 @@ $(".previous").click(function(){
 	});
 });
 
+document.getElementById("shrek").addEventListener('click', () => {
+	window.location.href = 'https://youtu.be/f97W-nveCOM?si=LacnsReB4O2HrKiO'
+})
+
+document.getElementById("freebird").addEventListener('click', () => {
+	window.location.href = 'https://youtu.be/EUc1AhTdG3U?si=l8SGRFQKcXQqpvjU'
+})
+
+document.getElementById("ballin").addEventListener('click', () => {
+	window.location.href = 'https://youtu.be/MAREvZsLpO8?si=gi42ZieIgflThAE0'
+})
+
+document.getElementById("ballin").addEventListener('click', () => {
+	window.location.href = 'https://youtu.be/MAREvZsLpO8?si=gi42ZieIgflThAE0'
+})
+
+document.getElementById("pirata").addEventListener('click', () => {
+	window.location.href = 'https://youtu.be/-bROlO-KMto?si=1MuOm0oyH8gUW8gJ'
+})
+
+document.getElementById("banana").addEventListener('click', () => {
+	window.location.href = 'https://youtu.be/jIIjd72flAM?si=gglBWk-MaVkmvZgD'
+})
+
