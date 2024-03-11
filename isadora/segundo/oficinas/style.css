@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
+
+:root {
+  --btn-width: 250px;
+  --btn-height: 80px;
+  --btn-full: calc(var(--btn-height) + var(--btn-width));
+  --btn-half: calc(var(--btn-full) / 2);
+  --bg-color: #eeeeee;
+}
+
+html {
+  padding-top: 50px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  text-align: center;
+  background-color: var(--bg-color);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  transition: 0.5s ease-in-out;
+}
+
+i,
+em,
+b,
+strong,
+span {
+  transition: none;
+}
+
+*:before,
+*:after {
+  z-index: -1;
+}
+
+h1,
+h4 {
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+  margin: 0;
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+  line-height: var(--btn-height);
+  color: black;
+}
+
+.centerer {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 600px) {
+  .wrap {
+    width: 50%;
+    float: left;
+  }
+}
+
+[class^="btn-"] {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: var(--btn-height);
+  max-width: var(--btn-width);
+  margin: 1rem auto;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
