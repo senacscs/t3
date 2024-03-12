@@ -1,224 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style.css"> 
-  <title>Calendário</title>
+  <title>Cronômetro</title>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
 </head>
 <body>
-  <div id="current-day-info" class="color">
-    <h1 id="app-name-landscape" class="off-color center default-cursor">
-      oficina
-    </h1>
+  <center>
+    <div style="text-align: center; width: 300px">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;" xml:space="preserve">
+        <style type="text/css">
+          .st0 {
+            fill: #39383A;
+          }
   
-    <div>
-      <h2 id="current-year" class="center default-cursor">2024</h2>
+          .st1 {
+            font-family: 'Orbitron';
+          }
+  
+          .st2 {
+            font-size: 20.5735px;
+          }
+        </style>
+        <g>
+          <g>
+            <g>
+              <path class="st0" d="M40.3,58.6c0,3.6,0.8,7,2.3,10c9.9-11.2,22-20.5,35.7-26.9c-4-3.6-9.4-5.9-15.2-5.9
+          C50.6,35.7,40.3,45.9,40.3,58.6z" />
+              <path class="st0" d="M125,242.8c56.3,0,101.9-45.6,101.9-101.9c0-50.4-36.6-92.2-84.7-100.4v-3.9v-3.9V21.2h8.9
+          c2.9,0,5.3-3.1,5.3-7c0-3.8-2.3-7-5.3-7H98.9c-2.9,0-5.3,3.1-5.3,7c0,3.8,2.3,7,5.3,7h8.9v11.3v3.9v3.9c-8.6,1.5-16.8,4-24.5,7.5
+          c-13.9,6.3-26.2,15.6-36,27.1c-15.1,17.7-24.2,40.7-24.2,65.8C23.1,197.1,68.7,242.8,125,242.8z M66.1,81.2
+          c5.3-5.2,11.4-9.8,18-13.6c12.2-6.8,26.1-10.8,41-10.8c46.3,0,84,37.7,84,84s-37.7,84-84,84s-84-37.7-84-84
+          C41,117.5,50.7,96.3,66.1,81.2z" />
+              <path class="st0" d="M62.3,176.9c2.1,3.6,4.4,6.9,6.9,10c13.3,16.1,33.4,26.4,55.8,26.4c39.9,0,72.4-32.4,72.4-72.4
+          S165,68.5,125,68.5c-22.4,0-42.5,10.3-55.8,26.4c-2.6,3.1-4.9,6.5-6.9,10c-6.1,10.6-9.6,22.9-9.6,36
+          C52.6,153.9,56.1,166.3,62.3,176.9z M64.5,126.2c0-2.2,1.7-3.8,3.8-3.8h111.2c2.2,0,3.8,1.7,3.8,3.8v30.2c0,2.2-1.7,3.8-3.8,3.8
+          H68.4c-2.2,0-3.8-1.7-3.8-3.8C64.5,156.4,64.5,126.2,64.5,126.2z" />
+            </g>
+          </g>
+          <text id="thousandths" transform="matrix(1 0 0 1 141.6917 149.5201)" class="st0 st1 st2">03</text>
+          <text id="minutes" transform="matrix(1 0 0 1 79.0359 149.5201)" class="st0 st1 st2">0</text>
+          <text transform="matrix(1 0 0 1 98.3625 149.5201)" class="st0 st1 st2">:</text>
+          <text id="seconds" transform="matrix(1 0 0 1 103.3498 149.5201)" class="st0 st1 st2">00</text>
+          <text transform="matrix(1 0 0 1 137.0159 149.5201)" class="st0 st1 st2">.</text>
+        </g>
+      </svg>
     </div>
-  
-    <div>
-      <h1 id="cur-day" class="current-day-heading center default-cursor">
-        Monday
-      </h1>
-      <h1 id="cur-month" class="current-month-heading center default-cursor">
-        June
-      </h1>
-      <h1 id="cur-date" class="current-date-heading center default-cursor">
-        7
-      </h1>
-    </div>
-  
-    <div class="time">
-      <span> 22 </span>: <span> 55 </span>:
-      <span> 23 </span>
-    </div>
-  
-    <button id="theme-landscape" class="font btn">Change Theme</button>
-  </div>
-  
-  <div id="calender">
-    <h1 id="app-name-portrait" class="center ">JSCalender</h1>
-    <!-- h1 'off-color' class was removed -->
-    <table>
-      <thead class="color">
-        <tr>
-          <th colspan="7" class="border-color">
-            <h4 id="cal-year" contenteditable="true">2018</h4>
-            <div>
-              <i class="fas fa-caret-left icon"> </i>
-              <h3 id="cal-month">july</h3>
-              <i class="fas fa-caret-right icon"> </i>
-            </div>
-          </th>
-        </tr>
-  
-        <tr>
-          <th class="weekday border-color">Sun</th>
-          <th class="weekday border-color">Mon</th>
-          <th class="weekday border-color">Tue</th>
-          <th class="weekday border-color">Wed</th>
-          <th class="weekday border-color">Thu</th>
-          <th class="weekday border-color">Fri</th>
-          <th class="weekday border-color">Sat</th>
-        </tr>
-      </thead>
-  
-      <tbody id="table-body">
-        <tr>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>1</td>
-          <td class="tooltip-container">
-            <span class="day">1</span>
-            <img src="./img/alfinete.png" alt="note" />
-            <span class="tooltip"> this is pretty tooltip</span>
-          </td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-      </tbody>
-    </table>
-    <button id="theme-portrait" class="font btn">Change Theme</button>
-  </div>
-  
-  <div class="modal">
-    <div id="fav-color" hidden>
-      <div class="popup">
-        <h4>whats your favorite color ?</h4>
-  
-        <div id="color-options">
-          <div class="color-option">
-            <div class="color-preview" id="blue" style="background-color: #1B19CD;">
-              <!-- <i class="fas fa-check checkmark"></i> -->
-            </div>
-            <h5>Blue</h5>
-          </div>
-  
-          <div class="color-option">
-            <div class="color-preview" id="red" style="background-color: #D01212;"></div>
-            <h5>Red</h5>
-          </div>
-  
-          <div class="color-option">
-            <div class="color-preview" id="purple" style="background-color: #721D89;"></div>
-            <h5>Purple</h5>
-          </div>
-  
-          <div class="color-option">
-            <div class="color-preview" id="green" style="background-color: #158348;"></div>
-            <h5>Green</h5>
-          </div>
-  
-          <div class="color-option">
-            <div class="color-preview" id="orange" style="background-color: #EE742D;"></div>
-            <h5>Orange</h5>
-          </div>
-  
-          <div class="color-option">
-            <div class="color-preview" id="deep-orange" style="background-color: #F13C26;"></div>
-            <h5>Deep Orange</h5>
-          </div>
-  
-          <div class="color-option">
-            <div class="color-preview" id="baby-blue" style="background-color: #31B2FC;"></div>
-            <h5>Baby Blue</h5>
-          </div>
-  
-          <div class="color-option">
-            <div class="color-preview" id="cerise" style="background-color: #EA3D69;"></div>
-            <h5>Cerise</h5>
-          </div>
-  
-          <div class="color-option">
-            <div class="color-preview" id="lime" style="background-color: #36C945;"></div>
-            <h5>Lime</h5>
-          </div>
-  
-          <div class="color-option">
-            <div class="color-preview" id="teal" style="background-color: #2FCCB9;"></div>
-            <h5>Teal</h5>
-          </div>
-  
-          <div class="color-option">
-            <div class="color-preview" id="pink" style="background-color: #F50D7A;"></div>
-            <h5>Pink</h5>
-          </div>
-  
-          <div class="color-option">
-            <div class="color-preview" id="black" style="background-color: #212524;"></div>
-            <h5>Black</h5>
-          </div>
-        </div>
-  
-        <button id="update-theme-button" class="font btn color">
-          Update Theme
-        </button>
-      </div>
-    </div>
-  
-    <div id="make-note" hidden>
-      <div class="popup">
-        <h4> <span class="verb"></span> note on <span id="noteDate">2019 12 5</span></h4>
-        <input class="note-title" type="text" name="title" placeholder="note title ..." />
-        <textarea class="note-content" id="edit-post-it" name="post-it" placeholder="note description ..."></textarea>
-        <span style="color:red;" id="warning"></span>
-        <div>
-          <button class="btn font post-it-button" id="add-post-it">
-            Save
-          </button>
-          <button class="btn font post-it-button" id="delete-button">
-            Delete
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
+  </center>
+  <center>
+    <button onclick="start();" type="button" style="font-size: 16px; padding: 15px 32px;">Arrancar/Parar</button>
+    <button onclick="reset();" type="button" style="font-size: 16px; padding: 15px 32px;">Inicializar</button>
+  </center>
+  <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
