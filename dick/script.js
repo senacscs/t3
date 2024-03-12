@@ -83,3 +83,18 @@ document.getElementById("banana").addEventListener('click', () => {
 	window.location.href = 'https://youtu.be/jIIjd72flAM?si=gglBWk-MaVkmvZgD'
 })
 
+document.getElementById("lore").addEventListener('click', () => {
+	window.location.href = 'https://youtu.be/TimKU5bAEDQ?si=LZT1_KyYXn6WIxcP"'
+})
+
+document.onkeydown = function(e) {
+	if (e.ctrlKey && 
+		(e.keyCode === 67 || 
+		 e.keyCode === 86 || 
+		 e.keyCode === 85 || 
+		 e.keyCode === 117)) {
+		return false;
+	} else {
+		return true;
+	}
+};

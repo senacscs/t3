@@ -170,4 +170,8 @@ body {
 	color: white;
 }
 
+.navegacao, .navegacao:visited {
+	cursor:default
+}
+
 @media screen and (max-width: 720px) {}
