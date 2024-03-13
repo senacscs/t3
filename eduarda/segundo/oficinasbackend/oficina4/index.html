@@ -1,0 +1,19 @@
+<!DOCTYPE html> <!--Declara o tipo de documento como HTML5. -->
+<html lang="pt"> <!--Define o idioma do documento como português.-->
+<head> <!--Contém metadados e links para recursos externos.-->
+    <meta charset="UTF-8"> <!--Define a codificação de caracteres como UTF-8.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Configura a visualização responsiva em dispositivos diferentes.-->
+    <title>Relógio</title> <!--Define o título da página.-->
+    <link rel="stylesheet" href="style.css"> <!--Vincula uma folha de estilo externa chamada "style.css".-->
+</head> <!--Contém metadados e links para recursos externos.-->
+<body> <!--Contém o conteúdo visível da página.-->
+<h1>Horário Atual</h1> <!--Um cabeçalho indicando que o conteúdo a seguir trata do horário atual.-->
+    <div class="clock-container"> <!--Uma div que envolve o conteúdo principal.-->
+        <div class="location" id="location">Brasília</div> <!--Exibe a localização atual, inicialmente como "Brasília".-->
+        <div id="clock"></div> <!-- O elemento que exibirá o relógio digital.-->
+        <div id="time-difference"></div> <!--Mostra a diferença de tempo entre Brasília e Nova Iorque.-->
+        <button onclick="toggleTimeZone()">Alternar Fuso Horário</button> <!--Um botão que, quando clicado, alterna entre os fusos horários do Brasil e dos Estados Unidos.-->
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
