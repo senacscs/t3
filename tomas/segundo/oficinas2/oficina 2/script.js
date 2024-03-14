@@ -4,20 +4,20 @@ function jogo() {
     let passou = false;
 
     // Pergunta ao jogador sobre o tipo de animal que é um felino
-    let escolha = prompt("Show do milhão\nPrimeira pergunta\nQual animal é um Felino?\nA - Cachorro\nB - Gato\nC - Peixe");
+    let escolha = prompt("Show do milhão\nPrimeira pergunta\nQual animal é um Felino?\nA - Cadeira de rodas\nB - Oficina do Alberto\nC - Pincher");
 
     // Verifica a escolha do jogador usando um switch case
     switch (escolha.toUpperCase()) {
         case "A":
-            alert("Errouuu");
+            alert("Muito burro da zero pra ele");
             passou = false;
             break;
         case "B":
-            alert("Acertou");
+            alert("Acerto miseravi");
             passou = true; // Define passou como true se o jogador acertar
             break;
         case "C":
-            alert("Errouuu");
+            alert("Muito burro da zero pra ele");
             passou = false;
             break;
     }
@@ -25,15 +25,15 @@ function jogo() {
     // Se o jogador passou para a próxima pergunta
     if (passou) {
         // Pergunta ao jogador sobre um país da Europa
-        escolha = prompt("Próxima Pergunta\nQual é um País da Europa\nA - China\nB - Estados Unidos\nC - França");
+        escolha = prompt("Próxima Pergunta\nQual é um País da Europa\nA - Arábia\nB - Netuno\nC - Coringa");
         switch (escolha.toUpperCase()) {
             case "A":
             case "B":
-                alert("Errouuu");
+                alert("Muito burro da zero pra ele");
                 passou = false;
                 break;
             case "C":
-                alert("Certa resposta");
+                alert("Acerto miseravi");
                 passou = true; // Define passou como true se o jogador acertar
                 break;
         }
@@ -42,18 +42,18 @@ function jogo() {
     // Continua para a próxima pergunta se o jogador passou
     if (passou) {
         // Pergunta ao jogador sobre o número de estados do Brasil
-        escolha = prompt("Próxima Pergunta\nQuantos estados tem o Brasil\nA - 23\nB - 26\nC - 27");
+        escolha = prompt("Próxima Pergunta\nQuantos estados tem o Brasil\nA - 78\nB - ∞\nC - 299");
         switch (escolha.toUpperCase()) {
             case "A":
-                alert("Errouuu");
+                alert("Muito burro da zero pra ele");
                 passou = false;
                 break;
             case "B":
-                alert("Certa Resposta");
+                alert("Acerto miseravi");
                 passou = true; // Define passou como true se o jogador acertar
                 break;
             case "C":
-                alert("Errouuu");
+                alert("Muito burro da zero pra ele");
                 passou = false;
                 break;
         }
@@ -65,12 +65,12 @@ function jogo() {
         escolha = prompt("Próxima Pergunta\nQuem descobriu o Brasil\nA - Pedro Alvares Cabral\nB - Napoleão\nC - Cristovão Colombo");
         switch (escolha.toUpperCase()) {
             case "A":
-                alert("Certa Resposta");
+                alert("Acerto miseravi");
                 passou = true; // Define passou como true se o jogador acertar
                 break;
             case "B":
             case "C":
-                alert("Errouuu");
+                alert("Muito burro da zero pra ele");
                 passou = false;
                 break;
         }
