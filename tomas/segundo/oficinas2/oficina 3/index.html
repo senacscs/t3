@@ -32,24 +32,56 @@
       }
 
       .ativo {
-        color: crimson;
-        border: 1px solid black;
+        animation: rainColor 5s infinite;
+        border: 2.5px solid black;
         background-color: #929292;
-        border-radius: 50%;
+        border-radius: 10%;
       }
 
       .mudar-bg {
         background-color: chartreuse;
       }
+
+      @keyframes rainColor{
+        0% {
+      color: red;
+      border-color: red;
+    }
+
+    20% {
+      color: orange;
+      border-color: orange;
+    }
+
+    40% {
+      color: yellow;
+      border-color: yellow;
+    }
+
+    60% {
+      color: rgb(0, 159, 0);
+      border-color: rgb(0, 159, 0);
+    }
+
+    80% {
+      color: rgb(0, 66, 165);
+      border-color: rgb(0, 66, 165);
+    }
+
+    100% {
+      color: red;
+      border-color: red
+    }
+  }
     </style>
   </head>
   <body>
     <button id="button">CLIQUE AQUI</button>
 
       <ul>
-        <li>Teste1</li>
-        <li>Teste2</li>
-        <li>Teste3</li>
+        <li>Sim</li>
+        <li>Não</li>
+        <li>Talvez</li>
       </ul>
 
     <script src="script.js"></script>
