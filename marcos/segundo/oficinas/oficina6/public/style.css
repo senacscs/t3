@@ -62,6 +62,13 @@ button {
     margin: 10px;
 }
 
+.item div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
 p {
     font-family: Arial, Helvetica, sans-serif;
 
