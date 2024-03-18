@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #C0C2C9;
+    background-color: #f5ff6e;
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -16,7 +16,7 @@ body {
 h2 {
     font-size: 2.25rem;
     color: #373d54;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Madimi One';
 }
 
 .input-form {
