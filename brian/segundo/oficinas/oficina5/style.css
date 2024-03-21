@@ -1,0 +1,43 @@
+body {
+    padding-left: 2vw;
+    background-color: lightcyan;
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 0;  
+    text-align: center;
+}
+
+
+h2 {
+    font-size: 2vw;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2vw;
+    margin: 0;
+    text-align: center;
+    width: 100vw;
+    padding-bottom: 1vw;
+}
+
+input[type="button"] {
+    width: 15.5vw;
+    margin-top: 0.5vw;
+    background-color: black;
+    padding: 1vw;
+    border: 0.1vw solid black;
+    border-radius: 1vw;
+    color: aliceblue;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 1vw;
+}
+
+
+
+input[type="button"]:hover {
+    background-color: aliceblue;
+    border: 0.1vw solid black;
+    color: black;
+    font-size: 1vw;
+}
