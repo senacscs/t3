@@ -11,25 +11,23 @@ const path = require('path');
 const app = express();
 const PORT = 3000;
 
-//Middleware de arquivos estáticos (HTML, CSS)
+// Middleware para arquivos estáticos (HTML, CSS)
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Conectar ao banco de dados SQLite
-const db = new sqlite3.Database('./compras.db', (err) => {
+// Conexão com o banco de dados SQLite
+const db = new sqlite3.Database('./academia.db', (err) => {
   if (err) {
     console.error('Erro ao conectar ao banco de dados:', err.message);
   } else {
     console.log('Conexão bem-sucedida ao banco de dados SQLite');
   }
-}); 
+});
 
-// Criar tabela de compras se ainda não existir (SQL)
-db.run(`CREATE TABLE IF NOT EXISTS academia (
+// Criar tabela de membros se ainda não existir (SQL)
+db.run(`CREATE TABLE IF NOT EXISTS membros (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  nome TEXT,
+  nome TEXT NOT NULL,
   idade INTEGER,
-  pagamento INTEGER,
-  adesao INTEGER
 )`);
 
 // Middleware para processar corpo das requisições como JSON
@@ -37,12 +35,12 @@ app.use(express.json());
 
 // Endpoint para retornar a página Index.html
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/index.html')
-})
+  res.sendFile(__dirname + '/public/index.html');
+});
 
-// Endpoint para listar todas as compras
-app.get('/compras', (req, res) => {
-  db.all('SELECT * FROM compras', (err, rows) => {
+// Endpoint para listar todos os membros
+app.get('/membros', (req, res) => {
+  db.all('SELECT * FROM membros', (err, rows) => {
     if (err) {
       res.status(500).json({ error: err.message });
       return;
@@ -51,49 +49,53 @@ app.get('/compras', (req, res) => {
   });
 });
 
+// Endpoint para adicionar um novo membro
+app.post('/membros', (req, res) => {
+  const { nome, idade, endereco, telefone } = req.body;
 
-// Endpoint para adicionar uma nova compra
-app.post('/compras', (req, res) => {
-  const { description, preco } = req.body;
-  // if (!description || !preco) {
-  //   res.status(400).json({ error: 'O nome e o preco do item é obrigatório' });
-  //   return;
-  // }
-  db.run('INSERT INTO compras (description, preco) VALUES (?, ?)', [description, preco], function (err) {
-    if (err) {
-      res.status(500).json({ error: err.message });
-      return;
-    }
-    res.json({ id: this.lastID, description, preco });
-  });
-});
-
-// Endpoint para deletar uma compra pelo ID
-app.delete('/compras/:id', (req, res) => {
-  const { id } = req.params;
-  db.run('DELETE FROM compras WHERE id = ?', [id], function (err) {
-    if (err) {
-      res.status(500).json({ error: err.message });
-      return;
-    }
-    res.json({ message: 'Item excluído com sucesso', changes: this.changes });
-  });
-});
-
-// Endpoint de UPDATE 
-app.put('/compras/:id', (req, res) => {
-  const { id } = req.params;
-  const { description } = req.body;
-  if (!description) {
-    res.status(400).json({ error: 'A descrição do item é obrigatória' });
+  if (!nome) {
+    res.status(400).json({ error: 'O nome do membro é obrigatório' });
     return;
   }
-  db.run('UPDATE compras SET description = ? WHERE id = ?', [description, id], function (err) {
+
+  db.run('INSERT INTO membros (nome, idade, endereco, telefone) VALUES (?, ?, ?, ?)', [nome, idade, endereco, telefone], function (err) {
     if (err) {
       res.status(500).json({ error: err.message });
       return;
     }
-    res.json({ message: 'Descrição da compra atualizada com sucesso', changes: this.changes });
+    res.json({ id: this.lastID, nome, idade, endereco, telefone });
+  });
+});
+
+// Endpoint para deletar um membro pelo ID
+app.delete('/membros/:id', (req, res) => {
+  const { id } = req.params;
+
+  db.run('DELETE FROM membros WHERE id = ?', [id], function (err) {
+    if (err) {
+      res.status(500).json({ error: err.message });
+      return;
+    }
+    res.json({ message: 'Membro excluído com sucesso', changes: this.changes });
+  });
+});
+
+// Endpoint para atualizar dados de um membro
+app.put('/membros/:id', (req, res) => {
+  const { id } = req.params;
+  const { nome, idade, endereco, telefone } = req.body;
+
+  if (!nome) {
+    res.status(400).json({ error: 'O nome do membro é obrigatório' });
+    return;
+  }
+
+  db.run('UPDATE membros SET nome = ?, idade = ?, endereco = ?, telefone = ? WHERE id = ?', [nome, idade, endereco, telefone, id], function (err) {
+    if (err) {
+      res.status(500).json({ error: err.message });
+      return;
+    }
+    res.json({ message: 'Dados do membro atualizados com sucesso', changes: this.changes });
   });
 });
 
