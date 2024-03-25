@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta nome="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Welcome to my narcissism, 
+        <br> honey.</title>
+  </head>
+  <body>
+    <details close>
+      <summary>digite seu nome, lov</summary>
+      <label>Digite seu nome, lov: </label
+      ><input type="text" id="nome" placeholder="Só letras" /><br />
+      <button onclick="nomeDigitado()">here sweetie </button>
+    </details>
+
+      <label>Selecione o que prefere: </label>
+      <select id="select" name="opcao">
+        <option value="opcao1">energético</option>
+        <option value="opcao2" selected>refrigerante</option>
+        <option value="opcao3">suco</option>
+        <option value="opcao4">outro...</option></select
+      ><br />
+
+      
+      <label>qual minha marca preferida? </label>
+      <select id="select" name="opcao">
+        <option value="opcao1">approve</option>
+        <option value="opcao2" selected>vans</option>
+        <option value="opcao3">high company</option>
+        <option value="opcao4">outra soso</option></select
+      ><br />
+
+
+    <details close>
+      <summary>vamos chorar?</summary>
+      <button onclick="fatorial()">yesss</button>
+    </details>
+
+    <details close>
+      <summary>não sou grande fã de estudar</summary>
+      <button onclick="estudar()">same</button>
+    </details>
+
+    <details close>
+      <summary>skins melhor série</summary>
+      <button onclick="vetor()">100% comprovado ja</button>
+    </details>
+
+    
+    <label>qual personagem que eu mais gosto? </label>
+    <select id="select" name="opcao">
+      <option value="opcao1">cassie</option>
+      <option value="opcao2">sid</option>
+      <option value="opcao3" selected>effy</option>
+      <option value="opcao4">cook</option></select
+    ><br />
+    
+    <details close>
+      <summary>amo coelhinhos</summary>
+      <button onclick="tabela()">simm eu tb</button>
+    </details>
+
+    <details close>
+      <summary>cachorrinhos são fofos</summary>
+      <button onclick="diagonal()">verdade</button>
+    </details>
+
+    <details close>
+      <summary>siga em frente sempre</summary>
+      <button onclick="sempre()">não quero</button>
+    </details>
+
+    <details close>
+      <summary>podzin faz mal? </summary>
+      <button onclick="namorado()">sim otariakkkkk</button>
+    </details>
+
+    <div id="mostrar"></div>
+    <script src="script.js"></script>
+    <script>
+      // Desabilitar o menu de contexto (botão direito do mouse)
+
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+
+        //  mostrarMensagem();
+      });
+
+      //function mostrarMensagem() {
+
+      //  alert("Você não tem permissão para acessar o menu de contexto.");
+
+      //}
+
+      document.addEventListener("keydown", function (e) {
+        if (e.ctrlKey && e.key === "u") {
+          e.preventDefault();
+
+          showOverlay();
+        }
+      });
+
+      function showOverlay() {
+        const overlay = document.createElement("div");
+
+        overlay.className = "overlay";
+
+        const message = document.createElement("div");
+        overlay.appendChild(message);
+
+        document.body.appendChild(overlay);
+      }
+
+      // Esta função desativa a tecla F12 pressionada.
+
+      function disableF12(e) {
+        if (
+          e.keyCode === 123 ||
+          (e.ctrlKey && e.shiftKey && e.keyCode === 73)
+        ) {
+          e.preventDefault(); // Impede o comportamento padrão (abrir ferramentas de desenvolvedor)
+        }
+      }
+
+      // Adicionar um ouvinte de evento para capturar pressionamentos de tecla.
+
+      document.addEventListener("keydown", disableF12);
+    </script>
+  </body>
+</html>

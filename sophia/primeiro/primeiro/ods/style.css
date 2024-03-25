@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;            
+}
+  
+    
+
+
+.interno{
+text-align: center;
+font-size: 35px;
+background-image: url(large.gif);
+}
+
+
+
+.voltar {
+font-size: 20px;
+}         
+html {
+background: #fdffbb
+}
+
+
+nav a{
+color: rgb(0, 0, 0);
+text-decoration: none;
+padding: 5px;
+margin: 5px;
+font-size: 25pt;
+position: relative;
+
+}
+
+nav a::after{
+content: "";
+width: 0%;
+height: 4px;
+background-color:rgb(0, 0, 0);
+position: absolute;
+bottom: 0;
+left: 5%;
+right: 11%;
+transition: 0.5s ease-in-out;
+}
+
+nav a:hover::after {
+width: 75%;
+
+}
+
