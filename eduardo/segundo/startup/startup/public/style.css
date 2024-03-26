@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styles */
+  #form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 480px;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 480px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45A049; /* Slightly darker green on hover */
+  }
+  
+  /* Member list styles */
+  #membros {
+    margin-top: 20px;
+  }
+  
+  .membro {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .membro p {
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+  
+  button.editar,
+  button.excluir {
+    background-color: #ddd;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+  
+  button.editar:hover,
+  button.excluir:hover {
+    background-color: #ccc; /* Slightly darker on hover */
+    
+  }
+  
+  button.excluir {
+    background-color: #f2dede; /* Light red for delete button */
+  }
+
+  .container {
+    max-width: 480px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+  }
