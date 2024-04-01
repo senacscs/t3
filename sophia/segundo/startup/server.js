@@ -1,4 +1,9 @@
+//codigo original de marcos e tito
+
 // npm install express sqlite3
+// npm i -----> (package.json)
+// node server.js
+
 const express = require('express');
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
@@ -18,10 +23,11 @@ const db = new sqlite3.Database('./compras.db', (err) => {
   }
 }); 
 
-// Criar tabela de tarefas se ainda não existir (SQL)
+// Criar tabela de compras se ainda não existir (SQL)
 db.run(`CREATE TABLE IF NOT EXISTS compras (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  description TEXT
+  description TEXT,
+  preco FLOAT
 )`);
 
 // Middleware para processar corpo das requisições como JSON
@@ -32,7 +38,7 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/index.html')
 })
 
-// Endpoint para listar todas as tarefas
+// Endpoint para listar todas as compras
 app.get('/compras', (req, res) => {
   db.all('SELECT * FROM compras', (err, rows) => {
     if (err) {
@@ -44,23 +50,23 @@ app.get('/compras', (req, res) => {
 });
 
 
-// Endpoint para adicionar uma nova tarefa
+// Endpoint para adicionar uma nova compra
 app.post('/compras', (req, res) => {
-  const { description } = req.body;
-  if (!description) {
-    res.status(400).json({ error: 'O nome do item é obrigatório' });
-    return;
-  }
-  db.run('INSERT INTO compras (description) VALUES (?)', [description], function (err) {
+  const { description, preco } = req.body;
+  // if (!description || !preco) {
+  //   res.status(400).json({ error: 'O nome e o preco do item é obrigatório' });
+  //   return;
+  // }
+  db.run('INSERT INTO compras (description, preco) VALUES (?, ?)', [description, preco], function (err) {
     if (err) {
       res.status(500).json({ error: err.message });
       return;
     }
-    res.json({ id: this.lastID, description });
+    res.json({ id: this.lastID, description, preco });
   });
 });
 
-// Endpoint para deletar uma tarefa pelo ID
+// Endpoint para deletar uma compra pelo ID
 app.delete('/compras/:id', (req, res) => {
   const { id } = req.params;
   db.run('DELETE FROM compras WHERE id = ?', [id], function (err) {
@@ -69,6 +75,23 @@ app.delete('/compras/:id', (req, res) => {
       return;
     }
     res.json({ message: 'Item excluído com sucesso', changes: this.changes });
+  });
+});
+
+// Endpoint de UPDATE 
+app.put('/compras/:id', (req, res) => {
+  const { id } = req.params;
+  const { description } = req.body;
+  if (!description) {
+    res.status(400).json({ error: 'A descrição do item é obrigatória' });
+    return;
+  }
+  db.run('UPDATE compras SET description = ? WHERE id = ?', [description, id], function (err) {
+    if (err) {
+      res.status(500).json({ error: err.message });
+      return;
+    }
+    res.json({ message: 'Descrição da compra atualizada com sucesso', changes: this.changes });
   });
 });
 
