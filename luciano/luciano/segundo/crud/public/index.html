@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MetaRun</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+  <section class="header">
+  <h2>METARUN</h2>
+  <form id="form">
+    <div class="input-form">
+      <label for="description">DATA:</label><br>
+      <input type="date" class="entrada" id="description" name="description" maxlength="20">
+      <label for="distancia">DISTÂNCIA (km):</label><br>
+      <input class="entrada" type="text" id="distancia" name="distancia">
+      <label for="tempo">TEMPO (horas):</label><br>
+      <input class="entrada" type="text" id="tempo" name="tempo">
+      <button type="submit">Enviar Informações</button>
+    </div>
+  </section>
+  <section class="itens">
+    <div id="list">
+     
+    </div>
+  </section>
+  </form>
+  <script>
+    document.getElementById('form').addEventListener('submit', async function(event) {
+
+      const description = document.getElementById('description').value;
+      const distancia = document.getElementById('distancia').value;
+      const tempo = document.getElementById('tempo').value;
+
+
+      try {
+        const response = await fetch('http://localhost:3000/compras', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ description, distancia, tempo })
+        });
+
+        const data = await response.json();
+      } catch (error) {
+        console.error('Erro ao adicionar tarefa:', error.message);
+      }
+    });
+
+    document.addEventListener('DOMContentLoaded', async function() {
+        try {
+          const response = await fetch('http://localhost:3000/compras');
+          const items = await response.json();
+  
+          const itemsList = document.getElementById('list');
+          items.forEach(item => {
+            const listItem = document.createElement('div');
+
+            const p = document.createElement('p');
+            p.innerHTML = `${item.description} - ${item.distancia} - ${item.tempo}`
+            const span = document.createElement('span');
+            span.innerHTML = 'delete'
+            span.classList.add('material-symbols-outlined', 'click')
+
+            const updateSpan = document.createElement('span');
+            updateSpan.innerHTML = 'edit'
+            updateSpan.classList.add('material-symbols-outlined', 'update')
+
+            span.addEventListener('click', async function() {
+              try {
+                await fetch(`http://localhost:3000/compras/${item.id}`, {
+                  method: 'DELETE'
+                });
+                location.reload()
+              } catch (error) {
+                console.error('Erro ao excluir tarefa:', error.message);
+              }
+            })
+
+            updateSpan.addEventListener('click', async function() {
+              let updateDescription = prompt('Digite o item para atualizar')
+              try {
+                await fetch(`http://localhost:3000/compras/ ${item.id} - $${item.distancia} - $${item.tempo}`, {
+                  method: 'PUT',
+                  headers: {
+                    'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify({ description: updateDescription })
+                });
+                location.reload()
+              } catch (error) {
+                console.error('Erro ao atualizar tarefa:', error.message);
+              }
+            })
+
+            const buttonsContainer = document.createElement('div')
+            buttonsContainer.appendChild(span)
+            buttonsContainer.appendChild(updateSpan)
+
+            listItem.classList.add('item')
+            listItem.appendChild(p)
+            listItem.appendChild(buttonsContainer)
+
+            itemsList.appendChild(listItem);
+          });
+        } catch (error) {
+          console.log('GET ERR:', error)
+        }
+      });
+
+      
+
+  
+  </script>
+</body>
+</html>
