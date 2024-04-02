@@ -1,0 +1,17 @@
+.icon-app {
+    margin: 10px 0 10px 0;
+    border: 1px solid green;
+    border-radius: 10px;
+    width: 4%;
+    height: 5%;
+}
+
+a:hover {
+    background-color: deepskyblue;
+    color: darkslategrey
+}
+
+body{
+     background-image: url(https://gifs.eco.br/wp-content/uploads/2021/09/gifs-da-bandeira-do-brasil-5.gif);
+     background-size: cover;
+}
