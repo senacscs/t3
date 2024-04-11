@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Membros</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <h2>SQLCatraca - Academia</h2>
+    <div class="container">
+      <form id="form">
+        <div class="input-form">
+          <label for="nome">Nome:</label><br />
+          <input type="text" id="nome" name="nome" maxlength="20" required />
+          <label for="idade">Idade:</label><br />
+          <input type="number" id="idade" name="idade" required />
+          <p id="adesao"></p>
+          <p id="pagamento"></p>
+        </div>
+        <button type="submit">Adicionar Membro</button>
+      </form>
+      <div id="membros"></div>
+    </div>
+
+    <script>
+      const hoje = new Date();
+      const diaAtual = hoje.getDate();
+      const mesAtual = hoje.getMonth() + 1; // Mês começa do 0
+      const ano = hoje.getFullYear();
+
+      const dataAdesao = `Data de adesão: ${diaAtual}/${mesAtual}/${ano}`;
+      const dataPag = `Data de pagamento: ${diaAtual}/${mesAtual + 1}/${ano}`;
+      document.getElementById("adesao").innerText = dataAdesao;
+      document.getElementById("pagamento").innerText = dataPag;
+
+      document
+        .getElementById("form")
+        .addEventListener("submit", async function (event) {
+          event.preventDefault();
+
+          const nome = document.getElementById("nome").value;
+          const idade = document.getElementById("idade").value;
+
+          try {
+            const response = await fetch("http://localhost:3000/membros", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({ nome, idade }),
+            });
+
+            const data = await response.json();
+
+            if (data.error) {
+              console.error("Erro:", data.error);
+            } else {
+              console.log("Membro adicionado:", data);
+              carregarMembros();
+            }
+          } catch (error) {
+            console.error("Erro ao adicionar membro:", error.message);
+          }
+        });
+
+      async function carregarMembros() {
+        try {
+          const response = await fetch("http://localhost:3000/membros");
+          const membros = await response.json();
+
+          const listaMembros = document.getElementById("membros");
+          listaMembros.innerHTML = "";
+
+          membros.forEach((membro) => {
+            const membroElement = document.createElement("div");
+            membroElement.classList.add("membro");
+            membroElement.dataset.id = membro.id;
+
+            const nomeElement = document.createElement("p");
+            nomeElement.innerText = `Nome: ${membro.nome}`;
+
+            const idadeElement = document.createElement("p");
+            idadeElement.innerText = `Idade: ${membro.idade}`;
+
+            const editarButton = document.createElement("button");
+            editarButton.classList.add("editar");
+            editarButton.innerText = "Editar";
+
+            const excluirButton = document.createElement("button");
+            excluirButton.classList.add("excluir");
+            excluirButton.innerText = "Excluir";
+
+            membroElement.appendChild(nomeElement);
+            membroElement.appendChild(idadeElement);
+            membroElement.appendChild(editarButton);
+            membroElement.appendChild(excluirButton);
+
+            listaMembros.appendChild(membroElement);
+          });
+        } catch (error) {
+          console.error("Erro ao carregar membros:", error.message);
+        }
+      }
+
+      async function editarMembro(id) {
+  const nome = prompt("Digite o novo nome do membro:");
+  const idade = prompt("Digite a nova idade do membro:");
+
+  if (!nome) {
+    return;
+  }
+
+  try {
+    const response = await fetch(`http://localhost:3000/membros/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ nome, idade }),
+    });
+
+    const data = await response.json();
+
+    if (data.error) {
+      console.error("Erro ao editar membro:", data.error);
+    } else {
+      console.log("Membro editado com sucesso:", data);
+      carregarMembros(); // Recarrega a lista atualizada
+    }
+  } catch (error) {
+    console.error("Erro ao editar membro:", error.message);
+  }
+}
+
+    async function excluirMembro(id) {
+      if (!confirm("Tem certeza que deseja excluir este membro?")) {
+        return;
+      }
+
+      try {
+        const response = await fetch(`http://localhost:3000/membros/${id}`, {
+          method: "DELETE",
+        });
+
+        if (response.status === 200) {
+          console.log("Membro excluído com sucesso!");
+          carregarMembros(); // Recarrega a lista atualizada
+        } else {
+          console.error("Erro ao excluir membro:", response.statusText);
+        }
+      } catch (error) {
+        console.error("Erro ao excluir membro:", error.message);
+      }
+    }
+
+    document.addEventListener("click", async function (event) {
+      const target = event.target;
+
+      if (target.classList.contains("editar")) {
+        const id = target.parentNode.dataset.id;
+        editarMembro(id);
+      } else if (target.classList.contains("excluir")) {
+        const id = target.parentNode.dataset.id;
+        excluirMembro(id);
+      }
+    });
+
+    carregarMembros();
+    </script>
+  </body>
+</html>
