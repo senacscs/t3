@@ -1,0 +1,38 @@
+{
+    "animais": [
+      {
+        "especie": "Cachorro",
+        "raca": "Labrador Retriever",
+        "nome": "Max",
+        "idade": 5,
+        "cor": "Amarelo",
+        "sexo": "Macho",
+        "vacinas": ["V8", "Antirrábica"],
+        "comida_favorita": "Ração",
+        "caracteristicas": ["Amigável", "Energético", "Inteligente"]
+      },
+      {
+        "especie": "Gato",
+        "raca": "Siamês",
+        "nome": "Luna",
+        "idade": 3,
+        "cor": "Marrom",
+        "sexo": "Fêmea",
+        "vacinas": ["Quádrupla", "Antirrábica"],
+        "comida_favorita": "Peixe",
+        "caracteristicas": ["Curioso", "Afetuoso", "Vocal"]
+      },
+      {
+        "especie": "Pássaro",
+        "raca": "Calopsita",
+        "nome": "Kiwi",
+        "idade": 2,
+        "cor": "Cinza e Branco",
+        "sexo": "Macho",
+        "vacinas": [],
+        "comida_favorita": "Sementes",
+        "caracteristicas": ["Sociável", "Melódico", "Inteligente"]
+      }
+    ]
+  }
+  

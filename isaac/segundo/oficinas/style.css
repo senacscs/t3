@@ -1,0 +1,74 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Nunito Sans', sans-serif; */
+}
+
+* {
+    margin: 0;
+}
+
+h1 {
+    margin-top: 2vh;
+    text-align: center;
+    font-size: 8vw;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    padding: 1.5vw;
+    gap: 1.5vw;
+}
+
+#li1 {
+    background-image: url( );
+}
+
+#li2 {
+    background-image: url();
+}
+
+#li3 {
+    background-image: url();
+}
+
+#li4 {
+    background-image: url();
+}
+
+#li5 {
+    background-image: url();
+}
+
+#li6 {
+    background-image: url();
+}
+
+#li7 {
+    background-image: url();
+}
+
+#li8 {
+    background-image: url();
+}
+
+#li9 {
+    background-image: url();
+}
+
+
+#li10 {
+    grid-column: 1/4;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-size: 4vw;
+}
