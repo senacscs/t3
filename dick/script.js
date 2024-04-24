@@ -71,10 +71,6 @@ document.getElementById("ballin").addEventListener('click', () => {
 	window.location.href = 'https://youtu.be/MAREvZsLpO8?si=gi42ZieIgflThAE0'
 })
 
-document.getElementById("ballin").addEventListener('click', () => {
-	window.location.href = 'https://youtu.be/MAREvZsLpO8?si=gi42ZieIgflThAE0'
-})
-
 document.getElementById("pirata").addEventListener('click', () => {
 	window.location.href = 'https://youtu.be/-bROlO-KMto?si=1MuOm0oyH8gUW8gJ'
 })
@@ -84,8 +80,18 @@ document.getElementById("banana").addEventListener('click', () => {
 })
 
 document.getElementById("lore").addEventListener('click', () => {
-	window.location.href = 'https://youtu.be/TimKU5bAEDQ?si=LZT1_KyYXn6WIxcP"'
+	window.location.href = 'https://youtu.be/TimKU5bAEDQ?si=LZT1_KyYXn6WIxcP'
 })
+
+document.getElementById("vaca").addEventListener('click', () => {
+	window.location.href = 'https://youtu.be/wFZ7Vl7K9d8?si=TUdvUtILxQCbLwXh'
+})
+
+document.getElementById("gov").addEventListener('click', () => {
+	window.location.href = 'https://youtu.be/GgoyBN4bjpk?si=FxFGT_P5w-ywToGQ'
+})
+
+
 
 document.onkeydown = function(e) {
 	if (e.ctrlKey && 
