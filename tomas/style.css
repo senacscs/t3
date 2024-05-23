@@ -302,14 +302,6 @@ h3 {
     height: 50px;
   }
 
-    .titleflex p:hover {
-    transform: scale(1.2);
-    background-color: #fff;
-    color: #06d62e;
-    box-shadow: 0px 0px 0px;
-    text-shadow: 0px 0px 0px;
-  }
-
   .titleflex a {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
