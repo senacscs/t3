@@ -341,3 +341,22 @@ h3 {
         transform: scale(1);
     }
   }
+
+  @media (max-width: 920px) {
+    .titleflex{
+        margin-left: -40px;
+    }
+    .titleflex h1{
+        font-size: 60px;
+    }
+    .main-title p{
+        margin-top: -45px;
+        margin-left: -35px;
+    }
+    .card{
+    left: -70px;
+    }
+    .senac{
+        position: absolute;
+    }
+}
