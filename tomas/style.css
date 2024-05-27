@@ -342,21 +342,48 @@ h3 {
     }
   }
 
-  @media (max-width: 920px) {
-    .titleflex{
-        margin-left: -40px;
-    }
-    .titleflex h1{
+@media (max-width: 768px) {
+    .titleflex h1 {
         font-size: 60px;
     }
-    .main-title p{
-        margin-top: -45px;
-        margin-left: -35px;
+
+    .main-title p {
+        margin-top: -30px;
     }
-    .card{
-    left: -70px;
+
+    .card, .cardr, .cardt {
+        width: 90%;
+        padding: 15px;
     }
-    .senac{
-        position: absolute;
+
+    .icon img {
+        max-width: 200px;
+    }
+
+    #read_button, #read_button_second, #read_button_third {
+        width: 100%;
     }
 }
+
+@media (max-width: 480px) {
+    .titleflex h1 {
+        font-size: 40px;
+    }
+
+    .main-title p {
+        font-size: 14px;
+    }
+
+    .card, .cardr, .cardt {
+        padding: 10px;
+    }
+
+    .icon img {
+        max-width: 150px;
+    }
+
+    #read_button, #read_button_second, #read_button_third {
+        font-size: 14px;
+    }
+}
+
