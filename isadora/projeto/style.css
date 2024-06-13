@@ -1,0 +1,152 @@
+
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #000; 
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #FFE88C;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+ }
+ 
+ h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+ }
+
+ h2.titulo span{
+    color: #e1bb23;
+ }
+
+/* ESTILO DO CABEÇALHO */
+header{
+   padding: 15px 4%; 
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ a{
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #ebc636;
+    transform: scale(1.05) ;
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site{
+    padding: 15px 4%;
+}
+
+section.topo-do-site.flex{
+ align-items: center;
+ justify-content: center;
+ gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    position:relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+   0%
+   {
+    top: 0;
+   } 
+   100%{
+    top: 30px
+   }
+
+}
+ 
+/* ESTILO DAS ESPECIALIDADES */
+section.especiliadades{
+    padding: 40px 4%;
+}
+
+section.especiliadades .flex{
+    gap: 60px;
+}
+
+.especiliadades .especilialidades-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especiliadades .especilialidades-box:hover{
+    transform: scale(1.05px);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+.especiliadades .especilialidades-box i{
+    font-size: 70px;
+    color: #ebc636;
+}
+
+.especiliadades .especilialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
