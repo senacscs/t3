@@ -1,82 +1,95 @@
-* { 
-    /* Essa parte faz todos os elementos terem isso como base */
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-html {
-    scroll-behavior: smooth ;
-}
-
 body {
-    background-color: rgb(155, 153, 153) ;
-}
-#title {
-    text-align: center;
-    font-size: 40px;
-}
-h2 a {
-    color: black;
-    text-decoration: none;
-}
-#name {
-    text-align: center;
-    font-size: 1.75em;
-}
-.container {
-    display: grid;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 3px 2px 4px rgb(0,0,0,0.5);
-    flex-wrap: wrap;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.itens {
-    width: 85%;
-    justify-self: center;
-    background: rgb(73, 73, 88);
-    border: 0.2em solid black;
-    border-radius: 1em; 
-    padding: 0.5em;
-    border-top: 0.2em solid black;
-    z-index: 1;
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
 }
 
-.img {
-    max-width: 80em;
-    max-height: 7em;    
-}
-.trabalho {
-    display: grid;
-    grid-template-columns: auto auto auto ;
-    text-align: center;
-    gap: 2em;
-}
-@media (max-width: 70em) {
-    .imagens {
-        grid-template-columns: auto;
-        gap: 3em;
-    }
-    .container {
-        max-width: 70vw
-        ;
-    }
-    .imagens div {
-        width: 75%;
-        margin-left: auto;    
-        margin-right: auto;
-    }
-    img {
-        width: 100%;
-    }
+.nome {
+  font-weight: bold;
 }
 
-.imagens div {
-    padding: 10px;
-    background-color: rgb(196, 196, 196);
-    border-radius: 20px;
-    font-size: 10px;
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  margin-top: 3em;
+}
+.portfolio h2 {
+  color: #333;
+  text-align: center;
+  font-size: 5em;
+}
+
+.work {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-item {
+  border: 2px solid #ccc;
+  padding: 10px;
+  width: calc(50% - 10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work img {
+  width: 20em;
+  display: block; 
+
+}
+
+.work a {
+  text-align: center;
+  margin-top: 1em; 
+  text-decoration: none;
+  color: black;
+}
+
+.work figcaption {
+  text-align: center;
+  margin-top: 1em;
+}
+
+footer {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.volleyball {
+  width: 80px;
+  height: auto;
+}
