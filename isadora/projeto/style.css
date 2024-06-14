@@ -17,6 +17,10 @@ body{
     margin: 0 auto;
 }
 
+.arredondar-img{
+    border-radius: 15px;
+}
+
 .flex{
     display: flex;
 }
