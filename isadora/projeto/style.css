@@ -144,12 +144,13 @@ section.especiliadades .flex{
     padding: 40px;
     border-radius: 20px;
     border: 2px solid #fff;
-    margin-top: 45px;
+    margin-top: 20px;
+width: 500px;
     transition: .2s;
 }
 
 .especiliadades .especilialidades-box:hover{
-    transform: scale(1.05px);
+    transform: scale(10px);
     box-shadow: 0 0 20px #ffffff78;
 }
 
@@ -194,15 +195,32 @@ section.sobre .flex{
 }
 
 .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #e1bb23;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 8px;
+    transition: .2s;
+  }
+
+.btn-social a img{
   width: 60px;
   height: 60px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   border: none;
   background-color: #e1bb23;
   font-size: 22px;
   cursor: pointer;
   margin: 0 8px;
   transition: .2s;
+}
+
+.btn-social a img:hover{
+    box-shadow: 0px 0px 10px #ebc636;
+    transform: scale(1.05) ;
 }
 
 /* ESTILO PROJETO */
