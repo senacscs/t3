@@ -72,8 +72,8 @@ li {
 
 .bar {
     display: block;
-    width: 6vw;
-    height: 1vw;
+    width: 2vw;
+    height: 0.4vw;
     border: 0.1em;
     border-radius: 0.3em;
     margin: 5px auto;
@@ -139,6 +139,11 @@ li {
 
     header {
         height: 18vw;
+    }
+
+    .bar {
+        height: 1vw;
+        width: 8vw;
     }
 
 }
