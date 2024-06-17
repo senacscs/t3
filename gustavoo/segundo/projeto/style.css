@@ -119,7 +119,8 @@ section p {
 
 /* Estilo do rodapé */
 footer {
-  background-color: #00796b;
+  box-shadow: 1px 1px 10px 5px #004d40ad;
+ background-color: #004d40;
   color: #fff;
   text-align: center;
   padding: 1rem 0;
