@@ -46,9 +46,16 @@ body{
     color: #e1bb23;
  }
 
+button:hover{
+    box-shadow: 0px 0px 8px #ebc636;
+    transform: scale(1.05) ;
+}
+
+
+
 /* ESTILO DO CABEÇALHO */
 header{
-   padding: 15px 4%; 
+   padding: 20px 4%; 
 }
 
 header > .interface{
@@ -79,14 +86,11 @@ header nav ul li{
 }
 
 
-.btn-contato button:hover{
-    box-shadow: 0px 0px 8px #ebc636;
-    transform: scale(1.05) ;
-}
+
 
 /* ESTILO DO TOPO DO SITE */
 section.topo-do-site{
-    padding: 15px 4%;
+    padding: 60px 4%;
 }
 
 section.topo-do-site.flex{
@@ -103,7 +107,11 @@ section.topo-do-site.flex{
 
 .topo-do-site .txt-topo-site p{
     color: #fff;
-    margin: 40px 0;
+    margin: 50px 0;
+}
+
+.img-topo-site img{
+    margin-top: -60px;
 }
 
 .topo-do-site .img-topo-site img{
@@ -153,4 +161,209 @@ section.especiliadades .flex{
 .especiliadades .especilialidades-box h3{
     font-size: 28px;
     margin: 15px 0;
+}
+
+/* ESTILO DO SOBRE */
+
+section.sobre{
+    padding: 80px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #ebc636;
+    /* display: block; --> serve para quebrar linha  */
+}
+
+.sobre .txt-sobre p{
+    margin: 15px 0;
+}
+
+.btn-social button{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: #e1bb23;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 0 8px;
+  transition: .2s;
+}
+
+/* ESTILO PROJETO */
+
+section.projeto{
+    padding: 100px 4%;
+}
+
+.projeto .txt-projeto{
+    color: #fff;
+}
+
+/* ESTILO DO RODAPÉ */
+.line-footer a  {
+    list-style-type: none;
+    color: #e1bb23;
+}
+
+footer{
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid #e1bb23;
+}
+
+footer .line-footer p{
+    color: #fff;
+}
+
+@media screen and (max-width: 1020px) {
+
+
+    /* CLASSE GERAIS */
+    .flex {
+        flex-direction: column;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    header nav ul li {
+        padding: 0 10px; /* reduzi ainda mais o padding */
+    }
+
+    /* TOPO DO SITE */
+    .topo-do-site .img-topo-site img {
+        max-width: 250px; /* ajustei o tamanho da imagem */
+    }
+
+    /* ESPECIALIDADES */
+    .especiliadades .especilialidades-box {
+        width: calc(100% - 20px); /* ocupar toda a largura disponível */
+    }
+
+    /* SOBRE */
+    .sobre .flex {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* CABEÇALHO */
+    header {
+        padding: 10px 4%; /* reduzi o padding */
+    }
+
+    header nav ul li {
+        padding: 0 5px; /* reduzi ainda mais o padding */
+    }
+
+    /* TOPO DO SITE */
+    .topo-do-site h1 {
+        font-size: 32px; /* reduzi o tamanho do título */
+    }
+
+    .topo-do-site .txt-topo-site p {
+        font-size: 14px; /* reduzi o tamanho do texto */
+    }
+
+    /* RODAPÉ */
+.line-footer {
+    text-align: center;
+}
+
+footer .line-footer a {
+    margin: 0 8px; /* espaçamento entre os links */
+}
+
+}
+
+@media screen and (max-width: 480px) {
+    /* GERAL */
+    .interface {
+        padding: 0 10px; /* reduzi o padding para economizar espaço */
+    }
+
+    /* CABEÇALHO */
+    header {
+        padding: 10px 2%; /* reduzi ainda mais o padding */
+    }
+
+    header nav ul li {
+        padding: 0 5px; /* reduzi ainda mais o padding */
+    }
+
+    /* TOPO DO SITE */
+    .topo-do-site h1 {
+        font-size: 28px; /* reduzi o tamanho do título */
+    }
+
+    .topo-do-site .txt-topo-site p {
+        font-size: 12px; /* reduzi o tamanho do texto */
+    }
+
+    /* ESPECIALIDADES */
+    .especiliadades .especilialidades-box {
+        padding: 15px; /* reduzi o padding */
+    }
+
+    .especiliadades .especilialidades-box i {
+        font-size: 36px; /* reduzi o tamanho do ícone */
+    }
+
+    .especiliadades .especilialidades-box h3 {
+        font-size: 18px; /* reduzi o tamanho do título */
+    }
+
+    /* SOBRE */
+    .sobre .txt-sobre h2 {
+        font-size: 24px; /* reduzi o tamanho do título */
+    }
+
+    .sobre .txt-sobre p {
+        font-size: 12px; /* reduzi o tamanho do texto */
+    }
+
+    .btn-social button {
+        width: 36px; /* reduzi o tamanho dos botões */
+        height: 36px;
+        font-size: 14px; /* reduzi o tamanho da fonte */
+    }
+
+    /* RODAPÉ */
+    footer {
+        padding: 30px 2%; /* reduzi o padding */
+    }
+
+    footer .line-footer a {
+        margin: 0 5px; /* espaçamento entre os links */
+    }
 }
