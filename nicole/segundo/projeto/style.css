@@ -1,167 +1,162 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    color: white; /* Set all text to white */
-  }
-  
-  body{
-    background-color: rgb(213, 198, 177);;
-  }
-  .banner {
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(213, 198, 177);
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .navbar {
-    width: 85%;
-    margin: auto;
-    padding: 10px 0;
-    display: flex;
-    align-items: center; /* Alinha itens verticalmente no centro */
-    justify-content: space-between;
-  }
-  
-  .logo {
-    width: 200px; /* Ajuste o tamanho conforme necessário */
-    cursor: pointer;
-  }
-  
-  .navbar ul {
-    list-style: none;
-    display: flex; /* Use flexbox para os itens do menu */
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar ul li {
-    margin: 0 20px;
-    position: relative;
-  }
-  
-  .navbar ul li a {
-    color: rgb(0, 0, 0); /* Set text color to white for contrast */
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-  
-  .navbar ul li::after {
-    content: '';
-    height: 3px;
-    width: 0;
-    background: #347a87;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
-  }
-  
-  .navbar ul li:hover::after {
-    width: 100%;
-  }
-  
-  .content {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: rgb(0, 0, 0); /* Set text color to white for contrast */
-  }
-  
-   h1{
-    color:black;
-    font-weight: 800;
-   }
-
-   p{
-    color:black; 
-   }
-
-  .content h1 {
-    font-size: 50px;
-    margin-top: 120px;
-    text-shadow: 6px 6px 6px rgb(130, 127, 125);
-  }
-  
-  .p {
-    margin: 20px auto;
-    font-weight: 100;
-    line-height: 25px;
-    color: rgb(0, 0, 0);
-  }
-
-  .content p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left:100px;
-    margin-right:100px;
-  }
-  
-  button {
-    width: 200px;
-    padding: 15px 0;
-    text-align: center;
-    margin: 20px 10px;
-    border-radius: 25px;
-    font-weight: bold;
-    border: 2px solid #347a87;
-    background: #347a87;
-    color: rgb(0, 0, 0); /* Set text color to white for contrast */
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    margin-top: 40px;
-  }
-  
-  .navbar ul li a {
-    text-decoration: none;
-    color: #000; /* cor do texto do menu */
-    font-family: 'Verdana', Geneva, Tahoma, sans-serif; /* troque pela sua fonte desejada */
-    text-transform: capitalize; /* primeira letra de cada palavra maiúscula */
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: white;
 }
 
- h2{
-  text-align:center;
-  margin-top:10px;
+body {
+  background-color: rgb(213, 198, 177);
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(213, 198, 177);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  position: relative;
+}
+
+.logo {
+  width: 200px;
+  cursor: pointer;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #347a87;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-top: 20px; /* Reduzir o espaço entre a navbar e o conteúdo */
+}
+
+h1 {
+  color: black;
+  font-weight: 800;
+  margin-top: 10px; /* Adicionado para reduzir o espaço entre o h1 e a navbar */
+}
+
+p {
+  color: black;
+}
+
+.content h1 {
+  font-size: 50px;
+  margin-top: 20px; /* Ajuste o espaço entre a navbar e o h1 */
+  text-shadow: 6px 6px 6px rgb(130, 127, 125);
+}
+
+.content p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #347a87;
+  background: #347a87;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #000;
   text-shadow: 2px 2px 2px grey;
- }
+}
 
- .introducao p{
+.introducao p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-left:200px;
-  margin-right:200px;
-  margin-top:40px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 40px;
   text-align: justify;
- }
+}
 
- .justificativa p{
+.justificativa p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-top:40px;
+  margin-top: 40px;
   text-align: justify;
   margin-left: 150px;
   margin-right: 150px;
   margin-bottom: 40px;
- }
+}
 
- .justificativa h2{
-  margin-top:-10px;
- }
+.justificativa h2 {
+  margin-top: -10px;
+}
 
- .ods {
+.ods {
   display: flex;
-  justify-content: center; /* Centraliza as imagens horizontalmente */
-  align-items: center; /* Centraliza as imagens verticalmente */
+  justify-content: center;
+  align-items: center;
 }
 
 .img {
-  width: 150px; /* Largura das imagens */
-  margin: 10px; /* Espaçamento entre as imagens */
+  width: 150px;
+  margin: 10px;
 }
+
 @keyframes fadeIn {
   0% {
       opacity: 0;
@@ -172,6 +167,7 @@
       transform: translateY(0);
   }
 }
+
 @keyframes moveUp {
   0% {
       transform: translateY(0);
@@ -182,46 +178,46 @@
 }
 
 .img {
-  width: 150px; /* Largura das imagens */
-  margin: 10px; /* Espaçamento entre as imagens */
+  width: 150px;
+  margin: 10px;
 }
 
 .img:hover {
-  animation: moveUp 1.0s ease forwards; /* Aplica a animação ao passar o mouse */
+  animation: moveUp 1.0s ease forwards;
 }
 
-.objetivos p{
+.objetivos p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-top:40px;
+  margin-top: 40px;
   text-align: justify;
   margin-left: 150px;
   margin-right: 150px;
   margin-bottom: 40px;
- }
+}
 
- .obj{
+.obj {
   margin-bottom: 40px;
- }
+}
 
- .metodologia p{
+.metodologia p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-top:40px;
+  margin-top: 40px;
   text-align: justify;
   margin-left: 150px;
   margin-right: 150px;
   margin-bottom: 40px;
- }
+}
 
- .button{
+.button {
   align-items: center;
   text-align: center;
- }
+}
 
- .resultados p{
+.resultados p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-top:40px;
+  margin-top: 40px;
   text-align: justify;
   margin-left: 250px;
   margin-right: 250px;
   margin-bottom: 40px;
- }
+}
