@@ -1,0 +1,77 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* body {
+    background-image: url("./assets/fundo.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+} */
+
+.home {
+    width: 100%;
+    text-align: center;
+}
+
+.game-board {
+    width: 90%;
+    height: 600px;
+    border: 5px groove rgb(121, 19, 19);
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0%;
+    width: 120px;
+    animation: pipe-animation 1.5s infinite linear;
+}
+
+.mario {
+    width: 220px;
+    position: absolute;
+    bottom: 0px;
+    margin-left: 50px;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+@keyframes pipe-animation {
+    from{
+        right: -80px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    
+    0%{
+        bottom: 0;
+    }
+
+    40%{
+        bottom: 180px;
+    }
+
+    50%{
+        bottom: 180px;
+    }
+
+    60%{
+        bottom: 180px;
+    }
+
+    100%{
+        bottom: 0;
+    }
+
+}

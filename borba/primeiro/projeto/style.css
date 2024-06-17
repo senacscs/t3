@@ -1,0 +1,100 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.top {
+    padding-top: 1vw;
+}
+
+h1 {
+    padding-top: 4vw;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 100%; 
+    max-width: 200px; 
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px 0;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 17vw;
+    text-align: justify;
+}
+
+footer {
+    background: linear-gradient(0deg, rgb(126, 126, 126) 0%, rgb(255, 255, 255) 95% );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2vw;
+
+}
+
+footer .rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.rodape img {
+    width: 15vw;
+    max-width: 100%;
+
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse; 
+    }
+
+    .sidebar {
+        max-width: none; 
+        width: 100%;
+        height: auto;
+        order: 1; 
+        margin-bottom: 20px; 
+        display: flex;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}
