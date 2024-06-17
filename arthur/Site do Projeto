@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco PowerUp</title>
+    <link rel="stylesheet" href="ecopowerup.css">
+</head>
+<body>
+    <header>
+        <h1>Eco PowerUp</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre o Projeto</a></li>
+                <li><a href="#collection-points">Pontos de Coleta</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Bem-vindo ao Projeto PowerBank Sustentável</h2>
+        <p>O projeto "Eco Powerup" visa reutilizar baterias usadas de notebooks, celulares e carros elétricos para criar um "Power Bank gigante" capaz de fornecer energia confiável para diversas aplicações, como casas, câmeras frias e máquinas que necessitam de energia constante. A iniciativa busca promover a sustentabilidade, reduzindo o desperdício eletrônico e oferecendo uma solução energética inovadora e ecológica para a comunidade.</p>
+    </section>
+
+    <section id="about">
+        <h2>Sobre o Projeto</h2>
+        <p> Problema:
+
+            Uma fábrica de leite não pode ficar mais de 3 horas sem energia elétrica, pois a falta de energia pode causar a deterioração do leite e outros produtos perecíveis, resultando em perdas significativas e riscos à saúde pública.
+            
+      Solução com o Projeto "PowerBank Sustentável":
+            
+            Nosso projeto "PowerBank Sustentável" reutiliza baterias usadas de notebooks, celulares e carros elétricos para criar um "Power Bank gigante". Esta solução pode fornecer energia constante e confiável para a fábrica de leite, garantindo que, mesmo em casos de falhas na rede elétrica, a produção e armazenamento dos produtos não sejam interrompidos. Ao implementar este sistema, a fábrica de leite terá uma fonte de energia de backup sustentável, prevenindo perdas de produtos e assegurando a continuidade das operações, além de contribuir para a sustentabilidade ambiental ao reaproveitar baterias que de outra forma seriam descartadas.</p>
+    </section>
+
+    <section id="collection-points">
+        <h2>Pontos de Coleta</h2>
+        <ul>
+            <li>Ponto de Coleta 1:R.Venâncio Aires, 300 SENAC </li>
+            <li>Ponto de Coleta 2: Endereço 2</li>
+            <li>Ponto de Coleta 3: Endereço 3</li>
+        </ul>
+        <!-- Aqui você pode adicionar um mapa ou integrar com APIs de mapas -->
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Projeto PowerBank Sustentável. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
