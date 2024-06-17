@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif ;
+}
+
+header{
+    background-color: #000000;
+    box-shadow: 0px 3px 10px #000000;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo{
+    align-items: center;
+    width: 90px;
+    margin-right: 50px;
+}
+
+.ods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin: 30px; */
+}
+
+
+.logo h1{
+    color: #fff;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item{
+    margin: 0 15px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .open{
+      display: block;
+    }
+}
+
+article h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #000000;
+    font-family: 'Playfair Display';
+    text-align: center;
+    padding-top: 115px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  article p {
+    color: #030202;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  h1{
+    font-size: 40px;
+    font-weight: 500;
+    color: #000000;
+    font-family: 'Playfair Display';
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+ h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #000000;
+    font-family: 'Playfair Display';
+    padding-top: 20px;
+ }
+  
