@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+ 
+:root{
+    --white: #fff;
+    --dark1: #34344e;
+    --dark2: #3a415a;
+    --dark3: #566981;
+    --dark4: #89a7b1;
+    --dark5: #cbdad5;
+    --cyan1: #70e3ea;
+}
+ 
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    background: var(--dark2);
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: var(--dark3);
+}
+ 
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark4);
+}
+ 
+body{
+    background-color: var(--dark1);
+    background-size: 400%;
+    height: 100vh;
+    font-family: 'Lato';
+}
+ 
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: .8rem;
+    background-color: #2f2f46;
+    min-height: 50px;
+}
+ 
+ 
+.img-logo{
+    height: 200%;
+    max-height: 100px;
+}
+ 
+nav{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ 
+.nav-links{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 25px;
+}
+ 
+.nav-links:hover{
+    color: var(--dark4);
+    text-decoration: underline;
+    transition: .4s;
+}
+ 
+.box-btn-actions{
+    display: flex;
+    gap: 1rem;
+}
+ 
+:is(button,.link-action){
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+ 
+.btn-action{
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+ 
+.btn-action:hover{
+    background-color:  var(--dark3);
+    border: 1px solid var(--dark3);
+}
+ 
+.link-action{
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+}
+ 
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+ 
+section{
+    padding: 4rem;
+}
+ 
+.first-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    min-height: 650px;
+    flex-wrap: wrap;
+}
+ 
+.first-section > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 300px;
+}
+ 
+h1{
+    font-size: 4rem;
+    letter-spacing: 8px;
+    color: var(--white);
+}
+ 
+strong{
+    color: var(--cyan1);
+}
+ 
+.first-section p{
+    color: var(--white);
+}
+ 
+.first-section button{
+    width: 200px;
+}
+ 
+.box-img-main{
+    max-width: 400px;
+    padding: 4rem;
+}
+ 
+.img-profile{
+    width: 85%;
+    border-radius: 50%;
+}
+ 
+:is(.second-section, .fourth-section){
+    background-color: var(--dark2);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+ 
+.title{
+    color: var(--dark5);
+}
+ 
+.second-section div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+ 
+.second-section p{
+    color: var(--dark4);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+ 
+/* Estilos para a seção "Sobre o Projeto" */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+}
+ 
+.about-title {
+    font-size: 3rem;
+    color: var(--dark5);
+    flex: 1 1 40%;
+    min-width: 200px;
+    text-align: left;
+}
+ 
+.about-description {
+    color: var(--dark4);
+    font-weight: bold;
+    letter-spacing: 2px;
+    flex: 1 1 55%;
+    min-width: 300px;
+    text-align: justify;
+}
+ 
+/* Sabre de luz para o título "Características" */
+.title::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: var(--cyan1);
+    transition: width 0.4s;
+    margin-top: 10px;
+    box-shadow: 0 0 15px var(--cyan1), 0 0 30px var(--cyan1), 0 0 45px var(--cyan1), 0 0 60px var(--cyan1);
+}
+ 
+.title:hover::after {
+    width: 100%;
+    transition: width 0.4s;
+}
+ 
+.third-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+ 
+.third-section > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+ 
+.third-section > div img{
+    width: 250px;
+    border-radius: 10px;
+}
+ 
+.third-section > div p{
+    max-width: 600px;
+    color: var(--white);
+}
+ 
+#my-projects-list{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+ 
+#my-projects-list a{
+    text-decoration: none;
+    color: var(--dark3);
+}
+ 
+#my-projects-list a:hover{
+    transition: .4s;
+    color: var(--dark4);
+}
+ 
+:is(.img-profile,.img-who-am-i){
+    box-shadow: 1px 1px 1px 1px var(--cyan1);
+}
+ 
+footer{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+ 
+footer > div{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+ 
+.footer-section{
+    background-color: var(--dark2);
+    color: var(--white);
+    text-align: center;
+}
+ 
+.footer-section a{
+    color: var(--cyan1);
+    text-decoration: none;
+}
+ 
+.footer-section a:hover{
+    color: var(--dark5);
+    text-decoration: underline;
+    transition: .4s;
+}
+ 
+.nav-links{
+    text-decoration: none;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+ 
+.nav-links::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: -100%;
+    background-color: var(--cyan1);
+    transition: all 0.3s ease;
+}
+ 
+.nav-links:hover::before{
+    left: 0;
+}
+ 
+.btn-action{
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+ 
+.btn-action::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background-color: var(--dark3);
+    transition: all 0.3s ease;
+}
+ 
+.btn-action:hover::before{
+    top: 0;
+}
+ 
+.btn-action:hover{
+    color: var(--white);
+    border: 1px solid var(--dark3);
+}
+
+p {
+    color: #fff;
+}
