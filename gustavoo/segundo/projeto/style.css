@@ -16,7 +16,8 @@ body {
 
 /* Estilo da navegação */
 header {
-  background-color: #00796b;
+  box-shadow: 1px 1px 10px 5px #004d40ad;
+ background-color: #004d40;
   color: #fff;
   padding: 1rem 0;
   text-align: center;
