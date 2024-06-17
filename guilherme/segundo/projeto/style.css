@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(237, 237, 237);
+}
+
+header {
+    background-color: rgb(216, 215, 215);
+    position: fixed;
+    width: 100%;
+    height: 3.5vw;
+    margin-top: 0;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav-bar {
+    min-height: 5em;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5em;
+}
+
+.logo {
+    color: white;
+    font-size: 2rem;
+    transition: 1s;
+}
+
+.nav-menu {
+    display: flex;
+    padding-top: 3vw;
+    align-items: left;
+    gap: 3em;
+}
+
+.nav-item {
+    padding: 0.3em;
+    border-radius: 0.6em;
+    transition: 1s;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.nav-link:hover {
+    color: rgb(118, 48, 148);
+    transition: 1s;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 6vw;
+    height: 1vw;
+    border: 0.1em;
+    border-radius: 0.3em;
+    margin: 5px auto;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.3s ease-in-out;
+}
+
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        top: 4.8em;
+        gap: 0;
+        border-radius: 0 0 1em 1em;
+        background-color: rgb(216, 215, 215);
+        flex-direction: column;
+        width: 30%;
+        height: 100%;
+        transition: all 0.3s;
+    }
+
+    .nav-item {
+        margin: 0.8em 0;   
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+
+.logo {
+    color: black;
+    font-family: cursive;
+}
+
+.heade {
+    color: rgb(80, 80, 80);
+    font-family: cursive;
+}
+
+@media (max-width:600px) {
+    .nav-menu {
+        width: 95%;
+    }
+
+    header {
+        height: 18vw;
+    }
+
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 4vw;
+    font-family: Andale Mono, monospace;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: Andale Mono, monospace;
+    text-transform: uppercase;
+    padding-top: 3vw;
+}
+
+p {
+    padding: 4vw;
+    font-size: 1.6vw;
+    font-family: Andale Mono, monospace;
+    text-align: center;
+}
+
+.aling {
+    text-align: center;
+}
+
+.objet {
+    padding-top: 0;
+}
+
+section {
+    padding-top: 10vw;
+}
+
+.home {
+    padding-top: 10vw;
+    justify-content: center;
+    display: grid;
+    height: 52vw;
+}
+
+.backa {
+    background-position: center;
+    background-image: url('./assets/SportfolioP.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    height: 55vw;
+}
+
+
+
+.backb {
+    background-position: center;
+    background-image: url('./assets/SportfolioO.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    height: 55vw;
+}
+
+.inicio {
+    width: 50vw;
+}
+
+footer {
+    height: 5em;
+}
+
+@media (max-width:500px){
+
+    .inicio {
+        padding-top: 40vw;
+        width: 70vw;
+    }
+
+    .home {
+        height: 50em;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+    
+    h3 {
+        font-size: 5vw;
+    }
+
+    p {
+        font-size: 5vw;
+    }
+
+    .intr {
+        height: 100em;
+    }
+
+    .tema {
+        height: 20em;
+    }
+    .prob {
+        height: 15em;
+    }
+}
