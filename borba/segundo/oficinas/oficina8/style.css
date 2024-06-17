@@ -1,0 +1,589 @@
+body {
+    /* background-color: #7c7ef8; */
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    align-items: stretch;
+    padding: 0;
+    margin: 0;
+  }
+  
+  table,
+  td {
+    border: 1px solid #23232324;
+    cursor: copy;
+  }
+  
+  tr {
+    cursor: default;
+  }
+  
+  table {
+    /* margin: 14px auto;
+      padding: 7vh 0;
+      border-collapse: collapse; */
+    margin: 14px auto;
+    padding: 0.5vh 0.5vh;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 149px -28px #1b19cdd1;
+    border-radius: 20px;
+    overflow: hidden;
+    border-color: transparent;
+  }
+  
+  /* .font {
+      font-family: "Dank Mono", Impact, Haettenschweiler, "Arial Narrow Bold",
+          sans-serif;
+  } */
+  
+  .default-cursor {
+    cursor: default;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .btn {
+    border-radius: 100px;
+    outline: none;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+  
+  .color {
+    color: #fefdfd;
+    background-color: #1b19cd;
+  }
+  
+  .border-color {
+    background-color: #1b19cd;
+  }
+  
+  .off-color {
+    color: #7c7ef8;
+  }
+  
+  #current-day-info {
+    min-height: 100vh;
+    width: 34%;
+  }
+  
+  #current-day-info #app-name-landscape {
+    font-size: 6.2vh;
+    padding: 0.5vh 0 1vh;
+    border-bottom: 1px solid;
+    color: white;
+  }
+  
+  .time {
+    text-align: center;
+    padding-bottom: 5vh;
+    font-size: 3vh;
+    font-weight: lighter;
+    text-shadow: 0px 0px 10px aliceblue;
+    cursor: pointer;
+  }
+  
+  .time:hover,
+  .verb {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: green;
+  }
+  
+  #current-day-info h2 {
+    font-size: 6.2vh;
+    font-weight: 300;
+    margin: 0 0 3vh;
+    padding-top: 3vh;
+  }
+  
+  #current-day-info h1 {
+    font-size: 6.8vh;
+    font-weight: 600;
+    margin: 4.3vh 0;
+  }
+  
+  #current-day-info #theme-landscape,
+  #calender #theme-portrait {
+    display: block;
+    padding: 3vh 4vh;
+    box-shadow: #a9a7a7 0px 0px 91px -5px;
+    /* padding: 16px 38px; */
+    color: #d2cdcd;
+    /* background-color: #e9e7e7; */
+    border: 2px solid transparent;
+    font-size: 2.4vh;
+  }
+  
+  #current-day-info #theme-landscape:hover,
+  #calender #theme-portrait:hover {
+    background-color: white;
+    opacity: 0.4;
+    color: black;
+  }
+  
+  #calender {
+    width: 66%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-content: center; */
+  }
+  
+  #calender #app-name-portrait {
+    display: none;
+  }
+  
+  #calender #theme-portrait {
+    display: none;
+  }
+  
+  #calender thead tr:first-child th div {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #calender h4 {
+    margin: 0;
+    padding: 0.8vh 0 0.2vh;
+    font-size: 1.4vw;
+    font-weight: 300;
+  }
+  
+  #calender h3 {
+    font-size: 2vw;
+    font-weight: 700;
+    padding: 0 2vw;
+    margin: 0;
+    display: inline-block;
+  }
+  
+  #calender .weekday {
+    font-size: 1.7vw;
+    font-weight: 300;
+    padding: 8px 0 5px;
+    /* border: 1px solid transparent; */
+    /* border-bottom: 1px solid white !important; */
+  }
+  
+  #calender .icon {
+    font-size: 1.3rem;
+  }
+  
+  #calender .icon:hover {
+    opacity: 0.6;
+  }
+  
+  #calender tbody td {
+    height: 9.2vh;
+    width: 6.5vw;
+    font-size: 1.3vw;
+    font-weight: 600;
+    vertical-align: top;
+    padding: 0.5vw;
+    transition: font-size 0.4s ease;
+  }
+  
+  #calender tbody td:hover {
+    font-size: 2vw;
+  }
+  
+  #calender #current-day {
+    background-color: #e1e1e1;
+  }
+  
+  #calender img {
+    width: 4.7rem;
+    vertical-align: top;
+    position: relative;
+    top: 0.1vw;
+    left: 20px;
+  }
+  
+  #calender .day {
+    display: block;
+    max-height: 10px;
+  }
+  
+  .tooltip {
+    display: none;
+    cursor: none;
+  }
+  
+  @media (orientation: landscape) {
+    .tooltip-container:hover {
+      cursor: pointer;
+    }
+  
+    .tooltip-container:hover .tooltip {
+      /* font-size: 1.5vw; */
+      font-size: 1.1vw;
+      font-weight: initial;
+      display: block;
+      position: absolute;
+      white-space: pre-wrap;
+      /* width: 12vw; */
+      background-color: #ededed;
+      color: black;
+      border-radius: 10px;
+      /* padding: 1vw 0.1vw; */
+      padding: 0.5vw;
+      text-align: center;
+      border: 1px solid #1b19cd14;
+      box-shadow: 0px 3px 12px -6px black;
+    }
+  }
+  
+  .modal {
+    display: none;
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 0;
+    background-color: rgba(29, 29, 29, 0.85);
+    position: fixed;
+  }
+  
+  .popup {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    width: 48vw;
+    align-items: center;
+    margin: 14vh auto 0;
+    background-color: #fefdfd;
+    border-radius: 10px;
+  }
+  
+  .fade-in {
+    animation: fade-in 0.8s ease-out;
+  }
+  
+  .fade-out {
+    animation: fade-out 0.5s ease-out;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  #fav-color h4 {
+    margin: 32px 0 18px;
+    font-size: calc(15px + 1.8vw);
+    font-weight: 400;
+    border-bottom: 1px solid #232323;
+    padding: 0 4vw;
+  }
+  
+  #fav-color #color-options {
+    width: 84%;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  #fav-color #color-options h5 {
+    display: inline;
+    margin: 8px 0 8px;
+    font-size: calc(6px + 0.6vw);
+    font-weight: 500;
+  }
+  
+  #fav-color #color-options .color-option {
+    margin: 0.2vh 0.4vw;
+    width: 5vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  
+  #fav-color #color-options .color-preview {
+    height: calc(16px + 1.7vw);
+    width: calc(16px + 1.7vw);
+    border-radius: 100px;
+    padding: 0;
+    display: flex;
+  
+    justify-content: center;
+  
+    align-content: center;
+  
+    flex-direction: column;
+  }
+  
+  #fav-color #color-options .color-preview:hover,
+  .selectedColor {
+    opacity: 0.8;
+    border: 5px solid gray;
+    padding: 0.5px;
+  }
+  
+  #fav-color #color-options .checkmark {
+    color: white;
+    font-size: 1.2vw;
+  }
+  
+  #fav-color #update-theme-button {
+    margin: 24px 0 20px;
+    padding: 10px 26px;
+    font-size: calc(8px + 1.3vw);
+    border: 3px solid #232323;
+    color: #232323;
+    background-color: #fff;
+  }
+  
+  #fav-color #update-theme-button:hover {
+    opacity: 0.4;
+    border-color: transparent;
+    background-color: #e1e1e1;
+  }
+  
+  #make-note {
+    display: flex;
+    place-content: center;
+    text-align: center;
+    margin: 0px auto;
+    width: 50%;
+  }
+  
+  #make-note h4 {
+    text-align: center;
+    margin: 30px 0 16px;
+    font-size: calc(16px + 1.5vw);
+    font-weight: 300;
+  }
+  
+  #make-note #edit-post-it {
+    height: 340px;
+    width: 85%;
+    font-size: 2.6vw;
+    padding: 14px;
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+  }
+  
+  #make-note .post-it-button {
+    display: inline;
+    margin: 14px 0 20px;
+    padding: 10px 26px;
+    font-size: calc(12px + 0.6vw);
+    font-weight: 400;
+  }
+  
+  #make-note #add-post-it {
+    border: 3px solid #222;
+  }
+  
+  #make-note #add-post-it:hover {
+    color: white;
+    background-color: #222;
+  }
+  
+  #make-note #delete-button {
+    color: white;
+    border: 3px solid #d71c1f;
+    background-color: #d71c1f;
+  }
+  
+  #make-note #delete-button:hover {
+    color: #d71c1f;
+    border: 3px solid #d71c1f;
+    background-color: white;
+  }
+  
+  @media (orientation: portrait) {
+    body {
+      flex-direction: column;
+    }
+  
+    .time {
+      display: none;
+    }
+  
+    /* #date {
+          display: flex;
+          justify-content: space-between;
+      } */
+  
+    /* #current-year {
+          padding-bottom: 2px;
+      } */
+  
+    #calender {
+      width: 100%;
+      justify-content: none;
+      min-height: initial;
+    }
+    #calender img {
+      /* width: 2rem */
+      display: none;
+    }
+    table {
+      /* margin: 0 50px 10vh 50px; */
+      /* margin-bottom: 10vh; */
+      font-size: 0.8rem;
+    }
+  
+    #calender .weekday {
+      font-size: 0.8rem;
+    }
+  
+    #calender #cal-year {
+      font-size: 1.2rem;
+    }
+  
+    #calender #cal-month {
+      font-size: 1rem;
+    }
+  
+    #calender td {
+      font-size: 0.8rem !important;
+      font-weight: 300;
+    }
+  
+    #current-day-info {
+      min-height: initial;
+      height: 13vh;
+      width: 100%;
+      /* display: none; */
+      padding: 2vw 0;
+      display: flex;
+      flex-direction: column;
+      /* justify-content: space-between; */
+      align-items: center;
+      align-content: center;
+    }
+  
+    #current-day-info .current-day-heading {
+      display: inline;
+      padding: 0;
+      margin: 0 4px;
+      font-size: 5vw;
+    }
+  
+    #current-day-info .current-month-heading {
+      display: inline;
+      padding: 0;
+      margin: 0 4px;
+      font-size: 5vw;
+    }
+  
+    #current-day-info .current-date-heading {
+      display: inline;
+      padding: 0;
+      margin: 0 4px;
+      font-size: 5vw;
+    }
+  
+    #current-day-info #app-name-landscape {
+      padding: 3vh 0 1vh;
+      border-bottom: 1px solid;
+      display: none;
+      color: white;
+    }
+  
+    #current-day-info h2 {
+      font-size: 3vh;
+      /* font-weight: 300;
+          margin: 0 0 1.5vh;
+          padding-top: 1.5vh; */
+    }
+  
+    #current-day-info h1 {
+      font-size: 4vh;
+      /* font-weight: 600;
+          margin: 2.3vh 0; */
+    }
+  
+    #current-day-info #theme-landscape {
+      display: none;
+    }
+  
+    #calender #theme-portrait {
+      display: block;
+      /* padding: 3vw 25vw; */
+      width: 75%;
+      border-radius: 100px;
+    }
+  
+    #calender #app-name-portrait {
+      display: block;
+      /* margin: 1vw; */
+    }
+  
+    #calender tbody td {
+      height: 7.2vw;
+      width: 9.2vw;
+    }
+  }
+  
+  @media (orientation: portrait) {
+    .popup {
+      width: 87vw;
+    }
+  
+    #fav-color .popup h4 {
+      text-align: center;
+    }
+  
+    #fav-color #color-options .color-option {
+      width: 8vw;
+    }
+  
+    /* #make-note .popup h4 {} */
+  
+    #make-note {
+      width: 75%;
+    }
+  
+    #make-note #edit-post-it {
+      height: 200px;
+      width: 85%;
+    }
+  }
+  
+  .fa-sticky-note {
+    color: rgba(255, 187, 61, 0.5);
+    font-size: 2rem;
+  }
+  
+  .note-title {
+    width: 85%;
+    font-size: 1.6vw;
+    padding: 14px;
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    outline: none;
+  }
+  
+  #todayLogo {
+    width: 3rem;
+    top: 0.8vw;
+    left: 1px;
+  }
+  
