@@ -71,7 +71,7 @@ body {
 #form input::placeholder{
 	color: #2C3E50;
 }
-#form .action-button {
+#form .action-button, #form .fake-button {
 	width: 70px;
 	background: #27ae5fb0;
 	font-weight: bold;
@@ -84,7 +84,7 @@ body {
   text-decoration: none;
   font-size: 14px;
 }
-#form .action-button:hover, #form .action-button:focus {
+#form .action-button:hover, #form .action-button:focus, #form .fake-button:hover{
 	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
 }
 .fs-title {

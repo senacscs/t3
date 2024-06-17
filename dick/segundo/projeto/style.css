@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+a{
+  color: #fff;
+}
+
+a :visited{
+  color: #fff;
+}
+
+#menu-trigger {
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    position: fixed;
+    top: 10px;
+    margin-left: 20px;
+    /* right: 0; */
+    cursor: pointer;
+    transition: left 0.5s ease 0s;
+}
+
+
+.menu-trigger  div {
+    width: 30px;
+    height: 4px;
+    background: rgb(51, 51, 51) none repeat scroll 0% 0%;
+    margin-top: 3px;
+}
+
+
+.menu-hidde {
+	background: #333 none repeat scroll 0% 0%;
+	width: 185px;
+	height: 50rem;
+	position: absolute;
+  position: fixed;
+	box-shadow: 1px 2px 3px #DDD;
+	left: -100%;
+	transition: left 0.5s ease 0s;
+}
+
+.menu-hidde li {
+    color: #fff;
+    font-size: 20px;
+    padding: 18px;
+    cursor: pointer;
+}
+.menu-hidde ul {
+    position: absolute;
+    top: 31px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+#form1 fieldset{
+  background: #FA4B83;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 20px;
+	box-sizing: border-box;
+  margin-top: 5px;
+  /* margin-left: 300px; */
+  /* margin-right: 80px; */
+  text-align: center;
+}
+
+#form2 fieldset{
+  background: #69DAFA;
+  border: none;
+  border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 20px;
+  /* margin-right: 80px; */
+	box-sizing: border-box;
+  text-align: center;
+}
+
+#form3 fieldset{
+  background: #FAEF69;
+  border: none;
+  border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 20px;
+	box-sizing: border-box;
+  text-align: center;
+}
+
+#form4 fieldset{
+  background: #64F577;
+  border: none;
+  border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 20px;
+	width: 50%;
+  margin-left: 310px;
+	box-sizing: border-box;
+  text-align: center;
+}
+
+#form6 fieldset{
+  background: #F5372A;
+  border: none;
+  border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 10px 10px;
+	box-sizing: border-box;
+  text-align: center;
+}
+
+#form7 fieldset{
+  background: #AB10E6;
+  border: none; border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 10px 10px;
+	box-sizing: border-box;
+  text-align: center;
+}
