@@ -5,10 +5,13 @@
     color: white; /* Set all text to white */
   }
   
+  body{
+    background-color: rgb(213, 198, 177);;
+  }
   .banner {
     width: 100%;
     height: 100vh;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(213, 198, 177);
     background-size: cover;
     background-position: center;
   }
@@ -23,7 +26,7 @@
   }
   
   .logo {
-    width: 180px; /* Ajuste o tamanho conforme necessário */
+    width: 200px; /* Ajuste o tamanho conforme necessário */
     cursor: pointer;
   }
   
@@ -40,9 +43,9 @@
   }
   
   .navbar ul li a {
-    text-decoration: none;
-    color: white; /* Set text color to white for contrast */
+    color: rgb(0, 0, 0); /* Set text color to white for contrast */
     text-transform: uppercase;
+    text-decoration: none;
   }
   
   .navbar ul li::after {
@@ -66,24 +69,33 @@
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
-    color: white; /* Set text color to white for contrast */
+    color: rgb(0, 0, 0); /* Set text color to white for contrast */
   }
   
+   h1{
+    color:black;
+    font-weight: 800;
+   }
+
+   p{
+    color:black; 
+   }
+
   .content h1 {
     font-size: 50px;
-    margin-top: 80px;
-    text-shadow: 3px 3px 3px rgb(149, 148, 143);
+    margin-top: 120px;
+    text-shadow: 6px 6px 6px rgb(130, 127, 125);
   }
   
   .p {
     margin: 20px auto;
     font-weight: 100;
     line-height: 25px;
-    color: white;
+    color: rgb(0, 0, 0);
   }
 
   .content p{
-    font-family: Courier New, monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left:100px;
     margin-right:100px;
   }
@@ -96,30 +108,120 @@
     border-radius: 25px;
     font-weight: bold;
     border: 2px solid #347a87;
-    background: transparent;
-    color: white; /* Set text color to white for contrast */
+    background: #347a87;
+    color: rgb(0, 0, 0); /* Set text color to white for contrast */
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    margin-top: 40px;
   }
   
-  span {
-    background: #347a87;
-    height: 100%;
-    width: 0%;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 0.5s;
+  .navbar ul li a {
+    text-decoration: none;
+    color: #000; /* cor do texto do menu */
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif; /* troque pela sua fonte desejada */
+    text-transform: capitalize; /* primeira letra de cada palavra maiúscula */
+}
+
+ h2{
+  text-align:center;
+  margin-top:10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #000;
+  text-shadow: 2px 2px 2px grey;
+ }
+
+ .introducao p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left:200px;
+  margin-right:200px;
+  margin-top:40px;
+  text-align: justify;
+ }
+
+ .justificativa p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top:40px;
+  text-align: justify;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 40px;
+ }
+
+ .justificativa h2{
+  margin-top:-10px;
+ }
+
+ .ods {
+  display: flex;
+  justify-content: center; /* Centraliza as imagens horizontalmente */
+  align-items: center; /* Centraliza as imagens verticalmente */
+}
+
+.img {
+  width: 150px; /* Largura das imagens */
+  margin: 10px; /* Espaçamento entre as imagens */
+}
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
   }
-  
-  button:hover span {
-    width: 100%;
+  100% {
+      opacity: 1;
+      transform: translateY(0);
   }
-  
-  button:hover {
-    border: none;
+}
+@keyframes moveUp {
+  0% {
+      transform: translateY(0);
   }
-  
+  100% {
+      transform: translateY(-20px);
+  }
+}
+
+.img {
+  width: 150px; /* Largura das imagens */
+  margin: 10px; /* Espaçamento entre as imagens */
+}
+
+.img:hover {
+  animation: moveUp 1.0s ease forwards; /* Aplica a animação ao passar o mouse */
+}
+
+.objetivos p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top:40px;
+  text-align: justify;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 40px;
+ }
+
+ .obj{
+  margin-bottom: 40px;
+ }
+
+ .metodologia p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top:40px;
+  text-align: justify;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 40px;
+ }
+
+ .button{
+  align-items: center;
+  text-align: center;
+ }
+
+ .resultados p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top:40px;
+  text-align: justify;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-bottom: 40px;
+ }

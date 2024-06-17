@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion Example</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="img/logoclick.png" class="logo">
+            <ul>
+                <li><a href="index.html">Introdução</a></li>
+                <li><a href="justificativa.html">Justificativa</a></li>
+                <li><a href="objetivos.html">Objetivos</a></li> 
+                <li><a href="metodologia.html">Metodologia</a></li>
+                <li><a href="resultados.html">Resultados Esperados</a></li>
+            </ul>
+        </div>
+        <div class="obj">
+        <h2>Objetivos</h2>
+    </div>
+        <div class="accordion">
+            <dl>
+              <dt>
+                <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Objetivo Geral</a>
+              </dt>
+              <dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">
+                <p>Desenvolver por um site e um aplicativo, que facilite as doações, oferecendo um ambiente organizado e informativo para os doadores. A plataforma terá o objetivo de orientar os usuários sobre como, onde e o que doar, facilitando a distribuição correta e evitando desperdícios. Implementado um sistema de criptomoeda como incentivo, uma forma de recompensar os doadores e estimular a participação. O objetivo é criar um processo de doação mais eficiente e acessível, promovendo a solidariedade de forma estruturada e motivadora.  </p>
+              </dd>
+              <dt>
+                <a href="#accordion2" aria-expanded="false" aria-controls="accordion2" class="accordion-title accordionTitle js-accordionTrigger">
+                  Objetivo Específico</a>
+              </dt>
+              <dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
+                <p>Disponibilizar um site para que os doadores possam saber o que as pessoas mais precisam no momento, assim, direcionando e facilitando a distribuição de doação, mostrando os pontos de coleta para cada tipo de doação. </p>
+              </dd>
+              <dt>
+                <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+                  Objetivo Específico
+                </a>
+              </dt>
+              <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+                <p> Contribuir com os ODS que tem os objetivos de acabar com a pobreza e fome e tem intenção de melhorar os recursos do bem-estar e educação, disponibilizando doações de cestas básicas, roupas, calçados e material escolar.  </p>
+              </dd>
+            </dl>
+          </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
