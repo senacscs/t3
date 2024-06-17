@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.index {
+    background-color: #52639a;
+    color: rgb(7, 7, 7);
+    text-align: center;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45vw;
+}
+
+
+
+.project {
+    margin: 20px;
+    border: 1px solid #b5b5b5;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #8b8282;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
+}
+.link {
+  color:black; 
+  text-decoration: none;
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+
+.barra {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #8b8282;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-items {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-items li {
+    margin-right: 20px;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: white;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px;
+    margin-right: 8px;
+}
+
+.search-bar button {
+    padding: 8px;
+    background-color: #39476e;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.inline {
+    display: flex;
+}
+
+.index {
+    width: 40%;
+}
