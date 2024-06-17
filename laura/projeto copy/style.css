@@ -1,0 +1,322 @@
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+  body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+
+  /* header */
+  .header {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+  }
+
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #f4f4f4;
+  }
+
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+
+  /* menu */
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+
+  /* menu icon */
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+
+  /* menu btn */
+  .header .menu-btn {
+    display: none;
+  }
+
+  .header .menu-btn:checked ~ .menu {
+    max-height: 100%;
+  }
+
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+
+  
+/* ESTILO GERAL */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #ffffff; 
+  height: 100vh;
+}
+
+.interface{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.arredondar-img{
+  border-radius: 15px;
+}
+
+.flex{
+  display: flex;
+}
+
+.btn-contato button{
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #FFE88C;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+h2.titulo{
+  color: #000000;
+  font-size: 38px;
+  text-align: center;
+}
+
+h2.titulo span{
+  color: #e1bb23;
+}
+
+button:hover{
+  box-shadow: 0px 0px 8px #ebc636;
+  transform: scale(1.05) ;
+}
+
+
+
+/* ESTILO DO CABEÇALHO */
+header{
+ padding: 20px 4%; 
+}
+
+header > .interface{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a{
+  color: #5c5c5c;
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+}
+
+header a:hover{
+  color: #000000;
+  transform: scale(1.05);
+}
+
+header nav ul{
+  list-style-type: none;
+}
+
+header nav ul li{
+  display: inline-block;
+  padding: 0 40px;
+}
+
+
+
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site{
+  padding: 60px 4%;
+}
+
+section.topo-do-site.flex{
+align-items: center;
+justify-content: center;
+gap: 90px;
+}
+
+.topo-do-site h1{
+  color: #000000;
+  font-size: 42px;
+  line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site p{
+  color: #000000;
+  margin: 50px 0;
+}
+
+.img-topo-site img{
+  margin-top: -60px;
+}
+
+.topo-do-site .img-topo-site img{
+  position:relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+ 0%
+ {
+  top: 0;
+ } 
+ 100%{
+  top: 30px
+ }
+
+}
+
+/* ESTILO DAS ESPECIALIDADES */
+section.especiliadades{
+  padding: 40px 4%;
+}
+
+section.especiliadades .flex{
+  gap: 60px;
+}
+
+.especiliadades .especilialidades-box{
+  color: #000000;
+}
+
+.especiliadades .especilialidades-box i{
+  font-size: 70px;
+  color: #ebc636;
+}
+
+.especiliadades .especilialidades-box h3{
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+/* ESTILO DO SOBRE */
+
+section.sobre{
+  padding: 80px 4%;
+}
+
+section.sobre .flex{
+  align-items: center;
+  gap: 60px;
+}
+
+.sobre .txt-sobre{
+  color: #000000;
+}
+
+.sobre .txt-sobre h2{
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+
+.sobre .txt-sobre p{
+  margin: 15px 0;
+}
+
+.btn-social button{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: #e1bb23;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 0 8px;
+  transition: .2s;
+}
+
+.btn-social a img{
+width: 60px;
+height: 60px;
+/* border-radius: 50%; */
+border: none;
+background-color: #e1bb23;
+font-size: 22px;
+cursor: pointer;
+margin: 0 8px;
+transition: .2s;
+}
+
+.btn-social a img:hover{
+  box-shadow: 0px 0px 10px #ebc636;
+  transform: scale(1.05) ;
+}
+
+/* ESTILO PROJETO */
+
+section.projeto{
+  padding: 100px 4%;
+}
+
+.projeto .txt-projeto{
+  color: #010000;
+}}
