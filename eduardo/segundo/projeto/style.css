@@ -16,15 +16,15 @@ header {
   z-index: 1;
   padding: 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* Ajustado para centralizar o conteúdo */
+  align-items: center; /* Centraliza os itens horizontalmente */
   width: 100vw;
-  gap: 20px;
+  text-align: center; /* Centraliza o texto */
 }
 
 header h1 {
   font-family: 'Poppins', sans-serif;
   color: #299640;
-  align-self: end;
   font-size: 1.5rem;
 }
 
@@ -35,6 +35,7 @@ span {
 .logo {
   opacity: 1;
   width: 5rem;
+  margin-bottom: 10px; /* Adiciona espaço entre o logo e o título */
 }
 
 .slider {
@@ -58,6 +59,9 @@ span {
   width: 20%;
   position: relative;
   transition: 2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 img {
@@ -150,8 +154,8 @@ img {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  left: 10%;
-  top: 20vh;
+  justify-content: center;
+  height: 100%;
   gap: 20px;
   padding: 10px;
 }
@@ -170,14 +174,8 @@ img {
 
 /* Media Queries */
 @media (max-width: 500px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
-
   header h1 {
     font-size: 1.2rem;
-    text-align: center;
   }
 
   .logo {
@@ -186,8 +184,6 @@ img {
 
   .content {
     width: 90%;
-    left: 5%;
-    top: 15vh;
     gap: 15px;
   }
 
@@ -198,6 +194,15 @@ img {
   .content p {
     font-size: 0.9rem;
   }
+
+  .navigation-auto {
+    margin-top: 58.8rem; /* Ajuste conforme necessário */
+    order: 1; /* Define a ordem para garantir que fique atrás */
+  }
+
+  .manual-navigation {
+    order: 2; /* Define a ordem para garantir que fique na frente */
+  }
 }
 
 @media (min-width: 768px) {
@@ -207,8 +212,6 @@ img {
 
   .content {
     width: 70%;
-    left: 15%;
-    top: 25vh;
     gap: 30px;
   }
 
@@ -228,8 +231,6 @@ img {
 
   .content {
     width: 60%;
-    left: 20%;
-    top: 30vh;
     gap: 40px;
   }
 
