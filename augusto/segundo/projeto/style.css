@@ -12,6 +12,11 @@ html {
   scroll-snap-type: y mandatory;
 }
 
+a {
+  color: #131212;
+  
+}
+
 .nav-container {
   position: fixed;
   top: 0;
