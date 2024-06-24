@@ -16,10 +16,10 @@ header {
   z-index: 1;
   padding: 20px;
   display: flex;
-  flex-direction: column; /* Ajustado para centralizar o conteúdo */
-  align-items: center; /* Centraliza os itens horizontalmente */
+  flex-direction: column;
+  align-items: center; 
   width: 100vw;
-  text-align: center; /* Centraliza o texto */
+  text-align: center;
 }
 
 header h1 {
@@ -35,7 +35,7 @@ span {
 .logo {
   opacity: 1;
   width: 5rem;
-  margin-bottom: 10px; /* Adiciona espaço entre o logo e o título */
+  margin-bottom: 10px;
 }
 
 .slider {
@@ -196,12 +196,12 @@ img {
   }
 
   .navigation-auto {
-    margin-top: 58.8rem; /* Ajuste conforme necessário */
-    order: 1; /* Define a ordem para garantir que fique atrás */
+    margin-top: 58.8rem;
+    order: 1;
   }
 
   .manual-navigation {
-    order: 2; /* Define a ordem para garantir que fique na frente */
+    order: 2;
   }
 }
 
