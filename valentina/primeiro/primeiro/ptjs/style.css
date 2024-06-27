@@ -1,0 +1,16 @@
+body {
+	background:#7755cf;
+	color: white;
+	text-align: center;
+	font-family: Serif;
+	background-image: url(oie.gif);
+	background-size: 100%;
+	
+}
+
+.dividido {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-right: 100px;
+	margin-left: 100px;
+}
