@@ -10,5 +10,11 @@
         "desc": "Trabalho onde ensinamos a utilizar fetchData para buscar produtos em um catálogo.",
         "link": "./segundo/oficina7/",
         "date": "29/02/2024"
+    },
+    {
+        "name": "Site do Projeto",
+        "desc": "Site do Projeto Prazo-zero.",
+        "link": "https://prazozeroweb.vercel.app/",
+        "date": "11/07/2024"
     }
 ]
