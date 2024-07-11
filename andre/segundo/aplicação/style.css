@@ -1,0 +1,67 @@
+/* Adicionando fonte personalizada */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+}
+
+.header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#map {
+  flex-grow: 1;
+  margin: 20px;
+  border: 2px solid #4CAF50;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+#map:hover {
+  transform: scale(1.02);
+}
+
+.footer {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: auto;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  color: #cccccc;
+  text-decoration: none;
+}
+
+/* Adicionando transições */
+.header, .footer {
+  transition: background-color 0.3s ease;
+}
+
+.header:hover, .footer:hover {
+  background-color: #45a049;
+}
