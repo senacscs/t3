@@ -1,0 +1,35 @@
+#form{
+    width: 400px;
+    /* height: 800px; */
+	margin: 70px auto;
+	text-align: center;
+	position: relative;
+    background: #ffb8ec;
+}
+
+#form fieldset{
+    border: none;
+	border-radius: 3px;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+	position: relative;
+}
+
+#form input{
+    margin-bottom: 10px;
+}
+
+.continuar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 255, 0.461);
+    padding: 5px;
+}
+
+.voltar{
+    display: flex;
+}
+

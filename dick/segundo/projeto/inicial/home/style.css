@@ -1,0 +1,21 @@
+.topbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 180px;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+  
+  }
+  
+  .topbar ul li {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topbar ul li a {
+    text-decoration: none;
+  }
+
+  .logo{
+    margin-right: 280px;
+  }
