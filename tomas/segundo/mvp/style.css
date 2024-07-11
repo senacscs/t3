@@ -1,0 +1,172 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+main {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-section, .chat-section, .contact-section {
+    display: none;
+}
+
+.active-section {
+    display: block;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-content img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat-box {
+    width: 100%;
+    max-width: 600px;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.chat-message {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px 0;
+}
+
+.chat-input {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+}
+
+.chat-input textarea {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px 0 0 8px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+.chat-input button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.chat-input button:hover {
+    background-color: #ff6347;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.contact-image {
+    flex: 1;
+    text-align: center;
+}
+
+.contact-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}

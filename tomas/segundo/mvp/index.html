@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Meu Site</div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="loadPage('home')">Início</a></li>
+                <li><a href="#" onclick="loadPage('chat')">Atendimento</a></li>
+                <li><a href="#" onclick="loadPage('contact')">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="content">
+        <section class="home-section active-section">
+            <h1>Bem-vindo ao Meu Site!</h1>
+            <p>Explore nossas seções para mais informações.</p>
+            <div class="home-content">
+                <p>Nosso site oferece uma experiência completa de navegação. Utilize o menu acima para acessar diferentes seções.</p>
+                <img src="img/home.jpg" alt="Home Image">
+            </div>
+        </section>
+        <section class="chat-section">
+            <h1>Atendimento</h1>
+            <p>Inicie o bate-papo conosco:</p>
+            <div class="chat-container">
+                <div class="chat-box" id="chat-box">
+                    <div class="chat-message"><strong>Suporte:</strong> Olá! Como podemos ajudar você hoje?</div>
+                </div>
+                <div class="chat-input">
+                    <textarea id="message" rows="3" placeholder="Digite sua mensagem..."></textarea>
+                    <button onclick="sendMessage()">Enviar</button>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section">
+            <h1>Contato</h1>
+            <p>Informações de contato:</p>
+            <div class="contact-info">
+                <ul>
+                    <li><strong>WhatsApp:</strong> +55 (11) 99999-9999</li>
+                    <li><strong>Instagram:</strong> @meuperfil</li>
+                    <li><strong>Facebook:</strong> facebook.com/meuperfil</li>
+                    <li><strong>Email:</strong> contato@meusite.com</li>
+                </ul>
+                <div class="contact-image">
+                    <img src="img/contact.jpg" alt="Contact Image">
+                </div>
+            </div>
+        </section>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
