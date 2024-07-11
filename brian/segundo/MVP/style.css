@@ -1,0 +1,442 @@
+* {
+    border: 0px solid white
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4EAD69;
+    color: white;
+    padding: 170px;
+}
+
+.display {
+    display: flex;
+}
+
+header h1 {
+    font-size: 60px;
+    margin-bottom: 35px;
+    margin-top: -90px;
+    margin-left: -60px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header p {
+    margin-left: -70px;
+    max-width: 60%;
+    text-align: left;
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 130%;
+}
+
+header .buttons {
+    display: flex;
+    gap: 20px; 
+    margin-left: 250px;
+}
+
+header .buttons button {
+    color: white;
+    cursor: pointer;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+header .buttons button:hover {
+    background-color: #6fbe47;
+    transition: 1s;
+}
+
+.cadas {
+    height: 50px;
+    width: 180px;
+    border: 1px solid #444645;
+    background: #008726;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.log {
+    height: 50px;
+    width: 100px;
+    border: 1px solid #464444;
+    background: #00B828;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+main {
+    background-color: #181818;
+    color: white;
+    padding: 20px;
+    margin-top: -90px;
+    display: flex;
+    padding-bottom: 250px;
+}
+
+main .logo {
+    width: 36%;
+    border-radius: 10px;
+    margin-top: 80px;
+    margin-left: 200px;
+}
+
+main p {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 26px;
+    margin-left: 120px;
+    margin-right: 230px;
+    margin-top: 120px;
+    width: 500px;
+}
+
+@media only screen and (max-width: 2225px) {
+    * {
+        border: 0px solid white
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #4EAD69;
+        color: white;
+        padding: 150px;
+    }
+    
+    .display {
+        display: flex;
+    }
+    
+    header h1 {
+        font-size: 65px;
+        margin-bottom: 35px;
+        margin-top: -90px;
+        margin-left: -60px;
+        font-family: "Poetsen One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    header p {
+        margin-left: -90px;
+        max-width: 100%;
+        text-align: left;
+        font-family: "Play", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 30px;
+        line-height: 130%;
+    }
+    
+    header .buttons {
+        display: flex;
+        gap: 20px; 
+        margin-left: 90px;
+        margin-right: -90px;
+    }
+    
+    header .buttons button {
+        color: white;
+        cursor: pointer;
+        font-family: "Poetsen One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 25px;
+    }
+    
+    header .buttons button:hover {
+        background-color: #6fbe47;
+        transition: 1s;
+    }
+    
+    .cadas {
+        height: 50px;
+        width: 180px;
+        border: 1px solid #444645;
+        background: #008726;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    
+    .log {
+        height: 50px;
+        width: 100px;
+        border: 1px solid #464444;
+        background: #00B828;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    
+    main {
+        background-color: #181818;
+        color: white;
+        padding: 20px;
+        margin-top: -80px;
+        display: flex;
+        padding-bottom: 250px;
+        max-width: 100%;
+    }
+    
+    main .logo {
+        width: 27%;
+        border-radius: 10px;
+        margin-top: 110px;
+        margin-left: 300px;
+    }
+    
+    main p {
+        font-family: "Play", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 28px;
+        margin-left: 120px;
+        margin-top: 130px;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1525px) {
+    * {
+        border: 0px solid white
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #4EAD69;
+        color: white;
+        padding: 150px;
+    }
+    
+    .display {
+        display: flex;
+    }
+    
+    header h1 {
+        font-size: 65px;
+        margin-bottom: 35px;
+        margin-top: -90px;
+        margin-left: -60px;
+        font-family: "Poetsen One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    header p {
+        margin-left: -90px;
+        max-width: 100%;
+        text-align: left;
+        font-family: "Play", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 28px;
+        line-height: 130%;
+    }
+    
+    header .buttons {
+        display: flex;
+        gap: 20px; 
+        margin-left: 90px;
+        margin-right: -90px;
+    }
+    
+    header .buttons button {
+        color: white;
+        cursor: pointer;
+        font-family: "Poetsen One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 25px;
+    }
+    
+    header .buttons button:hover {
+        background-color: #6fbe47;
+        transition: 1s;
+    }
+    
+    .cadas {
+        height: 50px;
+        width: 180px;
+        border: 1px solid #444645;
+        background: #008726;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    
+    .log {
+        height: 50px;
+        width: 100px;
+        border: 1px solid #464444;
+        background: #00B828;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    
+    main {
+        background-color: #181818;
+        color: white;
+        padding: 20px;
+        margin-top: -80px;
+        display: flex;
+        padding-bottom: 250px;
+        max-width: 100%;
+    }
+    
+    main .logo {
+        width: 31%;
+        border-radius: 10px;
+        margin-top: 80px;
+        margin-left: 120px;
+    }
+    
+    main p {
+        font-family: "Play", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 26px;
+        margin-left: 120px;
+        margin-right: 80px;
+        margin-top: 120px;
+    }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 768px) {
+    * {
+        border: 0px solid white
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #4EAD69;
+        color: white;
+        padding: 170px;
+    }
+    
+    .display {
+        display: flex;
+    }
+    
+    header h1 {
+        font-size: 65px;
+        margin-bottom: 35px;
+        margin-top: -90px;
+        margin-left: -60px;
+        font-family: "Poetsen One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    header p {
+        margin-left: -90px;
+        max-width: 100%;
+        text-align: left;
+        font-family: "Play", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 28px;
+        line-height: 130%;
+    }
+    
+    header .buttons {
+        display: flex;
+        gap: 20px; 
+        margin-left: 90px;
+        margin-right: -150px;
+    }
+    
+    header .buttons button {
+        color: white;
+        cursor: pointer;
+        font-family: "Poetsen One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 25px;
+    }
+    
+    header .buttons button:hover {
+        background-color: #6fbe47;
+        transition: 1s;
+    }
+    
+    .cadas {
+        height: 50px;
+        width: 180px;
+        border: 1px solid #444645;
+        background: #008726;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    
+    .log {
+        height: 50px;
+        width: 100px;
+        border: 1px solid #464444;
+        background: #00B828;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    
+    main {
+        background-color: #181818;
+        color: white;
+        padding: 20px;
+        margin-top: -90px;
+        display: flex;
+        padding-bottom: 250px;
+    }
+    
+    main .logo {
+        height: 300px;
+        width: 32%;
+        border-radius: 10px;
+        margin-top: 80px;
+        margin-left: 100px;
+    }
+    
+    main p {
+        font-family: "Play", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 26px;
+        margin-left: 60px;
+        margin-right: 70px;
+        width: 100%;
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        background-color: #4EAD69;
+    }
+    header p{
+        position: absolute;
+        
+        max-width: 200px;
+        margin-top: 10px;
+        width: 200px;
+    }
+    main {
+        margin-top: 100px;
+    }
+}
