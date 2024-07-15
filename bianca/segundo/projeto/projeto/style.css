@@ -1,0 +1,169 @@
+body {
+    background-color: rgb(6, 0, 60);
+  }
+  
+  @font-face {
+    font-family: 'CinzelDecorative';
+    src: url('CinzelDecorative-Black.ttf') format('woff2'),
+         url('CinzelDecorative-Bold.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-bottom: 40%;
+  }
+  
+  header nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  header nav ul li {
+    display: inline;
+  }
+  
+  
+  
+  header nav ul li a:hover {
+    color: rgb(156, 0, 0);;
+  }
+  
+  nav a{
+    color: rgb(181, 0, 0);;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    font-size: 25pt;
+    position: relative;
+    
+  }
+  
+  nav a::after{
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color:rgb(160, 0, 0);;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    right: 11%;
+    transition: 0.3s ease-in-out;
+  }
+  
+  nav a:hover::after {
+    width: 90%;
+    
+  }
+  
+  li{
+    list-style-type: none;
+  }
+  
+  .opac {
+    opacity: 0;
+  }
+  
+  .box-1, .box-2, .box-3 {
+    width: 80%;
+    height: min-content;
+    background-color: rgb(25, 25, 25);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 0px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .box-1::before, .box-2::before, .box-3::before, .box-4::before, .box-5::before, .box-6::before, .box-7::before, .box-8::before, .box-9::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 3px; 
+    background: linear-gradient(to bottom, rgba(0, 55, 255, 0), rgb(0, 59, 135), rgba(0, 55, 255, 0));
+    pointer-events: none;
+    transition: width 0.3s ease;
+    text-align: center;
+  }
+  
+  .box-1::after, .box-2::after, .box-3::after, .box-4::after, .box-5::after, .box-6::after, .box-7::after, .box-8::after, .box-9::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 3px; /* Largura da borda direita */
+    background: linear-gradient(to bottom, rgba(255, 234, 138, 0.0), rgb(0, 59, 135), rgba(255, 234, 138, 0.0));
+    pointer-events: none;
+    transition: width 0.3s ease;
+    text-align: center;
+  }
+  
+  .box-1:hover::before, .box-2:hover::before, .box-3:hover::before, .box-4:hover::before, .box-5:hover::before, .box-6:hover::before, .box-7:hover::before, .box-8:hover::before, .box-9:hover::before,
+  .box-1:hover::after, .box-2:hover::after, .box-3:hover::after, .box-4:hover::after, .box-5:hover::after, .box-6:hover::after, .box-7:hover::after, .box-8:hover::after, .box-9:hover::after {
+    width: 15px; /* Largura da sombra de transição */
+  }
+  
+  .col-1, .col-2, .col-3 {
+    display: flex;
+    width: 95%;
+  }
+  
+  .row-1, .row-2, .row-3 {
+    width: 90%;
+  }
+  
+  h1 {
+    font-family: 'CinzelDecorative';
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 40px;
+  }
+  
+  h2 {
+    font-family: 'CinzelDecorative';
+    font-size: 30px;
+  }
+  
+  .h3 {
+    font-family: 'CinzelDecorative';
+    color: rgb(0, 60, 255);
+    font-size: 40px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.5s ease;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  
+  p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 30px;
+    color: whitesmoke;
+    font-size: 22px;
+  }
+  
+  .animation, .nav {
+    animation: colorChange2 2.5s infinite alternate;
+  }
+  
+  @keyframes colorChange2 {
+    0% {
+        color: rgb(0, 47, 109);
+    }
+    100% {
+        color: rgb(0, 110, 255);
+
+    }
+  }
+  
+  
+  

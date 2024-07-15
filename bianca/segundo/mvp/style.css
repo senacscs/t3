@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(10, 2, 54);
+}
+
+@font-face {
+    font-family: 'CinzelDecorative';
+    src: url('CinzelDecorative-Black.ttf') format('woff2'),
+         url('CinzelDecorative-Bold.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  h1 {
+    text-align: center;
+    padding: 40px;
+    font-family: 'CinzelDecorative';
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1.2px rgb(0, 0, 0);
+    animation: colorChange2 1.5s infinite alternate;
+  }
+    
+  h4 {
+    text-align: center; 
+  }
+  @keyframes colorChange2 {
+    0% {
+        color: rgb(255, 255, 255);
+    }
+    100% {
+        color: rgb(255, 255, 255);
+    }
+  }
+ 
