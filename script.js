@@ -4,6 +4,7 @@ const students = [
   { name: "Augusto", url: "augusto" },
   { name: "Bianca", url: "bianca" },
   { name: "Brian", url: "brian" },
+  { name: "Bruno", url: "bruno", dead: true },
   { name: "Davi F.", url: "davif" },
   { name: "Davi M.", url: "davimohr" },
   { name: "Davi B.", url: "borba" },
@@ -12,19 +13,23 @@ const students = [
   { name: "Francesco", url: "francesco" },
   { name: "Gabriel B.", url: "barcellos" },
   { name: "Gabriel L.", url: "dick" },
-  { name: "Guilherme", url: "guilherme" },
+  { name: "Guilherme", url: "guilherme", dead: true },
   { name: "Gustavo O.", url: "gustavoo" },
   { name: "Gustavo F.", url: "faber" },
   { name: "Gustavo M.", url: "gustavom" },
+  { name: "Henrique", url: "henrique", dead: true },
   { name: "Isaac", url: "isaac" },
+  { name: "Isabella", url: "isabella", dead: true },
   { name: "Isadora", url: "isadora" },
   { name: "João", url: "joao" },
   { name: "Laura", url: "laura" },
+  { name: "Leonardo", url: "leonardo", dead: true },
   { name: "Lucas", url: "lucas" },
   { name: "Luciano", url: "luciano" },
   { name: "Marcos", url: "marcos" },
-  { name: "Nicolas", url: "nicolas" },
+  { name: "Nicolas", url: "nicolas", dead: true },
   { name: "Nicole", url: "nicole" },
+  { name: "Matheus", url: "matheus", dead: true },
   { name: "Otaviano", url: "otaviano" },
   { name: "Pedro", url: "pedro" },
   { name: "Rodrigo", url: "rodrigo" },
@@ -105,7 +110,7 @@ function createElementFromStudent(student) {
 
   // Anchor params
   anchor.target = "_blank";
-  anchor.className = `bg-${colorScheme}-500 py-3 px-4 block shadow-2xl shadow-${colorScheme}-500/20`;
+  anchor.className = `${student.dead ? 'bg-gray-500 line-through' : `bg-${colorScheme}-500`} py-3 px-4 block shadow-2xl shadow-${colorScheme}-500/20`;
 
   if (currentProject.grade === 'segundo' && currentProject.name === 'Index') {
     anchor.href = `./${student.url}/`; // index é no começo
@@ -113,7 +118,7 @@ function createElementFromStudent(student) {
     anchor.href = `./${student.url}/${currentProject.grade}/${currentProject.url}`;
   }
 
-  anchor.innerText = student.name;
+  anchor.innerText = `${student.name}${student.dead ? ' 💀' : ''}`;
 
   // Animate the color when hovering the button
   let anchorAnimation = false;
@@ -284,8 +289,19 @@ function defineColorTheme() {
   })
 }
 
+function deathCount() {
+  const deadStudents = students.filter(student => student.dead)
+  const deadStudentsCount = deadStudents.length
+  const totalStudents = students.length
+
+  const deathCountElement = document.getElementById('death-count')
+
+  deathCountElement.innerHTML = `💀 ${deadStudentsCount}/${totalStudents}`
+}
+
 updateStudentsList(students);
 // animateSpiderMan();
+deathCount()
 handleSearch();
 handleFilter();
 autoSelectSearch()

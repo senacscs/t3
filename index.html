@@ -17,7 +17,7 @@
     <!-- <a aria-label="Shhhhhhhh" href="./jogo">
       <img loading="lazy" id="miranha" src="assets/miranha.jpg" alt="Homem aranha olhando com um binóculos" />
     </a> -->
-    <header class="flex md:gap-16 gap-8 md:items-center flex-col md:flex-row mb-16">
+    <header class="flex md:gap-10 gap-8 md:items-center flex-col md:flex-row mb-16">
       <h1 class="md:text-8xl text-5xl font-bold text-gray-50"><span onClick="rauber()">S</span>egundo <span onClick="showEminem()">A</span>no</h1>
       <div class="flex mt-3">
         <input class="py-2 sm:w-auto w-96 border-r-2 border-THEME-700 px-4 rounded-l-md bg-THEME-800 text-THEME-200 placeholder:text-THEME-400 outline-none" id="search" type="text" placeholder="Pesquisar" autocomplete="off" />
@@ -32,6 +32,7 @@
         <div id="filters" class="z-50 flex flex-col bg-THEME-600 text-THEME-200 px-5 py-8 absolute rounded-md text-left hidden">
         </div>
       </div>
+      <span id='death-count' class="text-red-500 text-2xl font-bold"></span>
     </header>
     <ol class="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-1" id="students-list"></ol>
   </main>
