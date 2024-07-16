@@ -1,0 +1,200 @@
+/* assets/style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:#626161
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background: rgba(0, 0, 0, 0.5); /* Menu transparente */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    height: 50px;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header nav ul li {
+    margin-left: 20px;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.header nav ul li a:hover {
+    color: #007BFF;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('assets/home-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+}
+
+.about,
+.features,
+.contact,
+.signup,
+.login {
+    padding: 60px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.features .feature-item {
+    margin-bottom: 20px;
+}
+
+.form-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background: #0056b3;
+}
+
+.form-container .alternative-login {
+    margin-top: 20px;
+}
+
+.form-container .alternative-login button {
+    width: 48%;
+    margin: 5px 1%;
+    background: #db4437;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container .alternative-login button.facebook-login {
+    background: #3b5998;
+}
+
+.form-container .forgot-password {
+    display: block;
+    margin-top: 20px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.form-container .forgot-password:hover {
+    text-decoration: underline;
+}
+
+.image-container {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .signup .container,
+    .login .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .form-container {
+        width: 45%;
+    }
+
+    .image-container {
+        display: block;
+        width: 45%;
+    }
+
+    .image-container img {
+        width: 100%;
+        border-radius: 8px;
+    }
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .footer-logo {
+    height: 50px;
+}
+
+.footer .social a {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.footer .social a:hover {
+    text-decoration: underline;
+}

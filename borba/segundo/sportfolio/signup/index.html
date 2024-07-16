@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - SportFolio</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="../assets/logo.png" alt="SportFolio Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#about">Sobre Nós</a></li>
+                    <li><a href="../index.html#features">Funcionalidades</a></li>
+                    <li><a href="../index.html#contact">Contato</a></li>
+                    <li><a href="../login/index.html">Login</a></li>
+                    <li><a href="index.html">Cadastro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="signup" class="signup">
+        <div class="container">
+            <div class="form-container">
+                <form action="../signup.php" method="post">
+                    <h2>Cadastro</h2>
+                    <input type="text" name="username" placeholder="Nome de usuário" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Senha" required>
+                    <button type="submit">Cadastrar</button>
+                </form>
+                <div class="alternative-login">
+                    <p>Ou acesse com</p>
+                    <button class="google-login">Google</button>
+                    <button class="facebook-login">Facebook</button>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="../assets/logo2.png" alt="Signup Image">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
