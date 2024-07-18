@@ -32,13 +32,14 @@ body {
   }
 
   input {
+    display: flex;
     background-color: #FBFBFB;
     width: 90%;
     height: 50px;
     border-radius: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
-    margin-left: 30px;
+    margin-left: 15px;
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -61,15 +62,21 @@ body {
   }
 
   button {
+    display: flex;
+    align-items: center;
     background-color: #26a576; /* Cor de fundo */
-    color: white; /* Cor do texto */
+    color: white; /*Cor do texto */
     padding: 12px 28px; /* Espaçamento interno */
     font-size: 20px; /* Tamanho da fonte */
     border-radius: 8px; /* Cantos arredondados */
     border: 2px solid #1a4423;
-    transform: translateX(153%);
+    transform: translateX(87%);
     margin-top: 20px;
+    text-decoration: none;
   }
   
+  a{
+    text-decoration: none;
+  }
   
   
