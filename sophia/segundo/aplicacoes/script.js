@@ -207,6 +207,7 @@ const organicItems = [
         "cascas de araçá", "casca de araçá", "pele de araçá",
 ];
 
+// Lista de cores das lixeiras
 const binColors = {
     azul: "Recicláveis (Papel/Papelão)",
     vermelho: "Recicláveis (Plástico)",
@@ -225,12 +226,12 @@ document.getElementById('search-form').addEventListener('submit', function(event
     var input = document.querySelector('.input-box').value.toLowerCase(); // Obtém o valor da entrada e converte para minúsculas
     var results = document.getElementById('results'); // Obtém a seção de resultados
 
-  
+    // Limpa resultados anteriores
     results.innerHTML = '';
 
     var resultItem = document.createElement('div');
     
-   
+    // Verifica se o item digitado é reciclável ou orgânico
     if (recyclableItems[input]) {
         const binColor = recyclableItems[input];
         resultItem.innerHTML = `
@@ -254,5 +255,6 @@ document.getElementById('search-form').addEventListener('submit', function(event
 
     results.appendChild(resultItem);
 
+    // Limpa o campo de entrada
     document.querySelector('.input-box').value = '';
 });
