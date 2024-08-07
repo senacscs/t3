@@ -1,0 +1,24 @@
+html{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color:#c99196;
+  }
+  h1{
+    color:#451414;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45px;
+  }
+  p{
+    font-family: 'Courier New', Courier, monospace;
+  }
+  h2{
+    font-family: 'Courier New', Courier, monospace;
+    color:#451414;
+  }
+  button {
+    background-color: #451414;
+    color:rgb(255, 255, 255);
+    border: 0;
+    padding: 15px 32px;
+    border-radius: 5px;
+  }
