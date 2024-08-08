@@ -14,13 +14,13 @@
     {
         "name": "Site do Projeto",
         "desc": "Site do Projeto Prazo-zero.",
-        "link": "https://prazozeroweb.vercel.app/",
+        "link": "./segundo/aplicacao/",
         "date": "11/07/2024"
     },
     {
         "name": "Aplicação do Projeto",
         "desc": "Aplicação do Projeto Prazo-zero.",
-        "link": "https://prazozero.vercel.app/login",
+        "link": "./segundo/projeto/",
         "date": "18/07/2024"
     }
 ]
