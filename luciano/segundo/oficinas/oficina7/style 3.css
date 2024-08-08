@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+section{
+    display: block;
+    overflow-y: scroll;
+    max-height: 70vh;
+}
+
+input {
+    border-radius: 6px;
+}
+
+#content{
+    background-color: rgba(238, 205, 162, 0.481);
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    max-height: 80vh;
+}
+.product{
+    background-color: rgba(0, 0, 0, 0.029);
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+section::-webkit-scrollbar {
+    width: 12px; /* largura da scrollbar */
+  }
+  
+  section::-webkit-scrollbar-thumb {
+    background-color: #888; /* cor de fundo do thumb */
+    border-radius: 6px; /* bordas arredondadas */
+  }
+  
+  /* Estilo para o thumb quando estiver hover */
+  section::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* cor de fundo do thumb quando hover */
+  }
+  
+  /* Estilo para o track (a pista da scrollbar) */
+  section::-webkit-scrollbar-track {
+    background-color: transparent; /* cor de fundo da pista */
+  }
+  
+  /* Estilo para o track quando estiver hover */
+  section::-webkit-scrollbar-track:hover {
+    background-color: transparent; /* cor de fundo da pista quando hover */
+  }
+  
+  /* Estilo para o corner (canto da scrollbar) */
+  ::-webkit-scrollbar-corner {
+    background-color: transparent; /* cor de fundo do canto */
+  }
