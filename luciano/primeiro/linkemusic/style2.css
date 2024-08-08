@@ -1,0 +1,470 @@
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+  
+  :root {
+    --card-height: 65vh;
+    --card-width: calc(var(--card-height) / 1.5);
+  }
+
+  @font-face {
+    font-family: 'Bangers';
+    src: url('Bangers-Regular.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+  
+  
+  body {
+    min-height: 100vh;
+    background: #2b2134;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+  }
+  
+  
+  .card {
+    background: #191c29;
+    width: var(--card-width);
+    height: var(--card-height);
+    padding: 3px;
+    position: relative;
+    left: -400px;
+    top: 100px;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 1.5em;
+    color: rgb(88 199 250 / 0%);
+    cursor: pointer;
+    font-family: cursive;
+  }
+  
+  .card2 {
+    background: #191c29;
+    width: var(--card-width);
+    height: var(--card-height);
+    padding: 3px;
+    position: relative;
+    left: 0px;
+    top: -300px;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 1.5em;
+    color: rgb(88 199 250 / 0%);
+    cursor: pointer;
+    font-family: cursive;
+  }
+
+  .card3 {
+    background: #191c29;
+    width: var(--card-width);
+    height: var(--card-height);
+    padding: 3px;
+    position: relative;
+    left: 400px;
+    top: -700px;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 1.5em;
+    color: rgb(88 199 250 / 0%);
+    cursor: pointer;
+    font-family: cursive;
+  }
+
+  .card:hover {
+    color: rgb(88 199 250 / 100%);
+    transition: color 1s;
+  }
+  .card:hover:before, .card:hover:after {
+    animation: none;
+    opacity: 0;
+  }
+
+
+  .card2:hover {
+    color: rgb(88 199 250 / 100%);
+    transition: color 1s;
+  }
+  .card2:hover:before, .card:hover:after {
+    animation: none;
+    opacity: 0;
+  }
+
+  .card3:hover {
+    color: rgb(88 199 250 / 100%);
+    transition: color 1s;
+  }
+  .card3:hover:before, .card:hover:after {
+    animation: none;
+    opacity: 0;
+  }
+
+
+
+
+  
+  
+  .card:before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate)
+      , #78609f, #6324c2 43%, #3f1185);
+      position: absolute;
+      z-index: -1;
+      top: -1%;
+      left: -2%;
+      animation: spin 2.5s linear infinite;
+  }
+  
+  .card::after {
+    position: absolute;
+    content: "";
+    top: calc(var(--card-height) / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--card-height) / 6));
+    background-image: linear-gradient(
+      var(--rotate)
+      , #78609f, #6324c2 43%, #3f1185);
+      opacity: 1;
+    transition: opacity .5s;
+    animation: spin 2.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+  
+  a {
+    color: #212534;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+
+
+
+
+  .card2:before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate)
+      , #78609f, #6324c2 43%, #3f1185);
+      position: absolute;
+      z-index: -1;
+      top: -1%;
+      left: -2%;
+      animation: spin 2.5s linear infinite;
+  }
+  
+  .card2::after {
+    position: absolute;
+    content: "";
+    top: calc(var(--card-height) / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--card-height) / 6));
+    background-image: linear-gradient(
+      var(--rotate)
+      , #78609f, #6324c2 43%, #3f1185);
+      opacity: 1;
+    transition: opacity .5s;
+    animation: spin 2.5s linear infinite;
+  }
+
+  
+
+  
+
+
+  .card3:before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate)
+      , #78609f, #6324c2 43%, #3f1185);
+      position: absolute;
+      z-index: -1;
+      top: -1%;
+      left: -2%;
+      animation: spin 2.5s linear infinite;
+  }
+  
+  .card3::after {
+    position: absolute;
+    content: "";
+    top: calc(var(--card-height) / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--card-height) / 6));
+    background-image: linear-gradient(
+      var(--rotate)
+      , #78609f, #6324c2 43%, #3f1185);
+      opacity: 1;
+    transition: opacity .5s;
+    animation: spin 2.5s linear infinite;
+  }
+
+
+
+
+
+.estab{
+    color: white;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 800px;
+    font-family: 'Bangers';
+    font-size: 30px;
+    -webkit-text-stroke: 1px #191c29;
+}
+
+
+
+
+  
+.prod{
+    color: white;
+    position: absolute;
+    margin-left: -1px;
+    margin-top: 130PX;
+    font-family: 'Bangers';
+    font-size: 30px;
+    -webkit-text-stroke: 1px #191c29;
+}
+
+
+
+.art{
+    color: white;
+    position: absolute;
+    margin-left: -800px;
+    margin-top: 130PX;
+    font-family: 'Bangers';
+    font-size: 30px;
+    -webkit-text-stroke: 1px #191c29;
+}
+
+
+.linke{
+    color: white;
+    position: absolute;
+    margin-left: 0px;
+    margin-top: -10PX;
+    font-family: 'Bangers';
+    font-size: 80px;
+    -webkit-text-stroke: 1px #191c29;
+}
+
+
+
+
+
+
+
+
+
+.shadow__btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    position: absolute;
+    left: 165px;
+    top: 450px;
+  }
+  
+  .shadow__btn {
+    background: rgb(132, 0, 255);
+    box-shadow: 0 0 25px rgb(132, 0, 255);
+  }
+  
+  .shadow__btn:hover {
+    box-shadow: 0 0 5px rgb(132, 0, 255),
+                0 0 25px rgb(132, 0, 255),
+                0 0 50px rgb(132, 0, 255),
+                0 0 100px rgb(132, 0, 255);
+  }
+
+
+
+
+
+  .shadow__btn2 {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    position: absolute;
+    left: 565px;
+    top: 450px;
+  }
+  
+  .shadow__btn2 {
+    background: rgb(132, 0, 255);
+    box-shadow: 0 0 25px rgb(132, 0, 255);
+  }
+  
+  .shadow__btn2:hover {
+    box-shadow: 0 0 5px rgb(132, 0, 255),
+                0 0 25px rgb(132, 0, 255),
+                0 0 50px rgb(132, 0, 255),
+                0 0 100px rgb(132, 0, 255);
+  }
+
+
+
+
+
+  .shadow__btn3 {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    position: absolute;
+    left: 965px;
+    top: 450px;
+  }
+  
+  .shadow__btn3 {
+    background: rgb(132, 0, 255);
+    box-shadow: 0 0 25px rgb(132, 0, 255);
+  }
+  
+  .shadow__btn3:hover {
+    box-shadow: 0 0 5px rgb(132, 0, 255),
+                0 0 25px rgb(132, 0, 255),
+                0 0 50px rgb(132, 0, 255),
+                0 0 100px rgb(132, 0, 255);
+  }
+
+
+
+
+
+
+
+
+
+  .font2 {
+    font-family: Bangers;
+  }
+
+  
+
+
+
+  .img1 {
+    width: 220px;
+    top: 250px;
+    position: absolute;
+  }
+
+
+
+  .img2 {
+    width: 220px;
+    top: 220px;
+    position: absolute;
+    left: 125px;
+  }
+
+
+  .img3 {
+    width: 220px;
+    top: 220px;
+    position: absolute;
+    left: 920px;
+  }
+
+
+
+  .shadow__btn4 {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    position: absolute;
+    left: 550px;
+    top: 650px;
+  }
+  
+  .shadow__btn4 {
+    background: rgb(132, 0, 255);
+    box-shadow: 0 0 25px rgb(132, 0, 255);
+  }
+  
+  .shadow__btn4:hover {
+    box-shadow: 0 0 5px rgb(132, 0, 255),
+                0 0 25px rgb(132, 0, 255),
+                0 0 50px rgb(132, 0, 255),
+                0 0 100px rgb(132, 0, 255);
+  }
