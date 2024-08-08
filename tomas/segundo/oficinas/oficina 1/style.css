@@ -1,0 +1,39 @@
+body {
+background-color: bisque;
+}
+
+button{
+    background-color: aliceblue;
+    border: 1px solid black;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 40px 40px black inset;
+    color: white;
+    animation: hetAnim 5s infinite;
+}
+
+@keyframes hetAnim{
+    0%{
+        border: 3px solid;
+        border-color: rgb(63, 63, 63);
+    }
+    25%{
+        border: 3px solid;
+        border-color: rgb(189, 189, 189);
+    }
+    50%{
+        border: 3px solid;
+        border-color: rgb(63, 63, 63);
+    }
+    75%{
+        border: 3px solid;
+        border-color: rgb(189, 189, 189);
+    }
+    100%{
+        border: 3px solid;
+        border-color: rgb(63, 63, 63);
+    }
+}

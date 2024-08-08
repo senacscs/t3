@@ -1,0 +1,66 @@
+<!DOCTYPE html> /*Declara o tipo de documento como HTML5. <!--Declara o tipo de documento como HTML5.
+-->
+<html lang="pt"> <!--Define o idioma do documento como português.-->
+<head> <!--Contém metadados e links para recursos externos.-->
+    <meta charset="UTF-8"> <!--Define a codificação de caracteres como UTF-8.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Configura a visualização responsiva em dispositivos diferentes.-->
+    <title>Relógio</title> <!--Define o título da página.-->
+    <link rel="stylesheet" href="style.css"> <!--Vincula uma folha de estilo externa chamada "style.css".-->
+</head> <!--Contém metadados e links para recursos externos.-->
+<body> <!--Contém o conteúdo visível da página.-->
+<h1>Horário Atual</h1> <!--Um cabeçalho indicando que o conteúdo a seguir trata do horário atual.-->
+    <div class="clock-container"> <!--Uma div que envolve o conteúdo principal.-->
+        <div class="location" id="location">Brasília</div> <!--Exibe a localização atual, inicialmente como "Brasília".-->
+        <div id="clock"></div> <!-- O elemento que exibirá o relógio digital.-->
+        <div id="time-difference"></div> <!--Mostra a diferença de tempo entre Brasília e Nova Iorque.-->
+        <button onclick="toggleTimeZone()">Alternar Fuso Horário</button> <!--Um botão que, quando clicado, alterna entre os fusos horários do Brasil e dos Estados Unidos.-->
+    </div>
+    <script> 
+      let isBrazilTime = true; 
+        function formatTime(date, timeZone) { 
+            const options = { hour: 'numeric', minute: 'numeric', second: 'numeric', timeZone };
+            return new Intl.DateTimeFormat('pt-BR', options).format(date);
+        }
+
+        function updateClock() {
+            const clockElement = document.getElementById('clock');
+            const locationElement = document.getElementById('location');
+            const timeDifferenceElement = document.getElementById('time-difference');
+            const now = new Date();
+
+            if (isBrazilTime) {
+                clockElement.textContent = formatTime(now, 'America/Sao_Paulo');
+                locationElement.textContent = 'Brasília';
+
+                const usTime = new Date().toLocaleString('en-US', { timeZone: 'America/New_York' });
+                timeDifferenceElement.textContent = `Diferença com os Estados Unidos: ${calculateTimeDifference(now, new Date(usTime))}`;
+            } else {
+                clockElement.textContent = formatTime(now, 'America/New_York');
+                locationElement.textContent = 'Estados Unidos';
+
+                const brasiliaTime = new Date().toLocaleString('America/Brasilia', { timeZone: 'America/Sao_Paulo' });
+                timeDifferenceElement.textContent = `Diferença com Brasília: ${calculateTimeDifference(now, new Date(brasiliaTime))}`;
+            }
+        }
+
+        function toggleTimeZone() {
+            isBrazilTime = !isBrazilTime;
+            updateClock();
+        }
+
+        function calculateTimeDifference(date1, date2) {
+            const difference = date1.getTime() - date2.getTime();
+            const sign = (difference >= 0) ? 'à frente' : 'atrás'; // Corrigido aqui
+            const absDifference = Math.abs(difference);
+
+            const hoursDifference = Math.floor(absDifference / (1000 * 60 * 60));
+            const minutesDifference = Math.floor((absDifference % (1000 * 60 * 60)) / (1000 * 60));
+
+            return `${hoursDifference} horas e ${minutesDifference} minutos ${sign}`;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();  
+    </script> <!--Fim do bloco de script-->
+</body>
+</html>
