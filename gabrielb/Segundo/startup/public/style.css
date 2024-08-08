@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+    line-height: 1.4;
+  }
+  
+  html, body {
+    height: 100%;
+    min-height: 100%;
+    font-family: Roboto, sans-serif;
+    background-image: url(./assets/smallerAndromeda-56a8ccf15f9b58b7d0f544fa.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  h1{
+    border: #ffffff;
+    background-color: #545454;
+    font-size: 50px;
+    width: 800px;
+    margin-top: 300px;
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    color: white;
+  }
+
+  main {
+    padding-top: 10px;
+    margin-right: -8px;
+    margin-left: -10px;
+    margin-top: 500px;
+    font-family: arial;
+    background: #150d1a;
+    min-height: 100%;
+  }
+  
+  .card {
+    padding-top: 10px;
+    opacity: 50%;
+    padding: 16px;
+    margin: 24px;
+    border-radius: 10px;
+    background-color: #000000;
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  }
+  .card .card-title, h2 {
+    padding: 24px 16px 8px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: white;
+  }
+  .card p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 1.6em;
+    padding: 0 16px;
+    color: white;
+  }
+
+  @media screen and (max-width: 460px){
+    main{
+      width: 830px;
+      position: absolute;
+      left: 0%;
+    }
+  }
+
+  /* .spare{
+    
+  } */
