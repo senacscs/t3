@@ -14,13 +14,13 @@
     {
         "name": "Site do Projeto",
         "desc": "Site do Projeto Prazo-zero.",
-        "link": "./segundo/aplicacao/",
+        "link": "./segundo/projeto/",
         "date": "11/07/2024"
     },
     {
         "name": "Aplicação do Projeto",
         "desc": "Aplicação do Projeto Prazo-zero.",
-        "link": "./segundo/projeto/",
+        "link": "./segundo/aplicacao/",
         "date": "18/07/2024"
     }
 ]
