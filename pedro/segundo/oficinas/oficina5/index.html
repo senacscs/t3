@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=tdrtc.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    
+}
+html {
+    background-color: rgb(226, 30, 30);
+    background-size: cover;
+   
+}
+
+nav {
+    text-align: center;
+    margin-top: 50px;
+
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    font-size: 25pt;
+    position: relative;
+    
+}
+
+nav a::after{
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color:rgb(44, 10, 165);
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    right: 11%;
+    transition: 0.5s ease-in-out;
+}
+
+nav a:hover::after {
+    width: 90%;
+    
+}
+
+</style>
+<body>
+    <nav>
+        <a href=" ">Objetivo</a><br>
+        <a href=" ">solução</a><br>
+        <a href=" ">Problema</a><br>
+        <a href=" ">Metodologia</a><br>
+        
+
+    </nav>
+</body>
+</html>
