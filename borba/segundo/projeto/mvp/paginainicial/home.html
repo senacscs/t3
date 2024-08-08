@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar__left">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <div class="search-box">
+                <input type="text" placeholder="Search">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+        <div class="navbar__right">
+            <a href="#">Home</a>
+            <a href="#">My Network</a>
+            <a href="#">Jobs</a>
+            <a href="#">Messaging</a>
+            <a href="#">Notifications</a>
+            <a href="#"><img class="perfilicon" src="../assets/perfilicon.png" alt="Profile"></a>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Sidebar Left -->
+        <aside class="sidebar-left">
+            <div class="profile">
+                <img src="../assets/perfilicon.png" alt="Profile">
+                <h2>Rayan Walton</h2>
+                <p>Web Developer at Microsoft</p>
+            </div>
+            <div class="stats">
+                <p>Your profile views <span>52</span></p>
+                <p>Your post views <span>810</span></p>
+                <p>Your connections <span>205</span></p>
+            </div>
+            <button class="btn-primary">My items</button>
+            <button class="btn-secondary">Try Premium</button>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="new-post">
+                <div class="new-post__input">
+                    <img src="profile-pic.jpg" alt="Profile">
+                    <input type="text" placeholder="Write a post">
+                </div>
+                <div class="new-post__actions">
+                    <button><i class="fas fa-photo-video"></i> Photo</button>
+                    <button><i class="fas fa-video"></i> Video</button>
+                    <button><i class="fas fa-calendar-alt"></i> Event</button>
+                </div>
+            </div>
+
+            <!-- Post Section -->
+            <section class="posts">
+                <div class="post">
+                    <div class="post__header">
+                        <img src="profile-pic.jpg" alt="Profile">
+                        <div>
+                            <h3>Benjamin Leo</h3>
+                            <p>Founder and CEO at Gellelio Group</p>
+                            <span>2 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="post__body">
+                        <p>The success of every website depends on search engine optimisation and digital marketing strategy...</p>
+                        <img src="post-image.jpg" alt="Post Image">
+                    </div>
+                    <div class="post__footer">
+                        <button><i class="fas fa-thumbs-up"></i> Like</button>
+                        <button><i class="fas fa-comment"></i> Comment</button>
+                        <button><i class="fas fa-share"></i> Share</button>
+                    </div>
+                </div>
+                <!-- Add more posts as needed -->
+            </section>
+        </main>
+
+        <!-- Sidebar Right -->
+        <aside class="sidebar-right">
+            <div class="trending">
+                <h3>Trending News</h3>
+                <ul>
+                    <li>High demand for skilled manpower <span>1d ago • 10,934 readers</span></li>
+                    <li>Careers growing horizontally too <span>19h ago • 1,552 readers</span></li>
+                    <li>Less work visa for US, more for UK <span>1d ago • 27,290 readers</span></li>
+                    <li>More hiring = higher confidence? <span>18h ago • 8,208 readers</span></li>
+                    <li>Gautam Adani is the world's third richest <span>12h ago • 4,205 readers</span></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

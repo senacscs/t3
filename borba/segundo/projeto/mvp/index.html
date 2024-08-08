@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportFolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-section">
+            <img src="assets/Sportfolio.png" alt="Logo SportFolio">
+            <p>O SportFolio é uma plataforma dedicada a aumentar a visibilidade e oportunidades de carreira para atletas brasileiros de todas as modalidades.</p>
+        </div>
+        <div class="login-section">
+            <form id="login-form">
+                <div class="form-group">
+                    <input type="text" id="login-contact" name="login-contact" placeholder="Celular ou email">
+                    <span id="login-contact-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="login-password" name="login-password" placeholder="Senha">
+                    <span id="login-password-error" class="error-message"></span>
+                </div>
+                <button type="submit">Entrar</button>
+            </form>
+            <button id="create-account-btn">Criar nova conta</button>
+            <!-- Aqui vamos adicionar o contêiner do formulário de cadastro -->
+            <div id="signup-form-container" class="hidden">
+                <div id="signup-form-close" class="close-btn">&times;</div>
+                    <form id="signup-form">
+                    <h2>Cadastre-se</h2>
+                    <p>É rápido e fácil.</p>
+                    <div class="input-container">
+                        <input type="text" id="first-name" placeholder="Nome" required>
+                        <span class="error-message" id="first-name-error"></span>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="last-name" placeholder="Sobrenome" required>
+                        <span class="error-message" id="last-name-error"></span>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="contact" placeholder="Celular ou email" required>
+                        <span class="error-message" id="contact-error"></span>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" id="password" placeholder="Nova senha" required>
+                        <span class="error-message" id="password-error"></span>
+                    </div>
+                    <label>Data de nascimento</label>
+                    <div class="birthdate-selects">
+                        <select id="day-select"><option value="">Dia</option></select>
+                        <select id="month-select"><option value="">Mês</option></select>
+                        <select id="year-select"><option value="">Ano</option></select>
+                        <span class="error-message" id="birthdate-error"></span>
+                </div>
+                    <label>Gênero</label>
+                    <div class="gender-options">
+                    <input type="radio" name="gender" value="Feminino"> Feminino
+                    <input type="radio" name="gender" value="Masculino"> Masculino
+                    <input type="radio" name="gender" value="Outro"> Outro
+                    <span id="gender-error" class="error-message"></span>
+                </div>
+                    <p class="terms">
+                        Ao clicar em Cadastre-se, você concorda com nossos <a href="#">Termos</a>, <a href="#">Política de Privacidade</a> e <a href="#">Política de Cookies</a>.
+                    </p>
+                    <button type="submit">Cadastre-se</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Português (Brasil)</p>
+        <p>Todos direitos reservados a SportFolio</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
