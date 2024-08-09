@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+}
+
+* {
+    color: white;
+    font-size: 25px;
+    font-family: 'Chakra Petch', sans-serif;
+    margin: 10px;  
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap');
+
+textarea {
+    color: black;
+}
+
+table {
+    border: 0.3vw solid black;
+}
+img {
+    width: 200px;
+    padding: 40px;
+   
+}
+.imagens {
+    text-align: auto;
+}
