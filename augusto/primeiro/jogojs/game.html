@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="area">
+            <div id="player">
+                <div id="counter">
+                </div>
+                <div id="laser" class="hidden"></div>
+                <img id="gun" src="./assets/arma-bola/1.png">
+                <img src="./assets/earth.png" alt="earth" id="earth" class="rotating">
+                <img src="./assets/bullet.png" alt="bullet" id="bullet">
+            </div>
+            <div id="gameover" class="hidden">
+                <h1>Você Morreu</h1>
+                <h2>Asteroides Destruídos: <span id="over-count"></span></h2>
+                <a href="./game.html">Tentar Novamente!</a>
+            </div>
+    </div>
+    <audio loop autoplay style="display: none;" id="gameaudio">
+        <source src="./assets/game.wav" type="audio/wav">
+    </audio>
+    <script src="script.js"></script>
+</body>
+
+
+</html>

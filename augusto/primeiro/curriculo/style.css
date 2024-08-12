@@ -1,0 +1,58 @@
+body{
+    background: rgb(88, 67, 185);
+    font: normal 15pt Arial;
+  
+}
+
+header{
+    color: white;
+    text-align: center;
+
+}
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px  rgba(0, 0, 0, 0.37);
+
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    line-height: 1.5;
+
+}
+
+.img2{
+    border-radius: 50%;
+    width: 27%;    
+}
+
+img {
+  width: 5vh;
+  
+}
+
+div{
+  text-align: center;
+  
+}
+
+h2{
+   text-align: center;
+   line-height: 1.5;
+  
+}
+
+p{
+   text-align: left;
+  
+}
+
+
+
