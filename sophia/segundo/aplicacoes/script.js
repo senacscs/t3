@@ -16,7 +16,7 @@ const recyclableItems = {
     plástico: "vermelho",
     plastico: "vermelho",
     "garrafas PET": "vermelho",
-    "garrafa PET": "vermelho",
+    "garrafinha": "vermelho",
     PET: "vermelho",
     "embalagens de plástico": "vermelho",
     "embalagem de plástico": "vermelho",
