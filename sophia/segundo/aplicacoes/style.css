@@ -8,8 +8,8 @@ body, html {
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    background: url('imagens.jpg') center center no-repeat;
     background-size: cover;
+    background-color: rgb(105, 233, 59);
 }
 
 .container {
