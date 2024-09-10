@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Aplicação</title>
 </head>
@@ -20,7 +21,13 @@
                 <a href="sobre.html">Sobre</a>
                 <a href="servicos.html">Serviços</a>
                 <a class="btn" href="contato.html">Contato</a>
+                <div class="close-icon" onclick="closeMenu()">
+                  <i class="fa fa-times-circle"></i>
+                </div>
              </ul>
+             <div class="menu-icon" onclick="openMenu()">
+              <i class="fa fa-bars" ></i>
+             </div>
           </nav>
           <section class="banner">
             <div class="banner-text">
@@ -144,5 +151,33 @@
            </div>
        </div>
      </section>
+<!--  -->
+<section class="sobre-nos">
+  <div class="container">
+    <div class="sobre-nos-text">
+     <h3>Mais informações</h3>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ex temporibus nobis.
+        Neque velit dolores aut consequuntur nesciunt ratione, reiciendis ut corporis eveniet iusto porro fugiat nulla! Fugit, eveniet amet.</p>
+    </div>
+    <!-- <a href="http://" class="">saber mais </a> -->
+    <div class="sobre-nos-img">
+     <img src="img/security.png" alt="img">
+    </div>
+  </div>
+
+ </section>
+<!--  -->
+ <footer class="footer">
+  <div class="conteiner">
+    <div class="links">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+      <!-- <a href="#"><i class="fa fa-linkdin"></i></a> -->
+    </div>
+    <p> Desenvolvido por Isadora Kroth</p>
+  </div>
+ </footer>
+ <script src="script.js"></script>
 </body>
 </html>
