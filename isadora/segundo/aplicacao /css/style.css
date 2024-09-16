@@ -92,12 +92,35 @@ nav .close-icon{
     font-size: 30px;
     color: white;
 }
+/*  */
+.banner-ajuste{
+    display: flex;
+    justify-content: center;
+}
+.banner-ajuste .banner-text{
+    margin: 50px;
+    text-align: center;
+    padding: 0 60px;
+}
+.banner-ajuste .banner-text h1{
+    font-size: 96px;
+    color: white;
+}
+.banner-ajuste .banner-text p{
+    font-size: 20px;
+    color: #ffffffb7;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+/*  */
+
 .banner{
     display: flex;
     justify-content: center;
 }
+
 .banner .banner-text{
-    margin: 100px;
+    margin: 150px;
     text-align: center;
     padding: 0 90px;
 }
@@ -214,7 +237,101 @@ nav .close-icon{
     margin-top: 10px;
     color: white;
 }
-/*  */
+/* Página sobre */
+.sobre .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sobre .sobre-text{
+    width: 50%;
+    padding-right: 40px;
+}
+.sobre .sobre-text p{
+    margin: 18px 0;
+    color: #000000a6;
+}
+.sobre .sobre-img{
+    width: 50%;
+}
+.sobre .sobre-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+/* fim Página sobre */
+/* Página serviços */
+.servicos h3 {
+    text-align: center;
+}
+
+.servicos .container > p {
+    text-align: center;
+}
+
+.servicos .rows-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    margin: 20px;
+}
+
+.servicos .row-card-item {
+    background-color: #d3e6fd;
+    width: 350px;
+    padding: 20px;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.servicos .row-card-item:hover {
+    background-color: #4f9cf9;
+}
+
+.servicos .row-card-item img {
+    background-color: #4f9cf9;
+    border-radius: 14px;
+    width: 70px;
+    padding: 9px;
+}
+.servicos .row-card-item p .nome-servico{
+    margin: 5px 0;
+    transform: 0.3s;
+}
+/* dados */
+.dados{
+    background: #d3e6fd;
+}
+.dados .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.dados .dados-item{
+    text-align: center;
+    margin: 15px;
+    color: #000000be;
+}
+.dados .dados-item img{
+    background-color: #4f9cf9;
+    border-radius: 14px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 80px;
+}
+.dados .dados-item p{
+    font-size: 18px;
+}
+.dados .dados-item p strong{
+    font-size: 28px;
+}
+
+.contato h3{
+    text-align: center;
+    margin: 15px;
+}
+/* fim Página serviços */
+
 @media(max-width: 830px){
    /* menu */
    .ul{
