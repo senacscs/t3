@@ -1,51 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto</title>
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-  
+    <title>App A300 - Organize sua Rotina</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #ff4040; /* Cor vermelha favorita */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out; /* Animação */
+        }
+        nav {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            animation: fadeIn 2.5s ease-in-out; /* Animação */
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+            padding: 10px 0;
+        }
+        nav a:hover {
+            color: #ff4040; /* Cor ao passar o mouse */
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+            opacity: 0;
+            animation: fadeInUp 1s ease-in-out forwards; /* Animação */
+        }
+        .content {
+            max-width: 1200px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeInUp 1.5s ease-in-out forwards; /* Animação */
+        }
+
+        /* Definição das animações */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Aplicativo das distrações A300</h1>
-<h2>Pedro Trindade</h2>
-    <h1>Problema: Tempo de distrações, informações sobre o tempo clima e a falta de atenção.</h1>
+
+<header>
+    <h1>App A300</h1>
+    <p>Simplifique sua rotina com organização e produtividade</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#sobre">Sobre Nós</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<section id="home" class="content">
+    <h2>Bem-vindo ao App A300!</h2>
+    <p>Com o A300, você gerencia suas tarefas diárias, compromissos e horários de forma eficiente. Transforme sua rotina em uma experiência mais organizada e produtiva.</p>
+</section>
+
+<section id="referencial" class="content">
+    <h2>Referencial Teórico</h2>
     <p>Eu pensei em criar um aplicativo que evita distrações, e que as pessoas tenham atenção em seus deveres diários como trabalhar e estudar.
-        Ele irá dizer que horas você terá que estudar ou trabalhar, hora de dormir, as tarefas domésticas diárias, passear com o cachorro, previsão do tempo, e se tu tem que obrigatoriamente fazer alguma coisa ele vai avisar e será desligado remotamente e quando tu terminar seus afazeres ele automaticamente vai se desbloquear novamente.
-    </p>
-    <a href="https://www.bbc.com/portuguese/vert-cap-44501724" target="_blank">Link do Site</a>
-    <h1>Aplicativos que ajudam na rotina matinal</h1>
-    <p></p> 
-        <a href="https://br.top10answers.com/web?q=aplicativos+para+organizar+tarefas&o=1672664&rch=ch469&clid=amg-top10answers&utm_source=g&utm_medium=gcpc&ct=10007&campaignid=8318682224&agid=88307890551&adid=400601449195&kwid=kwd-347664708236&gclid=EAIaIQobChMIufC4iLP6gQMVXVRIAB3wZQT4EAAYASAAEgKBJPD_BwE&qo=semQuery&ag=fw4&tt=rmd&ad=semA&akid=1_8318682224_88307890551_kwd-347664708236_g&an=google_s" target="_blank">Link do Site</a>
+        Ele irá dizer que horas você terá que estudar ou trabalhar, hora de dormir, as tarefas domésticas diárias, passear com o cachorro, previsão do tempo, e se tu tem que obrigatoriamente fazer alguma coisa ele vai avisar e será desligado remotamente e quando tu terminar seus afazeres ele automaticamente vai se desbloquear novamente.</p>
+</section>
 
-<h1>Problema: Esquecimento de atividades.</h1>
-<p>O esquecimento pode levar a ter uma perda cognitiva e não demencial e isso afeta muito as pessoas que esquecem afazeres importantes. Muitos ocorrem a escolha médica por segurança por causa das primeiras fases do Alzheimer. Eu acho que o aplicativo vai ajudar também nesta questão de esquecimento de atividades e não só atividades escolares e sim também as domésticas.
-<p href="https://repositorio.unesp.br/server/api/core/bitstreams/275ab89c-e67b-49b4-a090-1d32d73a2080/content" target="_blank">Link do Site</a>
+<section id="metodologia" class="content">
+    <h2>Metodologia</h2>
+    <p>Ele irá dizer que horas você terá que estudar ou trabalhar, hora de dormir, as tarefas domésticas diárias, passear com o cachorro, previsão do tempo, e se tu tem que obrigatoriamente fazer alguma coisa ele vai avisar e será desligado remotamente e quando tu terminar seus afazeres ele automaticamente vai se desbloquear novamente. </p>
+</section>
 
-<h1>Construção do “Brefing” do meu aplicativo:</h1>
+<section id="problema" class="content">
+    <h2>Problema: Esquecimento de atividades </h2>
+    <p>O esquecimento pode levar a ter uma perda cognitiva e não demencial e isso afeta muito as pessoas que esquecem afazeres importantes. Muitos ocorrem a escolha médica por segurança por causa das primeiras fases do Alzheimer. Eu acho que o aplicativo vai ajudar também nesta questão de esquecimento de atividades e não só atividades escolares e sim também as domésticas.!</p>
+</section>
 
-<p>Para a construção do meu app com a ajuda da minha professora Nêmora Francine Backes, pensamos em uma conversação de um cliente e de um vendedor e criador do app que sou eu.
-    O cliente poderá escolher as cores que desejar e também o formato de decoração. Se fizer sucesso, eu poderei vender para algum empresário interessado ou esperar algum investidor investir no meu negócio sempre que possível.
-</p>
+<section id="pesquisa" class="content">
+<h2>Pesquisa</h2>
+<p>Eu pesquisei baseado em outros apps de auto-ajuda que te ajuda nos afazeres domésticos como alarme na hora de acordar, etc. Ele ajudará que as pessoas ficam com um pouco mais de atenção em seus deveres diários de trabalhos e temas de escolas ou faculdades e claro nas horas de lazer e principalmente com a saúde. As pessoas precisam de ajuda nessa questão para não se perderem com certas coisas que a maioria são importantes até pra vida delas.</p>
+</section>
 
-<p>1 Etapa</p>
+<section id="resultados" class="content">
+<h2>Resultados esperados</h2>
+<p>Espero conseguir mudar a vida das pessoas através deste app e que ajude melhor e que a dificuldade diminua.</p></section>
+</section>
 
-<p>Na entrada do app, vai ter a entrada do usuário que tu poderá colocar o teu nome completo e teu email (pode ser quanto pessoal quanto profissional).</p>
 
-<h1>2 Etapa</h1>
+</body>
 
-<p>Depois de ter feito isso, tu poderá modifica-lo se quiser como por exemplo as cores ou o design das letras e dos números.</p>
 
-<p>3 Etapa</p>
+<footer>
+    <p>&copy; 2024 App A300. Todos os direitos reservados.</p>
+</footer>
 
-<p>Depois da modificação, tu pode organizar a forma dos horários como bem entender e como irá funcionar a rotina desde então.</p>
-</p>
-    
-<h1>Referências Multimodais:</h1>
-
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/7s27O0v26ME?si=xhn8k059EgTQLnl_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>    
- </body>
-    
+</body>
 </html>
-
