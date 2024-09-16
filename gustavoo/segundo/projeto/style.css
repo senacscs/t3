@@ -1,0 +1,180 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #e0f7fa;
+  color: #333;
+  padding-top: 70px; /* Ajusta o espaçamento para compensar o cabeçalho fixo */
+}
+
+/* Estilo da navegação */
+header {
+ box-shadow: 1px 1px 10px 5px #004d40ad;
+ background-color: #004d40;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  position: fixed; /* Torna o cabeçalho fixo */
+  width: 100%; /* Garante que o cabeçalho ocupe a largura total da página */
+  top: 0; /* Alinha o cabeçalho ao topo da página */
+  z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #b2dfdb;
+}
+
+/* Estilo das seções */
+section {
+  padding: 4rem 1rem; /* Aumentado o padding-top para compensar o cabeçalho fixo */
+  margin: 2rem auto;
+  max-width: 1000px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 75, 145, 0.1);
+  border-radius: 10px;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+  color: #00796b;
+  text-align: center;
+}
+
+section p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Estilo da seção inicial */
+#home {
+  text-align: center;
+}
+
+#home img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* Estilo do formulário de contato */
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #00796b;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #00796b;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+#contact-form button {
+  padding: 0.7rem;
+  background-color: #00796b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+  background-color: #004d40;
+}
+
+/* Estilo do rodapé */
+footer {
+  box-shadow: 1px 1px 10px 10px #004d40ad;
+  background-color: #004d40;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  section {
+    padding: 3rem 1rem; /* Ajustado para compensar o cabeçalho fixo */
+    margin: 1rem auto;
+  }
+
+  #contact-form input,
+  #contact-form textarea {
+    font-size: 0.9rem;
+  }
+
+  #contact-form button {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 0.5rem 0;
+  }
+
+  nav ul li {
+    margin: 0.3rem 0;
+  }
+
+  section {
+    padding: 2.5rem 0.5rem; /* Ajustado para compensar o cabeçalho fixo */
+    margin: 1rem auto;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  section p {
+    font-size: 0.9rem;
+  }
+}
