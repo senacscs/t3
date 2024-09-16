@@ -1,0 +1,254 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis de Cores */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --warning-color: #ffe3e3;
+    --near-expiry-color: #fff9e6;
+}
+
+/* Estilos Globais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Menu Lateral */
+nav.side-menu {
+    background-color: var(--primary-color);
+    color: white;
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Links do Menu */
+nav.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav.side-menu ul li {
+    margin: 15px 0;
+}
+
+nav.side-menu ul li a {
+    color: rgb(17, 16, 16);
+    text-decoration: none;
+    padding: 12px 20px;
+    display: block;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav.side-menu ul li a.active,
+nav.side-menu ul li a:hover {
+    background-color: var(--secondary-color);
+    transform: translateX(10px);
+}
+
+/* Conteúdo Principal */
+.content {
+    margin-left: 220px;
+    padding: 20px;
+    width: calc(100% - 220px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilo de Seções */
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 40px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Seções Inativas */
+.hidden {
+    display: none;
+}
+
+.active-section {
+    display: block;
+}
+
+/* Estilo de Formulários */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="checkbox"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="date"]:focus {
+    border-color: var(--primary-color);
+}
+
+form input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+/* Lista de Produtos */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Produtos a 10 dias do vencimento */
+li.ten-days {
+    background-color: #FFD700 !important; /* Amarelo ouro */
+    color: #000000 !important; /* Preto */
+    font-weight: bold !important;
+}
+
+/* Produtos Vencidos */
+li.expired {
+    background-color: #e62806 !important; /* Vermelho tomate */
+    color: #0a0909 !important; /* Branco */
+    font-weight: bold !important;
+}
+
+/* Produtos próximos do vencimento (menos de 10 dias) */
+li.near-expiry {
+    background-color: #FFA500 !important; /* Laranja */
+    color: #000000 !important; /* Preto */
+    font-weight: bold !important;
+}
+
+
+/* Avisos */
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notification-button {
+    background: none;
+    border: none;
+    width: 40px;
+    cursor: pointer;
+    font-size: 25px;
+    color: #eacc0d;
+    background-color: #fa0e0e;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: -40px;
+    margin-left: 550px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.notification-button:hover {
+    background-color: #fff9e6;
+    transform: scale(1.1);
+}
+
+.warning {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff3cd;
+    color: #856404;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: none;
+    position: absolute;
+    top: 120%;
+    right: 0;
+    transform: translateY(10px);
+    width: 300px;
+    z-index: 10;
+}
+
+.warning.visible {
+    display: block;
+}
+
+/* Estilos para a caixinha de seleção ao lado dos dois pontos */
+.checkbox-group {
+    margin-bottom: 12px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    margin-top: 0; /* Remove o espaço extra acima da caixa de seleção */
+    margin-bottom: 0; /* Remove o espaço extra abaixo da caixa de seleção */
+    transform: scale(1.2); /* Ajusta o tamanho da caixa de seleção, se necessário */
+}
+

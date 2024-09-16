@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Validade de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="side-menu">
+        <ul>
+            <li><a href="#" id="homeButton">Início</a></li>
+            <li><a href="#" id="productListButton">Lista de Produtos</a></li>
+            <li><a href="#" id="addProductButton">Cadastro de Produto</a></li>
+            <li><a href="#" id="expiredListButton">Produtos Vencidos</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <section id="home" class="active-section">
+            <h1>Bem-vindo ao Sistema de Controle de Validade</h1>
+            <div class="header">
+                <button class="notification-button" onclick="toggleWarning()">!</button>
+            </div>
+            <div class="warning" id="warning">
+                <ul id="nearExpiryList"></ul>
+            </div>
+        </section>
+
+        <section id="productList" class="hidden">
+            <h2>Lista de Produtos</h2>
+            <ul id="productListContent"></ul>
+        </section>
+
+        <section id="addProduct" class="hidden">
+            <h2>Cadastro de Produto</h2>
+            <form id="productForm">
+                <label for="productName">Nome do Produto:</label>
+                <input type="text" id="productName" required>
+
+                <label for="productExpiryDate">Data de Validade:</label>
+                <input type="date" id="productExpiryDate" required>
+
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" id="notifyBeforeExpiry">
+                        Notificar 10 dias antes do vencimento
+                        
+                    </label>
+                </div>
+
+                <button type="submit">Cadastrar Produto</button>
+            </form>
+        </section>
+
+        <section id="expiredList" class="hidden">
+            <h2>Produtos Vencidos</h2>
+            <ul id="expiredListContent"></ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
