@@ -27,25 +27,33 @@ p{
     padding: 0 5%;
 }
 
-.btn{
+.btn {
     background-color: #4f9cf9;
     color: white;
-    padding: 15px 20px;
-    border-radius: 10px ;
-    display: inline-block;
-    transition: 0.1s;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-.btn:hover{
+.btn:hover {
     background-color: #3580db;
 }
-/* @keyframes animate-outline {
-    from{
-        outline: 0px solid #4f9bf98a;
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
     }
-    to{
-    outline: 15px solid #4f9bf900;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
-} */
+}
+section {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
 header{
     background-position: center;
     background-size: cover;
@@ -55,7 +63,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 nav ul{
     display: flex;
@@ -98,7 +106,7 @@ nav .close-icon{
     justify-content: center;
 }
 .banner-ajuste .banner-text{
-    margin: 50px;
+    margin: 30px;
     text-align: center;
     padding: 0 60px;
 }
@@ -122,7 +130,7 @@ nav .close-icon{
 .banner .banner-text{
     margin: 150px;
     text-align: center;
-    padding: 0 90px;
+    padding: 0 80px;
 }
 .banner .banner-text h1{
     font-size: 96px;
@@ -221,10 +229,26 @@ nav .close-icon{
     justify-content: space-around;
 }
 /*  */
-.footer{
-    background-color: #4f9cf9;
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
     text-align: center;
 }
+
+.footer .links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+
+.footer p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
 .footer i{
     color: #4f9cf9;
     font-size: 19px;
@@ -246,17 +270,82 @@ nav .close-icon{
 .sobre .sobre-text{
     width: 50%;
     padding-right: 40px;
+    padding-top: 60px;
 }
-.sobre .sobre-text p{
-    margin: 18px 0;
-    color: #000000a6;
-}
+
 .sobre .sobre-img{
     width: 50%;
 }
 .sobre .sobre-img img{
     width: 100%;
     border-radius: 10px;
+}
+
+.sobre-text p {
+    line-height: 1.5;
+    font-size: 16px;
+    color: #333;
+    margin: 18px 5px;
+}
+/* Missão, Visão e Valores */
+.missao-valores {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.missao-valores .valores {
+    display: flex;
+    justify-content: space-around;
+}
+
+.missao-valores .valor {
+    background-color: #d3e6fd;
+    margin: 20px;
+    border-radius: 14px;
+    text-align: center;
+    height: 220px;
+}
+.missao-valores .valor i {
+    padding: 20px;
+    font-size: 50px;
+    color: #4f9cf9;
+}
+.missao-valores .valor h4 {
+    font-size: 22px;
+    color: #184d88;
+}
+.missao-valores .valor p {
+    color: #333;
+    line-height: 1.6;
+    padding: 8px 5px;
+}
+
+.linha-do-tempo {
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+    padding: 60px 0;
+    border-left: 4px solid #4f9cf9;
+}
+.linha-do-tempo .marco {
+    margin: 20px 0;
+    padding-left: 20px;
+    position: relative;
+}
+.linha-do-tempo .marco h4 {
+    font-size: 24px;
+    color: #184d88;
+    margin-bottom: 10px;
+}
+.linha-do-tempo .marco:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: #4f9cf9;
+    border-radius: 50%;
+    position: absolute;
+    left: -32px;
+    top: 5px;
 }
 /* fim Página sobre */
 /* Página serviços */
@@ -332,6 +421,8 @@ nav .close-icon{
 }
 /* fim Página serviços */
 
+
+
 @media(max-width: 830px){
    /* menu */
    .ul{
@@ -362,4 +453,24 @@ nav .close-icon{
     top: 46px;
     right: 28px;
    }
+   /* logo */
+   .logo img {
+    max-width: 150px;
+}
+}
+
+@media (max-width: 480px) {
+.logo img {
+    max-width: 100px;
+}
+}
+
+/* Logo Styling */
+.logo img {
+    max-width: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
 }
