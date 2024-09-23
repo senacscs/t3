@@ -1,28 +1,73 @@
-@media (min-width: 720px) {
-    body {
-        
-        background-color: rgb(0, 0, 0), 0.836
-    
-    
-
-    }
-
-    p { 
-        font-size: 20px;
-    }    
-    
-    h1 {
-        color:rgba(27, 14, 210, 0.959)
-    }   
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #ff4040; /* Cor vermelha favorita */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out; /* Animação */
+}
+nav {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    animation: fadeIn 2.5s ease-in-out; /* Animação */
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding: 10px 0;
+}
+nav a:hover {
+    color: #ff4040; /* Cor ao passar o mouse */
+}
+section {
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards; /* Animação */
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+}
+h1, h2 {
+    color: #333;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-in-out forwards; /* Animação */
 }
 
-@media (max-width: 720px) {
-    body {
-        
-        background-color: rgb(0, 0, 0);
+/* Definição das animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
-    
-    p {
-        font-size: 15px; 
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
