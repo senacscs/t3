@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Back-end</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <a href="#">Click do Bem</a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="#section2">Início</a></li>
+                <li><a href="#section3">Quem Somos</a></li>
+                <li><a href="#section4">Como doar</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>
+
+<section class="home" id="section1">
+    <!-- Conteúdo da seção Início -->
+</section>
+<br>
+<section id="section2">
+    <div>
+		<!-- just to make scrolling effect possible -->
+		<h2 class="myH2">Click do Bem: "Faça o bem com apenas um click"  </h2>
+		<p class="myP">
+			Nosso projeto visa revolucionar a forma de fazer doações, facilitando e incentivando contribuições contínuas para ajudar pessoas em situação de vulnerabilidade. Com o aplicativo Click do Bem, conectamos doadores diretamente aos necessitados, garantindo a entrega eficiente de recursos vitais como alimentos, roupas e materiais escolares. Nosso objetivo é promover uma cultura de generosidade e colaboração, aproveitando a tecnologia para criar um impacto positivo e duradouro na sociedade. Junte-se a nós e descubra como um simples click pode fazer uma grande diferença!		</p>
+	</div>
+</section>
+<section id="section3">
+		<h2 class="myH2">Quem Somos</h2>
+    <!-- Conteúdo da seção Como doar -->
+	<p class="myP">
+		É um grupo de pesquisa dedicado a transformar a maneira como doamos e ajudamos os outros. Composto por Isadora, Laura, Nicole e Eduarda, nosso grupo tem como missão facilitar as doações em todos os lugares, criando uma plataforma organizada e acessível que permita a doação contínua ao longo do ano. Juntos, estamos comprometidos em desenvolver soluções que simplifiquem o ato de doar, tornando-o mais acessível e impactante. Acreditamos que, ao facilitar as doações, podemos promover uma cultura de generosidade e colaboração que beneficia a todos. Nossas pesquisas focam em identificar as melhores práticas e ferramentas para a captação e distribuição de doações, garantindo que a ajuda chegue a quem mais precisa de forma eficiente e transparente. Estamos constantemente buscando novas maneiras de conectar doadores a causas importantes, utilizando a tecnologia para romper barreiras e criar um impacto positivo e duradouro na sociedade.
+
+Junte-se a nós e descubra como um simples click pode fazer uma grande diferença.</p>
+</section>
+<section id="section4">
+	<h2 class="myH2">Como Doar</h2>
+    <!-- Conteúdo da seção Login -->
+     <p class="myP">
+        Doar é simples e pode fazer uma grande diferença na vida de muitas pessoas. Siga os passos abaixo para fazer sua doação:
+
+1. Acesse nosso site ou aplicativo.
+2. Cadastre-se ou faça login na plataforma.
+3. Escolha a causa que você deseja apoiar.
+4. Selecione os itens que deseja doar.
+5. Escolha um ponto de coleta ou solicite a retirada da doação.
+6. Confirme sua doação e acompanhe o status pelo aplicativo.
+     </p>
+</section>
+<section id="section5"></section>
+
+
+<!-- Jquery needed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
+</body>
+</html>
