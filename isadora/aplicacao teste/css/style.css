@@ -334,6 +334,17 @@ nav .close-icon{
     text-align: center;
     margin: 15px;
 }
+
+.contato ul {
+    font-size: 17px;
+    text-align: center;
+    list-style-type: none; 
+    padding-left: 0; 
+  
+   
+
+ 
+}
 /* fim Página serviços */
 
 @media(max-width: 830px){
@@ -367,3 +378,8 @@ nav .close-icon{
     right: 28px;
    }
 }
+
+
+
+
+
