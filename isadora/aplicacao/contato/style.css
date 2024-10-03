@@ -8,8 +8,8 @@
 }
 
 body{
-    background-color: #c9d6ff;
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    background-color: #4f9cf9; /* Usando o azul principal */
+    background: linear-gradient(to right, #3580db, #4f9cf9); /* Gradiente de azul */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +47,7 @@ body{
 }
 
 .container button{
-    background-color: #512da8;
+    background-color: #184d88; /* Azul escuro */
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
@@ -161,9 +161,9 @@ body{
 }
 
 .toggle{
-    background-color: #512da8;
+    background-color: #184d88; /* Azul escuro */
     height: 100%;
-    background: linear-gradient(to right, #5c6bc0, #512da8);
+    background: linear-gradient(to right, #184d88, #69acfe); /* Gradiente de azul escuro e médio */
     color: #fff;
     position: relative;
     left: -100%;
