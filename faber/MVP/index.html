@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoPowerUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>EcoPowerUp</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="mostrarAba('produtos')">Produtos</a></li>
+                <li><a href="#" onclick="mostrarAba('sobre-nos')">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="produtos" class="aba">
+            <h2>Itens utilizados para o prototipo</h2>
+            <input type="text" id="search" placeholder="Pesquisar produtos..." onkeyup="filtrarProdutos()">
+            <div class="produtos-grid" id="produtos-grid">
+            </div>
+        </section>
+
+        <section id="sobre-nos" class="aba" style="display: none;">
+            <h2>Sobre Nós</h2>
+            <h3>Resumo do Projeto: EcoPowerUp</h3>
+            <p>
+                O projeto EcoPowerUp, desenvolvido por uma equipe orientada por João Francisco de Castro Silveira e Luiz Rauber, visa abordar a dependência por energia elétrica em locais críticos, como hospitais, onde quedas de energia podem ter consequências graves. Utilizando baterias de lítio recicladas em vez de geradores movidos a combustíveis fósseis, o projeto se alinha aos Objetivos de Desenvolvimento Sustentável (ODS) 7, 9, 11 e 13.
+            </p>
+            <p>
+                A metodologia interdisciplinar inclui a coleta de baterias descartadas e a fabricação de um protótipo com impressão 3D em materiais biodegradáveis. O dispositivo é testado para garantir eficácia em situações de emergência, promovendo um futuro mais sustentável e reduzindo a geração de resíduos eletrônicos.
+            </p>
+        </section>
+    </main>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="fecharModal()">&times;</span>
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-descricao"></p>
+            <p id="modal-preco"></p>
+            <p id="modal-info"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
