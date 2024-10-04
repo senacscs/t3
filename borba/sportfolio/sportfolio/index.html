@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportFolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-content">
+            <img class="logo" src="/sportfolio/assets/Sportfolio.png" alt="SportFolio Logo">
+            <h1>O SportFolio é uma plataforma dedicada a aumentar a visibilidade e oportunidades de carreira para atletas brasileiros de todas as modalidades.</h1>
+        </div>
+        <div class="right-content">
+            <form class="login-container" id="login-form">
+                <input type="text" placeholder="Email ou Telefone" id="login-email" required>
+                <span class="error" id="login-email-error"></span>
+                
+                <!-- Campo de senha com ícone de visualização -->
+                <div style="position: relative;">
+                    <input type="password" placeholder="Senha" id="login-password" required>
+                    <img id="toggle-password-login" src="assets/eye.svg" class="eye-icon" alt="Ver senha">
+                </div>
+                <span class="error" id="login-password-error"></span>
+
+                <!-- Loader oculto -->
+                <div id="login-loader" class="loader"></div>
+
+                <button type="button" onclick="login()">Entrar</button>
+                <a href="#" id="forgot-password">Esqueceu a senha?</a>
+                <button type="button" class="create-account-btn" id="create-account-button">Criar nova conta</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de Cadastro -->
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Cadastre-se</h2>
+            <p>É rápido e fácil.</p>
+            <form id="signup-form">
+                <div class="input-group">
+                    <input type="text" id="first-name" placeholder="Nome" required>
+                    <input type="text" id="last-name" placeholder="Sobrenome" required>
+                </div>
+                <span class="error" id="name-error"></span>
+
+                <input type="text" id="email" placeholder="Celular ou email" required>
+                <span class="error" id="email-error"></span>
+
+                <!-- Campo de Senha com Ícone para Visualizar -->
+                <label for="password">Senha:</label>
+                <div style="position: relative;">
+                    <input type="password" id="password" name="password" placeholder="Nova senha" required>
+                    <img id="toggle-password-signup" src="assets/icons/eye.svg" class="eye-icon" alt="Ver senha">
+                </div>
+                <span class="error" id="password-error"></span>
+
+                <!-- Confirmação de senha -->
+                <div style="position: relative;">
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirme a senha" required>
+                    <img id="toggle-confirm-password" src="assets/icons/eye.svg" class="eye-icon" alt="Ver senha">
+                </div>
+                <span class="error" id="confirm-password-error"></span>
+
+                <input type="date" id="birthdate" placeholder="Data de nascimento" min="1900-01-01" max="2024-12-31" required>
+                <span class="error" id="birthdate-error"></span>
+
+                <div>
+                    <label>Gênero:</label>
+                    <input type="radio" name="gender" value="Feminino" required> Feminino
+                    <input type="radio" name="gender" value="Masculino" required> Masculino
+                    <input type="radio" name="gender" value="Personalizado" required> Personalizado
+                </div>
+                <span class="error" id="gender-error"></span>
+
+                <!-- Loader de cadastro -->
+                <div id="signup-loader" class="loader"></div>
+
+                <button type="submit" class="signup-btn">Cadastre-se</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de Redefinição de Senha -->
+    <div id="reset-password-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Redefinir Senha</h2>
+            <p>Insira seu email para redefinir sua senha</p>
+            <input type="email" placeholder="Email" id="reset-email" required>
+            <button type="submit" id="reset-password-btn">Enviar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

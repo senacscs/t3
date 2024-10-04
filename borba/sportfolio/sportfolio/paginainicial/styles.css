@@ -1,0 +1,223 @@
+/* Configurações globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f2ef;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho fixo */
+header {
+    background-color: #e3e3e3;
+    padding: 10px 20px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Contêiner do cabeçalho que alinha a logo, a barra de pesquisa e a navegação */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo à esquerda */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+}
+
+/* Barra de pesquisa ao lado da logo */
+.search-bar {
+    display: flex;
+    background-color: #d3d3d3;
+    border-radius: 4px;
+    padding: 5px;
+    margin-left: 20px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.search-bar input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding-left: 10px;
+    background-color: transparent;
+}
+
+.search-bar button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.search-bar button img {
+    width: 16px;
+}
+
+/* Menu de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 30px; /* Espaçamento entre os itens */
+    align-items: center; /* Garante que os itens do menu fiquem alinhados verticalmente */
+}
+
+nav ul li {
+    display: flex;
+    align-items: center; /* Centraliza o conteúdo de cada item verticalmente */
+}
+
+nav ul li img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center; /* Garante que o texto e o ícone dentro do link estejam alinhados */
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+
+nav ul li a:hover {
+    color: #0073b1;
+}
+
+/* Sugestões de pesquisa */
+.search-suggestions {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    top: 35px;
+    z-index: 100;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.search-suggestions ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.search-suggestions ul li a:hover {
+    color: #0073b1;
+    text-decoration: underline;
+}
+
+/* Contêiner principal */
+.container {
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+}
+
+/* Barras laterais */
+.sidebar-left,
+.sidebar-right {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-self: flex-start;
+}
+
+.sidebar-left .user-info,
+.sidebar-left .groups,
+.sidebar-right .news {
+    margin-bottom: 20px;
+}
+
+.sidebar-left .user-info img {
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebar-left .user-info h2,
+.sidebar-left .groups h3,
+.sidebar-right .news h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sidebar-left .user-info p,
+.sidebar-left .groups ul li,
+.sidebar-right .news ul li {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sidebar-left .groups ul li a,
+.sidebar-right .news ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar-left .groups ul li a:hover,
+.sidebar-right .news ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Feed de postagens */
+.feed {
+    flex: 2;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post {
+    margin-bottom: 20px;
+}
+
+.post h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.post p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.post img,
+.post video {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* Animação ao passar o mouse nos botões */
+button:hover {
+    background-color: #0073b1;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+/* Suavidade na rolagem */
+html {
+    scroll-behavior: smooth;
+}
