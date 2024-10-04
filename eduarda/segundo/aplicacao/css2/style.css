@@ -146,3 +146,71 @@ img {
     font-size: 34px;
     flex: none;
 }
+
+/* TEAM */
+.team-member-content {
+    background-color: var(--c-brand);
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    width: calc(100% - 50px);
+    transform: translateX(-50%);
+    padding: 24px;
+    transition: var(--transition);
+    opacity: 0;
+}
+
+.team-member:hover .team-member-content {
+    opacity: 1;
+    bottom: 24px;
+}
+
+/* FOOTER */
+footer {
+    padding-top: 120px;
+}
+
+.footer-top {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.footer-bottom {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+footer li,
+footer p,
+footer a {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .line {
+    width: 40px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.social-icons a {
+    width: 80px;
+    height: 80px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(110, 107, 107, 0.1);
+    border-radius: 100px;
+}
+
+.social-icons a:hover {
+    background-color: var(--c-brand);
+    color: rgb(194, 188, 188);
+}
