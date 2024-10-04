@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1c1c1c;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 20px;
+  height: 80px;
+  color: #fff;
+  z-index: 1000;
+}
+
+.nav-container ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-size: 15px;
+}
+
+.nav-container ul li {
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+
+.nav-container ul li:hover,
+.nav-container .icons i:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  width: 120px;
+  height: 80px;
+  cursor: pointer;
+}
+
+.nav-container .icons {
+  display: flex;
+  font-size: 25px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.nav-container .icons i {
+  border-radius: 50%;
+  padding: 3px;
+  transition: 0.5s;
+}
+
+main {
+  width: 80%;
+  text-align: center;
+}
+
+.section-light {
+  background-color: #333;
+  padding: 40px;
+  text-align: center;
+}
+
+.section-dark {
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.info-item {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.info-item h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.info-item p {
+  font-size: 1rem;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .info-grid {
+      grid-template-columns: 1fr;
+  }
+}
+
+.welcome-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.welcome-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.map-image {
+  margin-top: 20px;
+}
+
+.map-image img {
+  width: 500px;
+  border-radius: 10px;
+}
+
+.processo-fabricacao {
+  background-color: #333; 
+  color: white;
+  padding: 20px;
+}
+
+.processo-fabricacao {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.processo-fabricacao .conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.processo-fabricacao .texto {
+  flex: 1;
+  margin-right: 20px;
+  margin-left: 15px;
+  text-align: left;
+}
+
+.processo-fabricacao .imagem {
+  flex: 1;
+  text-align: right;
+}
+
+.processo-fabricacao img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.processo-fabricacao h2, .processo-fabricacao p {
+  text-align: center;
+}
+
+.riscos-longo-prazo {
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.riscos-longo-prazo .conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.riscos-longo-prazo .imagem {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.riscos-longo-prazo .imagem img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.riscos-longo-prazo .texto {
+  flex: 1;
+  text-align: left;
+}
+
+.riscos-longo-prazo h2 {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.riscos-longo-prazo ul {
+  list-style: none;
+  padding: 0;
+}
+
+.riscos-longo-prazo ul li {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  position: relative;
+  padding-left: 25px;
+}
+
+.riscos-longo-prazo ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #4CAF50;
+  font-size: 1.5em;
+  line-height: 1em;
+}
