@@ -1,0 +1,73 @@
+/* General styling */
+.wp-block-group {
+    padding: 40px;
+background-color: #1f6abb;
+  }
+   
+  .alignfull {
+    width: 100%;
+  }
+   
+  .alignwide {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+   
+  .has-base-2-background-color {
+    background-color: #f4f4f4;
+  }
+   
+  .has-base-color {
+    color: #333;
+  }
+   
+  .has-contrast-background-color {
+    background-color: #000000;
+    color: #1f6abb;
+  }
+   
+  /* Typography */
+  .wp-block-heading {
+    text-align: center;
+    font-size: 2rem;
+  }
+   
+  .wp-block-paragraph {
+    text-align: center;
+  }
+   
+  /* Buttons */
+  .wp-block-button a {
+    text-decoration: none;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+   
+  /* Testimonials */
+  .testimonial-quote {
+    text-align: center;
+    font-style: Nunito;
+    font-size: 1.5rem;
+  }
+   
+  .testimonial-author {
+    text-align: center;
+    font-weight: bold;
+  }
+   
+  .testimonial-role {
+    text-align: center;
+    font-style: normal;
+    color: #bbb;
+  }
+  .images{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 5px;
+  }
+  img {
+    width: 400px;
+  }
