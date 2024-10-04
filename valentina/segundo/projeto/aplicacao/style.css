@@ -1,183 +1,109 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
+@mixin mQ($rem) {
+  @media screen and (min-width: $rem) {
+    @content;
+  }
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #fff;
-  font-family: "Lato", sans-serif;
+h2 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
-section {
-  padding-block: min(20vh, 2rem);
-  width: calc(min(76.5rem, 90%));
-  margin-inline: auto;
-  color: #111;
+.card {
+  position: relative;
 
-  h2 {
-    text-transform: capitalize;
-    letter-spacing: 0.025em;
-    font-size: clamp(2rem, 1.8125rem + 0.75vw, 2.6rem);
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transition: 0.6s;
+    z-index: 0;
+    background-color: #4f46e5;
   }
 
-  a {
-    display: inline-block;
-    text-decoration: none;
+  &:hover {
+    box-shadow: 0.063rem 0.063rem 1.25rem 0.375rem rgb(0 0 0 / 53%);
   }
 
-  .container {
-    margin-top: 5em;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-    gap: 2rem;
-
-    .card {
-      &:nth-child(1) .box .icon .iconBox {
-        background: #d3b19a;
-      }
-      &:nth-child(2) .box .icon .iconBox {
-        background: #70b3b1;
-      }
-      &:nth-child(3) .box .icon .iconBox {
-        background: #d05fa2;
-      }
-
-      ul {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 0.625rem;
-
-        li {
-          text-transform: uppercase;
-          background: var(--clr-tag);
-          color: #282828;
-          font-weight: 700;
-          font-size: 0.8rem;
-          padding: 0.375rem 0.625rem;
-          border-radius: 0.188rem;
-        }
-
-        .branding {
-          color: darken(#d3b19a, 40%);
-        }
-
-        .packaging {
-          color: darken(#70b3b1, 40%);
-        }
-
-        .marketing {
-          color: darken(#d05fa2, 40%);
-        }
-      }
-
-      .content {
-        padding: 0.938rem 0.625rem;
-
-        h3 {
-          text-transform: capitalize;
-          font-size: clamp(1.5rem, 1.3909rem + 0.4364vw, 1.8rem);
-        }
-
-        p {
-          margin: 0.625rem 0 1.25rem;
-          color: #565656;
-        }
-      }
-    }
-
-    .card-inner {
-      position: relative;
-      width: inherit;
-      height: 18.75rem;
-      background: var(--clr);
-      border-radius: 1.25rem;
-      border-bottom-right-radius: 0;
-      overflow: hidden;
-
-      .box {
-        width: 100%;
-        height: 100%;
-        background: #fff;
-        border-radius: 1.25rem;
-        overflow: hidden;
-
-        .imgBox {
-          position: absolute;
-          inset: 0;
-
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
-        }
-
-        .icon {
-          position: absolute;
-          bottom: -0.375rem;
-          right: -0.375rem;
-          width: 6rem;
-          height: 6rem;
-          background: var(--clr);
-          border-top-left-radius: 50%;
-
-          &:hover .iconBox {
-            transform: scale(1.1);
-          }
-
-          &::before {
-            position: absolute;
-            content: "";
-            bottom: 0.375rem;
-            left: -1.25rem;
-            background: transparent;
-            width: 1.25rem;
-            height: 1.25rem;
-            border-bottom-right-radius: 1.25rem;
-            box-shadow: 0.313rem 0.313rem 0 0.313rem #fff;
-          }
-
-          &::after {
-            position: absolute;
-            content: "";
-            top: -1.25rem;
-            right: 0.375rem;
-            background: transparent;
-            width: 1.25rem;
-            height: 1.25rem;
-            border-bottom-right-radius: 1.25rem;
-            box-shadow: 0.313rem 0.313rem 0 0.313rem var(--clr);
-          }
-
-          .iconBox {
-            position: absolute;
-            inset: 0.625rem;
-            background: #282828;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: 0.3s;
-
-            span {
-              color: #fff;
-              font-size: 1.5rem;
-            }
-          }
-        }
-      }
-    }
+  &:nth-child(1)::before {
+    bottom: 0;
+    right: 0;
+    clip-path: circle(calc(6.25rem + 7.5vw) at 100% 100%);
   }
+
+  &:nth-child(2)::before {
+    bottom: 0;
+    left: 0;
+    clip-path: circle(calc(6.25rem + 7.5vw) at 0% 100%);
+  }
+
+  &:nth-child(3)::before {
+    top: 0;
+    right: 0;
+    clip-path: circle(calc(6.25rem + 7.5vw) at 100% 0%);
+  }
+
+  &:nth-child(4)::before {
+    top: 0;
+    left: 0;
+    clip-path: circle(calc(6.25rem + 7.5vw) at 0% 0%);
+  }
+
+  p {
+    transition: 0.8s;
+  }
+}
+
+.card:hover::before {
+  clip-path: circle(110vw at 100% 100%);
+}
+
+.card:hover p {
+  color: #fff;
+}
+
+.circle {
+  @include mQ(62.5rem) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+}
+
+
+.card:nth-child(1) .circle {
+  background: url("https://images.unsplash.com/photo-1587440871875-191322ee64b0?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    no-repeat 50% 50% / cover;
+  bottom: 0;
+  right: 0;
+  clip-path: circle(calc(6.25rem + 7.5vw) at 100% 100%);
+}
+
+.card:nth-child(2) .circle {
+  background: url("https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    no-repeat 50% 50% / cover;
+  bottom: 0;
+  left: 0;
+  clip-path: circle(calc(6.25rem + 7.5vw) at 0% 100%);
+}
+.card:nth-child(3) .circle {
+  background: url("https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    no-repeat 50% 50% / cover;
+  top: 0;
+  right: 0;
+  clip-path: circle(calc(6.25rem + 7.5vw) at 100% 0%);
+}
+
+.card:nth-child(4) .circle {
+  background: url("https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    no-repeat 50% 50% / cover;
+  top: 0;
+  left: 0;
+  clip-path: circle(calc(6.25rem + 7.5vw) at 0% 0%);
 }

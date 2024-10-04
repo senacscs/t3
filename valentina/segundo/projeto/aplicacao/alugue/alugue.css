@@ -1,0 +1,93 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cores principais */
+:root {
+    --azul-escuro: #092036;
+    --cinza-claro: #f2f2f2;
+    --cinza-escuro: #555555;
+    --branco: #ffffff;
+}
+
+/* Corpo do site */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cinza-claro);
+    color: var(--cinza-escuro);
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--branco);
+    padding: 20px;
+    color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.signup-btn {
+    background-color: var(--branco);
+    color: var(--azul-escuro);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Seção de Cartões */
+.cards-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--branco);
+    border: 1px solid var(--cinza-escuro);
+    /* Removendo bordas arredondadas */
+    border-radius: 0; 
+    padding: 20px;
+    width: 300px; /* Aumentando a largura */
+    height: 350px; /* Aumentando a altura */
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 180px; /* Definindo a altura da imagem */
+    /* Borda quadrada */
+    border-radius: 0;
+}
+
+.card h3 {
+    color: var(--azul-escuro);
+    margin: 15px 0 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    padding: 20px;
+    text-align: center;
+}

@@ -1,3 +1,3 @@
-/* inspiration from
-https://cz.pinterest.com/pin/830703093796717544/
+/*inspiration
+https://jimfahaddigital.com/tutorial/how-to-make-a-business-website-using-wordpress-and-elementor-2024/
 */
