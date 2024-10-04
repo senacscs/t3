@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportFolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Cabeçalho Fixo -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="/sportfolio/assets/Sportfolio.png" alt="SportFolio">
+            </div>
+            <!-- Barra de Pesquisa fixa com sugestões -->
+            <div class="search-bar" id="search-bar">
+                <input type="text" placeholder="Pesquisar..." id="search-input">
+                <button><img src="assets/search-icon.png" alt="Pesquisar"></button>
+                <div class="search-suggestions" id="search-suggestions">
+                    <p>Tente pesquisar</p>
+                    <ul>
+                        <li><a href="#">#oportunidades</a></li>
+                        <li><a href="#">#notícias</a></li>
+                        <li><a href="#">#atletas</a></li>
+                        <li><a href="#">#eventos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Navegação -->
+            <nav>
+                <ul>
+                    <li><img src="assets/home-icon.png" alt="Início"><span>Início</span></li>
+                    <li><img src="assets/network-icon.png" alt="Minha Rede"><span>Minha Rede</span></li>
+                    <li><img src="assets/jobs-icon.png" alt="Vagas"><span>Vagas</span></li>
+                    <li><img src="assets/messaging-icon.png" alt="Mensagens"><span>Mensagens</span></li>
+                    <li><img src="assets/notifications-icon.png" alt="Notificações"><span>Notificações</span></li>
+                    <li><a href="perfil.html"><img src="assets/profile-icon.png" alt="Perfil"><span>Eu</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <!-- Barra Lateral Esquerda -->
+        <aside class="sidebar-left">
+            <div class="user-info">
+                <img src="assets/user-icon.webp" alt="Foto do Usuário">
+                <h2>Olá, Davi!</h2>
+                <p>Conexões: 6</p>
+                <a href="#">Aumente sua rede esportiva</a>
+                <a href="#">Experimente Premium por BRL0</a>
+            </div>
+            <div class="groups">
+                <h3>Grupos Esportivos</h3>
+                <ul>
+                    <li><a href="#">Grupo de Futebol</a></li>
+                    <li><a href="#">Atletas de Alta Performance</a></li>
+                    <li><a href="#">Corrida e Maratonas</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Feed de Notícias -->
+        <main class="feed">
+            <div class="post">
+                <h3>Flavia Gouveia</h3>
+                <p>Como melhorar o desempenho dentro de campo com treinos específicos...</p>
+                <img src="assets/treino-futebol.jfif" alt="Treinamento de Futebol">
+            </div>
+            <div class="post">
+                <h3>Thiago Silva</h3>
+                <p>Dicas para se destacar em peneiras de futebol...</p>
+                <video controls>
+                    <source src="assets/football-tryouts.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            </div>
+            <div class="post">
+                <h3>Maria Costa</h3>
+                <p>A importância da nutrição para atletas de alta performance...</p>
+                <img src="assets/nutrition.jpg" alt="Nutrição Esportiva">
+            </div>
+            <!-- Mais postagens para forçar rolagem -->
+            <div class="post">
+                <h3>Carlos Mendes</h3>
+                <p>Técnicas de recuperação pós-jogo...</p>
+                <img src="assets/recuperacao.jpg" alt="Recuperação Pós-jogo">
+            </div>
+            <div class="post">
+                <h3>Laura Souza</h3>
+                <p>Como criar uma rotina de treinos eficiente...</p>
+                <img src="assets/rotina" alt="Rotina de Treinos">
+            </div>
+            <div class="post">
+                <h3>Paulo Santos</h3>
+                <p>Top 5 academias para treinar em 2024...</p>
+                <img src="assets/academias.webp" alt="Academias 2024">
+            </div>
+            <div class="post">
+                <h3>José Oliveira</h3>
+                <p>Como se preparar para um triathlon...</p>
+                <img src="assets/triatlo.jpg" alt="Treinamento de Triathlon">
+            </div>
+            <div class="post">
+                <h3>Anna Torres</h3>
+                <p>Psicologia esportiva: como lidar com a pressão...</p>
+                <img src="assets/psicologia.jpg" alt="Psicologia Esportiva">
+            </div>
+        </main>
+
+        <!-- Barra Lateral Direita -->
+        <aside class="sidebar-right">
+            <div class="news">
+                <h3>SportFolio Notícias</h3>
+                <ul>
+                    <li><a href="https://esporte.uol.com.br/basquete">Campeonato Nacional de Basquete: Inscrições abertas</a></li>
+                    <li><a href="https://www.exame.com/esportes">As melhores academias para treinar em 2024</a></li>
+                    <li><a href="https://globoesporte.globo.com/futebol">5 Jogadores para ficar de olho na próxima temporada</a></li>
+                    <li><a href="https://ge.globo.com">Oportunidades de Peneira no Rio de Janeiro</a></li>
+                    <li><a href="https://www.lance.com.br/esportes">Como conseguir patrocínio para sua equipe</a></li>
+                </ul>
+            </div>
+            <div class="ads">
+                <h3>Veja quem está contratando</h3>
+                <ul>
+                    <li><a href="#">Nike: Especialista em Marketing Esportivo</a></li>
+                    <li><a href="#">Adidas: Treinador de Futebol</a></li>
+                    <li><a href="#">Red Bull: Gerente de Projetos Esportivos</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
