@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistência a Idosos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="header">
+                <img src="icon/CADI.png" alt="Logo" style="width: 50px; height: 50px; border-radius: 50%;">
+
+            </div>
+            <nav class="menu">
+                <button class="active" onclick="location.href='calendario/index.html'">
+                    <span>Calendário</span>
+                </button>
+                <button onclick="location.href='digdoc/index.html'">
+                    <span>Documentos</span>
+                </button>
+            </nav>
+        </aside>
+        
+        <!-- Conteúdo principal -->
+        <main class="chat">
+            <h1>Olá, <strong>Otaviano</strong></h1>
+                <p>Como posso ajudar?</p>
+            <div class="chat-output" id="chat-output"></div>
+            <input type="text" id="user-input" placeholder="Digite uma pergunta ou comando">
+            <button onclick="sendMessage()" class="send-button">
+                <img src="icon/enviar.png" alt="Enviar" class="button-icon">
+            </button>
+        </main>
+    </div>
+
+    <script>
+        function sendMessage() {
+            var input = document.getElementById('user-input').value;
+            var chatOutput = document.getElementById('chat-output');
+            if (input) {
+                var message = document.createElement('p');
+                message.textContent = input;
+                chatOutput.appendChild(message);
+                document.getElementById('user-input').value = '';
+            }
+        }
+    </script>
+</body>
+</html>
