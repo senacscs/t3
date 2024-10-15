@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco PowerUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+         Eco PowerUp
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar produtos, marcas e muito mais...">
+            <button>Buscar</button>
+        </div>
+        <div class="login">
+            <button onclick="showLogin()">Entre</button>
+            <button onclick="showRegister()">Crie a sua conta</button>
+        </div>
+    </header>   
+    <nav>
+        <ul>
+            <li onclick="showSection('mainSection')">Ofertas</li>
+            <li onclick="showSection('aboutSection')">Sobre</li> <!-- Nova aba "Sobre" -->
+        </ul>
+    </nav>
+    <main id="mainSection">
+        <section class="banner">
+            <h1>Eco PowerUp</h1>
+            <p>Baterias sustentáveis</p>
+        </section>
+        <section class="highlights">
+            <div class="highlight">
+                <h2>Visto recentemente</h2>
+                <p>Ecoflow Delta Pro - Estação De Energia...</p>
+                <button>R$ 18.699</button>
+                <p>Frete grátis</p>
+            </div>
+            <div class="highlight">
+                <h2>Entre na sua conta</h2>
+                <p>Aproveite ofertas para comprar tudo que quiser</p>
+                <button onclick="showLogin()">Entrar na sua conta</button>
+            </div>
+            <div class="highlight">
+                <h2>Insira sua localização</h2>
+                <p>Confira os custos e prazos de entrega</p>
+                <button>Inserir localização</button>
+            </div>
+            <div class="highlight">
+                <h2>Também te interessa</h2>
+                <p>Pack de bateria para casa...</p>
+                <button>R$ 5,790</button>
+            </div>
+            <div class="highlight">
+                <h2>Meios de pagamento</h2>
+                <p>Pague suas compras com rapidez e segurança</p>
+                <button>Mostrar meios</button>
+            </div>
+            <div class="highlight">
+                <h2>Promoção</h2>
+                <p>Confira produtos com preços baixos</p>
+                <button>Mostrar produtos</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Seção Sobre -->
+    <section id="aboutSection" style="display: none;">
+        <h1>Sobre o Eco PowerUp</h1>
+        <p>Bem-vindo ao Eco PowerUp! Somos uma empresa dedicada a fornecer soluções de energia sustentável e inovadora. Nosso objetivo é ajudar a reduzir a pegada de carbono global, oferecendo produtos de alta qualidade que utilizam fontes de energia renovável.</p>
+        <p>Nossa missão é promover a sustentabilidade através da tecnologia, oferecendo baterias e estações de energia que são tanto eficientes quanto ecológicas. Trabalhamos constantemente para trazer os melhores produtos ao mercado, sempre com um foco na responsabilidade ambiental e na satisfação do cliente.</p>
+        <p>Obrigado por escolher o Eco PowerUp. Juntos, podemos fazer a diferença!</p>
+    </section>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Entrar</h2>
+            <input type="text" placeholder="Email">
+            <input type="password" placeholder="Senha">
+            <button>Entrar</button>
+        </div>
+    </div>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('registerModal')">&times;</span>
+            <h2>Crie a sua conta</h2>
+            <input type="text" placeholder="Nome">
+            <input type="text" placeholder="Email">
+            <input type="password" placeholder="Senha">
+            <button>Registrar</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
