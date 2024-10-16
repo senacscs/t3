@@ -1,44 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AquaPure</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <title>Aquapure</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
 </head>
 <body>
+    <!-- Cabeçalho -->
     <header>
-        <img src="assets/logoLong.png">
-        <a href="https://drive.google.com/uc?export=download&id=1ykyVoNOS9zS7-EAEdFDLcq3hJvCgrfgT">Baixar documento</a>
+        <div class="container">
+            <img src="assets/aquapureLogo.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#solucao">A Solução</a></li>
+                    <li><a href="#como-funciona">Como Funciona</a></li>
+                    <li><a href="#testes-resultados">Testes e Resultados</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <div>
-        <section >
-            <img src="assets/1.jpg">
-        </section>
-        <section >
-            <img src="assets/2.jpg">
-        </section>
-        <section >
-            <img src="assets/3.jpg">
-        </section>
-        <section >
-            <img src="assets/4.jpg">
-        </section>
-        <section >
-            <img src="assets/5.jpg">
-        </section>
-        <section >
-            <img src="assets/6.jpg">
-        </section>
-        <section >
-            <img src="assets/7.jpg">
-        </section>
-    </div>
+
+    <!-- Seção Principal -->
+    <section class="hero">
+        <div class="container">
+            <h2>Uma Solução Inovadora para Microplásticos nos Corpos d'Água</h2>
+            <p>Ajudando a preservar nossos ecossistemas aquáticos e proteger a saúde das futuras gerações.</p>
+            <a href="#solucao" class="cta-button">Saiba Mais</a>
+        </div>
+    </section>
+
+    <!-- Seção: A Solução -->
+    <section id="solucao" class="section">
+        <div class="container">
+            <h2>Por que os Microplásticos são um Problema?</h2>
+            <p>Microplásticos são partículas minúsculas de plástico que poluem nossos corpos d'água. Eles podem causar danos à saúde humana, afetando o sistema cardiovascular e cerebral, além de impactar gravemente os ecossistemas marinhos.</p>
+            <img src="./assets/microlpasticos.jpg" alt="Impacto dos microplásticos" class="image">
+        </div>
+    </section>
+
+    <!-- Seção: Como Funciona -->
+    <section id="como-funciona" class="section">
+        <div class="container">
+            <h2>Como nossa Solução Funciona?</h2>
+            <p>Desenvolvemos uma boia equipada com um sistema de ferrofluido que atrai e captura microplásticos presentes na água. Esta tecnologia inovadora é uma maneira eficiente de reduzir a poluição plástica.</p>
+            <div class="icons">
+                <div class="icon">
+                    <div style="background-image: url(./assets/becker.jpg); background-position: 0px -30px;" class="block"></div>
+                    <p>Teste em laboratório</p>
+                </div>
+                <div class="icon">
+                    <div style="background-image: url(./assets/projeto.png); background-position: 0px -30px;" class="block"></div>
+                    <p>Projeto</p>
+                </div>
+                <div class="icon">
+                    <div style="background-image: url(./assets/render4.png); background-position: 0px -60px;" class="block" ></div>
+                    <p>Projeto 3D</p>
+                </div>
+            </div>
+            <a href="https://onedrive.live.com/download?cid=C33755F17CE398BE&resid=C33755F17CE398BE!3457&authkey=!APzyl8UKRMLMrMI
+            " class="cta-button download">Acesse todo o artigo</a>
+        </div>
+    </section>
+
+    <!-- Seção: Testes e Resultados -->
+    <section id="testes-resultados" class="section">
+        <div class="container">
+            <h2>Testes e Protótipos</h2>
+            <p>Nossos protótipos mostraram resultados promissores na captura de microplásticos. A boia, equipada com tecnologia avançada de ferrofluido, foi testada em laboratório e demonstrou uma grande eficiência na filtragem de partículas.</p>
+            <img src="./assets/render1.png" alt="Protótipo da boia" class="image">
+        </div>
+    </section>
+
+    <!-- Rodapé -->
     <footer>
-        <p>
-            Pesquisa e site feito por Rodrigo Dini
-        </p>
+        <div class="container">
+            <p>&copy; 2024 Aquapure. Todos os direitos reservados.</p>
+        </div>
     </footer>
 </body>
 </html>
