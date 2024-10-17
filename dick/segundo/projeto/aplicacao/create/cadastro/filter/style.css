@@ -47,10 +47,17 @@ fieldset div {
     text-align: center;
 }
 
-.next{
+.continuar{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgba(0, 0, 255, 0.461);
     padding: 5px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
 }

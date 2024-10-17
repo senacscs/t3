@@ -5,6 +5,16 @@
 	text-align: center;
 	position: relative;
     background: #ffb8ec;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
 }
 
 #form fieldset{

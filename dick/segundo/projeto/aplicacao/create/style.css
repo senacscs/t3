@@ -5,6 +5,16 @@
 	text-align: center;
 	position: relative;
     background: #ffb8ec;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
 }
 
 #form fieldset{
@@ -50,7 +60,4 @@ img{
     padding: 5px;
     background-color: #B8FFFF;
     text-decoration: none;
-    margin-top: 10px;
-    margin-left: 60px;
-    margin-right: 60px;
 }
