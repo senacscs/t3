@@ -1,116 +1,134 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eco PowerUp</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header>
-<div class="logo">
-<img src="c:\Users\ARTHURDAFONTOURACHAG\Downloads\MicrosoftTeams-image.png" alt="Eco PowerUp">
-</div>
-<div class="search-bar">
-<input type="text" placeholder="Buscar produtos, marcas e muito mais...">
-<button>Buscar</button>
-</div>
-<div class="login">
-<button onclick="showLogin()">Entre</button>
-<button onclick="showRegister()">Crie a sua conta</button>
-</div>
-</header>   
-<nav>
-<ul>
-<li>Categorias</li>
-<li></li>
-<li></li>
-<li>Ofertas</li>
-<li></li>
-<li></li>
-<li>Contato</li>
-</ul>
-</nav>
-<main>
-<section class="banner">
-<h1>Eco PowerUp</h1>
-<p>Baterias sustentáveis</p>
-</section>
-<section class="highlights">
-<div class="highlight">
-<h2>Visto recentemente</h2>
-<p>Ecoflow Delta Pro - Estação De Energia...</p>
-<p>R$ 18.699</p>
-<p>Frete grátis</p>
-</div>
-<div class="highlight">
-<h2>Entre na sua conta</h2>
-<p>Ecoflow Delta Pro - Energia Renovável na Sua Mão
 
-    <p>Preço: R$ 18.699</p> <p>Frete Grátis</p> <p>Com a estação de energia Ecoflow Delta Pro, você tem uma solução confiável e ecológica para diversas necessidades. Perfeito para camping, eventos ao ar livre ou como fonte de backup em casa. Use energia limpa e eficiente em qualquer lugar!</p></p>
-<button onclick="showLogin()">Entrar na sua conta</button>
-</div>
-<div class="highlight">
-<h2>Insira sua localização</h2>
-<p>Confira os custos e prazos de entrega</p>
-<button>Inserir localização</button>
-</div>
-<div class="highlight">
-<h2>Também te interessa</h2>
-<p>Tênis Asics Magic Speed, Tamanho 42...</p>
-<p>R$ 790</p>
-</div>
-<div class="highlight">
-<h2>Meios de pagamento</h2>
-<p>Pague suas compras com rapidez e segurança</p>
-<button>Mostrar meios</button>
-</div>
-<div class="highlight">
-<h2>Menos de R$100</h2>
-<p>Confira produtos com preços baixos</p>
-<button>Mostrar produtos</button>
-</div>
-</section>
-<section class="recommended">
-<h2>Inspirado no último visto</h2>
-<div class="product">
-<p>Bateria Lifp- 5kwh</p>
-<p>R$ 13.275</p>
-<p>em 10x R$ 1.327 sem juros</p>
-</div>
-<div class="product">
-<p>Estação De Energia Portátil Ecoflow Delta2 Max...</p>
-<p>R$ 16.169</p>
-</div>
-<div class="product">
-<p>Estação De Energia Portátil Ecoflow River 2...</p>
-<p>R$ 4.490</p>
-</div>
-<!-- Adicione mais produtos conforme necessário -->
-</section>
-</main>
- 
-    <div id="loginModal" class="modal">
-<div class="modal-content">
-<span class="close" onclick="closeModal('loginModal')">&times;</span>
-<h2>Entrar</h2>
-<input type="text" placeholder="Email">
-<input type="password" placeholder="Senha">
-<button>Entrar</button>
-</div>
-</div>
- 
-    <div id="registerModal" class="modal">
-<div class="modal-content">
-<span class="close" onclick="closeModal('registerModal')">&times;</span>
-<h2>Crie a sua conta</h2>
-<input type="text" placeholder="Nome">
-<input type="text" placeholder="Email">
-<input type="password" placeholder="Senha">
-<button>Registrar</button>
-</div>
-</div>
- 
-    <script src="scripts.js"></script>
-</body>
-</html>
+<!DOCTYPE html>
+<html>
+  <body>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- bota cor no site -->
+    <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus trabalhos</title>   
+<head>
+  <style>
+    body, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sidebar {
+    background-color: #3d3c3c;
+    width: 200px;
+    height: 586px;
+    position: fixed;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 20px;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .content {
+    margin-left: 200px;
+    padding: 20px;
+  }
+  
+  .content h1 {
+    color: #333;
+  }
+  
+  .textao {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 100px;
+    padding-top: 0;
+    width: 900px;
+    height: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  </style>
+</head>
+  <div class="sidebar">
+    <ul>
+      <li><a href="#topico1">Carrinho</a></li>
+      <p>                                  </p>
+      <li><a href="#topico2">Indicação</a></li>
+      <p>                                  </p>
+      <li><a href="#topico3">Projeto pp</a></li>
+      <p>                                  </p>
+      <li><a href="#topico4">Fibonacci</a></li>
+      <p>                                  </p>
+      <li><a href="#topico5">Oficina</a></li>
+      <p>                                  </p>
+      <li><a href="#topico6">Site ods 10</a></li>
+      <p>                                  </p>
+      <li><a href="#topico7">Site historia</a></li>
+      <p>                                  </p>
+      <li><a href="#topico8">Projeto</a></li>
+      <p>                                  </p>
+      <li><a href="#topico9">Curriculo</a></li>
+      <p>                                  </p>
+      <li><a href="#topico10">todolist</a></li>
+     <p>                                  </p>
+      <li><a href="#topico11">indicação beck-end</a></li>
+    </ul>
+    </div>
+    <div class="textao">
+      <h2 class="hh">Meus trabalhos</h2>
+      <h3>Estes são algum dos meus trabalhos que fiz durante 2023.</h3>
+      <br>
+      <h1 id="topico1">carrinho</h1>
+      <br>
+      <li><a href="./carrrinho/index.html">carrinho</a></li>
+      <br>
+      <h1 id="topico2">indicação</h1>
+      <li><a href="./indicacoesfront/site de conteudo.html">site de conteudos</a></li>
+        </p>
+        <h1 id="topico3">projeto pp</h1>
+        <br> 
+        <li><a href="./projetopp/trabalhopp.html">Projeto PP</a></li>
+        </p>
+    </p>
+    <h1 id="topico4">fibonacci</h1>
+    <br> 
+    <li><a href="./fibonati/index.html">fibonacci</a></li>
+    </p>
+</p>
+<h1 id="topico5">oficina</h1>
+<br> 
+<li><a href="./oficinas/oficina1/index.html">oficina</a></li>
+</p>
+</p>
+<h1 id="topico6">site ods 10 </h1>
+<br> 
+<li><a href="./ods10/index.html">site ods 10</a></li>
+</p>
+</p>
+<h1 id="topico7">site historia </h1>
+<br> 
+<li><a href="Site de História/Site de História/index.html">site historia</a></li>
+</p>
+<h1 id="topico8">projeto</h1>
+<br> 
+<li><a href="projeto/index.html">projeto</a></li>
+</p>
+<h1 id="topico9">curriculo</h1>
+<br> 
+<li><a href="curiculo/curriculo.html">curriculo</a></li>
+</p>
+<h1 id="topico9">todo list</h1>
+<br> 
+<li><a href="todolist/index.html">todolist</a></li>
+</p>
+<br> 
+<li><a href="indicação beck-end/unititled-1.html">indicação beck-end</a></li>
+</p>
+    </div>
+    </body>
