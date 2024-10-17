@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodGuardian</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="info-box">
+            <img src="./assets/Captura de tela 2024-06-17 134619 1 (1).png" alt="FoodGuardian Logo" class="logo">
+            <h1>FoodGuardian</h1>
+            <p>Informe-se sobre alimentos e saiba mais sobre a presença de alérgenos em sua dieta. Descubra informações essenciais sobre os componentes alergênicos de cada alimento e tome decisões conscientes para sua saúde.</p>
+        </div>
+    </div>
+
+    <!-- Barra de Pesquisa -->
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Pesquise por alimentos..." onkeyup="searchFood()">
+    </div>
+
+    <!-- Seção de Alimentos -->
+    <div class="food-list" id="food-list">
+        <h2>Alimentos e seus Componentes</h2>
+
+        <div class="food-item">
+            <img src="https://www.padariaplusvita.com.br/wp-content/uploads/2021/07/Pao-Integral-480g_pvt.jpg" alt="Pão Integral">
+            <p><strong>Pão Integral</strong><br>Contém glúten (aveia, trigo) e pode conter soja. Indicado para pessoas sem intolerância ao glúten.</p>
+        </div>
+
+        <div class="food-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDZ4Abpi7O-Sl51yf2424gY641oxPFFiW7Mg&s" alt="Queijo Mussarela">
+            <p><strong>Queijo Mussarela</strong><br>Contém lactose (derivados de leite). Não recomendado para intolerantes à lactose.</p>
+        </div>
+
+        <div class="food-item">
+            <img src="https://dacolonia.com.br/public/uploads/2021/03/a37fcd67071aaf3e2a4ec1428a0fc61d-product_photo.png" alt="Paçoca">
+            <p><strong>Paçoca</strong><br>Contém amendoim. Não indicado para alérgicos ao amendoim.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
