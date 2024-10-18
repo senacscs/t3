@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="w-screen min-h-screen bg-green-50">
+      <header class="w-full border-b flex items-center bg-green-950 text-white">
+        <nav class="w-full px-10 py-3">
+          <ul class="flex justify-between">
+            <div>
+              <li>
+                <a
+                  href="../../../segundo/"
+                  class="hover:bg-green-200 py-2 px-4 hover:text-black rounded-3xl transition-colors"
+                >
+                  Index
+                </a>
+              </li>
+            </div>
+            <div class="flex gap-6 text-lg font-sans">
+              <li>
+                <a
+                  href="#"
+                  class="py-2 px-4 hover:bg-green-200 hover:text-black rounded-3xl transition-colors"
+                >
+                  Projeto
+                </a>
+              </li>
+              <li>
+                <a
+                  href="./aplicacao"
+                  class="py-2 px-4 bg-green-200 text-black rounded-3xl transition-colors"
+                >
+                  Aplicação
+                </a>
+              </li>
+            </div>
+          </ul>
+        </nav>
+      </header>
+      <section
+        class="w-full flex flex-col lg:flex-row min-h-96 items-center justify-center"
+      >
+        <div class="w-full p-10 flex items-center justify-center lg:w-1/2">
+          <h1
+            class="text-4xl font-semibold drop-shadow-sm text-center lg:text-left"
+          >
+            Aplicação técnica: HelpXPress
+          </h1>
+        </div>
+        <div class="w-1/2 flex items-center justify-center">
+          <video autoplay muted width="800px" height="800px">
+            <source src="./helpxpress-demo.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+
+      <section class="bg-green-100 w-full flex flex-col gap-6 p-10">
+        <h1 class="text-4xl font-semibold w-2/12 mr-4">Como Funciona?</h1>
+        <p>
+          O HelpXPress é uma extensão do chrome, que permite a visualização de
+          informações gerais do cliente. Integrada á um banco de de dados, essas
+          informações permitem que o atendente tenha um melhor entendimento do
+          cliente, e assim, possa oferecer um atendimento mais personalizado. A
+          extensão busca na página o email do cliente de forma automática, e com
+          base nesse email, busca as informações do cliente no banco de dados.
+          Essa integração é específica para a plataforma de atendimento que a MK
+          utiliza, o Movidesk. Portanto, funciona exclusivamente dentro do
+          ambiente da MK, e não é possível utilizá-la em outros casos.
+        </p>
+      </section>
+      <section class="w-full flex flex-col gap-6 p-10">
+        <h1 class="text-4xl font-semibold w-2/12 mr-4">Tecnologias</h1>
+        <p>
+          A extensão foi desenvolvida utilizando HTML, CSS e JavaScript. O banco
+          de dados foi desenvolvido utilizando PostgreSQL, e a API é em Golang.
+          Por de baixo dos panos, existem diversas DAGs que realizam as buscas e
+          os cálculos necessários para buscar as informações de diversas bases e
+          consolidá-las em uma única base de dados. A API é hospedada em uma
+          máquina na MK, bem como os servidores do banco de dados.
+        </p>
+        <p>
+          HTML, CSS, JS, PostgreSQL, Golang, Airflow, Docker, Git, Github
+          Actions
+        </p>
+        <p>
+          O projeto proporcionou experiências técnicas e de gestão de projetos e
+          pessoas. Atuei no desenvolvimento FullStack, planejamento e
+          configuração de ambientes (DevOps). A aplicação está em faze de testes
+          real com a equipe de atendimento da MK. A expectativa é que a
+          aplicação seja aprimorada e após os testes, seja disponibilizada para
+          toda a equipe de atendimento e utilizada no dia a dia.
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
