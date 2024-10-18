@@ -1,14 +1,200 @@
-<!doctype html>
-<html lang="en" class="scroll-smooth">
+<!DOCTYPE html>
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Conheça seu Cérebro</title>
-    <script type="module" crossorigin src="./assets/index-C9ULr4md.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index--sVjSle3.css">
+    <title>Projeto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div id="root"></div>
+    <div class="w-screen min-h-screen bg-green-50">
+      <header
+        class="w-full border-b flex items-center bg-green-950 text-white"
+      >
+        <nav class="w-full px-10 py-3">
+          <ul class="flex justify-between">
+            <div>
+              <li>
+                <a
+                  href="/segundo"
+                  class="hover:bg-green-200 py-2 px-4 hover:text-black rounded-3xl transition-colors"
+                >
+                  Index
+                </a>
+              </li>
+            </div>
+            <div class="flex gap-6 text-lg font-sans">
+              <li>
+                <a
+                  href="#"
+                  class="py-2 px-4 bg-green-200 text-black rounded-3xl transition-colors"
+                >
+                  Projeto
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/projeto/aplicacao"
+                  class="py-2 px-4 hover:bg-green-200 hover:text-black rounded-3xl transition-colors"
+                >
+                  Aplicação
+                </a>
+              </li>
+            </div>
+          </ul>
+        </nav>
+      </header>
+      <section
+        class="w-full flex flex-col lg:flex-row min-h-96 items-center justify-center"
+      >
+        <div class="w-full p-10 flex items-center justify-center lg:w-1/2">
+          <h1
+            class="text-4xl font-semibold drop-shadow-sm text-center lg:text-left"
+          >
+            Ferramenta Tecnológica para Otimização do Atendimento ao Cliente em
+            Empresa de Desenvolvimento de Software
+          </h1>
+        </div>
+        <div class="w-1/2 flex items-center justify-center">
+          <img
+            src="./helpy.png"
+            alt="HelpyImg"
+            class="w-72 drop-shadow-2xl shadow-green-950"
+          />
+        </div>
+      </section>
+
+      <section class="bg-green-100 w-full flex flex-col lg:flex-row p-10">
+        <h1 class="text-4xl font-semibold w-2/12 mr-4">Justificativa</h1>
+        <p>
+          A retenção de clientes e a satisfação com o atendimento são elementos
+          centrais para a competitividade de uma empresa de desenvolvimento de
+          software. O Net Promoter Score (NPS) é uma métrica amplamente
+          utilizada para mensurar essa satisfação e prever a probabilidade de
+          retenção de clientes. Em uma análise interna da empresa,
+          identificou-se a necessidade de otimizar o atendimento ao cliente como
+          uma estratégia para reduzir o churn e melhorar os indicadores de NPS.
+          Estudos mostram que um atendimento eficiente e personalizado é um
+          fator determinante para a fidelização dos clientes (Parasuraman,
+          2018). A solução proposta é uma extensão do navegador que visa
+          facilitar o acesso às informações críticas sobre os clientes,
+          permitindo ao atendente um maior entendimento do perfil e histórico do
+          usuário. Ao integrar o email capturado na interface com um banco de
+          dados corporativo, a ferramenta disponibiliza informações essenciais
+          em um popup, proporcionando uma visão holística e ágil das
+          necessidades e interações recentes do cliente. Isso é essencial para
+          garantir um atendimento mais rápido, personalizado e eficiente, o que,
+          por sua vez, pode gerar impactos positivos no NPS e reduzir o churn
+        </p>
+      </section>
+
+      <section class="w-full flex flex-col-reverse lg:flex-row p-10 gap-2">
+        <div class="w-full">
+          <p>
+            <span class="font-bold">Objetivo Geral: </span>
+            Desenvolver e implementar uma solução tecnológica que melhore o
+            atendimento ao cliente, com o intuito de aumentar o NPS e reduzir o
+            churn.
+          </p>
+          <p>
+            <span class="font-bold">Objetivos Específicos: </span>
+          </p>
+          <p>
+            1. Desenvolver uma extensão para o Google Chrome que colete
+            informações do cliente através de seu email e apresente-as de forma
+            centralizada ao atendente
+          </p>
+          <p>
+            2. Facilitar o acesso dos atendentes aos dados relevantes dos
+            clientes, como histórico de uso de produtos e tempo de contrato
+          </p>
+          <p>
+            3. Avaliar a eficácia da ferramenta na melhoria da experiência do
+            cliente e seu impacto no NPS{" "}
+          </p>
+          <p>
+            4. Reduzir o tempo de resolução de tickets e chats de suporte por
+            meio de uma interface mais intuitiva e informativa para o atendente
+          </p>
+        </div>
+        <h1 class="text-4xl font-semibold w-2/12 mr-4">Objetivos</h1>
+      </section>
+
+      <section
+        class="bg-green-100 w-full flex flex-col lg:flex-row p-10 gap-2"
+      >
+        <h1 class="text-4xl font-semibold w-2/12 mr-4">
+          Referencial Teórico
+        </h1>
+        <p>
+          O conceito de satisfação do cliente está intrinsicamente ligado à
+          qualidade do atendimento (Zeithaml et al., 2006). O uso de tecnologias
+          de automação e suporte à tomada de decisão tem sido amplamente adotado
+          para melhorar a experiência do cliente, especialmente em ambientes
+          digitais (Lemon & Verhoef, 2016). Ferramentas que permitem a
+          personalização do atendimento, oferecendo ao atendente informações
+          relevantes de maneira ágil, contribuem diretamente para a percepção de
+          valor e para a lealdade do cliente (Parasuraman et al., 2018). A
+          introdução de soluções de Customer Relationship Management (CRM) e
+          ferramentas tecnológicas auxiliares, como a extensão do navegador
+          proposta, possibilita o atendimento de forma mais eficiente e com base
+          em dados precisos e em tempo real. Dessa forma, o projeto se alinha
+          com práticas já consolidadas no mercado, como o uso de automação e
+          inteligência de dados para otimizar processos de atendimento e
+          melhorar métricas de satisfação, como o NPS (Anderson & Mittal, 2020)
+        </p>
+      </section>
+
+      <section class="w-full flex flex-col-reverse lg:flex-row p-10 gap-2">
+        <div class="w-full">
+          <p>
+            1 <strong>Desenvolvimento da Ferramenta:</strong> A extensão do
+            Google Chrome foi desenvolvida utilizando JavaScript, HTML e CSS, em
+            conjunto com uma API REST em Go para a busca de informações no banco
+            de dados corporativo. Ao ser acionada, a extensão coleta o email do
+            cliente diretamente da interface e faz uma requisição para o
+            backend, que retorna dados relevantes como histórico de uso de
+            produtos e informações contratuais.
+          </p>
+        </div>
+        <h1 class="text-4xl font-semibold w-2/12 mr-4">Metodologia</h1>
+      </section>
+
+      <section
+        class="bg-green-100 w-full flex flex-col lg:flex-row p-10 gap-2"
+      >
+        <h1 class="text-4xl font-semibold w-2/12 mr-4">
+          Resultados Esperados
+        </h1>
+        <p>
+          Espera-se que a extensão traga melhorias significativas na rapidez do
+          atendimento e no índice de satisfação dos clientes, refletido no
+          aumento do NPS e na redução do churn. A ferramenta também será
+          avaliada em termos de usabilidade pelos atendentes, buscando
+          identificar possíveis melhorias e ajustes para versões futuras
+        </p>
+      </section>
+
+      <section class="w-full flex flex-col lg:flex-row p-10 gap-2">
+        <h1 class="text-4xl font-semibold w-2/12 mr-4">Referências</h1>
+        <div class="flex flex-col gap-4 lg:flex-row">
+          <p>
+            Lemon, K. N., & Verhoef, P. C. (2016). Understanding Customer
+            Experience Throughout the Customer Journey. Journal of Marketing,
+            80(6), 69–96. https://doi.org/10.1509/jm.15.0420
+          </p>
+          <p>
+            Parasuraman, A Parsu & Zeithaml, Valarie & Berry, Leonard. (1988).
+            SERVQUAL A Multiple-item Scale for Measuring Consumer Perceptions of
+            Service Quality. Journal of Retailing. 64. 12-40
+          </p>
+          <p>
+            Zeithaml, V. A., Berry, L. L., & Parasuraman, A. (1996). The
+            Behavioral Consequences of Service Quality. Journal of Marketing,
+            60(2), 31. https://doi.org/10.2307/1251929
+          </p>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
