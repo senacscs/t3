@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fagro – Do campo para seu lar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#catalogo">Catálogo de Produtos</a></li>
+                <li><a href="#agricultores">Agricultores</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Fagro – Do campo para seu lar</h1>
+        <p>Conectando agricultores familiares diretamente a você.</p>
+        <a href="#catalogo" class="button">Ver Catálogo</a>
+    </section>
+
+    <section id="catalogo">
+        <h2>Catálogo de Produtos</h2>
+        <div class="product-grid">
+            <!-- Produtos serão gerados aqui -->
+        </div>
+    </section>
+
+    <section id="agricultores">
+        <h2>Nossos Agricultores</h2>
+        <div class="agricultores-grid">
+            <!-- Os agricultores serão gerados aqui -->
+        </div>
+    </section>    
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco preenchendo o formulário abaixo. Retornaremos em breve!</p>
+        <div class="contact-container">
+            <form id="contactForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+    
+                <button type="submit">Enviar</button>
+            </form>
+    
+            <div class="contact-info">
+                <h3>Informações de Contato</h3>
+                <p>Email: contato@fagro.com</p>
+                <p>Telefone: (11) 99999-9999</p>
+                <p>Endereço: Rua Agricultura, 123, São Paulo, SP</p>
+            </div>
+        </div>
+    </section>    
+
+    <footer>
+        <p>© 2024 Fagro. Todos os direitos reservados.</p>
+    </footer>
+
+<!-- Modal (popup) -->
+<div id="purchaseModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Finalizar Compra</h2>
+        <form id="purchaseForm">
+            <label for="endereco">Endereço de Entrega:</label>
+            <input type="text" id="endereco" name="endereco" required>
+
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" min="1" value="1" required>
+
+            <label for="metodoEntrega">Método de Entrega:</label>
+            <select id="metodoEntrega" name="metodoEntrega" required>
+                <option value="entregaRapida">Entrega Rápida</option>
+                <option value="entregaAgendada">Entrega Agendada</option>
+                <option value="retirada">Retirada no Local</option>
+            </select>
+
+            <!-- Campo para selecionar a data de entrega -->
+            <div id="dataEntregaContainer" style="display: none;">
+                <label for="dataEntrega">Data de Entrega:</label>
+                <input type="date" id="dataEntrega" name="dataEntrega">
+            </div>
+
+            <label for="pagamento">Método de Pagamento:</label>
+            <select id="pagamento" name="pagamento" required>
+                <option value="PIX">PIX</option>
+                <option value="Cartão de Crédito">Cartão de Crédito</option>
+                <option value="Cartão de Débito">Cartão de Débito</option>
+                <option value="Boleto">Boleto</option>
+            </select>
+
+            <!-- Revisão do pedido -->
+            <div id="orderReview" class="order-review">
+                <h3>Resumo do Pedido</h3>
+                <p id="produtoSelecionado">Produto: -</p>
+                <p id="quantidadeSelecionada">Quantidade: -</p>
+                <p id="totalPreco">Total: R$0,00</p>
+            </div>
+
+            <button type="submit" class="button">Confirmar Compra</button>
+        </form>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
