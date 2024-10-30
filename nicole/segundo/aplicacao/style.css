@@ -55,13 +55,13 @@ NAVIGATION
   padding: 10px 15px 15px 10px;
   border-radius: 0%;
   color: white;
-  background: #02E0C6;
+  background: #c397bf;
 }
 
 #navButton:hover {
   font-weight: 100;
   font-size: 20px;
-  background: #61DFD1;
+  background: #c397bf;
   border: none;
   padding: 10px 15px 15px 10px;
   border-radius: 2%;
@@ -78,7 +78,7 @@ p {
   padding-bottom: 50px;
   text-align: center;
   color: #f8f8f8;
-  background: linear-gradient(rgba(60, 199, 187, 0.7), rgba(51, 163, 189, 0.8)), url("img/inicio.jpg");
+  background: linear-gradient(rgba(83, 60, 199, 0.7), rgba(164, 54, 138, 0.8)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyAYGvQ2i9GCQFIJGBe0MIn4_ji-fr3Or4xQ&s");
   background-size: cover;
 }
 
@@ -115,7 +115,7 @@ p {
 }
 #button {
   margin-top: 30px;
-  background: #02E0C6;
+  background: #c397bf;
   border: none;
   border-radius: 0%;
   padding: 15px 15px 15px 15px;
@@ -124,7 +124,7 @@ p {
 #button-white {
   margin-top: 30px;
   background: white;
-  color: #02E0C6;
+  color: #c397bf;
   border: none;
   border-radius: 0%;
   padding: 15px 15px 15px 15px;
@@ -132,7 +132,7 @@ p {
 
 #button:hover {
   margin-top: 30px;
-  background: #61DFD1;
+  background: #c397bf;
   border: none;
   border-radius: 0%;
   padding: 15px 15px 15px 15px;
@@ -163,7 +163,7 @@ p {
 
 .content-section-d {
   padding: 50px 0;
-  background-color: #02E0C6;
+  background-color: #c397bf;
 }
 
 .phone {
@@ -197,7 +197,7 @@ p {
 .section-heading-spacer {
   float: left;
   width: 100px;
-  border-top: 3px solid #02E0C6;
+  border-top: 3px solid #c397bf;
 }
 
 .section-heading-spacer-white {
