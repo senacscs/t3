@@ -1,6 +1,13 @@
-$(".navTrigger").click(function () {
-	$(this).toggleClass("active");
-	console.log("Clicked menu");
-	$("#mainListDiv").toggleClass("show_list");
-	$("#mainListDiv").fadeIn();
+$(function() {
+    //caches a jQuery object containing the header element
+    var header = $(".navigation");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 500) {
+            header.removeClass('navigation').addClass("scrollNavigation");
+        } else {
+            header.removeClass("scrollNavigation").addClass('navigation');
+        }
+    });
 });

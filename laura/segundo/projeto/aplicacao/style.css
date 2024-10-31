@@ -1,355 +1,241 @@
-@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700");
-html,
-body {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Quicksand", sans-serif;
-	font-size: 62.5%;
-	font-size: 10px;
-}
-/*-- Inspiration taken from abdo steif -->
-/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
-
-/* Navbar section */
-
-.nav {
-	width: 100%;
-	height: 65px;
-	position: fixed;
-	line-height: 65px;
-	text-align: center;
+body,
+html {
+  width: 100%;
+  height: 100%;
 }
 
-.nav div.logo {
-	float: left;
-	width: auto;
-	height: auto;
-	padding-left: 3rem;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
 }
 
-.nav div.logo a {
-	text-decoration: none;
-	color: #000000;
-	font-size: 2.5rem;
+/**********************************
+NAVIGATION
+***********************************/
+#brand {
+  height: 100px;
+  width: 100px;
+  margin-top: -27px;
 }
 
-.nav div.logo a:hover {
-	color: #ff5106;
+.navigation {
+  margin: 0px 10px 0px 0px;
+  background: none;
+  border: none;
 }
 
-.nav div.main_list {
-	height: 65px;
-	float: right;
+.scrollNavigation {
+  margin: 0px 10px 0px 0px;
+  background: #333333;
+  border: none;
+  width: 100%;
 }
 
-.nav div.main_list ul {
-	width: 100%;
-	height: 65px;
-	display: flex;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+#crunch {
+  color: white;
 }
 
-.nav div.main_list ul li {
-	width: auto;
-	height: 65px;
-	padding: 0;
-	padding-right: 3rem;
+#menuText {
+  font-weight: 100;
+  font-size: 20px;
+  color: white;
+  padding: 10px 30px 10px 0px;
 }
 
-.nav div.main_list ul li a {
-	text-decoration: none;
-	color: #000000;
-	line-height: 65px;
-	font-size: 2.4rem;
+#navButton {
+  font-weight: 100;
+  font-size: 20px;
+  border: none;
+  padding: 10px 15px 15px 10px;
+  border-radius: 0%;
+  color: white;
+  background: #c397bf;
 }
 
-.nav div.main_list ul li a:hover {
-	color: #ff5106;
+#navButton:hover {
+  font-weight: 100;
+  font-size: 20px;
+  background: #c397bf;
+  border: none;
+  padding: 10px 15px 15px 10px;
+  border-radius: 2%;
+  color: white;
 }
 
-/* Home section */
-
-.home {
-	width: 100%;
-	height: 100vh;
-	background-image: url(https://img.cancaonova.com/cnimages/canais/uploads/sites/6/2017/07/formacao_1600x1200-valor-da-solidariedade.jpg);
-	background-position: center top;
-	background-size: cover;
+/************/
+p {
+  color: white;
 }
 
-.navTrigger {
-	display: none;
+.intro-header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: #f8f8f8;
+  background: linear-gradient(rgba(83, 60, 199, 0.7), rgba(164, 54, 138, 0.8)), url("https://udv.org.br/thoroazo/2020/06/beneficencia.jpg");
+  background-size: cover;
 }
 
-.nav {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	-webkit-transition: all 0.4s ease;
-	transition: all 0.4s ease;
+.intro-message {
+  position: relative;
+  padding-top: 15%;
+  padding-bottom: 20%;
 }
 
-/* Media qurey section */
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-	.container {
-		margin: 0;
-	}
+.intro-message > h1 {
+  margin-top: -500;
+  font-size: 3em;
+  font-weight: 200;
 }
 
-@media screen and (max-width: 768px) {
-	.navTrigger {
-		display: block;
-	}
-	.nav div.logo {
-		margin-left: 15px;
-	}
-	.nav div.main_list {
-		width: 100%;
-		height: 0;
-		overflow: hidden;
-	}
-	.nav div.show_list {
-		height: auto;
-		display: none;
-	}
-	.nav div.main_list ul {
-		flex-direction: column;
-		width: 100%;
-		height: 100vh;
-		right: 0;
-		left: 0;
-		bottom: 0;
-		background-color: #ffffff;
-		/*same background color of navbar*/
-		background-position: center top;
-	}
-	.nav div.main_list ul li {
-		width: 100%;
-		text-align: right;
-	}
-	.nav div.main_list ul li a {
-		text-align: center;
-		width: 100%;
-		font-size: 3rem;
-		padding: 20px;
-	}
-	.nav div.media_button {
-		display: block;
-	}
+@media (max-width: 767px) {
+  .intro-message {
+    padding-bottom: 15%;
+  }
+
+  .intro-message > h1 {
+    font-size: 3em;
+  }
+
+  ul.intro-social-buttons > li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  ul.intro-social-buttons > li:last-child {
+    margin-bottom: 0;
+  }
+}
+#button {
+  margin-top: 30px;
+  background: #c397bf;
+  border: none;
+  border-radius: 0%;
+  padding: 15px 15px 15px 15px;
 }
 
-/* Animation */
-/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
-
-.navTrigger {
-	cursor: pointer;
-	width: 30px;
-	height: 25px;
-	margin: auto;
-	position: absolute;
-	right: 30px;
-	top: 0;
-	bottom: 0;
+#button-white {
+  margin-top: 30px;
+  background: white;
+  color: #c397bf;
+  border: none;
+  border-radius: 0%;
+  padding: 15px 15px 15px 15px;
 }
 
-.navTrigger i {
-	background-color: #fff;
-	border-radius: 2px;
-	content: "";
-	display: block;
-	width: 100%;
-	height: 4px;
+#button:hover {
+  margin-top: 30px;
+  background: #c397bf;
+  border: none;
+  border-radius: 0%;
+  padding: 15px 15px 15px 15px;
 }
 
-.navTrigger i:nth-child(1) {
-	-webkit-animation: outT 0.8s backwards;
-	animation: outT 0.8s backwards;
-	-webkit-animation-direction: reverse;
-	animation-direction: reverse;
+.network-name {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "lato";
+  letter-spacing: 2px;
 }
 
-.navTrigger i:nth-child(2) {
-	margin: 5px 0;
-	-webkit-animation: outM 0.8s backwards;
-	animation: outM 0.8s backwards;
-	-webkit-animation-direction: reverse;
-	animation-direction: reverse;
+.content-section-a {
+  padding: 80px 0;
+  background: #FCFBF9;
 }
 
-.navTrigger i:nth-child(3) {
-	-webkit-animation: outBtm 0.8s backwards;
-	animation: outBtm 0.8s backwards;
-	-webkit-animation-direction: reverse;
-	animation-direction: reverse;
+.content-section-b {
+  padding: 50px 0;
+  background-color: white;
 }
 
-.navTrigger.active i:nth-child(1) {
-	-webkit-animation: inT 0.8s forwards;
-	animation: inT 0.8s forwards;
+.content-section-c {
+  padding: 80px 0;
+  background: #FCFBF9;
 }
 
-.navTrigger.active i:nth-child(2) {
-	-webkit-animation: inM 0.8s forwards;
-	animation: inM 0.8s forwards;
+.content-section-d {
+  padding: 50px 0;
+  background-color: #c397bf;
 }
 
-.navTrigger.active i:nth-child(3) {
-	-webkit-animation: inBtm 0.8s forwards;
-	animation: inBtm 0.8s forwards;
+.phone {
+  height: 350px;
+  width: 350px;
+  float: left;
 }
 
-@-webkit-keyframes inM {
-	50% {
-		-webkit-transform: rotate(0deg);
-	}
-	100% {
-		-webkit-transform: rotate(45deg);
-	}
+.lead {
+  font-size: 26px;
+  font-weight: 400;
+  color: #333333;
 }
 
-@keyframes inM {
-	50% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(45deg);
-	}
+.lead-white {
+  font-size: 26px;
+  font-weight: 400;
+  color: white;
 }
 
-@-webkit-keyframes outM {
-	50% {
-		-webkit-transform: rotate(0deg);
-	}
-	100% {
-		-webkit-transform: rotate(45deg);
-	}
+.section-heading {
+  margin-bottom: 10px;
+  color: #333333;
 }
 
-@keyframes outM {
-	50% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(45deg);
-	}
+.section-heading-white {
+  margin-bottom: 10px;
+  color: white;
 }
 
-@-webkit-keyframes inT {
-	0% {
-		-webkit-transform: translateY(0px) rotate(0deg);
-	}
-	50% {
-		-webkit-transform: translateY(9px) rotate(0deg);
-	}
-	100% {
-		-webkit-transform: translateY(9px) rotate(135deg);
-	}
+.section-heading-spacer {
+  float: left;
+  width: 100px;
+  border-top: 3px solid #c397bf;
 }
 
-@keyframes inT {
-	0% {
-		transform: translateY(0px) rotate(0deg);
-	}
-	50% {
-		transform: translateY(9px) rotate(0deg);
-	}
-	100% {
-		transform: translateY(9px) rotate(135deg);
-	}
+.section-heading-spacer-white {
+  float: left;
+  width: 100px;
+  border-top: 3px solid #ffffff;
 }
 
-@-webkit-keyframes outT {
-	0% {
-		-webkit-transform: translateY(0px) rotate(0deg);
-	}
-	50% {
-		-webkit-transform: translateY(9px) rotate(0deg);
-	}
-	100% {
-		-webkit-transform: translateY(9px) rotate(135deg);
-	}
+#responsive {
+  float: right;
 }
 
-@keyframes outT {
-	0% {
-		transform: translateY(0px) rotate(0deg);
-	}
-	50% {
-		transform: translateY(9px) rotate(0deg);
-	}
-	100% {
-		transform: translateY(9px) rotate(135deg);
-	}
+footer {
+  padding: 50px 0;
+  background-color: #f8f8f8;
 }
 
-@-webkit-keyframes inBtm {
-	0% {
-		-webkit-transform: translateY(0px) rotate(0deg);
-	}
-	50% {
-		-webkit-transform: translateY(-9px) rotate(0deg);
-	}
-	100% {
-		-webkit-transform: translateY(-9px) rotate(135deg);
-	}
+p.copyright {
+  margin: 15px 0 0;
 }
 
-@keyframes inBtm {
-	0% {
-		transform: translateY(0px) rotate(0deg);
-	}
-	50% {
-		transform: translateY(-9px) rotate(0deg);
-	}
-	100% {
-		transform: translateY(-9px) rotate(135deg);
-	}
+/* Para telas grandes (computador) */
+@media (min-width: 768px) {
+  .phone {
+    display: block; /* Mostra a imagem nas telas maiores */
+  }
 }
 
-@-webkit-keyframes outBtm {
-	0% {
-		-webkit-transform: translateY(0px) rotate(0deg);
-	}
-	50% {
-		-webkit-transform: translateY(-9px) rotate(0deg);
-	}
-	100% {
-		-webkit-transform: translateY(-9px) rotate(135deg);
-	}
+/* Para telas pequenas (celular) */
+@media (max-width: 767px) {
+  .phone {
+    display: none; /* Esconde a imagem nas telas menores */
+  }
 }
-
-@keyframes outBtm {
-	0% {
-		transform: translateY(0px) rotate(0deg);
-	}
-	50% {
-		transform: translateY(-9px) rotate(0deg);
-	}
-	100% {
-		transform: translateY(-9px) rotate(135deg);
-	}
-}
-
-.affix {
-	padding: 0;
-	background-color: #ffce83;
-}
-
-.myH2 {
-	text-align: center;
-	font-size: 4rem;
-}
-.myP {
-	text-align: justify;
-	padding-left: 15%;
-	padding-right: 15%;
-	font-size: 20px;
-}
-@media all and (max-width: 700px) {
-	.myP {
-		padding: 2%;
-	}
+@media (max-width: 767px) {
+  .intro-header {
+    background-size: 200%; /* Aumenta levemente no modo responsivo */
+    background-position: center center; /* Mantém a imagem centralizada */
+    background-repeat: no-repeat; /* Garante que não repita no celular */
+  }
 }
