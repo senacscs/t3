@@ -13,11 +13,10 @@ li {
 }
 
 .section-services {
-	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Barlow", sans-serif;
 	padding-top: 100px;
 	padding-bottom: 100px;
 	background-color: #f2f1ec;
-	color: white;
 }
 
 .section-services .header-section {
@@ -127,7 +126,7 @@ li {
 }
 
 .section-services .single-services .description {
-	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Rubik", sans-serif;
 	font-size: 15px;
 	color: #748187;
 	line-height: 1.8;
@@ -148,12 +147,4 @@ li {
 .section-services .single-services a.read-more i {
 	vertical-align: middle;
 	margin-left: 10px;
-}
-.section-services .header-section .title {
-    margin-bottom: 30px;
-    font-weight: 700;
-    font-size: 45px;
-    color: #333333;
-    line-height: 1.1;
-	font-weight: bold;
 }

@@ -1,0 +1,62 @@
+body {
+    font-family: 'Exo', serif;
+    font-size: 14px;
+    background: #eee;
+  }
+  
+  .container {
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: left;
+    margin: 20px 0 20px 0;
+  }
+  
+  input,
+  select {
+    margin-bottom: 20px;
+    border-radius: 0 !important;
+  }
+  
+  .panel.panel-default {
+    border-radius: 0;
+  }
+  
+  .padding {
+    padding: 40px;
+  }
+  
+  .no-padding {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .border-right {
+    border-right: 1px solid #ccc;
+  }
+  
+  .badge {
+    margin-left: 5px;
+    background-color: #5bc0de;
+  }
+  
+  .badge a {
+    color: #fff;
+  }
+  
+  .col-img {
+    background: url('https://4.bp.blogspot.com/-t43kGQ83NDQ/WpdOJ2HppbI/AAAAAAAAB-o/ajy6puehUqMax4N83175Y7hVR8iOVqB9wCKgBGAs/s1600/25014823_172743660127958_6003870624856932352_n.jpg');
+    background-size: cover;
+  }
+  
+  .limpar,
+  .enviar {
+    float: right;
+    margin: 20px 5px 0 0;
+  }
+  
+  .enviar {
+    margin: 20px 0 0 0;
+  }
