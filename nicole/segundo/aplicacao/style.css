@@ -21,7 +21,7 @@ NAVIGATION
 #brand {
   height: 100px;
   width: 100px;
-  margin-top: -25px;
+  margin-top: -27px;
 }
 
 .navigation {
@@ -167,8 +167,8 @@ p {
 }
 
 .phone {
-  height: 400px;
-  width: 409px;
+  height: 350px;
+  width: 350px;
   float: left;
 }
 
@@ -217,4 +217,25 @@ footer {
 
 p.copyright {
   margin: 15px 0 0;
+}
+
+/* Para telas grandes (computador) */
+@media (min-width: 768px) {
+  .phone {
+    display: block; /* Mostra a imagem nas telas maiores */
+  }
+}
+
+/* Para telas pequenas (celular) */
+@media (max-width: 767px) {
+  .phone {
+    display: none; /* Esconde a imagem nas telas menores */
+  }
+}
+@media (max-width: 767px) {
+  .intro-header {
+    background-size: 200%; /* Aumenta levemente no modo responsivo */
+    background-position: center center; /* Mantém a imagem centralizada */
+    background-repeat: no-repeat; /* Garante que não repita no celular */
+  }
 }
