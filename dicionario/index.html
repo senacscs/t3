@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dicionário</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans p-6">
+
+  <div class="max-w-3xl mx-auto flex flex-col items-center justify-center">
+    <h1 class="text-3xl font-bold text-center text-gray-800 mb-2">Dicionário</h1>
+    <span class="w-full text-center mb-6" id="quantity"></span>
+
+    <!-- Barra de Pesquisa -->
+    <input type="text" id="searchBar" placeholder="Pesquisar uma palavra..." class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:border-blue-500 mb-6">
+
+    <!-- Lista de Palavras -->
+    <ul id="dictionaryList" class="space-y-4 w-full">
+      <!-- As palavras e definições serão inseridas aqui pelo JavaScript -->
+    </ul>
+  </div>
+
+  <script src="./dictionaryData.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
