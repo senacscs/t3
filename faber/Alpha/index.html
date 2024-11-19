@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco PowerUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Eco PowerUp</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="mostrarAba('home')">Home</a></li>
+                <li><a href="#" onclick="mostrarAba('about')">Sobre o Projeto</a></li>
+                <li><a href="#" onclick="mostrarAba('collection-points')">Pontos de Coleta</a></li>
+                <li><a href="#" onclick="mostrarAba('contact')">Contato</a></li>
+                <li><a href="#" onclick="mostrarAba('produtos')">Produtos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="aba">
+        <h2>O que é o EcoPowerup?</h2>
+        <p>O EcoPowerUp é um projeto que reutiliza baterias de lítio usadas e transforma em um gerador sustentável </p>
+    </section>
+
+    <section id="about" class="aba" style="display: none;">
+        <h2>Sobre o Projeto</h2>
+        <p>Problema: Uma fábrica de leite não pode ficar mais de 3 horas sem energia elétrica, pois isso pode causar a deterioração dos produtos, resultando em perdas e riscos à saúde pública.</p>
+
+        <p>Solução com o nosso projeto vamos reutilizar baterias usadas de notebooks e de celulares. Ele garante energia contínua e confiável, evitando interrupções na produção e armazenamento dos produtos. Além de prevenir perdas, a solução contribui para a sustentabilidade, reaproveitando baterias que seriam descartadas.</p>
+    </section>
+
+    <section id="collection-points" class="aba" style="display: none;">
+        <h2>Pontos de Coleta</h2>
+        <ul>
+            <li>Ponto de Coleta 1: R. Venâncio Aires, 300 SENAC</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="aba" style="display: none;">
+        <h2>Contato</h2>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section id="produtos" class="aba" style="display: none;">
+        <h2>Itens utilizados para o protótipo</h2>
+        <input type="text" id="search" placeholder="Pesquisar produtos..." onkeyup="filtrarProdutos()">
+        <div class="produtos-grid" id="produtos-grid"></div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="fecharModal()">&times;</span>
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-descricao"></p>
+            <p id="modal-preco"></p>
+            <p id="modal-info"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy;faber_006</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
