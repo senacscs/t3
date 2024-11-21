@@ -1,0 +1,73 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+#exit {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  /* position: fixed; */
+  top: 10px;
+  margin-left: 5px;
+  /* right: 0; */
+  cursor: pointer;
+}
+
+.exit div {
+  width: 30px;
+  height: 4px;
+  margin-top: 3px;
+}
+
+.logo {
+  width: 250px;
+
+  /* position: absolute; */
+}
+
+.perfil {
+  width: 50px;
+  /* margin-left: 100px; */
+  /* position: absolute; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.livros {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.livro1{
+  width: 170px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.livro2{
+  width: 170px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.livro3{
+  width: 170px;
+  margin: 0px;
+  padding: 0px;
+}

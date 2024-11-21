@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.logo {
+  width: 250px;
+
+  /* position: absolute; */
+}
+
+.perfil {
+  width: 50px;
+  /* margin-left: 100px; */
+  /* position: absolute; */
+}
+
+#exit {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  /* position: fixed; */
+  top: 10px;
+  margin-left: 5px;
+  /* right: 0; */
+  cursor: pointer;
+}
+
+.exit div {
+  width: 30px;
+  height: 4px;
+  background: rgb(51, 51, 51) none repeat scroll 0% 0%;
+  margin-top: 3px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.button1 {
+  padding: 24px;
+  width: 1258px;
+  background: rgba(165, 165, 165, 0.326);
+  text-align: left;
+}
+
+.button2 {
+  padding: 24px;
+  width: 1258px;
+  background: rgba(165, 165, 165, 0.326);
+  text-align: left;
+}
+
+.button3 {
+  padding: 24px;
+  width: 1258px;
+  margin: 10px;
+  background: rgba(165, 165, 165, 0.326);
+  text-align: left;
+}
+
+footer {
+  display: flex;
+  justify-content: right;
+}
+
+.add {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 50px;
+  margin-right: 10px;
+  background:rgba(187, 187, 197, 0.393);
+}
+
+p{
+  text-decoration: none;
+  color: black;
+}
