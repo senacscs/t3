@@ -50,8 +50,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
   }
 
-  .button1{
+  .button{
     padding: 20px;
   }

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Chat com Estudantes</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle,send" />
 </head>
 
 <body>
@@ -13,24 +15,44 @@
         <div>
         </div>
         <div class="exit" id="exit">
-            <a href="../../chat/index.html"><img class="exit" id="exit" src="../../../..//seta de voltar.png"></a>
+            <a href="../../../professor/index.html"><img class="exit" id="exit"
+                    src="../../../..//seta de voltar.png"></a>
         </div>
         <div class="logo">
             <a href="index.html"><img class="logo" id="logo" src="../../../../logo-remove.png"
                     alt="palavra acolhimento com o desenho de um cérebro no lugar da letra a"></a>
         </div>
-        <a href="../../perfil/index.html"><img class="perfil" src="../../../../avatar.png"></a>
+        <a href="../perfil/index.html"><img class="perfil" src="../../../../avatar.png"></a>
     </header>
-
-    <body>
-        <div class="chat-container">
-            <div class="messages-container" id="messages"></div>
-            <div class="message-input-container">
-                <input type="text" id="messageInput" placeholder="Escreva uma mensagem...">
-                <button id="sendButton">Enviar</button>
+    <div id="app-container">
+        <div id="list-users">
+            <div class="user">
+                <span class="material-symbols-outlined"> account_circle </span>
+                <span>Você</span>
+            </div>
+            <div class="user">
+                <span class="material-symbols-outlined"> account_circle </span>
+                <span>Ana Dick</span>
+            </div>
+            <div class="user">
+                <span class="material-symbols-outlined"> account_circle </span>
+                <span>Murilo Almeida</span>
+            </div>
+            <div class="user">
+                <span class="material-symbols-outlined"> account_circle </span>
+                <span>Vicente Rocha</span>
             </div>
         </div>
-        <script src="script.js"></script>
-    </body>
+        <div id="chat-container">
+        </div>
+    </div>
+    <div class="send-message-container">
+        <input class="message-input" type="text" id="text" />
+        <button class="send-message" onclick="handleSendMessage()">
+            <span class="material-symbols-outlined"> send </span>
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
 
 </html>

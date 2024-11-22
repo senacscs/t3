@@ -2,30 +2,33 @@ const messages = [
   {
     text: "Oi sor, tu poderia me ajudar com uma dúvida?",
     dh: new Date(),
+    sender:"self"
   },
   {
     text: "Claro, sobre o que seria?",
     dh: new Date(),
-    sender:"self"
   },
   {
     text: "Eu não sei o que acontece depois que o ar entra no pulmão.",
     dh: new Date(),
+    sender:"self"
   },
   {
     text: "É absorvido pelos alvéolos, mas depois disso?",
     dh: new Date(),
+    sender:"self"
   },
   {
     text: "Depois disso ainda não trabalhamos em aula, mas se quiser saber, pesquise, acho que você vai gostar.",
     dh: new Date(),
-    sender: "self"
   },
   {
     text: "Ok, obrigada",
     dh: new Date(),
+    sender: "self"
   },
 ];
+ 
  
 const inMessageModel = (message) => (
   ` <span class="material-symbols-outlined"> account_circle </span>
