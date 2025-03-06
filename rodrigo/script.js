@@ -84,6 +84,8 @@ document.addEventListener('keydown', function (event) {
                 window.location.href = "./primeiro/" + sites[selected].link
             }else if(year == 24){
                 window.location.href = "./segundo/" + sites[selected].link
+            }else if(year == 25) {
+                window.location.href = "./terceiro/" + sites[selected].link
             }
         }
     } else if (key == 'n') {

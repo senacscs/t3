@@ -1,10 +1,10 @@
 
 [
   {
-    "title": "Aquapure (projeto PP)",
-    "subject": "Técnico/PP",
-    "date": "16/10/24",
-    "text": "Projeto Aquapure para captura de microplásticos com informações basicas e dowload do artigo",
+    "title": "Aquapure Salpa (projeto)",
+    "subject": "PP",
+    "date": "06/03/25",
+    "text": "Site do projeto feito em PP para a boia Salpa desenvolvida",
     "link": "projeto"
   },
   {
@@ -12,7 +12,7 @@
     "subject": "Técnico",
     "date": "28/02/24",
     "text": "Site com uma super oficina sobre arquivos .json e fetch em JS",
-    "link": "oficina7"
+    "link": "oficina"
   },
   {
     "title": "Indicações Back-End",
