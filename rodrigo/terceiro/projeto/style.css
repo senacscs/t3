@@ -142,6 +142,9 @@
     font-size: 1em;
     color: #555;
   }
+  .testImg{
+    width: 50%;
+  }
   /* sobre */
 
  #sobre img{
