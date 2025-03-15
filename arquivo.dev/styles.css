@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  scrollbar-color: #282a36;
+  scrollbar-width: thin;
+  scrollbar-gutter: stable;
+}
+
+*::-webkit-scrollbar {
+  background-color: #222327;
+  width: 0.5rem;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #454a64;
+  border-radius: 6px;
+}
+
+body {
+  background-color: #222327;
+  overflow: overlay;
+}
+
+img {
+  position: fixed;
+  display: none;
+  top: 4rem;
+  left: 0rem;
+  width: 10rem;
+  height: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+header {
+  margin: 3rem 0 6rem 0;
+  text-align: center;
+}
+
+h1 {
+  color: #cdd0e4;
+  text-transform: uppercase;
+  font-size: xx-large;
+  margin-bottom: 2rem;
+}
+
+input {
+  background-color: #454a64;
+  outline: none;
+  border: none;
+  font-size: large;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  color: #b5bad6;
+  width: 20rem;
+}
+
+input::placeholder {
+  color: #888fb8;
+}
+
+#students-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.student-link {
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 500;
+  display: block;
+  width: 9rem;
+  font-size: larger;
+  transition: all 4s 0;
+  border-radius: 1rem;
+  border-style: solid;
+  border-width: 0.125rem;
+}
+
+#eminem {
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+#eminem img {
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  #students-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  img {
+    display: block;
+  }
+
+  #students-list {
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #students-list {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
