@@ -1,0 +1,20 @@
+body {
+    -webkit-animation: colorchange 15s infinite; 
+    animation: colorchange 15s infinite;
+}
+@-webkit-keyframes colorchange {
+     0%  {background: #ff000086;}
+    25%  {background: #0011ff86;}
+    50%  {background: #00ffcc86;}
+    75%  {background: #f700ff86;}
+    100% {background: #2bff0086;}
+} 
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.paragrafo {
+    text-indent: 30px;
+}

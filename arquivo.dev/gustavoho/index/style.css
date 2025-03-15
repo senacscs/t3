@@ -1,0 +1,8 @@
+body {
+    text-align: center;
+    background-image: url(fundo.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: rgb(246, 244, 250);
+}
+
