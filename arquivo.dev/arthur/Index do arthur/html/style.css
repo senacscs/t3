@@ -1,0 +1,14 @@
+body {
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-image: url(https://i.pinimg.com/736x/d6/39/2e/d6392eb6376d3b147fea9933996ddb4a.jpg)
+}
+
+h1, a, p, h2, ul {
+	color: white;
+	text-align: center;
+}
+
+.meio {
+	text-align: center;
+}

@@ -1,0 +1,40 @@
+body {
+   background-color: #181818;
+    
+}
+    h1, h2{
+    color:  #b3b3b3;
+    text-align: center;
+    font-size: 190%;
+}
+    p,a {
+    color:#c46bda;
+    font-size: 150%;
+    padding-right: 15%;
+    padding-left: 15%;
+    
+
+}
+iframe{
+    margin: auto;
+    display: block;
+}
+img{
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+.Texto, h2{
+    background-color:#404040;
+    background-position: 20%;
+    border-radius: 20px;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+p, h1{
+    background-color:#404040;
+    background-position: 20%;
+    border-radius: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
