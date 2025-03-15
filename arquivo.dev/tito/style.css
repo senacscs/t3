@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Fuzzy Bubbles', cursive;
+    scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+    width: .25rem;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #d2d2d2;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    overflow: hidden;
+    background-image: url("./assets/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    margin-bottom: 1rem;
+}
+
+.page-title {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.page-subtitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #32a83a;
+    text-align: center;
+    line-height: 2rem;
+    font-weight: bold;
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+}
+
+.social-image {
+    height: 3.5rem;
+}
+
+.social-link {
+    filter: invert(42%) sepia(10%) saturate(12300%) hue-rotate(200deg) brightness(50%) contrast(119%);
+}
+
+#activities {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.activity {
+    flex-direction: column;
+    transition: all .2s;
+    padding: 2rem 5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.activity:hover {
+    cursor: pointer;
+}
+
+.activity-link {
+    color: black;
+    text-decoration: none;
+}
+
+.activity-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem
+}
+
+.activity-image {
+    aspect-ratio: 16/9;
+    width: 16rem;
+    border-radius: 6px;
+}
+
+.activity-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #9632a8;
+    line-height: 1.75rem;
+}
+
+.activity-subject {
+    font-weight: bold;
+    color: #ff8c00;
+}
+
+.activity-instructions {
+    color: #5a5a5f;
+}
+
+.activity-date {
+    display: block;
+    color: #a83232;
+}
+
+@media (min-width: 640px) {
+    main {
+        grid-template-columns: 1fr 2fr;
+        gap: 4rem;
+        height: 100vh;
+        padding: 10vh 10vw;
+    }
+
+    .page-subtitle {
+        line-height: 1.5rem;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .activity-meta {
+        flex-direction: row;
+        gap: 1rem;
+    }
+}

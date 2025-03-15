@@ -1,0 +1,27 @@
+body {
+
+ background-repeat: no-repeat;
+
+ background-size: 100%;
+
+ background-image: url(https://rare-gallery.com/uploads/posts/509080-red-dead-redemption.jpg)
+
+}
+
+
+
+h1, a, p, h2, ul {
+
+ color: rgb(0, 0, 0);
+
+ text-align: center;
+
+}
+
+
+
+.meio {
+
+ text-align: center;
+
+}

@@ -1,0 +1,161 @@
+:root {
+    --text: #484848;
+    --background: #cfd1d4;
+    --heading: #2b2b2b;
+    --accent: #005eaa;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    scroll-margin-top: 5rem;
+    word-break: break-all;
+}
+
+body {
+    padding: 2rem 4rem;
+    background-color: var(--background);
+}
+
+header {
+    margin-bottom: 3rem;
+}
+
+main {
+    display: flex;
+    height: 60vh;
+    gap: 4rem;
+}
+
+.meta {
+    color: var(--text);
+    text-align: center;
+}
+
+.search-title {
+    margin-bottom: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+    color: var(--heading);
+}
+
+.authors {
+    display: block;
+}
+
+nav {
+    display: flex;
+    height: max-content;
+    flex-direction: column;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav button {
+    background: none;
+    border: none;
+    outline: none;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    text-align: start;
+    margin-right: 2rem;
+    transition: all .2s ease;
+    color: var(--text);
+}
+
+nav button:hover {
+    color: var(--accent);
+}
+
+nav button:hover {
+    cursor: pointer;
+}
+
+#content {
+    padding: 1rem 0;
+    width: 60%;
+    transition: opacity .2s ease-in;
+    height: auto;
+    overflow-y: auto;
+    height: 100%;
+}
+
+#content strong {
+    color: var(--heading);
+}
+
+#content h2 {
+    margin-bottom: 1.25rem;
+    color: var(--heading);
+}
+
+#content p {
+    margin-bottom: .75rem;
+    color: var(--text);
+}
+
+#content ul {
+    margin-left: 3rem;
+    color: var(--text);
+}
+
+#content a {
+    color: var(--accent);
+}
+
+.navbutton {
+    display: none;
+    width: 4rem;
+    padding: 1.25rem 1rem 0;
+    height: 4rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--accent);
+    border-radius: 50%;
+}
+
+@media (max-width: 640px) {}
+
+@media (max-width: 768px) {
+    body {
+        padding: 6rem 2rem;
+    }
+
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .meta {
+        text-align: start;
+    }
+
+    .search-title {
+        font-size: 1.5rem;
+        text-align: start;
+    }
+
+    .authors {
+        margin-bottom: 1rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    #content {
+        width: auto;
+    }
+
+    .navbutton {
+        display: block;
+    }
+}
+
+@media (max-width: 1024px) {}

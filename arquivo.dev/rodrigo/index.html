@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index do Rodrigo </title>
+    <link rel="icon" href="img/Icon.png" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+</head>
+<body>
+    <header>
+        <div class="name">
+            <h1>Inde<span onclick="nico()">x</span> do Rodrigo</h1>
+        </div>
+        <div class="contact">
+                <a href="https://github.com/Rodrik227" target="_blank">Github</a>
+                <a href="https://wa.me/5551999599285">Contato</a>
+                <a id="Discord"onclick="copy()">Discord</a>
+        </div>
+    </header>
+    <div class="body">
+        <div id="nicolau" class="hiden">
+            <img src="img/nicolau.png">
+            <audio id="nico">
+                <source src="img/Nicolau_antonio.mp3">
+            </audio>
+        </div>
+        <!-- -------------INDICAÇÕES------------- -->
+        <div class="grid">
+            <div 
+            class="title">
+            <h3>Indicações</h3>
+        </div>
+            <div class="img">
+                <img src="./img/indicacoes.jpg">
+            </div>
+            <div class="link">
+                <a href="./indicacoes">Acessar</a>
+            </div>
+            <div class="info">
+                <button 
+                onclick="indicacoes()">
+                Infos
+                </button>
+            </div> 
+        </div>
+        <div
+         id="indicacoes"
+          class="hiden">
+            <div class="empty">
+                
+            </div>
+            <div class="imgInf" class="down">
+                <img src="./img/indicacoes.jpg">
+            </div>
+            <div class="close">
+                <button onclick="close1()">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <div class="date" class="down">
+                Upload em: 24/04/2023<br>Matéria: Técnico
+            </div>
+            <div class="text" class="down">
+                <p id="part1">Considerando os conhecimentos já adquiridos em HTML, CSS e JS,
+                 utilizar os mesmos e aprofundar para criar uma webpage (página na internet) sobre os
+                  conteúdos básicos de Front-End, sendo esta a temática principal para as recomendações de:</p>
+                <p>  1 site de conteúdos (deve ter o link pro site)</p>
+                <p>  1 canal Youtube de conteúdos (deve ter o link e 1 vídeo embedado)</p>
+                <p>  1 influenciador de conteúdos (deve ter o link e um material embedado)</p>
+                <p>  1 tutorial (deve ter o link e uma imagem do resultado do tutorial)</p>
+                <p>  1 podcast (link embedado de só áudio preferencialmente, mas pode ser vídeo)</p>
+            </div>
+        </div>
+        <!-- -------------KAT GENERATOR-------------- -->
+        <div class="grid">
+            <div 
+            class="title">
+            <h3>Kat Generator</h3>
+        </div>
+            <div class="img">
+                <img src="./img/kat.jpg">
+            </div>
+            <div class="link">
+                <a href="./kat">Acessar</a>
+            </div>
+            <div class="info">
+                <button 
+                onclick="kat()">
+                Infos
+                </button>
+            </div> 
+        </div>
+        <div
+         id="kat"
+          class="hiden">
+            <div class="empty">
+                
+            </div>
+            <div class="imgInf" class="down">
+                <img src="./img/kat.jpg">
+            </div>
+            <div class="close">
+                <button onclick="close2()">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <div class="date" class="down">
+                Upload em: 05/05/2023<br>Matéria: Técnico
+            </div>
+            <div class="text" class="down">
+                <p id="part1"><p>A partir do código exemplo 
+                    em https://arquivo.dev/t1/oficina.html modificar o arquivo html, com 
+                    temática livre, inserindo algum novo elemento nesta webpage
+                     (exemplo, um vídeo, um link, um javascript), e anexar este novo
+                      documento html personalizado aqui nesta tarefa.</p>
+            </div>
+        </div>
+        <div class="grid">
+            <div 
+            class="title">
+            <h3>Projeto de PP</h3>
+        </div>
+            <div class="img">
+                <img src="./img/PP.jpg">
+            </div>
+            <div class="link">
+                <a href="./Trabalho-de-PP/">Acessar</a>
+            </div>
+            <div class="info">
+                <button 
+                onclick="PP()">
+                Infos
+                </button>
+            </div> 
+        </div>
+        <div
+         id="PP"
+          class="hiden">
+            <div class="empty">
+                
+            </div>
+            <div class="imgInf" class="down">
+                <img src="./img/PP.jpg">
+            </div>
+            <div class="close">
+                <button onclick="close3()">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <div class="date" class="down">
+                Upload em: 10/05/2023<br>Matéria: PP
+            </div>
+            <div class="text" class="down">
+                <p id="part1">
+                    Fazer um site para o trabalho sobre métodos de limpeza de fluentes incializado em Projeto Profissional
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="alert" class="hiden">
+        <p>✅ Nick copiado</p>
+    </div>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>
