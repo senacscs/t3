@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="assets/kfc_bucket.png">
+    <link rel="shortcut icon" type="image/png" href="assets/kfc_bucket.png">
+    <title>Nigga Clicker</title>
+</head>
+<body>
+    <h1>Nigga Clicker</h1>
+    <div class="game-container">
+        <div class="upgrades-container">
+            <div class="multiplier-box">
+                <h2>Suco de Uva</h2>
+                <p class="upgrade-description">Desce melhor com frango frito!</p>
+                <div id="multiplicador">Multiplicador atual: 1.0x</div>
+                <div id="custoMultiplicador">Custo: 5 Frangos Fritos</div>
+                <button onclick="comprarMultiplicador()" id="botaoMultiplicador" class="buy-button">Comprar Multiplicador</button>
+            </div>
+            <div class="multiplier-box">
+                <h2>Fritadeira</h2>
+                <p class="upgrade-description">Frita frangos automaticamente!</p>
+                <div id="autoClickerRate">Produção: 0.0 por segundo</div>
+                <div id="custoAutoClicker">Custo: 10 Frangos Fritos</div>
+                <button onclick="comprarAutoClicker()" id="botaoAutoClicker" class="buy-button">Comprar Fritadeira</button>
+            </div>
+            <div class="multiplier-box">
+                <h2>Equipe de Cozinheiros</h2>
+                <p class="upgrade-description">Contrate cozinheiros experientes para acelerar a produção.</p>
+                <div id="cozinheirosRate">Produção: 0.0 por segundo</div>
+                <div id="custoCozinheiros">Custo: 25 Frangos Fritos</div>
+                <button onclick="comprarCozinheiros()" id="botaoCozinheiros" class="buy-button">Contratar Cozinheiros</button>
+            </div>
+            <div class="multiplier-box">
+                <h2>Food Truck</h2>
+                <p class="upgrade-description">Leve seu frango frito para as ruas e venda enquanto dorme!</p>
+                <div id="foodTruckRate">Produção: 0.0 por segundo</div>
+                <div id="custoFoodTruck">Custo: 50 Frangos Fritos</div>
+                <button onclick="comprarFoodTruck()" id="botaoFoodTruck" class="buy-button">Comprar Food Truck</button>
+            </div>
+            <div class="multiplier-box">
+                <h2>Restaurante de Soul Food</h2>
+                <p class="upgrade-description">Abra seu próprio restaurante e veja os clientes chegando em fila!</p>
+                <div id="restauranteRate">Produção: 0.0 por segundo</div>
+                <div id="custoRestaurante">Custo: 100 Frangos Fritos</div>
+                <button onclick="comprarRestaurante()" id="botaoRestaurante" class="buy-button">Abrir Restaurante</button>
+            </div>
+            <div class="multiplier-box">
+                <h2>Distribuição de Cestas</h2>
+                <p class="upgrade-description">Apoie a comunidade distribuindo cestas de frango frito.</p>
+                <div id="cestasRate">Bônus: +0% a cada 5 minutos</div>
+                <div id="custoCestas">Custo: 150 Frangos Fritos</div>
+                <button onclick="comprarCestas()" id="botaoCestas" class="buy-button">Iniciar Distribuição</button>
+            </div>
+            <div class="multiplier-box">
+                <h2>Festival Gastronômico</h2>
+                <p class="upgrade-description">Participe de festivais e venda frangos enquanto se diverte.</p>
+                <div id="festivalRate">Multiplicador: 1x a cada 10 minutos</div>
+                <div id="custoFestival">Custo: 200 Frangos Fritos</div>
+                <button onclick="comprarFestival()" id="botaoFestival" class="buy-button">Participar do Festival</button>
+            </div>
+            <div class="multiplier-box">
+                <h2>Receita Secreta da Vovó</h2>
+                <p class="upgrade-description">Uma receita especial que faz o frango vender sozinho!</p>
+                <div id="receitaRate">Bônus: +0% na produção</div>
+                <div id="custoReceita">Custo: 300 Frangos Fritos</div>
+                <button onclick="comprarReceita()" id="botaoReceita" class="buy-button">Obter Receita</button>
+            </div>
+            <div class="multiplier-box">
+                <h2>Parcerias com Mercados</h2>
+                <p class="upgrade-description">Feche acordos com mercados para vender seu frango automaticamente.</p>
+                <div id="parceriasRate">Produção: 0.0 por segundo</div>
+                <div id="custoParcerias">Custo: 400 Frangos Fritos</div>
+                <button onclick="comprarParcerias()" id="botaoParcerias" class="buy-button">Fechar Parcerias</button>
+            </div>
+            <div class="multiplier-box">
+                <h2>Livro de Receitas Afro</h2>
+                <p class="upgrade-description">Suas receitas ficam famosas e vendem mesmo sem você estar lá.</p>
+                <div id="livroRate">Bônus: +0% em todas as produções</div>
+                <div id="custoLivro">Custo: 500 Frangos Fritos</div>
+                <button onclick="comprarLivro()" id="botaoLivro" class="buy-button">Publicar Livro</button>
+            </div>
+            <div class="multiplier-box">
+                <h2>Aplicativo de Entregas</h2>
+                <p class="upgrade-description">Lance um app para pedidos online e venda frango 24h por dia.</p>
+                <div id="appRate">Bônus: +0% na produção passiva</div>
+                <div id="custoApp">Custo: 600 Frangos Fritos</div>
+                <button onclick="comprarApp()" id="botaoApp" class="buy-button">Lançar App</button>
+            </div>
+        </div>
+        <div class="clicker-container">
+            <img src="assets/kfc_bucket.png" onclick="contarCliques()" class="clickable-image" alt="KFC Bucket">
+            <div id="contador">Frangos Fritos: 0</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

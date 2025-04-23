@@ -1,0 +1,434 @@
+* {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    background-image: url('assets/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.game-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    min-height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.multiplier-box, .upgrade-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.multiplier-box {
+    width: 290px;
+    margin-bottom: 15px;
+}
+
+.multiplier-box h2, .upgrade-box h3 {
+    margin: 0 0 10px 0;
+    color: #ffd700;
+    font-size: 24px;
+}
+
+.upgrade-box h3 {
+    margin-top: 10px;
+}
+
+.upgrade-description {
+    color: #aaa;
+    font-size: 14px;
+    margin: 0 0 15px 0;
+    font-style: italic;
+}
+
+.upgrade-box p {
+    color: #aaa;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+#multiplicador, #custoMultiplicador, #autoClickerRate, #custoAutoClicker {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.upgrade-box {
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.upgrade-box:hover {
+    border-color: #ffd700;
+    transform: translateX(5px);
+    background: rgba(255, 215, 0, 0.1);
+}
+
+.buy-button {
+    background-color: #ffd700;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.buy-button:hover {
+    background-color: #ffed4a;
+    transform: scale(1.05);
+}
+
+.buy-button:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.clickable-image {
+    cursor: pointer;
+    width: 250px;
+    height: auto;
+    transition: transform 0.1s;
+    margin: 20px auto;
+    display: block;
+}
+
+.clickable-image:active {
+    transform: scale(0.95);
+}
+
+#contador {
+    font-size: 28px;
+    margin-top: 25px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.clicker-container {
+    text-align: center;
+    margin-left: 320px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.upgrades-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 320px;
+    padding: 30px 15px 20px;
+    background: rgba(26, 26, 26, 0.95);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 5px 0 20px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ffd700 rgba(255, 255, 255, 0.1);
+    z-index: 100;
+}
+
+.multiplier-box {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 12px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.multiplier-box:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px);
+    border-color: #ffd700;
+}
+
+.multiplier-box h2 {
+    margin: 0 0 10px;
+    color: #ffd700;
+    font-size: 22px;
+}
+
+.upgrade-description {
+    color: #aaa;
+    font-size: 14px;
+    margin: 0 0 12px;
+    font-style: italic;
+}
+
+#multiplicador, #custoMultiplicador, #autoClickerRate, #custoAutoClicker,
+#cozinheirosRate, #custoCozinheiros, #foodTruckRate, #custoFoodTruck,
+#restauranteRate, #custoRestaurante, #cestasRate, #custoCestas,
+#festivalRate, #custoFestival, #receitaRate, #custoReceita,
+#parceriasRate, #custoParcerias, #livroRate, #custoLivro,
+#appRate, #custoApp {
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+.buy-button {
+    background-color: #ffd700;
+    color: #000;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 8px;
+}
+
+.buy-button:hover {
+    background-color: #ffed4a;
+    transform: scale(1.05);
+}
+
+.buy-button:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Estilo da barra de rolagem para Chrome/Safari */
+.upgrades-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.upgrades-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 3px;
+}
+
+.upgrades-container::-webkit-scrollbar-thumb {
+    background-color: #ffd700;
+    border-radius: 3px;
+}
+
+.upgrades-container::-webkit-scrollbar-thumb:hover {
+    background-color: #ffed4a;
+}
+
+h1 {
+    position: fixed;
+    top: 15px;
+    left: 370px;
+    width: calc(100% - 370px);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 36px;
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    z-index: 10;
+}
+
+/* Media Queries para diferentes tamanhos de tela */
+@media screen and (max-width: 1200px) {
+    .upgrades-container {
+        width: 280px;
+    }
+    
+    .clicker-container {
+        margin-left: 280px;
+    }
+    
+    h1 {
+        left: 280px;
+        width: calc(100% - 280px);
+        font-size: 32px;
+    }
+    
+    .clickable-image {
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .upgrades-container {
+        width: 250px;
+    }
+    
+    .clicker-container {
+        margin-left: 250px;
+    }
+    
+    h1 {
+        left: 250px;
+        width: calc(100% - 250px);
+        font-size: 28px;
+    }
+    
+    .multiplier-box h2 {
+        font-size: 20px;
+    }
+    
+    .upgrade-description {
+        font-size: 13px;
+    }
+    
+    #multiplicador, #custoMultiplicador, #autoClickerRate, #custoAutoClicker,
+    #cozinheirosRate, #custoCozinheiros, #foodTruckRate, #custoFoodTruck,
+    #restauranteRate, #custoRestaurante, #cestasRate, #custoCestas,
+    #festivalRate, #custoFestival, #receitaRate, #custoReceita,
+    #parceriasRate, #custoParcerias, #livroRate, #custoLivro,
+    #appRate, #custoApp {
+        font-size: 14px;
+    }
+    
+    .buy-button {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+    
+    .clickable-image {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .upgrades-container {
+        width: 220px;
+    }
+    
+    .clicker-container {
+        margin-left: 220px;
+    }
+    
+    h1 {
+        left: 220px;
+        width: calc(100% - 220px);
+        font-size: 24px;
+    }
+    
+    .multiplier-box {
+        min-height: 140px;
+        padding: 10px;
+    }
+    
+    .multiplier-box h2 {
+        font-size: 18px;
+    }
+    
+    .upgrade-description {
+        font-size: 12px;
+    }
+    
+    #multiplicador, #custoMultiplicador, #autoClickerRate, #custoAutoClicker,
+    #cozinheirosRate, #custoCozinheiros, #foodTruckRate, #custoFoodTruck,
+    #restauranteRate, #custoRestaurante, #cestasRate, #custoCestas,
+    #festivalRate, #custoFestival, #receitaRate, #custoReceita,
+    #parceriasRate, #custoParcerias, #livroRate, #custoLivro,
+    #appRate, #custoApp {
+        font-size: 13px;
+        margin: 4px 0;
+    }
+    
+    .buy-button {
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+    
+    .clickable-image {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .upgrades-container {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 15px;
+    }
+    
+    .clicker-container {
+        margin-left: 0;
+        padding-top: 60px;
+    }
+    
+    h1 {
+        position: fixed;
+        top: 10px;
+        left: 0;
+        width: 100%;
+        font-size: 20px;
+    }
+    
+    .multiplier-box {
+        min-height: auto;
+        margin-bottom: 8px;
+    }
+    
+    .multiplier-box h2 {
+        font-size: 16px;
+    }
+    
+    .upgrade-description {
+        font-size: 11px;
+    }
+    
+    #multiplicador, #custoMultiplicador, #autoClickerRate, #custoAutoClicker,
+    #cozinheirosRate, #custoCozinheiros, #foodTruckRate, #custoFoodTruck,
+    #restauranteRate, #custoRestaurante, #cestasRate, #custoCestas,
+    #festivalRate, #custoFestival, #receitaRate, #custoReceita,
+    #parceriasRate, #custoParcerias, #livroRate, #custoLivro,
+    #appRate, #custoApp {
+        font-size: 12px;
+        margin: 3px 0;
+    }
+    
+    .buy-button {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+    
+    .clickable-image {
+        width: 150px;
+        margin: 15px auto;
+    }
+    
+    #contador {
+        font-size: 20px;
+    }
+}
