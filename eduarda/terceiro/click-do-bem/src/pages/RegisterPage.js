@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { supabase } from '../utils/supabaseClient'; // Importa o cliente Supabase
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link} from 'react-router-dom';
+// Importe 'bcryptjs' se for fazer hash de senhas no frontend (NÃO RECOMENDADO DIRETAMENTE NO CLIENTE)
+// import bcrypt from 'bcryptjs';
 
 function RegisterPage() {
   const [email, setEmail] = useState('');
@@ -21,23 +23,43 @@ function RegisterPage() {
       return;
     }
 
-    const { error: signUpError } = await supabase.auth.signUp({
-      email,
-      password,
-    });
+    try {
+      // *** IMPORTANTE: Em um cenário real, você FARIA O HASH da senha aqui ***
+      // Por simplicidade e demonstração, vamos salvar a senha em texto puro por AGORA.
+      // NUNCA FAÇA ISSO EM PRODUÇÃO! Use uma função de hash segura.
+      // Ex: const hashedPassword = bcrypt.hashSync(password, 10);
+      const hashedPassword = password; // APENAS PARA DEMONSTRAÇÃO!
 
-    if (signUpError) {
-      setError(signUpError.message);
-    } else {
-      alert('Cadastro realizado com sucesso! Verifique seu e-mail para confirmar a conta.');
-      navigate('/login'); // Redireciona para a página de login após o cadastro
+      // Tentar inserir o novo usuário na tabela 'users'
+      const { data, error: insertError } = await supabase
+        .from('users')
+        .insert({
+          email: email,
+          password: hashedPassword, // Lembre-se do risco de segurança!
+        });
+
+      if (insertError) {
+        // Verifica se o erro é de e-mail já existente (ex: código de erro 23505 para unique_violation)
+        if (insertError.code === '23505' && insertError.message.includes('unique_violation')) {
+            setError('Este e-mail já está cadastrado.');
+        } else {
+            setError(insertError.message);
+        }
+      } else {
+        alert('Cadastro realizado com sucesso! Agora você pode fazer login.');
+        navigate('/login'); // Redireciona para a página de login após o cadastro
+      }
+    } catch (err) {
+      setError('Ocorreu um erro inesperado ao cadastrar.');
+      console.error('Erro de cadastro:', err);
+    } finally {
+      setLoading(false);
     }
-    setLoading(false);
   };
 
   return (
     <div>
-      <h1>Cadastro</h1>
+      <h1>Cadastro Simples</h1>
       <form onSubmit={handleRegister}>
         <div>
           <label htmlFor="email">Email:</label>
@@ -75,7 +97,7 @@ function RegisterPage() {
         </button>
       </form>
       <p>
-        Já tem uma conta? <Link to="LoginPage.js">Faça login aqui</Link>
+        Já tem uma conta? <Link to="/LoginPage">Faça login aqui</Link>
       </p>
     </div>
   );

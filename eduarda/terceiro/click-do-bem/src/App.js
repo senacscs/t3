@@ -1,24 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
+// Importe outras páginas conforme for criando
+// import DashboardPage from './pages/DashboardPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <header className="App-header">
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Início</Link>
+              </li>
+              <li>
+                <Link to="/login">Login</Link>
+              </li>
+              <li>
+                <Link to="/register">Cadastre-se</Link>
+              </li>
+              {/* Adicionar link para Dashboard após o login */}
+              {/* <li>
+                <Link to="/dashboard">Dashboard</Link>
+              </li> */}
+            </ul>
+          </nav>
+        </header>
+
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/register" element={<RegisterPage />} />
+            {/* <Route path="/dashboard" element={<DashboardPage />} /> */}
+          </Routes>
+        </main>
+
+        <footer>
+          <p>© 2025 Click do Bem. Todos os direitos reservados.</p>
+        </footer>
+      </div>
+    </Router>
   );
 }
 
