@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
+import DashboardPage from './pages/DashboardPage';
 // Importe outras páginas conforme for criando
-// import DashboardPage from './pages/DashboardPage';
+
 
 function App() {
   return (
@@ -22,10 +23,9 @@ function App() {
               <li>
                 <Link to="/register">Cadastre-se</Link>
               </li>
-              {/* Adicionar link para Dashboard após o login */}
-              {/* <li>
+              <li>
                 <Link to="/dashboard">Dashboard</Link>
-              </li> */}
+              </li>
             </ul>
           </nav>
         </header>
