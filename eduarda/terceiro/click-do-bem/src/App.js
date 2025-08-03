@@ -4,8 +4,7 @@ import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import DashboardPage from './pages/DashboardPage';
-// Importe outras páginas conforme for criando
-
+// Importe outras páginas conforme for criando, mas elas não estarão no menu principal
 
 function App() {
   return (
@@ -35,7 +34,10 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
-            {/* <Route path="/dashboard" element={<DashboardPage />} /> */}
+            <Route path="/dashboard" element={<DashboardPage />} />
+            {/* Outras rotas, como de doação, podem ser acessadas via Dashboard ou links internos */}
+            {/* Exemplo: <Route path="/doar" element={<DonationPage />} /> */}
+            {/* Exemplo: <Route path="/pontos-coleta" element={<CollectionPointsPage />} /> */}
           </Routes>
         </main>
 
