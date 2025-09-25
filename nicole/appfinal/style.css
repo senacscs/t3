@@ -1,0 +1,242 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+/**********************************
+NAVIGATION
+***********************************/
+#brand {
+  height: 180px;
+  width: 180px;
+  margin-top: -39px;
+}
+
+.navigation {
+  margin: 0px 10px 0px 0px;
+  background: none;
+  border: none;
+}
+
+.scrollNavigation {
+  margin: 0px 10px 0px 0px;
+  background: #4a4747;
+  border: none;
+  width: 100%;
+  height: 100px; /* altura maior quando rolar */
+}
+
+#crunch {
+  color: white;
+}
+
+#menuText {
+  font-weight: 100;
+  font-size: 20px;
+  color: white;
+  padding: 10px 30px 10px 0px;
+}
+
+#navButton {
+  font-weight: 100;
+  font-size: 20px;
+  border: none;
+  padding: 10px 15px 15px 10px;
+  border-radius: 0%;
+  color: white;
+  background: #78328d;
+}
+
+#navButton:hover {
+  font-weight: 100;
+  font-size: 20px;
+  background: #78328d;
+  border: none;
+  padding: 10px 15px 15px 10px;
+  border-radius: 2%;
+  color: white;
+}
+
+/************/
+p {
+  color: white;
+}
+
+.intro-header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: #f8f8f8;
+  background: linear-gradient(rgba(127, 45, 144, 0.7), rgba(182, 84, 218, 0.8)), url("img/inicio.jpg");
+  background-size: cover;
+}
+
+.intro-message {
+  position: relative;
+  padding-top: 15%;
+  padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+  margin-top: -500;
+  font-size: 3em;
+  font-weight: 200;
+}
+
+@media (max-width: 767px) {
+  .intro-message {
+    padding-bottom: 15%;
+  }
+
+  .intro-message > h1 {
+    font-size: 3em;
+  }
+
+  ul.intro-social-buttons > li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  ul.intro-social-buttons > li:last-child {
+    margin-bottom: 0;
+  }
+}
+#button {
+  margin-top: 30px;
+  background: #78328d;
+  border: none;
+  border-radius: 0%;
+  padding: 15px 15px 15px 15px;
+}
+
+#button-white {
+  margin-top: 30px;
+  background: white;
+  color: #78328d;
+  border: none;
+  border-radius: 0%;
+  padding: 15px 15px 15px 15px;
+}
+
+#button:hover {
+  margin-top: 30px;
+  background: #78328d;
+  border: none;
+  border-radius: 0%;
+  padding: 15px 15px 15px 15px;
+}
+
+.network-name {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "lato";
+  letter-spacing: 2px;
+}
+
+.content-section-a {
+  padding: 80px 0;
+  background: #FCFBF9;
+}
+
+.content-section-b {
+  padding: 50px 0;
+  background-color: white;
+}
+
+.content-section-c {
+  padding: 80px 0;
+  background: #FCFBF9;
+}
+
+.content-section-d {
+  padding: 50px 0;
+  background-color: #78328d;
+}
+
+.phone {
+  height: 350px;
+  width: 350px;
+  float: left;
+}
+
+.lead {
+  font-size: 26px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.lead-white {
+  font-size: 26px;
+  font-weight: 400;
+  color: white;
+}
+
+.section-heading {
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.section-heading-white {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.section-heading-spacer {
+  float: left;
+  width: 100px;
+  border-top: 3px solid #78328d;
+}
+
+.section-heading-spacer-white {
+  float: left;
+  width: 100px;
+  border-top: 3px solid #ffffff;
+}
+
+#responsive {
+  float: right;
+}
+
+footer {
+  padding: 50px 0;
+  background-color: #f8f8f8;
+}
+
+p.copyright {
+  margin: 15px 0 0;
+}
+
+/* Para telas grandes (computador) */
+@media (min-width: 768px) {
+  .phone {
+    display: block; /* Mostra a imagem nas telas maiores */
+  }
+}
+
+/* Para telas pequenas (celular) */
+@media (max-width: 767px) {
+  .phone {
+    display: none; /* Esconde a imagem nas telas menores */
+  }
+}
+@media (max-width: 767px) {
+  .intro-header {
+    background-size: 200%; /* Aumenta levemente no modo responsivo */
+    background-position: center center; /* Mantém a imagem centralizada */
+    background-repeat: no-repeat; /* Garante que não repita no celular */
+  }
+}
