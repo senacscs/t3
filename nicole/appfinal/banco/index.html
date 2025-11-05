@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faça uma doação - Click do Bem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .header h1 {
+      color: #2c3e50;
+      font-size: 2rem;
+    }
+
+    .header span {
+      color: #7f8c8d;
+      font-size: 1rem;
+    }
+
+    .donation-section {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+    }
+
+    .donation-section h2 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+      font-size: 1.4rem;
+    }
+
+    .value-buttons {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+
+    .value-btn {
+      padding: 16px 20px;
+      border: 1.5px solid #dc3545;
+      background: white;
+      color: #dc3545;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .value-btn:hover {
+      background: #f8f9fa;
+      border-color: #c82333;
+    }
+
+    .value-btn.active {
+      background: #dc3545;
+      color: white;
+      border-color: #dc3545;
+    }
+
+    .custom-value-container {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .custom-input-group {
+      display: flex;
+      align-items: center;
+      max-width: 200px;
+      border: 1.5px solid #dc3545;
+      border-radius: 6px;
+      background: white;
+      overflow: hidden;
+    }
+
+    .currency-symbol {
+      padding: 16px 12px;
+      background: #dc3545;
+      color: white;
+      font-weight: 500;
+      font-size: 0.9rem;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .custom-value-input {
+      flex: 1;
+      padding: 16px 12px;
+      border: none;
+      outline: none;
+      font-size: 0.9rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      color: #333;
+    }
+
+    .custom-value-input::placeholder {
+      color: #999;
+    }
+
+    .custom-value-input:focus {
+      background: #f8f9fa;
+    }
+
+    .form-section {
+      margin-top: 30px;
+    }
+
+    .form-title {
+      color: #7f8c8d;
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 15px;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      transition: border-color 0.3s ease;
+    }
+
+    .form-input:focus {
+      outline: none;
+      border-color: #e74c3c;
+    }
+
+    .form-input::placeholder {
+      color: #bdc3c7;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 15px;
+    }
+
+    .form-row .form-group {
+      flex: 1;
+    }
+
+    .select-input {
+      width: 100%;
+      padding: 15px;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      background: white;
+      cursor: pointer;
+      transition: border-color 0.3s ease;
+    }
+
+    .select-input:focus {
+      outline: none;
+      border-color: #e74c3c;
+    }
+
+    .payment-section {
+      margin-top: 30px;
+      text-align: left;
+    }
+
+    .payment-title {
+      color: #7f8c8d;
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .submit-section {
+      margin-top: 20px;
+    }
+
+    .selected-value-display {
+      margin-bottom: 15px;
+      padding: 12px;
+      background: #f8f9fa;
+      border-radius: 6px;
+      border-left: 4px solid #dc3545;
+    }
+
+    .selected-value-display span {
+      color: #555;
+      font-size: 0.9rem;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .selected-value-display strong {
+      color: #dc3545;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 16px 24px;
+      background: #dc3545;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .submit-btn:hover:not(:disabled) {
+      background: #c82333;
+      transform: translateY(-1px);
+    }
+
+    .submit-btn:disabled {
+      background: #6c757d;
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+
+    .or-divider {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 1rem;
+      color: #7f8c8d;
+      font-weight: 600;
+    }
+
+    .map-section {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: left;
+    }
+
+    .map-section h2 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+    }
+
+    .map-section p {
+      color: #7f8c8d;
+      margin-bottom: 20px;
+      font-size: 0.85rem;
+      margin-bottom: 40px;
+    }
+
+    iframe {
+      border-radius: 8px;
+      width: 100%;
+      height: 450px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 10px;
+      }
+
+      .value-buttons {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+
+      .form-row {
+        flex-direction: column;
+      }
+
+      .header h1 {
+        font-size: 1.6rem;
+      }
+
+      iframe {
+        width: 100% !important;
+        height: 300px !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .value-buttons {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .custom-input-group {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Faça uma doação</h1>
+      <span>Click do Bem</span>
+    </header>
+
+    <div class="map-section">
+      <h2>Local de entrega</h2>
+      <p>R. Venâncio Aires, 300 - Centro, Santa Cruz do Sul - RS, 96810-204</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3465.2021855410053!2d-52.433438024968375!3d-29.713902075091628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ca3421040a5c3%3A0x3e4f803bd997a87e!2sEscola%20de%20Ensino%20M%C3%A9dio%20e%20T%C3%A9cnico%20Senac%20Santa%20Cruz!5e0!3m2!1spt-BR!2sbr!4v1758884357830!5m2!1spt-BR!2sbr"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <div class="or-divider">OU</div>
+
+    <div class="donation-section">
+      <h2>Doe um valor para causa</h2>
+
+      <div class="value-buttons">
+        <button class="value-btn" onclick="selectValue(10)">R$ 10</button>
+        <button class="value-btn" onclick="selectValue(20)">R$ 20</button>
+        <button class="value-btn" onclick="selectValue(30)">R$ 30</button>
+        <button class="value-btn" onclick="selectValue(40)">R$ 40</button>
+        <button class="value-btn" onclick="selectValue(50)">R$ 50</button>
+        <button class="value-btn custom-btn" onclick="selectOther()">Outro valor</button>
+      </div>
+
+      <div id="custom-value-container" class="custom-value-container" style="display: none;">
+        <div class="custom-input-group">
+          <span class="currency-symbol">R$</span>
+          <input type="number" id="custom-value-input" class="custom-value-input" placeholder="0,00" min="1"
+            max="10000">
+        </div>
+      </div>
+
+      <div class="form-section">
+        <div class="form-title">Preencha com seus dados para continuar a doação</div>
+
+        <form id="donation-form" onsubmit="handleSubmit(event)">
+          <!-- Campo hidden para armazenar o valor selecionado -->
+          <input type="hidden" id="selected-value" name="valor-doacao" value="">
+
+          <div class="form-group">
+            <input type="email" class="form-input" name="email" placeholder="E-mail *" required>
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-input" name="nome" placeholder="Nome Completo *" required>
+          </div>
+
+          <div class="form-group">
+            <input type="tel" class="form-input" name="telefone" placeholder="Celular com DDD *" required>
+          </div>
+
+          <div class="payment-section">
+            <div class="submit-section">
+              <div class="selected-value-display" id="selected-value-display" style="display: none;">
+                <span>Valor selecionado: <strong id="display-amount">R$ 0,00</strong></span>
+              </div>
+
+              <button type="submit" class="submit-btn" id="submit-btn" disabled>
+                Continuar com a doação
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let selectedValue = null;
+
+    function selectValue(value) {
+      // Remove active class from all buttons
+      document.querySelectorAll('.value-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+
+      // Add active class to clicked button
+      event.target.classList.add('active');
+
+      // Hide custom input container
+      document.getElementById('custom-value-container').style.display = 'none';
+
+      selectedValue = value;
+      updateHiddenInput();
+      console.log('Valor selecionado: R$', value);
+    }
+
+    function selectOther() {
+      // Remove active class from all buttons except custom
+      document.querySelectorAll('.value-btn').forEach(btn => {
+        if (!btn.classList.contains('custom-btn')) {
+          btn.classList.remove('active');
+        }
+      });
+
+      // Add active class to "Outro valor" button
+      event.target.classList.add('active');
+
+      // Show custom input container
+      const container = document.getElementById('custom-value-container');
+      container.style.display = 'block';
+
+      // Focus on input
+      const input = document.getElementById('custom-value-input');
+      setTimeout(() => input.focus(), 100);
+    }
+
+    // Handle custom value input
+    document.getElementById('custom-value-input').addEventListener('input', function (e) {
+      // Remove formatting to get raw value
+      let rawValue = e.target.value.replace(',', '.');
+      const value = parseFloat(rawValue);
+
+      if (value && value > 0) {
+        selectedValue = value;
+        updateHiddenInput();
+        console.log('Valor personalizado: R$', value);
+      }
+    });
+
+    // Format custom input to show currency format but keep the value
+    document.getElementById('custom-value-input').addEventListener('blur', function (e) {
+      // Remove formatting to get raw value
+      let rawValue = e.target.value.replace(',', '.');
+      const value = parseFloat(rawValue);
+
+      if (value && value > 0) {
+        // Store the numeric value
+        selectedValue = value;
+        updateHiddenInput();
+        // Format display value but keep it editable
+        e.target.value = value.toFixed(2).replace(',', '.');
+      }
+    });
+
+    // When focusing back on custom input, show raw value for editing
+    document.getElementById('custom-value-input').addEventListener('focus', function (e) {
+      if (selectedValue && e.target.value.includes(',')) {
+        // Convert formatted value back to raw for editing
+        e.target.value = selectedValue.toString().replace('.', ',');
+      }
+    });
+
+    // Update hidden input with selected value
+    function updateHiddenInput() {
+      const hiddenInput = document.getElementById('selected-value');
+      const displayElement = document.getElementById('selected-value-display');
+      const displayAmount = document.getElementById('display-amount');
+      const submitBtn = document.getElementById('submit-btn');
+
+      if (hiddenInput && selectedValue) {
+        hiddenInput.value = selectedValue;
+
+        // Show the selected value display
+        displayElement.style.display = 'block';
+        displayAmount.textContent = `R$ ${selectedValue.toFixed(2).replace('.', ',')}`;
+
+        // Enable submit button
+        submitBtn.disabled = false;
+      }
+    }
+
+    // Handle form submission
+    function handleSubmit(event) {
+      event.preventDefault();
+
+      if (!selectedValue) {
+        alert('Por favor, selecione um valor para doação.');
+        return;
+      }
+
+      // Get form data
+      const formData = new FormData(event.target);
+      const data = Object.fromEntries(formData.entries());
+
+      console.log('Dados do formulário:', data);
+      console.log('Valor da doação: R$', selectedValue);
+
+      // Aqui você pode integrar com um sistema de pagamento
+      alert(`Doação de R$ ${selectedValue.toFixed(2).replace('.', ',')} processada com sucesso!\n\nDados:\nNome: ${data.nome}\nEmail: ${data.email}\nTelefone: ${data.telefone}`);
+    }
+
+    // Format phone input
+    document.querySelector('input[placeholder="Celular com DDD *"]').addEventListener('input', function (e) {
+      let value = e.target.value.replace(/\D/g, '');
+
+      // Format: (00) 00000-0000
+      value = value.replace(/^(\d{2})(\d)/, '($1) $2');
+      value = value.replace(/(\d{5})(\d{4})$/, '$1-$2');
+
+      e.target.value = value;
+    });
+  </script>
+</body>
+
+</html>
