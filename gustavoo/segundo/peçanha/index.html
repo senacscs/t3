@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nilo Peçanha — Política e Pioneirismo</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script>
+        /* Configuração do Tailwind */
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        'brand-blue': '#1e3a8a', 
+                        'brand-text': '#333333',
+                        'brand-bg': '#f9fafb',
+                    }
+                },
+            },
+        };
+    </script>
+
+    <style type="text/tailwindcss">
+        body {
+            @apply font-sans bg-brand-bg text-brand-text;
+        }
+        h1, h2, h3, h4 {
+            @apply font-serif;
+        }
+        /* Ajuste fino para links */
+        a {
+            @apply transition-colors duration-200;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <main class="container mx-auto max-w-4xl p-6 md:p-12">
+        
+        <header class="mb-10 text-center border-b-2 border-brand-blue/10 pb-6">
+            <h1 class="text-3xl md:text-5xl font-bold text-brand-blue leading-tight">
+                Nilo Peçanha — Política e Pioneirismo na Educação Profissional
+            </h1>
+        </header>
+
+        <section class="mb-12 space-y-5">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Breve Histórico</h2>
+            <p class="text-lg leading-relaxed text-justify md:text-left">
+                Nascido em Campos dos Goytacazes (RJ), em 1867, Nilo Procópio Peçanha emergiu de origens humildes — filho de um padeiro — em um Brasil recém-saído da escravidão. Sua ascensão foi notável: formou-se em Direito em Recife e construiu uma carreira política meteórica. Foi deputado, governador do Rio de Janeiro e, em 1909, como vice-presidente, assumiu a Presidência da República após a morte de Afonso Pena.
+            </p>
+            <p class="text-lg leading-relaxed text-justify md:text-left">
+                Seu governo (1909-1910) foi curto, mas marcou a "República Velha" por ser liderado por um político vindo das camadas populares, fora das oligarquias cafeeiras tradicionais de São Paulo e Minas Gerais. Peçanha governou em um período de intensa modernização e tensões sociais, buscando ativamente promover a industrialização e a educação.
+            </p>
+        </section>
+
+        <section class="mb-12 space-y-5">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Principal Contribuição para o Brasil</h2>
+            <p class="text-lg leading-relaxed text-justify md:text-left">
+                O legado mais transformador de Nilo Peçanha foi a criação, por decreto em 1909, das <strong>Escolas de Aprendizes Artífices</strong>. Esta rede de 19 escolas, espalhadas de Norte a Sul, foi a semente da educação profissional federal no país. Marcado por sua própria origem, Peçanha via no ensino técnico a principal ferramenta de "emancipação social" para os "desprovidos da fortuna".
+            </p>
+            <p class="text-lg leading-relaxed text-justify md:text-left">
+                Sua visão pioneira rompeu com a ideia de que a educação formal era restrita às elites, oferecendo um futuro prático e digno aos filhos da classe trabalhadora. Essa rede evoluiu ao longo das décadas e é hoje a base dos <strong>Institutos Federais de Educação, Ciência e Tecnologia (IFs)</strong>, o maior e mais capilarizado sistema de ensino técnico do Brasil.
+            </p>
+            
+            <h3 class="text-xl font-bold text-brand-blue pt-4">Relevância para a População Negra</h3>
+            <p class="text-lg leading-relaxed text-justify md:text-left">
+                A importância de Peçanha é central para o debate racial. Pesquisas históricas o apontam como o <strong>primeiro e único presidente negro do Brasil</strong>. Sua trajetória é um símbolo de ascensão e, paradoxalmente, de um profundo apagamento histórico. Em vida, foi alvo de preconceito por parte das elites, sendo frequentemente referido pejorativamente por sua cor e origem.
+            </p>
+            <p class="text-lg leading-relaxed text-justify md:text-left">
+                Após sua morte, seus retratos oficiais passaram por um processo que historiadores chamam de <strong>"branqueamento"</strong>, suavizando seus traços negróides e clareando sua pele em pinturas oficiais para adequá-lo à narrativa de poder da época. Resgatar a figura de Nilo Peçanha é, portanto, um ato de reconhecimento da complexidade da formação social brasileira.
+            </p>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Galeria e Arquivos</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+                
+                <figure class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden transition-shadow hover:shadow-md">
+                    <img src="https://placehold.co/600x400/e2e8f0/1e3a8a?text=Retrato+Oficial" 
+                         alt="Retrato estilizado de Nilo Peçanha."
+                         class="w-full h-48 object-cover">
+                    <figcaption class="p-4 text-sm text-gray-700 italic">
+                        Retrato oficial de 1909. O debate sobre o branqueamento em pinturas oficiais é central para sua história.
+                    </figcaption>
+                </figure>
+
+                <figure class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden transition-shadow hover:shadow-md">
+                    <img src="https://placehold.co/600x400/e2e8f0/1e3a8a?text=Escola+1909" 
+                         alt="Prédio antigo de uma Escola de Aprendizes Artífices."
+                         class="w-full h-48 object-cover">
+                    <figcaption class="p-4 text-sm text-gray-700 italic">
+                        Fachada histórica de uma das Escolas de Aprendizes Artífices, criadas para o ensino técnico.
+                    </figcaption>
+                </figure>
+
+                <figure class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden transition-shadow hover:shadow-md">
+                    <img src="https://placehold.co/600x400/e2e8f0/1e3a8a?text=Evento+Público" 
+                         alt="Nilo Peçanha em evento oficial."
+                         class="w-full h-48 object-cover">
+                    <figcaption class="p-4 text-sm text-gray-700 italic">
+                        Nilo Peçanha em visita oficial. Sua presidência foi marcada por um perfil modernizador.
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Para Saber Mais (Fontes Confiáveis)</h3>
+                <ul class="list-disc list-inside space-y-2 text-lg">
+                    <li><a href="#" class="text-brand-blue hover:text-blue-800 hover:underline">Verbete Biográfico de Nilo Peçanha (CPDOC - FGV)</a></li>
+                    <li><a href="#" class="text-brand-blue hover:text-blue-800 hover:underline">História da Rede Federal (Portal dos IFs)</a></li>
+                    <li><a href="#" class="text-brand-blue hover:text-blue-800 hover:underline">Artigo: A cor do poder e o apagamento histórico</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="border-t border-gray-300 pt-6 mt-10 text-sm text-gray-600">
+            <h2 class="text-lg font-bold text-gray-900 mb-2">Referências</h2>
+            <ul class="list-none space-y-1">
+                <li>• CPDOC/FGV (Centro de Pesquisa e Documentação de História Contemporânea do Brasil).</li>
+                <li>• Ministério da Educação (MEC): Centenário da Rede Federal.</li>
+                <li>• SILVA, Hélio. <em>Nilo Peçanha e a Revolução Brasileira</em>.</li>
+                <li>• Acervo do Arquivo Nacional e Biblioteca Nacional.</li>
+            </ul>
+            <p class="mt-4 text-xs text-gray-500">Página desenvolvida para fins educativos.</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
