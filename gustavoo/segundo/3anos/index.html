@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitetura de Sistemas: Web, Mobile e DB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Como Sistemas Reais Funcionam</h1>
+            <nav>
+                <ul>
+                    <li><a href="#intro">Início</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#exemplo">Exemplo Real</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="intro" class="hero">
+        <div class="container">
+            <h2>Entendendo a Integração</h2>
+            <p>Descubra como HTML, Bancos de Dados e Aplicativos Mobile trabalham juntos para criar as experiências digitais que usamos todos os dias.</p>
+            <button onclick="mostrarMensagem()">Começar Leitura</button>
+        </div>
+    </section>
+
+    <main class="container">
+        
+        <section id="tecnologias">
+            <h2>Os Pilares da Tecnologia</h2>
+            
+            <div class="card-grid">
+                <article class="card">
+                    <h3>HTML & Front-end</h3>
+                    <p>O HTML é a estrutura da web. Ele organiza o conteúdo (textos, imagens, botões) que o usuário visualiza. Em apps híbridos, o HTML também pode ser usado para criar a interface do celular.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Banco de Dados</h3>
+                    <p>É o "cérebro" da memória. Ele armazena usuários, senhas, produtos e históricos. Sem ele, os dados seriam perdidos ao fechar o app.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Mobile & Servidores</h3>
+                    <p>O aplicativo no seu celular é apenas uma "casca". Ele se conecta a servidores via APIs para buscar informações atualizadas em tempo real do banco de dados.</p>
+                </article>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="exemplo">
+            <h2>Exemplo Prático: App de Delivery (iFood/Uber Eats)</h2>
+            <div class="fluxo-container">
+                <p>Como um pedido acontece nos bastidores?</p>
+                <ol>
+                    <li><strong>O Usuário:</strong> Abre o app (Mobile) e escolhe o prato. A interface mostra as fotos e preços.</li>
+                    <li><strong>O Pedido:</strong> Ao clicar em comprar, o app envia uma requisição via internet para o servidor.</li>
+                    <li><strong>O Processamento:</strong> O servidor consulta o <strong>Banco de Dados</strong> para ver o endereço e salvar o pedido.</li>
+                    <li><strong>A Resposta:</strong> O sistema notifica o restaurante e atualiza a tela do usuário (Front-end) com o status "Preparando".</li>
+                </ol>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Desenvolvido para a atividade de Pesquisa Tecnológica.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
