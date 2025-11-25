@@ -8,7 +8,7 @@ function mostrarMensagem() {
 }
 
 // ----------------------------------------------------
-// Novo Conteúdo JS: Alternar Dark Mode
+// Conteúdo JS: Alternar Dark Mode
 // ----------------------------------------------------
 
 document.addEventListener('DOMContentLoaded', () => {
