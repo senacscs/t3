@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eco PowerUp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --green: #27ae60;
+      --light-green: #2ecc71;
+      --gray-bg: #f5f7f8;
+      --dark: #222;
+    }
+ 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+ 
+    body {
+      background-color: var(--gray-bg);
+      color: var(--dark);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+ 
+    /* Cabeçalho */
+    header {
+      background: linear-gradient(135deg, var(--green), var(--light-green));
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+      font-size: 2.5em;
+      font-weight: 700;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+ 
+    /* Navegação */
+    nav {
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+ 
+    nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 10px 0;
+    }
+ 
+    nav a {
+      color: var(--green);
+      text-decoration: none;
+      margin: 10px 20px;
+      font-weight: 500;
+      transition: 0.3s ease;
+    }
+ 
+    nav a:hover {
+      color: var(--light-green);
+    }
+ 
+    /* Seções */
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+ 
+    h2 {
+      text-align: center;
+      color: var(--green);
+      margin-bottom: 30px;
+      font-size: 2em;
+    }
+ 
+    p {
+      text-align: center;
+      max-width: 850px;
+      margin: 0 auto 20px;
+    }
+ 
+    /* Integrantes */
+    .integrantes {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 40px;
+    }
+ 
+    .integrante {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      text-align: center;
+      width: 280px;
+      padding: 25px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+ 
+    .integrante:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    }
+ 
+    .integrante img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 4px solid var(--light-green);
+    }
+ 
+    .integrante h3 {
+      color: var(--green);
+      margin-bottom: 10px;
+    }
+ 
+    /* Materiais */
+    .materiais {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+ 
+    .item {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      padding: 20px;
+      transition: all 0.3s ease;
+    }
+ 
+    .item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+ 
+    .item img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+ 
+    .item h3 {
+      color: var(--green);
+      margin-bottom: 8px;
+    }
+ 
+    /* Rodapé */
+    footer {
+      background: var(--green);
+      color: #fff;
+      text-align: center;
+      padding: 50px 20px;
+      margin-top: 60px;
+    }
+ 
+    footer a {
+      color: #dfffe0;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+ 
+    footer a:hover {
+      color: #fff;
+    }
+ 
+    /* Animações de entrada */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+ 
+    section {
+      animation: fadeIn 1s ease both;
+    }
+ 
+    /* Responsividade */
+    @media (max-width: 768px) {
+      header {
+        font-size: 1.8em;
+        padding: 40px 10px;
+      }
+      nav a {
+        margin: 8px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Eco PowerUp</header>
+ 
+  <nav>
+    <ul>
+      <li><a href="#integrantes">Integrantes</a></li>
+      <li><a href="#projeto">Projeto</a></li>
+      <li><a href="#problema">Problema</a></li>
+      <li><a href="#materiais">Materiais</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+ 
+  <section id="integrantes">
+    <h2>Apresentação dos Integrantes</h2>
+    <div class="integrantes">
+      <div class="integrante">
+        <img src="assets/gustavofaber.jpeg" alt="Integrante 1">
+        <h3>Gustavo Henrique Ferreira Faber</h3>
+        <p>Responsável pelo desenvolvimento técnico e pela integração do sistema inteligente, incluindo a criação do site, a elaboração das partes referentes à pesquisa do projeto Eco PowerUp e o desenvolvimento do protótipo em 3D.</p>
+      </div>
+      <div class="integrante">
+        <img src="assets/c8178627-7070-4dab-a868-e67ed05db1e6.jpeg" alt="Integrante 2">
+        <h3>Arthur</h3>
+        <p>Responsável pelo desenvolvimento físico do protótipo, atuando na montagem e integração do sistema inteligente do projetoEco PowerUp, utilizando PLA, material biodegradável, sempre ajudando na parte da pesquisa do projeto.</p>
+      </div>
+    </div>
+  </section>
+ 
+  <section id="projeto">
+    <h2>Introdução</h2>
+    <p>Desastres naturais, como enchentes e tempestades, causam grandes prejuízos ao setor agropecuário, especialmente no sul do Brasil. A falta de energia elétrica afeta pequenos produtores que dependem da refrigeração e maquinários essenciais. Por isso, o projeto EcoPowerUp busca oferecer uma solução sustentável e acessível para mitigar esses impactos.</p>
+  </section>
+ 
+  <section id="problema">
+    <h2>O Problema</h2>
+    <p><strong>Você já imaginou quanto um pequeno produtor rural pode perder em apenas uma queda de energia?</strong><br>
+    Sem energia, alimentos e produtos perecíveis se perdem, gerando prejuízos e insegurança alimentar.</p>
+  </section>
+ 
+  <section id="solucao">
+    <h2>Solução</h2>
+    <p>O <strong>EcoPowerUp</strong> é um gerador sustentável que reutiliza baterias de lítio descartadas para fornecer energia de emergência. Ele garante o funcionamento de equipamentos críticos, é portátil, de baixo custo e contribui para o reuso de materiais, promovendo sustentabilidade e inovação no campo.</p>
+  </section>
+ 
+  <section id="materiais">
+    <h2>Materiais Utilizados</h2>
+    <div class="materiais">
+      <div class="item">
+        <div class="img-container">
+          <img src="assets/prototipo.jpeg" alt="Protótipo">
+        </div>
+        <h3>Protótipo</h3>
+        <p>Versão funcional do gerador, usada para testes e validação do sistema.</p>
+        <a href="#" class="btn">Saiba Mais</a>
+      </div>
+ 
+      <div class="item">
+        <div class="img-container">
+          <img src="assets/placabms.jpeg" alt="Placa BMS">
+        </div>
+        <h3>Placa de Proteção BMS</h3>
+        <p>Protege e equilibra as células da bateria, garantindo segurança e durabilidade. </p>
+        <a href="#" class="btn">Saiba Mais</a>
+      </div>
+ 
+      <div class="item">
+        <div class="img-container">
+          <img src="assets/bateria-notebook.webp" alt="Bateria Li-ion">
+        </div>
+        <h3>Bateria Li-ion</h3>
+        <p>Fonte de energia principal, reaproveitada de notebooks e outros dispositivos.</p>
+        <a href="#" class="btn">Saiba Mais</a>
+      </div>
+ 
+      <div class="item">
+        <div class="img-container">
+          <img src="assets/fios.jpeg" alt="Fios de Conexão">
+        </div>
+        <h3>Fios de Conexão</h3>
+        <p>Garantem a integração elétrica segura entre todos os componentes.</p>
+        <a href="#" class="btn">Saiba Mais</a>
+      </div>
+    </div>
+  </section>
+ 
+  <!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eco PowerUp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --green: #27ae60;
+      --light-green: #2ecc71;
+      --gray-bg: #f5f7f8;
+      --dark: #222;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: var(--gray-bg);
+      color: var(--dark);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--green), var(--light-green));
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+      font-size: 2.5em;
+      font-weight: 700;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    nav {
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: var(--green);
+      text-decoration: none;
+      margin: 10px 20px;
+      font-weight: 500;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--light-green);
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+      animation: fadeIn 1s ease both;
+    }
+
+    h2 {
+      text-align: center;
+      color: var(--green);
+      margin-bottom: 30px;
+      font-size: 2em;
+    }
+
+    p {
+      text-align: justify;
+      text-justify: inter-word;
+      margin-bottom: 20px;
+      line-height: 1.8;
+      width: 100%;
+    }
+
+    .integrantes {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .integrante {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      text-align: center;
+      width: 280px;
+      padding: 25px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .integrante:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    }
+
+    .integrante img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 4px solid var(--light-green);
+    }
+
+    .integrante h3 {
+      color: var(--green);
+      margin-bottom: 10px;
+    }
+
+    .materiais {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .item {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: justify;
+      padding-bottom: 20px;
+    }
+
+    .item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    }
+
+    .img-container {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .img-container img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .item:hover .img-container img {
+      transform: scale(1.05);
+    }
+
+    .item h3 {
+      color: var(--green);
+      margin: 15px 0 8px;
+      font-size: 1.3em;
+      text-align: center;
+    }
+
+    .item p {
+      font-size: 0.95em;
+      padding: 0 15px;
+      margin-bottom: 15px;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    .btn {
+      background: var(--green);
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: var(--light-green);
+    }
+
+    footer {
+      background: var(--green);
+      color: #fff;
+      text-align: center;
+      padding: 50px 20px;
+      margin-top: 60px;
+    }
+
+    footer p {
+      text-align: center;
+    }
+
+    footer a {
+      color: #dfffe0;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      header {
+        font-size: 1.8em;
+        padding: 40px 10px;
+      }
+      nav a {
+        margin: 8px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Conteúdo igual ao seu original -->
+</body>
+</html>
+
+ 
