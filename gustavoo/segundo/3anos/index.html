@@ -10,61 +10,116 @@
 
     <header>
         <div class="container">
-            <h1>Como Sistemas Reais Funcionam</h1>
+            <h1>Arquitetura de Sistemas Reais</h1>
             <nav>
                 <ul>
                     <li><a href="#intro">Início</a></li>
                     <li><a href="#tecnologias">Tecnologias</a></li>
-                    <li><a href="#exemplo">Exemplo Real</a></li>
+                    <li><a href="#aprofundamento">Aprofundamento</a></li>
+                    <li><a href="#exemplo">Exemplo Prático</a></li>
                 </ul>
             </nav>
+            <button id="theme-toggle">Modo Claro/Escuro</button>
         </div>
     </header>
 
     <section id="intro" class="hero">
         <div class="container">
-            <h2>Entendendo a Integração</h2>
-            <p>Descubra como HTML, Bancos de Dados e Aplicativos Mobile trabalham juntos para criar as experiências digitais que usamos todos os dias.</p>
-            <button onclick="mostrarMensagem()">Começar Leitura</button>
+            <h2>Entendendo a Integração em Sistemas</h2>
+            <p>Descubra como HTML, Bancos de Dados e Aplicativos Mobile trabalham juntos para criar as experiências digitais dinâmicas que usamos todos os dias, utilizando o exemplo de **Apps de Delivery**.</p>
+            <button onclick="mostrarMensagem()">Ver Detalhes</button>
         </div>
     </section>
 
     <main class="container">
         
         <section id="tecnologias">
-            <h2>Os Pilares da Tecnologia</h2>
+            <h2>Os Pilares Essenciais da Tecnologia</h2>
             
             <div class="card-grid">
                 <article class="card">
-                    <h3>HTML & Front-end</h3>
-                    <p>O HTML é a estrutura da web. Ele organiza o conteúdo (textos, imagens, botões) que o usuário visualiza. Em apps híbridos, o HTML também pode ser usado para criar a interface do celular.</p>
+                    <h3>HTML & Front-end 🖥️</h3>
+                    <p>O HTML (HyperText Markup Language) é o **esqueleto da web**. Ele é uma linguagem de marcação que organiza e estrutura todo o conteúdo visual: textos, imagens, formulários e botões.</p>
+                    <p>No Front-end, o navegador ou o aplicativo móvel lê o HTML e o CSS para "desenhar" a interface, definindo a experiência visual do usuário.</p>
                 </article>
 
                 <article class="card">
-                    <h3>Banco de Dados</h3>
-                    <p>É o "cérebro" da memória. Ele armazena usuários, senhas, produtos e históricos. Sem ele, os dados seriam perdidos ao fechar o app.</p>
+                    <h3>Banco de Dados (DB) 💾</h3>
+                    <p>Um banco de dados é um sistema organizado para armazenar, gerenciar e recuperar informações de forma persistente. Ele é a **fonte única de verdade** do sistema.</p>
+                    <p>Ele armazena o cadastro dos usuários, o cardápio dos restaurantes, o histórico de pedidos e os dados de pagamento, sendo vital para a memória e integridade do sistema.</p>
                 </article>
 
                 <article class="card">
-                    <h3>Mobile & Servidores</h3>
-                    <p>O aplicativo no seu celular é apenas uma "casca". Ele se conecta a servidores via APIs para buscar informações atualizadas em tempo real do banco de dados.</p>
+                    <h3>Mobile e Servidores 📱</h3>
+                    <p>Aplicativos móveis são o ponto de contato do usuário, mas não guardam os dados. Eles precisam constantemente se comunicar com um **Servidor (Back-end)** para buscar informações atualizadas.</p>
+                    <p>Essa comunicação acontece via **APIs (Application Programming Interface)**, geralmente usando o protocolo **HTTP/HTTPS** e trocando dados no formato **JSON**.</p>
+                    <p>[Image of client server architecture]</p>
                 </article>
             </div>
         </section>
 
         <hr>
+        
+        <section id="aprofundamento">
+            <h2>Aprofundamento Técnico e Ferramentas</h2>
+
+            <article>
+                <h3>Frameworks e Arquitetura RESTful 💡</h3>
+                <p>Para interfaces ricas (como uma lista de restaurantes que se atualiza em tempo real), o HTML básico é complementado por **Frameworks JavaScript** (como React, Angular ou Vue.js) no Front-end. Eles manipulam o DOM (Document Object Model) de forma eficiente.</p>
+                <p>O Back-end (servidor) é construído com linguagens como Python ou Node.js e segue a arquitetura **REST (Representational State Transfer)**. Isso padroniza as requisições (ex: <code>GET</code> para buscar e <code>POST</code> para enviar um pedido) feitas pelo aplicativo mobile.</p>
+            </article>
+
+            <article>
+                <h3>SQL vs. NoSQL: Tipos de Bancos de Dados 🗄️</h3>
+                <p>Sistemas robustos utilizam a combinação de bancos de dados para otimizar desempenho e integridade. Veja a diferença:</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Características</th>
+                            <th>Uso Típico em Apps de Delivery</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>**Relacional (SQL)**</td>
+                            <td>Tabelas com relações estritas; foca em Consistência.</td>
+                            <td>Dados Críticos (Cadastros, Transações de Pagamento).</td>
+                        </tr>
+                        <tr>
+                            <td>**Não-Relacional (NoSQL)**</td>
+                            <td>Documentos flexíveis; foca em Velocidade e Escalabilidade.</td>
+                            <td>Dados Voláteis (Logs de Rastreamento de Entregadores, Recomendações).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+        <hr>
 
         <section id="exemplo">
-            <h2>Exemplo Prático: App de Delivery (iFood/Uber Eats)</h2>
+            <h2>Exemplo Prático: O Ciclo de um Pedido no App de Delivery 🔄</h2>
+            <p>O fluxo de um pedido mostra como todas as peças se conectam:</p>
             <div class="fluxo-container">
-                <p>Como um pedido acontece nos bastidores?</p>
                 <ol>
-                    <li><strong>O Usuário:</strong> Abre o app (Mobile) e escolhe o prato. A interface mostra as fotos e preços.</li>
-                    <li><strong>O Pedido:</strong> Ao clicar em comprar, o app envia uma requisição via internet para o servidor.</li>
-                    <li><strong>O Processamento:</strong> O servidor consulta o <strong>Banco de Dados</strong> para ver o endereço e salvar o pedido.</li>
-                    <li><strong>A Resposta:</strong> O sistema notifica o restaurante e atualiza a tela do usuário (Front-end) com o status "Preparando".</li>
+                    <li><strong>Ação do Usuário (Mobile/Front-end):</strong> O usuário abre o app, navega pelas listas (HTML/UI) e clica em "Fazer Pedido".</li>
+                    <li><strong>Requisição (API):</strong> O aplicativo empacota os dados (itens, endereço) e envia uma requisição **HTTPS** para o Servidor (Back-end).</li>
+                    <li><strong>Processamento e Validação (Back-end & DB):</strong> O servidor executa as regras de negócio: valida o pagamento e consulta o **Banco de Dados** para garantir a disponibilidade.</li>
+                    <li><strong>Gravação (DB):</strong> O servidor **grava** o novo pedido e o seu status inicial (ex: "Aguardando Confirmação") no Banco de Dados.</li>
+                    <li><strong>Resposta e Atualização (API & Mobile):</strong> O servidor envia uma resposta JSON de volta ao aplicativo, que atualiza a interface do usuário (Front-end) para exibir o status "Preparando Pedido".</li>
                 </ol>
             </div>
+        </section>
+
+        <section id="seguranca">
+            <h2>Segurança e Escalabilidade 🛡️</h2>
+            <p>Para funcionar em larga escala (milhões de usuários) e com segurança, o sistema utiliza:</p>
+            <ul>
+                <li>**HTTPS:** Criptografia de ponta a ponta em toda a comunicação para proteger dados sensíveis, como senhas e informações financeiras.</li>
+                <li>**Balanceadores de Carga:** Equipamentos que distribuem o tráfego de requisições por múltiplos servidores. Isso evita que o sistema caia em horários de pico e garante a **escalabilidade** horizontal.</li>
+            </ul>
         </section>
 
     </main>

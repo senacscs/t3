@@ -24,6 +24,7 @@ body {
     color: var(--text-dark);
     font-family: 'Poppins', sans-serif;
     line-height: 1.7; /* Melhor leitura */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave para Dark Mode */
 }
 
 /* Container para Centralizar Conteúdo */
@@ -42,12 +43,14 @@ header {
     top: 0;
     z-index: 100;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Permite que os elementos quebrem a linha no mobile */
 }
 
 header h1 {
@@ -72,6 +75,24 @@ nav a:hover {
     color: var(--accent-color);
 }
 
+/* Botão de Tema */
+#theme-toggle {
+    padding: 8px 15px;
+    border: 1px solid var(--text-light);
+    background: transparent;
+    color: var(--text-light);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+#theme-toggle:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+
 /* Hero Section (Introdução - Mais Impacto) */
 .hero {
     background-color: var(--primary-color);
@@ -79,18 +100,13 @@ nav a:hover {
     text-align: center;
     padding: 80px 20px;
     margin-bottom: 50px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .hero h2 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.1rem;
-    margin-bottom: 25px;
-    opacity: 0.9;
 }
 
 .hero button {
@@ -100,23 +116,25 @@ nav a:hover {
     border: none;
     background-color: var(--accent-color);
     color: var(--text-light);
-    border-radius: 50px; /* Borda arredondada */
+    border-radius: 50px;
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
 .hero button:hover {
-    background-color: #c0392b; /* Tom mais escuro */
+    background-color: #c0392b;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px); /* Efeito de elevação */
+    transform: translateY(-2px);
 }
 
-/* Grid de Cards (Seção Tecnologias) */
-#tecnologias h2 {
+/* Grid de Cards */
+#tecnologias h2, #aprofundamento h2, #exemplo h2, #seguranca h2 {
     text-align: center;
     margin-bottom: 30px;
+    margin-top: 30px;
     color: var(--primary-color);
+    font-weight: 700;
 }
 
 .card-grid {
@@ -132,11 +150,11 @@ nav a:hover {
     border-radius: 12px;
     box-shadow: var(--shadow-subtle);
     border-left: 6px solid var(--accent-color);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-5px); /* Efeito de elevação no hover */
+    transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -144,25 +162,44 @@ nav a:hover {
     color: var(--primary-color);
     margin-bottom: 15px;
     font-weight: 600;
+    transition: color 0.3s;
 }
 
-/* Seção Exemplo Prático */
-#exemplo {
+/* Estilo para Tabela (SQL vs. NoSQL) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: var(--background-light);
+    box-shadow: var(--shadow-subtle);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: var(--background-gray);
+}
+
+/* Seção Exemplo e Fluxo */
+#exemplo, #aprofundamento article, #seguranca {
     margin: 60px 0;
     padding: 40px;
     background: var(--background-light);
     border-radius: 12px;
     box-shadow: var(--shadow-subtle);
-}
-
-#exemplo h2 {
-    color: var(--accent-color);
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.fluxo-container {
-    padding: 15px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .fluxo-container ol {
@@ -182,7 +219,75 @@ footer {
     background-color: var(--primary-color);
     color: var(--text-light);
     margin-top: 50px;
+    transition: background-color 0.3s, color 0.3s;
 }
+
+/* --- Estilos para o Dark Mode --- */
+
+/* Variáveis Invertidas para Dark Mode */
+body.dark-mode {
+    --primary-color: #3498db;  /* Azul Claro como acento */
+    --accent-color: #2ecc71;   /* Verde como destaque */
+    --background-light: #212121; /* Fundo escuro das caixas */
+    --background-gray: #121212; /* Fundo escuro do body */
+    --text-dark: #f0f0f0;      /* Texto claro */
+    --text-light: #212121;     /* Texto de destaque escuro (em fundos claros) */
+    --shadow-subtle: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode {
+    background-color: var(--background-gray);
+    color: var(--text-dark);
+}
+
+body.dark-mode header {
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode #theme-toggle {
+    color: var(--text-dark);
+    border-color: var(--text-dark);
+}
+
+body.dark-mode nav a {
+    color: var(--text-dark);
+}
+
+body.dark-mode .hero {
+    background-color: var(--background-light);
+    color: var(--text-dark);
+}
+
+body.dark-mode .card,
+body.dark-mode #exemplo,
+body.dark-mode #aprofundamento article, 
+body.dark-mode #seguranca,
+body.dark-mode table {
+    background: #333;
+    color: var(--text-dark);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .card h3 {
+    color: var(--primary-color);
+}
+
+body.dark-mode th {
+    background-color: var(--primary-color);
+    color: var(--background-light);
+}
+
+body.dark-mode tr:nth-child(even) {
+    background-color: #3e3e3e;
+}
+
+body.dark-mode footer {
+    background-color: var(--background-light);
+    color: var(--text-dark);
+}
+
 
 /* Responsividade Aprimorada para Mobile */
 @media (max-width: 768px) {
@@ -192,12 +297,18 @@ footer {
     
     header .container {
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
+    }
+
+    header nav {
+        width: 100%;
+        text-align: center;
     }
     
     nav ul {
         gap: 15px;
         padding-inline-start: 0;
+        justify-content: center;
     }
     
     .hero {
@@ -208,7 +319,6 @@ footer {
         font-size: 2rem;
     }
 
-    /* Cards em linha única no mobile */
     .card-grid {
         grid-template-columns: 1fr;
     }
