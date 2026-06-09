@@ -5,68 +5,334 @@
     user-select: none;
 }
 
-html {
-    cursor: none;
-    pointer-events: none;
-}
-
-.end {
-    display: flex;
-}
-#counter {
-    font-family: 'Rubik Mono One', monospace;
-    color: white;
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    background-color: black;
-    opacity: 0.5;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-#gameover {
-    cursor: pointer;
-    pointer-events: all;
-    background-color: black;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 8000;
-    opacity: 0.6;
-    font-family: 'Rubik Mono One', monospace;
-    color: white;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#gameover a {
-            margin-top: 35px;
-            text-decoration: none;
-            padding: 8px;
-            color: white;
-            font-size: 1.75rem;
-            border: 1px dashed transparent;
-            border-radius: 8px;
-        }
-
-#gameover a:hover {
-    border: 1px dashed rgb(168, 166, 166);
+:root {
+    --bg-dark: #050510;
+    --accent: #60a5fa;
+    --text: #f0f4ff;
+    --text-dim: #94a3b8;
+    --panel-bg: rgba(5, 8, 20, 0.88);
+    --border: rgba(148, 163, 184, 0.25);
 }
 
 body {
+    background-color: var(--bg-dark);
+    color: var(--text);
+    overflow: hidden;
+    font-family: 'VT323', monospace;
+}
+
+/* ── Starfield ── */
+
+.stars {
+    position: fixed;
+    inset: 0;
+    background-image:
+        radial-gradient(1px 1px at 10% 20%, #fff8, transparent),
+        radial-gradient(1px 1px at 30% 65%, #fff6, transparent),
+        radial-gradient(1.5px 1.5px at 55% 15%, #fff9, transparent),
+        radial-gradient(1px 1px at 70% 80%, #fff5, transparent),
+        radial-gradient(1px 1px at 85% 40%, #fff7, transparent),
+        radial-gradient(1.5px 1.5px at 15% 90%, #fff6, transparent),
+        radial-gradient(1px 1px at 45% 45%, #fff4, transparent),
+        radial-gradient(1px 1px at 92% 12%, #fff8, transparent);
+    background-size: 100% 100%;
+    animation: twinkle 6s ease-in-out infinite alternate;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.stars--slow {
+    animation-duration: 12s;
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+@keyframes twinkle {
+    from { opacity: 0.6; }
+    to { opacity: 1; }
+}
+
+/* ── Menu page ── */
+
+.menu-page {
+    cursor: default;
+    min-height: 100vh;
+    background-image: url(./assets/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 2rem 1.5rem 3rem;
+}
+
+.menu__header {
+    text-align: center;
+}
+
+.menu__title {
+    font-family: 'Rubik Mono One', monospace;
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    color: white;
+    text-shadow: 0 0 30px rgba(96, 165, 250, 0.6), 0 0 60px rgba(96, 165, 250, 0.2);
+    letter-spacing: 0.05em;
+}
+
+.menu__subtitle {
+    margin-top: 0.75rem;
+    font-size: clamp(1.25rem, 3vw, 2rem);
+    color: var(--text-dim);
+    max-width: 520px;
+}
+
+.menu__section-title {
+    font-family: 'Rubik Mono One', monospace;
+    font-size: 1rem;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.difficulty-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    width: min(900px, 100%);
+}
+
+.difficulty-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+    padding: 1.25rem 1.5rem;
+    background: var(--panel-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s;
+    text-align: left;
+    color: var(--text);
+    font-family: inherit;
+}
+
+.difficulty-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent, #60a5fa);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 20px color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+.difficulty-card__name {
+    font-family: 'Rubik Mono One', monospace;
+    font-size: 1.1rem;
+    color: var(--accent);
+}
+
+.difficulty-card__desc {
+    font-size: 1.2rem;
+    color: var(--text-dim);
+}
+
+.difficulty-card__best {
+    margin-top: 0.25rem;
+    font-size: 1.1rem;
+    color: var(--text);
+    opacity: 0.7;
+}
+
+.menu__controls {
+    width: min(500px, 100%);
+}
+
+.controls-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.controls-list li {
+    font-size: 1.3rem;
+    color: var(--text-dim);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+kbd {
+    display: inline-block;
+    min-width: 2.5rem;
+    padding: 0.15rem 0.5rem;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-family: 'Rubik Mono One', monospace;
+    font-size: 0.75rem;
+    color: var(--text);
+    text-align: center;
+}
+
+/* ── Game page ── */
+
+.game-page {
+    cursor: url(./assets/Cursor.png) 16 16, crosshair;
     background-image: url(./assets/bg.png);
     background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
-    
 }
+
+#area {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#area.shake {
+    animation: shake 0.4s ease;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translate(0, 0); }
+    20% { transform: translate(-6px, 4px); }
+    40% { transform: translate(6px, -4px); }
+    60% { transform: translate(-4px, -6px); }
+    80% { transform: translate(4px, 6px); }
+}
+
+/* ── HUD ── */
+
+#hud {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem 1.25rem;
+    pointer-events: none;
+}
+
+.hud__left,
+.hud__right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.hud__right {
+    align-items: flex-end;
+}
+
+.hud__score,
+.hud__wave {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.55);
+    padding: 0.35rem 0.75rem;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+}
+
+.hud__label {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+#counter,
+#wave {
+    font-family: 'Rubik Mono One', monospace;
+    font-size: 1.5rem;
+    color: white;
+    line-height: 1.2;
+}
+
+.hud__combo {
+    background: rgba(251, 191, 36, 0.2);
+    border: 1px solid rgba(251, 191, 36, 0.5);
+    color: #fbbf24;
+    padding: 0.25rem 0.6rem;
+    border-radius: 6px;
+    font-family: 'Rubik Mono One', monospace;
+    font-size: 0.9rem;
+    animation: combo-pulse 0.5s ease infinite alternate;
+}
+
+@keyframes combo-pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.05); }
+}
+
+.hud__badge {
+    font-family: 'Rubik Mono One', monospace;
+    font-size: 0.85rem;
+    padding: 0.35rem 1rem;
+    border-radius: 20px;
+    background: color-mix(in srgb, var(--badge-color, #60a5fa) 20%, transparent);
+    border: 1px solid var(--badge-color, #60a5fa);
+    color: var(--badge-color, #60a5fa);
+}
+
+.hud__lives {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.hud__life {
+    font-size: 1.5rem;
+    color: #f87171;
+    text-shadow: 0 0 8px rgba(248, 113, 113, 0.5);
+}
+
+.hud__life--lost {
+    color: #334155;
+    text-shadow: none;
+}
+
+.hud__hint {
+    font-size: 1rem;
+    color: var(--text-dim);
+    opacity: 0.6;
+}
+
+.wave-banner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    font-family: 'Rubik Mono One', monospace;
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    color: white;
+    text-shadow: 0 0 40px rgba(96, 165, 250, 0.8);
+    pointer-events: none;
+    animation: wave-in 2.2s ease forwards;
+}
+
+@keyframes wave-in {
+    0% { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
+    15% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+    75% { opacity: 1; }
+    100% { opacity: 0; transform: translate(-50%, -50%) scale(1.1); }
+}
+
+/* ── Earth & Gun ── */
 
 #earth {
     position: fixed;
@@ -74,131 +340,191 @@ body {
     left: 50%;
     transform: translate(-50%, -20%);
     width: 150px;
-    z-index: 1;
+    z-index: 2;
 }
 
 @keyframes rotating {
-    from{
-        -webkit-transform: translate(-50%, -20%) rotate(0deg);
-    }
-    to{
-        -webkit-transform: translate(-50%, -20%) rotate(360deg);
-    }
+    from { transform: translate(-50%, -20%) rotate(0deg); }
+    to { transform: translate(-50%, -20%) rotate(360deg); }
 }
-
-@keyframes shooting {
-    0% {
-        width: 1px;
-        /* height: 5px; */
-    }
-    15% {
-        width: 3px;
-        /* height: 25px; */
-    }
-    25% {
-        width: 4px;
-        /* height: 35px; */
-    }
-    35% {
-        width: 5px;
-        /* height: 45px; */
-    }
-    45% {
-        width: 5px; 
-    }
-    55% {
-        width: 6px;
-    }
-    100% {
-        width: 7px;
-    }
-}
-
-
-
 
 .rotating {
     animation: rotating 35s linear infinite;
-    
-}
-
-.shooting {
-    animation: shooting 0.1s linear;
-    display: block;
-}
-
-.hidden {
-    display: none;
-}
-
-#laser {
-    width: 3px;
-    height: 100vh;
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transform-origin: center calc(100% + 50px);
-    z-index: 0;
-    background-color: blue;
-    /* display: none; */
 }
 
 #gun {
     position: fixed;
     left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
     width: 152px;
     height: 246px;
     transform-origin: 76px 170px;
-    z-index: 0;
-    /* position: fixed;
-    background-image: url('./assets/gun.png');
-    z-index: 100; */
-    /* background-position: -105px; FRAME 1*/
-    /* background-position: -617px; FRAME 2*/
-    /* background-position: -1128px; FRAME 3*/
-    /* background-position: -1641px; FRAME 4 */
-    /* background-color: transparent; */
-    /* mix-blend-mode: multiply; */
-    /* left: 50%;
-    top: 50%;
-    width: 335px;
-    height: 470px; */
+    z-index: 3;
+    pointer-events: none;
 }
 
-/* 
-#gun {
+.hidden {
+    display: none !important;
+}
+
+/* ── Muzzle flash ── */
+
+#muzzle-flashes {
     position: fixed;
-    object-position: 105px;
-    left: 50%;
+    inset: 0;
+    z-index: 4;
+    pointer-events: none;
+}
+
+.muzzle-flash {
+    position: fixed;
+    width: 28px;
+    height: 14px;
+    transform: translate(-50%, -50%) rotate(var(--flash-angle));
+    border-radius: 50%;
+    background: radial-gradient(ellipse at center, #fff 0%, #93c5fd 35%, transparent 70%);
+    box-shadow: 0 0 12px #60a5fa, 0 0 24px #3b82f6;
+    animation: muzzle-pop 0.12s ease-out forwards;
+    pointer-events: none;
+}
+
+@keyframes muzzle-pop {
+    0% { opacity: 1; transform: translate(-50%, -50%) rotate(var(--flash-angle)) scale(0.6); }
+    100% { opacity: 0; transform: translate(-50%, -50%) rotate(var(--flash-angle)) scale(1.4); }
+}
+
+/* ── Projectiles ── */
+
+#projectiles {
+    position: fixed;
+    inset: 0;
+    z-index: 4;
+    pointer-events: none;
+}
+
+.projectile {
+    position: fixed;
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%) rotate(var(--shot-angle));
+    pointer-events: none;
+}
+
+.projectile__core {
+    position: absolute;
+    left: 0;
     top: 50%;
-    border: 1px solid red;
-    width: 335px;
-    height: 470px;
-} */
-
-
-#bullet {
-    /* position: fixed; */
-    display: none;
-    width: 100px;
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #fff, #93c5fd 55%, #3b82f6);
+    box-shadow: 0 0 6px #fff, 0 0 14px #60a5fa, 0 0 22px #2563eb;
 }
 
-@keyframes rotating-asteroid {
-    from {
-        transform: rotate(0deg);
-    } to {
-        transform: rotate(360deg);
-    }
+.projectile__trail {
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    width: 36px;
+    height: 4px;
+    margin-top: -2px;
+    border-radius: 2px;
+    background: linear-gradient(to left, rgba(59, 130, 246, 0.95), rgba(147, 197, 253, 0.5), transparent);
+    box-shadow: 0 0 8px rgba(96, 165, 250, 0.7);
 }
 
+/* ── Asteroids ── */
 
 .asteroid {
     position: absolute;
-    /* background-color: #999999; */
-    /* border-radius: 50%; */
-    /* border: 1px solid red; */
-    clip: 10%;
-    z-index: 1;
-    /* animation: rotating-asteroid 20s linear infinite; */
+    z-index: 5;
+    pointer-events: none;
+    will-change: transform, left, top;
+}
+
+/* ── Overlays ── */
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 8000;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    backdrop-filter: blur(4px);
+}
+
+.overlay__panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 2.5rem 3rem;
+    background: var(--panel-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    text-align: center;
+    min-width: min(420px, 90vw);
+}
+
+.overlay__panel h1 {
+    font-family: 'Rubik Mono One', monospace;
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    color: white;
+}
+
+.overlay__stat {
+    font-size: 1.5rem;
+    color: var(--text-dim);
+}
+
+.overlay__stat strong {
+    color: white;
+    font-family: 'Rubik Mono One', monospace;
+}
+
+.overlay__record {
+    color: #fbbf24 !important;
+    font-family: 'Rubik Mono One', monospace;
+    animation: combo-pulse 0.6s ease infinite alternate;
+}
+
+.overlay__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-family: 'Rubik Mono One', monospace;
+    font-size: 1rem;
+    color: white;
+    background: rgba(59, 130, 246, 0.3);
+    border: 1px dashed rgba(148, 163, 184, 0.4);
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+    text-align: center;
+}
+
+.btn:hover {
+    border-color: rgb(168, 166, 166);
+    background: rgba(59, 130, 246, 0.45);
+}
+
+.btn--ghost {
+    background: transparent;
+}
+
+button.btn {
+    border-style: dashed;
 }
