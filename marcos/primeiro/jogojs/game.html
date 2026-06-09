@@ -1,37 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Asteroids — Jogo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="game-page">
     <div id="area">
-            <div id="player">
-                <div id="counter">
+        <div id="hud">
+            <div class="hud__left">
+                <div class="hud__score">
+                    <span class="hud__label">Pontos</span>
+                    <span id="counter">0</span>
                 </div>
-                <div id="laser" class="hidden"></div>
-                <img id="gun" src="./assets/arma-bola/1.png">
-                <img src="./assets/earth.png" alt="earth" id="earth" class="rotating">
-                <img src="./assets/bullet.png" alt="bullet" id="bullet">
+                <div class="hud__wave">
+                    <span class="hud__label">Onda</span>
+                    <span id="wave">1</span>
+                </div>
+                <div class="hud__combo hidden" id="combo-display">
+                    <span id="combo-count">x2</span> combo!
+                </div>
             </div>
-            <div id="gameover" class="hidden">
-                <h1>Você Morreu</h1>
-                <h2>Asteroides Destruídos: <span id="over-count"></span></h2>
-                <a href="./game.html">Tentar Novamente!</a>
+            <div class="hud__center">
+                <span id="difficulty-badge" class="hud__badge"></span>
             </div>
+            <div class="hud__right">
+                <div class="hud__lives" id="lives-display"></div>
+                <div class="hud__hint">P pausar · M mudo</div>
+            </div>
+        </div>
+
+        <div id="wave-banner" class="wave-banner hidden"></div>
+
+        <div id="player">
+            <div id="muzzle-flashes"></div>
+            <div id="projectiles"></div>
+            <img id="gun" src="./assets/arma-bola/1.png" alt="arma">
+            <img src="./assets/earth.png" alt="Terra" id="earth" class="rotating">
+        </div>
+
+        <div id="pause-menu" class="overlay hidden">
+            <div class="overlay__panel">
+                <h1>Pausado</h1>
+                <button class="btn" id="resume-btn">Continuar</button>
+                <a class="btn btn--ghost" href="./index.html">Menu Principal</a>
+            </div>
+        </div>
+
+        <div id="gameover" class="overlay hidden">
+            <div class="overlay__panel overlay__panel--gameover">
+                <h1>Terra Perdida</h1>
+                <p class="overlay__stat">Asteroides destruídos: <strong id="over-count">0</strong></p>
+                <p class="overlay__stat">Pontuação: <strong id="over-score">0</strong></p>
+                <p class="overlay__stat">Onda alcançada: <strong id="over-wave">1</strong></p>
+                <p class="overlay__stat overlay__record hidden" id="new-record">Novo recorde!</p>
+                <p class="overlay__stat">Melhor pontuação: <strong id="best-score">0</strong></p>
+                <div class="overlay__actions">
+                    <a class="btn" href="./game.html" id="retry-btn">Tentar Novamente</a>
+                    <a class="btn btn--ghost" href="./index.html">Menu Principal</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <audio loop autoplay style="display: none;" id="gameaudio">
+
+    <audio loop id="gameaudio">
         <source src="./assets/game.wav" type="audio/wav">
     </audio>
+
     <script src="script.js"></script>
 </body>
-
 
 </html>
