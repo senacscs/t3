@@ -1,73 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asteroids — Defenda a Terra</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=VT323&display=swap" rel="stylesheet">
-    <title>Asteroids</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            cursor: pointer;
-            pointer-events: all;
-        }
-
-        div {
-            display: flex;
-            width: 100vw;
-            height: 100vh;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            font-family: 'VT323', monospace;
-        }
-
-        h1 {
-            font-family: 'Rubik Mono One', monospace;
-            font-size: 5rem;
-            color: white;
-        }
-
-        p {
-            font-size: 2rem;
-            color: white;
-        }
-
-        a {
-            margin-top: 35px;
-            text-decoration: none;
-            padding: 8px;
-            color: white;
-            font-size: 1.75rem;
-            border: 1px dashed transparent;
-            border-radius: 8px;
-        }
-
-        a:hover {
-            border: 1px dashed rgb(168, 166, 166);
-        }
-        
-        
-    </style>
 </head>
 
-<body>
-    <div>
-        <h1>Asteroids</h1>
-        <p>Defenda o planeta Terra de asteroides no espaço sideral</p>
-        <a href="./game.html">Começar!</a>
-    </div>
+<body class="menu-page">
+    <div class="stars"></div>
+    <div class="stars stars--slow"></div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            let audio = new Audio('./assets/menu.wav')
-            audio.play();
-        })
-    </script>
+    <main class="menu">
+        <header class="menu__header">
+            <h1 class="menu__title">Asteroids</h1>
+            <p class="menu__subtitle">Defenda o planeta Terra dos asteroides no espaço sideral</p>
+        </header>
+
+        <section class="menu__difficulty">
+            <h2 class="menu__section-title">Escolha a dificuldade</h2>
+            <div class="difficulty-grid" id="difficulty-grid"></div>
+        </section>
+
+        <section class="menu__controls">
+            <h2 class="menu__section-title">Controles</h2>
+            <ul class="controls-list">
+                <li><kbd>Mouse</kbd> Mirar a arma</li>
+                <li><kbd>Clique</kbd> / <kbd>Espaço</kbd> Atirar</li>
+                <li><kbd>Segurar</kbd> Tiro contínuo</li>
+                <li><kbd>P</kbd> / <kbd>Esc</kbd> Pausar</li>
+                <li><kbd>M</kbd> Mudo</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="menu.js"></script>
 </body>
 
 </html>
